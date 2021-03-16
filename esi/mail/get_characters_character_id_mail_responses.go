@@ -485,7 +485,7 @@ type GetCharactersCharacterIDMailOKBodyItems0 struct {
 	//
 	// Recipients of the mail
 	// Max Items: 52
-	// Min Items: 1
+	// Min Items: 0
 	// Unique: true
 	Recipients []*GetCharactersCharacterIDMailOKBodyItems0RecipientsItems0 `json:"recipients"`
 
@@ -548,7 +548,7 @@ func (o *GetCharactersCharacterIDMailOKBodyItems0) validateRecipients(formats st
 
 	iRecipientsSize := int64(len(o.Recipients))
 
-	if err := validate.MinItems("recipients", "body", iRecipientsSize, 1); err != nil {
+	if err := validate.MinItems("recipients", "body", iRecipientsSize, 0); err != nil {
 		return err
 	}
 
