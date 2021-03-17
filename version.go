@@ -31,8 +31,6 @@ import (
 	"github.com/ferocious-space/eveapi/esi"
 )
 
-var DefaultClient = NewAPIClient(httpcache.NewLRUCache(1<<20*64, 0), zap.L().Named("DefaultClient"))
-
 func NewAPIClient(cache httpcache.Cache, logger *zap.Logger) *esi.EVESwaggerInterface {
 
 	esiHTTPClient := durableclient.NewClient("ESI", "https://github.com/ferocious-space/eveapi", logger.Named("ESI"))
@@ -59,17 +57,5 @@ func NewAPIClient(cache httpcache.Cache, logger *zap.Logger) *esi.EVESwaggerInte
 		Jar:       jar,
 	})
 
-	// we want fast encoder/decoder so use jsoniter instead of standard json lib
-	// apiRuntime.Producers[runtime.JSONMime] = runtime.ProducerFunc(func(writer io.Writer, data interface{}) error {
-	// 	enc := jsoniter.NewEncoder(writer)
-	// 	enc.SetEscapeHTML(false)
-	// 	return enc.Encode(data)
-	// })
-	//
-	// apiRuntime.Consumers[runtime.JSONMime] = runtime.ConsumerFunc(func(reader io.Reader, data interface{}) error {
-	// 	dec := jsoniter.NewDecoder(reader)
-	// 	dec.UseNumber()
-	// 	return dec.Decode(data)
-	// })
 	return esi.New(apiRuntime, strfmt.Default)
 }
