@@ -11,4 +11,4 @@ this repository only contains generated swagger client interfaces, notification 
 
 example authentication lib is located at
 
-https://github.com/ferocious-space/eveauth
+https://github.com/ferocious-space/evesso

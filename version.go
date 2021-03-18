@@ -18,44 +18,16 @@ package eveapi
 
 import (
 	"net/http"
-	"net/http/cookiejar"
 
 	httptransport "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
-	"go.uber.org/zap"
-	"golang.org/x/net/publicsuffix"
-
-	"github.com/ferocious-space/durableclient"
-	"github.com/ferocious-space/httpcache"
 
 	"github.com/ferocious-space/eveapi/esi"
 )
 
-func NewAPIClient(cache httpcache.Cache, logger *zap.Logger) *esi.EVESwaggerInterface {
+func NewAPIClient(cachedClient *http.Client) *esi.EVESwaggerInterface {
 
-	esiHTTPClient := durableclient.NewClient("ESI", "https://github.com/ferocious-space/eveapi", logger.Named("ESI"))
-	jar, err := cookiejar.New(&cookiejar.Options{
-		PublicSuffixList: publicsuffix.List,
-	})
-	if err != nil {
-		return nil
-	}
-	var cacheTransport *httpcache.Transport
-
-	// ensure there is at least SOME caching
-	if cache != nil {
-		cacheTransport = httpcache.NewTransport(cache)
-	} else {
-		cacheTransport = httpcache.NewTransport(httpcache.NewLRUCache(1<<20*128, 300))
-	}
-
-	// setting our custom HTTP Client AFTER the cache , only cache misses will go to HTTP client. we dont want to retry on cache
-	cacheTransport.Transport = esiHTTPClient.Transport
-
-	apiRuntime := httptransport.NewWithClient(esi.DefaultHost, esi.DefaultBasePath, esi.DefaultSchemes, &http.Client{
-		Transport: cacheTransport,
-		Jar:       jar,
-	})
+	apiRuntime := httptransport.NewWithClient(esi.DefaultHost, esi.DefaultBasePath, esi.DefaultSchemes, cachedClient)
 
 	return esi.New(apiRuntime, strfmt.Default)
 }
