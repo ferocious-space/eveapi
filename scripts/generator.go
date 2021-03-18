@@ -46,17 +46,19 @@ package notification
 import (
 	"fmt"
 	"time"
+	"strings"
 	"errors"
 	"github.com/davecgh/go-spew/spew"
+	"github.com/go-openapi/swag"
 	"gopkg.in/yaml.v2"
 
 	"github.com/ferocious-space/eveapi/esi/character"
 )
 
 func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyItems0) (interface{},error) {
-	switch *n.Type {
+	switch strings.TrimSpace(swag.StringValue(n.Type)) {
 	{{range $decl := .Structs }}
-	case "{{$decl}}","{{$decl}} ":
+	case "{{$decl}}":
 		value := new({{$decl}})
 		err := yaml.Unmarshal([]byte(n.Text),&value)
 		if err != nil {
@@ -67,7 +69,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	{{end}}
 	// Missing implementations
 	{{range $decl := .Missing }}
-	case "{{$decl}}","{{$decl}} ":
+	case "{{$decl}}":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))

@@ -5,16 +5,18 @@ import (
 	"errors"
 	"fmt"
 	"github.com/davecgh/go-spew/spew"
+	"github.com/go-openapi/swag"
 	"gopkg.in/yaml.v2"
+	"strings"
 	"time"
 
 	"github.com/ferocious-space/eveapi/esi/character"
 )
 
 func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyItems0) (interface{}, error) {
-	switch *n.Type {
+	switch strings.TrimSpace(swag.StringValue(n.Type)) {
 
-	case "AcceptedAlly", "AcceptedAlly ":
+	case "AcceptedAlly":
 		value := new(AcceptedAlly)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -23,7 +25,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "AcceptedSurrender", "AcceptedSurrender ":
+	case "AcceptedSurrender":
 		value := new(AcceptedSurrender)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -32,7 +34,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "AllMaintenanceBillMsg", "AllMaintenanceBillMsg ":
+	case "AllMaintenanceBillMsg":
 		value := new(AllMaintenanceBillMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -41,7 +43,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "AllWarCorpJoinedAllianceMsg", "AllWarCorpJoinedAllianceMsg ":
+	case "AllWarCorpJoinedAllianceMsg":
 		value := new(AllWarCorpJoinedAllianceMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -50,7 +52,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "AllWarDeclaredMsg", "AllWarDeclaredMsg ":
+	case "AllWarDeclaredMsg":
 		value := new(AllWarDeclaredMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -59,7 +61,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "AllWarInvalidatedMsg", "AllWarInvalidatedMsg ":
+	case "AllWarInvalidatedMsg":
 		value := new(AllWarInvalidatedMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -68,7 +70,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "AllWarRetractedMsg", "AllWarRetractedMsg ":
+	case "AllWarRetractedMsg":
 		value := new(AllWarRetractedMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -77,7 +79,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "AllWarSurrenderMsg", "AllWarSurrenderMsg ":
+	case "AllWarSurrenderMsg":
 		value := new(AllWarSurrenderMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -86,7 +88,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "AllianceCapitalChanged", "AllianceCapitalChanged ":
+	case "AllianceCapitalChanged":
 		value := new(AllianceCapitalChanged)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -95,7 +97,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "AllyContractCancelled", "AllyContractCancelled ":
+	case "AllyContractCancelled":
 		value := new(AllyContractCancelled)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -104,7 +106,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "AllyJoinedWarAggressorMsg", "AllyJoinedWarAggressorMsg ":
+	case "AllyJoinedWarAggressorMsg":
 		value := new(AllyJoinedWarAggressorMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -113,7 +115,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "AllyJoinedWarAllyMsg", "AllyJoinedWarAllyMsg ":
+	case "AllyJoinedWarAllyMsg":
 		value := new(AllyJoinedWarAllyMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -122,7 +124,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "AllyJoinedWarDefenderMsg", "AllyJoinedWarDefenderMsg ":
+	case "AllyJoinedWarDefenderMsg":
 		value := new(AllyJoinedWarDefenderMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -131,7 +133,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "BillOutOfMoneyMsg", "BillOutOfMoneyMsg ":
+	case "BillOutOfMoneyMsg":
 		value := new(BillOutOfMoneyMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -140,7 +142,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "BillPaidCorpAllMsg", "BillPaidCorpAllMsg ":
+	case "BillPaidCorpAllMsg":
 		value := new(BillPaidCorpAllMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -149,7 +151,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "BountyClaimMsg", "BountyClaimMsg ":
+	case "BountyClaimMsg":
 		value := new(BountyClaimMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -158,7 +160,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "BountyESSShared", "BountyESSShared ":
+	case "BountyESSShared":
 		value := new(BountyESSShared)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -167,7 +169,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "BountyESSTaken", "BountyESSTaken ":
+	case "BountyESSTaken":
 		value := new(BountyESSTaken)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -176,7 +178,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "BountyPlacedAlliance", "BountyPlacedAlliance ":
+	case "BountyPlacedAlliance":
 		value := new(BountyPlacedAlliance)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -185,7 +187,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "BountyPlacedChar", "BountyPlacedChar ":
+	case "BountyPlacedChar":
 		value := new(BountyPlacedChar)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -194,7 +196,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "BountyPlacedCorp", "BountyPlacedCorp ":
+	case "BountyPlacedCorp":
 		value := new(BountyPlacedCorp)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -203,7 +205,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "BountyYourBountyClaimed", "BountyYourBountyClaimed ":
+	case "BountyYourBountyClaimed":
 		value := new(BountyYourBountyClaimed)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -212,7 +214,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "BuddyConnectContactAdd", "BuddyConnectContactAdd ":
+	case "BuddyConnectContactAdd":
 		value := new(BuddyConnectContactAdd)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -221,7 +223,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CharAppAcceptMsg", "CharAppAcceptMsg ":
+	case "CharAppAcceptMsg":
 		value := new(CharAppAcceptMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -230,7 +232,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CharAppRejectMsg", "CharAppRejectMsg ":
+	case "CharAppRejectMsg":
 		value := new(CharAppRejectMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -239,7 +241,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CharAppWithdrawMsg", "CharAppWithdrawMsg ":
+	case "CharAppWithdrawMsg":
 		value := new(CharAppWithdrawMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -248,7 +250,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CharLeftCorpMsg", "CharLeftCorpMsg ":
+	case "CharLeftCorpMsg":
 		value := new(CharLeftCorpMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -257,7 +259,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CharMedalMsg", "CharMedalMsg ":
+	case "CharMedalMsg":
 		value := new(CharMedalMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -266,7 +268,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CharTerminationMsg", "CharTerminationMsg ":
+	case "CharTerminationMsg":
 		value := new(CharTerminationMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -275,7 +277,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CloneActivationMsg", "CloneActivationMsg ":
+	case "CloneActivationMsg":
 		value := new(CloneActivationMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -284,7 +286,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CloneActivationMsg2", "CloneActivationMsg2 ":
+	case "CloneActivationMsg2":
 		value := new(CloneActivationMsg2)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -293,7 +295,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CloneMovedMsg", "CloneMovedMsg ":
+	case "CloneMovedMsg":
 		value := new(CloneMovedMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -302,7 +304,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CloneRevokedMsg2", "CloneRevokedMsg2 ":
+	case "CloneRevokedMsg2":
 		value := new(CloneRevokedMsg2)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -311,7 +313,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "ContactAdd", "ContactAdd ":
+	case "ContactAdd":
 		value := new(ContactAdd)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -320,7 +322,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "ContactEdit", "ContactEdit ":
+	case "ContactEdit":
 		value := new(ContactEdit)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -329,7 +331,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "ContainerPasswordMsg", "ContainerPasswordMsg ":
+	case "ContainerPasswordMsg":
 		value := new(ContainerPasswordMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -338,7 +340,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CorpAllBillMsg", "CorpAllBillMsg ":
+	case "CorpAllBillMsg":
 		value := new(CorpAllBillMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -347,7 +349,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CorpAppAcceptMsg", "CorpAppAcceptMsg ":
+	case "CorpAppAcceptMsg":
 		value := new(CorpAppAcceptMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -356,7 +358,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CorpAppInvitedMsg", "CorpAppInvitedMsg ":
+	case "CorpAppInvitedMsg":
 		value := new(CorpAppInvitedMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -365,7 +367,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CorpAppNewMsg", "CorpAppNewMsg ":
+	case "CorpAppNewMsg":
 		value := new(CorpAppNewMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -374,7 +376,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CorpAppRejectCustomMsg", "CorpAppRejectCustomMsg ":
+	case "CorpAppRejectCustomMsg":
 		value := new(CorpAppRejectCustomMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -383,7 +385,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CorpAppRejectMsg", "CorpAppRejectMsg ":
+	case "CorpAppRejectMsg":
 		value := new(CorpAppRejectMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -392,7 +394,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CorpDividendMsg", "CorpDividendMsg ":
+	case "CorpDividendMsg":
 		value := new(CorpDividendMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -401,7 +403,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CorpFriendlyFireDisableTimerCompleted", "CorpFriendlyFireDisableTimerCompleted ":
+	case "CorpFriendlyFireDisableTimerCompleted":
 		value := new(CorpFriendlyFireDisableTimerCompleted)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -410,7 +412,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CorpFriendlyFireDisableTimerStarted", "CorpFriendlyFireDisableTimerStarted ":
+	case "CorpFriendlyFireDisableTimerStarted":
 		value := new(CorpFriendlyFireDisableTimerStarted)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -419,7 +421,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CorpFriendlyFireEnableTimerCompleted", "CorpFriendlyFireEnableTimerCompleted ":
+	case "CorpFriendlyFireEnableTimerCompleted":
 		value := new(CorpFriendlyFireEnableTimerCompleted)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -428,7 +430,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CorpFriendlyFireEnableTimerStarted", "CorpFriendlyFireEnableTimerStarted ":
+	case "CorpFriendlyFireEnableTimerStarted":
 		value := new(CorpFriendlyFireEnableTimerStarted)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -437,7 +439,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CorpKicked", "CorpKicked ":
+	case "CorpKicked":
 		value := new(CorpKicked)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -446,7 +448,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CorpLiquidationMsg", "CorpLiquidationMsg ":
+	case "CorpLiquidationMsg":
 		value := new(CorpLiquidationMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -455,7 +457,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CorpNewCEOMsg", "CorpNewCEOMsg ":
+	case "CorpNewCEOMsg":
 		value := new(CorpNewCEOMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -464,7 +466,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CorpNewsMsg", "CorpNewsMsg ":
+	case "CorpNewsMsg":
 		value := new(CorpNewsMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -473,7 +475,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CorpTaxChangeMsg", "CorpTaxChangeMsg ":
+	case "CorpTaxChangeMsg":
 		value := new(CorpTaxChangeMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -482,7 +484,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CorpVoteMsg", "CorpVoteMsg ":
+	case "CorpVoteMsg":
 		value := new(CorpVoteMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -491,7 +493,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CorpWarDeclaredMsg", "CorpWarDeclaredMsg ":
+	case "CorpWarDeclaredMsg":
 		value := new(CorpWarDeclaredMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -500,7 +502,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CorpWarFightingLegalMsg", "CorpWarFightingLegalMsg ":
+	case "CorpWarFightingLegalMsg":
 		value := new(CorpWarFightingLegalMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -509,7 +511,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CorpWarInvalidatedMsg", "CorpWarInvalidatedMsg ":
+	case "CorpWarInvalidatedMsg":
 		value := new(CorpWarInvalidatedMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -518,7 +520,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CorpWarRetractedMsg", "CorpWarRetractedMsg ":
+	case "CorpWarRetractedMsg":
 		value := new(CorpWarRetractedMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -527,7 +529,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CorpWarSurrenderMsg", "CorpWarSurrenderMsg ":
+	case "CorpWarSurrenderMsg":
 		value := new(CorpWarSurrenderMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -536,7 +538,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CustomsMsg", "CustomsMsg ":
+	case "CustomsMsg":
 		value := new(CustomsMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -545,7 +547,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "DeclareWar", "DeclareWar ":
+	case "DeclareWar":
 		value := new(DeclareWar)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -554,7 +556,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "EntosisCaptureStarted", "EntosisCaptureStarted ":
+	case "EntosisCaptureStarted":
 		value := new(EntosisCaptureStarted)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -563,7 +565,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "FWAllianceWarningMsg", "FWAllianceWarningMsg ":
+	case "FWAllianceWarningMsg":
 		value := new(FWAllianceWarningMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -572,7 +574,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "FWCharRankGainMsg", "FWCharRankGainMsg ":
+	case "FWCharRankGainMsg":
 		value := new(FWCharRankGainMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -581,7 +583,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "FWCharRankLossMsg", "FWCharRankLossMsg ":
+	case "FWCharRankLossMsg":
 		value := new(FWCharRankLossMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -590,7 +592,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "FWCorpJoinMsg", "FWCorpJoinMsg ":
+	case "FWCorpJoinMsg":
 		value := new(FWCorpJoinMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -599,7 +601,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "FWCorpKickMsg", "FWCorpKickMsg ":
+	case "FWCorpKickMsg":
 		value := new(FWCorpKickMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -608,7 +610,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "FWCorpLeaveMsg", "FWCorpLeaveMsg ":
+	case "FWCorpLeaveMsg":
 		value := new(FWCorpLeaveMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -617,7 +619,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "FWCorpWarningMsg", "FWCorpWarningMsg ":
+	case "FWCorpWarningMsg":
 		value := new(FWCorpWarningMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -626,7 +628,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "FacWarCorpJoinRequestMsg", "FacWarCorpJoinRequestMsg ":
+	case "FacWarCorpJoinRequestMsg":
 		value := new(FacWarCorpJoinRequestMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -635,7 +637,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "FacWarCorpJoinWithdrawMsg", "FacWarCorpJoinWithdrawMsg ":
+	case "FacWarCorpJoinWithdrawMsg":
 		value := new(FacWarCorpJoinWithdrawMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -644,7 +646,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "FacWarCorpLeaveRequestMsg", "FacWarCorpLeaveRequestMsg ":
+	case "FacWarCorpLeaveRequestMsg":
 		value := new(FacWarCorpLeaveRequestMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -653,7 +655,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "FacWarCorpLeaveWithdrawMsg", "FacWarCorpLeaveWithdrawMsg ":
+	case "FacWarCorpLeaveWithdrawMsg":
 		value := new(FacWarCorpLeaveWithdrawMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -662,7 +664,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "FacWarLPDisqualifiedEvent", "FacWarLPDisqualifiedEvent ":
+	case "FacWarLPDisqualifiedEvent":
 		value := new(FacWarLPDisqualifiedEvent)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -671,7 +673,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "FacWarLPDisqualifiedKill", "FacWarLPDisqualifiedKill ":
+	case "FacWarLPDisqualifiedKill":
 		value := new(FacWarLPDisqualifiedKill)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -680,7 +682,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "FacWarLPPayoutEvent", "FacWarLPPayoutEvent ":
+	case "FacWarLPPayoutEvent":
 		value := new(FacWarLPPayoutEvent)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -689,7 +691,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "FacWarLPPayoutKill", "FacWarLPPayoutKill ":
+	case "FacWarLPPayoutKill":
 		value := new(FacWarLPPayoutKill)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -698,7 +700,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "GameTimeAdded", "GameTimeAdded ":
+	case "GameTimeAdded":
 		value := new(GameTimeAdded)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -707,7 +709,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "GameTimeReceived", "GameTimeReceived ":
+	case "GameTimeReceived":
 		value := new(GameTimeReceived)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -716,7 +718,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "GameTimeSent", "GameTimeSent ":
+	case "GameTimeSent":
 		value := new(GameTimeSent)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -725,7 +727,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "GiftReceived", "GiftReceived ":
+	case "GiftReceived":
 		value := new(GiftReceived)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -734,7 +736,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "IncursionCompletedMsg", "IncursionCompletedMsg ":
+	case "IncursionCompletedMsg":
 		value := new(IncursionCompletedMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -743,7 +745,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "IndustryTeamAuctionLost", "IndustryTeamAuctionLost ":
+	case "IndustryTeamAuctionLost":
 		value := new(IndustryTeamAuctionLost)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -752,7 +754,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "InsuranceExpirationMsg", "InsuranceExpirationMsg ":
+	case "InsuranceExpirationMsg":
 		value := new(InsuranceExpirationMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -761,7 +763,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "InsuranceFirstShipMsg", "InsuranceFirstShipMsg ":
+	case "InsuranceFirstShipMsg":
 		value := new(InsuranceFirstShipMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -770,7 +772,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "InsuranceInvalidatedMsg", "InsuranceInvalidatedMsg ":
+	case "InsuranceInvalidatedMsg":
 		value := new(InsuranceInvalidatedMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -779,7 +781,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "InsuranceIssuedMsg", "InsuranceIssuedMsg ":
+	case "InsuranceIssuedMsg":
 		value := new(InsuranceIssuedMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -788,7 +790,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "InsurancePayoutMsg", "InsurancePayoutMsg ":
+	case "InsurancePayoutMsg":
 		value := new(InsurancePayoutMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -797,7 +799,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "JumpCloneDeletedMsg1", "JumpCloneDeletedMsg1 ":
+	case "JumpCloneDeletedMsg1":
 		value := new(JumpCloneDeletedMsg1)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -806,7 +808,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "JumpCloneDeletedMsg2", "JumpCloneDeletedMsg2 ":
+	case "JumpCloneDeletedMsg2":
 		value := new(JumpCloneDeletedMsg2)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -815,7 +817,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "KillReportFinalBlow", "KillReportFinalBlow ":
+	case "KillReportFinalBlow":
 		value := new(KillReportFinalBlow)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -824,7 +826,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "KillReportVictim", "KillReportVictim ":
+	case "KillReportVictim":
 		value := new(KillReportVictim)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -833,7 +835,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "KillRightAvailable", "KillRightAvailable ":
+	case "KillRightAvailable":
 		value := new(KillRightAvailable)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -842,7 +844,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "KillRightAvailableOpen", "KillRightAvailableOpen ":
+	case "KillRightAvailableOpen":
 		value := new(KillRightAvailableOpen)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -851,7 +853,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "KillRightEarned", "KillRightEarned ":
+	case "KillRightEarned":
 		value := new(KillRightEarned)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -860,7 +862,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "KillRightUnavailable", "KillRightUnavailable ":
+	case "KillRightUnavailable":
 		value := new(KillRightUnavailable)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -869,7 +871,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "KillRightUnavailableOpen", "KillRightUnavailableOpen ":
+	case "KillRightUnavailableOpen":
 		value := new(KillRightUnavailableOpen)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -878,7 +880,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "KillRightUsed", "KillRightUsed ":
+	case "KillRightUsed":
 		value := new(KillRightUsed)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -887,7 +889,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "LocateCharMsg", "LocateCharMsg ":
+	case "LocateCharMsg":
 		value := new(LocateCharMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -896,7 +898,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "MadeWarMutual", "MadeWarMutual ":
+	case "MadeWarMutual":
 		value := new(MadeWarMutual)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -905,7 +907,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "MercOfferedNegotiationMsg", "MercOfferedNegotiationMsg ":
+	case "MercOfferedNegotiationMsg":
 		value := new(MercOfferedNegotiationMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -914,7 +916,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "MissionOfferExpirationMsg", "MissionOfferExpirationMsg ":
+	case "MissionOfferExpirationMsg":
 		value := new(MissionOfferExpirationMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -923,7 +925,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "MoonminingAutomaticFracture", "MoonminingAutomaticFracture ":
+	case "MoonminingAutomaticFracture":
 		value := new(MoonminingAutomaticFracture)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -932,7 +934,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "MoonminingExtractionCancelled", "MoonminingExtractionCancelled ":
+	case "MoonminingExtractionCancelled":
 		value := new(MoonminingExtractionCancelled)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -941,7 +943,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "MoonminingExtractionFinished", "MoonminingExtractionFinished ":
+	case "MoonminingExtractionFinished":
 		value := new(MoonminingExtractionFinished)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -950,7 +952,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "MoonminingExtractionStarted", "MoonminingExtractionStarted ":
+	case "MoonminingExtractionStarted":
 		value := new(MoonminingExtractionStarted)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -959,7 +961,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "MoonminingLaserFired", "MoonminingLaserFired ":
+	case "MoonminingLaserFired":
 		value := new(MoonminingLaserFired)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -968,7 +970,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "NPCStandingsGained", "NPCStandingsGained ":
+	case "NPCStandingsGained":
 		value := new(NPCStandingsGained)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -977,7 +979,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "NPCStandingsLost", "NPCStandingsLost ":
+	case "NPCStandingsLost":
 		value := new(NPCStandingsLost)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -986,7 +988,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "OfferedSurrender", "OfferedSurrender ":
+	case "OfferedSurrender":
 		value := new(OfferedSurrender)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -995,7 +997,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "OfferedToAlly", "OfferedToAlly ":
+	case "OfferedToAlly":
 		value := new(OfferedToAlly)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1004,7 +1006,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "OldLscMessages", "OldLscMessages ":
+	case "OldLscMessages":
 		value := new(OldLscMessages)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1013,7 +1015,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "OperationFinished", "OperationFinished ":
+	case "OperationFinished":
 		value := new(OperationFinished)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1022,7 +1024,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "OrbitalAttacked", "OrbitalAttacked ":
+	case "OrbitalAttacked":
 		value := new(OrbitalAttacked)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1031,7 +1033,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "OrbitalReinforced", "OrbitalReinforced ":
+	case "OrbitalReinforced":
 		value := new(OrbitalReinforced)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1040,7 +1042,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "OwnershipTransferred", "OwnershipTransferred ":
+	case "OwnershipTransferred":
 		value := new(OwnershipTransferred)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1049,7 +1051,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "ReimbursementMsg", "ReimbursementMsg ":
+	case "ReimbursementMsg":
 		value := new(ReimbursementMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1058,7 +1060,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "ResearchMissionAvailableMsg", "ResearchMissionAvailableMsg ":
+	case "ResearchMissionAvailableMsg":
 		value := new(ResearchMissionAvailableMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1067,7 +1069,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "RetractsWar", "RetractsWar ":
+	case "RetractsWar":
 		value := new(RetractsWar)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1076,7 +1078,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "SeasonalChallengeCompleted", "SeasonalChallengeCompleted ":
+	case "SeasonalChallengeCompleted":
 		value := new(SeasonalChallengeCompleted)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1085,7 +1087,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "SovAllClaimAquiredMsg", "SovAllClaimAquiredMsg ":
+	case "SovAllClaimAquiredMsg":
 		value := new(SovAllClaimAquiredMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1094,7 +1096,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "SovAllClaimLostMsg", "SovAllClaimLostMsg ":
+	case "SovAllClaimLostMsg":
 		value := new(SovAllClaimLostMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1103,7 +1105,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "SovCommandNodeEventStarted", "SovCommandNodeEventStarted ":
+	case "SovCommandNodeEventStarted":
 		value := new(SovCommandNodeEventStarted)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1112,7 +1114,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "SovStationEnteredFreeport", "SovStationEnteredFreeport ":
+	case "SovStationEnteredFreeport":
 		value := new(SovStationEnteredFreeport)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1121,7 +1123,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "SovStructureDestroyed", "SovStructureDestroyed ":
+	case "SovStructureDestroyed":
 		value := new(SovStructureDestroyed)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1130,7 +1132,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "SovStructureReinforced", "SovStructureReinforced ":
+	case "SovStructureReinforced":
 		value := new(SovStructureReinforced)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1139,7 +1141,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "SovStructureSelfDestructCancel", "SovStructureSelfDestructCancel ":
+	case "SovStructureSelfDestructCancel":
 		value := new(SovStructureSelfDestructCancel)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1148,7 +1150,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "SovStructureSelfDestructFinished", "SovStructureSelfDestructFinished ":
+	case "SovStructureSelfDestructFinished":
 		value := new(SovStructureSelfDestructFinished)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1157,7 +1159,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "SovStructureSelfDestructRequested", "SovStructureSelfDestructRequested ":
+	case "SovStructureSelfDestructRequested":
 		value := new(SovStructureSelfDestructRequested)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1166,7 +1168,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "SovereigntyIHDamageMsg", "SovereigntyIHDamageMsg ":
+	case "SovereigntyIHDamageMsg":
 		value := new(SovereigntyIHDamageMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1175,7 +1177,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "SovereigntySBUDamageMsg", "SovereigntySBUDamageMsg ":
+	case "SovereigntySBUDamageMsg":
 		value := new(SovereigntySBUDamageMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1184,7 +1186,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "SovereigntyTCUDamageMsg", "SovereigntyTCUDamageMsg ":
+	case "SovereigntyTCUDamageMsg":
 		value := new(SovereigntyTCUDamageMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1193,7 +1195,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "StationServiceDisabled", "StationServiceDisabled ":
+	case "StationServiceDisabled":
 		value := new(StationServiceDisabled)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1202,7 +1204,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "StationServiceEnabled", "StationServiceEnabled ":
+	case "StationServiceEnabled":
 		value := new(StationServiceEnabled)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1211,7 +1213,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "StructureImpendingAbandonmentAssetsAtRisk", "StructureImpendingAbandonmentAssetsAtRisk ":
+	case "StructureImpendingAbandonmentAssetsAtRisk":
 		value := new(StructureImpendingAbandonmentAssetsAtRisk)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1220,7 +1222,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "StructureAnchoring", "StructureAnchoring ":
+	case "StructureAnchoring":
 		value := new(StructureAnchoring)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1229,7 +1231,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "StructureDestroyed", "StructureDestroyed ":
+	case "StructureDestroyed":
 		value := new(StructureDestroyed)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1238,7 +1240,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "StructureFuelAlert", "StructureFuelAlert ":
+	case "StructureFuelAlert":
 		value := new(StructureFuelAlert)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1247,7 +1249,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "StructureItemsDelivered", "StructureItemsDelivered ":
+	case "StructureItemsDelivered":
 		value := new(StructureItemsDelivered)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1256,7 +1258,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "StructureLostArmor", "StructureLostArmor ":
+	case "StructureLostArmor":
 		value := new(StructureLostArmor)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1265,7 +1267,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "StructureLostShields", "StructureLostShields ":
+	case "StructureLostShields":
 		value := new(StructureLostShields)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1274,7 +1276,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "StructureOnline", "StructureOnline ":
+	case "StructureOnline":
 		value := new(StructureOnline)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1283,7 +1285,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "StructureServicesOffline", "StructureServicesOffline ":
+	case "StructureServicesOffline":
 		value := new(StructureServicesOffline)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1292,7 +1294,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "StructureUnanchoring", "StructureUnanchoring ":
+	case "StructureUnanchoring":
 		value := new(StructureUnanchoring)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1301,7 +1303,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "StructureUnderAttack", "StructureUnderAttack ":
+	case "StructureUnderAttack":
 		value := new(StructureUnderAttack)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1310,7 +1312,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "StructureWentHighPower", "StructureWentHighPower ":
+	case "StructureWentHighPower":
 		value := new(StructureWentHighPower)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1319,7 +1321,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "StructureWentLowPower", "StructureWentLowPower ":
+	case "StructureWentLowPower":
 		value := new(StructureWentLowPower)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1328,7 +1330,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "StructuresReinforcementChanged", "StructuresReinforcementChanged ":
+	case "StructuresReinforcementChanged":
 		value := new(StructuresReinforcementChanged)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1337,7 +1339,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "TowerAlertMsg", "TowerAlertMsg ":
+	case "TowerAlertMsg":
 		value := new(TowerAlertMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1346,7 +1348,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "TowerResourceAlertMsg", "TowerResourceAlertMsg ":
+	case "TowerResourceAlertMsg":
 		value := new(TowerResourceAlertMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1355,7 +1357,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "WarAllyOfferDeclinedMsg", "WarAllyOfferDeclinedMsg ":
+	case "WarAllyOfferDeclinedMsg":
 		value := new(WarAllyOfferDeclinedMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1364,7 +1366,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "WarSurrenderDeclinedMsg", "WarSurrenderDeclinedMsg ":
+	case "WarSurrenderDeclinedMsg":
 		value := new(WarSurrenderDeclinedMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1373,7 +1375,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "WarSurrenderOfferMsg", "WarSurrenderOfferMsg ":
+	case "WarSurrenderOfferMsg":
 		value := new(WarSurrenderOfferMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1382,7 +1384,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "WarInvalid", "WarInvalid ":
+	case "WarInvalid":
 		value := new(WarInvalid)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1391,7 +1393,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "WarRetractedByConcord", "WarRetractedByConcord ":
+	case "WarRetractedByConcord":
 		value := new(WarRetractedByConcord)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1400,7 +1402,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "WarHQRemovedFromSpace", "WarHQRemovedFromSpace ":
+	case "WarHQRemovedFromSpace":
 		value := new(WarHQRemovedFromSpace)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1409,7 +1411,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "MercOfferRetractedMsg", "MercOfferRetractedMsg ":
+	case "MercOfferRetractedMsg":
 		value := new(MercOfferRetractedMsg)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1418,7 +1420,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "WarDeclared", "WarDeclared ":
+	case "WarDeclared":
 		value := new(WarDeclared)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1427,7 +1429,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "WarAdopted", "WarAdopted ":
+	case "WarAdopted":
 		value := new(WarAdopted)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1436,7 +1438,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "WarInherited", "WarInherited ":
+	case "WarInherited":
 		value := new(WarInherited)
 		err := yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
@@ -1447,7 +1449,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 
 	// Missing implementations
 
-	case "AgentRetiredTrigravian", "AgentRetiredTrigravian ":
+	case "AgentRetiredTrigravian":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1459,7 +1461,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "AllAnchoringMsg", "AllAnchoringMsg ":
+	case "AllAnchoringMsg":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1471,7 +1473,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "AllStrucInvulnerableMsg", "AllStrucInvulnerableMsg ":
+	case "AllStrucInvulnerableMsg":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1483,7 +1485,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "AllStructVulnerableMsg", "AllStructVulnerableMsg ":
+	case "AllStructVulnerableMsg":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1495,7 +1497,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "AllianceWarDeclaredV2", "AllianceWarDeclaredV2 ":
+	case "AllianceWarDeclaredV2":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1507,7 +1509,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "BattlePunishFriendlyFire", "BattlePunishFriendlyFire ":
+	case "BattlePunishFriendlyFire":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1519,7 +1521,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CloneRevokedMsg1", "CloneRevokedMsg1 ":
+	case "CloneRevokedMsg1":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1531,7 +1533,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CombatOperationFinished", "CombatOperationFinished ":
+	case "CombatOperationFinished":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1543,7 +1545,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "ContractRegionChangedToPochven", "ContractRegionChangedToPochven ":
+	case "ContractRegionChangedToPochven":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1555,7 +1557,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CorpBecameWarEligible", "CorpBecameWarEligible ":
+	case "CorpBecameWarEligible":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1567,7 +1569,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CorpNoLongerWarEligible", "CorpNoLongerWarEligible ":
+	case "CorpNoLongerWarEligible":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1579,7 +1581,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CorpOfficeExpirationMsg", "CorpOfficeExpirationMsg ":
+	case "CorpOfficeExpirationMsg":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1591,7 +1593,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CorpStructLostMsg", "CorpStructLostMsg ":
+	case "CorpStructLostMsg":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1603,7 +1605,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CorpVoteCEORevokedMsg", "CorpVoteCEORevokedMsg ":
+	case "CorpVoteCEORevokedMsg":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1615,7 +1617,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "CorpWarDeclaredV2", "CorpWarDeclaredV2 ":
+	case "CorpWarDeclaredV2":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1627,7 +1629,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "DistrictAttacked", "DistrictAttacked ":
+	case "DistrictAttacked":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1639,7 +1641,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "DustAppAcceptedMsg", "DustAppAcceptedMsg ":
+	case "DustAppAcceptedMsg":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1651,7 +1653,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "ESSMainBankLink", "ESSMainBankLink ":
+	case "ESSMainBankLink":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1663,7 +1665,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "FWAllianceKickMsg", "FWAllianceKickMsg ":
+	case "FWAllianceKickMsg":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1675,7 +1677,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "FWCharKickMsg", "FWCharKickMsg ":
+	case "FWCharKickMsg":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1687,7 +1689,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "FWCharWarningMsg", "FWCharWarningMsg ":
+	case "FWCharWarningMsg":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1699,7 +1701,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "IHubDestroyedByBillFailure", "IHubDestroyedByBillFailure ":
+	case "IHubDestroyedByBillFailure":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1711,7 +1713,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "IndustryOperationFinished", "IndustryOperationFinished ":
+	case "IndustryOperationFinished":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1723,7 +1725,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "IndustryTeamAuctionWon", "IndustryTeamAuctionWon ":
+	case "IndustryTeamAuctionWon":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1735,7 +1737,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "InfrastructureHubBillAboutToExpire", "InfrastructureHubBillAboutToExpire ":
+	case "InfrastructureHubBillAboutToExpire":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1747,7 +1749,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "InvasionCompletedMsg", "InvasionCompletedMsg ":
+	case "InvasionCompletedMsg":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1759,7 +1761,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "InvasionSystemLogin", "InvasionSystemLogin ":
+	case "InvasionSystemLogin":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1771,7 +1773,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "InvasionSystemStart", "InvasionSystemStart ":
+	case "InvasionSystemStart":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1783,7 +1785,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "MissionCanceledTriglavian", "MissionCanceledTriglavian ":
+	case "MissionCanceledTriglavian":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1795,7 +1797,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "MissionTimeoutMsg", "MissionTimeoutMsg ":
+	case "MissionTimeoutMsg":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1807,7 +1809,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "MutualWarExpired", "MutualWarExpired ":
+	case "MutualWarExpired":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1819,7 +1821,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "MutualWarInviteAccepted", "MutualWarInviteAccepted ":
+	case "MutualWarInviteAccepted":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1831,7 +1833,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "MutualWarInviteRejected", "MutualWarInviteRejected ":
+	case "MutualWarInviteRejected":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1843,7 +1845,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "MutualWarInviteSent", "MutualWarInviteSent ":
+	case "MutualWarInviteSent":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1855,7 +1857,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "OfferToAllyRetracted", "OfferToAllyRetracted ":
+	case "OfferToAllyRetracted":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1867,7 +1869,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "OfficeLeaseCanceledInsufficientStandings", "OfficeLeaseCanceledInsufficientStandings ":
+	case "OfficeLeaseCanceledInsufficientStandings":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1879,7 +1881,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "RaffleCreated", "RaffleCreated ":
+	case "RaffleCreated":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1891,7 +1893,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "RaffleExpired", "RaffleExpired ":
+	case "RaffleExpired":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1903,7 +1905,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "RaffleFinished", "RaffleFinished ":
+	case "RaffleFinished":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1915,7 +1917,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "SovCorpBillLateMsg", "SovCorpBillLateMsg ":
+	case "SovCorpBillLateMsg":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1927,7 +1929,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "SovCorpClaimFailMsg", "SovCorpClaimFailMsg ":
+	case "SovCorpClaimFailMsg":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1939,7 +1941,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "SovDisruptorMsg", "SovDisruptorMsg ":
+	case "SovDisruptorMsg":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1951,7 +1953,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "StationAggressionMsg1", "StationAggressionMsg1 ":
+	case "StationAggressionMsg1":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1963,7 +1965,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "StationAggressionMsg2", "StationAggressionMsg2 ":
+	case "StationAggressionMsg2":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1975,7 +1977,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "StationConquerMsg", "StationConquerMsg ":
+	case "StationConquerMsg":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1987,7 +1989,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "StationStateChangeMsg", "StationStateChangeMsg ":
+	case "StationStateChangeMsg":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -1999,7 +2001,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "StoryLineMissionAvailableMsg", "StoryLineMissionAvailableMsg ":
+	case "StoryLineMissionAvailableMsg":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -2011,7 +2013,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "StructureCourierContractChanged", "StructureCourierContractChanged ":
+	case "StructureCourierContractChanged":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -2023,7 +2025,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "StructureItemsMovedToSafety", "StructureItemsMovedToSafety ":
+	case "StructureItemsMovedToSafety":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -2035,7 +2037,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "StructuresJobsCancelled", "StructuresJobsCancelled ":
+	case "StructuresJobsCancelled":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -2047,7 +2049,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "StructuresJobsPaused", "StructuresJobsPaused ":
+	case "StructuresJobsPaused":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -2059,7 +2061,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "TransactionReversalMsg", "TransactionReversalMsg ":
+	case "TransactionReversalMsg":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -2071,7 +2073,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "TutorialMsg", "TutorialMsg ":
+	case "TutorialMsg":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -2083,7 +2085,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "WarAllyInherited", "WarAllyInherited ":
+	case "WarAllyInherited":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -2095,7 +2097,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "WarConcordInvalidates", "WarConcordInvalidates ":
+	case "WarConcordInvalidates":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -2107,7 +2109,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "WarEndedHqSecurityDrop", "WarEndedHqSecurityDrop ":
+	case "WarEndedHqSecurityDrop":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -2119,7 +2121,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "WarRetracted", "WarRetracted ":
+	case "WarRetracted":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
