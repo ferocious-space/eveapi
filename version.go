@@ -28,6 +28,5 @@ import (
 func NewAPIClient(cachedClient *http.Client) *esi.EVESwaggerInterface {
 
 	apiRuntime := httptransport.NewWithClient(esi.DefaultHost, esi.DefaultBasePath, esi.DefaultSchemes, cachedClient)
-
 	return esi.New(apiRuntime, strfmt.Default)
 }

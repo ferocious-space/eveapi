@@ -1,9 +1,7 @@
 all: Setup Downloads Generate
 
 Setup:
-	go get github.com/go-swagger/go-swagger/cmd/swagger
 	go install github.com/go-swagger/go-swagger/cmd/swagger
-	go mod tidy
 Downloads:
 	curl -sSL https://esi.evetech.net/_latest/swagger.json -o esi.json
 	curl -sSL https://esi.evetech.net/swagger.json -o meta.json
@@ -44,5 +42,4 @@ Generate:
 	--tags "Meta" \
 	--tags "Wars"
 	go run scripts/generator.go
-	go get -u ./esi/...
-	go get -u ./models/...
+	go get -u ./...
