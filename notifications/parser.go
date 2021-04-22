@@ -1665,6 +1665,30 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
+	case "ExpertSystemExpired":
+		spew.Dump(n)
+		bytes, _ := yaml.Marshal(n)
+		fmt.Println(string(bytes))
+		value := new(ExpertSystemExpired)
+		err := yaml.Unmarshal([]byte(n.Text), &value)
+		if err != nil {
+			spew.Dump(n)
+			return nil, err
+		}
+		return value, nil
+
+	case "ExpertSystemExpiryImminent":
+		spew.Dump(n)
+		bytes, _ := yaml.Marshal(n)
+		fmt.Println(string(bytes))
+		value := new(ExpertSystemExpiryImminent)
+		err := yaml.Unmarshal([]byte(n.Text), &value)
+		if err != nil {
+			spew.Dump(n)
+			return nil, err
+		}
+		return value, nil
+
 	case "FWAllianceKickMsg":
 		spew.Dump(n)
 		bytes, _ := yaml.Marshal(n)
@@ -2172,6 +2196,10 @@ type DistrictAttacked interface{}
 type DustAppAcceptedMsg interface{}
 
 type ESSMainBankLink interface{}
+
+type ExpertSystemExpired interface{}
+
+type ExpertSystemExpiryImminent interface{}
 
 type FWAllianceKickMsg interface{}
 
