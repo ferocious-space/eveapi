@@ -3,7 +3,7 @@
 package sde
 
 type BloodlineMap map[int32]Bloodline
-type BloodlineDescriptionID struct {
+type BloodlineNameID struct {
 	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
 	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
 	Es *string `bson:"es,omitempty" json:"es,omitempty" yaml:"es,omitempty"`
@@ -14,7 +14,7 @@ type BloodlineDescriptionID struct {
 	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
 	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
 }
-type BloodlineNameID struct {
+type BloodlineDescriptionID struct {
 	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
 	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
 	Es *string `bson:"es,omitempty" json:"es,omitempty" yaml:"es,omitempty"`

@@ -3,10 +3,6 @@
 package sde
 
 type PlanetSchematicMap map[int32]PlanetSchematic
-type PlanetSchematicTypes struct {
-	IsInput  *bool  `bson:"isInput,omitempty" json:"isInput,omitempty" yaml:"isInput,omitempty"`
-	Quantity *int32 `bson:"quantity,omitempty" json:"quantity,omitempty" yaml:"quantity,omitempty"`
-}
 type PlanetSchematicNameID struct {
 	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
 	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
@@ -15,6 +11,10 @@ type PlanetSchematicNameID struct {
 	Ko *string `bson:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
 	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
 	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
+}
+type PlanetSchematicTypes struct {
+	IsInput  *bool  `bson:"isInput,omitempty" json:"isInput,omitempty" yaml:"isInput,omitempty"`
+	Quantity *int32 `bson:"quantity,omitempty" json:"quantity,omitempty" yaml:"quantity,omitempty"`
 }
 type PlanetSchematic struct {
 	CycleTime *int64                         `bson:"cycleTime,omitempty" json:"cycleTime,omitempty" yaml:"cycleTime,omitempty"`

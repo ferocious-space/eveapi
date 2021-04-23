@@ -3,16 +3,6 @@
 package sde
 
 type GroupIDMap map[int32]GroupID
-type GroupIDName struct {
-	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
-	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
-	Fr *string `bson:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
-	Ja *string `bson:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
-	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
-	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
-	Es *string `bson:"es,omitempty" json:"es,omitempty" yaml:"es,omitempty"`
-	It *string `bson:"it,omitempty" json:"it,omitempty" yaml:"it,omitempty"`
-}
 type GroupID struct {
 	Anchorable           *bool        `bson:"anchorable,omitempty" json:"anchorable,omitempty" yaml:"anchorable,omitempty"`
 	Anchored             *bool        `bson:"anchored,omitempty" json:"anchored,omitempty" yaml:"anchored,omitempty"`
@@ -22,4 +12,14 @@ type GroupID struct {
 	Published            *bool        `bson:"published,omitempty" json:"published,omitempty" yaml:"published,omitempty"`
 	UseBasePrice         *bool        `bson:"useBasePrice,omitempty" json:"useBasePrice,omitempty" yaml:"useBasePrice,omitempty"`
 	IconID               *int32       `bson:"iconID,omitempty" json:"iconID,omitempty" yaml:"iconID,omitempty"`
+}
+type GroupIDName struct {
+	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
+	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
+	Fr *string `bson:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
+	Ja *string `bson:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
+	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
+	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
+	Es *string `bson:"es,omitempty" json:"es,omitempty" yaml:"es,omitempty"`
+	It *string `bson:"it,omitempty" json:"it,omitempty" yaml:"it,omitempty"`
 }

@@ -28,13 +28,13 @@ func TimeFromCCPTimestamp(ts int64) time.Time {
 	return time.Unix(ts/10000000+base, ts%10000000).UTC()
 }
 
-func NotificationGenerator(input string) (string, error) {
+func NotificationGenerator(typeName, input string) (string, error) {
 	refType, err := yamlparser.ParseString(input)
 	if err != nil {
 		return "", err
 	}
 	genType, err := yamlparser.GenerateType(
-		refType, "StationStateChangeMsg",
+		refType, typeName,
 		"github.com/ferocious-space/eveapi/notificaitons", "notifications",
 	)
 	if err != nil {
