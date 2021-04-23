@@ -74,7 +74,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "{{$decl}}":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil,err
 		}

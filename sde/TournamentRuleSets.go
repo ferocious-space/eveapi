@@ -3,6 +3,10 @@
 package sde
 
 type TournamentRuleSetList []TournamentRuleSet
+type TournamentRuleSetPointsTypes struct {
+	Points *int32 `bson:"points,omitempty" json:"points,omitempty" yaml:"points,omitempty"`
+	TypeID *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" yaml:"typeID,omitempty"`
+}
 type TournamentRuleSetPoints struct {
 	Groups []TournamentRuleSetPointsGroups `bson:"groups,omitempty" json:"groups,omitempty" yaml:"groups,omitempty"`
 	Types  []TournamentRuleSetPointsTypes  `bson:"types,omitempty" json:"types,omitempty" yaml:"types,omitempty"`
@@ -22,8 +26,4 @@ type TournamentRuleSetBanned struct {
 type TournamentRuleSetPointsGroups struct {
 	GroupID *int32 `bson:"groupID,omitempty" json:"groupID,omitempty" yaml:"groupID,omitempty"`
 	Points  *int32 `bson:"points,omitempty" json:"points,omitempty" yaml:"points,omitempty"`
-}
-type TournamentRuleSetPointsTypes struct {
-	Points *int32 `bson:"points,omitempty" json:"points,omitempty" yaml:"points,omitempty"`
-	TypeID *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" yaml:"typeID,omitempty"`
 }

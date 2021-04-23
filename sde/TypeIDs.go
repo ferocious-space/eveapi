@@ -3,52 +3,11 @@
 package sde
 
 type TypeIDMap map[int32]TypeID
-type TypeIDTraitsMiscBonuses struct {
-	BonusText  *TypeIDTraitsMiscBonusesBonusText `bson:"bonusText,omitempty" json:"bonusText,omitempty" yaml:"bonusText,omitempty"`
-	Importance *int32                            `bson:"importance,omitempty" json:"importance,omitempty" yaml:"importance,omitempty"`
-	IsPositive *bool                             `bson:"isPositive,omitempty" json:"isPositive,omitempty" yaml:"isPositive,omitempty"`
+type TypeIDTraitsRoleBonuses struct {
 	Bonus      *float64                          `bson:"bonus,omitempty" json:"bonus,omitempty" yaml:"bonus,omitempty"`
+	BonusText  *TypeIDTraitsRoleBonusesBonusText `bson:"bonusText,omitempty" json:"bonusText,omitempty" yaml:"bonusText,omitempty"`
+	Importance *int32                            `bson:"importance,omitempty" json:"importance,omitempty" yaml:"importance,omitempty"`
 	UnitID     *int32                            `bson:"unitID,omitempty" json:"unitID,omitempty" yaml:"unitID,omitempty"`
-}
-type TypeIDTraitsRoleBonusesBonusText struct {
-	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
-	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
-	Fr *string `bson:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
-	Ja *string `bson:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
-	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
-	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
-}
-type TypeIDDescription struct {
-	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
-	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
-	Fr *string `bson:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
-	Ja *string `bson:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
-	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
-	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
-	Es *string `bson:"es,omitempty" json:"es,omitempty" yaml:"es,omitempty"`
-	It *string `bson:"it,omitempty" json:"it,omitempty" yaml:"it,omitempty"`
-}
-type TypeIDTraitsTypes struct {
-	Bonus      *float64                    `bson:"bonus,omitempty" json:"bonus,omitempty" yaml:"bonus,omitempty"`
-	BonusText  *TypeIDTraitsTypesBonusText `bson:"bonusText,omitempty" json:"bonusText,omitempty" yaml:"bonusText,omitempty"`
-	Importance *int32                      `bson:"importance,omitempty" json:"importance,omitempty" yaml:"importance,omitempty"`
-	UnitID     *int32                      `bson:"unitID,omitempty" json:"unitID,omitempty" yaml:"unitID,omitempty"`
-}
-type TypeIDTraitsMiscBonusesBonusText struct {
-	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
-	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
-	Fr *string `bson:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
-	Ja *string `bson:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
-	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
-	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
-}
-type TypeIDTraitsTypesBonusText struct {
-	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
-	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
-	Fr *string `bson:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
-	Ja *string `bson:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
-	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
-	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
 }
 type TypeID struct {
 	GroupID               *int32             `bson:"groupID,omitempty" json:"groupID,omitempty" yaml:"groupID,omitempty"`
@@ -74,6 +33,34 @@ type TypeID struct {
 	Traits                *TypeIDTraits      `bson:"traits,omitempty" json:"traits,omitempty" yaml:"traits,omitempty"`
 	SofMaterialSetID      *int32             `bson:"sofMaterialSetID,omitempty" json:"sofMaterialSetID,omitempty" yaml:"sofMaterialSetID,omitempty"`
 }
+type TypeIDTraitsTypes struct {
+	Bonus      *float64                    `bson:"bonus,omitempty" json:"bonus,omitempty" yaml:"bonus,omitempty"`
+	BonusText  *TypeIDTraitsTypesBonusText `bson:"bonusText,omitempty" json:"bonusText,omitempty" yaml:"bonusText,omitempty"`
+	Importance *int32                      `bson:"importance,omitempty" json:"importance,omitempty" yaml:"importance,omitempty"`
+	UnitID     *int32                      `bson:"unitID,omitempty" json:"unitID,omitempty" yaml:"unitID,omitempty"`
+}
+type TypeIDTraitsMiscBonusesBonusText struct {
+	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
+	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
+	Fr *string `bson:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
+	Ja *string `bson:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
+	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
+	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
+}
+type TypeIDTraitsTypesBonusText struct {
+	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
+	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
+	Fr *string `bson:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
+	Ja *string `bson:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
+	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
+	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
+}
+type TypeIDTraits struct {
+	MiscBonuses []TypeIDTraitsMiscBonuses     `bson:"miscBonuses,omitempty" json:"miscBonuses,omitempty" yaml:"miscBonuses,omitempty"`
+	RoleBonuses []TypeIDTraitsRoleBonuses     `bson:"roleBonuses,omitempty" json:"roleBonuses,omitempty" yaml:"roleBonuses,omitempty"`
+	Types       map[int32][]TypeIDTraitsTypes `bson:"types,omitempty" json:"types,omitempty" yaml:"types,omitempty"`
+	IconID      *int32                        `bson:"iconID,omitempty" json:"iconID,omitempty" yaml:"iconID,omitempty"`
+}
 type TypeIDName struct {
 	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
 	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
@@ -84,15 +71,28 @@ type TypeIDName struct {
 	Es *string `bson:"es,omitempty" json:"es,omitempty" yaml:"es,omitempty"`
 	It *string `bson:"it,omitempty" json:"it,omitempty" yaml:"it,omitempty"`
 }
-type TypeIDTraits struct {
-	MiscBonuses []TypeIDTraitsMiscBonuses     `bson:"miscBonuses,omitempty" json:"miscBonuses,omitempty" yaml:"miscBonuses,omitempty"`
-	RoleBonuses []TypeIDTraitsRoleBonuses     `bson:"roleBonuses,omitempty" json:"roleBonuses,omitempty" yaml:"roleBonuses,omitempty"`
-	Types       map[int32][]TypeIDTraitsTypes `bson:"types,omitempty" json:"types,omitempty" yaml:"types,omitempty"`
-	IconID      *int32                        `bson:"iconID,omitempty" json:"iconID,omitempty" yaml:"iconID,omitempty"`
-}
-type TypeIDTraitsRoleBonuses struct {
-	Bonus      *float64                          `bson:"bonus,omitempty" json:"bonus,omitempty" yaml:"bonus,omitempty"`
-	BonusText  *TypeIDTraitsRoleBonusesBonusText `bson:"bonusText,omitempty" json:"bonusText,omitempty" yaml:"bonusText,omitempty"`
+type TypeIDTraitsMiscBonuses struct {
+	BonusText  *TypeIDTraitsMiscBonusesBonusText `bson:"bonusText,omitempty" json:"bonusText,omitempty" yaml:"bonusText,omitempty"`
 	Importance *int32                            `bson:"importance,omitempty" json:"importance,omitempty" yaml:"importance,omitempty"`
+	IsPositive *bool                             `bson:"isPositive,omitempty" json:"isPositive,omitempty" yaml:"isPositive,omitempty"`
+	Bonus      *float64                          `bson:"bonus,omitempty" json:"bonus,omitempty" yaml:"bonus,omitempty"`
 	UnitID     *int32                            `bson:"unitID,omitempty" json:"unitID,omitempty" yaml:"unitID,omitempty"`
+}
+type TypeIDDescription struct {
+	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
+	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
+	Fr *string `bson:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
+	Ja *string `bson:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
+	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
+	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
+	Es *string `bson:"es,omitempty" json:"es,omitempty" yaml:"es,omitempty"`
+	It *string `bson:"it,omitempty" json:"it,omitempty" yaml:"it,omitempty"`
+}
+type TypeIDTraitsRoleBonusesBonusText struct {
+	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
+	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
+	Fr *string `bson:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
+	Ja *string `bson:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
+	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
+	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
 }

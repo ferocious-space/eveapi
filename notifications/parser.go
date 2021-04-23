@@ -1452,7 +1452,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "AgentRetiredTrigravian":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1468,7 +1468,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "AllAnchoringMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1484,7 +1484,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "AllStrucInvulnerableMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1500,7 +1500,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "AllStructVulnerableMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1516,7 +1516,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "AllianceWarDeclaredV2":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1532,7 +1532,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "BattlePunishFriendlyFire":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1548,7 +1548,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "CloneRevokedMsg1":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1564,7 +1564,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "CombatOperationFinished":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1580,7 +1580,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "ContractRegionChangedToPochven":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1596,7 +1596,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "CorpBecameWarEligible":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1612,7 +1612,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "CorpNoLongerWarEligible":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1628,7 +1628,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "CorpOfficeExpirationMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1644,7 +1644,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "CorpStructLostMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1660,7 +1660,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "CorpVoteCEORevokedMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1676,7 +1676,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "CorpWarDeclaredV2":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1692,7 +1692,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "DistrictAttacked":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1708,7 +1708,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "DustAppAcceptedMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1724,7 +1724,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "ESSMainBankLink":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1740,7 +1740,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "ExpertSystemExpired":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1756,7 +1756,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "ExpertSystemExpiryImminent":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1772,7 +1772,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "FWAllianceKickMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1788,7 +1788,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "FWCharKickMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1804,7 +1804,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "FWCharWarningMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1820,7 +1820,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "IHubDestroyedByBillFailure":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1836,7 +1836,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "IndustryOperationFinished":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1852,7 +1852,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "IndustryTeamAuctionWon":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1868,7 +1868,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "InfrastructureHubBillAboutToExpire":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1884,7 +1884,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "InvasionCompletedMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1900,7 +1900,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "InvasionSystemLogin":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1916,7 +1916,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "InvasionSystemStart":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1932,7 +1932,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "MissionCanceledTriglavian":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1948,7 +1948,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "MissionTimeoutMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1964,7 +1964,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "MutualWarExpired":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1980,7 +1980,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "MutualWarInviteAccepted":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1996,7 +1996,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "MutualWarInviteRejected":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2012,7 +2012,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "MutualWarInviteSent":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2028,7 +2028,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "OfferToAllyRetracted":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2044,7 +2044,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "OfficeLeaseCanceledInsufficientStandings":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2060,7 +2060,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "RaffleCreated":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2076,7 +2076,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "RaffleExpired":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2092,7 +2092,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "RaffleFinished":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2108,7 +2108,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "SovCorpBillLateMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2124,7 +2124,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "SovCorpClaimFailMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2140,7 +2140,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "SovDisruptorMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2156,7 +2156,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "StationAggressionMsg1":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2172,7 +2172,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "StationAggressionMsg2":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2188,7 +2188,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "StationConquerMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2204,7 +2204,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "StationStateChangeMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2220,7 +2220,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "StoryLineMissionAvailableMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2236,7 +2236,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "StructureCourierContractChanged":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2252,7 +2252,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "StructureItemsMovedToSafety":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2268,7 +2268,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "StructuresJobsCancelled":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2284,7 +2284,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "StructuresJobsPaused":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2300,7 +2300,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "TransactionReversalMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2316,7 +2316,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "TutorialMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2332,7 +2332,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "WarAllyInherited":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2348,7 +2348,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "WarConcordInvalidates":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2364,7 +2364,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "WarEndedHqSecurityDrop":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2380,7 +2380,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "WarRetracted":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(n.Text)
+		genType, err := NotificationGenerator(*n.Type, n.Text)
 		if err != nil {
 			return nil, err
 		}
