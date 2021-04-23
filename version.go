@@ -38,18 +38,20 @@ import (
 	"github.com/ferocious-space/eveapi/esi"
 )
 
+var json = jsoniter.ConfigCompatibleWithStandardLibrary
+
 func NewAPIClient(cachedClient *http.Client) *esi.EVESwaggerInterface {
 	apiRuntime := httptransport.NewWithClient(esi.DefaultHost, esi.DefaultBasePath, esi.DefaultSchemes, cachedClient)
 	apiRuntime.Consumers[openapiRuntime.JSONMime] = openapiRuntime.ConsumerFunc(
 		func(reader io.Reader, data interface{}) error {
-			dec := jsoniter.NewDecoder(reader)
+			dec := json.NewDecoder(reader)
 			dec.UseNumber()
 			return dec.Decode(data)
 		},
 	)
 	apiRuntime.Producers[openapiRuntime.JSONMime] = openapiRuntime.ProducerFunc(
 		func(writer io.Writer, data interface{}) error {
-			enc := jsoniter.NewEncoder(writer)
+			enc := json.NewEncoder(writer)
 			enc.SetEscapeHTML(false)
 			return enc.Encode(data)
 		},
