@@ -24,3 +24,4 @@ cache/**
 .idea/*
 /go.sum
 /cache/
+/testing/

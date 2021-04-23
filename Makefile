@@ -41,5 +41,5 @@ Generate:
 	--tags "Wallet" \
 	--tags "Meta" \
 	--tags "Wars"
-	go run scripts/generator.go
+	go run scripts/generator.go scripts/sde.go
 	go get -u ./...
