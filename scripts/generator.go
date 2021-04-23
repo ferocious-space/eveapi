@@ -55,7 +55,6 @@ import (
 	"gopkg.in/yaml.v2"
 
 	"github.com/ferocious-space/eveapi/esi/character"
-	"github.com/ferocious-space/eveapi/internal/pkg/yamlparser"
 )
 
 func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyItems0) (interface{},error) {
@@ -75,16 +74,9 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "{{$decl}}":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "{{$decl}}",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
-		if err != nil {
-			return nil, err
+			return nil,err
 		}
 		fmt.Println(string(genType))
 		value := new({{$decl}})

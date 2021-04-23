@@ -11,7 +11,6 @@ import (
 	"time"
 
 	"github.com/ferocious-space/eveapi/esi/character"
-	"github.com/ferocious-space/eveapi/internal/pkg/yamlparser"
 )
 
 func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyItems0) (interface{}, error) {
@@ -1453,14 +1452,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "AgentRetiredTrigravian":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "AgentRetiredTrigravian",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1476,14 +1468,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "AllAnchoringMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "AllAnchoringMsg",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1499,14 +1484,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "AllStrucInvulnerableMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "AllStrucInvulnerableMsg",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1522,14 +1500,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "AllStructVulnerableMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "AllStructVulnerableMsg",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1545,14 +1516,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "AllianceWarDeclaredV2":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "AllianceWarDeclaredV2",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1568,14 +1532,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "BattlePunishFriendlyFire":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "BattlePunishFriendlyFire",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1591,14 +1548,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "CloneRevokedMsg1":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "CloneRevokedMsg1",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1614,14 +1564,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "CombatOperationFinished":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "CombatOperationFinished",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1637,14 +1580,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "ContractRegionChangedToPochven":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "ContractRegionChangedToPochven",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1660,14 +1596,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "CorpBecameWarEligible":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "CorpBecameWarEligible",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1683,14 +1612,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "CorpNoLongerWarEligible":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "CorpNoLongerWarEligible",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1706,14 +1628,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "CorpOfficeExpirationMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "CorpOfficeExpirationMsg",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1729,14 +1644,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "CorpStructLostMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "CorpStructLostMsg",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1752,14 +1660,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "CorpVoteCEORevokedMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "CorpVoteCEORevokedMsg",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1775,14 +1676,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "CorpWarDeclaredV2":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "CorpWarDeclaredV2",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1798,14 +1692,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "DistrictAttacked":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "DistrictAttacked",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1821,14 +1708,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "DustAppAcceptedMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "DustAppAcceptedMsg",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1844,14 +1724,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "ESSMainBankLink":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "ESSMainBankLink",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1867,14 +1740,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "ExpertSystemExpired":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "ExpertSystemExpired",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1890,14 +1756,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "ExpertSystemExpiryImminent":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "ExpertSystemExpiryImminent",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1913,14 +1772,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "FWAllianceKickMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "FWAllianceKickMsg",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1936,14 +1788,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "FWCharKickMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "FWCharKickMsg",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1959,14 +1804,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "FWCharWarningMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "FWCharWarningMsg",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -1982,14 +1820,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "IHubDestroyedByBillFailure":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "IHubDestroyedByBillFailure",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2005,14 +1836,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "IndustryOperationFinished":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "IndustryOperationFinished",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2028,14 +1852,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "IndustryTeamAuctionWon":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "IndustryTeamAuctionWon",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2051,14 +1868,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "InfrastructureHubBillAboutToExpire":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "InfrastructureHubBillAboutToExpire",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2074,14 +1884,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "InvasionCompletedMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "InvasionCompletedMsg",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2097,14 +1900,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "InvasionSystemLogin":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "InvasionSystemLogin",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2120,14 +1916,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "InvasionSystemStart":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "InvasionSystemStart",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2143,14 +1932,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "MissionCanceledTriglavian":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "MissionCanceledTriglavian",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2166,14 +1948,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "MissionTimeoutMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "MissionTimeoutMsg",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2189,14 +1964,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "MutualWarExpired":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "MutualWarExpired",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2212,14 +1980,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "MutualWarInviteAccepted":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "MutualWarInviteAccepted",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2235,14 +1996,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "MutualWarInviteRejected":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "MutualWarInviteRejected",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2258,14 +2012,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "MutualWarInviteSent":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "MutualWarInviteSent",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2281,14 +2028,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "OfferToAllyRetracted":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "OfferToAllyRetracted",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2304,14 +2044,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "OfficeLeaseCanceledInsufficientStandings":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "OfficeLeaseCanceledInsufficientStandings",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2327,14 +2060,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "RaffleCreated":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "RaffleCreated",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2350,14 +2076,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "RaffleExpired":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "RaffleExpired",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2373,14 +2092,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "RaffleFinished":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "RaffleFinished",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2396,14 +2108,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "SovCorpBillLateMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "SovCorpBillLateMsg",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2419,14 +2124,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "SovCorpClaimFailMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "SovCorpClaimFailMsg",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2442,14 +2140,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "SovDisruptorMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "SovDisruptorMsg",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2465,14 +2156,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "StationAggressionMsg1":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "StationAggressionMsg1",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2488,14 +2172,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "StationAggressionMsg2":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "StationAggressionMsg2",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2511,14 +2188,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "StationConquerMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "StationConquerMsg",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2534,14 +2204,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "StationStateChangeMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "StationStateChangeMsg",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2557,14 +2220,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "StoryLineMissionAvailableMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "StoryLineMissionAvailableMsg",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2580,14 +2236,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "StructureCourierContractChanged":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "StructureCourierContractChanged",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2603,14 +2252,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "StructureItemsMovedToSafety":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "StructureItemsMovedToSafety",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2626,14 +2268,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "StructuresJobsCancelled":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "StructuresJobsCancelled",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2649,14 +2284,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "StructuresJobsPaused":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "StructuresJobsPaused",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2672,14 +2300,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "TransactionReversalMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "TransactionReversalMsg",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2695,14 +2316,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "TutorialMsg":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "TutorialMsg",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2718,14 +2332,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "WarAllyInherited":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "WarAllyInherited",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2741,14 +2348,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "WarConcordInvalidates":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "WarConcordInvalidates",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2764,14 +2364,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "WarEndedHqSecurityDrop":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "WarEndedHqSecurityDrop",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}
@@ -2787,14 +2380,7 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 	case "WarRetracted":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
-		refType, err := yamlparser.ParseString(n.Text)
-		if err != nil {
-			return nil, err
-		}
-		genType, err := yamlparser.GenerateType(
-			refType, "WarRetracted",
-			"github.com/ferocious-space/eveapi/notificaitons", "notifications",
-		)
+		genType, err := NotificationGenerator(n.Text)
 		if err != nil {
 			return nil, err
 		}

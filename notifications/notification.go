@@ -18,12 +18,29 @@ package notification
 
 import (
 	"time"
+
+	"github.com/ferocious-space/eveapi/internal/pkg/yamlparser"
 )
 
 // some weird CCP function
 func TimeFromCCPTimestamp(ts int64) time.Time {
 	base := time.Date(1601, 1, 1, 0, 0, 0, 0, time.UTC).Unix()
 	return time.Unix(ts/10000000+base, ts%10000000).UTC()
+}
+
+func NotificationGenerator(input string) (string, error) {
+	refType, err := yamlparser.ParseString(input)
+	if err != nil {
+		return "", err
+	}
+	genType, err := yamlparser.GenerateType(
+		refType, "StationStateChangeMsg",
+		"github.com/ferocious-space/eveapi/notificaitons", "notifications",
+	)
+	if err != nil {
+		return "", err
+	}
+	return string(genType), nil
 }
 
 // https://github.com/antihax/goesi/tree/master/notification taken from here

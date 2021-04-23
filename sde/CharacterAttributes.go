@@ -3,13 +3,6 @@
 package sde
 
 type CharacterAttributeMap map[int32]CharacterAttribute
-type CharacterAttribute struct {
-	Description      *string                   `bson:"description,omitempty" json:"description,omitempty" yaml:"description,omitempty"`
-	IconID           *int32                    `bson:"iconID,omitempty" json:"iconID,omitempty" yaml:"iconID,omitempty"`
-	NameID           *CharacterAttributeNameID `bson:"nameID,omitempty" json:"nameID,omitempty" yaml:"nameID,omitempty"`
-	Notes            *string                   `bson:"notes,omitempty" json:"notes,omitempty" yaml:"notes,omitempty"`
-	ShortDescription *string                   `bson:"shortDescription,omitempty" json:"shortDescription,omitempty" yaml:"shortDescription,omitempty"`
-}
 type CharacterAttributeNameID struct {
 	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
 	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
@@ -18,4 +11,11 @@ type CharacterAttributeNameID struct {
 	Ko *string `bson:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
 	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
 	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
+}
+type CharacterAttribute struct {
+	Description      *string                   `bson:"description,omitempty" json:"description,omitempty" yaml:"description,omitempty"`
+	IconID           *int32                    `bson:"iconID,omitempty" json:"iconID,omitempty" yaml:"iconID,omitempty"`
+	NameID           *CharacterAttributeNameID `bson:"nameID,omitempty" json:"nameID,omitempty" yaml:"nameID,omitempty"`
+	Notes            *string                   `bson:"notes,omitempty" json:"notes,omitempty" yaml:"notes,omitempty"`
+	ShortDescription *string                   `bson:"shortDescription,omitempty" json:"shortDescription,omitempty" yaml:"shortDescription,omitempty"`
 }

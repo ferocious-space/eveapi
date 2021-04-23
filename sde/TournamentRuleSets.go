@@ -3,18 +3,6 @@
 package sde
 
 type TournamentRuleSetList []TournamentRuleSet
-type TournamentRuleSetBanned struct {
-	Groups []int32 `bson:"groups,omitempty" json:"groups,omitempty" yaml:"groups,omitempty"`
-	Types  []int32 `bson:"types,omitempty" json:"types,omitempty" yaml:"types,omitempty"`
-}
-type TournamentRuleSetPointsGroups struct {
-	GroupID *int32 `bson:"groupID,omitempty" json:"groupID,omitempty" yaml:"groupID,omitempty"`
-	Points  *int32 `bson:"points,omitempty" json:"points,omitempty" yaml:"points,omitempty"`
-}
-type TournamentRuleSetPointsTypes struct {
-	Points *int32 `bson:"points,omitempty" json:"points,omitempty" yaml:"points,omitempty"`
-	TypeID *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" yaml:"typeID,omitempty"`
-}
 type TournamentRuleSetPoints struct {
 	Groups []TournamentRuleSetPointsGroups `bson:"groups,omitempty" json:"groups,omitempty" yaml:"groups,omitempty"`
 	Types  []TournamentRuleSetPointsTypes  `bson:"types,omitempty" json:"types,omitempty" yaml:"types,omitempty"`
@@ -26,4 +14,16 @@ type TournamentRuleSet struct {
 	Points             *TournamentRuleSetPoints `bson:"points,omitempty" json:"points,omitempty" yaml:"points,omitempty"`
 	RuleSetID          *string                  `bson:"ruleSetID,omitempty" json:"ruleSetID,omitempty" yaml:"ruleSetID,omitempty"`
 	RuleSetName        *string                  `bson:"ruleSetName,omitempty" json:"ruleSetName,omitempty" yaml:"ruleSetName,omitempty"`
+}
+type TournamentRuleSetBanned struct {
+	Groups []int32 `bson:"groups,omitempty" json:"groups,omitempty" yaml:"groups,omitempty"`
+	Types  []int32 `bson:"types,omitempty" json:"types,omitempty" yaml:"types,omitempty"`
+}
+type TournamentRuleSetPointsGroups struct {
+	GroupID *int32 `bson:"groupID,omitempty" json:"groupID,omitempty" yaml:"groupID,omitempty"`
+	Points  *int32 `bson:"points,omitempty" json:"points,omitempty" yaml:"points,omitempty"`
+}
+type TournamentRuleSetPointsTypes struct {
+	Points *int32 `bson:"points,omitempty" json:"points,omitempty" yaml:"points,omitempty"`
+	TypeID *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" yaml:"typeID,omitempty"`
 }

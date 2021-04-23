@@ -8,17 +8,6 @@ type NpcCorporationDivisions struct {
 	LeaderID       *int32 `bson:"leaderID,omitempty" json:"leaderID,omitempty" yaml:"leaderID,omitempty"`
 	Size           *int32 `bson:"size,omitempty" json:"size,omitempty" yaml:"size,omitempty"`
 }
-type NpcCorporationDescriptionID struct {
-	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
-	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
-	Es *string `bson:"es,omitempty" json:"es,omitempty" yaml:"es,omitempty"`
-	Fr *string `bson:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
-	It *string `bson:"it,omitempty" json:"it,omitempty" yaml:"it,omitempty"`
-	Ja *string `bson:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
-	Ko *string `bson:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
-	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
-	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
-}
 type NpcCorporation struct {
 	CeoID                      *int32                            `bson:"ceoID,omitempty" json:"ceoID,omitempty" yaml:"ceoID,omitempty"`
 	Deleted                    *bool                             `bson:"deleted,omitempty" json:"deleted,omitempty" yaml:"deleted,omitempty"`
@@ -54,6 +43,17 @@ type NpcCorporation struct {
 	SecondaryActivityID        *int32                            `bson:"secondaryActivityID,omitempty" json:"secondaryActivityID,omitempty" yaml:"secondaryActivityID,omitempty"`
 	Url                        *string                           `bson:"url,omitempty" json:"url,omitempty" yaml:"url,omitempty"`
 	ExchangeRates              map[int32]float64                 `bson:"exchangeRates,omitempty" json:"exchangeRates,omitempty" yaml:"exchangeRates,omitempty"`
+}
+type NpcCorporationDescriptionID struct {
+	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
+	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
+	Es *string `bson:"es,omitempty" json:"es,omitempty" yaml:"es,omitempty"`
+	Fr *string `bson:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
+	It *string `bson:"it,omitempty" json:"it,omitempty" yaml:"it,omitempty"`
+	Ja *string `bson:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
+	Ko *string `bson:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
+	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
+	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
 }
 type NpcCorporationNameID struct {
 	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
