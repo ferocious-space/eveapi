@@ -28,16 +28,34 @@ import (
 	"sync"
 	"time"
 
+	openapiRuntime "github.com/go-openapi/runtime"
 	httptransport "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
+	jsoniter "github.com/json-iterator/go"
 	"github.com/pkg/errors"
 	"gopkg.in/yaml.v3"
 
 	"github.com/ferocious-space/eveapi/esi"
 )
 
+var json = jsoniter.ConfigCompatibleWithStandardLibrary
+
 func NewAPIClient(cachedClient *http.Client) *esi.EVESwaggerInterface {
 	apiRuntime := httptransport.NewWithClient(esi.DefaultHost, esi.DefaultBasePath, esi.DefaultSchemes, cachedClient)
+	apiRuntime.Consumers[openapiRuntime.JSONMime] = openapiRuntime.ConsumerFunc(
+		func(reader io.Reader, data interface{}) error {
+			dec := json.NewDecoder(reader)
+			dec.UseNumber()
+			return dec.Decode(data)
+		},
+	)
+	apiRuntime.Producers[openapiRuntime.JSONMime] = openapiRuntime.ProducerFunc(
+		func(writer io.Writer, data interface{}) error {
+			enc := json.NewEncoder(writer)
+			enc.SetEscapeHTML(false)
+			return enc.Encode(data)
+		},
+	)
 	return esi.New(apiRuntime, strfmt.Default)
 }
 
