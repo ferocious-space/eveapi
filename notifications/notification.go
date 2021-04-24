@@ -20,8 +20,6 @@ import (
 	"reflect"
 	"time"
 
-	"gopkg.in/yaml.v3"
-
 	"github.com/ferocious-space/eveapi/internal/pkg/yamlparser"
 )
 
@@ -31,7 +29,7 @@ func TimeFromCCPTimestamp(ts int64) time.Time {
 	return time.Unix(ts/10000000+base, ts%10000000).UTC()
 }
 
-func DeepMergeNotifications(in []string) string {
+func DeepMergeNotifications(typeName string, in []string) string {
 	m := []reflect.Type{}
 	for _, s := range in {
 		t, e := yamlparser.ParseString(s)
@@ -41,14 +39,14 @@ func DeepMergeNotifications(in []string) string {
 		m = append(m, t)
 	}
 	dm := yamlparser.DeepMergeList(m)
-	if dm != nil {
-		r, e := yaml.Marshal(reflect.New(dm).Interface())
-		if e != nil {
-			return ""
-		}
-		return string(r)
+	gen, err := yamlparser.GenerateType(
+		dm, typeName,
+		"github.com/ferocious-space/eveapi/notificaitons", "notifications",
+	)
+	if err != nil {
+		return ""
 	}
-	return ""
+	return string(gen)
 }
 func NotificationGenerator(typeName, input string) (string, error) {
 	refType, err := yamlparser.ParseString(input)
