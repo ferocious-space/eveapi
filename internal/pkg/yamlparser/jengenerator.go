@@ -113,6 +113,7 @@ func jenGenerator(in reflect.Type, typeName string, depth int) (*Statement, map[
 						singularName = typeName + inflect.Singularize(fieldName)
 					}
 				}
+				isEmptyStruct := false
 				isStruct := false
 				isPtr := false
 				if field.Type.Kind() == reflect.Ptr {
@@ -121,31 +122,42 @@ func jenGenerator(in reflect.Type, typeName string, depth int) (*Statement, map[
 				}
 				if field.Type.Kind() == reflect.Struct {
 					isStruct = true
+					if field.Type.NumField() == 0 {
+						isEmptyStruct = true
+					}
 				}
 
-				elem, x := jenGenerator(field.Type, singularName, depth+1)
-				for k, v := range x {
-					extra[k] = v
-				}
 				content := field.Tag.Get("yaml")
 				tags := map[string]string{
 					"yaml": content,
 					"json": content,
 					"bson": content,
 				}
-				if isStruct {
-					if isPtr {
-						fields = append(fields, Id(fieldName).Op("*").Id(singularName).Tag(tags))
-					} else {
-						fields = append(fields, Id(fieldName).Id(singularName).Tag(tags))
-					}
-					extra[singularName] = Empty().Add(elem)
+
+				if isStruct && isEmptyStruct {
+					fields = append(fields, Id(fieldName).Add(Interface()).Tag(tags))
 				} else {
-					if isPtr {
-						fields = append(fields, Id(fieldName).Op("*").Add(elem).Tag(tags))
-					} else {
-						fields = append(fields, Id(fieldName).Add(elem).Tag(tags))
+
+					elem, x := jenGenerator(field.Type, singularName, depth+1)
+					for k, v := range x {
+						extra[k] = v
 					}
+
+					if isStruct {
+						if isPtr {
+							fields = append(fields, Id(fieldName).Op("*").Id(singularName).Tag(tags))
+						} else {
+							fields = append(fields, Id(fieldName).Id(singularName).Tag(tags))
+						}
+						extra[singularName] = Empty().Add(elem)
+					} else {
+						if isPtr {
+							fields = append(fields, Id(fieldName).Op("*").Add(elem).Tag(tags))
+						} else {
+							fields = append(fields, Id(fieldName).Add(elem).Tag(tags))
+						}
+					}
+
 				}
 			}
 			t.Add(Struct(fields...))
