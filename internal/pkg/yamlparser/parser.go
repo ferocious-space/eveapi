@@ -55,7 +55,7 @@ func ParseFile(yamlPath string) (reflect.Type, error) {
 	return nodeWalk(&data, 0, nil), nil
 }
 
-func deepMergeList(types []reflect.Type) reflect.Type {
+func DeepMergeList(types []reflect.Type) reflect.Type {
 	if len(types) > 0 {
 		if len(types) == 1 {
 			return types[0]

@@ -202,7 +202,7 @@ func nodeWalk(node *yaml.Node, depth int, mappings map[string]typeMapping) refle
 					}
 					alltypes = append(alltypes, el)
 				}
-				return reflect.SliceOf(deepMergeList(alltypes))
+				return reflect.SliceOf(DeepMergeList(alltypes))
 			case "!!map":
 				alltypes := make([]reflect.Type, 0)
 				for _, elems := range node.Content {
@@ -212,7 +212,7 @@ func nodeWalk(node *yaml.Node, depth int, mappings map[string]typeMapping) refle
 					}
 					alltypes = append(alltypes, el)
 				}
-				return reflect.SliceOf(deepMergeList(alltypes))
+				return reflect.SliceOf(DeepMergeList(alltypes))
 			default:
 				return reflect.SliceOf(reflect.TypeOf(string("")))
 			}
