@@ -97,55 +97,59 @@ func jenGenerator(in reflect.Type, typeName string, depth int) (*Statement, map[
 		t.Add(Int64())
 	case reflect.Struct:
 		fields := make([]Code, 0)
-		for i := 0; i < ref.NumField(); i++ {
-			field := ref.Field(i)
-			fieldName := field.Name
-			singularName := inflect.Singularize(typeName) + fieldName
-			if strings.HasSuffix(fieldName, "ID") {
-				singularName = inflect.Singularize(typeName) + inflect.Singularize(fieldName)
-			}
-			if depth > 1 {
-				singularName = typeName + fieldName
+		if ref.NumField() == 0 {
+			t.Add(Interface())
+		} else {
+			for i := 0; i < ref.NumField(); i++ {
+				field := ref.Field(i)
+				fieldName := field.Name
+				singularName := inflect.Singularize(typeName) + fieldName
 				if strings.HasSuffix(fieldName, "ID") {
-					singularName = typeName + inflect.Singularize(fieldName)
+					singularName = inflect.Singularize(typeName) + inflect.Singularize(fieldName)
 				}
-			}
-			isStruct := false
-			isPtr := false
-			if field.Type.Kind() == reflect.Ptr {
-				isPtr = true
-				field.Type = field.Type.Elem()
-			}
-			if field.Type.Kind() == reflect.Struct {
-				isStruct = true
-			}
+				if depth > 1 {
+					singularName = typeName + fieldName
+					if strings.HasSuffix(fieldName, "ID") {
+						singularName = typeName + inflect.Singularize(fieldName)
+					}
+				}
+				isStruct := false
+				isPtr := false
+				if field.Type.Kind() == reflect.Ptr {
+					isPtr = true
+					field.Type = field.Type.Elem()
+				}
+				if field.Type.Kind() == reflect.Struct {
+					isStruct = true
+				}
 
-			elem, x := jenGenerator(field.Type, singularName, depth+1)
-			for k, v := range x {
-				extra[k] = v
-			}
-			content := field.Tag.Get("yaml")
-			tags := map[string]string{
-				"yaml": content,
-				"json": content,
-				"bson": content,
-			}
-			if isStruct {
-				if isPtr {
-					fields = append(fields, Id(fieldName).Op("*").Id(singularName).Tag(tags))
-				} else {
-					fields = append(fields, Id(fieldName).Id(singularName).Tag(tags))
+				elem, x := jenGenerator(field.Type, singularName, depth+1)
+				for k, v := range x {
+					extra[k] = v
 				}
-				extra[singularName] = Empty().Add(elem)
-			} else {
-				if isPtr {
-					fields = append(fields, Id(fieldName).Op("*").Add(elem).Tag(tags))
+				content := field.Tag.Get("yaml")
+				tags := map[string]string{
+					"yaml": content,
+					"json": content,
+					"bson": content,
+				}
+				if isStruct {
+					if isPtr {
+						fields = append(fields, Id(fieldName).Op("*").Id(singularName).Tag(tags))
+					} else {
+						fields = append(fields, Id(fieldName).Id(singularName).Tag(tags))
+					}
+					extra[singularName] = Empty().Add(elem)
 				} else {
-					fields = append(fields, Id(fieldName).Add(elem).Tag(tags))
+					if isPtr {
+						fields = append(fields, Id(fieldName).Op("*").Add(elem).Tag(tags))
+					} else {
+						fields = append(fields, Id(fieldName).Add(elem).Tag(tags))
+					}
 				}
 			}
+			t.Add(Struct(fields...))
 		}
-		t.Add(Struct(fields...))
 	}
 	return t, extra
 }
