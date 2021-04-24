@@ -3,11 +3,6 @@
 package sde
 
 type NpcCorporationMap map[int32]NpcCorporation
-type NpcCorporationDivisions struct {
-	DivisionNumber *int32 `bson:"divisionNumber,omitempty" json:"divisionNumber,omitempty" yaml:"divisionNumber,omitempty"`
-	LeaderID       *int32 `bson:"leaderID,omitempty" json:"leaderID,omitempty" yaml:"leaderID,omitempty"`
-	Size           *int32 `bson:"size,omitempty" json:"size,omitempty" yaml:"size,omitempty"`
-}
 type NpcCorporation struct {
 	CeoID                      *int32                            `bson:"ceoID,omitempty" json:"ceoID,omitempty" yaml:"ceoID,omitempty"`
 	Deleted                    *bool                             `bson:"deleted,omitempty" json:"deleted,omitempty" yaml:"deleted,omitempty"`
@@ -54,6 +49,11 @@ type NpcCorporationDescriptionID struct {
 	Ko *string `bson:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
 	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
 	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
+}
+type NpcCorporationDivisions struct {
+	DivisionNumber *int32 `bson:"divisionNumber,omitempty" json:"divisionNumber,omitempty" yaml:"divisionNumber,omitempty"`
+	LeaderID       *int32 `bson:"leaderID,omitempty" json:"leaderID,omitempty" yaml:"leaderID,omitempty"`
+	Size           *int32 `bson:"size,omitempty" json:"size,omitempty" yaml:"size,omitempty"`
 }
 type NpcCorporationNameID struct {
 	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`

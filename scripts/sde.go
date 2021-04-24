@@ -1,25 +1,23 @@
 package main
 
 import (
+	"fmt"
 	"io/fs"
+	"net/http"
 	"os"
 	"path/filepath"
 	"strings"
 
-	etcdIOutil "github.com/coreos/etcd/pkg/ioutil"
 	"github.com/go-openapi/inflect"
-	"github.com/hashicorp/go-cleanhttp"
-	"go.uber.org/zap"
 
 	"github.com/ferocious-space/eveapi"
 	"github.com/ferocious-space/eveapi/internal/pkg/yamlparser"
 )
 
 func sdegen() {
-	log := zap.NewExample()
-	err := eveapi.DownloadSDE(cleanhttp.DefaultClient(), "./testing", false)
+	err := eveapi.DownloadSDE(&http.Client{}, "./testing", false)
 	if err != nil {
-		log.Fatal("downloading SDE", zap.Error(err))
+		return
 	}
 	if err := filepath.Walk(
 		"./testing", func(path string, info fs.FileInfo, err error) error {
@@ -29,7 +27,7 @@ func sdegen() {
 			if filepath.Ext(path) != ".yaml" {
 				return nil
 			}
-			log.Info("generating", zap.String("file", path))
+			fmt.Println("generating", path)
 			typeInterface, err := yamlparser.ParseFile(path)
 			if err != nil {
 				return err
@@ -51,7 +49,7 @@ func sdegen() {
 			if err != nil {
 				return err
 			}
-			if err := etcdIOutil.WriteAndSyncFile(
+			if err := os.WriteFile(
 				filepath.Join("./sde", typeName+".go"), file,
 				os.ModePerm,
 			); err != nil {
@@ -60,7 +58,7 @@ func sdegen() {
 			return nil
 		},
 	); err != nil {
-		log.Fatal("walking", zap.Error(err))
+		fmt.Println("waling", err.Error())
 		return
 	}
 	return

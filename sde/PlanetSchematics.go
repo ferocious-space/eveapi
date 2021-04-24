@@ -3,6 +3,12 @@
 package sde
 
 type PlanetSchematicMap map[int32]PlanetSchematic
+type PlanetSchematic struct {
+	CycleTime *int64                         `bson:"cycleTime,omitempty" json:"cycleTime,omitempty" yaml:"cycleTime,omitempty"`
+	NameID    *PlanetSchematicNameID         `bson:"nameID,omitempty" json:"nameID,omitempty" yaml:"nameID,omitempty"`
+	Pins      []int32                        `bson:"pins,omitempty" json:"pins,omitempty" yaml:"pins,omitempty"`
+	Types     map[int32]PlanetSchematicTypes `bson:"types,omitempty" json:"types,omitempty" yaml:"types,omitempty"`
+}
 type PlanetSchematicNameID struct {
 	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
 	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
@@ -15,10 +21,4 @@ type PlanetSchematicNameID struct {
 type PlanetSchematicTypes struct {
 	IsInput  *bool  `bson:"isInput,omitempty" json:"isInput,omitempty" yaml:"isInput,omitempty"`
 	Quantity *int32 `bson:"quantity,omitempty" json:"quantity,omitempty" yaml:"quantity,omitempty"`
-}
-type PlanetSchematic struct {
-	CycleTime *int64                         `bson:"cycleTime,omitempty" json:"cycleTime,omitempty" yaml:"cycleTime,omitempty"`
-	NameID    *PlanetSchematicNameID         `bson:"nameID,omitempty" json:"nameID,omitempty" yaml:"nameID,omitempty"`
-	Pins      []int32                        `bson:"pins,omitempty" json:"pins,omitempty" yaml:"pins,omitempty"`
-	Types     map[int32]PlanetSchematicTypes `bson:"types,omitempty" json:"types,omitempty" yaml:"types,omitempty"`
 }

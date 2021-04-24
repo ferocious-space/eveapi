@@ -15,7 +15,7 @@ type Bloodline struct {
 	RaceID        *int32                  `bson:"raceID,omitempty" json:"raceID,omitempty" yaml:"raceID,omitempty"`
 	Willpower     *int32                  `bson:"willpower,omitempty" json:"willpower,omitempty" yaml:"willpower,omitempty"`
 }
-type BloodlineNameID struct {
+type BloodlineDescriptionID struct {
 	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
 	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
 	Es *string `bson:"es,omitempty" json:"es,omitempty" yaml:"es,omitempty"`
@@ -26,7 +26,7 @@ type BloodlineNameID struct {
 	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
 	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
 }
-type BloodlineDescriptionID struct {
+type BloodlineNameID struct {
 	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
 	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
 	Es *string `bson:"es,omitempty" json:"es,omitempty" yaml:"es,omitempty"`

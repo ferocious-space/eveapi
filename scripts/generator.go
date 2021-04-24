@@ -52,7 +52,7 @@ import (
 	"errors"
 	"github.com/davecgh/go-spew/spew"
 	"github.com/go-openapi/swag"
-	"gopkg.in/yaml.v2"
+	"gopkg.in/yaml.v3"
 
 	"github.com/ferocious-space/eveapi/esi/character"
 )

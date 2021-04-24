@@ -3,6 +3,13 @@
 package sde
 
 type MarketGroupMap map[int32]MarketGroup
+type MarketGroup struct {
+	DescriptionID *MarketGroupDescriptionID `bson:"descriptionID,omitempty" json:"descriptionID,omitempty" yaml:"descriptionID,omitempty"`
+	HasTypes      *bool                     `bson:"hasTypes,omitempty" json:"hasTypes,omitempty" yaml:"hasTypes,omitempty"`
+	IconID        *int32                    `bson:"iconID,omitempty" json:"iconID,omitempty" yaml:"iconID,omitempty"`
+	NameID        *MarketGroupNameID        `bson:"nameID,omitempty" json:"nameID,omitempty" yaml:"nameID,omitempty"`
+	ParentGroupID *int32                    `bson:"parentGroupID,omitempty" json:"parentGroupID,omitempty" yaml:"parentGroupID,omitempty"`
+}
 type MarketGroupDescriptionID struct {
 	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
 	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
@@ -24,11 +31,4 @@ type MarketGroupNameID struct {
 	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
 	Es *string `bson:"es,omitempty" json:"es,omitempty" yaml:"es,omitempty"`
 	It *string `bson:"it,omitempty" json:"it,omitempty" yaml:"it,omitempty"`
-}
-type MarketGroup struct {
-	DescriptionID *MarketGroupDescriptionID `bson:"descriptionID,omitempty" json:"descriptionID,omitempty" yaml:"descriptionID,omitempty"`
-	HasTypes      *bool                     `bson:"hasTypes,omitempty" json:"hasTypes,omitempty" yaml:"hasTypes,omitempty"`
-	IconID        *int32                    `bson:"iconID,omitempty" json:"iconID,omitempty" yaml:"iconID,omitempty"`
-	NameID        *MarketGroupNameID        `bson:"nameID,omitempty" json:"nameID,omitempty" yaml:"nameID,omitempty"`
-	ParentGroupID *int32                    `bson:"parentGroupID,omitempty" json:"parentGroupID,omitempty" yaml:"parentGroupID,omitempty"`
 }

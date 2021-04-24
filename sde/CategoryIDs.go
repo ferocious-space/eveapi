@@ -3,6 +3,11 @@
 package sde
 
 type CategoryIDMap map[int32]CategoryID
+type CategoryID struct {
+	Name      *CategoryIDName `bson:"name,omitempty" json:"name,omitempty" yaml:"name,omitempty"`
+	Published *bool           `bson:"published,omitempty" json:"published,omitempty" yaml:"published,omitempty"`
+	IconID    *int32          `bson:"iconID,omitempty" json:"iconID,omitempty" yaml:"iconID,omitempty"`
+}
 type CategoryIDName struct {
 	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
 	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
@@ -10,9 +15,4 @@ type CategoryIDName struct {
 	Ja *string `bson:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
 	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
 	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
-}
-type CategoryID struct {
-	Name      *CategoryIDName `bson:"name,omitempty" json:"name,omitempty" yaml:"name,omitempty"`
-	Published *bool           `bson:"published,omitempty" json:"published,omitempty" yaml:"published,omitempty"`
-	IconID    *int32          `bson:"iconID,omitempty" json:"iconID,omitempty" yaml:"iconID,omitempty"`
 }

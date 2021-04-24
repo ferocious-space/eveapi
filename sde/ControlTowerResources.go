@@ -3,13 +3,13 @@
 package sde
 
 type ControlTowerResourceMap map[int32]ControlTowerResource
+type ControlTowerResource struct {
+	Resources []ControlTowerResourceResources `bson:"resources,omitempty" json:"resources,omitempty" yaml:"resources,omitempty"`
+}
 type ControlTowerResourceResources struct {
 	Purpose          *int32   `bson:"purpose,omitempty" json:"purpose,omitempty" yaml:"purpose,omitempty"`
 	Quantity         *int32   `bson:"quantity,omitempty" json:"quantity,omitempty" yaml:"quantity,omitempty"`
 	ResourceTypeID   *int32   `bson:"resourceTypeID,omitempty" json:"resourceTypeID,omitempty" yaml:"resourceTypeID,omitempty"`
 	FactionID        *int32   `bson:"factionID,omitempty" json:"factionID,omitempty" yaml:"factionID,omitempty"`
 	MinSecurityLevel *float64 `bson:"minSecurityLevel,omitempty" json:"minSecurityLevel,omitempty" yaml:"minSecurityLevel,omitempty"`
-}
-type ControlTowerResource struct {
-	Resources []ControlTowerResourceResources `bson:"resources,omitempty" json:"resources,omitempty" yaml:"resources,omitempty"`
 }

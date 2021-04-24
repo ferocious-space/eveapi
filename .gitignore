@@ -25,3 +25,4 @@ cache/**
 /go.sum
 /cache/
 /testing/
+/sde/SdeInfo.go

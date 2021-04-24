@@ -3,6 +3,7 @@ package yamlparser
 import (
 	"bytes"
 	"reflect"
+	"sort"
 
 	"github.com/dave/jennifer/jen"
 )
@@ -22,9 +23,13 @@ func GenerateType(p reflect.Type, typeName string, packagePath string, packageNa
 		//pkg.Add(jen.Comment("//easyjson:json"))
 		pkg.Add(jen.Type().Id(singularName).Add(main))
 	}
-	for xType, stmt := range extra {
-		//pkg.Add(jen.Comment("//easyjson:json"))
-		pkg.Add(jen.Type().Id(xType).Add(stmt))
+	tNames := []string{}
+	for n := range extra {
+		tNames = append(tNames, n)
+	}
+	sort.Strings(tNames)
+	for _, xType := range tNames {
+		pkg.Add(jen.Type().Id(xType).Add(extra[xType]))
 	}
 	if err := pkg.Render(buffer); err != nil {
 		return nil, err

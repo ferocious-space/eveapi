@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"github.com/davecgh/go-spew/spew"
 	"github.com/go-openapi/swag"
-	"gopkg.in/yaml.v2"
+	"gopkg.in/yaml.v3"
 	"strings"
 	"time"
 

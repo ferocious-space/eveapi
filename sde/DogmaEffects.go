@@ -3,15 +3,6 @@
 package sde
 
 type DogmaEffectMap map[int32]DogmaEffect
-type DogmaEffectDisplayNameID struct {
-	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
-	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
-	Fr *string `bson:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
-	Ja *string `bson:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
-	Ko *string `bson:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
-	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
-	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
-}
 type DogmaEffect struct {
 	DisallowAutoRepeat             *bool                     `bson:"disallowAutoRepeat,omitempty" json:"disallowAutoRepeat,omitempty" yaml:"disallowAutoRepeat,omitempty"`
 	DischargeAttributeID           *int32                    `bson:"dischargeAttributeID,omitempty" json:"dischargeAttributeID,omitempty" yaml:"dischargeAttributeID,omitempty"`
@@ -41,6 +32,24 @@ type DogmaEffect struct {
 	FittingUsageChanceAttributeID  *int32                    `bson:"fittingUsageChanceAttributeID,omitempty" json:"fittingUsageChanceAttributeID,omitempty" yaml:"fittingUsageChanceAttributeID,omitempty"`
 	ResistanceAttributeID          *int32                    `bson:"resistanceAttributeID,omitempty" json:"resistanceAttributeID,omitempty" yaml:"resistanceAttributeID,omitempty"`
 }
+type DogmaEffectDescriptionID struct {
+	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
+	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
+	Fr *string `bson:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
+	Ja *string `bson:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
+	Ko *string `bson:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
+	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
+	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
+}
+type DogmaEffectDisplayNameID struct {
+	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
+	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
+	Fr *string `bson:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
+	Ja *string `bson:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
+	Ko *string `bson:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
+	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
+	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
+}
 type DogmaEffectModifierInfo struct {
 	Domain               *string `bson:"domain,omitempty" json:"domain,omitempty" yaml:"domain,omitempty"`
 	Func                 *string `bson:"func,omitempty" json:"func,omitempty" yaml:"func,omitempty"`
@@ -50,13 +59,4 @@ type DogmaEffectModifierInfo struct {
 	GroupID              *int32  `bson:"groupID,omitempty" json:"groupID,omitempty" yaml:"groupID,omitempty"`
 	SkillTypeID          *int32  `bson:"skillTypeID,omitempty" json:"skillTypeID,omitempty" yaml:"skillTypeID,omitempty"`
 	EffectID             *int32  `bson:"effectID,omitempty" json:"effectID,omitempty" yaml:"effectID,omitempty"`
-}
-type DogmaEffectDescriptionID struct {
-	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
-	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
-	Fr *string `bson:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
-	Ja *string `bson:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
-	Ko *string `bson:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
-	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
-	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
 }

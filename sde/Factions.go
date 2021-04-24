@@ -3,15 +3,6 @@
 package sde
 
 type FactionMap map[int32]Faction
-type FactionShortDescriptionID struct {
-	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
-	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
-	Fr *string `bson:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
-	Ja *string `bson:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
-	Ko *string `bson:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
-	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
-	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
-}
 type Faction struct {
 	CorporationID        *int32                     `bson:"corporationID,omitempty" json:"corporationID,omitempty" yaml:"corporationID,omitempty"`
 	DescriptionID        *FactionDescriptionID      `bson:"descriptionID,omitempty" json:"descriptionID,omitempty" yaml:"descriptionID,omitempty"`
@@ -39,6 +30,15 @@ type FactionNameID struct {
 	Es *string `bson:"es,omitempty" json:"es,omitempty" yaml:"es,omitempty"`
 	Fr *string `bson:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
 	It *string `bson:"it,omitempty" json:"it,omitempty" yaml:"it,omitempty"`
+	Ja *string `bson:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
+	Ko *string `bson:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
+	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
+	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
+}
+type FactionShortDescriptionID struct {
+	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
+	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
+	Fr *string `bson:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
 	Ja *string `bson:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
 	Ko *string `bson:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
 	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`

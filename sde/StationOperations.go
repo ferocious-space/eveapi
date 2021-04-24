@@ -3,6 +3,20 @@
 package sde
 
 type StationOperationMap map[int32]StationOperation
+type StationOperation struct {
+	ActivityID          *int32                           `bson:"activityID,omitempty" json:"activityID,omitempty" yaml:"activityID,omitempty"`
+	Border              *float64                         `bson:"border,omitempty" json:"border,omitempty" yaml:"border,omitempty"`
+	Corridor            *float64                         `bson:"corridor,omitempty" json:"corridor,omitempty" yaml:"corridor,omitempty"`
+	DescriptionID       *StationOperationDescriptionID   `bson:"descriptionID,omitempty" json:"descriptionID,omitempty" yaml:"descriptionID,omitempty"`
+	Fringe              *float64                         `bson:"fringe,omitempty" json:"fringe,omitempty" yaml:"fringe,omitempty"`
+	Hub                 *float64                         `bson:"hub,omitempty" json:"hub,omitempty" yaml:"hub,omitempty"`
+	ManufacturingFactor *float64                         `bson:"manufacturingFactor,omitempty" json:"manufacturingFactor,omitempty" yaml:"manufacturingFactor,omitempty"`
+	OperationNameID     *StationOperationOperationNameID `bson:"operationNameID,omitempty" json:"operationNameID,omitempty" yaml:"operationNameID,omitempty"`
+	Ratio               *float64                         `bson:"ratio,omitempty" json:"ratio,omitempty" yaml:"ratio,omitempty"`
+	ResearchFactor      *float64                         `bson:"researchFactor,omitempty" json:"researchFactor,omitempty" yaml:"researchFactor,omitempty"`
+	Services            []int32                          `bson:"services,omitempty" json:"services,omitempty" yaml:"services,omitempty"`
+	StationTypes        map[int32]int32                  `bson:"stationTypes,omitempty" json:"stationTypes,omitempty" yaml:"stationTypes,omitempty"`
+}
 type StationOperationDescriptionID struct {
 	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
 	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
@@ -20,18 +34,4 @@ type StationOperationOperationNameID struct {
 	Ko *string `bson:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
 	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
 	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
-}
-type StationOperation struct {
-	ActivityID          *int32                           `bson:"activityID,omitempty" json:"activityID,omitempty" yaml:"activityID,omitempty"`
-	Border              *float64                         `bson:"border,omitempty" json:"border,omitempty" yaml:"border,omitempty"`
-	Corridor            *float64                         `bson:"corridor,omitempty" json:"corridor,omitempty" yaml:"corridor,omitempty"`
-	DescriptionID       *StationOperationDescriptionID   `bson:"descriptionID,omitempty" json:"descriptionID,omitempty" yaml:"descriptionID,omitempty"`
-	Fringe              *float64                         `bson:"fringe,omitempty" json:"fringe,omitempty" yaml:"fringe,omitempty"`
-	Hub                 *float64                         `bson:"hub,omitempty" json:"hub,omitempty" yaml:"hub,omitempty"`
-	ManufacturingFactor *float64                         `bson:"manufacturingFactor,omitempty" json:"manufacturingFactor,omitempty" yaml:"manufacturingFactor,omitempty"`
-	OperationNameID     *StationOperationOperationNameID `bson:"operationNameID,omitempty" json:"operationNameID,omitempty" yaml:"operationNameID,omitempty"`
-	Ratio               *float64                         `bson:"ratio,omitempty" json:"ratio,omitempty" yaml:"ratio,omitempty"`
-	ResearchFactor      *float64                         `bson:"researchFactor,omitempty" json:"researchFactor,omitempty" yaml:"researchFactor,omitempty"`
-	Services            []int32                          `bson:"services,omitempty" json:"services,omitempty" yaml:"services,omitempty"`
-	StationTypes        map[int32]int32                  `bson:"stationTypes,omitempty" json:"stationTypes,omitempty" yaml:"stationTypes,omitempty"`
 }
