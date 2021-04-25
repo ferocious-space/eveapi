@@ -4,7 +4,7 @@ package sde
 
 type CorporationActivityMap map[int32]CorporationActivity
 type CorporationActivity struct {
-	NameID *CorporationActivityNameID `bson:"nameID,omitempty" json:"nameID,omitempty" yaml:"nameID,omitempty"`
+	NameID *CorporationActivityNameID `bson:"nameID,omitempty" json:"nameID,omitempty" storm:"index" yaml:"nameID,omitempty"`
 }
 type CorporationActivityNameID struct {
 	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`

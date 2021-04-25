@@ -4,10 +4,10 @@ package sde
 
 type MetaGroupMap map[int32]MetaGroup
 type MetaGroup struct {
-	NameID        *MetaGroupNameID        `bson:"nameID,omitempty" json:"nameID,omitempty" yaml:"nameID,omitempty"`
-	IconID        *int32                  `bson:"iconID,omitempty" json:"iconID,omitempty" yaml:"iconID,omitempty"`
+	NameID        *MetaGroupNameID        `bson:"nameID,omitempty" json:"nameID,omitempty" storm:"index" yaml:"nameID,omitempty"`
+	IconID        *int32                  `bson:"iconID,omitempty" json:"iconID,omitempty" storm:"index" yaml:"iconID,omitempty"`
 	IconSuffix    *string                 `bson:"iconSuffix,omitempty" json:"iconSuffix,omitempty" yaml:"iconSuffix,omitempty"`
-	DescriptionID *MetaGroupDescriptionID `bson:"descriptionID,omitempty" json:"descriptionID,omitempty" yaml:"descriptionID,omitempty"`
+	DescriptionID *MetaGroupDescriptionID `bson:"descriptionID,omitempty" json:"descriptionID,omitempty" storm:"index" yaml:"descriptionID,omitempty"`
 }
 type MetaGroupDescriptionID struct {
 	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`

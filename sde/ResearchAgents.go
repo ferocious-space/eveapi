@@ -7,5 +7,5 @@ type ResearchAgent struct {
 	Skills []ResearchAgentSkills `bson:"skills,omitempty" json:"skills,omitempty" yaml:"skills,omitempty"`
 }
 type ResearchAgentSkills struct {
-	TypeID *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" yaml:"typeID,omitempty"`
+	TypeID *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" storm:"index" yaml:"typeID,omitempty"`
 }

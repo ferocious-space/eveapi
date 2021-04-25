@@ -4,6 +4,6 @@ package sde
 
 type InvNameList []InvName
 type InvName struct {
-	ItemID   *int64  `bson:"itemID,omitempty" json:"itemID,omitempty" yaml:"itemID,omitempty"`
+	ItemID   *int64  `bson:"itemID,omitempty" json:"itemID,omitempty" storm:"index" yaml:"itemID,omitempty"`
 	ItemName *string `bson:"itemName,omitempty" json:"itemName,omitempty" yaml:"itemName,omitempty"`
 }

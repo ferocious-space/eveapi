@@ -5,8 +5,8 @@ package sde
 type CharacterAttributeMap map[int32]CharacterAttribute
 type CharacterAttribute struct {
 	Description      *string                   `bson:"description,omitempty" json:"description,omitempty" yaml:"description,omitempty"`
-	IconID           *int32                    `bson:"iconID,omitempty" json:"iconID,omitempty" yaml:"iconID,omitempty"`
-	NameID           *CharacterAttributeNameID `bson:"nameID,omitempty" json:"nameID,omitempty" yaml:"nameID,omitempty"`
+	IconID           *int32                    `bson:"iconID,omitempty" json:"iconID,omitempty" storm:"index" yaml:"iconID,omitempty"`
+	NameID           *CharacterAttributeNameID `bson:"nameID,omitempty" json:"nameID,omitempty" storm:"index" yaml:"nameID,omitempty"`
 	Notes            *string                   `bson:"notes,omitempty" json:"notes,omitempty" yaml:"notes,omitempty"`
 	ShortDescription *string                   `bson:"shortDescription,omitempty" json:"shortDescription,omitempty" yaml:"shortDescription,omitempty"`
 }

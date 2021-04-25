@@ -4,7 +4,7 @@ package sde
 
 type SkinMaterialMap map[int32]SkinMaterial
 type SkinMaterial struct {
-	DisplayNameID  *int32 `bson:"displayNameID,omitempty" json:"displayNameID,omitempty" yaml:"displayNameID,omitempty"`
-	MaterialSetID  *int32 `bson:"materialSetID,omitempty" json:"materialSetID,omitempty" yaml:"materialSetID,omitempty"`
-	SkinMaterialID *int32 `bson:"skinMaterialID,omitempty" json:"skinMaterialID,omitempty" yaml:"skinMaterialID,omitempty"`
+	DisplayNameID  *int32 `bson:"displayNameID,omitempty" json:"displayNameID,omitempty" storm:"index" yaml:"displayNameID,omitempty"`
+	MaterialSetID  *int32 `bson:"materialSetID,omitempty" json:"materialSetID,omitempty" storm:"index" yaml:"materialSetID,omitempty"`
+	SkinMaterialID *int32 `bson:"skinMaterialID,omitempty" json:"skinMaterialID,omitempty" storm:"index" yaml:"skinMaterialID,omitempty"`
 }

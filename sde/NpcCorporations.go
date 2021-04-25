@@ -4,38 +4,38 @@ package sde
 
 type NpcCorporationMap map[int32]NpcCorporation
 type NpcCorporation struct {
-	CeoID                      *int32                            `bson:"ceoID,omitempty" json:"ceoID,omitempty" yaml:"ceoID,omitempty"`
+	CeoID                      *int32                            `bson:"ceoID,omitempty" json:"ceoID,omitempty" storm:"index" yaml:"ceoID,omitempty"`
 	Deleted                    *bool                             `bson:"deleted,omitempty" json:"deleted,omitempty" yaml:"deleted,omitempty"`
-	DescriptionID              *NpcCorporationDescriptionID      `bson:"descriptionID,omitempty" json:"descriptionID,omitempty" yaml:"descriptionID,omitempty"`
+	DescriptionID              *NpcCorporationDescriptionID      `bson:"descriptionID,omitempty" json:"descriptionID,omitempty" storm:"index" yaml:"descriptionID,omitempty"`
 	Extent                     *string                           `bson:"extent,omitempty" json:"extent,omitempty" yaml:"extent,omitempty"`
 	HasPlayerPersonnelManager  *bool                             `bson:"hasPlayerPersonnelManager,omitempty" json:"hasPlayerPersonnelManager,omitempty" yaml:"hasPlayerPersonnelManager,omitempty"`
 	InitialPrice               *int32                            `bson:"initialPrice,omitempty" json:"initialPrice,omitempty" yaml:"initialPrice,omitempty"`
 	MemberLimit                *int32                            `bson:"memberLimit,omitempty" json:"memberLimit,omitempty" yaml:"memberLimit,omitempty"`
 	MinSecurity                *float64                          `bson:"minSecurity,omitempty" json:"minSecurity,omitempty" yaml:"minSecurity,omitempty"`
 	MinimumJoinStanding        *int32                            `bson:"minimumJoinStanding,omitempty" json:"minimumJoinStanding,omitempty" yaml:"minimumJoinStanding,omitempty"`
-	NameID                     *NpcCorporationNameID             `bson:"nameID,omitempty" json:"nameID,omitempty" yaml:"nameID,omitempty"`
+	NameID                     *NpcCorporationNameID             `bson:"nameID,omitempty" json:"nameID,omitempty" storm:"index" yaml:"nameID,omitempty"`
 	PublicShares               *int32                            `bson:"publicShares,omitempty" json:"publicShares,omitempty" yaml:"publicShares,omitempty"`
 	SendCharTerminationMessage *bool                             `bson:"sendCharTerminationMessage,omitempty" json:"sendCharTerminationMessage,omitempty" yaml:"sendCharTerminationMessage,omitempty"`
 	Shares                     *int32                            `bson:"shares,omitempty" json:"shares,omitempty" yaml:"shares,omitempty"`
 	Size                       *string                           `bson:"size,omitempty" json:"size,omitempty" yaml:"size,omitempty"`
-	StationID                  *int32                            `bson:"stationID,omitempty" json:"stationID,omitempty" yaml:"stationID,omitempty"`
+	StationID                  *int32                            `bson:"stationID,omitempty" json:"stationID,omitempty" storm:"index" yaml:"stationID,omitempty"`
 	TaxRate                    *float64                          `bson:"taxRate,omitempty" json:"taxRate,omitempty" yaml:"taxRate,omitempty"`
 	TickerName                 *string                           `bson:"tickerName,omitempty" json:"tickerName,omitempty" yaml:"tickerName,omitempty"`
 	UniqueName                 *bool                             `bson:"uniqueName,omitempty" json:"uniqueName,omitempty" yaml:"uniqueName,omitempty"`
 	AllowedMemberRaces         []int32                           `bson:"allowedMemberRaces,omitempty" json:"allowedMemberRaces,omitempty" yaml:"allowedMemberRaces,omitempty"`
 	CorporationTrades          map[int32]float64                 `bson:"corporationTrades,omitempty" json:"corporationTrades,omitempty" yaml:"corporationTrades,omitempty"`
 	Divisions                  map[int32]NpcCorporationDivisions `bson:"divisions,omitempty" json:"divisions,omitempty" yaml:"divisions,omitempty"`
-	EnemyID                    *int32                            `bson:"enemyID,omitempty" json:"enemyID,omitempty" yaml:"enemyID,omitempty"`
-	FactionID                  *int32                            `bson:"factionID,omitempty" json:"factionID,omitempty" yaml:"factionID,omitempty"`
-	FriendID                   *int32                            `bson:"friendID,omitempty" json:"friendID,omitempty" yaml:"friendID,omitempty"`
-	IconID                     *int32                            `bson:"iconID,omitempty" json:"iconID,omitempty" yaml:"iconID,omitempty"`
+	EnemyID                    *int32                            `bson:"enemyID,omitempty" json:"enemyID,omitempty" storm:"index" yaml:"enemyID,omitempty"`
+	FactionID                  *int32                            `bson:"factionID,omitempty" json:"factionID,omitempty" storm:"index" yaml:"factionID,omitempty"`
+	FriendID                   *int32                            `bson:"friendID,omitempty" json:"friendID,omitempty" storm:"index" yaml:"friendID,omitempty"`
+	IconID                     *int32                            `bson:"iconID,omitempty" json:"iconID,omitempty" storm:"index" yaml:"iconID,omitempty"`
 	Investors                  map[int32]int32                   `bson:"investors,omitempty" json:"investors,omitempty" yaml:"investors,omitempty"`
 	LpOfferTables              []int32                           `bson:"lpOfferTables,omitempty" json:"lpOfferTables,omitempty" yaml:"lpOfferTables,omitempty"`
-	MainActivityID             *int32                            `bson:"mainActivityID,omitempty" json:"mainActivityID,omitempty" yaml:"mainActivityID,omitempty"`
-	RaceID                     *int32                            `bson:"raceID,omitempty" json:"raceID,omitempty" yaml:"raceID,omitempty"`
+	MainActivityID             *int32                            `bson:"mainActivityID,omitempty" json:"mainActivityID,omitempty" storm:"index" yaml:"mainActivityID,omitempty"`
+	RaceID                     *int32                            `bson:"raceID,omitempty" json:"raceID,omitempty" storm:"index" yaml:"raceID,omitempty"`
 	SizeFactor                 *float64                          `bson:"sizeFactor,omitempty" json:"sizeFactor,omitempty" yaml:"sizeFactor,omitempty"`
-	SolarSystemID              *int32                            `bson:"solarSystemID,omitempty" json:"solarSystemID,omitempty" yaml:"solarSystemID,omitempty"`
-	SecondaryActivityID        *int32                            `bson:"secondaryActivityID,omitempty" json:"secondaryActivityID,omitempty" yaml:"secondaryActivityID,omitempty"`
+	SolarSystemID              *int32                            `bson:"solarSystemID,omitempty" json:"solarSystemID,omitempty" storm:"index" yaml:"solarSystemID,omitempty"`
+	SecondaryActivityID        *int32                            `bson:"secondaryActivityID,omitempty" json:"secondaryActivityID,omitempty" storm:"index" yaml:"secondaryActivityID,omitempty"`
 	Url                        *string                           `bson:"url,omitempty" json:"url,omitempty" yaml:"url,omitempty"`
 	ExchangeRates              map[int32]float64                 `bson:"exchangeRates,omitempty" json:"exchangeRates,omitempty" yaml:"exchangeRates,omitempty"`
 }
@@ -52,7 +52,7 @@ type NpcCorporationDescriptionID struct {
 }
 type NpcCorporationDivisions struct {
 	DivisionNumber *int32 `bson:"divisionNumber,omitempty" json:"divisionNumber,omitempty" yaml:"divisionNumber,omitempty"`
-	LeaderID       *int32 `bson:"leaderID,omitempty" json:"leaderID,omitempty" yaml:"leaderID,omitempty"`
+	LeaderID       *int32 `bson:"leaderID,omitempty" json:"leaderID,omitempty" storm:"index" yaml:"leaderID,omitempty"`
 	Size           *int32 `bson:"size,omitempty" json:"size,omitempty" yaml:"size,omitempty"`
 }
 type NpcCorporationNameID struct {

@@ -5,7 +5,7 @@ package sde
 type SkinLicenseMap map[int32]SkinLicense
 type SkinLicense struct {
 	Duration      *int32 `bson:"duration,omitempty" json:"duration,omitempty" yaml:"duration,omitempty"`
-	LicenseTypeID *int32 `bson:"licenseTypeID,omitempty" json:"licenseTypeID,omitempty" yaml:"licenseTypeID,omitempty"`
-	SkinID        *int32 `bson:"skinID,omitempty" json:"skinID,omitempty" yaml:"skinID,omitempty"`
+	LicenseTypeID *int32 `bson:"licenseTypeID,omitempty" json:"licenseTypeID,omitempty" storm:"index" yaml:"licenseTypeID,omitempty"`
+	SkinID        *int32 `bson:"skinID,omitempty" json:"skinID,omitempty" storm:"index" yaml:"skinID,omitempty"`
 	IsSingleUse   *bool  `bson:"isSingleUse,omitempty" json:"isSingleUse,omitempty" yaml:"isSingleUse,omitempty"`
 }

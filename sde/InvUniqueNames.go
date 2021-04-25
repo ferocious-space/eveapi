@@ -4,7 +4,7 @@ package sde
 
 type InvUniqueNameList []InvUniqueName
 type InvUniqueName struct {
-	GroupID  *int32  `bson:"groupID,omitempty" json:"groupID,omitempty" yaml:"groupID,omitempty"`
-	ItemID   *int64  `bson:"itemID,omitempty" json:"itemID,omitempty" yaml:"itemID,omitempty"`
+	GroupID  *int32  `bson:"groupID,omitempty" json:"groupID,omitempty" storm:"index" yaml:"groupID,omitempty"`
+	ItemID   *int64  `bson:"itemID,omitempty" json:"itemID,omitempty" storm:"index" yaml:"itemID,omitempty"`
 	ItemName *string `bson:"itemName,omitempty" json:"itemName,omitempty" yaml:"itemName,omitempty"`
 }

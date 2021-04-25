@@ -5,7 +5,7 @@ package sde
 type PlanetSchematicMap map[int32]PlanetSchematic
 type PlanetSchematic struct {
 	CycleTime *int64                         `bson:"cycleTime,omitempty" json:"cycleTime,omitempty" yaml:"cycleTime,omitempty"`
-	NameID    *PlanetSchematicNameID         `bson:"nameID,omitempty" json:"nameID,omitempty" yaml:"nameID,omitempty"`
+	NameID    *PlanetSchematicNameID         `bson:"nameID,omitempty" json:"nameID,omitempty" storm:"index" yaml:"nameID,omitempty"`
 	Pins      []int32                        `bson:"pins,omitempty" json:"pins,omitempty" yaml:"pins,omitempty"`
 	Types     map[int32]PlanetSchematicTypes `bson:"types,omitempty" json:"types,omitempty" yaml:"types,omitempty"`
 }

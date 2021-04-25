@@ -6,8 +6,8 @@ type SkinMap map[int32]Skin
 type Skin struct {
 	AllowCCPDevs       *bool   `bson:"allowCCPDevs,omitempty" json:"allowCCPDevs,omitempty" yaml:"allowCCPDevs,omitempty"`
 	InternalName       *string `bson:"internalName,omitempty" json:"internalName,omitempty" yaml:"internalName,omitempty"`
-	SkinID             *int32  `bson:"skinID,omitempty" json:"skinID,omitempty" yaml:"skinID,omitempty"`
-	SkinMaterialID     *int32  `bson:"skinMaterialID,omitempty" json:"skinMaterialID,omitempty" yaml:"skinMaterialID,omitempty"`
+	SkinID             *int32  `bson:"skinID,omitempty" json:"skinID,omitempty" storm:"index" yaml:"skinID,omitempty"`
+	SkinMaterialID     *int32  `bson:"skinMaterialID,omitempty" json:"skinMaterialID,omitempty" storm:"index" yaml:"skinMaterialID,omitempty"`
 	Types              []int32 `bson:"types,omitempty" json:"types,omitempty" yaml:"types,omitempty"`
 	VisibleSerenity    *bool   `bson:"visibleSerenity,omitempty" json:"visibleSerenity,omitempty" yaml:"visibleSerenity,omitempty"`
 	VisibleTranquility *bool   `bson:"visibleTranquility,omitempty" json:"visibleTranquility,omitempty" yaml:"visibleTranquility,omitempty"`

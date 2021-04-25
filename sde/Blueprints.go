@@ -5,7 +5,7 @@ package sde
 type BlueprintMap map[int32]Blueprint
 type Blueprint struct {
 	Activities         *BlueprintActivities `bson:"activities,omitempty" json:"activities,omitempty" yaml:"activities,omitempty"`
-	BlueprintTypeID    *int32               `bson:"blueprintTypeID,omitempty" json:"blueprintTypeID,omitempty" yaml:"blueprintTypeID,omitempty"`
+	BlueprintTypeID    *int32               `bson:"blueprintTypeID,omitempty" json:"blueprintTypeID,omitempty" storm:"index" yaml:"blueprintTypeID,omitempty"`
 	MaxProductionLimit *int32               `bson:"maxProductionLimit,omitempty" json:"maxProductionLimit,omitempty" yaml:"maxProductionLimit,omitempty"`
 }
 type BlueprintActivities struct {
@@ -20,16 +20,15 @@ type BlueprintActivitiesCopying struct {
 	Time      *int64                                `bson:"time,omitempty" json:"time,omitempty" yaml:"time,omitempty"`
 	Materials []BlueprintActivitiesCopyingMaterials `bson:"materials,omitempty" json:"materials,omitempty" yaml:"materials,omitempty"`
 	Skills    []BlueprintActivitiesCopyingSkills    `bson:"skills,omitempty" json:"skills,omitempty" yaml:"skills,omitempty"`
-	Products  []BlueprintActivitiesCopyingProducts  `bson:"products,omitempty" json:"products,omitempty" yaml:"products,omitempty"`
+	Products  []interface{}                         `bson:"products,omitempty" json:"products,omitempty" yaml:"products,omitempty"`
 }
 type BlueprintActivitiesCopyingMaterials struct {
 	Quantity *int32 `bson:"quantity,omitempty" json:"quantity,omitempty" yaml:"quantity,omitempty"`
-	TypeID   *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" yaml:"typeID,omitempty"`
+	TypeID   *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" storm:"index" yaml:"typeID,omitempty"`
 }
-type BlueprintActivitiesCopyingProducts struct{}
 type BlueprintActivitiesCopyingSkills struct {
 	Level  *int32 `bson:"level,omitempty" json:"level,omitempty" yaml:"level,omitempty"`
-	TypeID *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" yaml:"typeID,omitempty"`
+	TypeID *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" storm:"index" yaml:"typeID,omitempty"`
 }
 type BlueprintActivitiesInvention struct {
 	Materials []BlueprintActivitiesInventionMaterials `bson:"materials,omitempty" json:"materials,omitempty" yaml:"materials,omitempty"`
@@ -39,16 +38,16 @@ type BlueprintActivitiesInvention struct {
 }
 type BlueprintActivitiesInventionMaterials struct {
 	Quantity *int32 `bson:"quantity,omitempty" json:"quantity,omitempty" yaml:"quantity,omitempty"`
-	TypeID   *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" yaml:"typeID,omitempty"`
+	TypeID   *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" storm:"index" yaml:"typeID,omitempty"`
 }
 type BlueprintActivitiesInventionProducts struct {
 	Probability *float64 `bson:"probability,omitempty" json:"probability,omitempty" yaml:"probability,omitempty"`
 	Quantity    *int32   `bson:"quantity,omitempty" json:"quantity,omitempty" yaml:"quantity,omitempty"`
-	TypeID      *int32   `bson:"typeID,omitempty" json:"typeID,omitempty" yaml:"typeID,omitempty"`
+	TypeID      *int32   `bson:"typeID,omitempty" json:"typeID,omitempty" storm:"index" yaml:"typeID,omitempty"`
 }
 type BlueprintActivitiesInventionSkills struct {
 	Level  *int32 `bson:"level,omitempty" json:"level,omitempty" yaml:"level,omitempty"`
-	TypeID *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" yaml:"typeID,omitempty"`
+	TypeID *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" storm:"index" yaml:"typeID,omitempty"`
 }
 type BlueprintActivitiesManufacturing struct {
 	Materials []BlueprintActivitiesManufacturingMaterials `bson:"materials,omitempty" json:"materials,omitempty" yaml:"materials,omitempty"`
@@ -58,15 +57,15 @@ type BlueprintActivitiesManufacturing struct {
 }
 type BlueprintActivitiesManufacturingMaterials struct {
 	Quantity *int32 `bson:"quantity,omitempty" json:"quantity,omitempty" yaml:"quantity,omitempty"`
-	TypeID   *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" yaml:"typeID,omitempty"`
+	TypeID   *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" storm:"index" yaml:"typeID,omitempty"`
 }
 type BlueprintActivitiesManufacturingProducts struct {
 	Quantity *int32 `bson:"quantity,omitempty" json:"quantity,omitempty" yaml:"quantity,omitempty"`
-	TypeID   *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" yaml:"typeID,omitempty"`
+	TypeID   *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" storm:"index" yaml:"typeID,omitempty"`
 }
 type BlueprintActivitiesManufacturingSkills struct {
 	Level  *int32 `bson:"level,omitempty" json:"level,omitempty" yaml:"level,omitempty"`
-	TypeID *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" yaml:"typeID,omitempty"`
+	TypeID *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" storm:"index" yaml:"typeID,omitempty"`
 }
 type BlueprintActivitiesReaction struct {
 	Materials []BlueprintActivitiesReactionMaterials `bson:"materials,omitempty" json:"materials,omitempty" yaml:"materials,omitempty"`
@@ -76,43 +75,41 @@ type BlueprintActivitiesReaction struct {
 }
 type BlueprintActivitiesReactionMaterials struct {
 	Quantity *int32 `bson:"quantity,omitempty" json:"quantity,omitempty" yaml:"quantity,omitempty"`
-	TypeID   *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" yaml:"typeID,omitempty"`
+	TypeID   *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" storm:"index" yaml:"typeID,omitempty"`
 }
 type BlueprintActivitiesReactionProducts struct {
 	Quantity *int32 `bson:"quantity,omitempty" json:"quantity,omitempty" yaml:"quantity,omitempty"`
-	TypeID   *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" yaml:"typeID,omitempty"`
+	TypeID   *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" storm:"index" yaml:"typeID,omitempty"`
 }
 type BlueprintActivitiesReactionSkills struct {
 	Level  *int32 `bson:"level,omitempty" json:"level,omitempty" yaml:"level,omitempty"`
-	TypeID *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" yaml:"typeID,omitempty"`
+	TypeID *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" storm:"index" yaml:"typeID,omitempty"`
 }
 type BlueprintActivitiesResearchMaterial struct {
 	Time      *int64                                         `bson:"time,omitempty" json:"time,omitempty" yaml:"time,omitempty"`
 	Materials []BlueprintActivitiesResearchMaterialMaterials `bson:"materials,omitempty" json:"materials,omitempty" yaml:"materials,omitempty"`
 	Skills    []BlueprintActivitiesResearchMaterialSkills    `bson:"skills,omitempty" json:"skills,omitempty" yaml:"skills,omitempty"`
-	Products  []BlueprintActivitiesResearchMaterialProducts  `bson:"products,omitempty" json:"products,omitempty" yaml:"products,omitempty"`
+	Products  []interface{}                                  `bson:"products,omitempty" json:"products,omitempty" yaml:"products,omitempty"`
 }
 type BlueprintActivitiesResearchMaterialMaterials struct {
 	Quantity *int32 `bson:"quantity,omitempty" json:"quantity,omitempty" yaml:"quantity,omitempty"`
-	TypeID   *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" yaml:"typeID,omitempty"`
+	TypeID   *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" storm:"index" yaml:"typeID,omitempty"`
 }
-type BlueprintActivitiesResearchMaterialProducts struct{}
 type BlueprintActivitiesResearchMaterialSkills struct {
 	Level  *int32 `bson:"level,omitempty" json:"level,omitempty" yaml:"level,omitempty"`
-	TypeID *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" yaml:"typeID,omitempty"`
+	TypeID *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" storm:"index" yaml:"typeID,omitempty"`
 }
 type BlueprintActivitiesResearchTime struct {
 	Time      *int64                                     `bson:"time,omitempty" json:"time,omitempty" yaml:"time,omitempty"`
 	Materials []BlueprintActivitiesResearchTimeMaterials `bson:"materials,omitempty" json:"materials,omitempty" yaml:"materials,omitempty"`
 	Skills    []BlueprintActivitiesResearchTimeSkills    `bson:"skills,omitempty" json:"skills,omitempty" yaml:"skills,omitempty"`
-	Products  []BlueprintActivitiesResearchTimeProducts  `bson:"products,omitempty" json:"products,omitempty" yaml:"products,omitempty"`
+	Products  []interface{}                              `bson:"products,omitempty" json:"products,omitempty" yaml:"products,omitempty"`
 }
 type BlueprintActivitiesResearchTimeMaterials struct {
 	Quantity *int32 `bson:"quantity,omitempty" json:"quantity,omitempty" yaml:"quantity,omitempty"`
-	TypeID   *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" yaml:"typeID,omitempty"`
+	TypeID   *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" storm:"index" yaml:"typeID,omitempty"`
 }
-type BlueprintActivitiesResearchTimeProducts struct{}
 type BlueprintActivitiesResearchTimeSkills struct {
 	Level  *int32 `bson:"level,omitempty" json:"level,omitempty" yaml:"level,omitempty"`
-	TypeID *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" yaml:"typeID,omitempty"`
+	TypeID *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" storm:"index" yaml:"typeID,omitempty"`
 }

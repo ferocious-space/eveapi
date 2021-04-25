@@ -6,12 +6,12 @@ type GroupIDMap map[int32]GroupID
 type GroupID struct {
 	Anchorable           *bool        `bson:"anchorable,omitempty" json:"anchorable,omitempty" yaml:"anchorable,omitempty"`
 	Anchored             *bool        `bson:"anchored,omitempty" json:"anchored,omitempty" yaml:"anchored,omitempty"`
-	CategoryID           *int32       `bson:"categoryID,omitempty" json:"categoryID,omitempty" yaml:"categoryID,omitempty"`
+	CategoryID           *int32       `bson:"categoryID,omitempty" json:"categoryID,omitempty" storm:"index" yaml:"categoryID,omitempty"`
 	FittableNonSingleton *bool        `bson:"fittableNonSingleton,omitempty" json:"fittableNonSingleton,omitempty" yaml:"fittableNonSingleton,omitempty"`
 	Name                 *GroupIDName `bson:"name,omitempty" json:"name,omitempty" yaml:"name,omitempty"`
 	Published            *bool        `bson:"published,omitempty" json:"published,omitempty" yaml:"published,omitempty"`
 	UseBasePrice         *bool        `bson:"useBasePrice,omitempty" json:"useBasePrice,omitempty" yaml:"useBasePrice,omitempty"`
-	IconID               *int32       `bson:"iconID,omitempty" json:"iconID,omitempty" yaml:"iconID,omitempty"`
+	IconID               *int32       `bson:"iconID,omitempty" json:"iconID,omitempty" storm:"index" yaml:"iconID,omitempty"`
 }
 type GroupIDName struct {
 	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`

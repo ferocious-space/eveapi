@@ -5,9 +5,9 @@ package sde
 type NpcCorporationDivisionMap map[int32]NpcCorporationDivision
 type NpcCorporationDivision struct {
 	Description      *string                                 `bson:"description,omitempty" json:"description,omitempty" yaml:"description,omitempty"`
-	LeaderTypeNameID *NpcCorporationDivisionLeaderTypeNameID `bson:"leaderTypeNameID,omitempty" json:"leaderTypeNameID,omitempty" yaml:"leaderTypeNameID,omitempty"`
-	NameID           *NpcCorporationDivisionNameID           `bson:"nameID,omitempty" json:"nameID,omitempty" yaml:"nameID,omitempty"`
-	DescriptionID    *NpcCorporationDivisionDescriptionID    `bson:"descriptionID,omitempty" json:"descriptionID,omitempty" yaml:"descriptionID,omitempty"`
+	LeaderTypeNameID *NpcCorporationDivisionLeaderTypeNameID `bson:"leaderTypeNameID,omitempty" json:"leaderTypeNameID,omitempty" storm:"index" yaml:"leaderTypeNameID,omitempty"`
+	NameID           *NpcCorporationDivisionNameID           `bson:"nameID,omitempty" json:"nameID,omitempty" storm:"index" yaml:"nameID,omitempty"`
+	DescriptionID    *NpcCorporationDivisionDescriptionID    `bson:"descriptionID,omitempty" json:"descriptionID,omitempty" storm:"index" yaml:"descriptionID,omitempty"`
 }
 type NpcCorporationDivisionDescriptionID struct {
 	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`

@@ -4,7 +4,7 @@ package sde
 
 type InvPositionList []InvPosition
 type InvPosition struct {
-	ItemID *int64   `bson:"itemID,omitempty" json:"itemID,omitempty" yaml:"itemID,omitempty"`
+	ItemID *int64   `bson:"itemID,omitempty" json:"itemID,omitempty" storm:"index" yaml:"itemID,omitempty"`
 	Pitch  *float64 `bson:"pitch,omitempty" json:"pitch,omitempty" yaml:"pitch,omitempty"`
 	Roll   *float64 `bson:"roll,omitempty" json:"roll,omitempty" yaml:"roll,omitempty"`
 	X      *float64 `bson:"x,omitempty" json:"x,omitempty" yaml:"x,omitempty"`

@@ -4,8 +4,8 @@ package sde
 
 type AgentsInSpaceMap map[int32]AgentsInSpace
 type AgentsInSpace struct {
-	DungeonID     *int32 `bson:"dungeonID,omitempty" json:"dungeonID,omitempty" yaml:"dungeonID,omitempty"`
-	SolarSystemID *int32 `bson:"solarSystemID,omitempty" json:"solarSystemID,omitempty" yaml:"solarSystemID,omitempty"`
-	SpawnPointID  *int32 `bson:"spawnPointID,omitempty" json:"spawnPointID,omitempty" yaml:"spawnPointID,omitempty"`
-	TypeID        *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" yaml:"typeID,omitempty"`
+	DungeonID     *int32 `bson:"dungeonID,omitempty" json:"dungeonID,omitempty" storm:"index" yaml:"dungeonID,omitempty"`
+	SolarSystemID *int32 `bson:"solarSystemID,omitempty" json:"solarSystemID,omitempty" storm:"index" yaml:"solarSystemID,omitempty"`
+	SpawnPointID  *int32 `bson:"spawnPointID,omitempty" json:"spawnPointID,omitempty" storm:"index" yaml:"spawnPointID,omitempty"`
+	TypeID        *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" storm:"index" yaml:"typeID,omitempty"`
 }

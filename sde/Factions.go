@@ -4,15 +4,15 @@ package sde
 
 type FactionMap map[int32]Faction
 type Faction struct {
-	CorporationID        *int32                     `bson:"corporationID,omitempty" json:"corporationID,omitempty" yaml:"corporationID,omitempty"`
-	DescriptionID        *FactionDescriptionID      `bson:"descriptionID,omitempty" json:"descriptionID,omitempty" yaml:"descriptionID,omitempty"`
-	IconID               *int32                     `bson:"iconID,omitempty" json:"iconID,omitempty" yaml:"iconID,omitempty"`
+	CorporationID        *int32                     `bson:"corporationID,omitempty" json:"corporationID,omitempty" storm:"index" yaml:"corporationID,omitempty"`
+	DescriptionID        *FactionDescriptionID      `bson:"descriptionID,omitempty" json:"descriptionID,omitempty" storm:"index" yaml:"descriptionID,omitempty"`
+	IconID               *int32                     `bson:"iconID,omitempty" json:"iconID,omitempty" storm:"index" yaml:"iconID,omitempty"`
 	MemberRaces          []int32                    `bson:"memberRaces,omitempty" json:"memberRaces,omitempty" yaml:"memberRaces,omitempty"`
-	MilitiaCorporationID *int32                     `bson:"militiaCorporationID,omitempty" json:"militiaCorporationID,omitempty" yaml:"militiaCorporationID,omitempty"`
-	NameID               *FactionNameID             `bson:"nameID,omitempty" json:"nameID,omitempty" yaml:"nameID,omitempty"`
-	ShortDescriptionID   *FactionShortDescriptionID `bson:"shortDescriptionID,omitempty" json:"shortDescriptionID,omitempty" yaml:"shortDescriptionID,omitempty"`
+	MilitiaCorporationID *int32                     `bson:"militiaCorporationID,omitempty" json:"militiaCorporationID,omitempty" storm:"index" yaml:"militiaCorporationID,omitempty"`
+	NameID               *FactionNameID             `bson:"nameID,omitempty" json:"nameID,omitempty" storm:"index" yaml:"nameID,omitempty"`
+	ShortDescriptionID   *FactionShortDescriptionID `bson:"shortDescriptionID,omitempty" json:"shortDescriptionID,omitempty" storm:"index" yaml:"shortDescriptionID,omitempty"`
 	SizeFactor           *float64                   `bson:"sizeFactor,omitempty" json:"sizeFactor,omitempty" yaml:"sizeFactor,omitempty"`
-	SolarSystemID        *int32                     `bson:"solarSystemID,omitempty" json:"solarSystemID,omitempty" yaml:"solarSystemID,omitempty"`
+	SolarSystemID        *int32                     `bson:"solarSystemID,omitempty" json:"solarSystemID,omitempty" storm:"index" yaml:"solarSystemID,omitempty"`
 	UniqueName           *bool                      `bson:"uniqueName,omitempty" json:"uniqueName,omitempty" yaml:"uniqueName,omitempty"`
 }
 type FactionDescriptionID struct {

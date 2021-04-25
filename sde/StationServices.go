@@ -4,8 +4,8 @@ package sde
 
 type StationServiceMap map[int32]StationService
 type StationService struct {
-	ServiceNameID *StationServiceServiceNameID `bson:"serviceNameID,omitempty" json:"serviceNameID,omitempty" yaml:"serviceNameID,omitempty"`
-	DescriptionID *StationServiceDescriptionID `bson:"descriptionID,omitempty" json:"descriptionID,omitempty" yaml:"descriptionID,omitempty"`
+	ServiceNameID *StationServiceServiceNameID `bson:"serviceNameID,omitempty" json:"serviceNameID,omitempty" storm:"index" yaml:"serviceNameID,omitempty"`
+	DescriptionID *StationServiceDescriptionID `bson:"descriptionID,omitempty" json:"descriptionID,omitempty" storm:"index" yaml:"descriptionID,omitempty"`
 }
 type StationServiceDescriptionID struct {
 	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`

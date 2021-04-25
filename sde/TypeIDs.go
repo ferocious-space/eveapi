@@ -4,7 +4,7 @@ package sde
 
 type TypeIDMap map[int32]TypeID
 type TypeID struct {
-	GroupID               *int32             `bson:"groupID,omitempty" json:"groupID,omitempty" yaml:"groupID,omitempty"`
+	GroupID               *int32             `bson:"groupID,omitempty" json:"groupID,omitempty" storm:"index" yaml:"groupID,omitempty"`
 	Mass                  *float64           `bson:"mass,omitempty" json:"mass,omitempty" yaml:"mass,omitempty"`
 	Name                  *TypeIDName        `bson:"name,omitempty" json:"name,omitempty" yaml:"name,omitempty"`
 	PortionSize           *int32             `bson:"portionSize,omitempty" json:"portionSize,omitempty" yaml:"portionSize,omitempty"`
@@ -12,20 +12,20 @@ type TypeID struct {
 	Volume                *float64           `bson:"volume,omitempty" json:"volume,omitempty" yaml:"volume,omitempty"`
 	Radius                *float64           `bson:"radius,omitempty" json:"radius,omitempty" yaml:"radius,omitempty"`
 	Description           *TypeIDDescription `bson:"description,omitempty" json:"description,omitempty" yaml:"description,omitempty"`
-	GraphicID             *int32             `bson:"graphicID,omitempty" json:"graphicID,omitempty" yaml:"graphicID,omitempty"`
-	SoundID               *int32             `bson:"soundID,omitempty" json:"soundID,omitempty" yaml:"soundID,omitempty"`
-	IconID                *int32             `bson:"iconID,omitempty" json:"iconID,omitempty" yaml:"iconID,omitempty"`
-	RaceID                *int32             `bson:"raceID,omitempty" json:"raceID,omitempty" yaml:"raceID,omitempty"`
+	GraphicID             *int32             `bson:"graphicID,omitempty" json:"graphicID,omitempty" storm:"index" yaml:"graphicID,omitempty"`
+	SoundID               *int32             `bson:"soundID,omitempty" json:"soundID,omitempty" storm:"index" yaml:"soundID,omitempty"`
+	IconID                *int32             `bson:"iconID,omitempty" json:"iconID,omitempty" storm:"index" yaml:"iconID,omitempty"`
+	RaceID                *int32             `bson:"raceID,omitempty" json:"raceID,omitempty" storm:"index" yaml:"raceID,omitempty"`
 	SofFactionName        *string            `bson:"sofFactionName,omitempty" json:"sofFactionName,omitempty" yaml:"sofFactionName,omitempty"`
 	BasePrice             *float64           `bson:"basePrice,omitempty" json:"basePrice,omitempty" yaml:"basePrice,omitempty"`
-	MarketGroupID         *int32             `bson:"marketGroupID,omitempty" json:"marketGroupID,omitempty" yaml:"marketGroupID,omitempty"`
+	MarketGroupID         *int32             `bson:"marketGroupID,omitempty" json:"marketGroupID,omitempty" storm:"index" yaml:"marketGroupID,omitempty"`
 	Capacity              *float64           `bson:"capacity,omitempty" json:"capacity,omitempty" yaml:"capacity,omitempty"`
-	MetaGroupID           *int32             `bson:"metaGroupID,omitempty" json:"metaGroupID,omitempty" yaml:"metaGroupID,omitempty"`
-	VariationParentTypeID *int32             `bson:"variationParentTypeID,omitempty" json:"variationParentTypeID,omitempty" yaml:"variationParentTypeID,omitempty"`
-	FactionID             *int32             `bson:"factionID,omitempty" json:"factionID,omitempty" yaml:"factionID,omitempty"`
+	MetaGroupID           *int32             `bson:"metaGroupID,omitempty" json:"metaGroupID,omitempty" storm:"index" yaml:"metaGroupID,omitempty"`
+	VariationParentTypeID *int32             `bson:"variationParentTypeID,omitempty" json:"variationParentTypeID,omitempty" storm:"index" yaml:"variationParentTypeID,omitempty"`
+	FactionID             *int32             `bson:"factionID,omitempty" json:"factionID,omitempty" storm:"index" yaml:"factionID,omitempty"`
 	Masteries             map[int32][]int32  `bson:"masteries,omitempty" json:"masteries,omitempty" yaml:"masteries,omitempty"`
 	Traits                *TypeIDTraits      `bson:"traits,omitempty" json:"traits,omitempty" yaml:"traits,omitempty"`
-	SofMaterialSetID      *int32             `bson:"sofMaterialSetID,omitempty" json:"sofMaterialSetID,omitempty" yaml:"sofMaterialSetID,omitempty"`
+	SofMaterialSetID      *int32             `bson:"sofMaterialSetID,omitempty" json:"sofMaterialSetID,omitempty" storm:"index" yaml:"sofMaterialSetID,omitempty"`
 }
 type TypeIDDescription struct {
 	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
@@ -51,14 +51,14 @@ type TypeIDTraits struct {
 	MiscBonuses []TypeIDTraitsMiscBonuses     `bson:"miscBonuses,omitempty" json:"miscBonuses,omitempty" yaml:"miscBonuses,omitempty"`
 	RoleBonuses []TypeIDTraitsRoleBonuses     `bson:"roleBonuses,omitempty" json:"roleBonuses,omitempty" yaml:"roleBonuses,omitempty"`
 	Types       map[int32][]TypeIDTraitsTypes `bson:"types,omitempty" json:"types,omitempty" yaml:"types,omitempty"`
-	IconID      *int32                        `bson:"iconID,omitempty" json:"iconID,omitempty" yaml:"iconID,omitempty"`
+	IconID      *int32                        `bson:"iconID,omitempty" json:"iconID,omitempty" storm:"index" yaml:"iconID,omitempty"`
 }
 type TypeIDTraitsMiscBonuses struct {
 	BonusText  *TypeIDTraitsMiscBonusesBonusText `bson:"bonusText,omitempty" json:"bonusText,omitempty" yaml:"bonusText,omitempty"`
 	Importance *int32                            `bson:"importance,omitempty" json:"importance,omitempty" yaml:"importance,omitempty"`
 	IsPositive *bool                             `bson:"isPositive,omitempty" json:"isPositive,omitempty" yaml:"isPositive,omitempty"`
 	Bonus      *float64                          `bson:"bonus,omitempty" json:"bonus,omitempty" yaml:"bonus,omitempty"`
-	UnitID     *int32                            `bson:"unitID,omitempty" json:"unitID,omitempty" yaml:"unitID,omitempty"`
+	UnitID     *int32                            `bson:"unitID,omitempty" json:"unitID,omitempty" storm:"index" yaml:"unitID,omitempty"`
 }
 type TypeIDTraitsMiscBonusesBonusText struct {
 	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
@@ -72,7 +72,7 @@ type TypeIDTraitsRoleBonuses struct {
 	Bonus      *float64                          `bson:"bonus,omitempty" json:"bonus,omitempty" yaml:"bonus,omitempty"`
 	BonusText  *TypeIDTraitsRoleBonusesBonusText `bson:"bonusText,omitempty" json:"bonusText,omitempty" yaml:"bonusText,omitempty"`
 	Importance *int32                            `bson:"importance,omitempty" json:"importance,omitempty" yaml:"importance,omitempty"`
-	UnitID     *int32                            `bson:"unitID,omitempty" json:"unitID,omitempty" yaml:"unitID,omitempty"`
+	UnitID     *int32                            `bson:"unitID,omitempty" json:"unitID,omitempty" storm:"index" yaml:"unitID,omitempty"`
 }
 type TypeIDTraitsRoleBonusesBonusText struct {
 	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
@@ -86,7 +86,7 @@ type TypeIDTraitsTypes struct {
 	Bonus      *float64                    `bson:"bonus,omitempty" json:"bonus,omitempty" yaml:"bonus,omitempty"`
 	BonusText  *TypeIDTraitsTypesBonusText `bson:"bonusText,omitempty" json:"bonusText,omitempty" yaml:"bonusText,omitempty"`
 	Importance *int32                      `bson:"importance,omitempty" json:"importance,omitempty" yaml:"importance,omitempty"`
-	UnitID     *int32                      `bson:"unitID,omitempty" json:"unitID,omitempty" yaml:"unitID,omitempty"`
+	UnitID     *int32                      `bson:"unitID,omitempty" json:"unitID,omitempty" storm:"index" yaml:"unitID,omitempty"`
 }
 type TypeIDTraitsTypesBonusText struct {
 	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`

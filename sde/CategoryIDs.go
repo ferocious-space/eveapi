@@ -6,7 +6,7 @@ type CategoryIDMap map[int32]CategoryID
 type CategoryID struct {
 	Name      *CategoryIDName `bson:"name,omitempty" json:"name,omitempty" yaml:"name,omitempty"`
 	Published *bool           `bson:"published,omitempty" json:"published,omitempty" yaml:"published,omitempty"`
-	IconID    *int32          `bson:"iconID,omitempty" json:"iconID,omitempty" yaml:"iconID,omitempty"`
+	IconID    *int32          `bson:"iconID,omitempty" json:"iconID,omitempty" storm:"index" yaml:"iconID,omitempty"`
 }
 type CategoryIDName struct {
 	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`

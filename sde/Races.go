@@ -4,10 +4,10 @@ package sde
 
 type RaceMap map[int32]Race
 type Race struct {
-	DescriptionID *RaceDescriptionID `bson:"descriptionID,omitempty" json:"descriptionID,omitempty" yaml:"descriptionID,omitempty"`
-	IconID        *int32             `bson:"iconID,omitempty" json:"iconID,omitempty" yaml:"iconID,omitempty"`
-	NameID        *RaceNameID        `bson:"nameID,omitempty" json:"nameID,omitempty" yaml:"nameID,omitempty"`
-	ShipTypeID    *int32             `bson:"shipTypeID,omitempty" json:"shipTypeID,omitempty" yaml:"shipTypeID,omitempty"`
+	DescriptionID *RaceDescriptionID `bson:"descriptionID,omitempty" json:"descriptionID,omitempty" storm:"index" yaml:"descriptionID,omitempty"`
+	IconID        *int32             `bson:"iconID,omitempty" json:"iconID,omitempty" storm:"index" yaml:"iconID,omitempty"`
+	NameID        *RaceNameID        `bson:"nameID,omitempty" json:"nameID,omitempty" storm:"index" yaml:"nameID,omitempty"`
+	ShipTypeID    *int32             `bson:"shipTypeID,omitempty" json:"shipTypeID,omitempty" storm:"index" yaml:"shipTypeID,omitempty"`
 	Skills        map[int32]int32    `bson:"skills,omitempty" json:"skills,omitempty" yaml:"skills,omitempty"`
 }
 type RaceDescriptionID struct {

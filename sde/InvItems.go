@@ -4,10 +4,10 @@ package sde
 
 type InvItemList []InvItem
 type InvItem struct {
-	FlagID     *int32 `bson:"flagID,omitempty" json:"flagID,omitempty" yaml:"flagID,omitempty"`
-	ItemID     *int64 `bson:"itemID,omitempty" json:"itemID,omitempty" yaml:"itemID,omitempty"`
-	LocationID *int64 `bson:"locationID,omitempty" json:"locationID,omitempty" yaml:"locationID,omitempty"`
-	OwnerID    *int32 `bson:"ownerID,omitempty" json:"ownerID,omitempty" yaml:"ownerID,omitempty"`
+	FlagID     *int32 `bson:"flagID,omitempty" json:"flagID,omitempty" storm:"index" yaml:"flagID,omitempty"`
+	ItemID     *int64 `bson:"itemID,omitempty" json:"itemID,omitempty" storm:"index" yaml:"itemID,omitempty"`
+	LocationID *int64 `bson:"locationID,omitempty" json:"locationID,omitempty" storm:"index" yaml:"locationID,omitempty"`
+	OwnerID    *int32 `bson:"ownerID,omitempty" json:"ownerID,omitempty" storm:"index" yaml:"ownerID,omitempty"`
 	Quantity   *int32 `bson:"quantity,omitempty" json:"quantity,omitempty" yaml:"quantity,omitempty"`
-	TypeID     *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" yaml:"typeID,omitempty"`
+	TypeID     *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" storm:"index" yaml:"typeID,omitempty"`
 }

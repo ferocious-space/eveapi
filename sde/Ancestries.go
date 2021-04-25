@@ -4,13 +4,13 @@ package sde
 
 type AncestryMap map[int32]Ancestry
 type Ancestry struct {
-	BloodlineID      *int32                 `bson:"bloodlineID,omitempty" json:"bloodlineID,omitempty" yaml:"bloodlineID,omitempty"`
+	BloodlineID      *int32                 `bson:"bloodlineID,omitempty" json:"bloodlineID,omitempty" storm:"index" yaml:"bloodlineID,omitempty"`
 	Charisma         *int32                 `bson:"charisma,omitempty" json:"charisma,omitempty" yaml:"charisma,omitempty"`
-	DescriptionID    *AncestryDescriptionID `bson:"descriptionID,omitempty" json:"descriptionID,omitempty" yaml:"descriptionID,omitempty"`
-	IconID           *int32                 `bson:"iconID,omitempty" json:"iconID,omitempty" yaml:"iconID,omitempty"`
+	DescriptionID    *AncestryDescriptionID `bson:"descriptionID,omitempty" json:"descriptionID,omitempty" storm:"index" yaml:"descriptionID,omitempty"`
+	IconID           *int32                 `bson:"iconID,omitempty" json:"iconID,omitempty" storm:"index" yaml:"iconID,omitempty"`
 	Intelligence     *int32                 `bson:"intelligence,omitempty" json:"intelligence,omitempty" yaml:"intelligence,omitempty"`
 	Memory           *int32                 `bson:"memory,omitempty" json:"memory,omitempty" yaml:"memory,omitempty"`
-	NameID           *AncestryNameID        `bson:"nameID,omitempty" json:"nameID,omitempty" yaml:"nameID,omitempty"`
+	NameID           *AncestryNameID        `bson:"nameID,omitempty" json:"nameID,omitempty" storm:"index" yaml:"nameID,omitempty"`
 	Perception       *int32                 `bson:"perception,omitempty" json:"perception,omitempty" yaml:"perception,omitempty"`
 	ShortDescription *string                `bson:"shortDescription,omitempty" json:"shortDescription,omitempty" yaml:"shortDescription,omitempty"`
 	Willpower        *int32                 `bson:"willpower,omitempty" json:"willpower,omitempty" yaml:"willpower,omitempty"`

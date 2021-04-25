@@ -7,6 +7,6 @@ type TypeMaterial struct {
 	Materials []TypeMaterialMaterials `bson:"materials,omitempty" json:"materials,omitempty" yaml:"materials,omitempty"`
 }
 type TypeMaterialMaterials struct {
-	MaterialTypeID *int32 `bson:"materialTypeID,omitempty" json:"materialTypeID,omitempty" yaml:"materialTypeID,omitempty"`
+	MaterialTypeID *int32 `bson:"materialTypeID,omitempty" json:"materialTypeID,omitempty" storm:"index" yaml:"materialTypeID,omitempty"`
 	Quantity       *int32 `bson:"quantity,omitempty" json:"quantity,omitempty" yaml:"quantity,omitempty"`
 }

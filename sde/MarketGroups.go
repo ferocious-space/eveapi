@@ -4,11 +4,11 @@ package sde
 
 type MarketGroupMap map[int32]MarketGroup
 type MarketGroup struct {
-	DescriptionID *MarketGroupDescriptionID `bson:"descriptionID,omitempty" json:"descriptionID,omitempty" yaml:"descriptionID,omitempty"`
+	DescriptionID *MarketGroupDescriptionID `bson:"descriptionID,omitempty" json:"descriptionID,omitempty" storm:"index" yaml:"descriptionID,omitempty"`
 	HasTypes      *bool                     `bson:"hasTypes,omitempty" json:"hasTypes,omitempty" yaml:"hasTypes,omitempty"`
-	IconID        *int32                    `bson:"iconID,omitempty" json:"iconID,omitempty" yaml:"iconID,omitempty"`
-	NameID        *MarketGroupNameID        `bson:"nameID,omitempty" json:"nameID,omitempty" yaml:"nameID,omitempty"`
-	ParentGroupID *int32                    `bson:"parentGroupID,omitempty" json:"parentGroupID,omitempty" yaml:"parentGroupID,omitempty"`
+	IconID        *int32                    `bson:"iconID,omitempty" json:"iconID,omitempty" storm:"index" yaml:"iconID,omitempty"`
+	NameID        *MarketGroupNameID        `bson:"nameID,omitempty" json:"nameID,omitempty" storm:"index" yaml:"nameID,omitempty"`
+	ParentGroupID *int32                    `bson:"parentGroupID,omitempty" json:"parentGroupID,omitempty" storm:"index" yaml:"parentGroupID,omitempty"`
 }
 type MarketGroupDescriptionID struct {
 	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`

@@ -4,12 +4,15 @@ import (
 	"fmt"
 	"reflect"
 	"strings"
+	"time"
 
 	"github.com/go-openapi/inflect"
 	"gopkg.in/yaml.v3"
 )
 
 type empty struct{}
+
+type timestruct struct{ uint }
 
 func typeEmpty() reflect.Type {
 	return reflect.TypeOf(empty{})
@@ -53,6 +56,8 @@ func nodeWalk(node *yaml.Node, depth int, mappings map[string]typeMapping) refle
 		}
 	}
 	switch node.Tag {
+	case "!!timestamp":
+		return reflect.TypeOf(time.Time{})
 	case "!!str":
 		return ptrValue(string(""))
 	case "!!bool":

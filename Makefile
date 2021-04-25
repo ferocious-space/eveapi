@@ -7,7 +7,11 @@ Downloads:
 	curl -sSL https://esi.evetech.net/_latest/swagger.json -o esi.json
 	curl -sSL https://esi.evetech.net/swagger.json -o meta.json
 	-swagger mixin -q esi.json meta.json -o swagger.json
-Generate:
+GenNotificationsSDE:
+	go mod download
+	go run scripts/generator.go scripts/sde.go
+	go mod tidy
+Generate: GenNotificationsSDE
 	swagger generate client -f swagger.json -c esi -m models --default-scheme=https --with-enum-ci --skip-validation \
 	--tags "Alliance" \
 	--tags "Assets" \
@@ -44,6 +48,4 @@ Generate:
 	--tags "Wars"
 	go get -u -d ./esi/...
 	go get -u -d ./models/...
-	go mod download
-	go run scripts/generator.go scripts/sde.go
 	go mod tidy

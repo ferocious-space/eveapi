@@ -9,7 +9,7 @@ type ControlTowerResource struct {
 type ControlTowerResourceResources struct {
 	Purpose          *int32   `bson:"purpose,omitempty" json:"purpose,omitempty" yaml:"purpose,omitempty"`
 	Quantity         *int32   `bson:"quantity,omitempty" json:"quantity,omitempty" yaml:"quantity,omitempty"`
-	ResourceTypeID   *int32   `bson:"resourceTypeID,omitempty" json:"resourceTypeID,omitempty" yaml:"resourceTypeID,omitempty"`
-	FactionID        *int32   `bson:"factionID,omitempty" json:"factionID,omitempty" yaml:"factionID,omitempty"`
+	ResourceTypeID   *int32   `bson:"resourceTypeID,omitempty" json:"resourceTypeID,omitempty" storm:"index" yaml:"resourceTypeID,omitempty"`
+	FactionID        *int32   `bson:"factionID,omitempty" json:"factionID,omitempty" storm:"index" yaml:"factionID,omitempty"`
 	MinSecurityLevel *float64 `bson:"minSecurityLevel,omitempty" json:"minSecurityLevel,omitempty" yaml:"minSecurityLevel,omitempty"`
 }

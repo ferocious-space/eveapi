@@ -4,21 +4,21 @@ package sde
 
 type StaStationList []StaStation
 type StaStation struct {
-	ConstellationID          *int32   `bson:"constellationID,omitempty" json:"constellationID,omitempty" yaml:"constellationID,omitempty"`
-	CorporationID            *int32   `bson:"corporationID,omitempty" json:"corporationID,omitempty" yaml:"corporationID,omitempty"`
+	ConstellationID          *int32   `bson:"constellationID,omitempty" json:"constellationID,omitempty" storm:"index" yaml:"constellationID,omitempty"`
+	CorporationID            *int32   `bson:"corporationID,omitempty" json:"corporationID,omitempty" storm:"index" yaml:"corporationID,omitempty"`
 	DockingCostPerVolume     *int32   `bson:"dockingCostPerVolume,omitempty" json:"dockingCostPerVolume,omitempty" yaml:"dockingCostPerVolume,omitempty"`
 	MaxShipVolumeDockable    *int32   `bson:"maxShipVolumeDockable,omitempty" json:"maxShipVolumeDockable,omitempty" yaml:"maxShipVolumeDockable,omitempty"`
 	OfficeRentalCost         *int32   `bson:"officeRentalCost,omitempty" json:"officeRentalCost,omitempty" yaml:"officeRentalCost,omitempty"`
-	OperationID              *int32   `bson:"operationID,omitempty" json:"operationID,omitempty" yaml:"operationID,omitempty"`
-	RegionID                 *int32   `bson:"regionID,omitempty" json:"regionID,omitempty" yaml:"regionID,omitempty"`
+	OperationID              *int32   `bson:"operationID,omitempty" json:"operationID,omitempty" storm:"index" yaml:"operationID,omitempty"`
+	RegionID                 *int32   `bson:"regionID,omitempty" json:"regionID,omitempty" storm:"index" yaml:"regionID,omitempty"`
 	ReprocessingEfficiency   *float64 `bson:"reprocessingEfficiency,omitempty" json:"reprocessingEfficiency,omitempty" yaml:"reprocessingEfficiency,omitempty"`
 	ReprocessingHangarFlag   *int32   `bson:"reprocessingHangarFlag,omitempty" json:"reprocessingHangarFlag,omitempty" yaml:"reprocessingHangarFlag,omitempty"`
 	ReprocessingStationsTake *float64 `bson:"reprocessingStationsTake,omitempty" json:"reprocessingStationsTake,omitempty" yaml:"reprocessingStationsTake,omitempty"`
 	Security                 *float64 `bson:"security,omitempty" json:"security,omitempty" yaml:"security,omitempty"`
-	SolarSystemID            *int32   `bson:"solarSystemID,omitempty" json:"solarSystemID,omitempty" yaml:"solarSystemID,omitempty"`
-	StationID                *int32   `bson:"stationID,omitempty" json:"stationID,omitempty" yaml:"stationID,omitempty"`
+	SolarSystemID            *int32   `bson:"solarSystemID,omitempty" json:"solarSystemID,omitempty" storm:"index" yaml:"solarSystemID,omitempty"`
+	StationID                *int32   `bson:"stationID,omitempty" json:"stationID,omitempty" storm:"index" yaml:"stationID,omitempty"`
 	StationName              *string  `bson:"stationName,omitempty" json:"stationName,omitempty" yaml:"stationName,omitempty"`
-	StationTypeID            *int32   `bson:"stationTypeID,omitempty" json:"stationTypeID,omitempty" yaml:"stationTypeID,omitempty"`
+	StationTypeID            *int32   `bson:"stationTypeID,omitempty" json:"stationTypeID,omitempty" storm:"index" yaml:"stationTypeID,omitempty"`
 	X                        *float64 `bson:"x,omitempty" json:"x,omitempty" yaml:"x,omitempty"`
 	Y                        *float64 `bson:"y,omitempty" json:"y,omitempty" yaml:"y,omitempty"`
 	Z                        *float64 `bson:"z,omitempty" json:"z,omitempty" yaml:"z,omitempty"`
