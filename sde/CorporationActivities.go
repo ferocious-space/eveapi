@@ -2,7 +2,28 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type CorporationActivityMap map[int32]CorporationActivity
+
+func (x *CorporationActivityMap) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+func (x CorporationActivityMap) Get(ID int32) *CorporationActivity {
+	if a, ok := x[ID]; ok {
+		return &a
+	}
+	return nil
+}
+
 type CorporationActivity struct {
 	NameID *CorporationActivityNameID `bson:"nameID,omitempty" json:"nameID,omitempty" storm:"index" yaml:"nameID,omitempty"`
 }

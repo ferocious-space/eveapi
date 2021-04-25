@@ -2,7 +2,28 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type SkinMap map[int32]Skin
+
+func (x *SkinMap) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+func (x SkinMap) Get(ID int32) *Skin {
+	if a, ok := x[ID]; ok {
+		return &a
+	}
+	return nil
+}
+
 type Skin struct {
 	AllowCCPDevs       *bool   `bson:"allowCCPDevs,omitempty" json:"allowCCPDevs,omitempty" yaml:"allowCCPDevs,omitempty"`
 	InternalName       *string `bson:"internalName,omitempty" json:"internalName,omitempty" yaml:"internalName,omitempty"`

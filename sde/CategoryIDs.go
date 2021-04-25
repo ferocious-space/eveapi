@@ -2,7 +2,28 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type CategoryIDMap map[int32]CategoryID
+
+func (x *CategoryIDMap) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+func (x CategoryIDMap) Get(ID int32) *CategoryID {
+	if a, ok := x[ID]; ok {
+		return &a
+	}
+	return nil
+}
+
 type CategoryID struct {
 	Name      *CategoryIDName `bson:"name,omitempty" json:"name,omitempty" yaml:"name,omitempty"`
 	Published *bool           `bson:"published,omitempty" json:"published,omitempty" yaml:"published,omitempty"`

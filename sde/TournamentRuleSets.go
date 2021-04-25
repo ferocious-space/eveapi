@@ -2,7 +2,22 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type TournamentRuleSetList []TournamentRuleSet
+
+func (x *TournamentRuleSetList) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+
 type TournamentRuleSet struct {
 	Banned             *TournamentRuleSetBanned `bson:"banned,omitempty" json:"banned,omitempty" yaml:"banned,omitempty"`
 	MaximumPilotsMatch *int32                   `bson:"maximumPilotsMatch,omitempty" json:"maximumPilotsMatch,omitempty" yaml:"maximumPilotsMatch,omitempty"`

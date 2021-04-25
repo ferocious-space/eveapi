@@ -2,7 +2,28 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type StationOperationMap map[int32]StationOperation
+
+func (x *StationOperationMap) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+func (x StationOperationMap) Get(ID int32) *StationOperation {
+	if a, ok := x[ID]; ok {
+		return &a
+	}
+	return nil
+}
+
 type StationOperation struct {
 	ActivityID          *int32                           `bson:"activityID,omitempty" json:"activityID,omitempty" storm:"index" yaml:"activityID,omitempty"`
 	Border              *float64                         `bson:"border,omitempty" json:"border,omitempty" yaml:"border,omitempty"`

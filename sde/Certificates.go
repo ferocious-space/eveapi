@@ -2,7 +2,28 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type CertificateMap map[int32]Certificate
+
+func (x *CertificateMap) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+func (x CertificateMap) Get(ID int32) *Certificate {
+	if a, ok := x[ID]; ok {
+		return &a
+	}
+	return nil
+}
+
 type Certificate struct {
 	Description    *string                         `bson:"description,omitempty" json:"description,omitempty" yaml:"description,omitempty"`
 	GroupID        *int32                          `bson:"groupID,omitempty" json:"groupID,omitempty" storm:"index" yaml:"groupID,omitempty"`

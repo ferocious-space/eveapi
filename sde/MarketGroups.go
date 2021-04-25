@@ -2,7 +2,28 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type MarketGroupMap map[int32]MarketGroup
+
+func (x *MarketGroupMap) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+func (x MarketGroupMap) Get(ID int32) *MarketGroup {
+	if a, ok := x[ID]; ok {
+		return &a
+	}
+	return nil
+}
+
 type MarketGroup struct {
 	DescriptionID *MarketGroupDescriptionID `bson:"descriptionID,omitempty" json:"descriptionID,omitempty" storm:"index" yaml:"descriptionID,omitempty"`
 	HasTypes      *bool                     `bson:"hasTypes,omitempty" json:"hasTypes,omitempty" yaml:"hasTypes,omitempty"`

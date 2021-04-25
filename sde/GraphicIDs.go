@@ -2,7 +2,28 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type GraphicIDMap map[int32]GraphicID
+
+func (x *GraphicIDMap) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+func (x GraphicIDMap) Get(ID int32) *GraphicID {
+	if a, ok := x[ID]; ok {
+		return &a
+	}
+	return nil
+}
+
 type GraphicID struct {
 	Description    *string            `bson:"description,omitempty" json:"description,omitempty" yaml:"description,omitempty"`
 	GraphicFile    *string            `bson:"graphicFile,omitempty" json:"graphicFile,omitempty" yaml:"graphicFile,omitempty"`

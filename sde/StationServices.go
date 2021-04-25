@@ -2,7 +2,28 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type StationServiceMap map[int32]StationService
+
+func (x *StationServiceMap) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+func (x StationServiceMap) Get(ID int32) *StationService {
+	if a, ok := x[ID]; ok {
+		return &a
+	}
+	return nil
+}
+
 type StationService struct {
 	ServiceNameID *StationServiceServiceNameID `bson:"serviceNameID,omitempty" json:"serviceNameID,omitempty" storm:"index" yaml:"serviceNameID,omitempty"`
 	DescriptionID *StationServiceDescriptionID `bson:"descriptionID,omitempty" json:"descriptionID,omitempty" storm:"index" yaml:"descriptionID,omitempty"`

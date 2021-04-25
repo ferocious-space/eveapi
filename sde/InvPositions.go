@@ -2,7 +2,22 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type InvPositionList []InvPosition
+
+func (x *InvPositionList) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+
 type InvPosition struct {
 	ItemID *int64   `bson:"itemID,omitempty" json:"itemID,omitempty" storm:"index" yaml:"itemID,omitempty"`
 	Pitch  *float64 `bson:"pitch,omitempty" json:"pitch,omitempty" yaml:"pitch,omitempty"`

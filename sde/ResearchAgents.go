@@ -2,7 +2,28 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type ResearchAgentMap map[int32]ResearchAgent
+
+func (x *ResearchAgentMap) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+func (x ResearchAgentMap) Get(ID int32) *ResearchAgent {
+	if a, ok := x[ID]; ok {
+		return &a
+	}
+	return nil
+}
+
 type ResearchAgent struct {
 	Skills []ResearchAgentSkills `bson:"skills,omitempty" json:"skills,omitempty" yaml:"skills,omitempty"`
 }

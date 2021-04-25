@@ -2,7 +2,22 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type StaStationList []StaStation
+
+func (x *StaStationList) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+
 type StaStation struct {
 	ConstellationID          *int32   `bson:"constellationID,omitempty" json:"constellationID,omitempty" storm:"index" yaml:"constellationID,omitempty"`
 	CorporationID            *int32   `bson:"corporationID,omitempty" json:"corporationID,omitempty" storm:"index" yaml:"corporationID,omitempty"`

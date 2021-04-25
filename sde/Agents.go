@@ -2,7 +2,28 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type AgentMap map[int32]Agent
+
+func (x *AgentMap) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+func (x AgentMap) Get(ID int32) *Agent {
+	if a, ok := x[ID]; ok {
+		return &a
+	}
+	return nil
+}
+
 type Agent struct {
 	AgentTypeID   *int32 `bson:"agentTypeID,omitempty" json:"agentTypeID,omitempty" storm:"index" yaml:"agentTypeID,omitempty"`
 	CorporationID *int32 `bson:"corporationID,omitempty" json:"corporationID,omitempty" storm:"index" yaml:"corporationID,omitempty"`

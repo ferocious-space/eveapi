@@ -2,7 +2,28 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type ContrabandTypeMap map[int32]ContrabandType
+
+func (x *ContrabandTypeMap) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+func (x ContrabandTypeMap) Get(ID int32) *ContrabandType {
+	if a, ok := x[ID]; ok {
+		return &a
+	}
+	return nil
+}
+
 type ContrabandType struct {
 	Factions map[int32]ContrabandTypeFactions `bson:"factions,omitempty" json:"factions,omitempty" yaml:"factions,omitempty"`
 }

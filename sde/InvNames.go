@@ -2,7 +2,22 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type InvNameList []InvName
+
+func (x *InvNameList) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+
 type InvName struct {
 	ItemID   *int64  `bson:"itemID,omitempty" json:"itemID,omitempty" storm:"index" yaml:"itemID,omitempty"`
 	ItemName *string `bson:"itemName,omitempty" json:"itemName,omitempty" yaml:"itemName,omitempty"`

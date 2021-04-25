@@ -2,7 +2,22 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type InvFlagList []InvFlag
+
+func (x *InvFlagList) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+
 type InvFlag struct {
 	FlagID   *int32  `bson:"flagID,omitempty" json:"flagID,omitempty" storm:"index" yaml:"flagID,omitempty"`
 	FlagName *string `bson:"flagName,omitempty" json:"flagName,omitempty" yaml:"flagName,omitempty"`

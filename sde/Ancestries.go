@@ -2,7 +2,28 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type AncestryMap map[int32]Ancestry
+
+func (x *AncestryMap) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+func (x AncestryMap) Get(ID int32) *Ancestry {
+	if a, ok := x[ID]; ok {
+		return &a
+	}
+	return nil
+}
+
 type Ancestry struct {
 	BloodlineID      *int32                 `bson:"bloodlineID,omitempty" json:"bloodlineID,omitempty" storm:"index" yaml:"bloodlineID,omitempty"`
 	Charisma         *int32                 `bson:"charisma,omitempty" json:"charisma,omitempty" yaml:"charisma,omitempty"`

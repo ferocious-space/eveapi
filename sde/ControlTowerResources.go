@@ -2,7 +2,28 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type ControlTowerResourceMap map[int32]ControlTowerResource
+
+func (x *ControlTowerResourceMap) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+func (x ControlTowerResourceMap) Get(ID int32) *ControlTowerResource {
+	if a, ok := x[ID]; ok {
+		return &a
+	}
+	return nil
+}
+
 type ControlTowerResource struct {
 	Resources []ControlTowerResourceResources `bson:"resources,omitempty" json:"resources,omitempty" yaml:"resources,omitempty"`
 }

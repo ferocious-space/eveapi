@@ -2,7 +2,28 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type GroupIDMap map[int32]GroupID
+
+func (x *GroupIDMap) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+func (x GroupIDMap) Get(ID int32) *GroupID {
+	if a, ok := x[ID]; ok {
+		return &a
+	}
+	return nil
+}
+
 type GroupID struct {
 	Anchorable           *bool        `bson:"anchorable,omitempty" json:"anchorable,omitempty" yaml:"anchorable,omitempty"`
 	Anchored             *bool        `bson:"anchored,omitempty" json:"anchored,omitempty" yaml:"anchored,omitempty"`

@@ -2,7 +2,28 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type SkinMaterialMap map[int32]SkinMaterial
+
+func (x *SkinMaterialMap) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+func (x SkinMaterialMap) Get(ID int32) *SkinMaterial {
+	if a, ok := x[ID]; ok {
+		return &a
+	}
+	return nil
+}
+
 type SkinMaterial struct {
 	DisplayNameID  *int32 `bson:"displayNameID,omitempty" json:"displayNameID,omitempty" storm:"index" yaml:"displayNameID,omitempty"`
 	MaterialSetID  *int32 `bson:"materialSetID,omitempty" json:"materialSetID,omitempty" storm:"index" yaml:"materialSetID,omitempty"`

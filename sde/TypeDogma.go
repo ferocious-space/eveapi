@@ -2,7 +2,28 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type TypeDogmaMap map[int32]TypeDogma
+
+func (x *TypeDogmaMap) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+func (x TypeDogmaMap) Get(ID int32) *TypeDogma {
+	if a, ok := x[ID]; ok {
+		return &a
+	}
+	return nil
+}
+
 type TypeDogma struct {
 	DogmaAttributes []TypeDogmaDogmaAttributes `bson:"dogmaAttributes,omitempty" json:"dogmaAttributes,omitempty" yaml:"dogmaAttributes,omitempty"`
 	DogmaEffects    []TypeDogmaDogmaEffects    `bson:"dogmaEffects,omitempty" json:"dogmaEffects,omitempty" yaml:"dogmaEffects,omitempty"`

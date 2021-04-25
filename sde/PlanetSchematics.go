@@ -2,7 +2,28 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type PlanetSchematicMap map[int32]PlanetSchematic
+
+func (x *PlanetSchematicMap) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+func (x PlanetSchematicMap) Get(ID int32) *PlanetSchematic {
+	if a, ok := x[ID]; ok {
+		return &a
+	}
+	return nil
+}
+
 type PlanetSchematic struct {
 	CycleTime *int64                         `bson:"cycleTime,omitempty" json:"cycleTime,omitempty" yaml:"cycleTime,omitempty"`
 	NameID    *PlanetSchematicNameID         `bson:"nameID,omitempty" json:"nameID,omitempty" storm:"index" yaml:"nameID,omitempty"`

@@ -2,7 +2,28 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type NpcCorporationMap map[int32]NpcCorporation
+
+func (x *NpcCorporationMap) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+func (x NpcCorporationMap) Get(ID int32) *NpcCorporation {
+	if a, ok := x[ID]; ok {
+		return &a
+	}
+	return nil
+}
+
 type NpcCorporation struct {
 	CeoID                      *int32                            `bson:"ceoID,omitempty" json:"ceoID,omitempty" storm:"index" yaml:"ceoID,omitempty"`
 	Deleted                    *bool                             `bson:"deleted,omitempty" json:"deleted,omitempty" yaml:"deleted,omitempty"`

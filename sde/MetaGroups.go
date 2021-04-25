@@ -2,7 +2,28 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type MetaGroupMap map[int32]MetaGroup
+
+func (x *MetaGroupMap) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+func (x MetaGroupMap) Get(ID int32) *MetaGroup {
+	if a, ok := x[ID]; ok {
+		return &a
+	}
+	return nil
+}
+
 type MetaGroup struct {
 	NameID        *MetaGroupNameID        `bson:"nameID,omitempty" json:"nameID,omitempty" storm:"index" yaml:"nameID,omitempty"`
 	IconID        *int32                  `bson:"iconID,omitempty" json:"iconID,omitempty" storm:"index" yaml:"iconID,omitempty"`

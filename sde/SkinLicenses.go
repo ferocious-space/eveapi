@@ -2,7 +2,28 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type SkinLicenseMap map[int32]SkinLicense
+
+func (x *SkinLicenseMap) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+func (x SkinLicenseMap) Get(ID int32) *SkinLicense {
+	if a, ok := x[ID]; ok {
+		return &a
+	}
+	return nil
+}
+
 type SkinLicense struct {
 	Duration      *int32 `bson:"duration,omitempty" json:"duration,omitempty" yaml:"duration,omitempty"`
 	LicenseTypeID *int32 `bson:"licenseTypeID,omitempty" json:"licenseTypeID,omitempty" storm:"index" yaml:"licenseTypeID,omitempty"`

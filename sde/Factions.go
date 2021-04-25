@@ -2,7 +2,28 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type FactionMap map[int32]Faction
+
+func (x *FactionMap) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+func (x FactionMap) Get(ID int32) *Faction {
+	if a, ok := x[ID]; ok {
+		return &a
+	}
+	return nil
+}
+
 type Faction struct {
 	CorporationID        *int32                     `bson:"corporationID,omitempty" json:"corporationID,omitempty" storm:"index" yaml:"corporationID,omitempty"`
 	DescriptionID        *FactionDescriptionID      `bson:"descriptionID,omitempty" json:"descriptionID,omitempty" storm:"index" yaml:"descriptionID,omitempty"`

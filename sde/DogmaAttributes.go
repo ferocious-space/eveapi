@@ -2,7 +2,28 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type DogmaAttributeMap map[int32]DogmaAttribute
+
+func (x *DogmaAttributeMap) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+func (x DogmaAttributeMap) Get(ID int32) *DogmaAttribute {
+	if a, ok := x[ID]; ok {
+		return &a
+	}
+	return nil
+}
+
 type DogmaAttribute struct {
 	AttributeID          *int32                              `bson:"attributeID,omitempty" json:"attributeID,omitempty" storm:"index" yaml:"attributeID,omitempty"`
 	CategoryID           *int32                              `bson:"categoryID,omitempty" json:"categoryID,omitempty" storm:"index" yaml:"categoryID,omitempty"`

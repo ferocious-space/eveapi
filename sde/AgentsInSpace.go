@@ -2,7 +2,28 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type AgentsInSpaceMap map[int32]AgentsInSpace
+
+func (x *AgentsInSpaceMap) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+func (x AgentsInSpaceMap) Get(ID int32) *AgentsInSpace {
+	if a, ok := x[ID]; ok {
+		return &a
+	}
+	return nil
+}
+
 type AgentsInSpace struct {
 	DungeonID     *int32 `bson:"dungeonID,omitempty" json:"dungeonID,omitempty" storm:"index" yaml:"dungeonID,omitempty"`
 	SolarSystemID *int32 `bson:"solarSystemID,omitempty" json:"solarSystemID,omitempty" storm:"index" yaml:"solarSystemID,omitempty"`

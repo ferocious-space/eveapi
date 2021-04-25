@@ -2,7 +2,28 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type CharacterAttributeMap map[int32]CharacterAttribute
+
+func (x *CharacterAttributeMap) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+func (x CharacterAttributeMap) Get(ID int32) *CharacterAttribute {
+	if a, ok := x[ID]; ok {
+		return &a
+	}
+	return nil
+}
+
 type CharacterAttribute struct {
 	Description      *string                   `bson:"description,omitempty" json:"description,omitempty" yaml:"description,omitempty"`
 	IconID           *int32                    `bson:"iconID,omitempty" json:"iconID,omitempty" storm:"index" yaml:"iconID,omitempty"`

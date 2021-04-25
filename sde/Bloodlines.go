@@ -2,7 +2,28 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type BloodlineMap map[int32]Bloodline
+
+func (x *BloodlineMap) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+func (x BloodlineMap) Get(ID int32) *Bloodline {
+	if a, ok := x[ID]; ok {
+		return &a
+	}
+	return nil
+}
+
 type Bloodline struct {
 	Charisma      *int32                  `bson:"charisma,omitempty" json:"charisma,omitempty" yaml:"charisma,omitempty"`
 	CorporationID *int32                  `bson:"corporationID,omitempty" json:"corporationID,omitempty" storm:"index" yaml:"corporationID,omitempty"`

@@ -2,7 +2,28 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type TypeIDMap map[int32]TypeID
+
+func (x *TypeIDMap) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+func (x TypeIDMap) Get(ID int32) *TypeID {
+	if a, ok := x[ID]; ok {
+		return &a
+	}
+	return nil
+}
+
 type TypeID struct {
 	GroupID               *int32             `bson:"groupID,omitempty" json:"groupID,omitempty" storm:"index" yaml:"groupID,omitempty"`
 	Mass                  *float64           `bson:"mass,omitempty" json:"mass,omitempty" yaml:"mass,omitempty"`

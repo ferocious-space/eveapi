@@ -2,7 +2,28 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type BlueprintMap map[int32]Blueprint
+
+func (x *BlueprintMap) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+func (x BlueprintMap) Get(ID int32) *Blueprint {
+	if a, ok := x[ID]; ok {
+		return &a
+	}
+	return nil
+}
+
 type Blueprint struct {
 	Activities         *BlueprintActivities `bson:"activities,omitempty" json:"activities,omitempty" yaml:"activities,omitempty"`
 	BlueprintTypeID    *int32               `bson:"blueprintTypeID,omitempty" json:"blueprintTypeID,omitempty" storm:"index" yaml:"blueprintTypeID,omitempty"`

@@ -2,7 +2,28 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type DogmaEffectMap map[int32]DogmaEffect
+
+func (x *DogmaEffectMap) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+func (x DogmaEffectMap) Get(ID int32) *DogmaEffect {
+	if a, ok := x[ID]; ok {
+		return &a
+	}
+	return nil
+}
+
 type DogmaEffect struct {
 	DisallowAutoRepeat             *bool                     `bson:"disallowAutoRepeat,omitempty" json:"disallowAutoRepeat,omitempty" yaml:"disallowAutoRepeat,omitempty"`
 	DischargeAttributeID           *int32                    `bson:"dischargeAttributeID,omitempty" json:"dischargeAttributeID,omitempty" storm:"index" yaml:"dischargeAttributeID,omitempty"`

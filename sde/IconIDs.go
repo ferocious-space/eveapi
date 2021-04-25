@@ -2,7 +2,28 @@
 
 package sde
 
+import (
+	yamlv3 "gopkg.in/yaml.v3"
+	"os"
+)
+
 type IconIDMap map[int32]IconID
+
+func (x *IconIDMap) Load(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	return yamlv3.NewDecoder(f).Decode(x)
+}
+func (x IconIDMap) Get(ID int32) *IconID {
+	if a, ok := x[ID]; ok {
+		return &a
+	}
+	return nil
+}
+
 type IconID struct {
 	Description *string `bson:"description,omitempty" json:"description,omitempty" yaml:"description,omitempty"`
 	IconFile    *string `bson:"iconFile,omitempty" json:"iconFile,omitempty" yaml:"iconFile,omitempty"`
