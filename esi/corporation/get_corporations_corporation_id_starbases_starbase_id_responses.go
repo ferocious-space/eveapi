@@ -119,7 +119,7 @@ type GetCorporationsCorporationIDStarbasesStarbaseIDOK struct {
 }
 
 func (o *GetCorporationsCorporationIDStarbasesStarbaseIDOK) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/starbases/{starbase_id}/][%d] getCorporationsCorporationIdStarbasesStarbaseIdOK  %+v", 200, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/starbases/{starbase_id}/][%d] getCorporationsCorporationIdStarbasesStarbaseIdOK  %+v", 200, o.Payload)
 }
 func (o *GetCorporationsCorporationIDStarbasesStarbaseIDOK) GetPayload() *GetCorporationsCorporationIDStarbasesStarbaseIDOKBody {
 	return o.Payload
@@ -194,7 +194,7 @@ type GetCorporationsCorporationIDStarbasesStarbaseIDNotModified struct {
 }
 
 func (o *GetCorporationsCorporationIDStarbasesStarbaseIDNotModified) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/starbases/{starbase_id}/][%d] getCorporationsCorporationIdStarbasesStarbaseIdNotModified ", 304)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/starbases/{starbase_id}/][%d] getCorporationsCorporationIdStarbasesStarbaseIdNotModified ", 304)
 }
 
 func (o *GetCorporationsCorporationIDStarbasesStarbaseIDNotModified) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
@@ -244,7 +244,7 @@ type GetCorporationsCorporationIDStarbasesStarbaseIDBadRequest struct {
 }
 
 func (o *GetCorporationsCorporationIDStarbasesStarbaseIDBadRequest) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/starbases/{starbase_id}/][%d] getCorporationsCorporationIdStarbasesStarbaseIdBadRequest  %+v", 400, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/starbases/{starbase_id}/][%d] getCorporationsCorporationIdStarbasesStarbaseIdBadRequest  %+v", 400, o.Payload)
 }
 func (o *GetCorporationsCorporationIDStarbasesStarbaseIDBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
@@ -276,7 +276,7 @@ type GetCorporationsCorporationIDStarbasesStarbaseIDUnauthorized struct {
 }
 
 func (o *GetCorporationsCorporationIDStarbasesStarbaseIDUnauthorized) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/starbases/{starbase_id}/][%d] getCorporationsCorporationIdStarbasesStarbaseIdUnauthorized  %+v", 401, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/starbases/{starbase_id}/][%d] getCorporationsCorporationIdStarbasesStarbaseIdUnauthorized  %+v", 401, o.Payload)
 }
 func (o *GetCorporationsCorporationIDStarbasesStarbaseIDUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
@@ -308,7 +308,7 @@ type GetCorporationsCorporationIDStarbasesStarbaseIDForbidden struct {
 }
 
 func (o *GetCorporationsCorporationIDStarbasesStarbaseIDForbidden) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/starbases/{starbase_id}/][%d] getCorporationsCorporationIdStarbasesStarbaseIdForbidden  %+v", 403, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/starbases/{starbase_id}/][%d] getCorporationsCorporationIdStarbasesStarbaseIdForbidden  %+v", 403, o.Payload)
 }
 func (o *GetCorporationsCorporationIDStarbasesStarbaseIDForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
@@ -340,7 +340,7 @@ type GetCorporationsCorporationIDStarbasesStarbaseIDEnhanceYourCalm struct {
 }
 
 func (o *GetCorporationsCorporationIDStarbasesStarbaseIDEnhanceYourCalm) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/starbases/{starbase_id}/][%d] getCorporationsCorporationIdStarbasesStarbaseIdEnhanceYourCalm  %+v", 420, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/starbases/{starbase_id}/][%d] getCorporationsCorporationIdStarbasesStarbaseIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
 func (o *GetCorporationsCorporationIDStarbasesStarbaseIDEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
@@ -372,7 +372,7 @@ type GetCorporationsCorporationIDStarbasesStarbaseIDInternalServerError struct {
 }
 
 func (o *GetCorporationsCorporationIDStarbasesStarbaseIDInternalServerError) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/starbases/{starbase_id}/][%d] getCorporationsCorporationIdStarbasesStarbaseIdInternalServerError  %+v", 500, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/starbases/{starbase_id}/][%d] getCorporationsCorporationIdStarbasesStarbaseIdInternalServerError  %+v", 500, o.Payload)
 }
 func (o *GetCorporationsCorporationIDStarbasesStarbaseIDInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
@@ -404,7 +404,7 @@ type GetCorporationsCorporationIDStarbasesStarbaseIDServiceUnavailable struct {
 }
 
 func (o *GetCorporationsCorporationIDStarbasesStarbaseIDServiceUnavailable) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/starbases/{starbase_id}/][%d] getCorporationsCorporationIdStarbasesStarbaseIdServiceUnavailable  %+v", 503, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/starbases/{starbase_id}/][%d] getCorporationsCorporationIdStarbasesStarbaseIdServiceUnavailable  %+v", 503, o.Payload)
 }
 func (o *GetCorporationsCorporationIDStarbasesStarbaseIDServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
@@ -436,7 +436,7 @@ type GetCorporationsCorporationIDStarbasesStarbaseIDGatewayTimeout struct {
 }
 
 func (o *GetCorporationsCorporationIDStarbasesStarbaseIDGatewayTimeout) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/starbases/{starbase_id}/][%d] getCorporationsCorporationIdStarbasesStarbaseIdGatewayTimeout  %+v", 504, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/starbases/{starbase_id}/][%d] getCorporationsCorporationIdStarbasesStarbaseIdGatewayTimeout  %+v", 504, o.Payload)
 }
 func (o *GetCorporationsCorporationIDStarbasesStarbaseIDGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload

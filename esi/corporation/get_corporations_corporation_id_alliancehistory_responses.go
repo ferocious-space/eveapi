@@ -105,7 +105,7 @@ type GetCorporationsCorporationIDAlliancehistoryOK struct {
 }
 
 func (o *GetCorporationsCorporationIDAlliancehistoryOK) Error() string {
-	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/alliancehistory/][%d] getCorporationsCorporationIdAlliancehistoryOK  %+v", 200, o.Payload)
+	return fmt.Sprintf("[GET /v3/corporations/{corporation_id}/alliancehistory/][%d] getCorporationsCorporationIdAlliancehistoryOK  %+v", 200, o.Payload)
 }
 func (o *GetCorporationsCorporationIDAlliancehistoryOK) GetPayload() []*GetCorporationsCorporationIDAlliancehistoryOKBodyItems0 {
 	return o.Payload
@@ -178,7 +178,7 @@ type GetCorporationsCorporationIDAlliancehistoryNotModified struct {
 }
 
 func (o *GetCorporationsCorporationIDAlliancehistoryNotModified) Error() string {
-	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/alliancehistory/][%d] getCorporationsCorporationIdAlliancehistoryNotModified ", 304)
+	return fmt.Sprintf("[GET /v3/corporations/{corporation_id}/alliancehistory/][%d] getCorporationsCorporationIdAlliancehistoryNotModified ", 304)
 }
 
 func (o *GetCorporationsCorporationIDAlliancehistoryNotModified) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
@@ -228,7 +228,7 @@ type GetCorporationsCorporationIDAlliancehistoryBadRequest struct {
 }
 
 func (o *GetCorporationsCorporationIDAlliancehistoryBadRequest) Error() string {
-	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/alliancehistory/][%d] getCorporationsCorporationIdAlliancehistoryBadRequest  %+v", 400, o.Payload)
+	return fmt.Sprintf("[GET /v3/corporations/{corporation_id}/alliancehistory/][%d] getCorporationsCorporationIdAlliancehistoryBadRequest  %+v", 400, o.Payload)
 }
 func (o *GetCorporationsCorporationIDAlliancehistoryBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
@@ -260,7 +260,7 @@ type GetCorporationsCorporationIDAlliancehistoryEnhanceYourCalm struct {
 }
 
 func (o *GetCorporationsCorporationIDAlliancehistoryEnhanceYourCalm) Error() string {
-	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/alliancehistory/][%d] getCorporationsCorporationIdAlliancehistoryEnhanceYourCalm  %+v", 420, o.Payload)
+	return fmt.Sprintf("[GET /v3/corporations/{corporation_id}/alliancehistory/][%d] getCorporationsCorporationIdAlliancehistoryEnhanceYourCalm  %+v", 420, o.Payload)
 }
 func (o *GetCorporationsCorporationIDAlliancehistoryEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
@@ -292,7 +292,7 @@ type GetCorporationsCorporationIDAlliancehistoryInternalServerError struct {
 }
 
 func (o *GetCorporationsCorporationIDAlliancehistoryInternalServerError) Error() string {
-	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/alliancehistory/][%d] getCorporationsCorporationIdAlliancehistoryInternalServerError  %+v", 500, o.Payload)
+	return fmt.Sprintf("[GET /v3/corporations/{corporation_id}/alliancehistory/][%d] getCorporationsCorporationIdAlliancehistoryInternalServerError  %+v", 500, o.Payload)
 }
 func (o *GetCorporationsCorporationIDAlliancehistoryInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
@@ -324,7 +324,7 @@ type GetCorporationsCorporationIDAlliancehistoryServiceUnavailable struct {
 }
 
 func (o *GetCorporationsCorporationIDAlliancehistoryServiceUnavailable) Error() string {
-	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/alliancehistory/][%d] getCorporationsCorporationIdAlliancehistoryServiceUnavailable  %+v", 503, o.Payload)
+	return fmt.Sprintf("[GET /v3/corporations/{corporation_id}/alliancehistory/][%d] getCorporationsCorporationIdAlliancehistoryServiceUnavailable  %+v", 503, o.Payload)
 }
 func (o *GetCorporationsCorporationIDAlliancehistoryServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
@@ -356,7 +356,7 @@ type GetCorporationsCorporationIDAlliancehistoryGatewayTimeout struct {
 }
 
 func (o *GetCorporationsCorporationIDAlliancehistoryGatewayTimeout) Error() string {
-	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/alliancehistory/][%d] getCorporationsCorporationIdAlliancehistoryGatewayTimeout  %+v", 504, o.Payload)
+	return fmt.Sprintf("[GET /v3/corporations/{corporation_id}/alliancehistory/][%d] getCorporationsCorporationIdAlliancehistoryGatewayTimeout  %+v", 504, o.Payload)
 }
 func (o *GetCorporationsCorporationIDAlliancehistoryGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload

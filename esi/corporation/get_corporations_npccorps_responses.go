@@ -101,7 +101,7 @@ type GetCorporationsNpccorpsOK struct {
 }
 
 func (o *GetCorporationsNpccorpsOK) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/npccorps/][%d] getCorporationsNpccorpsOK  %+v", 200, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/npccorps/][%d] getCorporationsNpccorpsOK  %+v", 200, o.Payload)
 }
 func (o *GetCorporationsNpccorpsOK) GetPayload() []int32 {
 	return o.Payload
@@ -174,7 +174,7 @@ type GetCorporationsNpccorpsNotModified struct {
 }
 
 func (o *GetCorporationsNpccorpsNotModified) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/npccorps/][%d] getCorporationsNpccorpsNotModified ", 304)
+	return fmt.Sprintf("[GET /v2/corporations/npccorps/][%d] getCorporationsNpccorpsNotModified ", 304)
 }
 
 func (o *GetCorporationsNpccorpsNotModified) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
@@ -224,7 +224,7 @@ type GetCorporationsNpccorpsBadRequest struct {
 }
 
 func (o *GetCorporationsNpccorpsBadRequest) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/npccorps/][%d] getCorporationsNpccorpsBadRequest  %+v", 400, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/npccorps/][%d] getCorporationsNpccorpsBadRequest  %+v", 400, o.Payload)
 }
 func (o *GetCorporationsNpccorpsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
@@ -256,7 +256,7 @@ type GetCorporationsNpccorpsEnhanceYourCalm struct {
 }
 
 func (o *GetCorporationsNpccorpsEnhanceYourCalm) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/npccorps/][%d] getCorporationsNpccorpsEnhanceYourCalm  %+v", 420, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/npccorps/][%d] getCorporationsNpccorpsEnhanceYourCalm  %+v", 420, o.Payload)
 }
 func (o *GetCorporationsNpccorpsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
@@ -288,7 +288,7 @@ type GetCorporationsNpccorpsInternalServerError struct {
 }
 
 func (o *GetCorporationsNpccorpsInternalServerError) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/npccorps/][%d] getCorporationsNpccorpsInternalServerError  %+v", 500, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/npccorps/][%d] getCorporationsNpccorpsInternalServerError  %+v", 500, o.Payload)
 }
 func (o *GetCorporationsNpccorpsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
@@ -320,7 +320,7 @@ type GetCorporationsNpccorpsServiceUnavailable struct {
 }
 
 func (o *GetCorporationsNpccorpsServiceUnavailable) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/npccorps/][%d] getCorporationsNpccorpsServiceUnavailable  %+v", 503, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/npccorps/][%d] getCorporationsNpccorpsServiceUnavailable  %+v", 503, o.Payload)
 }
 func (o *GetCorporationsNpccorpsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
@@ -352,7 +352,7 @@ type GetCorporationsNpccorpsGatewayTimeout struct {
 }
 
 func (o *GetCorporationsNpccorpsGatewayTimeout) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/npccorps/][%d] getCorporationsNpccorpsGatewayTimeout  %+v", 504, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/npccorps/][%d] getCorporationsNpccorpsGatewayTimeout  %+v", 504, o.Payload)
 }
 func (o *GetCorporationsNpccorpsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload

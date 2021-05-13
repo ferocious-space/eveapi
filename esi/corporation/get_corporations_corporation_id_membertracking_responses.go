@@ -117,7 +117,7 @@ type GetCorporationsCorporationIDMembertrackingOK struct {
 }
 
 func (o *GetCorporationsCorporationIDMembertrackingOK) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/membertracking/][%d] getCorporationsCorporationIdMembertrackingOK  %+v", 200, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/membertracking/][%d] getCorporationsCorporationIdMembertrackingOK  %+v", 200, o.Payload)
 }
 func (o *GetCorporationsCorporationIDMembertrackingOK) GetPayload() []*GetCorporationsCorporationIDMembertrackingOKBodyItems0 {
 	return o.Payload
@@ -190,7 +190,7 @@ type GetCorporationsCorporationIDMembertrackingNotModified struct {
 }
 
 func (o *GetCorporationsCorporationIDMembertrackingNotModified) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/membertracking/][%d] getCorporationsCorporationIdMembertrackingNotModified ", 304)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/membertracking/][%d] getCorporationsCorporationIdMembertrackingNotModified ", 304)
 }
 
 func (o *GetCorporationsCorporationIDMembertrackingNotModified) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
@@ -240,7 +240,7 @@ type GetCorporationsCorporationIDMembertrackingBadRequest struct {
 }
 
 func (o *GetCorporationsCorporationIDMembertrackingBadRequest) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/membertracking/][%d] getCorporationsCorporationIdMembertrackingBadRequest  %+v", 400, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/membertracking/][%d] getCorporationsCorporationIdMembertrackingBadRequest  %+v", 400, o.Payload)
 }
 func (o *GetCorporationsCorporationIDMembertrackingBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
@@ -272,7 +272,7 @@ type GetCorporationsCorporationIDMembertrackingUnauthorized struct {
 }
 
 func (o *GetCorporationsCorporationIDMembertrackingUnauthorized) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/membertracking/][%d] getCorporationsCorporationIdMembertrackingUnauthorized  %+v", 401, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/membertracking/][%d] getCorporationsCorporationIdMembertrackingUnauthorized  %+v", 401, o.Payload)
 }
 func (o *GetCorporationsCorporationIDMembertrackingUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
@@ -304,7 +304,7 @@ type GetCorporationsCorporationIDMembertrackingForbidden struct {
 }
 
 func (o *GetCorporationsCorporationIDMembertrackingForbidden) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/membertracking/][%d] getCorporationsCorporationIdMembertrackingForbidden  %+v", 403, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/membertracking/][%d] getCorporationsCorporationIdMembertrackingForbidden  %+v", 403, o.Payload)
 }
 func (o *GetCorporationsCorporationIDMembertrackingForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
@@ -336,7 +336,7 @@ type GetCorporationsCorporationIDMembertrackingEnhanceYourCalm struct {
 }
 
 func (o *GetCorporationsCorporationIDMembertrackingEnhanceYourCalm) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/membertracking/][%d] getCorporationsCorporationIdMembertrackingEnhanceYourCalm  %+v", 420, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/membertracking/][%d] getCorporationsCorporationIdMembertrackingEnhanceYourCalm  %+v", 420, o.Payload)
 }
 func (o *GetCorporationsCorporationIDMembertrackingEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
@@ -368,7 +368,7 @@ type GetCorporationsCorporationIDMembertrackingInternalServerError struct {
 }
 
 func (o *GetCorporationsCorporationIDMembertrackingInternalServerError) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/membertracking/][%d] getCorporationsCorporationIdMembertrackingInternalServerError  %+v", 500, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/membertracking/][%d] getCorporationsCorporationIdMembertrackingInternalServerError  %+v", 500, o.Payload)
 }
 func (o *GetCorporationsCorporationIDMembertrackingInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
@@ -400,7 +400,7 @@ type GetCorporationsCorporationIDMembertrackingServiceUnavailable struct {
 }
 
 func (o *GetCorporationsCorporationIDMembertrackingServiceUnavailable) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/membertracking/][%d] getCorporationsCorporationIdMembertrackingServiceUnavailable  %+v", 503, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/membertracking/][%d] getCorporationsCorporationIdMembertrackingServiceUnavailable  %+v", 503, o.Payload)
 }
 func (o *GetCorporationsCorporationIDMembertrackingServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
@@ -432,7 +432,7 @@ type GetCorporationsCorporationIDMembertrackingGatewayTimeout struct {
 }
 
 func (o *GetCorporationsCorporationIDMembertrackingGatewayTimeout) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/membertracking/][%d] getCorporationsCorporationIdMembertrackingGatewayTimeout  %+v", 504, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/membertracking/][%d] getCorporationsCorporationIdMembertrackingGatewayTimeout  %+v", 504, o.Payload)
 }
 func (o *GetCorporationsCorporationIDMembertrackingGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload

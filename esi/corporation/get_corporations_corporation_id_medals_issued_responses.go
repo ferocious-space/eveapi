@@ -133,7 +133,7 @@ type GetCorporationsCorporationIDMedalsIssuedOK struct {
 }
 
 func (o *GetCorporationsCorporationIDMedalsIssuedOK) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/medals/issued/][%d] getCorporationsCorporationIdMedalsIssuedOK  %+v", 200, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/medals/issued/][%d] getCorporationsCorporationIdMedalsIssuedOK  %+v", 200, o.Payload)
 }
 func (o *GetCorporationsCorporationIDMedalsIssuedOK) GetPayload() []*GetCorporationsCorporationIDMedalsIssuedOKBodyItems0 {
 	return o.Payload
@@ -217,7 +217,7 @@ type GetCorporationsCorporationIDMedalsIssuedNotModified struct {
 }
 
 func (o *GetCorporationsCorporationIDMedalsIssuedNotModified) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/medals/issued/][%d] getCorporationsCorporationIdMedalsIssuedNotModified ", 304)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/medals/issued/][%d] getCorporationsCorporationIdMedalsIssuedNotModified ", 304)
 }
 
 func (o *GetCorporationsCorporationIDMedalsIssuedNotModified) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
@@ -267,7 +267,7 @@ type GetCorporationsCorporationIDMedalsIssuedBadRequest struct {
 }
 
 func (o *GetCorporationsCorporationIDMedalsIssuedBadRequest) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/medals/issued/][%d] getCorporationsCorporationIdMedalsIssuedBadRequest  %+v", 400, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/medals/issued/][%d] getCorporationsCorporationIdMedalsIssuedBadRequest  %+v", 400, o.Payload)
 }
 func (o *GetCorporationsCorporationIDMedalsIssuedBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
@@ -299,7 +299,7 @@ type GetCorporationsCorporationIDMedalsIssuedUnauthorized struct {
 }
 
 func (o *GetCorporationsCorporationIDMedalsIssuedUnauthorized) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/medals/issued/][%d] getCorporationsCorporationIdMedalsIssuedUnauthorized  %+v", 401, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/medals/issued/][%d] getCorporationsCorporationIdMedalsIssuedUnauthorized  %+v", 401, o.Payload)
 }
 func (o *GetCorporationsCorporationIDMedalsIssuedUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
@@ -331,7 +331,7 @@ type GetCorporationsCorporationIDMedalsIssuedForbidden struct {
 }
 
 func (o *GetCorporationsCorporationIDMedalsIssuedForbidden) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/medals/issued/][%d] getCorporationsCorporationIdMedalsIssuedForbidden  %+v", 403, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/medals/issued/][%d] getCorporationsCorporationIdMedalsIssuedForbidden  %+v", 403, o.Payload)
 }
 func (o *GetCorporationsCorporationIDMedalsIssuedForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
@@ -363,7 +363,7 @@ type GetCorporationsCorporationIDMedalsIssuedEnhanceYourCalm struct {
 }
 
 func (o *GetCorporationsCorporationIDMedalsIssuedEnhanceYourCalm) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/medals/issued/][%d] getCorporationsCorporationIdMedalsIssuedEnhanceYourCalm  %+v", 420, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/medals/issued/][%d] getCorporationsCorporationIdMedalsIssuedEnhanceYourCalm  %+v", 420, o.Payload)
 }
 func (o *GetCorporationsCorporationIDMedalsIssuedEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
@@ -395,7 +395,7 @@ type GetCorporationsCorporationIDMedalsIssuedInternalServerError struct {
 }
 
 func (o *GetCorporationsCorporationIDMedalsIssuedInternalServerError) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/medals/issued/][%d] getCorporationsCorporationIdMedalsIssuedInternalServerError  %+v", 500, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/medals/issued/][%d] getCorporationsCorporationIdMedalsIssuedInternalServerError  %+v", 500, o.Payload)
 }
 func (o *GetCorporationsCorporationIDMedalsIssuedInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
@@ -427,7 +427,7 @@ type GetCorporationsCorporationIDMedalsIssuedServiceUnavailable struct {
 }
 
 func (o *GetCorporationsCorporationIDMedalsIssuedServiceUnavailable) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/medals/issued/][%d] getCorporationsCorporationIdMedalsIssuedServiceUnavailable  %+v", 503, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/medals/issued/][%d] getCorporationsCorporationIdMedalsIssuedServiceUnavailable  %+v", 503, o.Payload)
 }
 func (o *GetCorporationsCorporationIDMedalsIssuedServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
@@ -459,7 +459,7 @@ type GetCorporationsCorporationIDMedalsIssuedGatewayTimeout struct {
 }
 
 func (o *GetCorporationsCorporationIDMedalsIssuedGatewayTimeout) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/medals/issued/][%d] getCorporationsCorporationIdMedalsIssuedGatewayTimeout  %+v", 504, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/medals/issued/][%d] getCorporationsCorporationIdMedalsIssuedGatewayTimeout  %+v", 504, o.Payload)
 }
 func (o *GetCorporationsCorporationIDMedalsIssuedGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload

@@ -113,7 +113,7 @@ type GetCorporationsCorporationIDMembersOK struct {
 }
 
 func (o *GetCorporationsCorporationIDMembersOK) Error() string {
-	return fmt.Sprintf("[GET /v3/corporations/{corporation_id}/members/][%d] getCorporationsCorporationIdMembersOK  %+v", 200, o.Payload)
+	return fmt.Sprintf("[GET /v4/corporations/{corporation_id}/members/][%d] getCorporationsCorporationIdMembersOK  %+v", 200, o.Payload)
 }
 func (o *GetCorporationsCorporationIDMembersOK) GetPayload() []int32 {
 	return o.Payload
@@ -186,7 +186,7 @@ type GetCorporationsCorporationIDMembersNotModified struct {
 }
 
 func (o *GetCorporationsCorporationIDMembersNotModified) Error() string {
-	return fmt.Sprintf("[GET /v3/corporations/{corporation_id}/members/][%d] getCorporationsCorporationIdMembersNotModified ", 304)
+	return fmt.Sprintf("[GET /v4/corporations/{corporation_id}/members/][%d] getCorporationsCorporationIdMembersNotModified ", 304)
 }
 
 func (o *GetCorporationsCorporationIDMembersNotModified) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
@@ -236,7 +236,7 @@ type GetCorporationsCorporationIDMembersBadRequest struct {
 }
 
 func (o *GetCorporationsCorporationIDMembersBadRequest) Error() string {
-	return fmt.Sprintf("[GET /v3/corporations/{corporation_id}/members/][%d] getCorporationsCorporationIdMembersBadRequest  %+v", 400, o.Payload)
+	return fmt.Sprintf("[GET /v4/corporations/{corporation_id}/members/][%d] getCorporationsCorporationIdMembersBadRequest  %+v", 400, o.Payload)
 }
 func (o *GetCorporationsCorporationIDMembersBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
@@ -268,7 +268,7 @@ type GetCorporationsCorporationIDMembersUnauthorized struct {
 }
 
 func (o *GetCorporationsCorporationIDMembersUnauthorized) Error() string {
-	return fmt.Sprintf("[GET /v3/corporations/{corporation_id}/members/][%d] getCorporationsCorporationIdMembersUnauthorized  %+v", 401, o.Payload)
+	return fmt.Sprintf("[GET /v4/corporations/{corporation_id}/members/][%d] getCorporationsCorporationIdMembersUnauthorized  %+v", 401, o.Payload)
 }
 func (o *GetCorporationsCorporationIDMembersUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
@@ -300,7 +300,7 @@ type GetCorporationsCorporationIDMembersForbidden struct {
 }
 
 func (o *GetCorporationsCorporationIDMembersForbidden) Error() string {
-	return fmt.Sprintf("[GET /v3/corporations/{corporation_id}/members/][%d] getCorporationsCorporationIdMembersForbidden  %+v", 403, o.Payload)
+	return fmt.Sprintf("[GET /v4/corporations/{corporation_id}/members/][%d] getCorporationsCorporationIdMembersForbidden  %+v", 403, o.Payload)
 }
 func (o *GetCorporationsCorporationIDMembersForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
@@ -332,7 +332,7 @@ type GetCorporationsCorporationIDMembersEnhanceYourCalm struct {
 }
 
 func (o *GetCorporationsCorporationIDMembersEnhanceYourCalm) Error() string {
-	return fmt.Sprintf("[GET /v3/corporations/{corporation_id}/members/][%d] getCorporationsCorporationIdMembersEnhanceYourCalm  %+v", 420, o.Payload)
+	return fmt.Sprintf("[GET /v4/corporations/{corporation_id}/members/][%d] getCorporationsCorporationIdMembersEnhanceYourCalm  %+v", 420, o.Payload)
 }
 func (o *GetCorporationsCorporationIDMembersEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
@@ -364,7 +364,7 @@ type GetCorporationsCorporationIDMembersInternalServerError struct {
 }
 
 func (o *GetCorporationsCorporationIDMembersInternalServerError) Error() string {
-	return fmt.Sprintf("[GET /v3/corporations/{corporation_id}/members/][%d] getCorporationsCorporationIdMembersInternalServerError  %+v", 500, o.Payload)
+	return fmt.Sprintf("[GET /v4/corporations/{corporation_id}/members/][%d] getCorporationsCorporationIdMembersInternalServerError  %+v", 500, o.Payload)
 }
 func (o *GetCorporationsCorporationIDMembersInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
@@ -396,7 +396,7 @@ type GetCorporationsCorporationIDMembersServiceUnavailable struct {
 }
 
 func (o *GetCorporationsCorporationIDMembersServiceUnavailable) Error() string {
-	return fmt.Sprintf("[GET /v3/corporations/{corporation_id}/members/][%d] getCorporationsCorporationIdMembersServiceUnavailable  %+v", 503, o.Payload)
+	return fmt.Sprintf("[GET /v4/corporations/{corporation_id}/members/][%d] getCorporationsCorporationIdMembersServiceUnavailable  %+v", 503, o.Payload)
 }
 func (o *GetCorporationsCorporationIDMembersServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
@@ -428,7 +428,7 @@ type GetCorporationsCorporationIDMembersGatewayTimeout struct {
 }
 
 func (o *GetCorporationsCorporationIDMembersGatewayTimeout) Error() string {
-	return fmt.Sprintf("[GET /v3/corporations/{corporation_id}/members/][%d] getCorporationsCorporationIdMembersGatewayTimeout  %+v", 504, o.Payload)
+	return fmt.Sprintf("[GET /v4/corporations/{corporation_id}/members/][%d] getCorporationsCorporationIdMembersGatewayTimeout  %+v", 504, o.Payload)
 }
 func (o *GetCorporationsCorporationIDMembersGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload

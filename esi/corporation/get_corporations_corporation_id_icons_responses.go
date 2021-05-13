@@ -109,7 +109,7 @@ type GetCorporationsCorporationIDIconsOK struct {
 }
 
 func (o *GetCorporationsCorporationIDIconsOK) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsOK  %+v", 200, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsOK  %+v", 200, o.Payload)
 }
 func (o *GetCorporationsCorporationIDIconsOK) GetPayload() *GetCorporationsCorporationIDIconsOKBody {
 	return o.Payload
@@ -184,7 +184,7 @@ type GetCorporationsCorporationIDIconsNotModified struct {
 }
 
 func (o *GetCorporationsCorporationIDIconsNotModified) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsNotModified ", 304)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsNotModified ", 304)
 }
 
 func (o *GetCorporationsCorporationIDIconsNotModified) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
@@ -234,7 +234,7 @@ type GetCorporationsCorporationIDIconsBadRequest struct {
 }
 
 func (o *GetCorporationsCorporationIDIconsBadRequest) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsBadRequest  %+v", 400, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsBadRequest  %+v", 400, o.Payload)
 }
 func (o *GetCorporationsCorporationIDIconsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
@@ -266,7 +266,7 @@ type GetCorporationsCorporationIDIconsNotFound struct {
 }
 
 func (o *GetCorporationsCorporationIDIconsNotFound) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsNotFound  %+v", 404, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsNotFound  %+v", 404, o.Payload)
 }
 func (o *GetCorporationsCorporationIDIconsNotFound) GetPayload() *GetCorporationsCorporationIDIconsNotFoundBody {
 	return o.Payload
@@ -298,7 +298,7 @@ type GetCorporationsCorporationIDIconsEnhanceYourCalm struct {
 }
 
 func (o *GetCorporationsCorporationIDIconsEnhanceYourCalm) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsEnhanceYourCalm  %+v", 420, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsEnhanceYourCalm  %+v", 420, o.Payload)
 }
 func (o *GetCorporationsCorporationIDIconsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
@@ -330,7 +330,7 @@ type GetCorporationsCorporationIDIconsInternalServerError struct {
 }
 
 func (o *GetCorporationsCorporationIDIconsInternalServerError) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsInternalServerError  %+v", 500, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsInternalServerError  %+v", 500, o.Payload)
 }
 func (o *GetCorporationsCorporationIDIconsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
@@ -362,7 +362,7 @@ type GetCorporationsCorporationIDIconsServiceUnavailable struct {
 }
 
 func (o *GetCorporationsCorporationIDIconsServiceUnavailable) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsServiceUnavailable  %+v", 503, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsServiceUnavailable  %+v", 503, o.Payload)
 }
 func (o *GetCorporationsCorporationIDIconsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
@@ -394,7 +394,7 @@ type GetCorporationsCorporationIDIconsGatewayTimeout struct {
 }
 
 func (o *GetCorporationsCorporationIDIconsGatewayTimeout) Error() string {
-	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsGatewayTimeout  %+v", 504, o.Payload)
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsGatewayTimeout  %+v", 504, o.Payload)
 }
 func (o *GetCorporationsCorporationIDIconsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload

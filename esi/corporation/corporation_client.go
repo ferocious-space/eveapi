@@ -94,7 +94,7 @@ func (a *Client) GetCorporationsCorporationID(params *GetCorporationsCorporation
 	op := &runtime.ClientOperation{
 		ID:                 "get_corporations_corporation_id",
 		Method:             "GET",
-		PathPattern:        "/v4/corporations/{corporation_id}/",
+		PathPattern:        "/v5/corporations/{corporation_id}/",
 		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
 		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"https"},
@@ -138,7 +138,7 @@ func (a *Client) GetCorporationsCorporationIDAlliancehistory(params *GetCorporat
 	op := &runtime.ClientOperation{
 		ID:                 "get_corporations_corporation_id_alliancehistory",
 		Method:             "GET",
-		PathPattern:        "/v2/corporations/{corporation_id}/alliancehistory/",
+		PathPattern:        "/v3/corporations/{corporation_id}/alliancehistory/",
 		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
 		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"https"},
@@ -185,7 +185,7 @@ func (a *Client) GetCorporationsCorporationIDBlueprints(params *GetCorporationsC
 	op := &runtime.ClientOperation{
 		ID:                 "get_corporations_corporation_id_blueprints",
 		Method:             "GET",
-		PathPattern:        "/v2/corporations/{corporation_id}/blueprints/",
+		PathPattern:        "/v3/corporations/{corporation_id}/blueprints/",
 		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
 		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"https"},
@@ -233,7 +233,7 @@ func (a *Client) GetCorporationsCorporationIDContainersLogs(params *GetCorporati
 	op := &runtime.ClientOperation{
 		ID:                 "get_corporations_corporation_id_containers_logs",
 		Method:             "GET",
-		PathPattern:        "/v2/corporations/{corporation_id}/containers/logs/",
+		PathPattern:        "/v3/corporations/{corporation_id}/containers/logs/",
 		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
 		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"https"},
@@ -281,7 +281,7 @@ func (a *Client) GetCorporationsCorporationIDDivisions(params *GetCorporationsCo
 	op := &runtime.ClientOperation{
 		ID:                 "get_corporations_corporation_id_divisions",
 		Method:             "GET",
-		PathPattern:        "/v1/corporations/{corporation_id}/divisions/",
+		PathPattern:        "/v2/corporations/{corporation_id}/divisions/",
 		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
 		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"https"},
@@ -329,7 +329,7 @@ func (a *Client) GetCorporationsCorporationIDFacilities(params *GetCorporationsC
 	op := &runtime.ClientOperation{
 		ID:                 "get_corporations_corporation_id_facilities",
 		Method:             "GET",
-		PathPattern:        "/v1/corporations/{corporation_id}/facilities/",
+		PathPattern:        "/v2/corporations/{corporation_id}/facilities/",
 		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
 		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"https"},
@@ -365,9 +365,6 @@ func (a *Client) GetCorporationsCorporationIDFacilities(params *GetCorporationsC
 ---
 
 This route is cached for up to 3600 seconds
-
----
-[Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/icons/)
 */
 func (a *Client) GetCorporationsCorporationIDIcons(params *GetCorporationsCorporationIDIconsParams, opts ...ClientOption) (*GetCorporationsCorporationIDIconsOK, error) {
 	// TODO: Validate the params before sending
@@ -377,7 +374,7 @@ func (a *Client) GetCorporationsCorporationIDIcons(params *GetCorporationsCorpor
 	op := &runtime.ClientOperation{
 		ID:                 "get_corporations_corporation_id_icons",
 		Method:             "GET",
-		PathPattern:        "/v1/corporations/{corporation_id}/icons/",
+		PathPattern:        "/v2/corporations/{corporation_id}/icons/",
 		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
 		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"https"},
@@ -421,7 +418,7 @@ func (a *Client) GetCorporationsCorporationIDMedals(params *GetCorporationsCorpo
 	op := &runtime.ClientOperation{
 		ID:                 "get_corporations_corporation_id_medals",
 		Method:             "GET",
-		PathPattern:        "/v1/corporations/{corporation_id}/medals/",
+		PathPattern:        "/v2/corporations/{corporation_id}/medals/",
 		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
 		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"https"},
@@ -469,7 +466,7 @@ func (a *Client) GetCorporationsCorporationIDMedalsIssued(params *GetCorporation
 	op := &runtime.ClientOperation{
 		ID:                 "get_corporations_corporation_id_medals_issued",
 		Method:             "GET",
-		PathPattern:        "/v1/corporations/{corporation_id}/medals/issued/",
+		PathPattern:        "/v2/corporations/{corporation_id}/medals/issued/",
 		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
 		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"https"},
@@ -514,7 +511,7 @@ func (a *Client) GetCorporationsCorporationIDMembers(params *GetCorporationsCorp
 	op := &runtime.ClientOperation{
 		ID:                 "get_corporations_corporation_id_members",
 		Method:             "GET",
-		PathPattern:        "/v3/corporations/{corporation_id}/members/",
+		PathPattern:        "/v4/corporations/{corporation_id}/members/",
 		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
 		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"https"},
@@ -562,7 +559,7 @@ func (a *Client) GetCorporationsCorporationIDMembersLimit(params *GetCorporation
 	op := &runtime.ClientOperation{
 		ID:                 "get_corporations_corporation_id_members_limit",
 		Method:             "GET",
-		PathPattern:        "/v1/corporations/{corporation_id}/members/limit/",
+		PathPattern:        "/v2/corporations/{corporation_id}/members/limit/",
 		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
 		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"https"},
@@ -610,7 +607,7 @@ func (a *Client) GetCorporationsCorporationIDMembersTitles(params *GetCorporatio
 	op := &runtime.ClientOperation{
 		ID:                 "get_corporations_corporation_id_members_titles",
 		Method:             "GET",
-		PathPattern:        "/v1/corporations/{corporation_id}/members/titles/",
+		PathPattern:        "/v2/corporations/{corporation_id}/members/titles/",
 		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
 		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"https"},
@@ -658,7 +655,7 @@ func (a *Client) GetCorporationsCorporationIDMembertracking(params *GetCorporati
 	op := &runtime.ClientOperation{
 		ID:                 "get_corporations_corporation_id_membertracking",
 		Method:             "GET",
-		PathPattern:        "/v1/corporations/{corporation_id}/membertracking/",
+		PathPattern:        "/v2/corporations/{corporation_id}/membertracking/",
 		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
 		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"https"},
@@ -703,7 +700,7 @@ func (a *Client) GetCorporationsCorporationIDRoles(params *GetCorporationsCorpor
 	op := &runtime.ClientOperation{
 		ID:                 "get_corporations_corporation_id_roles",
 		Method:             "GET",
-		PathPattern:        "/v1/corporations/{corporation_id}/roles/",
+		PathPattern:        "/v2/corporations/{corporation_id}/roles/",
 		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
 		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"https"},
@@ -751,7 +748,7 @@ func (a *Client) GetCorporationsCorporationIDRolesHistory(params *GetCorporation
 	op := &runtime.ClientOperation{
 		ID:                 "get_corporations_corporation_id_roles_history",
 		Method:             "GET",
-		PathPattern:        "/v1/corporations/{corporation_id}/roles/history/",
+		PathPattern:        "/v2/corporations/{corporation_id}/roles/history/",
 		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
 		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"https"},
@@ -844,7 +841,7 @@ func (a *Client) GetCorporationsCorporationIDStandings(params *GetCorporationsCo
 	op := &runtime.ClientOperation{
 		ID:                 "get_corporations_corporation_id_standings",
 		Method:             "GET",
-		PathPattern:        "/v1/corporations/{corporation_id}/standings/",
+		PathPattern:        "/v2/corporations/{corporation_id}/standings/",
 		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
 		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"https"},
@@ -883,9 +880,6 @@ This route is cached for up to 3600 seconds
 
 ---
 Requires one of the following EVE corporation role(s): Director
-
----
-[Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/starbases/)
 */
 func (a *Client) GetCorporationsCorporationIDStarbases(params *GetCorporationsCorporationIDStarbasesParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*GetCorporationsCorporationIDStarbasesOK, error) {
 	// TODO: Validate the params before sending
@@ -895,7 +889,7 @@ func (a *Client) GetCorporationsCorporationIDStarbases(params *GetCorporationsCo
 	op := &runtime.ClientOperation{
 		ID:                 "get_corporations_corporation_id_starbases",
 		Method:             "GET",
-		PathPattern:        "/v1/corporations/{corporation_id}/starbases/",
+		PathPattern:        "/v2/corporations/{corporation_id}/starbases/",
 		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
 		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"https"},
@@ -943,7 +937,7 @@ func (a *Client) GetCorporationsCorporationIDStarbasesStarbaseID(params *GetCorp
 	op := &runtime.ClientOperation{
 		ID:                 "get_corporations_corporation_id_starbases_starbase_id",
 		Method:             "GET",
-		PathPattern:        "/v1/corporations/{corporation_id}/starbases/{starbase_id}/",
+		PathPattern:        "/v2/corporations/{corporation_id}/starbases/{starbase_id}/",
 		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
 		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"https"},
@@ -982,9 +976,6 @@ This route is cached for up to 3600 seconds
 
 ---
 Requires one of the following EVE corporation role(s): Station_Manager
-
----
-[Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/structures/)
 */
 func (a *Client) GetCorporationsCorporationIDStructures(params *GetCorporationsCorporationIDStructuresParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*GetCorporationsCorporationIDStructuresOK, error) {
 	// TODO: Validate the params before sending
@@ -994,7 +985,7 @@ func (a *Client) GetCorporationsCorporationIDStructures(params *GetCorporationsC
 	op := &runtime.ClientOperation{
 		ID:                 "get_corporations_corporation_id_structures",
 		Method:             "GET",
-		PathPattern:        "/v3/corporations/{corporation_id}/structures/",
+		PathPattern:        "/v4/corporations/{corporation_id}/structures/",
 		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
 		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"https"},
@@ -1042,7 +1033,7 @@ func (a *Client) GetCorporationsCorporationIDTitles(params *GetCorporationsCorpo
 	op := &runtime.ClientOperation{
 		ID:                 "get_corporations_corporation_id_titles",
 		Method:             "GET",
-		PathPattern:        "/v1/corporations/{corporation_id}/titles/",
+		PathPattern:        "/v2/corporations/{corporation_id}/titles/",
 		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
 		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"https"},
@@ -1087,7 +1078,7 @@ func (a *Client) GetCorporationsNpccorps(params *GetCorporationsNpccorpsParams, 
 	op := &runtime.ClientOperation{
 		ID:                 "get_corporations_npccorps",
 		Method:             "GET",
-		PathPattern:        "/v1/corporations/npccorps/",
+		PathPattern:        "/v2/corporations/npccorps/",
 		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
 		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"https"},

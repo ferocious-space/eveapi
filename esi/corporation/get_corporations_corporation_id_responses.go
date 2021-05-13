@@ -111,7 +111,7 @@ type GetCorporationsCorporationIDOK struct {
 }
 
 func (o *GetCorporationsCorporationIDOK) Error() string {
-	return fmt.Sprintf("[GET /v4/corporations/{corporation_id}/][%d] getCorporationsCorporationIdOK  %+v", 200, o.Payload)
+	return fmt.Sprintf("[GET /v5/corporations/{corporation_id}/][%d] getCorporationsCorporationIdOK  %+v", 200, o.Payload)
 }
 func (o *GetCorporationsCorporationIDOK) GetPayload() *GetCorporationsCorporationIDOKBody {
 	return o.Payload
@@ -186,7 +186,7 @@ type GetCorporationsCorporationIDNotModified struct {
 }
 
 func (o *GetCorporationsCorporationIDNotModified) Error() string {
-	return fmt.Sprintf("[GET /v4/corporations/{corporation_id}/][%d] getCorporationsCorporationIdNotModified ", 304)
+	return fmt.Sprintf("[GET /v5/corporations/{corporation_id}/][%d] getCorporationsCorporationIdNotModified ", 304)
 }
 
 func (o *GetCorporationsCorporationIDNotModified) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
@@ -236,7 +236,7 @@ type GetCorporationsCorporationIDBadRequest struct {
 }
 
 func (o *GetCorporationsCorporationIDBadRequest) Error() string {
-	return fmt.Sprintf("[GET /v4/corporations/{corporation_id}/][%d] getCorporationsCorporationIdBadRequest  %+v", 400, o.Payload)
+	return fmt.Sprintf("[GET /v5/corporations/{corporation_id}/][%d] getCorporationsCorporationIdBadRequest  %+v", 400, o.Payload)
 }
 func (o *GetCorporationsCorporationIDBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
@@ -268,7 +268,7 @@ type GetCorporationsCorporationIDNotFound struct {
 }
 
 func (o *GetCorporationsCorporationIDNotFound) Error() string {
-	return fmt.Sprintf("[GET /v4/corporations/{corporation_id}/][%d] getCorporationsCorporationIdNotFound  %+v", 404, o.Payload)
+	return fmt.Sprintf("[GET /v5/corporations/{corporation_id}/][%d] getCorporationsCorporationIdNotFound  %+v", 404, o.Payload)
 }
 func (o *GetCorporationsCorporationIDNotFound) GetPayload() *GetCorporationsCorporationIDNotFoundBody {
 	return o.Payload
@@ -300,7 +300,7 @@ type GetCorporationsCorporationIDEnhanceYourCalm struct {
 }
 
 func (o *GetCorporationsCorporationIDEnhanceYourCalm) Error() string {
-	return fmt.Sprintf("[GET /v4/corporations/{corporation_id}/][%d] getCorporationsCorporationIdEnhanceYourCalm  %+v", 420, o.Payload)
+	return fmt.Sprintf("[GET /v5/corporations/{corporation_id}/][%d] getCorporationsCorporationIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
 func (o *GetCorporationsCorporationIDEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
@@ -332,7 +332,7 @@ type GetCorporationsCorporationIDInternalServerError struct {
 }
 
 func (o *GetCorporationsCorporationIDInternalServerError) Error() string {
-	return fmt.Sprintf("[GET /v4/corporations/{corporation_id}/][%d] getCorporationsCorporationIdInternalServerError  %+v", 500, o.Payload)
+	return fmt.Sprintf("[GET /v5/corporations/{corporation_id}/][%d] getCorporationsCorporationIdInternalServerError  %+v", 500, o.Payload)
 }
 func (o *GetCorporationsCorporationIDInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
@@ -364,7 +364,7 @@ type GetCorporationsCorporationIDServiceUnavailable struct {
 }
 
 func (o *GetCorporationsCorporationIDServiceUnavailable) Error() string {
-	return fmt.Sprintf("[GET /v4/corporations/{corporation_id}/][%d] getCorporationsCorporationIdServiceUnavailable  %+v", 503, o.Payload)
+	return fmt.Sprintf("[GET /v5/corporations/{corporation_id}/][%d] getCorporationsCorporationIdServiceUnavailable  %+v", 503, o.Payload)
 }
 func (o *GetCorporationsCorporationIDServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
@@ -396,7 +396,7 @@ type GetCorporationsCorporationIDGatewayTimeout struct {
 }
 
 func (o *GetCorporationsCorporationIDGatewayTimeout) Error() string {
-	return fmt.Sprintf("[GET /v4/corporations/{corporation_id}/][%d] getCorporationsCorporationIdGatewayTimeout  %+v", 504, o.Payload)
+	return fmt.Sprintf("[GET /v5/corporations/{corporation_id}/][%d] getCorporationsCorporationIdGatewayTimeout  %+v", 504, o.Payload)
 }
 func (o *GetCorporationsCorporationIDGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload

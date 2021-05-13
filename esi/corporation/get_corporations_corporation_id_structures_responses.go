@@ -138,7 +138,7 @@ type GetCorporationsCorporationIDStructuresOK struct {
 }
 
 func (o *GetCorporationsCorporationIDStructuresOK) Error() string {
-	return fmt.Sprintf("[GET /v3/corporations/{corporation_id}/structures/][%d] getCorporationsCorporationIdStructuresOK  %+v", 200, o.Payload)
+	return fmt.Sprintf("[GET /v4/corporations/{corporation_id}/structures/][%d] getCorporationsCorporationIdStructuresOK  %+v", 200, o.Payload)
 }
 func (o *GetCorporationsCorporationIDStructuresOK) GetPayload() []*GetCorporationsCorporationIDStructuresOKBodyItems0 {
 	return o.Payload
@@ -229,7 +229,7 @@ type GetCorporationsCorporationIDStructuresNotModified struct {
 }
 
 func (o *GetCorporationsCorporationIDStructuresNotModified) Error() string {
-	return fmt.Sprintf("[GET /v3/corporations/{corporation_id}/structures/][%d] getCorporationsCorporationIdStructuresNotModified ", 304)
+	return fmt.Sprintf("[GET /v4/corporations/{corporation_id}/structures/][%d] getCorporationsCorporationIdStructuresNotModified ", 304)
 }
 
 func (o *GetCorporationsCorporationIDStructuresNotModified) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
@@ -279,7 +279,7 @@ type GetCorporationsCorporationIDStructuresBadRequest struct {
 }
 
 func (o *GetCorporationsCorporationIDStructuresBadRequest) Error() string {
-	return fmt.Sprintf("[GET /v3/corporations/{corporation_id}/structures/][%d] getCorporationsCorporationIdStructuresBadRequest  %+v", 400, o.Payload)
+	return fmt.Sprintf("[GET /v4/corporations/{corporation_id}/structures/][%d] getCorporationsCorporationIdStructuresBadRequest  %+v", 400, o.Payload)
 }
 func (o *GetCorporationsCorporationIDStructuresBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
@@ -311,7 +311,7 @@ type GetCorporationsCorporationIDStructuresUnauthorized struct {
 }
 
 func (o *GetCorporationsCorporationIDStructuresUnauthorized) Error() string {
-	return fmt.Sprintf("[GET /v3/corporations/{corporation_id}/structures/][%d] getCorporationsCorporationIdStructuresUnauthorized  %+v", 401, o.Payload)
+	return fmt.Sprintf("[GET /v4/corporations/{corporation_id}/structures/][%d] getCorporationsCorporationIdStructuresUnauthorized  %+v", 401, o.Payload)
 }
 func (o *GetCorporationsCorporationIDStructuresUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
@@ -343,7 +343,7 @@ type GetCorporationsCorporationIDStructuresForbidden struct {
 }
 
 func (o *GetCorporationsCorporationIDStructuresForbidden) Error() string {
-	return fmt.Sprintf("[GET /v3/corporations/{corporation_id}/structures/][%d] getCorporationsCorporationIdStructuresForbidden  %+v", 403, o.Payload)
+	return fmt.Sprintf("[GET /v4/corporations/{corporation_id}/structures/][%d] getCorporationsCorporationIdStructuresForbidden  %+v", 403, o.Payload)
 }
 func (o *GetCorporationsCorporationIDStructuresForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
@@ -375,7 +375,7 @@ type GetCorporationsCorporationIDStructuresEnhanceYourCalm struct {
 }
 
 func (o *GetCorporationsCorporationIDStructuresEnhanceYourCalm) Error() string {
-	return fmt.Sprintf("[GET /v3/corporations/{corporation_id}/structures/][%d] getCorporationsCorporationIdStructuresEnhanceYourCalm  %+v", 420, o.Payload)
+	return fmt.Sprintf("[GET /v4/corporations/{corporation_id}/structures/][%d] getCorporationsCorporationIdStructuresEnhanceYourCalm  %+v", 420, o.Payload)
 }
 func (o *GetCorporationsCorporationIDStructuresEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
@@ -407,7 +407,7 @@ type GetCorporationsCorporationIDStructuresInternalServerError struct {
 }
 
 func (o *GetCorporationsCorporationIDStructuresInternalServerError) Error() string {
-	return fmt.Sprintf("[GET /v3/corporations/{corporation_id}/structures/][%d] getCorporationsCorporationIdStructuresInternalServerError  %+v", 500, o.Payload)
+	return fmt.Sprintf("[GET /v4/corporations/{corporation_id}/structures/][%d] getCorporationsCorporationIdStructuresInternalServerError  %+v", 500, o.Payload)
 }
 func (o *GetCorporationsCorporationIDStructuresInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
@@ -439,7 +439,7 @@ type GetCorporationsCorporationIDStructuresServiceUnavailable struct {
 }
 
 func (o *GetCorporationsCorporationIDStructuresServiceUnavailable) Error() string {
-	return fmt.Sprintf("[GET /v3/corporations/{corporation_id}/structures/][%d] getCorporationsCorporationIdStructuresServiceUnavailable  %+v", 503, o.Payload)
+	return fmt.Sprintf("[GET /v4/corporations/{corporation_id}/structures/][%d] getCorporationsCorporationIdStructuresServiceUnavailable  %+v", 503, o.Payload)
 }
 func (o *GetCorporationsCorporationIDStructuresServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
@@ -471,7 +471,7 @@ type GetCorporationsCorporationIDStructuresGatewayTimeout struct {
 }
 
 func (o *GetCorporationsCorporationIDStructuresGatewayTimeout) Error() string {
-	return fmt.Sprintf("[GET /v3/corporations/{corporation_id}/structures/][%d] getCorporationsCorporationIdStructuresGatewayTimeout  %+v", 504, o.Payload)
+	return fmt.Sprintf("[GET /v4/corporations/{corporation_id}/structures/][%d] getCorporationsCorporationIdStructuresGatewayTimeout  %+v", 504, o.Payload)
 }
 func (o *GetCorporationsCorporationIDStructuresGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
@@ -508,6 +508,11 @@ type GetCorporationsCorporationIDStructuresOKBodyItems0 struct {
 	// Format: date-time
 	FuelExpires strfmt.DateTime `json:"fuel_expires,omitempty"`
 
+	// get_corporations_corporation_id_structures_name
+	//
+	// The structure name
+	Name string `json:"name,omitempty"`
+
 	// get_corporations_corporation_id_structures_next_reinforce_apply
 	//
 	// The date and time when the structure's newly requested reinforcement times (e.g. next_reinforce_hour and next_reinforce_day) will take effect
@@ -521,13 +526,6 @@ type GetCorporationsCorporationIDStructuresOKBodyItems0 struct {
 	// Minimum: 0
 	NextReinforceHour *int32 `json:"next_reinforce_hour,omitempty"`
 
-	// get_corporations_corporation_id_structures_next_reinforce_weekday
-	//
-	// The requested change to reinforce_weekday that will take effect at the time shown by next_reinforce_apply
-	// Maximum: 6
-	// Minimum: 0
-	NextReinforceWeekday *int32 `json:"next_reinforce_weekday,omitempty"`
-
 	// get_corporations_corporation_id_structures_profile_id
 	//
 	// The id of the ACL profile for this citadel
@@ -537,17 +535,9 @@ type GetCorporationsCorporationIDStructuresOKBodyItems0 struct {
 	// get_corporations_corporation_id_structures_reinforce_hour
 	//
 	// The hour of day that determines the four hour window when the structure will randomly exit its reinforcement periods and become vulnerable to attack against its armor and/or hull. The structure will become vulnerable at a random time that is +/- 2 hours centered on the value of this property
-	// Required: true
 	// Maximum: 23
 	// Minimum: 0
-	ReinforceHour *int32 `json:"reinforce_hour"`
-
-	// get_corporations_corporation_id_structures_reinforce_weekday
-	//
-	// The day of the week when the structure exits its final reinforcement period and becomes vulnerable to attack against its hull. Monday is 0 and Sunday is 6
-	// Maximum: 6
-	// Minimum: 0
-	ReinforceWeekday *int32 `json:"reinforce_weekday,omitempty"`
+	ReinforceHour *int32 `json:"reinforce_hour,omitempty"`
 
 	// get_corporations_corporation_id_structures_services
 	//
@@ -619,19 +609,11 @@ func (o *GetCorporationsCorporationIDStructuresOKBodyItems0) Validate(formats st
 		res = append(res, err)
 	}
 
-	if err := o.validateNextReinforceWeekday(formats); err != nil {
-		res = append(res, err)
-	}
-
 	if err := o.validateProfileID(formats); err != nil {
 		res = append(res, err)
 	}
 
 	if err := o.validateReinforceHour(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.validateReinforceWeekday(formats); err != nil {
 		res = append(res, err)
 	}
 
@@ -722,22 +704,6 @@ func (o *GetCorporationsCorporationIDStructuresOKBodyItems0) validateNextReinfor
 	return nil
 }
 
-func (o *GetCorporationsCorporationIDStructuresOKBodyItems0) validateNextReinforceWeekday(formats strfmt.Registry) error {
-	if swag.IsZero(o.NextReinforceWeekday) { // not required
-		return nil
-	}
-
-	if err := validate.MinimumInt("next_reinforce_weekday", "body", int64(*o.NextReinforceWeekday), 0, false); err != nil {
-		return err
-	}
-
-	if err := validate.MaximumInt("next_reinforce_weekday", "body", int64(*o.NextReinforceWeekday), 6, false); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func (o *GetCorporationsCorporationIDStructuresOKBodyItems0) validateProfileID(formats strfmt.Registry) error {
 
 	if err := validate.Required("profile_id", "body", o.ProfileID); err != nil {
@@ -748,9 +714,8 @@ func (o *GetCorporationsCorporationIDStructuresOKBodyItems0) validateProfileID(f
 }
 
 func (o *GetCorporationsCorporationIDStructuresOKBodyItems0) validateReinforceHour(formats strfmt.Registry) error {
-
-	if err := validate.Required("reinforce_hour", "body", o.ReinforceHour); err != nil {
-		return err
+	if swag.IsZero(o.ReinforceHour) { // not required
+		return nil
 	}
 
 	if err := validate.MinimumInt("reinforce_hour", "body", int64(*o.ReinforceHour), 0, false); err != nil {
@@ -758,22 +723,6 @@ func (o *GetCorporationsCorporationIDStructuresOKBodyItems0) validateReinforceHo
 	}
 
 	if err := validate.MaximumInt("reinforce_hour", "body", int64(*o.ReinforceHour), 23, false); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (o *GetCorporationsCorporationIDStructuresOKBodyItems0) validateReinforceWeekday(formats strfmt.Registry) error {
-	if swag.IsZero(o.ReinforceWeekday) { // not required
-		return nil
-	}
-
-	if err := validate.MinimumInt("reinforce_weekday", "body", int64(*o.ReinforceWeekday), 0, false); err != nil {
-		return err
-	}
-
-	if err := validate.MaximumInt("reinforce_weekday", "body", int64(*o.ReinforceWeekday), 6, false); err != nil {
 		return err
 	}
 
@@ -1006,7 +955,7 @@ swagger:model GetCorporationsCorporationIDStructuresOKBodyItems0ServicesItems0
 */
 type GetCorporationsCorporationIDStructuresOKBodyItems0ServicesItems0 struct {
 
-	// get_corporations_corporation_id_structures_name
+	// get_corporations_corporation_id_structures_service_name
 	//
 	// name string
 	// Required: true
