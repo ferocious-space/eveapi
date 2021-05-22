@@ -3,13 +3,13 @@
 package sde
 
 type TranslationLanguage struct {
-	De   *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
-	EnUs *string `bson:"en-us,omitempty" json:"en-us,omitempty" yaml:"en-us,omitempty"`
-	Es   *string `bson:"es,omitempty" json:"es,omitempty" yaml:"es,omitempty"`
-	Fr   *string `bson:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
-	It   *string `bson:"it,omitempty" json:"it,omitempty" yaml:"it,omitempty"`
-	Ja   *string `bson:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
-	Ko   *string `bson:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
-	Ru   *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
-	Zh   *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
+	De   *string `bson:"de,omitempty" db:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
+	EnUs *string `bson:"en-us,omitempty" db:"en-us,omitempty" json:"en-us,omitempty" yaml:"en-us,omitempty"`
+	Es   *string `bson:"es,omitempty" db:"es,omitempty" json:"es,omitempty" yaml:"es,omitempty"`
+	Fr   *string `bson:"fr,omitempty" db:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
+	It   *string `bson:"it,omitempty" db:"it,omitempty" json:"it,omitempty" yaml:"it,omitempty"`
+	Ja   *string `bson:"ja,omitempty" db:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
+	Ko   *string `bson:"ko,omitempty" db:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
+	Ru   *string `bson:"ru,omitempty" db:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
+	Zh   *string `bson:"zh,omitempty" db:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
 }

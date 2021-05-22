@@ -25,13 +25,13 @@ func (x SkinMap) Get(ID int32) *Skin {
 }
 
 type Skin struct {
-	AllowCCPDevs       *bool   `bson:"allowCCPDevs,omitempty" json:"allowCCPDevs,omitempty" yaml:"allowCCPDevs,omitempty"`
-	InternalName       *string `bson:"internalName,omitempty" json:"internalName,omitempty" yaml:"internalName,omitempty"`
-	SkinID             *int32  `bson:"skinID,omitempty" json:"skinID,omitempty" storm:"index" yaml:"skinID,omitempty"`
-	SkinMaterialID     *int32  `bson:"skinMaterialID,omitempty" json:"skinMaterialID,omitempty" storm:"index" yaml:"skinMaterialID,omitempty"`
-	Types              []int32 `bson:"types,omitempty" json:"types,omitempty" yaml:"types,omitempty"`
-	VisibleSerenity    *bool   `bson:"visibleSerenity,omitempty" json:"visibleSerenity,omitempty" yaml:"visibleSerenity,omitempty"`
-	VisibleTranquility *bool   `bson:"visibleTranquility,omitempty" json:"visibleTranquility,omitempty" yaml:"visibleTranquility,omitempty"`
-	IsStructureSkin    *bool   `bson:"isStructureSkin,omitempty" json:"isStructureSkin,omitempty" yaml:"isStructureSkin,omitempty"`
-	SkinDescription    *string `bson:"skinDescription,omitempty" json:"skinDescription,omitempty" yaml:"skinDescription,omitempty"`
+	AllowCCPDevs       *bool   `bson:"allowCCPDevs,omitempty" db:"allowCCPDevs,omitempty" json:"allowCCPDevs,omitempty" yaml:"allowCCPDevs,omitempty"`
+	InternalName       *string `bson:"internalName,omitempty" db:"internalName,omitempty" json:"internalName,omitempty" yaml:"internalName,omitempty"`
+	SkinID             *int32  `bson:"skinID,omitempty" db:"skinID,omitempty" json:"skinID,omitempty" yaml:"skinID,omitempty"`
+	SkinMaterialID     *int32  `bson:"skinMaterialID,omitempty" db:"skinMaterialID,omitempty" json:"skinMaterialID,omitempty" yaml:"skinMaterialID,omitempty"`
+	Types              []int32 `bson:"types,omitempty" db:"types,omitempty" json:"types,omitempty" yaml:"types,omitempty"`
+	VisibleSerenity    *bool   `bson:"visibleSerenity,omitempty" db:"visibleSerenity,omitempty" json:"visibleSerenity,omitempty" yaml:"visibleSerenity,omitempty"`
+	VisibleTranquility *bool   `bson:"visibleTranquility,omitempty" db:"visibleTranquility,omitempty" json:"visibleTranquility,omitempty" yaml:"visibleTranquility,omitempty"`
+	IsStructureSkin    *bool   `bson:"isStructureSkin,omitempty" db:"isStructureSkin,omitempty" json:"isStructureSkin,omitempty" yaml:"isStructureSkin,omitempty"`
+	SkinDescription    *string `bson:"skinDescription,omitempty" db:"skinDescription,omitempty" json:"skinDescription,omitempty" yaml:"skinDescription,omitempty"`
 }

@@ -187,10 +187,7 @@ func jenGenerator(in reflect.Type, typeName string, depth int) (*Statement, map[
 					"yaml": content,
 					"json": content,
 					"bson": content,
-				}
-
-				if strings.HasSuffix(field.Name, "ID") {
-					tags["storm"] = "index"
+					"db":   content,
 				}
 
 				elem, x := jenGenerator(field.Type, singularName, depth+1)

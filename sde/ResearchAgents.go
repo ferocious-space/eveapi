@@ -25,8 +25,8 @@ func (x ResearchAgentMap) Get(ID int32) *ResearchAgent {
 }
 
 type ResearchAgent struct {
-	Skills []ResearchAgentSkills `bson:"skills,omitempty" json:"skills,omitempty" yaml:"skills,omitempty"`
+	Skills []ResearchAgentSkills `bson:"skills,omitempty" db:"skills,omitempty" json:"skills,omitempty" yaml:"skills,omitempty"`
 }
 type ResearchAgentSkills struct {
-	TypeID *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" storm:"index" yaml:"typeID,omitempty"`
+	TypeID *int32 `bson:"typeID,omitempty" db:"typeID,omitempty" json:"typeID,omitempty" yaml:"typeID,omitempty"`
 }

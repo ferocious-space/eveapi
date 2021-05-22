@@ -25,10 +25,10 @@ func (x AgentMap) Get(ID int32) *Agent {
 }
 
 type Agent struct {
-	AgentTypeID   *int32 `bson:"agentTypeID,omitempty" json:"agentTypeID,omitempty" storm:"index" yaml:"agentTypeID,omitempty"`
-	CorporationID *int32 `bson:"corporationID,omitempty" json:"corporationID,omitempty" storm:"index" yaml:"corporationID,omitempty"`
-	DivisionID    *int32 `bson:"divisionID,omitempty" json:"divisionID,omitempty" storm:"index" yaml:"divisionID,omitempty"`
-	IsLocator     *bool  `bson:"isLocator,omitempty" json:"isLocator,omitempty" yaml:"isLocator,omitempty"`
-	Level         *int32 `bson:"level,omitempty" json:"level,omitempty" yaml:"level,omitempty"`
-	LocationID    *int64 `bson:"locationID,omitempty" json:"locationID,omitempty" storm:"index" yaml:"locationID,omitempty"`
+	AgentTypeID   *int32 `bson:"agentTypeID,omitempty" db:"agentTypeID,omitempty" json:"agentTypeID,omitempty" yaml:"agentTypeID,omitempty"`
+	CorporationID *int32 `bson:"corporationID,omitempty" db:"corporationID,omitempty" json:"corporationID,omitempty" yaml:"corporationID,omitempty"`
+	DivisionID    *int32 `bson:"divisionID,omitempty" db:"divisionID,omitempty" json:"divisionID,omitempty" yaml:"divisionID,omitempty"`
+	IsLocator     *bool  `bson:"isLocator,omitempty" db:"isLocator,omitempty" json:"isLocator,omitempty" yaml:"isLocator,omitempty"`
+	Level         *int32 `bson:"level,omitempty" db:"level,omitempty" json:"level,omitempty" yaml:"level,omitempty"`
+	LocationID    *int64 `bson:"locationID,omitempty" db:"locationID,omitempty" json:"locationID,omitempty" yaml:"locationID,omitempty"`
 }

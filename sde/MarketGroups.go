@@ -25,31 +25,31 @@ func (x MarketGroupMap) Get(ID int32) *MarketGroup {
 }
 
 type MarketGroup struct {
-	DescriptionID *MarketGroupDescriptionID `bson:"descriptionID,omitempty" json:"descriptionID,omitempty" storm:"index" yaml:"descriptionID,omitempty"`
-	HasTypes      *bool                     `bson:"hasTypes,omitempty" json:"hasTypes,omitempty" yaml:"hasTypes,omitempty"`
-	IconID        *int32                    `bson:"iconID,omitempty" json:"iconID,omitempty" storm:"index" yaml:"iconID,omitempty"`
-	NameID        *MarketGroupNameID        `bson:"nameID,omitempty" json:"nameID,omitempty" storm:"index" yaml:"nameID,omitempty"`
-	ParentGroupID *int32                    `bson:"parentGroupID,omitempty" json:"parentGroupID,omitempty" storm:"index" yaml:"parentGroupID,omitempty"`
+	DescriptionID *MarketGroupDescriptionID `bson:"descriptionID,omitempty" db:"descriptionID,omitempty" json:"descriptionID,omitempty" yaml:"descriptionID,omitempty"`
+	HasTypes      *bool                     `bson:"hasTypes,omitempty" db:"hasTypes,omitempty" json:"hasTypes,omitempty" yaml:"hasTypes,omitempty"`
+	IconID        *int32                    `bson:"iconID,omitempty" db:"iconID,omitempty" json:"iconID,omitempty" yaml:"iconID,omitempty"`
+	NameID        *MarketGroupNameID        `bson:"nameID,omitempty" db:"nameID,omitempty" json:"nameID,omitempty" yaml:"nameID,omitempty"`
+	ParentGroupID *int32                    `bson:"parentGroupID,omitempty" db:"parentGroupID,omitempty" json:"parentGroupID,omitempty" yaml:"parentGroupID,omitempty"`
 }
 type MarketGroupDescriptionID struct {
-	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
-	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
-	Fr *string `bson:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
-	Ja *string `bson:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
-	Ko *string `bson:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
-	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
-	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
-	Es *string `bson:"es,omitempty" json:"es,omitempty" yaml:"es,omitempty"`
-	It *string `bson:"it,omitempty" json:"it,omitempty" yaml:"it,omitempty"`
+	De *string `bson:"de,omitempty" db:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
+	En *string `bson:"en,omitempty" db:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
+	Fr *string `bson:"fr,omitempty" db:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
+	Ja *string `bson:"ja,omitempty" db:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
+	Ko *string `bson:"ko,omitempty" db:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
+	Ru *string `bson:"ru,omitempty" db:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
+	Zh *string `bson:"zh,omitempty" db:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
+	Es *string `bson:"es,omitempty" db:"es,omitempty" json:"es,omitempty" yaml:"es,omitempty"`
+	It *string `bson:"it,omitempty" db:"it,omitempty" json:"it,omitempty" yaml:"it,omitempty"`
 }
 type MarketGroupNameID struct {
-	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
-	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
-	Fr *string `bson:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
-	Ja *string `bson:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
-	Ko *string `bson:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
-	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
-	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
-	Es *string `bson:"es,omitempty" json:"es,omitempty" yaml:"es,omitempty"`
-	It *string `bson:"it,omitempty" json:"it,omitempty" yaml:"it,omitempty"`
+	De *string `bson:"de,omitempty" db:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
+	En *string `bson:"en,omitempty" db:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
+	Fr *string `bson:"fr,omitempty" db:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
+	Ja *string `bson:"ja,omitempty" db:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
+	Ko *string `bson:"ko,omitempty" db:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
+	Ru *string `bson:"ru,omitempty" db:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
+	Zh *string `bson:"zh,omitempty" db:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
+	Es *string `bson:"es,omitempty" db:"es,omitempty" json:"es,omitempty" yaml:"es,omitempty"`
+	It *string `bson:"it,omitempty" db:"it,omitempty" json:"it,omitempty" yaml:"it,omitempty"`
 }

@@ -20,6 +20,6 @@ require (
 	github.com/modern-go/reflect2 v1.0.1 // indirect
 	github.com/pkg/errors v0.9.1
 	go.mongodb.org/mongo-driver v1.5.2 // indirect
-	golang.org/x/net v0.0.0-20210510120150-4163338589ed // indirect
+	golang.org/x/net v0.0.0-20210521195947-fe42d452be8f // indirect
 	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b
 )

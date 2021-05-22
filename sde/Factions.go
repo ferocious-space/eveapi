@@ -25,43 +25,43 @@ func (x FactionMap) Get(ID int32) *Faction {
 }
 
 type Faction struct {
-	CorporationID        *int32                     `bson:"corporationID,omitempty" json:"corporationID,omitempty" storm:"index" yaml:"corporationID,omitempty"`
-	DescriptionID        *FactionDescriptionID      `bson:"descriptionID,omitempty" json:"descriptionID,omitempty" storm:"index" yaml:"descriptionID,omitempty"`
-	IconID               *int32                     `bson:"iconID,omitempty" json:"iconID,omitempty" storm:"index" yaml:"iconID,omitempty"`
-	MemberRaces          []int32                    `bson:"memberRaces,omitempty" json:"memberRaces,omitempty" yaml:"memberRaces,omitempty"`
-	MilitiaCorporationID *int32                     `bson:"militiaCorporationID,omitempty" json:"militiaCorporationID,omitempty" storm:"index" yaml:"militiaCorporationID,omitempty"`
-	NameID               *FactionNameID             `bson:"nameID,omitempty" json:"nameID,omitempty" storm:"index" yaml:"nameID,omitempty"`
-	ShortDescriptionID   *FactionShortDescriptionID `bson:"shortDescriptionID,omitempty" json:"shortDescriptionID,omitempty" storm:"index" yaml:"shortDescriptionID,omitempty"`
-	SizeFactor           *float64                   `bson:"sizeFactor,omitempty" json:"sizeFactor,omitempty" yaml:"sizeFactor,omitempty"`
-	SolarSystemID        *int32                     `bson:"solarSystemID,omitempty" json:"solarSystemID,omitempty" storm:"index" yaml:"solarSystemID,omitempty"`
-	UniqueName           *bool                      `bson:"uniqueName,omitempty" json:"uniqueName,omitempty" yaml:"uniqueName,omitempty"`
+	CorporationID        *int32                     `bson:"corporationID,omitempty" db:"corporationID,omitempty" json:"corporationID,omitempty" yaml:"corporationID,omitempty"`
+	DescriptionID        *FactionDescriptionID      `bson:"descriptionID,omitempty" db:"descriptionID,omitempty" json:"descriptionID,omitempty" yaml:"descriptionID,omitempty"`
+	IconID               *int32                     `bson:"iconID,omitempty" db:"iconID,omitempty" json:"iconID,omitempty" yaml:"iconID,omitempty"`
+	MemberRaces          []int32                    `bson:"memberRaces,omitempty" db:"memberRaces,omitempty" json:"memberRaces,omitempty" yaml:"memberRaces,omitempty"`
+	MilitiaCorporationID *int32                     `bson:"militiaCorporationID,omitempty" db:"militiaCorporationID,omitempty" json:"militiaCorporationID,omitempty" yaml:"militiaCorporationID,omitempty"`
+	NameID               *FactionNameID             `bson:"nameID,omitempty" db:"nameID,omitempty" json:"nameID,omitempty" yaml:"nameID,omitempty"`
+	ShortDescriptionID   *FactionShortDescriptionID `bson:"shortDescriptionID,omitempty" db:"shortDescriptionID,omitempty" json:"shortDescriptionID,omitempty" yaml:"shortDescriptionID,omitempty"`
+	SizeFactor           *float64                   `bson:"sizeFactor,omitempty" db:"sizeFactor,omitempty" json:"sizeFactor,omitempty" yaml:"sizeFactor,omitempty"`
+	SolarSystemID        *int32                     `bson:"solarSystemID,omitempty" db:"solarSystemID,omitempty" json:"solarSystemID,omitempty" yaml:"solarSystemID,omitempty"`
+	UniqueName           *bool                      `bson:"uniqueName,omitempty" db:"uniqueName,omitempty" json:"uniqueName,omitempty" yaml:"uniqueName,omitempty"`
 }
 type FactionDescriptionID struct {
-	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
-	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
-	Fr *string `bson:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
-	Ja *string `bson:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
-	Ko *string `bson:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
-	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
-	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
+	De *string `bson:"de,omitempty" db:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
+	En *string `bson:"en,omitempty" db:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
+	Fr *string `bson:"fr,omitempty" db:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
+	Ja *string `bson:"ja,omitempty" db:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
+	Ko *string `bson:"ko,omitempty" db:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
+	Ru *string `bson:"ru,omitempty" db:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
+	Zh *string `bson:"zh,omitempty" db:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
 }
 type FactionNameID struct {
-	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
-	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
-	Es *string `bson:"es,omitempty" json:"es,omitempty" yaml:"es,omitempty"`
-	Fr *string `bson:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
-	It *string `bson:"it,omitempty" json:"it,omitempty" yaml:"it,omitempty"`
-	Ja *string `bson:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
-	Ko *string `bson:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
-	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
-	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
+	De *string `bson:"de,omitempty" db:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
+	En *string `bson:"en,omitempty" db:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
+	Es *string `bson:"es,omitempty" db:"es,omitempty" json:"es,omitempty" yaml:"es,omitempty"`
+	Fr *string `bson:"fr,omitempty" db:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
+	It *string `bson:"it,omitempty" db:"it,omitempty" json:"it,omitempty" yaml:"it,omitempty"`
+	Ja *string `bson:"ja,omitempty" db:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
+	Ko *string `bson:"ko,omitempty" db:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
+	Ru *string `bson:"ru,omitempty" db:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
+	Zh *string `bson:"zh,omitempty" db:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
 }
 type FactionShortDescriptionID struct {
-	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
-	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
-	Fr *string `bson:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
-	Ja *string `bson:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
-	Ko *string `bson:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
-	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
-	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
+	De *string `bson:"de,omitempty" db:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
+	En *string `bson:"en,omitempty" db:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
+	Fr *string `bson:"fr,omitempty" db:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
+	Ja *string `bson:"ja,omitempty" db:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
+	Ko *string `bson:"ko,omitempty" db:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
+	Ru *string `bson:"ru,omitempty" db:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
+	Zh *string `bson:"zh,omitempty" db:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
 }

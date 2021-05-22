@@ -25,47 +25,47 @@ func (x DogmaAttributeMap) Get(ID int32) *DogmaAttribute {
 }
 
 type DogmaAttribute struct {
-	AttributeID          *int32                              `bson:"attributeID,omitempty" json:"attributeID,omitempty" storm:"index" yaml:"attributeID,omitempty"`
-	CategoryID           *int32                              `bson:"categoryID,omitempty" json:"categoryID,omitempty" storm:"index" yaml:"categoryID,omitempty"`
-	DataType             *int32                              `bson:"dataType,omitempty" json:"dataType,omitempty" yaml:"dataType,omitempty"`
-	DefaultValue         *float64                            `bson:"defaultValue,omitempty" json:"defaultValue,omitempty" yaml:"defaultValue,omitempty"`
-	Description          *string                             `bson:"description,omitempty" json:"description,omitempty" yaml:"description,omitempty"`
-	HighIsGood           *bool                               `bson:"highIsGood,omitempty" json:"highIsGood,omitempty" yaml:"highIsGood,omitempty"`
-	Name                 *string                             `bson:"name,omitempty" json:"name,omitempty" yaml:"name,omitempty"`
-	Published            *bool                               `bson:"published,omitempty" json:"published,omitempty" yaml:"published,omitempty"`
-	Stackable            *bool                               `bson:"stackable,omitempty" json:"stackable,omitempty" yaml:"stackable,omitempty"`
-	DisplayNameID        *DogmaAttributeDisplayNameID        `bson:"displayNameID,omitempty" json:"displayNameID,omitempty" storm:"index" yaml:"displayNameID,omitempty"`
-	IconID               *int32                              `bson:"iconID,omitempty" json:"iconID,omitempty" storm:"index" yaml:"iconID,omitempty"`
-	TooltipDescriptionID *DogmaAttributeTooltipDescriptionID `bson:"tooltipDescriptionID,omitempty" json:"tooltipDescriptionID,omitempty" storm:"index" yaml:"tooltipDescriptionID,omitempty"`
-	TooltipTitleID       *DogmaAttributeTooltipTitleID       `bson:"tooltipTitleID,omitempty" json:"tooltipTitleID,omitempty" storm:"index" yaml:"tooltipTitleID,omitempty"`
-	UnitID               *int32                              `bson:"unitID,omitempty" json:"unitID,omitempty" storm:"index" yaml:"unitID,omitempty"`
-	ChargeRechargeTimeID *int64                              `bson:"chargeRechargeTimeID,omitempty" json:"chargeRechargeTimeID,omitempty" storm:"index" yaml:"chargeRechargeTimeID,omitempty"`
-	MaxAttributeID       *int32                              `bson:"maxAttributeID,omitempty" json:"maxAttributeID,omitempty" storm:"index" yaml:"maxAttributeID,omitempty"`
+	AttributeID          *int32                              `bson:"attributeID,omitempty" db:"attributeID,omitempty" json:"attributeID,omitempty" yaml:"attributeID,omitempty"`
+	CategoryID           *int32                              `bson:"categoryID,omitempty" db:"categoryID,omitempty" json:"categoryID,omitempty" yaml:"categoryID,omitempty"`
+	DataType             *int32                              `bson:"dataType,omitempty" db:"dataType,omitempty" json:"dataType,omitempty" yaml:"dataType,omitempty"`
+	DefaultValue         *float64                            `bson:"defaultValue,omitempty" db:"defaultValue,omitempty" json:"defaultValue,omitempty" yaml:"defaultValue,omitempty"`
+	Description          *string                             `bson:"description,omitempty" db:"description,omitempty" json:"description,omitempty" yaml:"description,omitempty"`
+	HighIsGood           *bool                               `bson:"highIsGood,omitempty" db:"highIsGood,omitempty" json:"highIsGood,omitempty" yaml:"highIsGood,omitempty"`
+	Name                 *string                             `bson:"name,omitempty" db:"name,omitempty" json:"name,omitempty" yaml:"name,omitempty"`
+	Published            *bool                               `bson:"published,omitempty" db:"published,omitempty" json:"published,omitempty" yaml:"published,omitempty"`
+	Stackable            *bool                               `bson:"stackable,omitempty" db:"stackable,omitempty" json:"stackable,omitempty" yaml:"stackable,omitempty"`
+	DisplayNameID        *DogmaAttributeDisplayNameID        `bson:"displayNameID,omitempty" db:"displayNameID,omitempty" json:"displayNameID,omitempty" yaml:"displayNameID,omitempty"`
+	IconID               *int32                              `bson:"iconID,omitempty" db:"iconID,omitempty" json:"iconID,omitempty" yaml:"iconID,omitempty"`
+	TooltipDescriptionID *DogmaAttributeTooltipDescriptionID `bson:"tooltipDescriptionID,omitempty" db:"tooltipDescriptionID,omitempty" json:"tooltipDescriptionID,omitempty" yaml:"tooltipDescriptionID,omitempty"`
+	TooltipTitleID       *DogmaAttributeTooltipTitleID       `bson:"tooltipTitleID,omitempty" db:"tooltipTitleID,omitempty" json:"tooltipTitleID,omitempty" yaml:"tooltipTitleID,omitempty"`
+	UnitID               *int32                              `bson:"unitID,omitempty" db:"unitID,omitempty" json:"unitID,omitempty" yaml:"unitID,omitempty"`
+	ChargeRechargeTimeID *int64                              `bson:"chargeRechargeTimeID,omitempty" db:"chargeRechargeTimeID,omitempty" json:"chargeRechargeTimeID,omitempty" yaml:"chargeRechargeTimeID,omitempty"`
+	MaxAttributeID       *int32                              `bson:"maxAttributeID,omitempty" db:"maxAttributeID,omitempty" json:"maxAttributeID,omitempty" yaml:"maxAttributeID,omitempty"`
 }
 type DogmaAttributeDisplayNameID struct {
-	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
-	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
-	Fr *string `bson:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
-	Ja *string `bson:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
-	Ko *string `bson:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
-	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
-	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
+	De *string `bson:"de,omitempty" db:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
+	En *string `bson:"en,omitempty" db:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
+	Fr *string `bson:"fr,omitempty" db:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
+	Ja *string `bson:"ja,omitempty" db:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
+	Ko *string `bson:"ko,omitempty" db:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
+	Ru *string `bson:"ru,omitempty" db:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
+	Zh *string `bson:"zh,omitempty" db:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
 }
 type DogmaAttributeTooltipDescriptionID struct {
-	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
-	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
-	Fr *string `bson:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
-	Ja *string `bson:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
-	Ko *string `bson:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
-	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
-	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
+	De *string `bson:"de,omitempty" db:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
+	En *string `bson:"en,omitempty" db:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
+	Fr *string `bson:"fr,omitempty" db:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
+	Ja *string `bson:"ja,omitempty" db:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
+	Ko *string `bson:"ko,omitempty" db:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
+	Ru *string `bson:"ru,omitempty" db:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
+	Zh *string `bson:"zh,omitempty" db:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
 }
 type DogmaAttributeTooltipTitleID struct {
-	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
-	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
-	Fr *string `bson:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
-	Ja *string `bson:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
-	Ko *string `bson:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
-	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
-	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
+	De *string `bson:"de,omitempty" db:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
+	En *string `bson:"en,omitempty" db:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
+	Fr *string `bson:"fr,omitempty" db:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
+	Ja *string `bson:"ja,omitempty" db:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
+	Ko *string `bson:"ko,omitempty" db:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
+	Ru *string `bson:"ru,omitempty" db:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
+	Zh *string `bson:"zh,omitempty" db:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
 }

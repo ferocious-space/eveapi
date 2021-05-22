@@ -3,13 +3,13 @@
 package sde
 
 type Region struct {
-	Center          []float64 `bson:"center,omitempty" json:"center,omitempty" yaml:"center,omitempty"`
-	Max             []float64 `bson:"max,omitempty" json:"max,omitempty" yaml:"max,omitempty"`
-	Min             []float64 `bson:"min,omitempty" json:"min,omitempty" yaml:"min,omitempty"`
-	NameID          *int32    `bson:"nameID,omitempty" json:"nameID,omitempty" storm:"index" yaml:"nameID,omitempty"`
-	Nebula          *int32    `bson:"nebula,omitempty" json:"nebula,omitempty" yaml:"nebula,omitempty"`
-	RegionID        *int32    `bson:"regionID,omitempty" json:"regionID,omitempty" storm:"index" yaml:"regionID,omitempty"`
-	WormholeClassID *int32    `bson:"wormholeClassID,omitempty" json:"wormholeClassID,omitempty" storm:"index" yaml:"wormholeClassID,omitempty"`
-	DescriptionID   *int32    `bson:"descriptionID,omitempty" json:"descriptionID,omitempty" storm:"index" yaml:"descriptionID,omitempty"`
-	FactionID       *int32    `bson:"factionID,omitempty" json:"factionID,omitempty" storm:"index" yaml:"factionID,omitempty"`
+	Center          []float64 `bson:"center,omitempty" db:"center,omitempty" json:"center,omitempty" yaml:"center,omitempty"`
+	Max             []float64 `bson:"max,omitempty" db:"max,omitempty" json:"max,omitempty" yaml:"max,omitempty"`
+	Min             []float64 `bson:"min,omitempty" db:"min,omitempty" json:"min,omitempty" yaml:"min,omitempty"`
+	NameID          *int32    `bson:"nameID,omitempty" db:"nameID,omitempty" json:"nameID,omitempty" yaml:"nameID,omitempty"`
+	Nebula          *int32    `bson:"nebula,omitempty" db:"nebula,omitempty" json:"nebula,omitempty" yaml:"nebula,omitempty"`
+	RegionID        *int32    `bson:"regionID,omitempty" db:"regionID,omitempty" json:"regionID,omitempty" yaml:"regionID,omitempty"`
+	WormholeClassID *int32    `bson:"wormholeClassID,omitempty" db:"wormholeClassID,omitempty" json:"wormholeClassID,omitempty" yaml:"wormholeClassID,omitempty"`
+	DescriptionID   *int32    `bson:"descriptionID,omitempty" db:"descriptionID,omitempty" json:"descriptionID,omitempty" yaml:"descriptionID,omitempty"`
+	FactionID       *int32    `bson:"factionID,omitempty" db:"factionID,omitempty" json:"factionID,omitempty" yaml:"factionID,omitempty"`
 }

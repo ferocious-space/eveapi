@@ -25,7 +25,7 @@ func (x IconIDMap) Get(ID int32) *IconID {
 }
 
 type IconID struct {
-	Description *string `bson:"description,omitempty" json:"description,omitempty" yaml:"description,omitempty"`
-	IconFile    *string `bson:"iconFile,omitempty" json:"iconFile,omitempty" yaml:"iconFile,omitempty"`
-	Obsolete    *bool   `bson:"obsolete,omitempty" json:"obsolete,omitempty" yaml:"obsolete,omitempty"`
+	Description *string `bson:"description,omitempty" db:"description,omitempty" json:"description,omitempty" yaml:"description,omitempty"`
+	IconFile    *string `bson:"iconFile,omitempty" db:"iconFile,omitempty" json:"iconFile,omitempty" yaml:"iconFile,omitempty"`
+	Obsolete    *bool   `bson:"obsolete,omitempty" db:"obsolete,omitempty" json:"obsolete,omitempty" yaml:"obsolete,omitempty"`
 }

@@ -25,34 +25,34 @@ func (x StationOperationMap) Get(ID int32) *StationOperation {
 }
 
 type StationOperation struct {
-	ActivityID          *int32                           `bson:"activityID,omitempty" json:"activityID,omitempty" storm:"index" yaml:"activityID,omitempty"`
-	Border              *float64                         `bson:"border,omitempty" json:"border,omitempty" yaml:"border,omitempty"`
-	Corridor            *float64                         `bson:"corridor,omitempty" json:"corridor,omitempty" yaml:"corridor,omitempty"`
-	DescriptionID       *StationOperationDescriptionID   `bson:"descriptionID,omitempty" json:"descriptionID,omitempty" storm:"index" yaml:"descriptionID,omitempty"`
-	Fringe              *float64                         `bson:"fringe,omitempty" json:"fringe,omitempty" yaml:"fringe,omitempty"`
-	Hub                 *float64                         `bson:"hub,omitempty" json:"hub,omitempty" yaml:"hub,omitempty"`
-	ManufacturingFactor *float64                         `bson:"manufacturingFactor,omitempty" json:"manufacturingFactor,omitempty" yaml:"manufacturingFactor,omitempty"`
-	OperationNameID     *StationOperationOperationNameID `bson:"operationNameID,omitempty" json:"operationNameID,omitempty" storm:"index" yaml:"operationNameID,omitempty"`
-	Ratio               *float64                         `bson:"ratio,omitempty" json:"ratio,omitempty" yaml:"ratio,omitempty"`
-	ResearchFactor      *float64                         `bson:"researchFactor,omitempty" json:"researchFactor,omitempty" yaml:"researchFactor,omitempty"`
-	Services            []int32                          `bson:"services,omitempty" json:"services,omitempty" yaml:"services,omitempty"`
-	StationTypes        map[int32]int32                  `bson:"stationTypes,omitempty" json:"stationTypes,omitempty" yaml:"stationTypes,omitempty"`
+	ActivityID          *int32                           `bson:"activityID,omitempty" db:"activityID,omitempty" json:"activityID,omitempty" yaml:"activityID,omitempty"`
+	Border              *float64                         `bson:"border,omitempty" db:"border,omitempty" json:"border,omitempty" yaml:"border,omitempty"`
+	Corridor            *float64                         `bson:"corridor,omitempty" db:"corridor,omitempty" json:"corridor,omitempty" yaml:"corridor,omitempty"`
+	DescriptionID       *StationOperationDescriptionID   `bson:"descriptionID,omitempty" db:"descriptionID,omitempty" json:"descriptionID,omitempty" yaml:"descriptionID,omitempty"`
+	Fringe              *float64                         `bson:"fringe,omitempty" db:"fringe,omitempty" json:"fringe,omitempty" yaml:"fringe,omitempty"`
+	Hub                 *float64                         `bson:"hub,omitempty" db:"hub,omitempty" json:"hub,omitempty" yaml:"hub,omitempty"`
+	ManufacturingFactor *float64                         `bson:"manufacturingFactor,omitempty" db:"manufacturingFactor,omitempty" json:"manufacturingFactor,omitempty" yaml:"manufacturingFactor,omitempty"`
+	OperationNameID     *StationOperationOperationNameID `bson:"operationNameID,omitempty" db:"operationNameID,omitempty" json:"operationNameID,omitempty" yaml:"operationNameID,omitempty"`
+	Ratio               *float64                         `bson:"ratio,omitempty" db:"ratio,omitempty" json:"ratio,omitempty" yaml:"ratio,omitempty"`
+	ResearchFactor      *float64                         `bson:"researchFactor,omitempty" db:"researchFactor,omitempty" json:"researchFactor,omitempty" yaml:"researchFactor,omitempty"`
+	Services            []int32                          `bson:"services,omitempty" db:"services,omitempty" json:"services,omitempty" yaml:"services,omitempty"`
+	StationTypes        map[int32]int32                  `bson:"stationTypes,omitempty" db:"stationTypes,omitempty" json:"stationTypes,omitempty" yaml:"stationTypes,omitempty"`
 }
 type StationOperationDescriptionID struct {
-	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
-	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
-	Fr *string `bson:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
-	Ja *string `bson:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
-	Ko *string `bson:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
-	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
-	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
+	De *string `bson:"de,omitempty" db:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
+	En *string `bson:"en,omitempty" db:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
+	Fr *string `bson:"fr,omitempty" db:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
+	Ja *string `bson:"ja,omitempty" db:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
+	Ko *string `bson:"ko,omitempty" db:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
+	Ru *string `bson:"ru,omitempty" db:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
+	Zh *string `bson:"zh,omitempty" db:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
 }
 type StationOperationOperationNameID struct {
-	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
-	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
-	Fr *string `bson:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
-	Ja *string `bson:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
-	Ko *string `bson:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
-	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
-	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
+	De *string `bson:"de,omitempty" db:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
+	En *string `bson:"en,omitempty" db:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
+	Fr *string `bson:"fr,omitempty" db:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
+	Ja *string `bson:"ja,omitempty" db:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
+	Ko *string `bson:"ko,omitempty" db:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
+	Ru *string `bson:"ru,omitempty" db:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
+	Zh *string `bson:"zh,omitempty" db:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
 }

@@ -19,6 +19,6 @@ func (x *InvNameList) Load(path string) error {
 }
 
 type InvName struct {
-	ItemID   *int64  `bson:"itemID,omitempty" json:"itemID,omitempty" storm:"index" yaml:"itemID,omitempty"`
-	ItemName *string `bson:"itemName,omitempty" json:"itemName,omitempty" yaml:"itemName,omitempty"`
+	ItemID   *int64  `bson:"itemID,omitempty" db:"itemID,omitempty" json:"itemID,omitempty" yaml:"itemID,omitempty"`
+	ItemName *string `bson:"itemName,omitempty" db:"itemName,omitempty" json:"itemName,omitempty" yaml:"itemName,omitempty"`
 }

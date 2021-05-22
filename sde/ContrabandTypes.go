@@ -25,11 +25,11 @@ func (x ContrabandTypeMap) Get(ID int32) *ContrabandType {
 }
 
 type ContrabandType struct {
-	Factions map[int32]ContrabandTypeFactions `bson:"factions,omitempty" json:"factions,omitempty" yaml:"factions,omitempty"`
+	Factions map[int32]ContrabandTypeFactions `bson:"factions,omitempty" db:"factions,omitempty" json:"factions,omitempty" yaml:"factions,omitempty"`
 }
 type ContrabandTypeFactions struct {
-	AttackMinSec     *float64 `bson:"attackMinSec,omitempty" json:"attackMinSec,omitempty" yaml:"attackMinSec,omitempty"`
-	ConfiscateMinSec *float64 `bson:"confiscateMinSec,omitempty" json:"confiscateMinSec,omitempty" yaml:"confiscateMinSec,omitempty"`
-	FineByValue      *float64 `bson:"fineByValue,omitempty" json:"fineByValue,omitempty" yaml:"fineByValue,omitempty"`
-	StandingLoss     *float64 `bson:"standingLoss,omitempty" json:"standingLoss,omitempty" yaml:"standingLoss,omitempty"`
+	AttackMinSec     *float64 `bson:"attackMinSec,omitempty" db:"attackMinSec,omitempty" json:"attackMinSec,omitempty" yaml:"attackMinSec,omitempty"`
+	ConfiscateMinSec *float64 `bson:"confiscateMinSec,omitempty" db:"confiscateMinSec,omitempty" json:"confiscateMinSec,omitempty" yaml:"confiscateMinSec,omitempty"`
+	FineByValue      *float64 `bson:"fineByValue,omitempty" db:"fineByValue,omitempty" json:"fineByValue,omitempty" yaml:"fineByValue,omitempty"`
+	StandingLoss     *float64 `bson:"standingLoss,omitempty" db:"standingLoss,omitempty" json:"standingLoss,omitempty" yaml:"standingLoss,omitempty"`
 }

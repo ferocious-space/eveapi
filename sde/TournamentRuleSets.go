@@ -19,26 +19,26 @@ func (x *TournamentRuleSetList) Load(path string) error {
 }
 
 type TournamentRuleSet struct {
-	Banned             *TournamentRuleSetBanned `bson:"banned,omitempty" json:"banned,omitempty" yaml:"banned,omitempty"`
-	MaximumPilotsMatch *int32                   `bson:"maximumPilotsMatch,omitempty" json:"maximumPilotsMatch,omitempty" yaml:"maximumPilotsMatch,omitempty"`
-	MaximumPointsMatch *int32                   `bson:"maximumPointsMatch,omitempty" json:"maximumPointsMatch,omitempty" yaml:"maximumPointsMatch,omitempty"`
-	Points             *TournamentRuleSetPoints `bson:"points,omitempty" json:"points,omitempty" yaml:"points,omitempty"`
-	RuleSetID          *string                  `bson:"ruleSetID,omitempty" json:"ruleSetID,omitempty" storm:"index" yaml:"ruleSetID,omitempty"`
-	RuleSetName        *string                  `bson:"ruleSetName,omitempty" json:"ruleSetName,omitempty" yaml:"ruleSetName,omitempty"`
+	Banned             *TournamentRuleSetBanned `bson:"banned,omitempty" db:"banned,omitempty" json:"banned,omitempty" yaml:"banned,omitempty"`
+	MaximumPilotsMatch *int32                   `bson:"maximumPilotsMatch,omitempty" db:"maximumPilotsMatch,omitempty" json:"maximumPilotsMatch,omitempty" yaml:"maximumPilotsMatch,omitempty"`
+	MaximumPointsMatch *int32                   `bson:"maximumPointsMatch,omitempty" db:"maximumPointsMatch,omitempty" json:"maximumPointsMatch,omitempty" yaml:"maximumPointsMatch,omitempty"`
+	Points             *TournamentRuleSetPoints `bson:"points,omitempty" db:"points,omitempty" json:"points,omitempty" yaml:"points,omitempty"`
+	RuleSetID          *string                  `bson:"ruleSetID,omitempty" db:"ruleSetID,omitempty" json:"ruleSetID,omitempty" yaml:"ruleSetID,omitempty"`
+	RuleSetName        *string                  `bson:"ruleSetName,omitempty" db:"ruleSetName,omitempty" json:"ruleSetName,omitempty" yaml:"ruleSetName,omitempty"`
 }
 type TournamentRuleSetBanned struct {
-	Groups []int32 `bson:"groups,omitempty" json:"groups,omitempty" yaml:"groups,omitempty"`
-	Types  []int32 `bson:"types,omitempty" json:"types,omitempty" yaml:"types,omitempty"`
+	Groups []int32 `bson:"groups,omitempty" db:"groups,omitempty" json:"groups,omitempty" yaml:"groups,omitempty"`
+	Types  []int32 `bson:"types,omitempty" db:"types,omitempty" json:"types,omitempty" yaml:"types,omitempty"`
 }
 type TournamentRuleSetPoints struct {
-	Groups []TournamentRuleSetPointsGroups `bson:"groups,omitempty" json:"groups,omitempty" yaml:"groups,omitempty"`
-	Types  []TournamentRuleSetPointsTypes  `bson:"types,omitempty" json:"types,omitempty" yaml:"types,omitempty"`
+	Groups []TournamentRuleSetPointsGroups `bson:"groups,omitempty" db:"groups,omitempty" json:"groups,omitempty" yaml:"groups,omitempty"`
+	Types  []TournamentRuleSetPointsTypes  `bson:"types,omitempty" db:"types,omitempty" json:"types,omitempty" yaml:"types,omitempty"`
 }
 type TournamentRuleSetPointsGroups struct {
-	GroupID *int32 `bson:"groupID,omitempty" json:"groupID,omitempty" storm:"index" yaml:"groupID,omitempty"`
-	Points  *int32 `bson:"points,omitempty" json:"points,omitempty" yaml:"points,omitempty"`
+	GroupID *int32 `bson:"groupID,omitempty" db:"groupID,omitempty" json:"groupID,omitempty" yaml:"groupID,omitempty"`
+	Points  *int32 `bson:"points,omitempty" db:"points,omitempty" json:"points,omitempty" yaml:"points,omitempty"`
 }
 type TournamentRuleSetPointsTypes struct {
-	Points *int32 `bson:"points,omitempty" json:"points,omitempty" yaml:"points,omitempty"`
-	TypeID *int32 `bson:"typeID,omitempty" json:"typeID,omitempty" storm:"index" yaml:"typeID,omitempty"`
+	Points *int32 `bson:"points,omitempty" db:"points,omitempty" json:"points,omitempty" yaml:"points,omitempty"`
+	TypeID *int32 `bson:"typeID,omitempty" db:"typeID,omitempty" json:"typeID,omitempty" yaml:"typeID,omitempty"`
 }

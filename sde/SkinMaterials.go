@@ -25,7 +25,7 @@ func (x SkinMaterialMap) Get(ID int32) *SkinMaterial {
 }
 
 type SkinMaterial struct {
-	DisplayNameID  *int32 `bson:"displayNameID,omitempty" json:"displayNameID,omitempty" storm:"index" yaml:"displayNameID,omitempty"`
-	MaterialSetID  *int32 `bson:"materialSetID,omitempty" json:"materialSetID,omitempty" storm:"index" yaml:"materialSetID,omitempty"`
-	SkinMaterialID *int32 `bson:"skinMaterialID,omitempty" json:"skinMaterialID,omitempty" storm:"index" yaml:"skinMaterialID,omitempty"`
+	DisplayNameID  *int32 `bson:"displayNameID,omitempty" db:"displayNameID,omitempty" json:"displayNameID,omitempty" yaml:"displayNameID,omitempty"`
+	MaterialSetID  *int32 `bson:"materialSetID,omitempty" db:"materialSetID,omitempty" json:"materialSetID,omitempty" yaml:"materialSetID,omitempty"`
+	SkinMaterialID *int32 `bson:"skinMaterialID,omitempty" db:"skinMaterialID,omitempty" json:"skinMaterialID,omitempty" yaml:"skinMaterialID,omitempty"`
 }

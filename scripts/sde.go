@@ -17,7 +17,7 @@ import (
 )
 
 func sdegen() {
-	err := eveapi.DownloadSDE(&http.Client{}, "./testing", false)
+	err := eveapi.DownloadSDE(&http.Client{}, "./testing", true)
 	if err != nil {
 		return
 	}

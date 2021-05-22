@@ -25,6 +25,6 @@ func (x DogmaAttributeCategoryMap) Get(ID int32) *DogmaAttributeCategory {
 }
 
 type DogmaAttributeCategory struct {
-	Description *string `bson:"description,omitempty" json:"description,omitempty" yaml:"description,omitempty"`
-	Name        *string `bson:"name,omitempty" json:"name,omitempty" yaml:"name,omitempty"`
+	Description *string `bson:"description,omitempty" db:"description,omitempty" json:"description,omitempty" yaml:"description,omitempty"`
+	Name        *string `bson:"name,omitempty" db:"name,omitempty" json:"name,omitempty" yaml:"name,omitempty"`
 }

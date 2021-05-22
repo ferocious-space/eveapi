@@ -19,8 +19,8 @@ func (x *InvFlagList) Load(path string) error {
 }
 
 type InvFlag struct {
-	FlagID   *int32  `bson:"flagID,omitempty" json:"flagID,omitempty" storm:"index" yaml:"flagID,omitempty"`
-	FlagName *string `bson:"flagName,omitempty" json:"flagName,omitempty" yaml:"flagName,omitempty"`
-	FlagText *string `bson:"flagText,omitempty" json:"flagText,omitempty" yaml:"flagText,omitempty"`
-	OrderID  *int32  `bson:"orderID,omitempty" json:"orderID,omitempty" storm:"index" yaml:"orderID,omitempty"`
+	FlagID   *int32  `bson:"flagID,omitempty" db:"flagID,omitempty" json:"flagID,omitempty" yaml:"flagID,omitempty"`
+	FlagName *string `bson:"flagName,omitempty" db:"flagName,omitempty" json:"flagName,omitempty" yaml:"flagName,omitempty"`
+	FlagText *string `bson:"flagText,omitempty" db:"flagText,omitempty" json:"flagText,omitempty" yaml:"flagText,omitempty"`
+	OrderID  *int32  `bson:"orderID,omitempty" db:"orderID,omitempty" json:"orderID,omitempty" yaml:"orderID,omitempty"`
 }

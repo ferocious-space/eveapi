@@ -25,21 +25,21 @@ func (x PlanetSchematicMap) Get(ID int32) *PlanetSchematic {
 }
 
 type PlanetSchematic struct {
-	CycleTime *int64                         `bson:"cycleTime,omitempty" json:"cycleTime,omitempty" yaml:"cycleTime,omitempty"`
-	NameID    *PlanetSchematicNameID         `bson:"nameID,omitempty" json:"nameID,omitempty" storm:"index" yaml:"nameID,omitempty"`
-	Pins      []int32                        `bson:"pins,omitempty" json:"pins,omitempty" yaml:"pins,omitempty"`
-	Types     map[int32]PlanetSchematicTypes `bson:"types,omitempty" json:"types,omitempty" yaml:"types,omitempty"`
+	CycleTime *int64                         `bson:"cycleTime,omitempty" db:"cycleTime,omitempty" json:"cycleTime,omitempty" yaml:"cycleTime,omitempty"`
+	NameID    *PlanetSchematicNameID         `bson:"nameID,omitempty" db:"nameID,omitempty" json:"nameID,omitempty" yaml:"nameID,omitempty"`
+	Pins      []int32                        `bson:"pins,omitempty" db:"pins,omitempty" json:"pins,omitempty" yaml:"pins,omitempty"`
+	Types     map[int32]PlanetSchematicTypes `bson:"types,omitempty" db:"types,omitempty" json:"types,omitempty" yaml:"types,omitempty"`
 }
 type PlanetSchematicNameID struct {
-	De *string `bson:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
-	En *string `bson:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
-	Fr *string `bson:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
-	Ja *string `bson:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
-	Ko *string `bson:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
-	Ru *string `bson:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
-	Zh *string `bson:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
+	De *string `bson:"de,omitempty" db:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
+	En *string `bson:"en,omitempty" db:"en,omitempty" json:"en,omitempty" yaml:"en,omitempty"`
+	Fr *string `bson:"fr,omitempty" db:"fr,omitempty" json:"fr,omitempty" yaml:"fr,omitempty"`
+	Ja *string `bson:"ja,omitempty" db:"ja,omitempty" json:"ja,omitempty" yaml:"ja,omitempty"`
+	Ko *string `bson:"ko,omitempty" db:"ko,omitempty" json:"ko,omitempty" yaml:"ko,omitempty"`
+	Ru *string `bson:"ru,omitempty" db:"ru,omitempty" json:"ru,omitempty" yaml:"ru,omitempty"`
+	Zh *string `bson:"zh,omitempty" db:"zh,omitempty" json:"zh,omitempty" yaml:"zh,omitempty"`
 }
 type PlanetSchematicTypes struct {
-	IsInput  *bool  `bson:"isInput,omitempty" json:"isInput,omitempty" yaml:"isInput,omitempty"`
-	Quantity *int32 `bson:"quantity,omitempty" json:"quantity,omitempty" yaml:"quantity,omitempty"`
+	IsInput  *bool  `bson:"isInput,omitempty" db:"isInput,omitempty" json:"isInput,omitempty" yaml:"isInput,omitempty"`
+	Quantity *int32 `bson:"quantity,omitempty" db:"quantity,omitempty" json:"quantity,omitempty" yaml:"quantity,omitempty"`
 }

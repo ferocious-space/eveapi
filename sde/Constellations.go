@@ -3,12 +3,12 @@
 package sde
 
 type Constellation struct {
-	Center          []float64 `bson:"center,omitempty" json:"center,omitempty" yaml:"center,omitempty"`
-	ConstellationID *int32    `bson:"constellationID,omitempty" json:"constellationID,omitempty" storm:"index" yaml:"constellationID,omitempty"`
-	Max             []float64 `bson:"max,omitempty" json:"max,omitempty" yaml:"max,omitempty"`
-	Min             []float64 `bson:"min,omitempty" json:"min,omitempty" yaml:"min,omitempty"`
-	NameID          *int32    `bson:"nameID,omitempty" json:"nameID,omitempty" storm:"index" yaml:"nameID,omitempty"`
-	Radius          *float64  `bson:"radius,omitempty" json:"radius,omitempty" yaml:"radius,omitempty"`
-	FactionID       *int32    `bson:"factionID,omitempty" json:"factionID,omitempty" storm:"index" yaml:"factionID,omitempty"`
-	WormholeClassID *int32    `bson:"wormholeClassID,omitempty" json:"wormholeClassID,omitempty" storm:"index" yaml:"wormholeClassID,omitempty"`
+	Center          []float64 `bson:"center,omitempty" db:"center,omitempty" json:"center,omitempty" yaml:"center,omitempty"`
+	ConstellationID *int32    `bson:"constellationID,omitempty" db:"constellationID,omitempty" json:"constellationID,omitempty" yaml:"constellationID,omitempty"`
+	Max             []float64 `bson:"max,omitempty" db:"max,omitempty" json:"max,omitempty" yaml:"max,omitempty"`
+	Min             []float64 `bson:"min,omitempty" db:"min,omitempty" json:"min,omitempty" yaml:"min,omitempty"`
+	NameID          *int32    `bson:"nameID,omitempty" db:"nameID,omitempty" json:"nameID,omitempty" yaml:"nameID,omitempty"`
+	Radius          *float64  `bson:"radius,omitempty" db:"radius,omitempty" json:"radius,omitempty" yaml:"radius,omitempty"`
+	FactionID       *int32    `bson:"factionID,omitempty" db:"factionID,omitempty" json:"factionID,omitempty" yaml:"factionID,omitempty"`
+	WormholeClassID *int32    `bson:"wormholeClassID,omitempty" db:"wormholeClassID,omitempty" json:"wormholeClassID,omitempty" yaml:"wormholeClassID,omitempty"`
 }
