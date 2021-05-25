@@ -31,14 +31,12 @@ import (
 	openapiRuntime "github.com/go-openapi/runtime"
 	httptransport "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
-	jsoniter "github.com/json-iterator/go"
+	"github.com/goccy/go-json"
 	"github.com/pkg/errors"
 	"gopkg.in/yaml.v3"
 
 	"github.com/ferocious-space/eveapi/esi"
 )
-
-var json = jsoniter.ConfigCompatibleWithStandardLibrary
 
 func NewAPIClient(cachedClient *http.Client) *esi.EVESwaggerInterface {
 	apiRuntime := httptransport.NewWithClient(esi.DefaultHost, esi.DefaultBasePath, esi.DefaultSchemes, cachedClient)

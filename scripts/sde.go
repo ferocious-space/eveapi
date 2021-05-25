@@ -7,8 +7,8 @@ import (
 	"os"
 	"path/filepath"
 	"reflect"
-	"runtime"
 	"strings"
+	"sync"
 
 	"github.com/go-openapi/inflect"
 
@@ -24,70 +24,92 @@ func sdegen() {
 	regionYaml := make([]reflect.Type, 0)
 	constellationYaml := make([]reflect.Type, 0)
 	solarsystemYaml := make([]reflect.Type, 0)
+	var wait sync.WaitGroup
+	errChannel := make(chan error, 1)
+	defer close(errChannel)
+	waitChannel := make(chan struct{}, 1)
+	parallel := make(chan struct{}, 10)
 	if err := filepath.Walk(
 		"./testing", func(path string, info fs.FileInfo, err error) error {
-			runtime.GC()
 			if info.IsDir() {
 				return nil
 			}
-			fmt.Println("Processing", filepath.Base(path))
-			if filepath.Base(path) == "region.staticdata" {
-				file, err := yamlparser.ParseFile(path)
-				if err != nil {
-					return err
+			parallel <- struct{}{}
+			wait.Add(1)
+			go func(path string) {
+				defer func() {
+					_ = <-parallel
+				}()
+				defer wait.Done()
+				fmt.Println("Processing", filepath.Base(path))
+				if filepath.Base(path) == "region.staticdata" {
+					file, err := yamlparser.ParseFile(path)
+					if err != nil {
+						errChannel <- err
+					}
+					regionYaml = append(regionYaml, file)
 				}
-				regionYaml = append(regionYaml, file)
-			}
-			if filepath.Base(path) == "constellation.staticdata" {
-				file, err := yamlparser.ParseFile(path)
-				if err != nil {
-					return err
+				if filepath.Base(path) == "constellation.staticdata" {
+					file, err := yamlparser.ParseFile(path)
+					if err != nil {
+						errChannel <- err
+					}
+					constellationYaml = append(constellationYaml, file)
 				}
-				constellationYaml = append(constellationYaml, file)
-			}
-			if filepath.Base(path) == "solarsystem.staticdata" {
-				file, err := yamlparser.ParseFile(path)
-				if err != nil {
-					return err
+				if filepath.Base(path) == "solarsystem.staticdata" {
+					file, err := yamlparser.ParseFile(path)
+					if err != nil {
+						errChannel <- err
+					}
+					solarsystemYaml = append(solarsystemYaml, file)
 				}
-				solarsystemYaml = append(solarsystemYaml, file)
-			}
-			if filepath.Ext(path) != ".yaml" {
-				return nil
-			}
-			fmt.Println("generating", path)
-			typeInterface, err := yamlparser.ParseFile(path)
-			if err != nil {
-				return err
-			}
-			typeName := inflect.Capitalize(
-				inflect.Camelize(
-					strings.TrimSuffix(
-						filepath.Base(path),
-						filepath.Ext(path),
+				if filepath.Ext(path) != ".yaml" {
+					return
+				}
+				fmt.Println("generating", path)
+				typeInterface, err := yamlparser.ParseFile(path)
+				if err != nil {
+					errChannel <- err
+				}
+				typeName := inflect.Capitalize(
+					inflect.Camelize(
+						strings.TrimSuffix(
+							filepath.Base(path),
+							filepath.Ext(path),
+						),
 					),
-				),
-			)
-			file, err := yamlparser.GenerateType(
-				typeInterface,
-				typeName,
-				"github.com/ferocious-space/eveapi/sde",
-				"sde",
-			)
-			if err != nil {
-				return err
-			}
-			if err := os.WriteFile(
-				filepath.Join("./sde", typeName+".go"), file,
-				os.ModePerm,
-			); err != nil {
-				return err
-			}
+				)
+				file, err := yamlparser.GenerateType(
+					typeInterface,
+					typeName,
+					"github.com/ferocious-space/eveapi/sde",
+					"sde",
+				)
+				if err != nil {
+					errChannel <- err
+				}
+				if err := os.WriteFile(
+					filepath.Join("./sde", typeName+".go"), file,
+					os.ModePerm,
+				); err != nil {
+					errChannel <- err
+				}
+			}(path)
 			return nil
 		},
 	); err != nil {
 		fmt.Println("walking", err.Error())
 		return
+	}
+	go func() {
+		defer close(waitChannel)
+		wait.Wait()
+	}()
+	select {
+	case err := <-errChannel:
+		fmt.Println(err.Error())
+		return
+	case <-waitChannel:
 	}
 	regionType, err := yamlparser.GenerateType(yamlparser.DeepMergeList(regionYaml), "Regions", "github.com/fericous-space/eveapi/sde", "sde")
 	if err != nil {

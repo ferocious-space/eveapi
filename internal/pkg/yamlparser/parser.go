@@ -7,12 +7,12 @@ import (
 	"reflect"
 
 	"github.com/go-openapi/inflect"
-	jsoniter "github.com/json-iterator/go"
+	"github.com/goccy/go-json"
 	"gopkg.in/yaml.v3"
 )
 
 func dumpObj(i interface{}) {
-	bin, _ := jsoniter.MarshalIndent(i, "", " ")
+	bin, _ := json.MarshalIndent(i, "", " ")
 	fmt.Println(string(bin))
 }
 

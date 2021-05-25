@@ -34,7 +34,7 @@ type SolarsystemPlanets struct {
 	CelestialIndex   *int32                                    `bson:"celestialIndex,omitempty" db:"celestialIndex,omitempty" json:"celestialIndex,omitempty" yaml:"celestialIndex,omitempty"`
 	PlanetAttributes *SolarsystemPlanetsPlanetAttributes       `bson:"planetAttributes,omitempty" db:"planetAttributes,omitempty" json:"planetAttributes,omitempty" yaml:"planetAttributes,omitempty"`
 	Position         []float64                                 `bson:"position,omitempty" db:"position,omitempty" json:"position,omitempty" yaml:"position,omitempty"`
-	Radius           *int32                                    `bson:"radius,omitempty" db:"radius,omitempty" json:"radius,omitempty" yaml:"radius,omitempty"`
+	Radius           *int64                                    `bson:"radius,omitempty" db:"radius,omitempty" json:"radius,omitempty" yaml:"radius,omitempty"`
 	Statistics       *SolarsystemPlanetsStatistics             `bson:"statistics,omitempty" db:"statistics,omitempty" json:"statistics,omitempty" yaml:"statistics,omitempty"`
 	TypeID           *int32                                    `bson:"typeID,omitempty" db:"typeID,omitempty" json:"typeID,omitempty" yaml:"typeID,omitempty"`
 	Moons            map[int32]SolarsystemPlanetsMoons         `bson:"moons,omitempty" db:"moons,omitempty" json:"moons,omitempty" yaml:"moons,omitempty"`
@@ -69,7 +69,7 @@ type SolarsystemPlanetsAsteroidBeltsStatistics struct {
 type SolarsystemPlanetsMoons struct {
 	PlanetAttributes *SolarsystemPlanetsMoonsPlanetAttributes     `bson:"planetAttributes,omitempty" db:"planetAttributes,omitempty" json:"planetAttributes,omitempty" yaml:"planetAttributes,omitempty"`
 	Position         []float64                                    `bson:"position,omitempty" db:"position,omitempty" json:"position,omitempty" yaml:"position,omitempty"`
-	Radius           *int32                                       `bson:"radius,omitempty" db:"radius,omitempty" json:"radius,omitempty" yaml:"radius,omitempty"`
+	Radius           *int64                                       `bson:"radius,omitempty" db:"radius,omitempty" json:"radius,omitempty" yaml:"radius,omitempty"`
 	Statistics       *SolarsystemPlanetsMoonsStatistics           `bson:"statistics,omitempty" db:"statistics,omitempty" json:"statistics,omitempty" yaml:"statistics,omitempty"`
 	TypeID           *int32                                       `bson:"typeID,omitempty" db:"typeID,omitempty" json:"typeID,omitempty" yaml:"typeID,omitempty"`
 	NpcStations      map[int32]SolarsystemPlanetsMoonsNpcStations `bson:"npcStations,omitempty" db:"npcStations,omitempty" json:"npcStations,omitempty" yaml:"npcStations,omitempty"`
@@ -155,7 +155,7 @@ type SolarsystemSecondarySun struct {
 }
 type SolarsystemStar struct {
 	Id         *int32                     `bson:"id,omitempty" db:"id,omitempty" json:"id,omitempty" yaml:"id,omitempty"`
-	Radius     *int32                     `bson:"radius,omitempty" db:"radius,omitempty" json:"radius,omitempty" yaml:"radius,omitempty"`
+	Radius     *int64                     `bson:"radius,omitempty" db:"radius,omitempty" json:"radius,omitempty" yaml:"radius,omitempty"`
 	Statistics *SolarsystemStarStatistics `bson:"statistics,omitempty" db:"statistics,omitempty" json:"statistics,omitempty" yaml:"statistics,omitempty"`
 	TypeID     *int32                     `bson:"typeID,omitempty" db:"typeID,omitempty" json:"typeID,omitempty" yaml:"typeID,omitempty"`
 }

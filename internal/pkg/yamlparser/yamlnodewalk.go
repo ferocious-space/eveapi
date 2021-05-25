@@ -3,6 +3,7 @@ package yamlparser
 import (
 	"fmt"
 	"reflect"
+	"strconv"
 	"strings"
 	"time"
 
@@ -77,7 +78,27 @@ func nodeWalk(node *yaml.Node, depth int, mappings map[string]typeMapping) refle
 		if len(mapping) == 0 {
 
 		}
+
 		for k := range mapping {
+			if k == "!!str" {
+				isFloat := false
+				isInt := false
+				_, err := strconv.ParseFloat(inflect.Capitalize(inflect.Camelize(node.Content[0].Value)), 64)
+				if err == nil {
+					isFloat = true
+				}
+				_, err = strconv.ParseUint(inflect.Capitalize(inflect.Camelize(node.Content[0].Value)), 10, 32)
+				if err == nil {
+					isInt = true
+				}
+				if isInt {
+					k = "!!int"
+				} else {
+					if isFloat {
+						k = "!!float"
+					}
+				}
+			}
 			switch k {
 			case "!!str":
 				var fields []reflect.StructField
@@ -104,11 +125,12 @@ func nodeWalk(node *yaml.Node, depth int, mappings map[string]typeMapping) refle
 						structTag = fmt.Sprintf(`yaml:"%s,omitempty"`, node.Content[i].Value)
 					case reflect.Int32:
 						switch fieldName {
-						case "LocationID", "ItemID", "RecordID", "FleetID", "WingID", "SquadID", "StructureID", "ContextID", "RouteID", "PinID", "DestinationPinID", "SourcePinID", "Amount", "Waypoint":
+						case "LocationID", "ItemID", "RecordID", "FleetID", "WingID", "SquadID", "StructureID", "ContextID", "RouteID", "PinID", "DestinationPinID", "SourcePinID", "Amount", "Waypoint", "Radius":
 							nodeType = reflect.TypeOf(int64(0))
+
 						}
 						switch inflect.Singularize(fieldName) {
-						case "LocationID", "ItemID", "RecordID", "FleetID", "WingID", "SquadID", "StructureID", "ContextID", "RouteID", "PinID", "DestinationPinID", "SourcePinID", "Amount", "Waypoint":
+						case "LocationID", "ItemID", "RecordID", "FleetID", "WingID", "SquadID", "StructureID", "ContextID", "RouteID", "PinID", "DestinationPinID", "SourcePinID", "Amount", "Waypoint", "Radius":
 							nodeType = reflect.TypeOf(int64(0))
 						}
 						if strings.Contains(fieldName, "Time") {

@@ -13,13 +13,14 @@ require (
 	github.com/go-openapi/strfmt v0.20.1
 	github.com/go-openapi/swag v0.19.15
 	github.com/go-openapi/validate v0.20.2
+	github.com/goccy/go-json v0.5.1
 	github.com/google/go-cmp v0.5.5 // indirect
-	github.com/json-iterator/go v1.1.10
 	github.com/mailru/easyjson v0.7.7 // indirect
-	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
-	github.com/modern-go/reflect2 v1.0.1 // indirect
 	github.com/pkg/errors v0.9.1
+	github.com/valyala/bytebufferpool v1.0.0
+	go.etcd.io/bbolt v1.3.5
 	go.mongodb.org/mongo-driver v1.5.2 // indirect
-	golang.org/x/net v0.0.0-20210521195947-fe42d452be8f // indirect
+	golang.org/x/net v0.0.0-20210525063256-abc453219eb5 // indirect
+	golang.org/x/sys v0.0.0-20210525143221-35b2ab0089ea // indirect
 	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b
 )
