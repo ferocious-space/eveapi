@@ -117,7 +117,7 @@ type GetCharactersCharacterIDNotificationsContactsOK struct {
 }
 
 func (o *GetCharactersCharacterIDNotificationsContactsOK) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/notifications/contacts/][%d] getCharactersCharacterIdNotificationsContactsOK  %+v", 200, o.Payload)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/notifications/contacts/][%d] getCharactersCharacterIdNotificationsContactsOK  %+v", 200, o.Payload)
 }
 func (o *GetCharactersCharacterIDNotificationsContactsOK) GetPayload() []*GetCharactersCharacterIDNotificationsContactsOKBodyItems0 {
 	return o.Payload
@@ -190,7 +190,7 @@ type GetCharactersCharacterIDNotificationsContactsNotModified struct {
 }
 
 func (o *GetCharactersCharacterIDNotificationsContactsNotModified) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/notifications/contacts/][%d] getCharactersCharacterIdNotificationsContactsNotModified ", 304)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/notifications/contacts/][%d] getCharactersCharacterIdNotificationsContactsNotModified ", 304)
 }
 
 func (o *GetCharactersCharacterIDNotificationsContactsNotModified) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
@@ -240,7 +240,7 @@ type GetCharactersCharacterIDNotificationsContactsBadRequest struct {
 }
 
 func (o *GetCharactersCharacterIDNotificationsContactsBadRequest) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/notifications/contacts/][%d] getCharactersCharacterIdNotificationsContactsBadRequest  %+v", 400, o.Payload)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/notifications/contacts/][%d] getCharactersCharacterIdNotificationsContactsBadRequest  %+v", 400, o.Payload)
 }
 func (o *GetCharactersCharacterIDNotificationsContactsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
@@ -272,7 +272,7 @@ type GetCharactersCharacterIDNotificationsContactsUnauthorized struct {
 }
 
 func (o *GetCharactersCharacterIDNotificationsContactsUnauthorized) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/notifications/contacts/][%d] getCharactersCharacterIdNotificationsContactsUnauthorized  %+v", 401, o.Payload)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/notifications/contacts/][%d] getCharactersCharacterIdNotificationsContactsUnauthorized  %+v", 401, o.Payload)
 }
 func (o *GetCharactersCharacterIDNotificationsContactsUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
@@ -304,7 +304,7 @@ type GetCharactersCharacterIDNotificationsContactsForbidden struct {
 }
 
 func (o *GetCharactersCharacterIDNotificationsContactsForbidden) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/notifications/contacts/][%d] getCharactersCharacterIdNotificationsContactsForbidden  %+v", 403, o.Payload)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/notifications/contacts/][%d] getCharactersCharacterIdNotificationsContactsForbidden  %+v", 403, o.Payload)
 }
 func (o *GetCharactersCharacterIDNotificationsContactsForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
@@ -336,7 +336,7 @@ type GetCharactersCharacterIDNotificationsContactsEnhanceYourCalm struct {
 }
 
 func (o *GetCharactersCharacterIDNotificationsContactsEnhanceYourCalm) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/notifications/contacts/][%d] getCharactersCharacterIdNotificationsContactsEnhanceYourCalm  %+v", 420, o.Payload)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/notifications/contacts/][%d] getCharactersCharacterIdNotificationsContactsEnhanceYourCalm  %+v", 420, o.Payload)
 }
 func (o *GetCharactersCharacterIDNotificationsContactsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
@@ -368,7 +368,7 @@ type GetCharactersCharacterIDNotificationsContactsInternalServerError struct {
 }
 
 func (o *GetCharactersCharacterIDNotificationsContactsInternalServerError) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/notifications/contacts/][%d] getCharactersCharacterIdNotificationsContactsInternalServerError  %+v", 500, o.Payload)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/notifications/contacts/][%d] getCharactersCharacterIdNotificationsContactsInternalServerError  %+v", 500, o.Payload)
 }
 func (o *GetCharactersCharacterIDNotificationsContactsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
@@ -400,7 +400,7 @@ type GetCharactersCharacterIDNotificationsContactsServiceUnavailable struct {
 }
 
 func (o *GetCharactersCharacterIDNotificationsContactsServiceUnavailable) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/notifications/contacts/][%d] getCharactersCharacterIdNotificationsContactsServiceUnavailable  %+v", 503, o.Payload)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/notifications/contacts/][%d] getCharactersCharacterIdNotificationsContactsServiceUnavailable  %+v", 503, o.Payload)
 }
 func (o *GetCharactersCharacterIDNotificationsContactsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
@@ -432,7 +432,7 @@ type GetCharactersCharacterIDNotificationsContactsGatewayTimeout struct {
 }
 
 func (o *GetCharactersCharacterIDNotificationsContactsGatewayTimeout) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/notifications/contacts/][%d] getCharactersCharacterIdNotificationsContactsGatewayTimeout  %+v", 504, o.Payload)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/notifications/contacts/][%d] getCharactersCharacterIdNotificationsContactsGatewayTimeout  %+v", 504, o.Payload)
 }
 func (o *GetCharactersCharacterIDNotificationsContactsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload

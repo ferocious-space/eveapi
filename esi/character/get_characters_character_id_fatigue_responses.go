@@ -117,7 +117,7 @@ type GetCharactersCharacterIDFatigueOK struct {
 }
 
 func (o *GetCharactersCharacterIDFatigueOK) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/fatigue/][%d] getCharactersCharacterIdFatigueOK  %+v", 200, o.Payload)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/fatigue/][%d] getCharactersCharacterIdFatigueOK  %+v", 200, o.Payload)
 }
 func (o *GetCharactersCharacterIDFatigueOK) GetPayload() *GetCharactersCharacterIDFatigueOKBody {
 	return o.Payload
@@ -192,7 +192,7 @@ type GetCharactersCharacterIDFatigueNotModified struct {
 }
 
 func (o *GetCharactersCharacterIDFatigueNotModified) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/fatigue/][%d] getCharactersCharacterIdFatigueNotModified ", 304)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/fatigue/][%d] getCharactersCharacterIdFatigueNotModified ", 304)
 }
 
 func (o *GetCharactersCharacterIDFatigueNotModified) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
@@ -242,7 +242,7 @@ type GetCharactersCharacterIDFatigueBadRequest struct {
 }
 
 func (o *GetCharactersCharacterIDFatigueBadRequest) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/fatigue/][%d] getCharactersCharacterIdFatigueBadRequest  %+v", 400, o.Payload)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/fatigue/][%d] getCharactersCharacterIdFatigueBadRequest  %+v", 400, o.Payload)
 }
 func (o *GetCharactersCharacterIDFatigueBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
@@ -274,7 +274,7 @@ type GetCharactersCharacterIDFatigueUnauthorized struct {
 }
 
 func (o *GetCharactersCharacterIDFatigueUnauthorized) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/fatigue/][%d] getCharactersCharacterIdFatigueUnauthorized  %+v", 401, o.Payload)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/fatigue/][%d] getCharactersCharacterIdFatigueUnauthorized  %+v", 401, o.Payload)
 }
 func (o *GetCharactersCharacterIDFatigueUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
@@ -306,7 +306,7 @@ type GetCharactersCharacterIDFatigueForbidden struct {
 }
 
 func (o *GetCharactersCharacterIDFatigueForbidden) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/fatigue/][%d] getCharactersCharacterIdFatigueForbidden  %+v", 403, o.Payload)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/fatigue/][%d] getCharactersCharacterIdFatigueForbidden  %+v", 403, o.Payload)
 }
 func (o *GetCharactersCharacterIDFatigueForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
@@ -338,7 +338,7 @@ type GetCharactersCharacterIDFatigueEnhanceYourCalm struct {
 }
 
 func (o *GetCharactersCharacterIDFatigueEnhanceYourCalm) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/fatigue/][%d] getCharactersCharacterIdFatigueEnhanceYourCalm  %+v", 420, o.Payload)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/fatigue/][%d] getCharactersCharacterIdFatigueEnhanceYourCalm  %+v", 420, o.Payload)
 }
 func (o *GetCharactersCharacterIDFatigueEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
@@ -370,7 +370,7 @@ type GetCharactersCharacterIDFatigueInternalServerError struct {
 }
 
 func (o *GetCharactersCharacterIDFatigueInternalServerError) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/fatigue/][%d] getCharactersCharacterIdFatigueInternalServerError  %+v", 500, o.Payload)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/fatigue/][%d] getCharactersCharacterIdFatigueInternalServerError  %+v", 500, o.Payload)
 }
 func (o *GetCharactersCharacterIDFatigueInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
@@ -402,7 +402,7 @@ type GetCharactersCharacterIDFatigueServiceUnavailable struct {
 }
 
 func (o *GetCharactersCharacterIDFatigueServiceUnavailable) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/fatigue/][%d] getCharactersCharacterIdFatigueServiceUnavailable  %+v", 503, o.Payload)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/fatigue/][%d] getCharactersCharacterIdFatigueServiceUnavailable  %+v", 503, o.Payload)
 }
 func (o *GetCharactersCharacterIDFatigueServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
@@ -434,7 +434,7 @@ type GetCharactersCharacterIDFatigueGatewayTimeout struct {
 }
 
 func (o *GetCharactersCharacterIDFatigueGatewayTimeout) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/fatigue/][%d] getCharactersCharacterIdFatigueGatewayTimeout  %+v", 504, o.Payload)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/fatigue/][%d] getCharactersCharacterIdFatigueGatewayTimeout  %+v", 504, o.Payload)
 }
 func (o *GetCharactersCharacterIDFatigueGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload

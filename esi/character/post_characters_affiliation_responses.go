@@ -39,12 +39,6 @@ func (o *PostCharactersAffiliationReader) ReadResponse(response runtime.ClientRe
 			return nil, err
 		}
 		return nil, result
-	case 404:
-		result := NewPostCharactersAffiliationNotFound()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
 	case 420:
 		result := NewPostCharactersAffiliationEnhanceYourCalm()
 		if err := result.readResponse(response, consumer, o.formats); err != nil {
@@ -88,7 +82,7 @@ type PostCharactersAffiliationOK struct {
 }
 
 func (o *PostCharactersAffiliationOK) Error() string {
-	return fmt.Sprintf("[POST /v1/characters/affiliation/][%d] postCharactersAffiliationOK  %+v", 200, o.Payload)
+	return fmt.Sprintf("[POST /v2/characters/affiliation/][%d] postCharactersAffiliationOK  %+v", 200, o.Payload)
 }
 func (o *PostCharactersAffiliationOK) GetPayload() []*PostCharactersAffiliationOKBodyItems0 {
 	return o.Payload
@@ -118,7 +112,7 @@ type PostCharactersAffiliationBadRequest struct {
 }
 
 func (o *PostCharactersAffiliationBadRequest) Error() string {
-	return fmt.Sprintf("[POST /v1/characters/affiliation/][%d] postCharactersAffiliationBadRequest  %+v", 400, o.Payload)
+	return fmt.Sprintf("[POST /v2/characters/affiliation/][%d] postCharactersAffiliationBadRequest  %+v", 400, o.Payload)
 }
 func (o *PostCharactersAffiliationBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
@@ -127,38 +121,6 @@ func (o *PostCharactersAffiliationBadRequest) GetPayload() *models.BadRequest {
 func (o *PostCharactersAffiliationBadRequest) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
 
 	o.Payload = new(models.BadRequest)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && err != io.EOF {
-		return err
-	}
-
-	return nil
-}
-
-// NewPostCharactersAffiliationNotFound creates a PostCharactersAffiliationNotFound with default headers values
-func NewPostCharactersAffiliationNotFound() *PostCharactersAffiliationNotFound {
-	return &PostCharactersAffiliationNotFound{}
-}
-
-/* PostCharactersAffiliationNotFound describes a response with status code 404, with default header values.
-
-No characters found
-*/
-type PostCharactersAffiliationNotFound struct {
-	Payload *PostCharactersAffiliationNotFoundBody
-}
-
-func (o *PostCharactersAffiliationNotFound) Error() string {
-	return fmt.Sprintf("[POST /v1/characters/affiliation/][%d] postCharactersAffiliationNotFound  %+v", 404, o.Payload)
-}
-func (o *PostCharactersAffiliationNotFound) GetPayload() *PostCharactersAffiliationNotFoundBody {
-	return o.Payload
-}
-
-func (o *PostCharactersAffiliationNotFound) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(PostCharactersAffiliationNotFoundBody)
 
 	// response payload
 	if err := consumer.Consume(response.Body(), o.Payload); err != nil && err != io.EOF {
@@ -182,7 +144,7 @@ type PostCharactersAffiliationEnhanceYourCalm struct {
 }
 
 func (o *PostCharactersAffiliationEnhanceYourCalm) Error() string {
-	return fmt.Sprintf("[POST /v1/characters/affiliation/][%d] postCharactersAffiliationEnhanceYourCalm  %+v", 420, o.Payload)
+	return fmt.Sprintf("[POST /v2/characters/affiliation/][%d] postCharactersAffiliationEnhanceYourCalm  %+v", 420, o.Payload)
 }
 func (o *PostCharactersAffiliationEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
@@ -214,7 +176,7 @@ type PostCharactersAffiliationInternalServerError struct {
 }
 
 func (o *PostCharactersAffiliationInternalServerError) Error() string {
-	return fmt.Sprintf("[POST /v1/characters/affiliation/][%d] postCharactersAffiliationInternalServerError  %+v", 500, o.Payload)
+	return fmt.Sprintf("[POST /v2/characters/affiliation/][%d] postCharactersAffiliationInternalServerError  %+v", 500, o.Payload)
 }
 func (o *PostCharactersAffiliationInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
@@ -246,7 +208,7 @@ type PostCharactersAffiliationServiceUnavailable struct {
 }
 
 func (o *PostCharactersAffiliationServiceUnavailable) Error() string {
-	return fmt.Sprintf("[POST /v1/characters/affiliation/][%d] postCharactersAffiliationServiceUnavailable  %+v", 503, o.Payload)
+	return fmt.Sprintf("[POST /v2/characters/affiliation/][%d] postCharactersAffiliationServiceUnavailable  %+v", 503, o.Payload)
 }
 func (o *PostCharactersAffiliationServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
@@ -278,7 +240,7 @@ type PostCharactersAffiliationGatewayTimeout struct {
 }
 
 func (o *PostCharactersAffiliationGatewayTimeout) Error() string {
-	return fmt.Sprintf("[POST /v1/characters/affiliation/][%d] postCharactersAffiliationGatewayTimeout  %+v", 504, o.Payload)
+	return fmt.Sprintf("[POST /v2/characters/affiliation/][%d] postCharactersAffiliationGatewayTimeout  %+v", 504, o.Payload)
 }
 func (o *PostCharactersAffiliationGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
@@ -293,47 +255,6 @@ func (o *PostCharactersAffiliationGatewayTimeout) readResponse(response runtime.
 		return err
 	}
 
-	return nil
-}
-
-/*PostCharactersAffiliationNotFoundBody post_characters_affiliation_not_found
-//
-// Not found
-swagger:model PostCharactersAffiliationNotFoundBody
-*/
-type PostCharactersAffiliationNotFoundBody struct {
-
-	// post_characters_affiliation_404_not_found
-	//
-	// Not found message
-	Error string `json:"error,omitempty"`
-}
-
-// Validate validates this post characters affiliation not found body
-func (o *PostCharactersAffiliationNotFoundBody) Validate(formats strfmt.Registry) error {
-	return nil
-}
-
-// ContextValidate validates this post characters affiliation not found body based on context it is used
-func (o *PostCharactersAffiliationNotFoundBody) ContextValidate(ctx context.Context, formats strfmt.Registry) error {
-	return nil
-}
-
-// MarshalBinary interface implementation
-func (o *PostCharactersAffiliationNotFoundBody) MarshalBinary() ([]byte, error) {
-	if o == nil {
-		return nil, nil
-	}
-	return swag.WriteJSON(o)
-}
-
-// UnmarshalBinary interface implementation
-func (o *PostCharactersAffiliationNotFoundBody) UnmarshalBinary(b []byte) error {
-	var res PostCharactersAffiliationNotFoundBody
-	if err := swag.ReadJSON(b, &res); err != nil {
-		return err
-	}
-	*o = res
 	return nil
 }
 

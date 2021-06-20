@@ -117,7 +117,7 @@ type GetCharactersCharacterIDAgentsResearchOK struct {
 }
 
 func (o *GetCharactersCharacterIDAgentsResearchOK) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/agents_research/][%d] getCharactersCharacterIdAgentsResearchOK  %+v", 200, o.Payload)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/agents_research/][%d] getCharactersCharacterIdAgentsResearchOK  %+v", 200, o.Payload)
 }
 func (o *GetCharactersCharacterIDAgentsResearchOK) GetPayload() []*GetCharactersCharacterIDAgentsResearchOKBodyItems0 {
 	return o.Payload
@@ -190,7 +190,7 @@ type GetCharactersCharacterIDAgentsResearchNotModified struct {
 }
 
 func (o *GetCharactersCharacterIDAgentsResearchNotModified) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/agents_research/][%d] getCharactersCharacterIdAgentsResearchNotModified ", 304)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/agents_research/][%d] getCharactersCharacterIdAgentsResearchNotModified ", 304)
 }
 
 func (o *GetCharactersCharacterIDAgentsResearchNotModified) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
@@ -240,7 +240,7 @@ type GetCharactersCharacterIDAgentsResearchBadRequest struct {
 }
 
 func (o *GetCharactersCharacterIDAgentsResearchBadRequest) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/agents_research/][%d] getCharactersCharacterIdAgentsResearchBadRequest  %+v", 400, o.Payload)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/agents_research/][%d] getCharactersCharacterIdAgentsResearchBadRequest  %+v", 400, o.Payload)
 }
 func (o *GetCharactersCharacterIDAgentsResearchBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
@@ -272,7 +272,7 @@ type GetCharactersCharacterIDAgentsResearchUnauthorized struct {
 }
 
 func (o *GetCharactersCharacterIDAgentsResearchUnauthorized) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/agents_research/][%d] getCharactersCharacterIdAgentsResearchUnauthorized  %+v", 401, o.Payload)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/agents_research/][%d] getCharactersCharacterIdAgentsResearchUnauthorized  %+v", 401, o.Payload)
 }
 func (o *GetCharactersCharacterIDAgentsResearchUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
@@ -304,7 +304,7 @@ type GetCharactersCharacterIDAgentsResearchForbidden struct {
 }
 
 func (o *GetCharactersCharacterIDAgentsResearchForbidden) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/agents_research/][%d] getCharactersCharacterIdAgentsResearchForbidden  %+v", 403, o.Payload)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/agents_research/][%d] getCharactersCharacterIdAgentsResearchForbidden  %+v", 403, o.Payload)
 }
 func (o *GetCharactersCharacterIDAgentsResearchForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
@@ -336,7 +336,7 @@ type GetCharactersCharacterIDAgentsResearchEnhanceYourCalm struct {
 }
 
 func (o *GetCharactersCharacterIDAgentsResearchEnhanceYourCalm) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/agents_research/][%d] getCharactersCharacterIdAgentsResearchEnhanceYourCalm  %+v", 420, o.Payload)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/agents_research/][%d] getCharactersCharacterIdAgentsResearchEnhanceYourCalm  %+v", 420, o.Payload)
 }
 func (o *GetCharactersCharacterIDAgentsResearchEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
@@ -368,7 +368,7 @@ type GetCharactersCharacterIDAgentsResearchInternalServerError struct {
 }
 
 func (o *GetCharactersCharacterIDAgentsResearchInternalServerError) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/agents_research/][%d] getCharactersCharacterIdAgentsResearchInternalServerError  %+v", 500, o.Payload)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/agents_research/][%d] getCharactersCharacterIdAgentsResearchInternalServerError  %+v", 500, o.Payload)
 }
 func (o *GetCharactersCharacterIDAgentsResearchInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
@@ -400,7 +400,7 @@ type GetCharactersCharacterIDAgentsResearchServiceUnavailable struct {
 }
 
 func (o *GetCharactersCharacterIDAgentsResearchServiceUnavailable) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/agents_research/][%d] getCharactersCharacterIdAgentsResearchServiceUnavailable  %+v", 503, o.Payload)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/agents_research/][%d] getCharactersCharacterIdAgentsResearchServiceUnavailable  %+v", 503, o.Payload)
 }
 func (o *GetCharactersCharacterIDAgentsResearchServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
@@ -432,7 +432,7 @@ type GetCharactersCharacterIDAgentsResearchGatewayTimeout struct {
 }
 
 func (o *GetCharactersCharacterIDAgentsResearchGatewayTimeout) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/agents_research/][%d] getCharactersCharacterIdAgentsResearchGatewayTimeout  %+v", 504, o.Payload)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/agents_research/][%d] getCharactersCharacterIdAgentsResearchGatewayTimeout  %+v", 504, o.Payload)
 }
 func (o *GetCharactersCharacterIDAgentsResearchGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload

@@ -90,7 +90,7 @@ type PostCharactersCharacterIDCspaCreated struct {
 }
 
 func (o *PostCharactersCharacterIDCspaCreated) Error() string {
-	return fmt.Sprintf("[POST /v4/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaCreated  %+v", 201, o.Payload)
+	return fmt.Sprintf("[POST /v5/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaCreated  %+v", 201, o.Payload)
 }
 func (o *PostCharactersCharacterIDCspaCreated) GetPayload() float32 {
 	return o.Payload
@@ -120,7 +120,7 @@ type PostCharactersCharacterIDCspaBadRequest struct {
 }
 
 func (o *PostCharactersCharacterIDCspaBadRequest) Error() string {
-	return fmt.Sprintf("[POST /v4/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaBadRequest  %+v", 400, o.Payload)
+	return fmt.Sprintf("[POST /v5/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaBadRequest  %+v", 400, o.Payload)
 }
 func (o *PostCharactersCharacterIDCspaBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
@@ -152,7 +152,7 @@ type PostCharactersCharacterIDCspaUnauthorized struct {
 }
 
 func (o *PostCharactersCharacterIDCspaUnauthorized) Error() string {
-	return fmt.Sprintf("[POST /v4/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaUnauthorized  %+v", 401, o.Payload)
+	return fmt.Sprintf("[POST /v5/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaUnauthorized  %+v", 401, o.Payload)
 }
 func (o *PostCharactersCharacterIDCspaUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
@@ -184,7 +184,7 @@ type PostCharactersCharacterIDCspaForbidden struct {
 }
 
 func (o *PostCharactersCharacterIDCspaForbidden) Error() string {
-	return fmt.Sprintf("[POST /v4/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaForbidden  %+v", 403, o.Payload)
+	return fmt.Sprintf("[POST /v5/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaForbidden  %+v", 403, o.Payload)
 }
 func (o *PostCharactersCharacterIDCspaForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
@@ -216,7 +216,7 @@ type PostCharactersCharacterIDCspaEnhanceYourCalm struct {
 }
 
 func (o *PostCharactersCharacterIDCspaEnhanceYourCalm) Error() string {
-	return fmt.Sprintf("[POST /v4/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaEnhanceYourCalm  %+v", 420, o.Payload)
+	return fmt.Sprintf("[POST /v5/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaEnhanceYourCalm  %+v", 420, o.Payload)
 }
 func (o *PostCharactersCharacterIDCspaEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
@@ -248,7 +248,7 @@ type PostCharactersCharacterIDCspaInternalServerError struct {
 }
 
 func (o *PostCharactersCharacterIDCspaInternalServerError) Error() string {
-	return fmt.Sprintf("[POST /v4/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaInternalServerError  %+v", 500, o.Payload)
+	return fmt.Sprintf("[POST /v5/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaInternalServerError  %+v", 500, o.Payload)
 }
 func (o *PostCharactersCharacterIDCspaInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
@@ -280,7 +280,7 @@ type PostCharactersCharacterIDCspaServiceUnavailable struct {
 }
 
 func (o *PostCharactersCharacterIDCspaServiceUnavailable) Error() string {
-	return fmt.Sprintf("[POST /v4/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaServiceUnavailable  %+v", 503, o.Payload)
+	return fmt.Sprintf("[POST /v5/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaServiceUnavailable  %+v", 503, o.Payload)
 }
 func (o *PostCharactersCharacterIDCspaServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
@@ -312,7 +312,7 @@ type PostCharactersCharacterIDCspaGatewayTimeout struct {
 }
 
 func (o *PostCharactersCharacterIDCspaGatewayTimeout) Error() string {
-	return fmt.Sprintf("[POST /v4/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaGatewayTimeout  %+v", 504, o.Payload)
+	return fmt.Sprintf("[POST /v5/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaGatewayTimeout  %+v", 504, o.Payload)
 }
 func (o *PostCharactersCharacterIDCspaGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload

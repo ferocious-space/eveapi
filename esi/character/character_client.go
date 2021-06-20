@@ -122,7 +122,7 @@ func (a *Client) GetCharactersCharacterIDAgentsResearch(params *GetCharactersCha
 	op := &runtime.ClientOperation{
 		ID:                 "get_characters_character_id_agents_research",
 		Method:             "GET",
-		PathPattern:        "/v1/characters/{character_id}/agents_research/",
+		PathPattern:        "/v2/characters/{character_id}/agents_research/",
 		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
 		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"https"},
@@ -167,7 +167,7 @@ func (a *Client) GetCharactersCharacterIDBlueprints(params *GetCharactersCharact
 	op := &runtime.ClientOperation{
 		ID:                 "get_characters_character_id_blueprints",
 		Method:             "GET",
-		PathPattern:        "/v2/characters/{character_id}/blueprints/",
+		PathPattern:        "/v3/characters/{character_id}/blueprints/",
 		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
 		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"https"},
@@ -212,7 +212,7 @@ func (a *Client) GetCharactersCharacterIDCorporationhistory(params *GetCharacter
 	op := &runtime.ClientOperation{
 		ID:                 "get_characters_character_id_corporationhistory",
 		Method:             "GET",
-		PathPattern:        "/v1/characters/{character_id}/corporationhistory/",
+		PathPattern:        "/v2/characters/{character_id}/corporationhistory/",
 		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
 		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"https"},
@@ -256,7 +256,7 @@ func (a *Client) GetCharactersCharacterIDFatigue(params *GetCharactersCharacterI
 	op := &runtime.ClientOperation{
 		ID:                 "get_characters_character_id_fatigue",
 		Method:             "GET",
-		PathPattern:        "/v1/characters/{character_id}/fatigue/",
+		PathPattern:        "/v2/characters/{character_id}/fatigue/",
 		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
 		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"https"},
@@ -301,7 +301,7 @@ func (a *Client) GetCharactersCharacterIDMedals(params *GetCharactersCharacterID
 	op := &runtime.ClientOperation{
 		ID:                 "get_characters_character_id_medals",
 		Method:             "GET",
-		PathPattern:        "/v1/characters/{character_id}/medals/",
+		PathPattern:        "/v2/characters/{character_id}/medals/",
 		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
 		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"https"},
@@ -391,7 +391,7 @@ func (a *Client) GetCharactersCharacterIDNotificationsContacts(params *GetCharac
 	op := &runtime.ClientOperation{
 		ID:                 "get_characters_character_id_notifications_contacts",
 		Method:             "GET",
-		PathPattern:        "/v1/characters/{character_id}/notifications/contacts/",
+		PathPattern:        "/v2/characters/{character_id}/notifications/contacts/",
 		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
 		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"https"},
@@ -480,7 +480,7 @@ func (a *Client) GetCharactersCharacterIDRoles(params *GetCharactersCharacterIDR
 	op := &runtime.ClientOperation{
 		ID:                 "get_characters_character_id_roles",
 		Method:             "GET",
-		PathPattern:        "/v2/characters/{character_id}/roles/",
+		PathPattern:        "/v3/characters/{character_id}/roles/",
 		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
 		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"https"},
@@ -525,7 +525,7 @@ func (a *Client) GetCharactersCharacterIDStandings(params *GetCharactersCharacte
 	op := &runtime.ClientOperation{
 		ID:                 "get_characters_character_id_standings",
 		Method:             "GET",
-		PathPattern:        "/v1/characters/{character_id}/standings/",
+		PathPattern:        "/v2/characters/{character_id}/standings/",
 		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
 		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"https"},
@@ -570,7 +570,7 @@ func (a *Client) GetCharactersCharacterIDTitles(params *GetCharactersCharacterID
 	op := &runtime.ClientOperation{
 		ID:                 "get_characters_character_id_titles",
 		Method:             "GET",
-		PathPattern:        "/v1/characters/{character_id}/titles/",
+		PathPattern:        "/v2/characters/{character_id}/titles/",
 		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
 		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"https"},
@@ -606,9 +606,6 @@ func (a *Client) GetCharactersCharacterIDTitles(params *GetCharactersCharacterID
 ---
 
 This route is cached for up to 3600 seconds
-
----
-[Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#POST-/characters/affiliation/)
 */
 func (a *Client) PostCharactersAffiliation(params *PostCharactersAffiliationParams, opts ...ClientOption) (*PostCharactersAffiliationOK, error) {
 	// TODO: Validate the params before sending
@@ -618,7 +615,7 @@ func (a *Client) PostCharactersAffiliation(params *PostCharactersAffiliationPara
 	op := &runtime.ClientOperation{
 		ID:                 "post_characters_affiliation",
 		Method:             "POST",
-		PathPattern:        "/v1/characters/affiliation/",
+		PathPattern:        "/v2/characters/affiliation/",
 		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
 		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"https"},
@@ -651,6 +648,7 @@ func (a *Client) PostCharactersAffiliation(params *PostCharactersAffiliationPara
   Takes a source character ID in the url and a set of target character ID's in the body, returns a CSPA charge cost
 
 ---
+
 */
 func (a *Client) PostCharactersCharacterIDCspa(params *PostCharactersCharacterIDCspaParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*PostCharactersCharacterIDCspaCreated, error) {
 	// TODO: Validate the params before sending
@@ -660,7 +658,7 @@ func (a *Client) PostCharactersCharacterIDCspa(params *PostCharactersCharacterID
 	op := &runtime.ClientOperation{
 		ID:                 "post_characters_character_id_cspa",
 		Method:             "POST",
-		PathPattern:        "/v4/characters/{character_id}/cspa/",
+		PathPattern:        "/v5/characters/{character_id}/cspa/",
 		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
 		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"https"},

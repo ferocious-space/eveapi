@@ -118,7 +118,7 @@ type GetCharactersCharacterIDStandingsOK struct {
 }
 
 func (o *GetCharactersCharacterIDStandingsOK) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/standings/][%d] getCharactersCharacterIdStandingsOK  %+v", 200, o.Payload)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/standings/][%d] getCharactersCharacterIdStandingsOK  %+v", 200, o.Payload)
 }
 func (o *GetCharactersCharacterIDStandingsOK) GetPayload() []*GetCharactersCharacterIDStandingsOKBodyItems0 {
 	return o.Payload
@@ -191,7 +191,7 @@ type GetCharactersCharacterIDStandingsNotModified struct {
 }
 
 func (o *GetCharactersCharacterIDStandingsNotModified) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/standings/][%d] getCharactersCharacterIdStandingsNotModified ", 304)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/standings/][%d] getCharactersCharacterIdStandingsNotModified ", 304)
 }
 
 func (o *GetCharactersCharacterIDStandingsNotModified) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
@@ -241,7 +241,7 @@ type GetCharactersCharacterIDStandingsBadRequest struct {
 }
 
 func (o *GetCharactersCharacterIDStandingsBadRequest) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/standings/][%d] getCharactersCharacterIdStandingsBadRequest  %+v", 400, o.Payload)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/standings/][%d] getCharactersCharacterIdStandingsBadRequest  %+v", 400, o.Payload)
 }
 func (o *GetCharactersCharacterIDStandingsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
@@ -273,7 +273,7 @@ type GetCharactersCharacterIDStandingsUnauthorized struct {
 }
 
 func (o *GetCharactersCharacterIDStandingsUnauthorized) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/standings/][%d] getCharactersCharacterIdStandingsUnauthorized  %+v", 401, o.Payload)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/standings/][%d] getCharactersCharacterIdStandingsUnauthorized  %+v", 401, o.Payload)
 }
 func (o *GetCharactersCharacterIDStandingsUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
@@ -305,7 +305,7 @@ type GetCharactersCharacterIDStandingsForbidden struct {
 }
 
 func (o *GetCharactersCharacterIDStandingsForbidden) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/standings/][%d] getCharactersCharacterIdStandingsForbidden  %+v", 403, o.Payload)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/standings/][%d] getCharactersCharacterIdStandingsForbidden  %+v", 403, o.Payload)
 }
 func (o *GetCharactersCharacterIDStandingsForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
@@ -337,7 +337,7 @@ type GetCharactersCharacterIDStandingsEnhanceYourCalm struct {
 }
 
 func (o *GetCharactersCharacterIDStandingsEnhanceYourCalm) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/standings/][%d] getCharactersCharacterIdStandingsEnhanceYourCalm  %+v", 420, o.Payload)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/standings/][%d] getCharactersCharacterIdStandingsEnhanceYourCalm  %+v", 420, o.Payload)
 }
 func (o *GetCharactersCharacterIDStandingsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
@@ -369,7 +369,7 @@ type GetCharactersCharacterIDStandingsInternalServerError struct {
 }
 
 func (o *GetCharactersCharacterIDStandingsInternalServerError) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/standings/][%d] getCharactersCharacterIdStandingsInternalServerError  %+v", 500, o.Payload)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/standings/][%d] getCharactersCharacterIdStandingsInternalServerError  %+v", 500, o.Payload)
 }
 func (o *GetCharactersCharacterIDStandingsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
@@ -401,7 +401,7 @@ type GetCharactersCharacterIDStandingsServiceUnavailable struct {
 }
 
 func (o *GetCharactersCharacterIDStandingsServiceUnavailable) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/standings/][%d] getCharactersCharacterIdStandingsServiceUnavailable  %+v", 503, o.Payload)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/standings/][%d] getCharactersCharacterIdStandingsServiceUnavailable  %+v", 503, o.Payload)
 }
 func (o *GetCharactersCharacterIDStandingsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
@@ -433,7 +433,7 @@ type GetCharactersCharacterIDStandingsGatewayTimeout struct {
 }
 
 func (o *GetCharactersCharacterIDStandingsGatewayTimeout) Error() string {
-	return fmt.Sprintf("[GET /v1/characters/{character_id}/standings/][%d] getCharactersCharacterIdStandingsGatewayTimeout  %+v", 504, o.Payload)
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/standings/][%d] getCharactersCharacterIdStandingsGatewayTimeout  %+v", 504, o.Payload)
 }
 func (o *GetCharactersCharacterIDStandingsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
