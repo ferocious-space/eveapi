@@ -9,7 +9,6 @@ Downloads:
 	-swagger mixin -q esi.json meta.json -o swagger.json
 GenNotificationsSDE:
 	go mod download
-	go run scripts/generator.go scripts/sde.go
 	go mod tidy
 Generate: GenNotificationsSDE
 	swagger generate client -f swagger.json -c esi -m models --default-scheme=https --with-enum-ci --skip-validation \
@@ -48,4 +47,5 @@ Generate: GenNotificationsSDE
 	--tags "Wars"
 	go get -u -d ./esi/...
 	go get -u -d ./models/...
+	go run scripts/generator.go scripts/sde.go
 	go mod tidy

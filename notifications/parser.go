@@ -1447,6 +1447,15 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
+	case "ExpertSystemExpired":
+		value := new(ExpertSystemExpired)
+		err := yaml.Unmarshal([]byte(n.Text), &value)
+		if err != nil {
+			spew.Dump(n)
+			return nil, err
+		}
+		return value, nil
+
 	// Missing implementations
 
 	case "AgentRetiredTrigravian":
@@ -1730,22 +1739,6 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		fmt.Println(string(genType))
 		value := new(ESSMainBankLink)
-		err = yaml.Unmarshal([]byte(n.Text), &value)
-		if err != nil {
-			spew.Dump(n)
-			return nil, err
-		}
-		return value, nil
-
-	case "ExpertSystemExpired":
-		bytes, _ := yaml.Marshal(n)
-		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(*n.Type, n.Text)
-		if err != nil {
-			return nil, err
-		}
-		fmt.Println(string(genType))
-		value := new(ExpertSystemExpired)
 		err = yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
 			spew.Dump(n)
@@ -2432,8 +2425,6 @@ type DistrictAttacked interface{}
 type DustAppAcceptedMsg interface{}
 
 type ESSMainBankLink interface{}
-
-type ExpertSystemExpired interface{}
 
 type ExpertSystemExpiryImminent interface{}
 

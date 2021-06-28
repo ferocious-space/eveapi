@@ -1195,3 +1195,7 @@ type WarInherited struct {
 	OpponentID   int32 `yaml:"opponentID"`
 	quitterID    int32 `yaml:"quitterID"`
 }
+
+type ExpertSystemExpired struct {
+	TypeID *int32 `bson:"typeID,omitempty" db:"typeID,omitempty" json:"typeID,omitempty" yaml:"typeID,omitempty"`
+}
