@@ -21,8 +21,8 @@ require (
 	github.com/pkg/errors v0.9.1
 	github.com/valyala/bytebufferpool v1.0.0
 	go.etcd.io/bbolt v1.3.5
-	go.mongodb.org/mongo-driver v1.5.3 // indirect
-	golang.org/x/net v0.0.0-20210614182718-04defd469f4e // indirect
-	golang.org/x/sys v0.0.0-20210616094352-59db8d763f22 // indirect
+	go.mongodb.org/mongo-driver v1.6.0 // indirect
+	golang.org/x/net v0.0.0-20210716203947-853a461950ff // indirect
+	golang.org/x/sys v0.0.0-20210630005230-0f9fa26af87c // indirect
 	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b
 )

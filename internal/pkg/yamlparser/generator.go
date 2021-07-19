@@ -2,11 +2,41 @@ package yamlparser
 
 import (
 	"bytes"
+	"os"
 	"reflect"
+	"regexp"
 	"sort"
+
+	"github.com/goccy/go-json"
+	"gopkg.in/yaml.v3"
 
 	"github.com/dave/jennifer/jen"
 )
+
+var re = regexp.MustCompile(`"(\d+)":`)
+
+func JSONtoYAML(filePath string) (*yaml.Node, error) {
+	var obj interface{}
+	var node yaml.Node
+	open, err := os.Open(filePath)
+	if err != nil {
+		return &yaml.Node{}, err
+	}
+	defer open.Close()
+	err = json.NewDecoder(open).Decode(&obj)
+	if err != nil {
+		return &yaml.Node{}, err
+	}
+	marshal, err := yaml.Marshal(obj)
+	if err != nil {
+		return &yaml.Node{}, err
+	}
+	err = yaml.Unmarshal(re.ReplaceAll(marshal, []byte("$1:")), &node)
+	if err != nil {
+		return &yaml.Node{}, err
+	}
+	return &node, nil
+}
 
 func GenerateType(p reflect.Type, typeName string, packagePath string, packageName string) ([]byte, error) {
 	singularName, _ := NameForType(typeName)
