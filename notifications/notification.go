@@ -23,10 +23,11 @@ import (
 	"github.com/ferocious-space/eveapi/internal/pkg/yamlparser"
 )
 
+var baseTime = time.Date(1601, 1, 1, 0, 0, 0, 0, time.UTC).Unix()
+
 // some weird CCP function
 func TimeFromCCPTimestamp(ts int64) time.Time {
-	base := time.Date(1601, 1, 1, 0, 0, 0, 0, time.UTC).Unix()
-	return time.Unix(ts/10000000+base, ts%10000000).UTC()
+	return time.Unix((ts/10000000)-baseTime, (ts%100000000)*100).UTC()
 }
 
 func DeepMergeNotifications(typeName string, in []string) string {
