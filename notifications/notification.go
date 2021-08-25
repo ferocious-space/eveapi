@@ -1204,3 +1204,17 @@ type WarInherited struct {
 type ExpertSystemExpired struct {
 	TypeID *int32 `bson:"typeID,omitempty" db:"typeID,omitempty" json:"typeID,omitempty" yaml:"typeID,omitempty"`
 }
+
+type StructureItemsMovedToSafety struct {
+	AssetSafetyDurationFull     *int32   `bson:"assetSafetyDurationFull,omitempty" db:"assetSafetyDurationFull,omitempty" json:"assetSafetyDurationFull,omitempty" yaml:"assetSafetyDurationFull,omitempty"`
+	AssetSafetyDurationMinimum  *int32   `bson:"assetSafetyDurationMinimum,omitempty" db:"assetSafetyDurationMinimum,omitempty" json:"assetSafetyDurationMinimum,omitempty" yaml:"assetSafetyDurationMinimum,omitempty"`
+	AssetSafetyFullTimestamp    *int64   `bson:"assetSafetyFullTimestamp,omitempty" db:"assetSafetyFullTimestamp,omitempty" json:"assetSafetyFullTimestamp,omitempty" yaml:"assetSafetyFullTimestamp,omitempty"`
+	AssetSafetyMinimumTimestamp *int64   `bson:"assetSafetyMinimumTimestamp,omitempty" db:"assetSafetyMinimumTimestamp,omitempty" json:"assetSafetyMinimumTimestamp,omitempty" yaml:"assetSafetyMinimumTimestamp,omitempty"`
+	IsCorpOwned                 bool     `bson:"isCorpOwned,omitempty" db:"isCorpOwned,omitempty" json:"isCorpOwned,omitempty" yaml:"isCorpOwned,omitempty"`
+	NewStationID                *int32   `bson:"newStationID,omitempty" db:"newStationID,omitempty" json:"newStationID,omitempty" yaml:"newStationID,omitempty"`
+	SolarsystemID               *int32   `bson:"solarsystemID,omitempty" db:"solarsystemID,omitempty" json:"solarsystemID,omitempty" yaml:"solarsystemID,omitempty"`
+	StructureID                 *int64   `bson:"structureID,omitempty" db:"structureID,omitempty" json:"structureID,omitempty" yaml:"structureID,omitempty"`
+	StructureLink               *string  `bson:"structureLink,omitempty" db:"structureLink,omitempty" json:"structureLink,omitempty" yaml:"structureLink,omitempty"`
+	StructureShowInfoData       []string `bson:"structureShowInfoData,omitempty" db:"structureShowInfoData,omitempty" json:"structureShowInfoData,omitempty" yaml:"structureShowInfoData,omitempty"`
+	StructureTypeID             *int32   `bson:"structureTypeID,omitempty" db:"structureTypeID,omitempty" json:"structureTypeID,omitempty" yaml:"structureTypeID,omitempty"`
+}

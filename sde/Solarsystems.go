@@ -32,12 +32,12 @@ type Solarsystem struct {
 }
 type SolarsystemPlanets struct {
 	CelestialIndex   *int32                                    `bson:"celestialIndex,omitempty" db:"celestialIndex,omitempty" json:"celestialIndex,omitempty" yaml:"celestialIndex,omitempty"`
+	Moons            map[int32]SolarsystemPlanetsMoons         `bson:"moons,omitempty" db:"moons,omitempty" json:"moons,omitempty" yaml:"moons,omitempty"`
 	PlanetAttributes *SolarsystemPlanetsPlanetAttributes       `bson:"planetAttributes,omitempty" db:"planetAttributes,omitempty" json:"planetAttributes,omitempty" yaml:"planetAttributes,omitempty"`
 	Position         []float64                                 `bson:"position,omitempty" db:"position,omitempty" json:"position,omitempty" yaml:"position,omitempty"`
 	Radius           *int64                                    `bson:"radius,omitempty" db:"radius,omitempty" json:"radius,omitempty" yaml:"radius,omitempty"`
 	Statistics       *SolarsystemPlanetsStatistics             `bson:"statistics,omitempty" db:"statistics,omitempty" json:"statistics,omitempty" yaml:"statistics,omitempty"`
 	TypeID           *int32                                    `bson:"typeID,omitempty" db:"typeID,omitempty" json:"typeID,omitempty" yaml:"typeID,omitempty"`
-	Moons            map[int32]SolarsystemPlanetsMoons         `bson:"moons,omitempty" db:"moons,omitempty" json:"moons,omitempty" yaml:"moons,omitempty"`
 	NpcStations      map[int32]SolarsystemPlanetsNpcStations   `bson:"npcStations,omitempty" db:"npcStations,omitempty" json:"npcStations,omitempty" yaml:"npcStations,omitempty"`
 	AsteroidBelts    map[int32]SolarsystemPlanetsAsteroidBelts `bson:"asteroidBelts,omitempty" db:"asteroidBelts,omitempty" json:"asteroidBelts,omitempty" yaml:"asteroidBelts,omitempty"`
 	PlanetNameID     *int32                                    `bson:"planetNameID,omitempty" db:"planetNameID,omitempty" json:"planetNameID,omitempty" yaml:"planetNameID,omitempty"`

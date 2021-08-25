@@ -1456,6 +1456,15 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
+	case "StructureItemsMovedToSafety":
+		value := new(StructureItemsMovedToSafety)
+		err := yaml.Unmarshal([]byte(n.Text), &value)
+		if err != nil {
+			spew.Dump(n)
+			return nil, err
+		}
+		return value, nil
+
 	// Missing implementations
 
 	case "AgentRetiredTrigravian":
@@ -2242,22 +2251,6 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
-	case "StructureItemsMovedToSafety":
-		bytes, _ := yaml.Marshal(n)
-		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(*n.Type, n.Text)
-		if err != nil {
-			return nil, err
-		}
-		fmt.Println(string(genType))
-		value := new(StructureItemsMovedToSafety)
-		err = yaml.Unmarshal([]byte(n.Text), &value)
-		if err != nil {
-			spew.Dump(n)
-			return nil, err
-		}
-		return value, nil
-
 	case "StructuresJobsCancelled":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -2488,8 +2481,6 @@ type StoryLineMissionAvailableMsg interface{}
 
 type StructureCourierContractChanged interface{}
 
-type StructureItemsMovedToSafety interface{}
-
 type StructuresJobsCancelled interface{}
 
 type StructuresJobsPaused interface{}
@@ -2604,4 +2595,12 @@ func (s *WarHQRemovedFromSpace) GetTimeDeclared() time.Time {
 
 func (s *WarDeclared) GetTimeStarted() time.Time {
 	return TimeFromCCPTimestamp(s.TimeStarted)
+}
+
+func (s *StructureItemsMovedToSafety) GetAssetSafetyFullTimestamp() time.Time {
+	return TimeFromCCPTimestamp(s.AssetSafetyFullTimestamp)
+}
+
+func (s *StructureItemsMovedToSafety) GetAssetSafetyMinimumTimestamp() time.Time {
+	return TimeFromCCPTimestamp(s.AssetSafetyMinimumTimestamp)
 }

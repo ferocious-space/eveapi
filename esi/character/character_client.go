@@ -69,6 +69,12 @@ type ClientService interface {
 ---
 
 This route is cached for up to 86400 seconds
+
+---
+Warning: This route has an upgrade available
+
+---
+[Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/characters/{character_id}/)
 */
 func (a *Client) GetCharactersCharacterID(params *GetCharactersCharacterIDParams, opts ...ClientOption) (*GetCharactersCharacterIDOK, error) {
 	// TODO: Validate the params before sending
