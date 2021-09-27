@@ -1,16 +1,14 @@
 all: Setup Downloads Generate
 
 Setup:
-	go get -u github.com/go-swagger/go-swagger/cmd/swagger
+	go get -d github.com/go-swagger/go-swagger/cmd/swagger
 	go install github.com/go-swagger/go-swagger/cmd/swagger
+	go mod tidy
 Downloads:
 	curl -sSL https://esi.evetech.net/_latest/swagger.json -o esi.json
 	curl -sSL https://esi.evetech.net/swagger.json -o meta.json
 	-swagger mixin -q esi.json meta.json -o swagger.json
-GenNotificationsSDE:
-	go mod download
-	go mod tidy
-Generate: GenNotificationsSDE
+Generate:
 	swagger generate client -f swagger.json -c esi -m models --default-scheme=https --with-enum-ci --skip-validation \
 	--tags "Alliance" \
 	--tags "Assets" \

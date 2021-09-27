@@ -112,7 +112,7 @@ type GetCharactersCharacterIDOK struct {
 }
 
 func (o *GetCharactersCharacterIDOK) Error() string {
-	return fmt.Sprintf("[GET /v4/characters/{character_id}/][%d] getCharactersCharacterIdOK  %+v", 200, o.Payload)
+	return fmt.Sprintf("[GET /v5/characters/{character_id}/][%d] getCharactersCharacterIdOK  %+v", 200, o.Payload)
 }
 func (o *GetCharactersCharacterIDOK) GetPayload() *GetCharactersCharacterIDOKBody {
 	return o.Payload
@@ -187,7 +187,7 @@ type GetCharactersCharacterIDNotModified struct {
 }
 
 func (o *GetCharactersCharacterIDNotModified) Error() string {
-	return fmt.Sprintf("[GET /v4/characters/{character_id}/][%d] getCharactersCharacterIdNotModified ", 304)
+	return fmt.Sprintf("[GET /v5/characters/{character_id}/][%d] getCharactersCharacterIdNotModified ", 304)
 }
 
 func (o *GetCharactersCharacterIDNotModified) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
@@ -237,7 +237,7 @@ type GetCharactersCharacterIDBadRequest struct {
 }
 
 func (o *GetCharactersCharacterIDBadRequest) Error() string {
-	return fmt.Sprintf("[GET /v4/characters/{character_id}/][%d] getCharactersCharacterIdBadRequest  %+v", 400, o.Payload)
+	return fmt.Sprintf("[GET /v5/characters/{character_id}/][%d] getCharactersCharacterIdBadRequest  %+v", 400, o.Payload)
 }
 func (o *GetCharactersCharacterIDBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
@@ -269,7 +269,7 @@ type GetCharactersCharacterIDNotFound struct {
 }
 
 func (o *GetCharactersCharacterIDNotFound) Error() string {
-	return fmt.Sprintf("[GET /v4/characters/{character_id}/][%d] getCharactersCharacterIdNotFound  %+v", 404, o.Payload)
+	return fmt.Sprintf("[GET /v5/characters/{character_id}/][%d] getCharactersCharacterIdNotFound  %+v", 404, o.Payload)
 }
 func (o *GetCharactersCharacterIDNotFound) GetPayload() *GetCharactersCharacterIDNotFoundBody {
 	return o.Payload
@@ -301,7 +301,7 @@ type GetCharactersCharacterIDEnhanceYourCalm struct {
 }
 
 func (o *GetCharactersCharacterIDEnhanceYourCalm) Error() string {
-	return fmt.Sprintf("[GET /v4/characters/{character_id}/][%d] getCharactersCharacterIdEnhanceYourCalm  %+v", 420, o.Payload)
+	return fmt.Sprintf("[GET /v5/characters/{character_id}/][%d] getCharactersCharacterIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
 func (o *GetCharactersCharacterIDEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
@@ -333,7 +333,7 @@ type GetCharactersCharacterIDInternalServerError struct {
 }
 
 func (o *GetCharactersCharacterIDInternalServerError) Error() string {
-	return fmt.Sprintf("[GET /v4/characters/{character_id}/][%d] getCharactersCharacterIdInternalServerError  %+v", 500, o.Payload)
+	return fmt.Sprintf("[GET /v5/characters/{character_id}/][%d] getCharactersCharacterIdInternalServerError  %+v", 500, o.Payload)
 }
 func (o *GetCharactersCharacterIDInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
@@ -365,7 +365,7 @@ type GetCharactersCharacterIDServiceUnavailable struct {
 }
 
 func (o *GetCharactersCharacterIDServiceUnavailable) Error() string {
-	return fmt.Sprintf("[GET /v4/characters/{character_id}/][%d] getCharactersCharacterIdServiceUnavailable  %+v", 503, o.Payload)
+	return fmt.Sprintf("[GET /v5/characters/{character_id}/][%d] getCharactersCharacterIdServiceUnavailable  %+v", 503, o.Payload)
 }
 func (o *GetCharactersCharacterIDServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
@@ -397,7 +397,7 @@ type GetCharactersCharacterIDGatewayTimeout struct {
 }
 
 func (o *GetCharactersCharacterIDGatewayTimeout) Error() string {
-	return fmt.Sprintf("[GET /v4/characters/{character_id}/][%d] getCharactersCharacterIdGatewayTimeout  %+v", 504, o.Payload)
+	return fmt.Sprintf("[GET /v5/characters/{character_id}/][%d] getCharactersCharacterIdGatewayTimeout  %+v", 504, o.Payload)
 }
 func (o *GetCharactersCharacterIDGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
@@ -467,11 +467,6 @@ type GetCharactersCharacterIDOKBody struct {
 	//
 	// The character's alliance ID
 	AllianceID int32 `json:"alliance_id,omitempty"`
-
-	// get_characters_character_id_ancestry_id
-	//
-	// ancestry_id integer
-	AncestryID int32 `json:"ancestry_id,omitempty"`
 
 	// get_characters_character_id_birthday
 	//
