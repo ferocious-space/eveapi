@@ -556,6 +556,8 @@ func (o *GetDogmaDynamicItemsTypeIDItemIDOKBody) validateDogmaAttributes(formats
 			if err := o.DogmaAttributes[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getDogmaDynamicItemsTypeIdItemIdOK" + "." + "dogma_attributes" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getDogmaDynamicItemsTypeIdItemIdOK" + "." + "dogma_attributes" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -587,6 +589,8 @@ func (o *GetDogmaDynamicItemsTypeIDItemIDOKBody) validateDogmaEffects(formats st
 			if err := o.DogmaEffects[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getDogmaDynamicItemsTypeIdItemIdOK" + "." + "dogma_effects" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getDogmaDynamicItemsTypeIdItemIdOK" + "." + "dogma_effects" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -641,6 +645,8 @@ func (o *GetDogmaDynamicItemsTypeIDItemIDOKBody) contextValidateDogmaAttributes(
 			if err := o.DogmaAttributes[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getDogmaDynamicItemsTypeIdItemIdOK" + "." + "dogma_attributes" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getDogmaDynamicItemsTypeIdItemIdOK" + "." + "dogma_attributes" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -659,6 +665,8 @@ func (o *GetDogmaDynamicItemsTypeIDItemIDOKBody) contextValidateDogmaEffects(ctx
 			if err := o.DogmaEffects[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getDogmaDynamicItemsTypeIdItemIdOK" + "." + "dogma_effects" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getDogmaDynamicItemsTypeIdItemIdOK" + "." + "dogma_effects" + "." + strconv.Itoa(i))
 				}
 				return err
 			}

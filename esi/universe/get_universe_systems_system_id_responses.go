@@ -611,6 +611,8 @@ func (o *GetUniverseSystemsSystemIDOKBody) validatePlanets(formats strfmt.Regist
 			if err := o.Planets[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getUniverseSystemsSystemIdOK" + "." + "planets" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getUniverseSystemsSystemIdOK" + "." + "planets" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -631,6 +633,8 @@ func (o *GetUniverseSystemsSystemIDOKBody) validatePosition(formats strfmt.Regis
 		if err := o.Position.Validate(formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getUniverseSystemsSystemIdOK" + "." + "position")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getUniverseSystemsSystemIdOK" + "." + "position")
 			}
 			return err
 		}
@@ -711,6 +715,8 @@ func (o *GetUniverseSystemsSystemIDOKBody) contextValidatePlanets(ctx context.Co
 			if err := o.Planets[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getUniverseSystemsSystemIdOK" + "." + "planets" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getUniverseSystemsSystemIdOK" + "." + "planets" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -727,6 +733,8 @@ func (o *GetUniverseSystemsSystemIDOKBody) contextValidatePosition(ctx context.C
 		if err := o.Position.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getUniverseSystemsSystemIdOK" + "." + "position")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getUniverseSystemsSystemIdOK" + "." + "position")
 			}
 			return err
 		}

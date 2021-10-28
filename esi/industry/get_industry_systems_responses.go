@@ -436,6 +436,8 @@ func (o *GetIndustrySystemsOKBodyItems0) validateCostIndices(formats strfmt.Regi
 			if err := o.CostIndices[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("cost_indices" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("cost_indices" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -477,6 +479,8 @@ func (o *GetIndustrySystemsOKBodyItems0) contextValidateCostIndices(ctx context.
 			if err := o.CostIndices[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("cost_indices" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("cost_indices" + "." + strconv.Itoa(i))
 				}
 				return err
 			}

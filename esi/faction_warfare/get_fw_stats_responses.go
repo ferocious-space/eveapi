@@ -457,6 +457,8 @@ func (o *GetFwStatsOKBodyItems0) validateKills(formats strfmt.Registry) error {
 		if err := o.Kills.Validate(formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("kills")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("kills")
 			}
 			return err
 		}
@@ -493,6 +495,8 @@ func (o *GetFwStatsOKBodyItems0) validateVictoryPoints(formats strfmt.Registry) 
 		if err := o.VictoryPoints.Validate(formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("victory_points")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("victory_points")
 			}
 			return err
 		}
@@ -525,6 +529,8 @@ func (o *GetFwStatsOKBodyItems0) contextValidateKills(ctx context.Context, forma
 		if err := o.Kills.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("kills")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("kills")
 			}
 			return err
 		}
@@ -539,6 +545,8 @@ func (o *GetFwStatsOKBodyItems0) contextValidateVictoryPoints(ctx context.Contex
 		if err := o.VictoryPoints.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("victory_points")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("victory_points")
 			}
 			return err
 		}

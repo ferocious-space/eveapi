@@ -629,6 +629,8 @@ func (o *GetUniverseTypesTypeIDOKBody) validateDogmaAttributes(formats strfmt.Re
 			if err := o.DogmaAttributes[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getUniverseTypesTypeIdOK" + "." + "dogma_attributes" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getUniverseTypesTypeIdOK" + "." + "dogma_attributes" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -659,6 +661,8 @@ func (o *GetUniverseTypesTypeIDOKBody) validateDogmaEffects(formats strfmt.Regis
 			if err := o.DogmaEffects[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getUniverseTypesTypeIdOK" + "." + "dogma_effects" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getUniverseTypesTypeIdOK" + "." + "dogma_effects" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -731,6 +735,8 @@ func (o *GetUniverseTypesTypeIDOKBody) contextValidateDogmaAttributes(ctx contex
 			if err := o.DogmaAttributes[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getUniverseTypesTypeIdOK" + "." + "dogma_attributes" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getUniverseTypesTypeIdOK" + "." + "dogma_attributes" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -749,6 +755,8 @@ func (o *GetUniverseTypesTypeIDOKBody) contextValidateDogmaEffects(ctx context.C
 			if err := o.DogmaEffects[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getUniverseTypesTypeIdOK" + "." + "dogma_effects" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getUniverseTypesTypeIdOK" + "." + "dogma_effects" + "." + strconv.Itoa(i))
 				}
 				return err
 			}

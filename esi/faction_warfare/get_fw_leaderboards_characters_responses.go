@@ -421,6 +421,8 @@ func (o *GetFwLeaderboardsCharactersOKBody) validateKills(formats strfmt.Registr
 		if err := o.Kills.Validate(formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getFwLeaderboardsCharactersOK" + "." + "kills")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getFwLeaderboardsCharactersOK" + "." + "kills")
 			}
 			return err
 		}
@@ -439,6 +441,8 @@ func (o *GetFwLeaderboardsCharactersOKBody) validateVictoryPoints(formats strfmt
 		if err := o.VictoryPoints.Validate(formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getFwLeaderboardsCharactersOK" + "." + "victory_points")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getFwLeaderboardsCharactersOK" + "." + "victory_points")
 			}
 			return err
 		}
@@ -471,6 +475,8 @@ func (o *GetFwLeaderboardsCharactersOKBody) contextValidateKills(ctx context.Con
 		if err := o.Kills.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getFwLeaderboardsCharactersOK" + "." + "kills")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getFwLeaderboardsCharactersOK" + "." + "kills")
 			}
 			return err
 		}
@@ -485,6 +491,8 @@ func (o *GetFwLeaderboardsCharactersOKBody) contextValidateVictoryPoints(ctx con
 		if err := o.VictoryPoints.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getFwLeaderboardsCharactersOK" + "." + "victory_points")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getFwLeaderboardsCharactersOK" + "." + "victory_points")
 			}
 			return err
 		}
@@ -583,6 +591,8 @@ func (o *GetFwLeaderboardsCharactersOKBodyKills) validateActiveTotal(formats str
 			if err := o.ActiveTotal[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getFwLeaderboardsCharactersOK" + "." + "kills" + "." + "active_total" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getFwLeaderboardsCharactersOK" + "." + "kills" + "." + "active_total" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -614,6 +624,8 @@ func (o *GetFwLeaderboardsCharactersOKBodyKills) validateLastWeek(formats strfmt
 			if err := o.LastWeek[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getFwLeaderboardsCharactersOK" + "." + "kills" + "." + "last_week" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getFwLeaderboardsCharactersOK" + "." + "kills" + "." + "last_week" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -645,6 +657,8 @@ func (o *GetFwLeaderboardsCharactersOKBodyKills) validateYesterday(formats strfm
 			if err := o.Yesterday[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getFwLeaderboardsCharactersOK" + "." + "kills" + "." + "yesterday" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getFwLeaderboardsCharactersOK" + "." + "kills" + "." + "yesterday" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -685,6 +699,8 @@ func (o *GetFwLeaderboardsCharactersOKBodyKills) contextValidateActiveTotal(ctx 
 			if err := o.ActiveTotal[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getFwLeaderboardsCharactersOK" + "." + "kills" + "." + "active_total" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getFwLeaderboardsCharactersOK" + "." + "kills" + "." + "active_total" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -703,6 +719,8 @@ func (o *GetFwLeaderboardsCharactersOKBodyKills) contextValidateLastWeek(ctx con
 			if err := o.LastWeek[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getFwLeaderboardsCharactersOK" + "." + "kills" + "." + "last_week" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getFwLeaderboardsCharactersOK" + "." + "kills" + "." + "last_week" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -721,6 +739,8 @@ func (o *GetFwLeaderboardsCharactersOKBodyKills) contextValidateYesterday(ctx co
 			if err := o.Yesterday[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getFwLeaderboardsCharactersOK" + "." + "kills" + "." + "yesterday" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getFwLeaderboardsCharactersOK" + "." + "kills" + "." + "yesterday" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -959,6 +979,8 @@ func (o *GetFwLeaderboardsCharactersOKBodyVictoryPoints) validateActiveTotal(for
 			if err := o.ActiveTotal[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getFwLeaderboardsCharactersOK" + "." + "victory_points" + "." + "active_total" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getFwLeaderboardsCharactersOK" + "." + "victory_points" + "." + "active_total" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -990,6 +1012,8 @@ func (o *GetFwLeaderboardsCharactersOKBodyVictoryPoints) validateLastWeek(format
 			if err := o.LastWeek[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getFwLeaderboardsCharactersOK" + "." + "victory_points" + "." + "last_week" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getFwLeaderboardsCharactersOK" + "." + "victory_points" + "." + "last_week" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -1021,6 +1045,8 @@ func (o *GetFwLeaderboardsCharactersOKBodyVictoryPoints) validateYesterday(forma
 			if err := o.Yesterday[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getFwLeaderboardsCharactersOK" + "." + "victory_points" + "." + "yesterday" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getFwLeaderboardsCharactersOK" + "." + "victory_points" + "." + "yesterday" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -1061,6 +1087,8 @@ func (o *GetFwLeaderboardsCharactersOKBodyVictoryPoints) contextValidateActiveTo
 			if err := o.ActiveTotal[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getFwLeaderboardsCharactersOK" + "." + "victory_points" + "." + "active_total" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getFwLeaderboardsCharactersOK" + "." + "victory_points" + "." + "active_total" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -1079,6 +1107,8 @@ func (o *GetFwLeaderboardsCharactersOKBodyVictoryPoints) contextValidateLastWeek
 			if err := o.LastWeek[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getFwLeaderboardsCharactersOK" + "." + "victory_points" + "." + "last_week" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getFwLeaderboardsCharactersOK" + "." + "victory_points" + "." + "last_week" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -1097,6 +1127,8 @@ func (o *GetFwLeaderboardsCharactersOKBodyVictoryPoints) contextValidateYesterda
 			if err := o.Yesterday[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getFwLeaderboardsCharactersOK" + "." + "victory_points" + "." + "yesterday" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getFwLeaderboardsCharactersOK" + "." + "victory_points" + "." + "yesterday" + "." + strconv.Itoa(i))
 				}
 				return err
 			}

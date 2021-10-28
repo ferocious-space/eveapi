@@ -468,6 +468,8 @@ func (o *PostCorporationsCorporationIDAssetsLocationsOKBodyItems0) validatePosit
 		if err := o.Position.Validate(formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("position")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("position")
 			}
 			return err
 		}
@@ -496,6 +498,8 @@ func (o *PostCorporationsCorporationIDAssetsLocationsOKBodyItems0) contextValida
 		if err := o.Position.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("position")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("position")
 			}
 			return err
 		}

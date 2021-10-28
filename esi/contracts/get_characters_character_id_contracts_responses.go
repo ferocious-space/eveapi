@@ -492,7 +492,7 @@ type GetCharactersCharacterIDContractsOKBodyItems0 struct {
 
 	// get_characters_character_id_contracts_assignee_id
 	//
-	// ID to whom the contract is assigned, can be corporation or character ID
+	// ID to whom the contract is assigned, can be alliance, corporation or character ID
 	// Required: true
 	AssigneeID *int32 `json:"assignee_id"`
 

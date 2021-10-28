@@ -549,6 +549,8 @@ func (o *GetUniversePlanetsPlanetIDOKBody) validatePosition(formats strfmt.Regis
 		if err := o.Position.Validate(formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getUniversePlanetsPlanetIdOK" + "." + "position")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getUniversePlanetsPlanetIdOK" + "." + "position")
 			}
 			return err
 		}
@@ -595,6 +597,8 @@ func (o *GetUniversePlanetsPlanetIDOKBody) contextValidatePosition(ctx context.C
 		if err := o.Position.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getUniversePlanetsPlanetIdOK" + "." + "position")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getUniversePlanetsPlanetIdOK" + "." + "position")
 			}
 			return err
 		}

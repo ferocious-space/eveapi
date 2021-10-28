@@ -749,6 +749,8 @@ func (o *GetCorporationsCorporationIDStructuresOKBodyItems0) validateServices(fo
 			if err := o.Services[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("services" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("services" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -920,6 +922,8 @@ func (o *GetCorporationsCorporationIDStructuresOKBodyItems0) contextValidateServ
 			if err := o.Services[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("services" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("services" + "." + strconv.Itoa(i))
 				}
 				return err
 			}

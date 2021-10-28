@@ -539,6 +539,8 @@ func (o *GetUniverseStargatesStargateIDOKBody) validateDestination(formats strfm
 		if err := o.Destination.Validate(formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getUniverseStargatesStargateIdOK" + "." + "destination")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getUniverseStargatesStargateIdOK" + "." + "destination")
 			}
 			return err
 		}
@@ -566,6 +568,8 @@ func (o *GetUniverseStargatesStargateIDOKBody) validatePosition(formats strfmt.R
 		if err := o.Position.Validate(formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getUniverseStargatesStargateIdOK" + "." + "position")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getUniverseStargatesStargateIdOK" + "." + "position")
 			}
 			return err
 		}
@@ -625,6 +629,8 @@ func (o *GetUniverseStargatesStargateIDOKBody) contextValidateDestination(ctx co
 		if err := o.Destination.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getUniverseStargatesStargateIdOK" + "." + "destination")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getUniverseStargatesStargateIdOK" + "." + "destination")
 			}
 			return err
 		}
@@ -639,6 +645,8 @@ func (o *GetUniverseStargatesStargateIDOKBody) contextValidatePosition(ctx conte
 		if err := o.Position.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getUniverseStargatesStargateIdOK" + "." + "position")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getUniverseStargatesStargateIdOK" + "." + "position")
 			}
 			return err
 		}

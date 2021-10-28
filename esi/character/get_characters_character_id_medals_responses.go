@@ -620,6 +620,8 @@ func (o *GetCharactersCharacterIDMedalsOKBodyItems0) validateGraphics(formats st
 			if err := o.Graphics[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("graphics" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("graphics" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -731,6 +733,8 @@ func (o *GetCharactersCharacterIDMedalsOKBodyItems0) contextValidateGraphics(ctx
 			if err := o.Graphics[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("graphics" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("graphics" + "." + strconv.Itoa(i))
 				}
 				return err
 			}

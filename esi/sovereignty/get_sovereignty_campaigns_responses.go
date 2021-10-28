@@ -577,6 +577,8 @@ func (o *GetSovereigntyCampaignsOKBodyItems0) validateParticipants(formats strfm
 			if err := o.Participants[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("participants" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("participants" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -640,6 +642,8 @@ func (o *GetSovereigntyCampaignsOKBodyItems0) contextValidateParticipants(ctx co
 			if err := o.Participants[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("participants" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("participants" + "." + strconv.Itoa(i))
 				}
 				return err
 			}

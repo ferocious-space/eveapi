@@ -512,6 +512,8 @@ func (o *GetCharactersCharacterIDMailLabelsOKBody) validateLabels(formats strfmt
 			if err := o.Labels[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getCharactersCharacterIdMailLabelsOK" + "." + "labels" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getCharactersCharacterIdMailLabelsOK" + "." + "labels" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -556,6 +558,8 @@ func (o *GetCharactersCharacterIDMailLabelsOKBody) contextValidateLabels(ctx con
 			if err := o.Labels[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getCharactersCharacterIdMailLabelsOK" + "." + "labels" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getCharactersCharacterIdMailLabelsOK" + "." + "labels" + "." + strconv.Itoa(i))
 				}
 				return err
 			}

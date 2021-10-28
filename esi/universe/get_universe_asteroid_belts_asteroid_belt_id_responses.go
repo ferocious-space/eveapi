@@ -520,6 +520,8 @@ func (o *GetUniverseAsteroidBeltsAsteroidBeltIDOKBody) validatePosition(formats 
 		if err := o.Position.Validate(formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getUniverseAsteroidBeltsAsteroidBeltIdOK" + "." + "position")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getUniverseAsteroidBeltsAsteroidBeltIdOK" + "." + "position")
 			}
 			return err
 		}
@@ -557,6 +559,8 @@ func (o *GetUniverseAsteroidBeltsAsteroidBeltIDOKBody) contextValidatePosition(c
 		if err := o.Position.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getUniverseAsteroidBeltsAsteroidBeltIdOK" + "." + "position")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getUniverseAsteroidBeltsAsteroidBeltIdOK" + "." + "position")
 			}
 			return err
 		}

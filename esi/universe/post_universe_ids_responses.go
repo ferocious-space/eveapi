@@ -411,6 +411,8 @@ func (o *PostUniverseIdsOKBody) validateAgents(formats strfmt.Registry) error {
 			if err := o.Agents[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("postUniverseIdsOK" + "." + "agents" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("postUniverseIdsOK" + "." + "agents" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -441,6 +443,8 @@ func (o *PostUniverseIdsOKBody) validateAlliances(formats strfmt.Registry) error
 			if err := o.Alliances[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("postUniverseIdsOK" + "." + "alliances" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("postUniverseIdsOK" + "." + "alliances" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -471,6 +475,8 @@ func (o *PostUniverseIdsOKBody) validateCharacters(formats strfmt.Registry) erro
 			if err := o.Characters[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("postUniverseIdsOK" + "." + "characters" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("postUniverseIdsOK" + "." + "characters" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -501,6 +507,8 @@ func (o *PostUniverseIdsOKBody) validateConstellations(formats strfmt.Registry) 
 			if err := o.Constellations[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("postUniverseIdsOK" + "." + "constellations" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("postUniverseIdsOK" + "." + "constellations" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -531,6 +539,8 @@ func (o *PostUniverseIdsOKBody) validateCorporations(formats strfmt.Registry) er
 			if err := o.Corporations[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("postUniverseIdsOK" + "." + "corporations" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("postUniverseIdsOK" + "." + "corporations" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -561,6 +571,8 @@ func (o *PostUniverseIdsOKBody) validateFactions(formats strfmt.Registry) error 
 			if err := o.Factions[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("postUniverseIdsOK" + "." + "factions" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("postUniverseIdsOK" + "." + "factions" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -591,6 +603,8 @@ func (o *PostUniverseIdsOKBody) validateInventoryTypes(formats strfmt.Registry) 
 			if err := o.InventoryTypes[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("postUniverseIdsOK" + "." + "inventory_types" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("postUniverseIdsOK" + "." + "inventory_types" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -621,6 +635,8 @@ func (o *PostUniverseIdsOKBody) validateRegions(formats strfmt.Registry) error {
 			if err := o.Regions[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("postUniverseIdsOK" + "." + "regions" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("postUniverseIdsOK" + "." + "regions" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -651,6 +667,8 @@ func (o *PostUniverseIdsOKBody) validateStations(formats strfmt.Registry) error 
 			if err := o.Stations[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("postUniverseIdsOK" + "." + "stations" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("postUniverseIdsOK" + "." + "stations" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -681,6 +699,8 @@ func (o *PostUniverseIdsOKBody) validateSystems(formats strfmt.Registry) error {
 			if err := o.Systems[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("postUniverseIdsOK" + "." + "systems" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("postUniverseIdsOK" + "." + "systems" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -749,6 +769,8 @@ func (o *PostUniverseIdsOKBody) contextValidateAgents(ctx context.Context, forma
 			if err := o.Agents[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("postUniverseIdsOK" + "." + "agents" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("postUniverseIdsOK" + "." + "agents" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -767,6 +789,8 @@ func (o *PostUniverseIdsOKBody) contextValidateAlliances(ctx context.Context, fo
 			if err := o.Alliances[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("postUniverseIdsOK" + "." + "alliances" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("postUniverseIdsOK" + "." + "alliances" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -785,6 +809,8 @@ func (o *PostUniverseIdsOKBody) contextValidateCharacters(ctx context.Context, f
 			if err := o.Characters[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("postUniverseIdsOK" + "." + "characters" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("postUniverseIdsOK" + "." + "characters" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -803,6 +829,8 @@ func (o *PostUniverseIdsOKBody) contextValidateConstellations(ctx context.Contex
 			if err := o.Constellations[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("postUniverseIdsOK" + "." + "constellations" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("postUniverseIdsOK" + "." + "constellations" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -821,6 +849,8 @@ func (o *PostUniverseIdsOKBody) contextValidateCorporations(ctx context.Context,
 			if err := o.Corporations[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("postUniverseIdsOK" + "." + "corporations" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("postUniverseIdsOK" + "." + "corporations" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -839,6 +869,8 @@ func (o *PostUniverseIdsOKBody) contextValidateFactions(ctx context.Context, for
 			if err := o.Factions[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("postUniverseIdsOK" + "." + "factions" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("postUniverseIdsOK" + "." + "factions" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -857,6 +889,8 @@ func (o *PostUniverseIdsOKBody) contextValidateInventoryTypes(ctx context.Contex
 			if err := o.InventoryTypes[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("postUniverseIdsOK" + "." + "inventory_types" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("postUniverseIdsOK" + "." + "inventory_types" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -875,6 +909,8 @@ func (o *PostUniverseIdsOKBody) contextValidateRegions(ctx context.Context, form
 			if err := o.Regions[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("postUniverseIdsOK" + "." + "regions" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("postUniverseIdsOK" + "." + "regions" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -893,6 +929,8 @@ func (o *PostUniverseIdsOKBody) contextValidateStations(ctx context.Context, for
 			if err := o.Stations[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("postUniverseIdsOK" + "." + "stations" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("postUniverseIdsOK" + "." + "stations" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -911,6 +949,8 @@ func (o *PostUniverseIdsOKBody) contextValidateSystems(ctx context.Context, form
 			if err := o.Systems[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("postUniverseIdsOK" + "." + "systems" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("postUniverseIdsOK" + "." + "systems" + "." + strconv.Itoa(i))
 				}
 				return err
 			}

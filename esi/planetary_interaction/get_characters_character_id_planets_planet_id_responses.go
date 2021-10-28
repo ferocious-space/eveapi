@@ -488,6 +488,8 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDOKBody) validateLinks(formats st
 			if err := o.Links[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getCharactersCharacterIdPlanetsPlanetIdOK" + "." + "links" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getCharactersCharacterIdPlanetsPlanetIdOK" + "." + "links" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -519,6 +521,8 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDOKBody) validatePins(formats str
 			if err := o.Pins[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getCharactersCharacterIdPlanetsPlanetIdOK" + "." + "pins" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getCharactersCharacterIdPlanetsPlanetIdOK" + "." + "pins" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -550,6 +554,8 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDOKBody) validateRoutes(formats s
 			if err := o.Routes[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getCharactersCharacterIdPlanetsPlanetIdOK" + "." + "routes" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getCharactersCharacterIdPlanetsPlanetIdOK" + "." + "routes" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -590,6 +596,8 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDOKBody) contextValidateLinks(ctx
 			if err := o.Links[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getCharactersCharacterIdPlanetsPlanetIdOK" + "." + "links" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getCharactersCharacterIdPlanetsPlanetIdOK" + "." + "links" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -608,6 +616,8 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDOKBody) contextValidatePins(ctx 
 			if err := o.Pins[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getCharactersCharacterIdPlanetsPlanetIdOK" + "." + "pins" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getCharactersCharacterIdPlanetsPlanetIdOK" + "." + "pins" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -626,6 +636,8 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDOKBody) contextValidateRoutes(ct
 			if err := o.Routes[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getCharactersCharacterIdPlanetsPlanetIdOK" + "." + "routes" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getCharactersCharacterIdPlanetsPlanetIdOK" + "." + "routes" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -899,6 +911,8 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0) validateConten
 			if err := o.Contents[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("contents" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("contents" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -930,6 +944,8 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0) validateExtrac
 		if err := o.ExtractorDetails.Validate(formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("extractor_details")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("extractor_details")
 			}
 			return err
 		}
@@ -947,6 +963,8 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0) validateFactor
 		if err := o.FactoryDetails.Validate(formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("factory_details")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("factory_details")
 			}
 			return err
 		}
@@ -1045,6 +1063,8 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0) contextValidat
 			if err := o.Contents[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("contents" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("contents" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -1061,6 +1081,8 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0) contextValidat
 		if err := o.ExtractorDetails.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("extractor_details")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("extractor_details")
 			}
 			return err
 		}
@@ -1075,6 +1097,8 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0) contextValidat
 		if err := o.FactoryDetails.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("factory_details")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("factory_details")
 			}
 			return err
 		}
@@ -1250,6 +1274,8 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0ExtractorDetails
 			if err := o.Heads[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("extractor_details" + "." + "heads" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("extractor_details" + "." + "heads" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -1282,6 +1308,8 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0ExtractorDetails
 			if err := o.Heads[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("extractor_details" + "." + "heads" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("extractor_details" + "." + "heads" + "." + strconv.Itoa(i))
 				}
 				return err
 			}

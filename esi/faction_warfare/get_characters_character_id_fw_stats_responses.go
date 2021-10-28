@@ -577,6 +577,8 @@ func (o *GetCharactersCharacterIDFwStatsOKBody) validateKills(formats strfmt.Reg
 		if err := o.Kills.Validate(formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getCharactersCharacterIdFwStatsOK" + "." + "kills")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getCharactersCharacterIdFwStatsOK" + "." + "kills")
 			}
 			return err
 		}
@@ -595,6 +597,8 @@ func (o *GetCharactersCharacterIDFwStatsOKBody) validateVictoryPoints(formats st
 		if err := o.VictoryPoints.Validate(formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getCharactersCharacterIdFwStatsOK" + "." + "victory_points")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getCharactersCharacterIdFwStatsOK" + "." + "victory_points")
 			}
 			return err
 		}
@@ -627,6 +631,8 @@ func (o *GetCharactersCharacterIDFwStatsOKBody) contextValidateKills(ctx context
 		if err := o.Kills.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getCharactersCharacterIdFwStatsOK" + "." + "kills")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getCharactersCharacterIdFwStatsOK" + "." + "kills")
 			}
 			return err
 		}
@@ -641,6 +647,8 @@ func (o *GetCharactersCharacterIDFwStatsOKBody) contextValidateVictoryPoints(ctx
 		if err := o.VictoryPoints.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getCharactersCharacterIdFwStatsOK" + "." + "victory_points")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getCharactersCharacterIdFwStatsOK" + "." + "victory_points")
 			}
 			return err
 		}

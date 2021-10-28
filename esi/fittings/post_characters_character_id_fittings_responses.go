@@ -444,6 +444,8 @@ func (o *PostCharactersCharacterIDFittingsBody) validateItems(formats strfmt.Reg
 			if err := o.Items[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("fitting" + "." + "items" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("fitting" + "." + "items" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -502,6 +504,8 @@ func (o *PostCharactersCharacterIDFittingsBody) contextValidateItems(ctx context
 			if err := o.Items[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("fitting" + "." + "items" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("fitting" + "." + "items" + "." + strconv.Itoa(i))
 				}
 				return err
 			}

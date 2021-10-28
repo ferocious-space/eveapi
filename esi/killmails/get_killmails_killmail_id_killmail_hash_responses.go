@@ -517,6 +517,8 @@ func (o *GetKillmailsKillmailIDKillmailHashOKBody) validateAttackers(formats str
 			if err := o.Attackers[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getKillmailsKillmailIdKillmailHashOK" + "." + "attackers" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getKillmailsKillmailIdKillmailHashOK" + "." + "attackers" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -568,6 +570,8 @@ func (o *GetKillmailsKillmailIDKillmailHashOKBody) validateVictim(formats strfmt
 		if err := o.Victim.Validate(formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getKillmailsKillmailIdKillmailHashOK" + "." + "victim")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getKillmailsKillmailIdKillmailHashOK" + "." + "victim")
 			}
 			return err
 		}
@@ -602,6 +606,8 @@ func (o *GetKillmailsKillmailIDKillmailHashOKBody) contextValidateAttackers(ctx 
 			if err := o.Attackers[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getKillmailsKillmailIdKillmailHashOK" + "." + "attackers" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getKillmailsKillmailIdKillmailHashOK" + "." + "attackers" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -618,6 +624,8 @@ func (o *GetKillmailsKillmailIDKillmailHashOKBody) contextValidateVictim(ctx con
 		if err := o.Victim.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getKillmailsKillmailIdKillmailHashOK" + "." + "victim")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getKillmailsKillmailIdKillmailHashOK" + "." + "victim")
 			}
 			return err
 		}
@@ -882,6 +890,8 @@ func (o *GetKillmailsKillmailIDKillmailHashOKBodyVictim) validateItems(formats s
 			if err := o.Items[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getKillmailsKillmailIdKillmailHashOK" + "." + "victim" + "." + "items" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getKillmailsKillmailIdKillmailHashOK" + "." + "victim" + "." + "items" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -901,6 +911,8 @@ func (o *GetKillmailsKillmailIDKillmailHashOKBodyVictim) validatePosition(format
 		if err := o.Position.Validate(formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getKillmailsKillmailIdKillmailHashOK" + "." + "victim" + "." + "position")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getKillmailsKillmailIdKillmailHashOK" + "." + "victim" + "." + "position")
 			}
 			return err
 		}
@@ -944,6 +956,8 @@ func (o *GetKillmailsKillmailIDKillmailHashOKBodyVictim) contextValidateItems(ct
 			if err := o.Items[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getKillmailsKillmailIdKillmailHashOK" + "." + "victim" + "." + "items" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getKillmailsKillmailIdKillmailHashOK" + "." + "victim" + "." + "items" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -960,6 +974,8 @@ func (o *GetKillmailsKillmailIDKillmailHashOKBodyVictim) contextValidatePosition
 		if err := o.Position.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getKillmailsKillmailIdKillmailHashOK" + "." + "victim" + "." + "position")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getKillmailsKillmailIdKillmailHashOK" + "." + "victim" + "." + "position")
 			}
 			return err
 		}
@@ -1095,6 +1111,8 @@ func (o *GetKillmailsKillmailIDKillmailHashOKBodyVictimItemsItems0) validateItem
 			if err := o.Items[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("items" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("items" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -1136,6 +1154,8 @@ func (o *GetKillmailsKillmailIDKillmailHashOKBodyVictimItemsItems0) contextValid
 			if err := o.Items[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("items" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("items" + "." + strconv.Itoa(i))
 				}
 				return err
 			}

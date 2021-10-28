@@ -561,6 +561,8 @@ func (o *GetUniverseConstellationsConstellationIDOKBody) validatePosition(format
 		if err := o.Position.Validate(formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getUniverseConstellationsConstellationIdOK" + "." + "position")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getUniverseConstellationsConstellationIdOK" + "." + "position")
 			}
 			return err
 		}
@@ -613,6 +615,8 @@ func (o *GetUniverseConstellationsConstellationIDOKBody) contextValidatePosition
 		if err := o.Position.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getUniverseConstellationsConstellationIdOK" + "." + "position")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getUniverseConstellationsConstellationIdOK" + "." + "position")
 			}
 			return err
 		}

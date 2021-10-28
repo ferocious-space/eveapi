@@ -446,6 +446,8 @@ func (o *GetInsurancePricesOKBodyItems0) validateLevels(formats strfmt.Registry)
 			if err := o.Levels[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("levels" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("levels" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -487,6 +489,8 @@ func (o *GetInsurancePricesOKBodyItems0) contextValidateLevels(ctx context.Conte
 			if err := o.Levels[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("levels" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("levels" + "." + strconv.Itoa(i))
 				}
 				return err
 			}

@@ -811,6 +811,8 @@ func (o *GetCorporationsCorporationIDStarbasesStarbaseIDOKBody) validateFuels(fo
 			if err := o.Fuels[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getCorporationsCorporationIdStarbasesStarbaseIdOK" + "." + "fuels" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getCorporationsCorporationIdStarbasesStarbaseIdOK" + "." + "fuels" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -999,6 +1001,8 @@ func (o *GetCorporationsCorporationIDStarbasesStarbaseIDOKBody) contextValidateF
 			if err := o.Fuels[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getCorporationsCorporationIdStarbasesStarbaseIdOK" + "." + "fuels" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getCorporationsCorporationIdStarbasesStarbaseIdOK" + "." + "fuels" + "." + strconv.Itoa(i))
 				}
 				return err
 			}

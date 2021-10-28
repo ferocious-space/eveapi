@@ -511,6 +511,8 @@ func (o *GetCorporationsCorporationIDDivisionsOKBody) validateHangar(formats str
 			if err := o.Hangar[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getCorporationsCorporationIdDivisionsOK" + "." + "hangar" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getCorporationsCorporationIdDivisionsOK" + "." + "hangar" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -541,6 +543,8 @@ func (o *GetCorporationsCorporationIDDivisionsOKBody) validateWallet(formats str
 			if err := o.Wallet[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getCorporationsCorporationIdDivisionsOK" + "." + "wallet" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getCorporationsCorporationIdDivisionsOK" + "." + "wallet" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -577,6 +581,8 @@ func (o *GetCorporationsCorporationIDDivisionsOKBody) contextValidateHangar(ctx 
 			if err := o.Hangar[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getCorporationsCorporationIdDivisionsOK" + "." + "hangar" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getCorporationsCorporationIdDivisionsOK" + "." + "hangar" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -595,6 +601,8 @@ func (o *GetCorporationsCorporationIDDivisionsOKBody) contextValidateWallet(ctx 
 			if err := o.Wallet[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getCorporationsCorporationIdDivisionsOK" + "." + "wallet" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getCorporationsCorporationIdDivisionsOK" + "." + "wallet" + "." + strconv.Itoa(i))
 				}
 				return err
 			}

@@ -540,6 +540,8 @@ func (o *GetWarsWarIDOKBody) validateAggressor(formats strfmt.Registry) error {
 		if err := o.Aggressor.Validate(formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getWarsWarIdOK" + "." + "aggressor")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getWarsWarIdOK" + "." + "aggressor")
 			}
 			return err
 		}
@@ -568,6 +570,8 @@ func (o *GetWarsWarIDOKBody) validateAllies(formats strfmt.Registry) error {
 			if err := o.Allies[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getWarsWarIdOK" + "." + "allies" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getWarsWarIdOK" + "." + "allies" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -601,6 +605,8 @@ func (o *GetWarsWarIDOKBody) validateDefender(formats strfmt.Registry) error {
 		if err := o.Defender.Validate(formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getWarsWarIdOK" + "." + "defender")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getWarsWarIdOK" + "." + "defender")
 			}
 			return err
 		}
@@ -700,6 +706,8 @@ func (o *GetWarsWarIDOKBody) contextValidateAggressor(ctx context.Context, forma
 		if err := o.Aggressor.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getWarsWarIdOK" + "." + "aggressor")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getWarsWarIdOK" + "." + "aggressor")
 			}
 			return err
 		}
@@ -716,6 +724,8 @@ func (o *GetWarsWarIDOKBody) contextValidateAllies(ctx context.Context, formats 
 			if err := o.Allies[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getWarsWarIdOK" + "." + "allies" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getWarsWarIdOK" + "." + "allies" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -732,6 +742,8 @@ func (o *GetWarsWarIDOKBody) contextValidateDefender(ctx context.Context, format
 		if err := o.Defender.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getWarsWarIdOK" + "." + "defender")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getWarsWarIdOK" + "." + "defender")
 			}
 			return err
 		}

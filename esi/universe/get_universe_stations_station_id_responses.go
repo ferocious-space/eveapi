@@ -621,6 +621,8 @@ func (o *GetUniverseStationsStationIDOKBody) validatePosition(formats strfmt.Reg
 		if err := o.Position.Validate(formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getUniverseStationsStationIdOK" + "." + "position")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getUniverseStationsStationIdOK" + "." + "position")
 			}
 			return err
 		}
@@ -737,6 +739,8 @@ func (o *GetUniverseStationsStationIDOKBody) contextValidatePosition(ctx context
 		if err := o.Position.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getUniverseStationsStationIdOK" + "." + "position")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getUniverseStationsStationIdOK" + "." + "position")
 			}
 			return err
 		}

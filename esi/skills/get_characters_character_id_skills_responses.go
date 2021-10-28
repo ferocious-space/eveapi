@@ -518,6 +518,8 @@ func (o *GetCharactersCharacterIDSkillsOKBody) validateSkills(formats strfmt.Reg
 			if err := o.Skills[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getCharactersCharacterIdSkillsOK" + "." + "skills" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getCharactersCharacterIdSkillsOK" + "." + "skills" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -559,6 +561,8 @@ func (o *GetCharactersCharacterIDSkillsOKBody) contextValidateSkills(ctx context
 			if err := o.Skills[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getCharactersCharacterIdSkillsOK" + "." + "skills" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getCharactersCharacterIdSkillsOK" + "." + "skills" + "." + strconv.Itoa(i))
 				}
 				return err
 			}

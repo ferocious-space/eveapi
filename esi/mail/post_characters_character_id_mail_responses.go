@@ -469,6 +469,8 @@ func (o *PostCharactersCharacterIDMailBody) validateRecipients(formats strfmt.Re
 			if err := o.Recipients[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("mail" + "." + "recipients" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("mail" + "." + "recipients" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -514,6 +516,8 @@ func (o *PostCharactersCharacterIDMailBody) contextValidateRecipients(ctx contex
 			if err := o.Recipients[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("mail" + "." + "recipients" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("mail" + "." + "recipients" + "." + strconv.Itoa(i))
 				}
 				return err
 			}

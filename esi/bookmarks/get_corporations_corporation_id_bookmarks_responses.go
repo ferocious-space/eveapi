@@ -592,6 +592,8 @@ func (o *GetCorporationsCorporationIDBookmarksOKBodyItems0) validateCoordinates(
 		if err := o.Coordinates.Validate(formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("coordinates")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("coordinates")
 			}
 			return err
 		}
@@ -631,6 +633,8 @@ func (o *GetCorporationsCorporationIDBookmarksOKBodyItems0) validateItem(formats
 		if err := o.Item.Validate(formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("item")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("item")
 			}
 			return err
 		}
@@ -690,6 +694,8 @@ func (o *GetCorporationsCorporationIDBookmarksOKBodyItems0) contextValidateCoord
 		if err := o.Coordinates.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("coordinates")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("coordinates")
 			}
 			return err
 		}
@@ -704,6 +710,8 @@ func (o *GetCorporationsCorporationIDBookmarksOKBodyItems0) contextValidateItem(
 		if err := o.Item.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("item")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("item")
 			}
 			return err
 		}

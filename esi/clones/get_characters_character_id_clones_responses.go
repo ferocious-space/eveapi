@@ -519,6 +519,8 @@ func (o *GetCharactersCharacterIDClonesOKBody) validateHomeLocation(formats strf
 		if err := o.HomeLocation.Validate(formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getCharactersCharacterIdClonesOK" + "." + "home_location")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getCharactersCharacterIdClonesOK" + "." + "home_location")
 			}
 			return err
 		}
@@ -548,6 +550,8 @@ func (o *GetCharactersCharacterIDClonesOKBody) validateJumpClones(formats strfmt
 			if err := o.JumpClones[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getCharactersCharacterIdClonesOK" + "." + "jump_clones" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getCharactersCharacterIdClonesOK" + "." + "jump_clones" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -606,6 +610,8 @@ func (o *GetCharactersCharacterIDClonesOKBody) contextValidateHomeLocation(ctx c
 		if err := o.HomeLocation.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getCharactersCharacterIdClonesOK" + "." + "home_location")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getCharactersCharacterIdClonesOK" + "." + "home_location")
 			}
 			return err
 		}
@@ -622,6 +628,8 @@ func (o *GetCharactersCharacterIDClonesOKBody) contextValidateJumpClones(ctx con
 			if err := o.JumpClones[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getCharactersCharacterIdClonesOK" + "." + "jump_clones" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getCharactersCharacterIdClonesOK" + "." + "jump_clones" + "." + strconv.Itoa(i))
 				}
 				return err
 			}

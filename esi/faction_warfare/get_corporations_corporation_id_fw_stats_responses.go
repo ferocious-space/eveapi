@@ -528,6 +528,8 @@ func (o *GetCorporationsCorporationIDFwStatsOKBody) validateKills(formats strfmt
 		if err := o.Kills.Validate(formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getCorporationsCorporationIdFwStatsOK" + "." + "kills")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getCorporationsCorporationIdFwStatsOK" + "." + "kills")
 			}
 			return err
 		}
@@ -546,6 +548,8 @@ func (o *GetCorporationsCorporationIDFwStatsOKBody) validateVictoryPoints(format
 		if err := o.VictoryPoints.Validate(formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getCorporationsCorporationIdFwStatsOK" + "." + "victory_points")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getCorporationsCorporationIdFwStatsOK" + "." + "victory_points")
 			}
 			return err
 		}
@@ -578,6 +582,8 @@ func (o *GetCorporationsCorporationIDFwStatsOKBody) contextValidateKills(ctx con
 		if err := o.Kills.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getCorporationsCorporationIdFwStatsOK" + "." + "kills")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getCorporationsCorporationIdFwStatsOK" + "." + "kills")
 			}
 			return err
 		}
@@ -592,6 +598,8 @@ func (o *GetCorporationsCorporationIDFwStatsOKBody) contextValidateVictoryPoints
 		if err := o.VictoryPoints.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getCorporationsCorporationIdFwStatsOK" + "." + "victory_points")
+			} else if ce, ok := err.(*errors.CompositeError); ok {
+				return ce.ValidateName("getCorporationsCorporationIdFwStatsOK" + "." + "victory_points")
 			}
 			return err
 		}

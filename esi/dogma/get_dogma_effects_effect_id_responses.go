@@ -618,6 +618,8 @@ func (o *GetDogmaEffectsEffectIDOKBody) validateModifiers(formats strfmt.Registr
 			if err := o.Modifiers[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getDogmaEffectsEffectIdOK" + "." + "modifiers" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getDogmaEffectsEffectIdOK" + "." + "modifiers" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -650,6 +652,8 @@ func (o *GetDogmaEffectsEffectIDOKBody) contextValidateModifiers(ctx context.Con
 			if err := o.Modifiers[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getDogmaEffectsEffectIdOK" + "." + "modifiers" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("getDogmaEffectsEffectIdOK" + "." + "modifiers" + "." + strconv.Itoa(i))
 				}
 				return err
 			}

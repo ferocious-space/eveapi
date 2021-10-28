@@ -629,6 +629,8 @@ func (o *GetFleetsFleetIDWingsOKBodyItems0) validateSquads(formats strfmt.Regist
 			if err := o.Squads[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("squads" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("squads" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -661,6 +663,8 @@ func (o *GetFleetsFleetIDWingsOKBodyItems0) contextValidateSquads(ctx context.Co
 			if err := o.Squads[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("squads" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("squads" + "." + strconv.Itoa(i))
 				}
 				return err
 			}

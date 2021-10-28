@@ -595,6 +595,8 @@ func (o *GetLoyaltyStoresCorporationIDOffersOKBodyItems0) validateRequiredItems(
 			if err := o.RequiredItems[i].Validate(formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("required_items" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("required_items" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
@@ -636,6 +638,8 @@ func (o *GetLoyaltyStoresCorporationIDOffersOKBodyItems0) contextValidateRequire
 			if err := o.RequiredItems[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("required_items" + "." + strconv.Itoa(i))
+				} else if ce, ok := err.(*errors.CompositeError); ok {
+					return ce.ValidateName("required_items" + "." + strconv.Itoa(i))
 				}
 				return err
 			}
