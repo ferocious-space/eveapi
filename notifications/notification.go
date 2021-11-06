@@ -311,7 +311,7 @@ type CorpAllBillMsg struct {
 	CurrentDate int64   `yaml:"currentDate"`
 	DebtorID    int32   `yaml:"debtorID"`
 	DueDate     int64   `yaml:"dueDate"`
-	ExternalID  int32   `yaml:"externalID"`
+	ExternalID  int64   `yaml:"externalID"`
 	ExternalID2 int64   `yaml:"externalID2"`
 }
 
