@@ -1227,3 +1227,10 @@ type StructureItemsMovedToSafety struct {
 	StructureShowInfoData       []string `bson:"structureShowInfoData,omitempty" db:"structureShowInfoData,omitempty" json:"structureShowInfoData,omitempty" yaml:"structureShowInfoData,omitempty"`
 	StructureTypeID             *int32   `bson:"structureTypeID,omitempty" db:"structureTypeID,omitempty" json:"structureTypeID,omitempty" yaml:"structureTypeID,omitempty"`
 }
+
+type InfrastructureHubBillAboutToExpire struct {
+	BillID        *int32 `bson:"billID,omitempty" db:"billID,omitempty" json:"billID,omitempty" yaml:"billID,omitempty"`
+	CorpID        *int32 `bson:"corpID,omitempty" db:"corpID,omitempty" json:"corpID,omitempty" yaml:"corpID,omitempty"`
+	DueDate       *int32 `bson:"dueDate,omitempty" db:"dueDate,omitempty" json:"dueDate,omitempty" yaml:"dueDate,omitempty"`
+	SolarSystemID *int32 `bson:"solarSystemID,omitempty" db:"solarSystemID,omitempty" json:"solarSystemID,omitempty" yaml:"solarSystemID,omitempty"`
+}

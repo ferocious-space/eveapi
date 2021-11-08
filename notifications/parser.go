@@ -1465,6 +1465,15 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
+	case "InfrastructureHubBillAboutToExpire":
+		value := new(InfrastructureHubBillAboutToExpire)
+		err := yaml.Unmarshal([]byte(n.Text), &value)
+		if err != nil {
+			spew.Dump(n)
+			return nil, err
+		}
+		return value, nil
+
 	// Missing implementations
 
 	case "AgentRetiredTrigravian":
@@ -1860,22 +1869,6 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		fmt.Println(string(genType))
 		value := new(IndustryTeamAuctionWon)
-		err = yaml.Unmarshal([]byte(n.Text), &value)
-		if err != nil {
-			spew.Dump(n)
-			return nil, err
-		}
-		return value, nil
-
-	case "InfrastructureHubBillAboutToExpire":
-		bytes, _ := yaml.Marshal(n)
-		fmt.Println(string(bytes))
-		genType, err := NotificationGenerator(*n.Type, n.Text)
-		if err != nil {
-			return nil, err
-		}
-		fmt.Println(string(genType))
-		value := new(InfrastructureHubBillAboutToExpire)
 		err = yaml.Unmarshal([]byte(n.Text), &value)
 		if err != nil {
 			spew.Dump(n)
@@ -2432,8 +2425,6 @@ type IHubDestroyedByBillFailure interface{}
 type IndustryOperationFinished interface{}
 
 type IndustryTeamAuctionWon interface{}
-
-type InfrastructureHubBillAboutToExpire interface{}
 
 type InvasionCompletedMsg interface{}
 
