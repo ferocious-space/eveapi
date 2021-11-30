@@ -538,7 +538,7 @@ type GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0 struct {
 	//
 	// "The transaction type for the given. transaction. Different transaction types will populate different attributes. Note: If you have an existing XML API application that is using ref_types, you will need to know which string ESI ref_type maps to which integer. You can look at the following file to see string->int mappings: https://github.com/ccpgames/eve-glue/blob/master/eve_glue/wallet_journal_ref.py"
 	// Required: true
-	// Enum: [acceleration_gate_fee advertisement_listing_fee agent_donation agent_location_services agent_miscellaneous agent_mission_collateral_paid agent_mission_collateral_refunded agent_mission_reward agent_mission_reward_corporation_tax agent_mission_time_bonus_reward agent_mission_time_bonus_reward_corporation_tax agent_security_services agent_services_rendered agents_preward alliance_maintainance_fee alliance_registration_fee asset_safety_recovery_tax bounty bounty_prize bounty_prize_corporation_tax bounty_prizes bounty_reimbursement bounty_surcharge brokers_fee clone_activation clone_transfer contraband_fine contract_auction_bid contract_auction_bid_corp contract_auction_bid_refund contract_auction_sold contract_brokers_fee contract_brokers_fee_corp contract_collateral contract_collateral_deposited_corp contract_collateral_payout contract_collateral_refund contract_deposit contract_deposit_corp contract_deposit_refund contract_deposit_sales_tax contract_price contract_price_payment_corp contract_reversal contract_reward contract_reward_deposited contract_reward_deposited_corp contract_reward_refund contract_sales_tax copying corporate_reward_payout corporate_reward_tax corporation_account_withdrawal corporation_bulk_payment corporation_dividend_payment corporation_liquidation corporation_logo_change_cost corporation_payment corporation_registration_fee courier_mission_escrow cspa cspaofflinerefund datacore_fee dna_modification_fee docking_fee duel_wager_escrow duel_wager_payment duel_wager_refund ess_escrow_transfer factory_slot_rental_fee gm_cash_transfer industry_job_tax infrastructure_hub_maintenance inheritance insurance item_trader_payment jump_clone_activation_fee jump_clone_installation_fee kill_right_fee lp_store manufacturing market_escrow market_fine_paid market_transaction medal_creation medal_issued mission_completion mission_cost mission_expiration mission_reward office_rental_fee operation_bonus opportunity_reward planetary_construction planetary_export_tax planetary_import_tax player_donation player_trading project_discovery_reward project_discovery_tax reaction release_of_impounded_property repair_bill reprocessing_tax researching_material_productivity researching_technology researching_time_productivity resource_wars_reward reverse_engineering security_processing_fee shares skill_purchase sovereignity_bill store_purchase store_purchase_refund structure_gate_jump transaction_tax upkeep_adjustment_fee war_ally_contract war_fee war_fee_surrender]
+	// Enum: [acceleration_gate_fee advertisement_listing_fee agent_donation agent_location_services agent_miscellaneous agent_mission_collateral_paid agent_mission_collateral_refunded agent_mission_reward agent_mission_reward_corporation_tax agent_mission_time_bonus_reward agent_mission_time_bonus_reward_corporation_tax agent_security_services agent_services_rendered agents_preward alliance_maintainance_fee alliance_registration_fee asset_safety_recovery_tax bounty bounty_prize bounty_prize_corporation_tax bounty_prizes bounty_reimbursement bounty_surcharge brokers_fee clone_activation clone_transfer contraband_fine contract_auction_bid contract_auction_bid_corp contract_auction_bid_refund contract_auction_sold contract_brokers_fee contract_brokers_fee_corp contract_collateral contract_collateral_deposited_corp contract_collateral_payout contract_collateral_refund contract_deposit contract_deposit_corp contract_deposit_refund contract_deposit_sales_tax contract_price contract_price_payment_corp contract_reversal contract_reward contract_reward_deposited contract_reward_deposited_corp contract_reward_refund contract_sales_tax copying corporate_reward_payout corporate_reward_tax corporation_account_withdrawal corporation_bulk_payment corporation_dividend_payment corporation_liquidation corporation_logo_change_cost corporation_payment corporation_registration_fee courier_mission_escrow cspa cspaofflinerefund daily_challenge_reward datacore_fee dna_modification_fee docking_fee duel_wager_escrow duel_wager_payment duel_wager_refund ess_escrow_transfer external_trade_delivery external_trade_freeze external_trade_thaw factory_slot_rental_fee flux_payout flux_tax flux_ticket_repayment flux_ticket_sale gm_cash_transfer industry_job_tax infrastructure_hub_maintenance inheritance insurance item_trader_payment jump_clone_activation_fee jump_clone_installation_fee kill_right_fee lp_store manufacturing market_escrow market_fine_paid market_provider_tax market_transaction medal_creation medal_issued milestone_reward_payment mission_completion mission_cost mission_expiration mission_reward office_rental_fee operation_bonus opportunity_reward planetary_construction planetary_export_tax planetary_import_tax player_donation player_trading project_discovery_reward project_discovery_tax reaction redeemed_isk_token release_of_impounded_property repair_bill reprocessing_tax researching_material_productivity researching_technology researching_time_productivity resource_wars_reward reverse_engineering season_challenge_reward security_processing_fee shares skill_purchase sovereignity_bill store_purchase store_purchase_refund structure_gate_jump transaction_tax upkeep_adjustment_fee war_ally_contract war_fee war_fee_surrender]
 	RefType *string `json:"ref_type"`
 
 	// get_corporations_corporation_id_wallets_division_journal_second_party_id
@@ -694,7 +694,7 @@ var getCorporationsCorporationIdWalletsDivisionJournalOKBodyItems0TypeRefTypePro
 
 func init() {
 	var res []string
-	if err := json.Unmarshal([]byte(`["acceleration_gate_fee","advertisement_listing_fee","agent_donation","agent_location_services","agent_miscellaneous","agent_mission_collateral_paid","agent_mission_collateral_refunded","agent_mission_reward","agent_mission_reward_corporation_tax","agent_mission_time_bonus_reward","agent_mission_time_bonus_reward_corporation_tax","agent_security_services","agent_services_rendered","agents_preward","alliance_maintainance_fee","alliance_registration_fee","asset_safety_recovery_tax","bounty","bounty_prize","bounty_prize_corporation_tax","bounty_prizes","bounty_reimbursement","bounty_surcharge","brokers_fee","clone_activation","clone_transfer","contraband_fine","contract_auction_bid","contract_auction_bid_corp","contract_auction_bid_refund","contract_auction_sold","contract_brokers_fee","contract_brokers_fee_corp","contract_collateral","contract_collateral_deposited_corp","contract_collateral_payout","contract_collateral_refund","contract_deposit","contract_deposit_corp","contract_deposit_refund","contract_deposit_sales_tax","contract_price","contract_price_payment_corp","contract_reversal","contract_reward","contract_reward_deposited","contract_reward_deposited_corp","contract_reward_refund","contract_sales_tax","copying","corporate_reward_payout","corporate_reward_tax","corporation_account_withdrawal","corporation_bulk_payment","corporation_dividend_payment","corporation_liquidation","corporation_logo_change_cost","corporation_payment","corporation_registration_fee","courier_mission_escrow","cspa","cspaofflinerefund","datacore_fee","dna_modification_fee","docking_fee","duel_wager_escrow","duel_wager_payment","duel_wager_refund","ess_escrow_transfer","factory_slot_rental_fee","gm_cash_transfer","industry_job_tax","infrastructure_hub_maintenance","inheritance","insurance","item_trader_payment","jump_clone_activation_fee","jump_clone_installation_fee","kill_right_fee","lp_store","manufacturing","market_escrow","market_fine_paid","market_transaction","medal_creation","medal_issued","mission_completion","mission_cost","mission_expiration","mission_reward","office_rental_fee","operation_bonus","opportunity_reward","planetary_construction","planetary_export_tax","planetary_import_tax","player_donation","player_trading","project_discovery_reward","project_discovery_tax","reaction","release_of_impounded_property","repair_bill","reprocessing_tax","researching_material_productivity","researching_technology","researching_time_productivity","resource_wars_reward","reverse_engineering","security_processing_fee","shares","skill_purchase","sovereignity_bill","store_purchase","store_purchase_refund","structure_gate_jump","transaction_tax","upkeep_adjustment_fee","war_ally_contract","war_fee","war_fee_surrender"]`), &res); err != nil {
+	if err := json.Unmarshal([]byte(`["acceleration_gate_fee","advertisement_listing_fee","agent_donation","agent_location_services","agent_miscellaneous","agent_mission_collateral_paid","agent_mission_collateral_refunded","agent_mission_reward","agent_mission_reward_corporation_tax","agent_mission_time_bonus_reward","agent_mission_time_bonus_reward_corporation_tax","agent_security_services","agent_services_rendered","agents_preward","alliance_maintainance_fee","alliance_registration_fee","asset_safety_recovery_tax","bounty","bounty_prize","bounty_prize_corporation_tax","bounty_prizes","bounty_reimbursement","bounty_surcharge","brokers_fee","clone_activation","clone_transfer","contraband_fine","contract_auction_bid","contract_auction_bid_corp","contract_auction_bid_refund","contract_auction_sold","contract_brokers_fee","contract_brokers_fee_corp","contract_collateral","contract_collateral_deposited_corp","contract_collateral_payout","contract_collateral_refund","contract_deposit","contract_deposit_corp","contract_deposit_refund","contract_deposit_sales_tax","contract_price","contract_price_payment_corp","contract_reversal","contract_reward","contract_reward_deposited","contract_reward_deposited_corp","contract_reward_refund","contract_sales_tax","copying","corporate_reward_payout","corporate_reward_tax","corporation_account_withdrawal","corporation_bulk_payment","corporation_dividend_payment","corporation_liquidation","corporation_logo_change_cost","corporation_payment","corporation_registration_fee","courier_mission_escrow","cspa","cspaofflinerefund","daily_challenge_reward","datacore_fee","dna_modification_fee","docking_fee","duel_wager_escrow","duel_wager_payment","duel_wager_refund","ess_escrow_transfer","external_trade_delivery","external_trade_freeze","external_trade_thaw","factory_slot_rental_fee","flux_payout","flux_tax","flux_ticket_repayment","flux_ticket_sale","gm_cash_transfer","industry_job_tax","infrastructure_hub_maintenance","inheritance","insurance","item_trader_payment","jump_clone_activation_fee","jump_clone_installation_fee","kill_right_fee","lp_store","manufacturing","market_escrow","market_fine_paid","market_provider_tax","market_transaction","medal_creation","medal_issued","milestone_reward_payment","mission_completion","mission_cost","mission_expiration","mission_reward","office_rental_fee","operation_bonus","opportunity_reward","planetary_construction","planetary_export_tax","planetary_import_tax","player_donation","player_trading","project_discovery_reward","project_discovery_tax","reaction","redeemed_isk_token","release_of_impounded_property","repair_bill","reprocessing_tax","researching_material_productivity","researching_technology","researching_time_productivity","resource_wars_reward","reverse_engineering","season_challenge_reward","security_processing_fee","shares","skill_purchase","sovereignity_bill","store_purchase","store_purchase_refund","structure_gate_jump","transaction_tax","upkeep_adjustment_fee","war_ally_contract","war_fee","war_fee_surrender"]`), &res); err != nil {
 		panic(err)
 	}
 	for _, v := range res {
@@ -890,6 +890,9 @@ const (
 	// GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeCspaofflinerefund captures enum value "cspaofflinerefund"
 	GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeCspaofflinerefund string = "cspaofflinerefund"
 
+	// GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeDailyChallengeReward captures enum value "daily_challenge_reward"
+	GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeDailyChallengeReward string = "daily_challenge_reward"
+
 	// GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeDatacoreFee captures enum value "datacore_fee"
 	GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeDatacoreFee string = "datacore_fee"
 
@@ -911,8 +914,29 @@ const (
 	// GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeEssEscrowTransfer captures enum value "ess_escrow_transfer"
 	GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeEssEscrowTransfer string = "ess_escrow_transfer"
 
+	// GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeExternalTradeDelivery captures enum value "external_trade_delivery"
+	GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeExternalTradeDelivery string = "external_trade_delivery"
+
+	// GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeExternalTradeFreeze captures enum value "external_trade_freeze"
+	GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeExternalTradeFreeze string = "external_trade_freeze"
+
+	// GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeExternalTradeThaw captures enum value "external_trade_thaw"
+	GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeExternalTradeThaw string = "external_trade_thaw"
+
 	// GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeFactorySlotRentalFee captures enum value "factory_slot_rental_fee"
 	GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeFactorySlotRentalFee string = "factory_slot_rental_fee"
+
+	// GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeFluxPayout captures enum value "flux_payout"
+	GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeFluxPayout string = "flux_payout"
+
+	// GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeFluxTax captures enum value "flux_tax"
+	GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeFluxTax string = "flux_tax"
+
+	// GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeFluxTicketRepayment captures enum value "flux_ticket_repayment"
+	GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeFluxTicketRepayment string = "flux_ticket_repayment"
+
+	// GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeFluxTicketSale captures enum value "flux_ticket_sale"
+	GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeFluxTicketSale string = "flux_ticket_sale"
 
 	// GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeGmCashTransfer captures enum value "gm_cash_transfer"
 	GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeGmCashTransfer string = "gm_cash_transfer"
@@ -953,6 +977,9 @@ const (
 	// GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeMarketFinePaid captures enum value "market_fine_paid"
 	GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeMarketFinePaid string = "market_fine_paid"
 
+	// GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeMarketProviderTax captures enum value "market_provider_tax"
+	GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeMarketProviderTax string = "market_provider_tax"
+
 	// GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeMarketTransaction captures enum value "market_transaction"
 	GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeMarketTransaction string = "market_transaction"
 
@@ -961,6 +988,9 @@ const (
 
 	// GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeMedalIssued captures enum value "medal_issued"
 	GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeMedalIssued string = "medal_issued"
+
+	// GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeMilestoneRewardPayment captures enum value "milestone_reward_payment"
+	GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeMilestoneRewardPayment string = "milestone_reward_payment"
 
 	// GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeMissionCompletion captures enum value "mission_completion"
 	GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeMissionCompletion string = "mission_completion"
@@ -1007,6 +1037,9 @@ const (
 	// GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeReaction captures enum value "reaction"
 	GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeReaction string = "reaction"
 
+	// GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeRedeemedIskToken captures enum value "redeemed_isk_token"
+	GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeRedeemedIskToken string = "redeemed_isk_token"
+
 	// GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeReleaseOfImpoundedProperty captures enum value "release_of_impounded_property"
 	GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeReleaseOfImpoundedProperty string = "release_of_impounded_property"
 
@@ -1030,6 +1063,9 @@ const (
 
 	// GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeReverseEngineering captures enum value "reverse_engineering"
 	GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeReverseEngineering string = "reverse_engineering"
+
+	// GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeSeasonChallengeReward captures enum value "season_challenge_reward"
+	GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeSeasonChallengeReward string = "season_challenge_reward"
 
 	// GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeSecurityProcessingFee captures enum value "security_processing_fee"
 	GetCorporationsCorporationIDWalletsDivisionJournalOKBodyItems0RefTypeSecurityProcessingFee string = "security_processing_fee"

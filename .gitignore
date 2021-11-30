@@ -26,3 +26,4 @@ cache/**
 /cache/
 /testing/
 /sde/SdeInfo.go
+/bbolt.db

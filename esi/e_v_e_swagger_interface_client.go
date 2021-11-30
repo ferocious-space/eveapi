@@ -34,7 +34,6 @@ import (
 	"github.com/ferocious-space/eveapi/esi/meta"
 	"github.com/ferocious-space/eveapi/esi/opportunities"
 	"github.com/ferocious-space/eveapi/esi/planetary_interaction"
-	"github.com/ferocious-space/eveapi/esi/routes"
 	"github.com/ferocious-space/eveapi/esi/search"
 	"github.com/ferocious-space/eveapi/esi/skills"
 	"github.com/ferocious-space/eveapi/esi/sovereignty"
@@ -111,7 +110,6 @@ func New(transport runtime.ClientTransport, formats strfmt.Registry) *EVESwagger
 	cli.Meta = meta.New(transport, formats)
 	cli.Opportunities = opportunities.New(transport, formats)
 	cli.PlanetaryInteraction = planetary_interaction.New(transport, formats)
-	cli.Routes = routes.New(transport, formats)
 	cli.Search = search.New(transport, formats)
 	cli.Skills = skills.New(transport, formats)
 	cli.Sovereignty = sovereignty.New(transport, formats)
@@ -212,8 +210,6 @@ type EVESwaggerInterface struct {
 
 	PlanetaryInteraction planetary_interaction.ClientService
 
-	Routes routes.ClientService
-
 	Search search.ClientService
 
 	Skills skills.ClientService
@@ -260,7 +256,6 @@ func (c *EVESwaggerInterface) SetTransport(transport runtime.ClientTransport) {
 	c.Meta.SetTransport(transport)
 	c.Opportunities.SetTransport(transport)
 	c.PlanetaryInteraction.SetTransport(transport)
-	c.Routes.SetTransport(transport)
 	c.Search.SetTransport(transport)
 	c.Skills.SetTransport(transport)
 	c.Sovereignty.SetTransport(transport)
