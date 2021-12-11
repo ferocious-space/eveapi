@@ -41,6 +41,7 @@ type DogmaAttribute struct {
 	UnitID               *int32                              `bson:"unitID,omitempty" db:"unitID,omitempty" json:"unitID,omitempty" yaml:"unitID,omitempty"`
 	ChargeRechargeTimeID *int64                              `bson:"chargeRechargeTimeID,omitempty" db:"chargeRechargeTimeID,omitempty" json:"chargeRechargeTimeID,omitempty" yaml:"chargeRechargeTimeID,omitempty"`
 	MaxAttributeID       *int32                              `bson:"maxAttributeID,omitempty" db:"maxAttributeID,omitempty" json:"maxAttributeID,omitempty" yaml:"maxAttributeID,omitempty"`
+	DisplayWhenZero      *bool                               `bson:"displayWhenZero,omitempty" db:"displayWhenZero,omitempty" json:"displayWhenZero,omitempty" yaml:"displayWhenZero,omitempty"`
 }
 type DogmaAttributeDisplayNameID struct {
 	De *string `bson:"de,omitempty" db:"de,omitempty" json:"de,omitempty" yaml:"de,omitempty"`
