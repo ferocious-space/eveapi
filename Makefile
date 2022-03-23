@@ -47,3 +47,5 @@ Generate:
 	go get -u -d ./models/...
 	go run scripts/generator.go scripts/sde.go
 	go mod tidy
+
+#cat .\swagger.json | jq -r '[.paths | to_entries | .[].value | to_entries | .[].value.tags[0]] | sort | unique | join(\", \")'

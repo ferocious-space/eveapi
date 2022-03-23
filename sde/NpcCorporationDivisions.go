@@ -26,6 +26,7 @@ func (x NpcCorporationDivisionMap) Get(ID int32) *NpcCorporationDivision {
 
 type NpcCorporationDivision struct {
 	Description      *string                                 `bson:"description,omitempty" db:"description,omitempty" json:"description,omitempty" yaml:"description,omitempty"`
+	InternalName     *string                                 `bson:"internalName,omitempty" db:"internalName,omitempty" json:"internalName,omitempty" yaml:"internalName,omitempty"`
 	LeaderTypeNameID *NpcCorporationDivisionLeaderTypeNameID `bson:"leaderTypeNameID,omitempty" db:"leaderTypeNameID,omitempty" json:"leaderTypeNameID,omitempty" yaml:"leaderTypeNameID,omitempty"`
 	NameID           *NpcCorporationDivisionNameID           `bson:"nameID,omitempty" db:"nameID,omitempty" json:"nameID,omitempty" yaml:"nameID,omitempty"`
 	DescriptionID    *NpcCorporationDivisionDescriptionID    `bson:"descriptionID,omitempty" db:"descriptionID,omitempty" json:"descriptionID,omitempty" yaml:"descriptionID,omitempty"`
