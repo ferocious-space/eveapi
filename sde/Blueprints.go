@@ -41,9 +41,13 @@ type BlueprintActivitiesCopying struct {
 	Time      *int64                                `bson:"time,omitempty" db:"time,omitempty" json:"time,omitempty" yaml:"time,omitempty"`
 	Materials []BlueprintActivitiesCopyingMaterials `bson:"materials,omitempty" db:"materials,omitempty" json:"materials,omitempty" yaml:"materials,omitempty"`
 	Skills    []BlueprintActivitiesCopyingSkills    `bson:"skills,omitempty" db:"skills,omitempty" json:"skills,omitempty" yaml:"skills,omitempty"`
-	Products  []interface{}                         `bson:"products,omitempty" db:"products,omitempty" json:"products,omitempty" yaml:"products,omitempty"`
+	Products  []BlueprintActivitiesCopyingProducts  `bson:"products,omitempty" db:"products,omitempty" json:"products,omitempty" yaml:"products,omitempty"`
 }
 type BlueprintActivitiesCopyingMaterials struct {
+	Quantity *int32 `bson:"quantity,omitempty" db:"quantity,omitempty" json:"quantity,omitempty" yaml:"quantity,omitempty"`
+	TypeID   *int32 `bson:"typeID,omitempty" db:"typeID,omitempty" json:"typeID,omitempty" yaml:"typeID,omitempty"`
+}
+type BlueprintActivitiesCopyingProducts struct {
 	Quantity *int32 `bson:"quantity,omitempty" db:"quantity,omitempty" json:"quantity,omitempty" yaml:"quantity,omitempty"`
 	TypeID   *int32 `bson:"typeID,omitempty" db:"typeID,omitempty" json:"typeID,omitempty" yaml:"typeID,omitempty"`
 }
