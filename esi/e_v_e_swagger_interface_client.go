@@ -11,6 +11,7 @@ import (
 	"github.com/go-openapi/strfmt"
 
 	"github.com/ferocious-space/eveapi/esi/alliance"
+	"github.com/ferocious-space/eveapi/esi/assets"
 	"github.com/ferocious-space/eveapi/esi/bookmarks"
 	"github.com/ferocious-space/eveapi/esi/calendar"
 	"github.com/ferocious-space/eveapi/esi/character"
@@ -87,6 +88,7 @@ func New(transport runtime.ClientTransport, formats strfmt.Registry) *EVESwagger
 	cli := new(EVESwaggerInterface)
 	cli.Transport = transport
 	cli.Alliance = alliance.New(transport, formats)
+	cli.Assets = assets.New(transport, formats)
 	cli.Bookmarks = bookmarks.New(transport, formats)
 	cli.Calendar = calendar.New(transport, formats)
 	cli.Character = character.New(transport, formats)
@@ -164,6 +166,8 @@ func (cfg *TransportConfig) WithSchemes(schemes []string) *TransportConfig {
 type EVESwaggerInterface struct {
 	Alliance alliance.ClientService
 
+	Assets assets.ClientService
+
 	Bookmarks bookmarks.ClientService
 
 	Calendar calendar.ClientService
@@ -233,6 +237,7 @@ type EVESwaggerInterface struct {
 func (c *EVESwaggerInterface) SetTransport(transport runtime.ClientTransport) {
 	c.Transport = transport
 	c.Alliance.SetTransport(transport)
+	c.Assets.SetTransport(transport)
 	c.Bookmarks.SetTransport(transport)
 	c.Calendar.SetTransport(transport)
 	c.Character.SetTransport(transport)
