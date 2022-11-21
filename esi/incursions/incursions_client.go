@@ -36,9 +36,9 @@ type ClientService interface {
 }
 
 /*
-  GetIncursions lists incursions
+	GetIncursions lists incursions
 
-  Return a list of current incursions
+	Return a list of current incursions
 
 ---
 

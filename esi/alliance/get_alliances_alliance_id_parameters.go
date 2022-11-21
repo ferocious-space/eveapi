@@ -53,10 +53,12 @@ func NewGetAlliancesAllianceIDParamsWithHTTPClient(client *http.Client) *GetAlli
 	}
 }
 
-/* GetAlliancesAllianceIDParams contains all the parameters to send to the API endpoint
-   for the get alliances alliance id operation.
+/*
+GetAlliancesAllianceIDParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get alliances alliance id operation.
+
+	Typically these are written to a http.Request.
 */
 type GetAlliancesAllianceIDParams struct {
 

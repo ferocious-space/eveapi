@@ -83,7 +83,8 @@ func NewGetAlliancesAllianceIDIconsOK() *GetAlliancesAllianceIDIconsOK {
 	return &GetAlliancesAllianceIDIconsOK{}
 }
 
-/* GetAlliancesAllianceIDIconsOK describes a response with status code 200, with default header values.
+/*
+GetAlliancesAllianceIDIconsOK describes a response with status code 200, with default header values.
 
 Icon URLs for the given alliance id and server
 */
@@ -108,9 +109,39 @@ type GetAlliancesAllianceIDIconsOK struct {
 	Payload *GetAlliancesAllianceIDIconsOKBody
 }
 
+// IsSuccess returns true when this get alliances alliance Id icons o k response has a 2xx status code
+func (o *GetAlliancesAllianceIDIconsOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get alliances alliance Id icons o k response has a 3xx status code
+func (o *GetAlliancesAllianceIDIconsOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get alliances alliance Id icons o k response has a 4xx status code
+func (o *GetAlliancesAllianceIDIconsOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get alliances alliance Id icons o k response has a 5xx status code
+func (o *GetAlliancesAllianceIDIconsOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get alliances alliance Id icons o k response a status code equal to that given
+func (o *GetAlliancesAllianceIDIconsOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetAlliancesAllianceIDIconsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/alliances/{alliance_id}/icons/][%d] getAlliancesAllianceIdIconsOK  %+v", 200, o.Payload)
 }
+
+func (o *GetAlliancesAllianceIDIconsOK) String() string {
+	return fmt.Sprintf("[GET /v1/alliances/{alliance_id}/icons/][%d] getAlliancesAllianceIdIconsOK  %+v", 200, o.Payload)
+}
+
 func (o *GetAlliancesAllianceIDIconsOK) GetPayload() *GetAlliancesAllianceIDIconsOKBody {
 	return o.Payload
 }
@@ -160,7 +191,8 @@ func NewGetAlliancesAllianceIDIconsNotModified() *GetAlliancesAllianceIDIconsNot
 	return &GetAlliancesAllianceIDIconsNotModified{}
 }
 
-/* GetAlliancesAllianceIDIconsNotModified describes a response with status code 304, with default header values.
+/*
+GetAlliancesAllianceIDIconsNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -183,7 +215,36 @@ type GetAlliancesAllianceIDIconsNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get alliances alliance Id icons not modified response has a 2xx status code
+func (o *GetAlliancesAllianceIDIconsNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get alliances alliance Id icons not modified response has a 3xx status code
+func (o *GetAlliancesAllianceIDIconsNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get alliances alliance Id icons not modified response has a 4xx status code
+func (o *GetAlliancesAllianceIDIconsNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get alliances alliance Id icons not modified response has a 5xx status code
+func (o *GetAlliancesAllianceIDIconsNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get alliances alliance Id icons not modified response a status code equal to that given
+func (o *GetAlliancesAllianceIDIconsNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetAlliancesAllianceIDIconsNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/alliances/{alliance_id}/icons/][%d] getAlliancesAllianceIdIconsNotModified ", 304)
+}
+
+func (o *GetAlliancesAllianceIDIconsNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/alliances/{alliance_id}/icons/][%d] getAlliancesAllianceIdIconsNotModified ", 304)
 }
 
@@ -225,7 +286,8 @@ func NewGetAlliancesAllianceIDIconsBadRequest() *GetAlliancesAllianceIDIconsBadR
 	return &GetAlliancesAllianceIDIconsBadRequest{}
 }
 
-/* GetAlliancesAllianceIDIconsBadRequest describes a response with status code 400, with default header values.
+/*
+GetAlliancesAllianceIDIconsBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -233,9 +295,39 @@ type GetAlliancesAllianceIDIconsBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get alliances alliance Id icons bad request response has a 2xx status code
+func (o *GetAlliancesAllianceIDIconsBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get alliances alliance Id icons bad request response has a 3xx status code
+func (o *GetAlliancesAllianceIDIconsBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get alliances alliance Id icons bad request response has a 4xx status code
+func (o *GetAlliancesAllianceIDIconsBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get alliances alliance Id icons bad request response has a 5xx status code
+func (o *GetAlliancesAllianceIDIconsBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get alliances alliance Id icons bad request response a status code equal to that given
+func (o *GetAlliancesAllianceIDIconsBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetAlliancesAllianceIDIconsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/alliances/{alliance_id}/icons/][%d] getAlliancesAllianceIdIconsBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetAlliancesAllianceIDIconsBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/alliances/{alliance_id}/icons/][%d] getAlliancesAllianceIdIconsBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetAlliancesAllianceIDIconsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -257,7 +349,8 @@ func NewGetAlliancesAllianceIDIconsNotFound() *GetAlliancesAllianceIDIconsNotFou
 	return &GetAlliancesAllianceIDIconsNotFound{}
 }
 
-/* GetAlliancesAllianceIDIconsNotFound describes a response with status code 404, with default header values.
+/*
+GetAlliancesAllianceIDIconsNotFound describes a response with status code 404, with default header values.
 
 No image server for this datasource
 */
@@ -265,9 +358,39 @@ type GetAlliancesAllianceIDIconsNotFound struct {
 	Payload *GetAlliancesAllianceIDIconsNotFoundBody
 }
 
+// IsSuccess returns true when this get alliances alliance Id icons not found response has a 2xx status code
+func (o *GetAlliancesAllianceIDIconsNotFound) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get alliances alliance Id icons not found response has a 3xx status code
+func (o *GetAlliancesAllianceIDIconsNotFound) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get alliances alliance Id icons not found response has a 4xx status code
+func (o *GetAlliancesAllianceIDIconsNotFound) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get alliances alliance Id icons not found response has a 5xx status code
+func (o *GetAlliancesAllianceIDIconsNotFound) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get alliances alliance Id icons not found response a status code equal to that given
+func (o *GetAlliancesAllianceIDIconsNotFound) IsCode(code int) bool {
+	return code == 404
+}
+
 func (o *GetAlliancesAllianceIDIconsNotFound) Error() string {
 	return fmt.Sprintf("[GET /v1/alliances/{alliance_id}/icons/][%d] getAlliancesAllianceIdIconsNotFound  %+v", 404, o.Payload)
 }
+
+func (o *GetAlliancesAllianceIDIconsNotFound) String() string {
+	return fmt.Sprintf("[GET /v1/alliances/{alliance_id}/icons/][%d] getAlliancesAllianceIdIconsNotFound  %+v", 404, o.Payload)
+}
+
 func (o *GetAlliancesAllianceIDIconsNotFound) GetPayload() *GetAlliancesAllianceIDIconsNotFoundBody {
 	return o.Payload
 }
@@ -289,7 +412,8 @@ func NewGetAlliancesAllianceIDIconsEnhanceYourCalm() *GetAlliancesAllianceIDIcon
 	return &GetAlliancesAllianceIDIconsEnhanceYourCalm{}
 }
 
-/* GetAlliancesAllianceIDIconsEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetAlliancesAllianceIDIconsEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -297,9 +421,39 @@ type GetAlliancesAllianceIDIconsEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get alliances alliance Id icons enhance your calm response has a 2xx status code
+func (o *GetAlliancesAllianceIDIconsEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get alliances alliance Id icons enhance your calm response has a 3xx status code
+func (o *GetAlliancesAllianceIDIconsEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get alliances alliance Id icons enhance your calm response has a 4xx status code
+func (o *GetAlliancesAllianceIDIconsEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get alliances alliance Id icons enhance your calm response has a 5xx status code
+func (o *GetAlliancesAllianceIDIconsEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get alliances alliance Id icons enhance your calm response a status code equal to that given
+func (o *GetAlliancesAllianceIDIconsEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetAlliancesAllianceIDIconsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/alliances/{alliance_id}/icons/][%d] getAlliancesAllianceIdIconsEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetAlliancesAllianceIDIconsEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/alliances/{alliance_id}/icons/][%d] getAlliancesAllianceIdIconsEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetAlliancesAllianceIDIconsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -321,7 +475,8 @@ func NewGetAlliancesAllianceIDIconsInternalServerError() *GetAlliancesAllianceID
 	return &GetAlliancesAllianceIDIconsInternalServerError{}
 }
 
-/* GetAlliancesAllianceIDIconsInternalServerError describes a response with status code 500, with default header values.
+/*
+GetAlliancesAllianceIDIconsInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -329,9 +484,39 @@ type GetAlliancesAllianceIDIconsInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get alliances alliance Id icons internal server error response has a 2xx status code
+func (o *GetAlliancesAllianceIDIconsInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get alliances alliance Id icons internal server error response has a 3xx status code
+func (o *GetAlliancesAllianceIDIconsInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get alliances alliance Id icons internal server error response has a 4xx status code
+func (o *GetAlliancesAllianceIDIconsInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get alliances alliance Id icons internal server error response has a 5xx status code
+func (o *GetAlliancesAllianceIDIconsInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get alliances alliance Id icons internal server error response a status code equal to that given
+func (o *GetAlliancesAllianceIDIconsInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetAlliancesAllianceIDIconsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/alliances/{alliance_id}/icons/][%d] getAlliancesAllianceIdIconsInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetAlliancesAllianceIDIconsInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/alliances/{alliance_id}/icons/][%d] getAlliancesAllianceIdIconsInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetAlliancesAllianceIDIconsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -353,7 +538,8 @@ func NewGetAlliancesAllianceIDIconsServiceUnavailable() *GetAlliancesAllianceIDI
 	return &GetAlliancesAllianceIDIconsServiceUnavailable{}
 }
 
-/* GetAlliancesAllianceIDIconsServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetAlliancesAllianceIDIconsServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -361,9 +547,39 @@ type GetAlliancesAllianceIDIconsServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get alliances alliance Id icons service unavailable response has a 2xx status code
+func (o *GetAlliancesAllianceIDIconsServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get alliances alliance Id icons service unavailable response has a 3xx status code
+func (o *GetAlliancesAllianceIDIconsServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get alliances alliance Id icons service unavailable response has a 4xx status code
+func (o *GetAlliancesAllianceIDIconsServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get alliances alliance Id icons service unavailable response has a 5xx status code
+func (o *GetAlliancesAllianceIDIconsServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get alliances alliance Id icons service unavailable response a status code equal to that given
+func (o *GetAlliancesAllianceIDIconsServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetAlliancesAllianceIDIconsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/alliances/{alliance_id}/icons/][%d] getAlliancesAllianceIdIconsServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetAlliancesAllianceIDIconsServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/alliances/{alliance_id}/icons/][%d] getAlliancesAllianceIdIconsServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetAlliancesAllianceIDIconsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -385,7 +601,8 @@ func NewGetAlliancesAllianceIDIconsGatewayTimeout() *GetAlliancesAllianceIDIcons
 	return &GetAlliancesAllianceIDIconsGatewayTimeout{}
 }
 
-/* GetAlliancesAllianceIDIconsGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetAlliancesAllianceIDIconsGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -393,9 +610,39 @@ type GetAlliancesAllianceIDIconsGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get alliances alliance Id icons gateway timeout response has a 2xx status code
+func (o *GetAlliancesAllianceIDIconsGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get alliances alliance Id icons gateway timeout response has a 3xx status code
+func (o *GetAlliancesAllianceIDIconsGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get alliances alliance Id icons gateway timeout response has a 4xx status code
+func (o *GetAlliancesAllianceIDIconsGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get alliances alliance Id icons gateway timeout response has a 5xx status code
+func (o *GetAlliancesAllianceIDIconsGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get alliances alliance Id icons gateway timeout response a status code equal to that given
+func (o *GetAlliancesAllianceIDIconsGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetAlliancesAllianceIDIconsGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/alliances/{alliance_id}/icons/][%d] getAlliancesAllianceIdIconsGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetAlliancesAllianceIDIconsGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/alliances/{alliance_id}/icons/][%d] getAlliancesAllianceIdIconsGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetAlliancesAllianceIDIconsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -412,7 +659,8 @@ func (o *GetAlliancesAllianceIDIconsGatewayTimeout) readResponse(response runtim
 	return nil
 }
 
-/*GetAlliancesAllianceIDIconsNotFoundBody get_alliances_alliance_id_icons_not_found
+/*
+GetAlliancesAllianceIDIconsNotFoundBody get_alliances_alliance_id_icons_not_found
 //
 // No image server for this datasource
 swagger:model GetAlliancesAllianceIDIconsNotFoundBody
@@ -453,7 +701,8 @@ func (o *GetAlliancesAllianceIDIconsNotFoundBody) UnmarshalBinary(b []byte) erro
 	return nil
 }
 
-/*GetAlliancesAllianceIDIconsOKBody get_alliances_alliance_id_icons_ok
+/*
+GetAlliancesAllianceIDIconsOKBody get_alliances_alliance_id_icons_ok
 //
 // 200 ok object
 swagger:model GetAlliancesAllianceIDIconsOKBody

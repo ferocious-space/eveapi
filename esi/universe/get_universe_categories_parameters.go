@@ -52,10 +52,12 @@ func NewGetUniverseCategoriesParamsWithHTTPClient(client *http.Client) *GetUnive
 	}
 }
 
-/* GetUniverseCategoriesParams contains all the parameters to send to the API endpoint
-   for the get universe categories operation.
+/*
+GetUniverseCategoriesParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get universe categories operation.
+
+	Typically these are written to a http.Request.
 */
 type GetUniverseCategoriesParams struct {
 

@@ -52,10 +52,12 @@ func NewGetUniverseSystemJumpsParamsWithHTTPClient(client *http.Client) *GetUniv
 	}
 }
 
-/* GetUniverseSystemJumpsParams contains all the parameters to send to the API endpoint
-   for the get universe system jumps operation.
+/*
+GetUniverseSystemJumpsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get universe system jumps operation.
+
+	Typically these are written to a http.Request.
 */
 type GetUniverseSystemJumpsParams struct {
 

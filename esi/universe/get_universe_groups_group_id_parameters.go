@@ -53,10 +53,12 @@ func NewGetUniverseGroupsGroupIDParamsWithHTTPClient(client *http.Client) *GetUn
 	}
 }
 
-/* GetUniverseGroupsGroupIDParams contains all the parameters to send to the API endpoint
-   for the get universe groups group id operation.
+/*
+GetUniverseGroupsGroupIDParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get universe groups group id operation.
+
+	Typically these are written to a http.Request.
 */
 type GetUniverseGroupsGroupIDParams struct {
 

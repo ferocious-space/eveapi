@@ -86,14 +86,44 @@ func NewPutCharactersCharacterIDCalendarEventIDNoContent() *PutCharactersCharact
 	return &PutCharactersCharacterIDCalendarEventIDNoContent{}
 }
 
-/* PutCharactersCharacterIDCalendarEventIDNoContent describes a response with status code 204, with default header values.
+/*
+PutCharactersCharacterIDCalendarEventIDNoContent describes a response with status code 204, with default header values.
 
 Event updated
 */
 type PutCharactersCharacterIDCalendarEventIDNoContent struct {
 }
 
+// IsSuccess returns true when this put characters character Id calendar event Id no content response has a 2xx status code
+func (o *PutCharactersCharacterIDCalendarEventIDNoContent) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this put characters character Id calendar event Id no content response has a 3xx status code
+func (o *PutCharactersCharacterIDCalendarEventIDNoContent) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this put characters character Id calendar event Id no content response has a 4xx status code
+func (o *PutCharactersCharacterIDCalendarEventIDNoContent) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this put characters character Id calendar event Id no content response has a 5xx status code
+func (o *PutCharactersCharacterIDCalendarEventIDNoContent) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this put characters character Id calendar event Id no content response a status code equal to that given
+func (o *PutCharactersCharacterIDCalendarEventIDNoContent) IsCode(code int) bool {
+	return code == 204
+}
+
 func (o *PutCharactersCharacterIDCalendarEventIDNoContent) Error() string {
+	return fmt.Sprintf("[PUT /v3/characters/{character_id}/calendar/{event_id}/][%d] putCharactersCharacterIdCalendarEventIdNoContent ", 204)
+}
+
+func (o *PutCharactersCharacterIDCalendarEventIDNoContent) String() string {
 	return fmt.Sprintf("[PUT /v3/characters/{character_id}/calendar/{event_id}/][%d] putCharactersCharacterIdCalendarEventIdNoContent ", 204)
 }
 
@@ -107,7 +137,8 @@ func NewPutCharactersCharacterIDCalendarEventIDBadRequest() *PutCharactersCharac
 	return &PutCharactersCharacterIDCalendarEventIDBadRequest{}
 }
 
-/* PutCharactersCharacterIDCalendarEventIDBadRequest describes a response with status code 400, with default header values.
+/*
+PutCharactersCharacterIDCalendarEventIDBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -115,9 +146,39 @@ type PutCharactersCharacterIDCalendarEventIDBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this put characters character Id calendar event Id bad request response has a 2xx status code
+func (o *PutCharactersCharacterIDCalendarEventIDBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this put characters character Id calendar event Id bad request response has a 3xx status code
+func (o *PutCharactersCharacterIDCalendarEventIDBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this put characters character Id calendar event Id bad request response has a 4xx status code
+func (o *PutCharactersCharacterIDCalendarEventIDBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this put characters character Id calendar event Id bad request response has a 5xx status code
+func (o *PutCharactersCharacterIDCalendarEventIDBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this put characters character Id calendar event Id bad request response a status code equal to that given
+func (o *PutCharactersCharacterIDCalendarEventIDBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *PutCharactersCharacterIDCalendarEventIDBadRequest) Error() string {
 	return fmt.Sprintf("[PUT /v3/characters/{character_id}/calendar/{event_id}/][%d] putCharactersCharacterIdCalendarEventIdBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *PutCharactersCharacterIDCalendarEventIDBadRequest) String() string {
+	return fmt.Sprintf("[PUT /v3/characters/{character_id}/calendar/{event_id}/][%d] putCharactersCharacterIdCalendarEventIdBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *PutCharactersCharacterIDCalendarEventIDBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -139,7 +200,8 @@ func NewPutCharactersCharacterIDCalendarEventIDUnauthorized() *PutCharactersChar
 	return &PutCharactersCharacterIDCalendarEventIDUnauthorized{}
 }
 
-/* PutCharactersCharacterIDCalendarEventIDUnauthorized describes a response with status code 401, with default header values.
+/*
+PutCharactersCharacterIDCalendarEventIDUnauthorized describes a response with status code 401, with default header values.
 
 Unauthorized
 */
@@ -147,9 +209,39 @@ type PutCharactersCharacterIDCalendarEventIDUnauthorized struct {
 	Payload *models.Unauthorized
 }
 
+// IsSuccess returns true when this put characters character Id calendar event Id unauthorized response has a 2xx status code
+func (o *PutCharactersCharacterIDCalendarEventIDUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this put characters character Id calendar event Id unauthorized response has a 3xx status code
+func (o *PutCharactersCharacterIDCalendarEventIDUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this put characters character Id calendar event Id unauthorized response has a 4xx status code
+func (o *PutCharactersCharacterIDCalendarEventIDUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this put characters character Id calendar event Id unauthorized response has a 5xx status code
+func (o *PutCharactersCharacterIDCalendarEventIDUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this put characters character Id calendar event Id unauthorized response a status code equal to that given
+func (o *PutCharactersCharacterIDCalendarEventIDUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *PutCharactersCharacterIDCalendarEventIDUnauthorized) Error() string {
 	return fmt.Sprintf("[PUT /v3/characters/{character_id}/calendar/{event_id}/][%d] putCharactersCharacterIdCalendarEventIdUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *PutCharactersCharacterIDCalendarEventIDUnauthorized) String() string {
+	return fmt.Sprintf("[PUT /v3/characters/{character_id}/calendar/{event_id}/][%d] putCharactersCharacterIdCalendarEventIdUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *PutCharactersCharacterIDCalendarEventIDUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
 }
@@ -171,7 +263,8 @@ func NewPutCharactersCharacterIDCalendarEventIDForbidden() *PutCharactersCharact
 	return &PutCharactersCharacterIDCalendarEventIDForbidden{}
 }
 
-/* PutCharactersCharacterIDCalendarEventIDForbidden describes a response with status code 403, with default header values.
+/*
+PutCharactersCharacterIDCalendarEventIDForbidden describes a response with status code 403, with default header values.
 
 Forbidden
 */
@@ -179,9 +272,39 @@ type PutCharactersCharacterIDCalendarEventIDForbidden struct {
 	Payload *models.Forbidden
 }
 
+// IsSuccess returns true when this put characters character Id calendar event Id forbidden response has a 2xx status code
+func (o *PutCharactersCharacterIDCalendarEventIDForbidden) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this put characters character Id calendar event Id forbidden response has a 3xx status code
+func (o *PutCharactersCharacterIDCalendarEventIDForbidden) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this put characters character Id calendar event Id forbidden response has a 4xx status code
+func (o *PutCharactersCharacterIDCalendarEventIDForbidden) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this put characters character Id calendar event Id forbidden response has a 5xx status code
+func (o *PutCharactersCharacterIDCalendarEventIDForbidden) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this put characters character Id calendar event Id forbidden response a status code equal to that given
+func (o *PutCharactersCharacterIDCalendarEventIDForbidden) IsCode(code int) bool {
+	return code == 403
+}
+
 func (o *PutCharactersCharacterIDCalendarEventIDForbidden) Error() string {
 	return fmt.Sprintf("[PUT /v3/characters/{character_id}/calendar/{event_id}/][%d] putCharactersCharacterIdCalendarEventIdForbidden  %+v", 403, o.Payload)
 }
+
+func (o *PutCharactersCharacterIDCalendarEventIDForbidden) String() string {
+	return fmt.Sprintf("[PUT /v3/characters/{character_id}/calendar/{event_id}/][%d] putCharactersCharacterIdCalendarEventIdForbidden  %+v", 403, o.Payload)
+}
+
 func (o *PutCharactersCharacterIDCalendarEventIDForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
 }
@@ -203,7 +326,8 @@ func NewPutCharactersCharacterIDCalendarEventIDEnhanceYourCalm() *PutCharactersC
 	return &PutCharactersCharacterIDCalendarEventIDEnhanceYourCalm{}
 }
 
-/* PutCharactersCharacterIDCalendarEventIDEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+PutCharactersCharacterIDCalendarEventIDEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -211,9 +335,39 @@ type PutCharactersCharacterIDCalendarEventIDEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this put characters character Id calendar event Id enhance your calm response has a 2xx status code
+func (o *PutCharactersCharacterIDCalendarEventIDEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this put characters character Id calendar event Id enhance your calm response has a 3xx status code
+func (o *PutCharactersCharacterIDCalendarEventIDEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this put characters character Id calendar event Id enhance your calm response has a 4xx status code
+func (o *PutCharactersCharacterIDCalendarEventIDEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this put characters character Id calendar event Id enhance your calm response has a 5xx status code
+func (o *PutCharactersCharacterIDCalendarEventIDEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this put characters character Id calendar event Id enhance your calm response a status code equal to that given
+func (o *PutCharactersCharacterIDCalendarEventIDEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *PutCharactersCharacterIDCalendarEventIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[PUT /v3/characters/{character_id}/calendar/{event_id}/][%d] putCharactersCharacterIdCalendarEventIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *PutCharactersCharacterIDCalendarEventIDEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[PUT /v3/characters/{character_id}/calendar/{event_id}/][%d] putCharactersCharacterIdCalendarEventIdEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *PutCharactersCharacterIDCalendarEventIDEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -235,7 +389,8 @@ func NewPutCharactersCharacterIDCalendarEventIDInternalServerError() *PutCharact
 	return &PutCharactersCharacterIDCalendarEventIDInternalServerError{}
 }
 
-/* PutCharactersCharacterIDCalendarEventIDInternalServerError describes a response with status code 500, with default header values.
+/*
+PutCharactersCharacterIDCalendarEventIDInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -243,9 +398,39 @@ type PutCharactersCharacterIDCalendarEventIDInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this put characters character Id calendar event Id internal server error response has a 2xx status code
+func (o *PutCharactersCharacterIDCalendarEventIDInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this put characters character Id calendar event Id internal server error response has a 3xx status code
+func (o *PutCharactersCharacterIDCalendarEventIDInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this put characters character Id calendar event Id internal server error response has a 4xx status code
+func (o *PutCharactersCharacterIDCalendarEventIDInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this put characters character Id calendar event Id internal server error response has a 5xx status code
+func (o *PutCharactersCharacterIDCalendarEventIDInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this put characters character Id calendar event Id internal server error response a status code equal to that given
+func (o *PutCharactersCharacterIDCalendarEventIDInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *PutCharactersCharacterIDCalendarEventIDInternalServerError) Error() string {
 	return fmt.Sprintf("[PUT /v3/characters/{character_id}/calendar/{event_id}/][%d] putCharactersCharacterIdCalendarEventIdInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *PutCharactersCharacterIDCalendarEventIDInternalServerError) String() string {
+	return fmt.Sprintf("[PUT /v3/characters/{character_id}/calendar/{event_id}/][%d] putCharactersCharacterIdCalendarEventIdInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *PutCharactersCharacterIDCalendarEventIDInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -267,7 +452,8 @@ func NewPutCharactersCharacterIDCalendarEventIDServiceUnavailable() *PutCharacte
 	return &PutCharactersCharacterIDCalendarEventIDServiceUnavailable{}
 }
 
-/* PutCharactersCharacterIDCalendarEventIDServiceUnavailable describes a response with status code 503, with default header values.
+/*
+PutCharactersCharacterIDCalendarEventIDServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -275,9 +461,39 @@ type PutCharactersCharacterIDCalendarEventIDServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this put characters character Id calendar event Id service unavailable response has a 2xx status code
+func (o *PutCharactersCharacterIDCalendarEventIDServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this put characters character Id calendar event Id service unavailable response has a 3xx status code
+func (o *PutCharactersCharacterIDCalendarEventIDServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this put characters character Id calendar event Id service unavailable response has a 4xx status code
+func (o *PutCharactersCharacterIDCalendarEventIDServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this put characters character Id calendar event Id service unavailable response has a 5xx status code
+func (o *PutCharactersCharacterIDCalendarEventIDServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this put characters character Id calendar event Id service unavailable response a status code equal to that given
+func (o *PutCharactersCharacterIDCalendarEventIDServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *PutCharactersCharacterIDCalendarEventIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[PUT /v3/characters/{character_id}/calendar/{event_id}/][%d] putCharactersCharacterIdCalendarEventIdServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *PutCharactersCharacterIDCalendarEventIDServiceUnavailable) String() string {
+	return fmt.Sprintf("[PUT /v3/characters/{character_id}/calendar/{event_id}/][%d] putCharactersCharacterIdCalendarEventIdServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *PutCharactersCharacterIDCalendarEventIDServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -299,7 +515,8 @@ func NewPutCharactersCharacterIDCalendarEventIDGatewayTimeout() *PutCharactersCh
 	return &PutCharactersCharacterIDCalendarEventIDGatewayTimeout{}
 }
 
-/* PutCharactersCharacterIDCalendarEventIDGatewayTimeout describes a response with status code 504, with default header values.
+/*
+PutCharactersCharacterIDCalendarEventIDGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -307,9 +524,39 @@ type PutCharactersCharacterIDCalendarEventIDGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this put characters character Id calendar event Id gateway timeout response has a 2xx status code
+func (o *PutCharactersCharacterIDCalendarEventIDGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this put characters character Id calendar event Id gateway timeout response has a 3xx status code
+func (o *PutCharactersCharacterIDCalendarEventIDGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this put characters character Id calendar event Id gateway timeout response has a 4xx status code
+func (o *PutCharactersCharacterIDCalendarEventIDGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this put characters character Id calendar event Id gateway timeout response has a 5xx status code
+func (o *PutCharactersCharacterIDCalendarEventIDGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this put characters character Id calendar event Id gateway timeout response a status code equal to that given
+func (o *PutCharactersCharacterIDCalendarEventIDGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *PutCharactersCharacterIDCalendarEventIDGatewayTimeout) Error() string {
 	return fmt.Sprintf("[PUT /v3/characters/{character_id}/calendar/{event_id}/][%d] putCharactersCharacterIdCalendarEventIdGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *PutCharactersCharacterIDCalendarEventIDGatewayTimeout) String() string {
+	return fmt.Sprintf("[PUT /v3/characters/{character_id}/calendar/{event_id}/][%d] putCharactersCharacterIdCalendarEventIdGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *PutCharactersCharacterIDCalendarEventIDGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -326,7 +573,8 @@ func (o *PutCharactersCharacterIDCalendarEventIDGatewayTimeout) readResponse(res
 	return nil
 }
 
-/*PutCharactersCharacterIDCalendarEventIDBody put_characters_character_id_calendar_event_id_response
+/*
+PutCharactersCharacterIDCalendarEventIDBody put_characters_character_id_calendar_event_id_response
 //
 // response object
 swagger:model PutCharactersCharacterIDCalendarEventIDBody

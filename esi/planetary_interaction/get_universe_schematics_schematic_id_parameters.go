@@ -53,10 +53,12 @@ func NewGetUniverseSchematicsSchematicIDParamsWithHTTPClient(client *http.Client
 	}
 }
 
-/* GetUniverseSchematicsSchematicIDParams contains all the parameters to send to the API endpoint
-   for the get universe schematics schematic id operation.
+/*
+GetUniverseSchematicsSchematicIDParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get universe schematics schematic id operation.
+
+	Typically these are written to a http.Request.
 */
 type GetUniverseSchematicsSchematicIDParams struct {
 

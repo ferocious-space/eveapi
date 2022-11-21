@@ -16,7 +16,7 @@ import (
 
 // GatewayTimeout Gateway timeout
 //
-// Gateway timeout model
+// # Gateway timeout model
 //
 // swagger:model gateway_timeout
 type GatewayTimeout struct {

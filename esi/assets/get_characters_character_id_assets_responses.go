@@ -106,7 +106,8 @@ func NewGetCharactersCharacterIDAssetsOK() *GetCharactersCharacterIDAssetsOK {
 	}
 }
 
-/* GetCharactersCharacterIDAssetsOK describes a response with status code 200, with default header values.
+/*
+GetCharactersCharacterIDAssetsOK describes a response with status code 200, with default header values.
 
 A flat list of the users assets
 */
@@ -138,9 +139,39 @@ type GetCharactersCharacterIDAssetsOK struct {
 	Payload []*GetCharactersCharacterIDAssetsOKBodyItems0
 }
 
+// IsSuccess returns true when this get characters character Id assets o k response has a 2xx status code
+func (o *GetCharactersCharacterIDAssetsOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get characters character Id assets o k response has a 3xx status code
+func (o *GetCharactersCharacterIDAssetsOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id assets o k response has a 4xx status code
+func (o *GetCharactersCharacterIDAssetsOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id assets o k response has a 5xx status code
+func (o *GetCharactersCharacterIDAssetsOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id assets o k response a status code equal to that given
+func (o *GetCharactersCharacterIDAssetsOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetCharactersCharacterIDAssetsOK) Error() string {
 	return fmt.Sprintf("[GET /v5/characters/{character_id}/assets/][%d] getCharactersCharacterIdAssetsOK  %+v", 200, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDAssetsOK) String() string {
+	return fmt.Sprintf("[GET /v5/characters/{character_id}/assets/][%d] getCharactersCharacterIdAssetsOK  %+v", 200, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDAssetsOK) GetPayload() []*GetCharactersCharacterIDAssetsOKBodyItems0 {
 	return o.Payload
 }
@@ -199,7 +230,8 @@ func NewGetCharactersCharacterIDAssetsNotModified() *GetCharactersCharacterIDAss
 	return &GetCharactersCharacterIDAssetsNotModified{}
 }
 
-/* GetCharactersCharacterIDAssetsNotModified describes a response with status code 304, with default header values.
+/*
+GetCharactersCharacterIDAssetsNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -222,7 +254,36 @@ type GetCharactersCharacterIDAssetsNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get characters character Id assets not modified response has a 2xx status code
+func (o *GetCharactersCharacterIDAssetsNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id assets not modified response has a 3xx status code
+func (o *GetCharactersCharacterIDAssetsNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get characters character Id assets not modified response has a 4xx status code
+func (o *GetCharactersCharacterIDAssetsNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id assets not modified response has a 5xx status code
+func (o *GetCharactersCharacterIDAssetsNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id assets not modified response a status code equal to that given
+func (o *GetCharactersCharacterIDAssetsNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetCharactersCharacterIDAssetsNotModified) Error() string {
+	return fmt.Sprintf("[GET /v5/characters/{character_id}/assets/][%d] getCharactersCharacterIdAssetsNotModified ", 304)
+}
+
+func (o *GetCharactersCharacterIDAssetsNotModified) String() string {
 	return fmt.Sprintf("[GET /v5/characters/{character_id}/assets/][%d] getCharactersCharacterIdAssetsNotModified ", 304)
 }
 
@@ -264,7 +325,8 @@ func NewGetCharactersCharacterIDAssetsBadRequest() *GetCharactersCharacterIDAsse
 	return &GetCharactersCharacterIDAssetsBadRequest{}
 }
 
-/* GetCharactersCharacterIDAssetsBadRequest describes a response with status code 400, with default header values.
+/*
+GetCharactersCharacterIDAssetsBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -272,9 +334,39 @@ type GetCharactersCharacterIDAssetsBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get characters character Id assets bad request response has a 2xx status code
+func (o *GetCharactersCharacterIDAssetsBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id assets bad request response has a 3xx status code
+func (o *GetCharactersCharacterIDAssetsBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id assets bad request response has a 4xx status code
+func (o *GetCharactersCharacterIDAssetsBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id assets bad request response has a 5xx status code
+func (o *GetCharactersCharacterIDAssetsBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id assets bad request response a status code equal to that given
+func (o *GetCharactersCharacterIDAssetsBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetCharactersCharacterIDAssetsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v5/characters/{character_id}/assets/][%d] getCharactersCharacterIdAssetsBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDAssetsBadRequest) String() string {
+	return fmt.Sprintf("[GET /v5/characters/{character_id}/assets/][%d] getCharactersCharacterIdAssetsBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDAssetsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -296,7 +388,8 @@ func NewGetCharactersCharacterIDAssetsUnauthorized() *GetCharactersCharacterIDAs
 	return &GetCharactersCharacterIDAssetsUnauthorized{}
 }
 
-/* GetCharactersCharacterIDAssetsUnauthorized describes a response with status code 401, with default header values.
+/*
+GetCharactersCharacterIDAssetsUnauthorized describes a response with status code 401, with default header values.
 
 Unauthorized
 */
@@ -304,9 +397,39 @@ type GetCharactersCharacterIDAssetsUnauthorized struct {
 	Payload *models.Unauthorized
 }
 
+// IsSuccess returns true when this get characters character Id assets unauthorized response has a 2xx status code
+func (o *GetCharactersCharacterIDAssetsUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id assets unauthorized response has a 3xx status code
+func (o *GetCharactersCharacterIDAssetsUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id assets unauthorized response has a 4xx status code
+func (o *GetCharactersCharacterIDAssetsUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id assets unauthorized response has a 5xx status code
+func (o *GetCharactersCharacterIDAssetsUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id assets unauthorized response a status code equal to that given
+func (o *GetCharactersCharacterIDAssetsUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *GetCharactersCharacterIDAssetsUnauthorized) Error() string {
 	return fmt.Sprintf("[GET /v5/characters/{character_id}/assets/][%d] getCharactersCharacterIdAssetsUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDAssetsUnauthorized) String() string {
+	return fmt.Sprintf("[GET /v5/characters/{character_id}/assets/][%d] getCharactersCharacterIdAssetsUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDAssetsUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
 }
@@ -328,7 +451,8 @@ func NewGetCharactersCharacterIDAssetsForbidden() *GetCharactersCharacterIDAsset
 	return &GetCharactersCharacterIDAssetsForbidden{}
 }
 
-/* GetCharactersCharacterIDAssetsForbidden describes a response with status code 403, with default header values.
+/*
+GetCharactersCharacterIDAssetsForbidden describes a response with status code 403, with default header values.
 
 Forbidden
 */
@@ -336,9 +460,39 @@ type GetCharactersCharacterIDAssetsForbidden struct {
 	Payload *models.Forbidden
 }
 
+// IsSuccess returns true when this get characters character Id assets forbidden response has a 2xx status code
+func (o *GetCharactersCharacterIDAssetsForbidden) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id assets forbidden response has a 3xx status code
+func (o *GetCharactersCharacterIDAssetsForbidden) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id assets forbidden response has a 4xx status code
+func (o *GetCharactersCharacterIDAssetsForbidden) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id assets forbidden response has a 5xx status code
+func (o *GetCharactersCharacterIDAssetsForbidden) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id assets forbidden response a status code equal to that given
+func (o *GetCharactersCharacterIDAssetsForbidden) IsCode(code int) bool {
+	return code == 403
+}
+
 func (o *GetCharactersCharacterIDAssetsForbidden) Error() string {
 	return fmt.Sprintf("[GET /v5/characters/{character_id}/assets/][%d] getCharactersCharacterIdAssetsForbidden  %+v", 403, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDAssetsForbidden) String() string {
+	return fmt.Sprintf("[GET /v5/characters/{character_id}/assets/][%d] getCharactersCharacterIdAssetsForbidden  %+v", 403, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDAssetsForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
 }
@@ -360,7 +514,8 @@ func NewGetCharactersCharacterIDAssetsNotFound() *GetCharactersCharacterIDAssets
 	return &GetCharactersCharacterIDAssetsNotFound{}
 }
 
-/* GetCharactersCharacterIDAssetsNotFound describes a response with status code 404, with default header values.
+/*
+GetCharactersCharacterIDAssetsNotFound describes a response with status code 404, with default header values.
 
 Requested page does not exist
 */
@@ -368,9 +523,39 @@ type GetCharactersCharacterIDAssetsNotFound struct {
 	Payload *GetCharactersCharacterIDAssetsNotFoundBody
 }
 
+// IsSuccess returns true when this get characters character Id assets not found response has a 2xx status code
+func (o *GetCharactersCharacterIDAssetsNotFound) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id assets not found response has a 3xx status code
+func (o *GetCharactersCharacterIDAssetsNotFound) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id assets not found response has a 4xx status code
+func (o *GetCharactersCharacterIDAssetsNotFound) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id assets not found response has a 5xx status code
+func (o *GetCharactersCharacterIDAssetsNotFound) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id assets not found response a status code equal to that given
+func (o *GetCharactersCharacterIDAssetsNotFound) IsCode(code int) bool {
+	return code == 404
+}
+
 func (o *GetCharactersCharacterIDAssetsNotFound) Error() string {
 	return fmt.Sprintf("[GET /v5/characters/{character_id}/assets/][%d] getCharactersCharacterIdAssetsNotFound  %+v", 404, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDAssetsNotFound) String() string {
+	return fmt.Sprintf("[GET /v5/characters/{character_id}/assets/][%d] getCharactersCharacterIdAssetsNotFound  %+v", 404, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDAssetsNotFound) GetPayload() *GetCharactersCharacterIDAssetsNotFoundBody {
 	return o.Payload
 }
@@ -392,7 +577,8 @@ func NewGetCharactersCharacterIDAssetsEnhanceYourCalm() *GetCharactersCharacterI
 	return &GetCharactersCharacterIDAssetsEnhanceYourCalm{}
 }
 
-/* GetCharactersCharacterIDAssetsEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetCharactersCharacterIDAssetsEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -400,9 +586,39 @@ type GetCharactersCharacterIDAssetsEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get characters character Id assets enhance your calm response has a 2xx status code
+func (o *GetCharactersCharacterIDAssetsEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id assets enhance your calm response has a 3xx status code
+func (o *GetCharactersCharacterIDAssetsEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id assets enhance your calm response has a 4xx status code
+func (o *GetCharactersCharacterIDAssetsEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id assets enhance your calm response has a 5xx status code
+func (o *GetCharactersCharacterIDAssetsEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id assets enhance your calm response a status code equal to that given
+func (o *GetCharactersCharacterIDAssetsEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetCharactersCharacterIDAssetsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v5/characters/{character_id}/assets/][%d] getCharactersCharacterIdAssetsEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDAssetsEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v5/characters/{character_id}/assets/][%d] getCharactersCharacterIdAssetsEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDAssetsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -424,7 +640,8 @@ func NewGetCharactersCharacterIDAssetsInternalServerError() *GetCharactersCharac
 	return &GetCharactersCharacterIDAssetsInternalServerError{}
 }
 
-/* GetCharactersCharacterIDAssetsInternalServerError describes a response with status code 500, with default header values.
+/*
+GetCharactersCharacterIDAssetsInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -432,9 +649,39 @@ type GetCharactersCharacterIDAssetsInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get characters character Id assets internal server error response has a 2xx status code
+func (o *GetCharactersCharacterIDAssetsInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id assets internal server error response has a 3xx status code
+func (o *GetCharactersCharacterIDAssetsInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id assets internal server error response has a 4xx status code
+func (o *GetCharactersCharacterIDAssetsInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id assets internal server error response has a 5xx status code
+func (o *GetCharactersCharacterIDAssetsInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id assets internal server error response a status code equal to that given
+func (o *GetCharactersCharacterIDAssetsInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetCharactersCharacterIDAssetsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v5/characters/{character_id}/assets/][%d] getCharactersCharacterIdAssetsInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDAssetsInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v5/characters/{character_id}/assets/][%d] getCharactersCharacterIdAssetsInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDAssetsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -456,7 +703,8 @@ func NewGetCharactersCharacterIDAssetsServiceUnavailable() *GetCharactersCharact
 	return &GetCharactersCharacterIDAssetsServiceUnavailable{}
 }
 
-/* GetCharactersCharacterIDAssetsServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetCharactersCharacterIDAssetsServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -464,9 +712,39 @@ type GetCharactersCharacterIDAssetsServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get characters character Id assets service unavailable response has a 2xx status code
+func (o *GetCharactersCharacterIDAssetsServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id assets service unavailable response has a 3xx status code
+func (o *GetCharactersCharacterIDAssetsServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id assets service unavailable response has a 4xx status code
+func (o *GetCharactersCharacterIDAssetsServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id assets service unavailable response has a 5xx status code
+func (o *GetCharactersCharacterIDAssetsServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id assets service unavailable response a status code equal to that given
+func (o *GetCharactersCharacterIDAssetsServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetCharactersCharacterIDAssetsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v5/characters/{character_id}/assets/][%d] getCharactersCharacterIdAssetsServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDAssetsServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v5/characters/{character_id}/assets/][%d] getCharactersCharacterIdAssetsServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDAssetsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -488,7 +766,8 @@ func NewGetCharactersCharacterIDAssetsGatewayTimeout() *GetCharactersCharacterID
 	return &GetCharactersCharacterIDAssetsGatewayTimeout{}
 }
 
-/* GetCharactersCharacterIDAssetsGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetCharactersCharacterIDAssetsGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -496,9 +775,39 @@ type GetCharactersCharacterIDAssetsGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get characters character Id assets gateway timeout response has a 2xx status code
+func (o *GetCharactersCharacterIDAssetsGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id assets gateway timeout response has a 3xx status code
+func (o *GetCharactersCharacterIDAssetsGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id assets gateway timeout response has a 4xx status code
+func (o *GetCharactersCharacterIDAssetsGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id assets gateway timeout response has a 5xx status code
+func (o *GetCharactersCharacterIDAssetsGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id assets gateway timeout response a status code equal to that given
+func (o *GetCharactersCharacterIDAssetsGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetCharactersCharacterIDAssetsGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v5/characters/{character_id}/assets/][%d] getCharactersCharacterIdAssetsGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDAssetsGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v5/characters/{character_id}/assets/][%d] getCharactersCharacterIdAssetsGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDAssetsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -515,7 +824,8 @@ func (o *GetCharactersCharacterIDAssetsGatewayTimeout) readResponse(response run
 	return nil
 }
 
-/*GetCharactersCharacterIDAssetsNotFoundBody get_characters_character_id_assets_not_found
+/*
+GetCharactersCharacterIDAssetsNotFoundBody get_characters_character_id_assets_not_found
 //
 // Requested page does not exist
 swagger:model GetCharactersCharacterIDAssetsNotFoundBody
@@ -556,7 +866,8 @@ func (o *GetCharactersCharacterIDAssetsNotFoundBody) UnmarshalBinary(b []byte) e
 	return nil
 }
 
-/*GetCharactersCharacterIDAssetsOKBodyItems0 get_characters_character_id_assets_200_ok
+/*
+GetCharactersCharacterIDAssetsOKBodyItems0 get_characters_character_id_assets_200_ok
 //
 // 200 ok object
 swagger:model GetCharactersCharacterIDAssetsOKBodyItems0

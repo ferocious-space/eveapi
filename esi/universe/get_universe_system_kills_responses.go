@@ -79,7 +79,8 @@ func NewGetUniverseSystemKillsOK() *GetUniverseSystemKillsOK {
 	return &GetUniverseSystemKillsOK{}
 }
 
-/* GetUniverseSystemKillsOK describes a response with status code 200, with default header values.
+/*
+GetUniverseSystemKillsOK describes a response with status code 200, with default header values.
 
 A list of systems and number of ship, pod and NPC kills
 */
@@ -104,9 +105,39 @@ type GetUniverseSystemKillsOK struct {
 	Payload []*GetUniverseSystemKillsOKBodyItems0
 }
 
+// IsSuccess returns true when this get universe system kills o k response has a 2xx status code
+func (o *GetUniverseSystemKillsOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get universe system kills o k response has a 3xx status code
+func (o *GetUniverseSystemKillsOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe system kills o k response has a 4xx status code
+func (o *GetUniverseSystemKillsOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe system kills o k response has a 5xx status code
+func (o *GetUniverseSystemKillsOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe system kills o k response a status code equal to that given
+func (o *GetUniverseSystemKillsOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetUniverseSystemKillsOK) Error() string {
 	return fmt.Sprintf("[GET /v2/universe/system_kills/][%d] getUniverseSystemKillsOK  %+v", 200, o.Payload)
 }
+
+func (o *GetUniverseSystemKillsOK) String() string {
+	return fmt.Sprintf("[GET /v2/universe/system_kills/][%d] getUniverseSystemKillsOK  %+v", 200, o.Payload)
+}
+
 func (o *GetUniverseSystemKillsOK) GetPayload() []*GetUniverseSystemKillsOKBodyItems0 {
 	return o.Payload
 }
@@ -154,7 +185,8 @@ func NewGetUniverseSystemKillsNotModified() *GetUniverseSystemKillsNotModified {
 	return &GetUniverseSystemKillsNotModified{}
 }
 
-/* GetUniverseSystemKillsNotModified describes a response with status code 304, with default header values.
+/*
+GetUniverseSystemKillsNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -177,7 +209,36 @@ type GetUniverseSystemKillsNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get universe system kills not modified response has a 2xx status code
+func (o *GetUniverseSystemKillsNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe system kills not modified response has a 3xx status code
+func (o *GetUniverseSystemKillsNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get universe system kills not modified response has a 4xx status code
+func (o *GetUniverseSystemKillsNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe system kills not modified response has a 5xx status code
+func (o *GetUniverseSystemKillsNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe system kills not modified response a status code equal to that given
+func (o *GetUniverseSystemKillsNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetUniverseSystemKillsNotModified) Error() string {
+	return fmt.Sprintf("[GET /v2/universe/system_kills/][%d] getUniverseSystemKillsNotModified ", 304)
+}
+
+func (o *GetUniverseSystemKillsNotModified) String() string {
 	return fmt.Sprintf("[GET /v2/universe/system_kills/][%d] getUniverseSystemKillsNotModified ", 304)
 }
 
@@ -219,7 +280,8 @@ func NewGetUniverseSystemKillsBadRequest() *GetUniverseSystemKillsBadRequest {
 	return &GetUniverseSystemKillsBadRequest{}
 }
 
-/* GetUniverseSystemKillsBadRequest describes a response with status code 400, with default header values.
+/*
+GetUniverseSystemKillsBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -227,9 +289,39 @@ type GetUniverseSystemKillsBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get universe system kills bad request response has a 2xx status code
+func (o *GetUniverseSystemKillsBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe system kills bad request response has a 3xx status code
+func (o *GetUniverseSystemKillsBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe system kills bad request response has a 4xx status code
+func (o *GetUniverseSystemKillsBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe system kills bad request response has a 5xx status code
+func (o *GetUniverseSystemKillsBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe system kills bad request response a status code equal to that given
+func (o *GetUniverseSystemKillsBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetUniverseSystemKillsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v2/universe/system_kills/][%d] getUniverseSystemKillsBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetUniverseSystemKillsBadRequest) String() string {
+	return fmt.Sprintf("[GET /v2/universe/system_kills/][%d] getUniverseSystemKillsBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetUniverseSystemKillsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -251,7 +343,8 @@ func NewGetUniverseSystemKillsEnhanceYourCalm() *GetUniverseSystemKillsEnhanceYo
 	return &GetUniverseSystemKillsEnhanceYourCalm{}
 }
 
-/* GetUniverseSystemKillsEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetUniverseSystemKillsEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -259,9 +352,39 @@ type GetUniverseSystemKillsEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get universe system kills enhance your calm response has a 2xx status code
+func (o *GetUniverseSystemKillsEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe system kills enhance your calm response has a 3xx status code
+func (o *GetUniverseSystemKillsEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe system kills enhance your calm response has a 4xx status code
+func (o *GetUniverseSystemKillsEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe system kills enhance your calm response has a 5xx status code
+func (o *GetUniverseSystemKillsEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe system kills enhance your calm response a status code equal to that given
+func (o *GetUniverseSystemKillsEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetUniverseSystemKillsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v2/universe/system_kills/][%d] getUniverseSystemKillsEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetUniverseSystemKillsEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v2/universe/system_kills/][%d] getUniverseSystemKillsEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetUniverseSystemKillsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -283,7 +406,8 @@ func NewGetUniverseSystemKillsInternalServerError() *GetUniverseSystemKillsInter
 	return &GetUniverseSystemKillsInternalServerError{}
 }
 
-/* GetUniverseSystemKillsInternalServerError describes a response with status code 500, with default header values.
+/*
+GetUniverseSystemKillsInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -291,9 +415,39 @@ type GetUniverseSystemKillsInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get universe system kills internal server error response has a 2xx status code
+func (o *GetUniverseSystemKillsInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe system kills internal server error response has a 3xx status code
+func (o *GetUniverseSystemKillsInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe system kills internal server error response has a 4xx status code
+func (o *GetUniverseSystemKillsInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe system kills internal server error response has a 5xx status code
+func (o *GetUniverseSystemKillsInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe system kills internal server error response a status code equal to that given
+func (o *GetUniverseSystemKillsInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetUniverseSystemKillsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v2/universe/system_kills/][%d] getUniverseSystemKillsInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetUniverseSystemKillsInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v2/universe/system_kills/][%d] getUniverseSystemKillsInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetUniverseSystemKillsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -315,7 +469,8 @@ func NewGetUniverseSystemKillsServiceUnavailable() *GetUniverseSystemKillsServic
 	return &GetUniverseSystemKillsServiceUnavailable{}
 }
 
-/* GetUniverseSystemKillsServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetUniverseSystemKillsServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -323,9 +478,39 @@ type GetUniverseSystemKillsServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get universe system kills service unavailable response has a 2xx status code
+func (o *GetUniverseSystemKillsServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe system kills service unavailable response has a 3xx status code
+func (o *GetUniverseSystemKillsServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe system kills service unavailable response has a 4xx status code
+func (o *GetUniverseSystemKillsServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe system kills service unavailable response has a 5xx status code
+func (o *GetUniverseSystemKillsServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe system kills service unavailable response a status code equal to that given
+func (o *GetUniverseSystemKillsServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetUniverseSystemKillsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v2/universe/system_kills/][%d] getUniverseSystemKillsServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetUniverseSystemKillsServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v2/universe/system_kills/][%d] getUniverseSystemKillsServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetUniverseSystemKillsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -347,7 +532,8 @@ func NewGetUniverseSystemKillsGatewayTimeout() *GetUniverseSystemKillsGatewayTim
 	return &GetUniverseSystemKillsGatewayTimeout{}
 }
 
-/* GetUniverseSystemKillsGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetUniverseSystemKillsGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -355,9 +541,39 @@ type GetUniverseSystemKillsGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get universe system kills gateway timeout response has a 2xx status code
+func (o *GetUniverseSystemKillsGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe system kills gateway timeout response has a 3xx status code
+func (o *GetUniverseSystemKillsGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe system kills gateway timeout response has a 4xx status code
+func (o *GetUniverseSystemKillsGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe system kills gateway timeout response has a 5xx status code
+func (o *GetUniverseSystemKillsGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe system kills gateway timeout response a status code equal to that given
+func (o *GetUniverseSystemKillsGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetUniverseSystemKillsGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v2/universe/system_kills/][%d] getUniverseSystemKillsGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetUniverseSystemKillsGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v2/universe/system_kills/][%d] getUniverseSystemKillsGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetUniverseSystemKillsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -374,7 +590,8 @@ func (o *GetUniverseSystemKillsGatewayTimeout) readResponse(response runtime.Cli
 	return nil
 }
 
-/*GetUniverseSystemKillsOKBodyItems0 get_universe_system_kills_200_ok
+/*
+GetUniverseSystemKillsOKBodyItems0 get_universe_system_kills_200_ok
 //
 // 200 ok object
 swagger:model GetUniverseSystemKillsOKBodyItems0

@@ -53,10 +53,12 @@ func NewGetCorporationsCorporationIDFwStatsParamsWithHTTPClient(client *http.Cli
 	}
 }
 
-/* GetCorporationsCorporationIDFwStatsParams contains all the parameters to send to the API endpoint
-   for the get corporations corporation id fw stats operation.
+/*
+GetCorporationsCorporationIDFwStatsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get corporations corporation id fw stats operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCorporationsCorporationIDFwStatsParams struct {
 

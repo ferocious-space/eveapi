@@ -1,3 +1,6 @@
+//go:build ignore
+// +build ignore
+
 /*
  *    Copyright 2021 FerociousBite and Contributors
  *
@@ -14,7 +17,6 @@
  *    limitations under the License.
  */
 
-// +build ignore
 package main
 
 import (

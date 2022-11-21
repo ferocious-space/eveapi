@@ -85,7 +85,8 @@ func NewGetMarketsRegionIDTypesOK() *GetMarketsRegionIDTypesOK {
 	}
 }
 
-/* GetMarketsRegionIDTypesOK describes a response with status code 200, with default header values.
+/*
+GetMarketsRegionIDTypesOK describes a response with status code 200, with default header values.
 
 A list of type IDs
 */
@@ -117,9 +118,39 @@ type GetMarketsRegionIDTypesOK struct {
 	Payload []int32
 }
 
+// IsSuccess returns true when this get markets region Id types o k response has a 2xx status code
+func (o *GetMarketsRegionIDTypesOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get markets region Id types o k response has a 3xx status code
+func (o *GetMarketsRegionIDTypesOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get markets region Id types o k response has a 4xx status code
+func (o *GetMarketsRegionIDTypesOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get markets region Id types o k response has a 5xx status code
+func (o *GetMarketsRegionIDTypesOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get markets region Id types o k response a status code equal to that given
+func (o *GetMarketsRegionIDTypesOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetMarketsRegionIDTypesOK) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/{region_id}/types/][%d] getMarketsRegionIdTypesOK  %+v", 200, o.Payload)
 }
+
+func (o *GetMarketsRegionIDTypesOK) String() string {
+	return fmt.Sprintf("[GET /v1/markets/{region_id}/types/][%d] getMarketsRegionIdTypesOK  %+v", 200, o.Payload)
+}
+
 func (o *GetMarketsRegionIDTypesOK) GetPayload() []int32 {
 	return o.Payload
 }
@@ -178,7 +209,8 @@ func NewGetMarketsRegionIDTypesNotModified() *GetMarketsRegionIDTypesNotModified
 	return &GetMarketsRegionIDTypesNotModified{}
 }
 
-/* GetMarketsRegionIDTypesNotModified describes a response with status code 304, with default header values.
+/*
+GetMarketsRegionIDTypesNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -201,7 +233,36 @@ type GetMarketsRegionIDTypesNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get markets region Id types not modified response has a 2xx status code
+func (o *GetMarketsRegionIDTypesNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get markets region Id types not modified response has a 3xx status code
+func (o *GetMarketsRegionIDTypesNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get markets region Id types not modified response has a 4xx status code
+func (o *GetMarketsRegionIDTypesNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get markets region Id types not modified response has a 5xx status code
+func (o *GetMarketsRegionIDTypesNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get markets region Id types not modified response a status code equal to that given
+func (o *GetMarketsRegionIDTypesNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetMarketsRegionIDTypesNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/markets/{region_id}/types/][%d] getMarketsRegionIdTypesNotModified ", 304)
+}
+
+func (o *GetMarketsRegionIDTypesNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/markets/{region_id}/types/][%d] getMarketsRegionIdTypesNotModified ", 304)
 }
 
@@ -243,7 +304,8 @@ func NewGetMarketsRegionIDTypesBadRequest() *GetMarketsRegionIDTypesBadRequest {
 	return &GetMarketsRegionIDTypesBadRequest{}
 }
 
-/* GetMarketsRegionIDTypesBadRequest describes a response with status code 400, with default header values.
+/*
+GetMarketsRegionIDTypesBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -251,9 +313,39 @@ type GetMarketsRegionIDTypesBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get markets region Id types bad request response has a 2xx status code
+func (o *GetMarketsRegionIDTypesBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get markets region Id types bad request response has a 3xx status code
+func (o *GetMarketsRegionIDTypesBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get markets region Id types bad request response has a 4xx status code
+func (o *GetMarketsRegionIDTypesBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get markets region Id types bad request response has a 5xx status code
+func (o *GetMarketsRegionIDTypesBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get markets region Id types bad request response a status code equal to that given
+func (o *GetMarketsRegionIDTypesBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetMarketsRegionIDTypesBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/{region_id}/types/][%d] getMarketsRegionIdTypesBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetMarketsRegionIDTypesBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/markets/{region_id}/types/][%d] getMarketsRegionIdTypesBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetMarketsRegionIDTypesBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -275,7 +367,8 @@ func NewGetMarketsRegionIDTypesEnhanceYourCalm() *GetMarketsRegionIDTypesEnhance
 	return &GetMarketsRegionIDTypesEnhanceYourCalm{}
 }
 
-/* GetMarketsRegionIDTypesEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetMarketsRegionIDTypesEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -283,9 +376,39 @@ type GetMarketsRegionIDTypesEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get markets region Id types enhance your calm response has a 2xx status code
+func (o *GetMarketsRegionIDTypesEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get markets region Id types enhance your calm response has a 3xx status code
+func (o *GetMarketsRegionIDTypesEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get markets region Id types enhance your calm response has a 4xx status code
+func (o *GetMarketsRegionIDTypesEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get markets region Id types enhance your calm response has a 5xx status code
+func (o *GetMarketsRegionIDTypesEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get markets region Id types enhance your calm response a status code equal to that given
+func (o *GetMarketsRegionIDTypesEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetMarketsRegionIDTypesEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/{region_id}/types/][%d] getMarketsRegionIdTypesEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetMarketsRegionIDTypesEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/markets/{region_id}/types/][%d] getMarketsRegionIdTypesEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetMarketsRegionIDTypesEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -307,7 +430,8 @@ func NewGetMarketsRegionIDTypesInternalServerError() *GetMarketsRegionIDTypesInt
 	return &GetMarketsRegionIDTypesInternalServerError{}
 }
 
-/* GetMarketsRegionIDTypesInternalServerError describes a response with status code 500, with default header values.
+/*
+GetMarketsRegionIDTypesInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -315,9 +439,39 @@ type GetMarketsRegionIDTypesInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get markets region Id types internal server error response has a 2xx status code
+func (o *GetMarketsRegionIDTypesInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get markets region Id types internal server error response has a 3xx status code
+func (o *GetMarketsRegionIDTypesInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get markets region Id types internal server error response has a 4xx status code
+func (o *GetMarketsRegionIDTypesInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get markets region Id types internal server error response has a 5xx status code
+func (o *GetMarketsRegionIDTypesInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get markets region Id types internal server error response a status code equal to that given
+func (o *GetMarketsRegionIDTypesInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetMarketsRegionIDTypesInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/{region_id}/types/][%d] getMarketsRegionIdTypesInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetMarketsRegionIDTypesInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/markets/{region_id}/types/][%d] getMarketsRegionIdTypesInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetMarketsRegionIDTypesInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -339,7 +493,8 @@ func NewGetMarketsRegionIDTypesServiceUnavailable() *GetMarketsRegionIDTypesServ
 	return &GetMarketsRegionIDTypesServiceUnavailable{}
 }
 
-/* GetMarketsRegionIDTypesServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetMarketsRegionIDTypesServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -347,9 +502,39 @@ type GetMarketsRegionIDTypesServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get markets region Id types service unavailable response has a 2xx status code
+func (o *GetMarketsRegionIDTypesServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get markets region Id types service unavailable response has a 3xx status code
+func (o *GetMarketsRegionIDTypesServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get markets region Id types service unavailable response has a 4xx status code
+func (o *GetMarketsRegionIDTypesServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get markets region Id types service unavailable response has a 5xx status code
+func (o *GetMarketsRegionIDTypesServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get markets region Id types service unavailable response a status code equal to that given
+func (o *GetMarketsRegionIDTypesServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetMarketsRegionIDTypesServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/{region_id}/types/][%d] getMarketsRegionIdTypesServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetMarketsRegionIDTypesServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/markets/{region_id}/types/][%d] getMarketsRegionIdTypesServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetMarketsRegionIDTypesServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -371,7 +556,8 @@ func NewGetMarketsRegionIDTypesGatewayTimeout() *GetMarketsRegionIDTypesGatewayT
 	return &GetMarketsRegionIDTypesGatewayTimeout{}
 }
 
-/* GetMarketsRegionIDTypesGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetMarketsRegionIDTypesGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -379,9 +565,39 @@ type GetMarketsRegionIDTypesGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get markets region Id types gateway timeout response has a 2xx status code
+func (o *GetMarketsRegionIDTypesGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get markets region Id types gateway timeout response has a 3xx status code
+func (o *GetMarketsRegionIDTypesGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get markets region Id types gateway timeout response has a 4xx status code
+func (o *GetMarketsRegionIDTypesGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get markets region Id types gateway timeout response has a 5xx status code
+func (o *GetMarketsRegionIDTypesGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get markets region Id types gateway timeout response a status code equal to that given
+func (o *GetMarketsRegionIDTypesGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetMarketsRegionIDTypesGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/{region_id}/types/][%d] getMarketsRegionIdTypesGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetMarketsRegionIDTypesGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/markets/{region_id}/types/][%d] getMarketsRegionIdTypesGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetMarketsRegionIDTypesGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }

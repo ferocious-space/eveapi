@@ -53,10 +53,12 @@ func NewGetCorporationsCorporationIDContractsContractIDBidsParamsWithHTTPClient(
 	}
 }
 
-/* GetCorporationsCorporationIDContractsContractIDBidsParams contains all the parameters to send to the API endpoint
-   for the get corporations corporation id contracts contract id bids operation.
+/*
+GetCorporationsCorporationIDContractsContractIDBidsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get corporations corporation id contracts contract id bids operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCorporationsCorporationIDContractsContractIDBidsParams struct {
 

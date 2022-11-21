@@ -53,10 +53,12 @@ func NewGetWarsWarIDKillmailsParamsWithHTTPClient(client *http.Client) *GetWarsW
 	}
 }
 
-/* GetWarsWarIDKillmailsParams contains all the parameters to send to the API endpoint
-   for the get wars war id killmails operation.
+/*
+GetWarsWarIDKillmailsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get wars war id killmails operation.
+
+	Typically these are written to a http.Request.
 */
 type GetWarsWarIDKillmailsParams struct {
 

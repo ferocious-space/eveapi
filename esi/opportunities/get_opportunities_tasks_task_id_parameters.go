@@ -53,10 +53,12 @@ func NewGetOpportunitiesTasksTaskIDParamsWithHTTPClient(client *http.Client) *Ge
 	}
 }
 
-/* GetOpportunitiesTasksTaskIDParams contains all the parameters to send to the API endpoint
-   for the get opportunities tasks task id operation.
+/*
+GetOpportunitiesTasksTaskIDParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get opportunities tasks task id operation.
+
+	Typically these are written to a http.Request.
 */
 type GetOpportunitiesTasksTaskIDParams struct {
 

@@ -100,7 +100,8 @@ func NewGetCharactersCharacterIDWalletJournalOK() *GetCharactersCharacterIDWalle
 	}
 }
 
-/* GetCharactersCharacterIDWalletJournalOK describes a response with status code 200, with default header values.
+/*
+GetCharactersCharacterIDWalletJournalOK describes a response with status code 200, with default header values.
 
 Journal entries
 */
@@ -132,9 +133,39 @@ type GetCharactersCharacterIDWalletJournalOK struct {
 	Payload []*GetCharactersCharacterIDWalletJournalOKBodyItems0
 }
 
+// IsSuccess returns true when this get characters character Id wallet journal o k response has a 2xx status code
+func (o *GetCharactersCharacterIDWalletJournalOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get characters character Id wallet journal o k response has a 3xx status code
+func (o *GetCharactersCharacterIDWalletJournalOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id wallet journal o k response has a 4xx status code
+func (o *GetCharactersCharacterIDWalletJournalOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id wallet journal o k response has a 5xx status code
+func (o *GetCharactersCharacterIDWalletJournalOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id wallet journal o k response a status code equal to that given
+func (o *GetCharactersCharacterIDWalletJournalOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetCharactersCharacterIDWalletJournalOK) Error() string {
 	return fmt.Sprintf("[GET /v6/characters/{character_id}/wallet/journal/][%d] getCharactersCharacterIdWalletJournalOK  %+v", 200, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDWalletJournalOK) String() string {
+	return fmt.Sprintf("[GET /v6/characters/{character_id}/wallet/journal/][%d] getCharactersCharacterIdWalletJournalOK  %+v", 200, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDWalletJournalOK) GetPayload() []*GetCharactersCharacterIDWalletJournalOKBodyItems0 {
 	return o.Payload
 }
@@ -193,7 +224,8 @@ func NewGetCharactersCharacterIDWalletJournalNotModified() *GetCharactersCharact
 	return &GetCharactersCharacterIDWalletJournalNotModified{}
 }
 
-/* GetCharactersCharacterIDWalletJournalNotModified describes a response with status code 304, with default header values.
+/*
+GetCharactersCharacterIDWalletJournalNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -216,7 +248,36 @@ type GetCharactersCharacterIDWalletJournalNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get characters character Id wallet journal not modified response has a 2xx status code
+func (o *GetCharactersCharacterIDWalletJournalNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id wallet journal not modified response has a 3xx status code
+func (o *GetCharactersCharacterIDWalletJournalNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get characters character Id wallet journal not modified response has a 4xx status code
+func (o *GetCharactersCharacterIDWalletJournalNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id wallet journal not modified response has a 5xx status code
+func (o *GetCharactersCharacterIDWalletJournalNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id wallet journal not modified response a status code equal to that given
+func (o *GetCharactersCharacterIDWalletJournalNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetCharactersCharacterIDWalletJournalNotModified) Error() string {
+	return fmt.Sprintf("[GET /v6/characters/{character_id}/wallet/journal/][%d] getCharactersCharacterIdWalletJournalNotModified ", 304)
+}
+
+func (o *GetCharactersCharacterIDWalletJournalNotModified) String() string {
 	return fmt.Sprintf("[GET /v6/characters/{character_id}/wallet/journal/][%d] getCharactersCharacterIdWalletJournalNotModified ", 304)
 }
 
@@ -258,7 +319,8 @@ func NewGetCharactersCharacterIDWalletJournalBadRequest() *GetCharactersCharacte
 	return &GetCharactersCharacterIDWalletJournalBadRequest{}
 }
 
-/* GetCharactersCharacterIDWalletJournalBadRequest describes a response with status code 400, with default header values.
+/*
+GetCharactersCharacterIDWalletJournalBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -266,9 +328,39 @@ type GetCharactersCharacterIDWalletJournalBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get characters character Id wallet journal bad request response has a 2xx status code
+func (o *GetCharactersCharacterIDWalletJournalBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id wallet journal bad request response has a 3xx status code
+func (o *GetCharactersCharacterIDWalletJournalBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id wallet journal bad request response has a 4xx status code
+func (o *GetCharactersCharacterIDWalletJournalBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id wallet journal bad request response has a 5xx status code
+func (o *GetCharactersCharacterIDWalletJournalBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id wallet journal bad request response a status code equal to that given
+func (o *GetCharactersCharacterIDWalletJournalBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetCharactersCharacterIDWalletJournalBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v6/characters/{character_id}/wallet/journal/][%d] getCharactersCharacterIdWalletJournalBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDWalletJournalBadRequest) String() string {
+	return fmt.Sprintf("[GET /v6/characters/{character_id}/wallet/journal/][%d] getCharactersCharacterIdWalletJournalBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDWalletJournalBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -290,7 +382,8 @@ func NewGetCharactersCharacterIDWalletJournalUnauthorized() *GetCharactersCharac
 	return &GetCharactersCharacterIDWalletJournalUnauthorized{}
 }
 
-/* GetCharactersCharacterIDWalletJournalUnauthorized describes a response with status code 401, with default header values.
+/*
+GetCharactersCharacterIDWalletJournalUnauthorized describes a response with status code 401, with default header values.
 
 Unauthorized
 */
@@ -298,9 +391,39 @@ type GetCharactersCharacterIDWalletJournalUnauthorized struct {
 	Payload *models.Unauthorized
 }
 
+// IsSuccess returns true when this get characters character Id wallet journal unauthorized response has a 2xx status code
+func (o *GetCharactersCharacterIDWalletJournalUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id wallet journal unauthorized response has a 3xx status code
+func (o *GetCharactersCharacterIDWalletJournalUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id wallet journal unauthorized response has a 4xx status code
+func (o *GetCharactersCharacterIDWalletJournalUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id wallet journal unauthorized response has a 5xx status code
+func (o *GetCharactersCharacterIDWalletJournalUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id wallet journal unauthorized response a status code equal to that given
+func (o *GetCharactersCharacterIDWalletJournalUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *GetCharactersCharacterIDWalletJournalUnauthorized) Error() string {
 	return fmt.Sprintf("[GET /v6/characters/{character_id}/wallet/journal/][%d] getCharactersCharacterIdWalletJournalUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDWalletJournalUnauthorized) String() string {
+	return fmt.Sprintf("[GET /v6/characters/{character_id}/wallet/journal/][%d] getCharactersCharacterIdWalletJournalUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDWalletJournalUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
 }
@@ -322,7 +445,8 @@ func NewGetCharactersCharacterIDWalletJournalForbidden() *GetCharactersCharacter
 	return &GetCharactersCharacterIDWalletJournalForbidden{}
 }
 
-/* GetCharactersCharacterIDWalletJournalForbidden describes a response with status code 403, with default header values.
+/*
+GetCharactersCharacterIDWalletJournalForbidden describes a response with status code 403, with default header values.
 
 Forbidden
 */
@@ -330,9 +454,39 @@ type GetCharactersCharacterIDWalletJournalForbidden struct {
 	Payload *models.Forbidden
 }
 
+// IsSuccess returns true when this get characters character Id wallet journal forbidden response has a 2xx status code
+func (o *GetCharactersCharacterIDWalletJournalForbidden) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id wallet journal forbidden response has a 3xx status code
+func (o *GetCharactersCharacterIDWalletJournalForbidden) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id wallet journal forbidden response has a 4xx status code
+func (o *GetCharactersCharacterIDWalletJournalForbidden) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id wallet journal forbidden response has a 5xx status code
+func (o *GetCharactersCharacterIDWalletJournalForbidden) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id wallet journal forbidden response a status code equal to that given
+func (o *GetCharactersCharacterIDWalletJournalForbidden) IsCode(code int) bool {
+	return code == 403
+}
+
 func (o *GetCharactersCharacterIDWalletJournalForbidden) Error() string {
 	return fmt.Sprintf("[GET /v6/characters/{character_id}/wallet/journal/][%d] getCharactersCharacterIdWalletJournalForbidden  %+v", 403, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDWalletJournalForbidden) String() string {
+	return fmt.Sprintf("[GET /v6/characters/{character_id}/wallet/journal/][%d] getCharactersCharacterIdWalletJournalForbidden  %+v", 403, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDWalletJournalForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
 }
@@ -354,7 +508,8 @@ func NewGetCharactersCharacterIDWalletJournalEnhanceYourCalm() *GetCharactersCha
 	return &GetCharactersCharacterIDWalletJournalEnhanceYourCalm{}
 }
 
-/* GetCharactersCharacterIDWalletJournalEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetCharactersCharacterIDWalletJournalEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -362,9 +517,39 @@ type GetCharactersCharacterIDWalletJournalEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get characters character Id wallet journal enhance your calm response has a 2xx status code
+func (o *GetCharactersCharacterIDWalletJournalEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id wallet journal enhance your calm response has a 3xx status code
+func (o *GetCharactersCharacterIDWalletJournalEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id wallet journal enhance your calm response has a 4xx status code
+func (o *GetCharactersCharacterIDWalletJournalEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id wallet journal enhance your calm response has a 5xx status code
+func (o *GetCharactersCharacterIDWalletJournalEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id wallet journal enhance your calm response a status code equal to that given
+func (o *GetCharactersCharacterIDWalletJournalEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetCharactersCharacterIDWalletJournalEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v6/characters/{character_id}/wallet/journal/][%d] getCharactersCharacterIdWalletJournalEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDWalletJournalEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v6/characters/{character_id}/wallet/journal/][%d] getCharactersCharacterIdWalletJournalEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDWalletJournalEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -386,7 +571,8 @@ func NewGetCharactersCharacterIDWalletJournalInternalServerError() *GetCharacter
 	return &GetCharactersCharacterIDWalletJournalInternalServerError{}
 }
 
-/* GetCharactersCharacterIDWalletJournalInternalServerError describes a response with status code 500, with default header values.
+/*
+GetCharactersCharacterIDWalletJournalInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -394,9 +580,39 @@ type GetCharactersCharacterIDWalletJournalInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get characters character Id wallet journal internal server error response has a 2xx status code
+func (o *GetCharactersCharacterIDWalletJournalInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id wallet journal internal server error response has a 3xx status code
+func (o *GetCharactersCharacterIDWalletJournalInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id wallet journal internal server error response has a 4xx status code
+func (o *GetCharactersCharacterIDWalletJournalInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id wallet journal internal server error response has a 5xx status code
+func (o *GetCharactersCharacterIDWalletJournalInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id wallet journal internal server error response a status code equal to that given
+func (o *GetCharactersCharacterIDWalletJournalInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetCharactersCharacterIDWalletJournalInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v6/characters/{character_id}/wallet/journal/][%d] getCharactersCharacterIdWalletJournalInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDWalletJournalInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v6/characters/{character_id}/wallet/journal/][%d] getCharactersCharacterIdWalletJournalInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDWalletJournalInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -418,7 +634,8 @@ func NewGetCharactersCharacterIDWalletJournalServiceUnavailable() *GetCharacters
 	return &GetCharactersCharacterIDWalletJournalServiceUnavailable{}
 }
 
-/* GetCharactersCharacterIDWalletJournalServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetCharactersCharacterIDWalletJournalServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -426,9 +643,39 @@ type GetCharactersCharacterIDWalletJournalServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get characters character Id wallet journal service unavailable response has a 2xx status code
+func (o *GetCharactersCharacterIDWalletJournalServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id wallet journal service unavailable response has a 3xx status code
+func (o *GetCharactersCharacterIDWalletJournalServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id wallet journal service unavailable response has a 4xx status code
+func (o *GetCharactersCharacterIDWalletJournalServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id wallet journal service unavailable response has a 5xx status code
+func (o *GetCharactersCharacterIDWalletJournalServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id wallet journal service unavailable response a status code equal to that given
+func (o *GetCharactersCharacterIDWalletJournalServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetCharactersCharacterIDWalletJournalServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v6/characters/{character_id}/wallet/journal/][%d] getCharactersCharacterIdWalletJournalServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDWalletJournalServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v6/characters/{character_id}/wallet/journal/][%d] getCharactersCharacterIdWalletJournalServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDWalletJournalServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -450,7 +697,8 @@ func NewGetCharactersCharacterIDWalletJournalGatewayTimeout() *GetCharactersChar
 	return &GetCharactersCharacterIDWalletJournalGatewayTimeout{}
 }
 
-/* GetCharactersCharacterIDWalletJournalGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetCharactersCharacterIDWalletJournalGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -458,9 +706,39 @@ type GetCharactersCharacterIDWalletJournalGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get characters character Id wallet journal gateway timeout response has a 2xx status code
+func (o *GetCharactersCharacterIDWalletJournalGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id wallet journal gateway timeout response has a 3xx status code
+func (o *GetCharactersCharacterIDWalletJournalGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id wallet journal gateway timeout response has a 4xx status code
+func (o *GetCharactersCharacterIDWalletJournalGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id wallet journal gateway timeout response has a 5xx status code
+func (o *GetCharactersCharacterIDWalletJournalGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id wallet journal gateway timeout response a status code equal to that given
+func (o *GetCharactersCharacterIDWalletJournalGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetCharactersCharacterIDWalletJournalGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v6/characters/{character_id}/wallet/journal/][%d] getCharactersCharacterIdWalletJournalGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDWalletJournalGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v6/characters/{character_id}/wallet/journal/][%d] getCharactersCharacterIdWalletJournalGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDWalletJournalGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -477,7 +755,8 @@ func (o *GetCharactersCharacterIDWalletJournalGatewayTimeout) readResponse(respo
 	return nil
 }
 
-/*GetCharactersCharacterIDWalletJournalOKBodyItems0 get_characters_character_id_wallet_journal_200_ok
+/*
+GetCharactersCharacterIDWalletJournalOKBodyItems0 get_characters_character_id_wallet_journal_200_ok
 //
 // 200 ok object
 swagger:model GetCharactersCharacterIDWalletJournalOKBodyItems0

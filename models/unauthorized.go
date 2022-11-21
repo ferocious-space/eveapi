@@ -16,7 +16,7 @@ import (
 
 // Unauthorized Unauthorized
 //
-// Unauthorized model
+// # Unauthorized model
 //
 // swagger:model unauthorized
 type Unauthorized struct {

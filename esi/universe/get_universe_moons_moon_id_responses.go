@@ -85,7 +85,8 @@ func NewGetUniverseMoonsMoonIDOK() *GetUniverseMoonsMoonIDOK {
 	return &GetUniverseMoonsMoonIDOK{}
 }
 
-/* GetUniverseMoonsMoonIDOK describes a response with status code 200, with default header values.
+/*
+GetUniverseMoonsMoonIDOK describes a response with status code 200, with default header values.
 
 Information about a moon
 */
@@ -110,9 +111,39 @@ type GetUniverseMoonsMoonIDOK struct {
 	Payload *GetUniverseMoonsMoonIDOKBody
 }
 
+// IsSuccess returns true when this get universe moons moon Id o k response has a 2xx status code
+func (o *GetUniverseMoonsMoonIDOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get universe moons moon Id o k response has a 3xx status code
+func (o *GetUniverseMoonsMoonIDOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe moons moon Id o k response has a 4xx status code
+func (o *GetUniverseMoonsMoonIDOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe moons moon Id o k response has a 5xx status code
+func (o *GetUniverseMoonsMoonIDOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe moons moon Id o k response a status code equal to that given
+func (o *GetUniverseMoonsMoonIDOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetUniverseMoonsMoonIDOK) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/moons/{moon_id}/][%d] getUniverseMoonsMoonIdOK  %+v", 200, o.Payload)
 }
+
+func (o *GetUniverseMoonsMoonIDOK) String() string {
+	return fmt.Sprintf("[GET /v1/universe/moons/{moon_id}/][%d] getUniverseMoonsMoonIdOK  %+v", 200, o.Payload)
+}
+
 func (o *GetUniverseMoonsMoonIDOK) GetPayload() *GetUniverseMoonsMoonIDOKBody {
 	return o.Payload
 }
@@ -162,7 +193,8 @@ func NewGetUniverseMoonsMoonIDNotModified() *GetUniverseMoonsMoonIDNotModified {
 	return &GetUniverseMoonsMoonIDNotModified{}
 }
 
-/* GetUniverseMoonsMoonIDNotModified describes a response with status code 304, with default header values.
+/*
+GetUniverseMoonsMoonIDNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -185,7 +217,36 @@ type GetUniverseMoonsMoonIDNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get universe moons moon Id not modified response has a 2xx status code
+func (o *GetUniverseMoonsMoonIDNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe moons moon Id not modified response has a 3xx status code
+func (o *GetUniverseMoonsMoonIDNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get universe moons moon Id not modified response has a 4xx status code
+func (o *GetUniverseMoonsMoonIDNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe moons moon Id not modified response has a 5xx status code
+func (o *GetUniverseMoonsMoonIDNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe moons moon Id not modified response a status code equal to that given
+func (o *GetUniverseMoonsMoonIDNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetUniverseMoonsMoonIDNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/universe/moons/{moon_id}/][%d] getUniverseMoonsMoonIdNotModified ", 304)
+}
+
+func (o *GetUniverseMoonsMoonIDNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/universe/moons/{moon_id}/][%d] getUniverseMoonsMoonIdNotModified ", 304)
 }
 
@@ -227,7 +288,8 @@ func NewGetUniverseMoonsMoonIDBadRequest() *GetUniverseMoonsMoonIDBadRequest {
 	return &GetUniverseMoonsMoonIDBadRequest{}
 }
 
-/* GetUniverseMoonsMoonIDBadRequest describes a response with status code 400, with default header values.
+/*
+GetUniverseMoonsMoonIDBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -235,9 +297,39 @@ type GetUniverseMoonsMoonIDBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get universe moons moon Id bad request response has a 2xx status code
+func (o *GetUniverseMoonsMoonIDBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe moons moon Id bad request response has a 3xx status code
+func (o *GetUniverseMoonsMoonIDBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe moons moon Id bad request response has a 4xx status code
+func (o *GetUniverseMoonsMoonIDBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe moons moon Id bad request response has a 5xx status code
+func (o *GetUniverseMoonsMoonIDBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe moons moon Id bad request response a status code equal to that given
+func (o *GetUniverseMoonsMoonIDBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetUniverseMoonsMoonIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/moons/{moon_id}/][%d] getUniverseMoonsMoonIdBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetUniverseMoonsMoonIDBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/universe/moons/{moon_id}/][%d] getUniverseMoonsMoonIdBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetUniverseMoonsMoonIDBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -259,7 +351,8 @@ func NewGetUniverseMoonsMoonIDNotFound() *GetUniverseMoonsMoonIDNotFound {
 	return &GetUniverseMoonsMoonIDNotFound{}
 }
 
-/* GetUniverseMoonsMoonIDNotFound describes a response with status code 404, with default header values.
+/*
+GetUniverseMoonsMoonIDNotFound describes a response with status code 404, with default header values.
 
 Moon not found
 */
@@ -267,9 +360,39 @@ type GetUniverseMoonsMoonIDNotFound struct {
 	Payload *GetUniverseMoonsMoonIDNotFoundBody
 }
 
+// IsSuccess returns true when this get universe moons moon Id not found response has a 2xx status code
+func (o *GetUniverseMoonsMoonIDNotFound) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe moons moon Id not found response has a 3xx status code
+func (o *GetUniverseMoonsMoonIDNotFound) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe moons moon Id not found response has a 4xx status code
+func (o *GetUniverseMoonsMoonIDNotFound) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe moons moon Id not found response has a 5xx status code
+func (o *GetUniverseMoonsMoonIDNotFound) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe moons moon Id not found response a status code equal to that given
+func (o *GetUniverseMoonsMoonIDNotFound) IsCode(code int) bool {
+	return code == 404
+}
+
 func (o *GetUniverseMoonsMoonIDNotFound) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/moons/{moon_id}/][%d] getUniverseMoonsMoonIdNotFound  %+v", 404, o.Payload)
 }
+
+func (o *GetUniverseMoonsMoonIDNotFound) String() string {
+	return fmt.Sprintf("[GET /v1/universe/moons/{moon_id}/][%d] getUniverseMoonsMoonIdNotFound  %+v", 404, o.Payload)
+}
+
 func (o *GetUniverseMoonsMoonIDNotFound) GetPayload() *GetUniverseMoonsMoonIDNotFoundBody {
 	return o.Payload
 }
@@ -291,7 +414,8 @@ func NewGetUniverseMoonsMoonIDEnhanceYourCalm() *GetUniverseMoonsMoonIDEnhanceYo
 	return &GetUniverseMoonsMoonIDEnhanceYourCalm{}
 }
 
-/* GetUniverseMoonsMoonIDEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetUniverseMoonsMoonIDEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -299,9 +423,39 @@ type GetUniverseMoonsMoonIDEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get universe moons moon Id enhance your calm response has a 2xx status code
+func (o *GetUniverseMoonsMoonIDEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe moons moon Id enhance your calm response has a 3xx status code
+func (o *GetUniverseMoonsMoonIDEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe moons moon Id enhance your calm response has a 4xx status code
+func (o *GetUniverseMoonsMoonIDEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe moons moon Id enhance your calm response has a 5xx status code
+func (o *GetUniverseMoonsMoonIDEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe moons moon Id enhance your calm response a status code equal to that given
+func (o *GetUniverseMoonsMoonIDEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetUniverseMoonsMoonIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/moons/{moon_id}/][%d] getUniverseMoonsMoonIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetUniverseMoonsMoonIDEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/universe/moons/{moon_id}/][%d] getUniverseMoonsMoonIdEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetUniverseMoonsMoonIDEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -323,7 +477,8 @@ func NewGetUniverseMoonsMoonIDInternalServerError() *GetUniverseMoonsMoonIDInter
 	return &GetUniverseMoonsMoonIDInternalServerError{}
 }
 
-/* GetUniverseMoonsMoonIDInternalServerError describes a response with status code 500, with default header values.
+/*
+GetUniverseMoonsMoonIDInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -331,9 +486,39 @@ type GetUniverseMoonsMoonIDInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get universe moons moon Id internal server error response has a 2xx status code
+func (o *GetUniverseMoonsMoonIDInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe moons moon Id internal server error response has a 3xx status code
+func (o *GetUniverseMoonsMoonIDInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe moons moon Id internal server error response has a 4xx status code
+func (o *GetUniverseMoonsMoonIDInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe moons moon Id internal server error response has a 5xx status code
+func (o *GetUniverseMoonsMoonIDInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe moons moon Id internal server error response a status code equal to that given
+func (o *GetUniverseMoonsMoonIDInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetUniverseMoonsMoonIDInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/moons/{moon_id}/][%d] getUniverseMoonsMoonIdInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetUniverseMoonsMoonIDInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/universe/moons/{moon_id}/][%d] getUniverseMoonsMoonIdInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetUniverseMoonsMoonIDInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -355,7 +540,8 @@ func NewGetUniverseMoonsMoonIDServiceUnavailable() *GetUniverseMoonsMoonIDServic
 	return &GetUniverseMoonsMoonIDServiceUnavailable{}
 }
 
-/* GetUniverseMoonsMoonIDServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetUniverseMoonsMoonIDServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -363,9 +549,39 @@ type GetUniverseMoonsMoonIDServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get universe moons moon Id service unavailable response has a 2xx status code
+func (o *GetUniverseMoonsMoonIDServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe moons moon Id service unavailable response has a 3xx status code
+func (o *GetUniverseMoonsMoonIDServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe moons moon Id service unavailable response has a 4xx status code
+func (o *GetUniverseMoonsMoonIDServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe moons moon Id service unavailable response has a 5xx status code
+func (o *GetUniverseMoonsMoonIDServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe moons moon Id service unavailable response a status code equal to that given
+func (o *GetUniverseMoonsMoonIDServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetUniverseMoonsMoonIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/moons/{moon_id}/][%d] getUniverseMoonsMoonIdServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetUniverseMoonsMoonIDServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/universe/moons/{moon_id}/][%d] getUniverseMoonsMoonIdServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetUniverseMoonsMoonIDServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -387,7 +603,8 @@ func NewGetUniverseMoonsMoonIDGatewayTimeout() *GetUniverseMoonsMoonIDGatewayTim
 	return &GetUniverseMoonsMoonIDGatewayTimeout{}
 }
 
-/* GetUniverseMoonsMoonIDGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetUniverseMoonsMoonIDGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -395,9 +612,39 @@ type GetUniverseMoonsMoonIDGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get universe moons moon Id gateway timeout response has a 2xx status code
+func (o *GetUniverseMoonsMoonIDGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe moons moon Id gateway timeout response has a 3xx status code
+func (o *GetUniverseMoonsMoonIDGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe moons moon Id gateway timeout response has a 4xx status code
+func (o *GetUniverseMoonsMoonIDGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe moons moon Id gateway timeout response has a 5xx status code
+func (o *GetUniverseMoonsMoonIDGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe moons moon Id gateway timeout response a status code equal to that given
+func (o *GetUniverseMoonsMoonIDGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetUniverseMoonsMoonIDGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/moons/{moon_id}/][%d] getUniverseMoonsMoonIdGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetUniverseMoonsMoonIDGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/universe/moons/{moon_id}/][%d] getUniverseMoonsMoonIdGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetUniverseMoonsMoonIDGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -414,7 +661,8 @@ func (o *GetUniverseMoonsMoonIDGatewayTimeout) readResponse(response runtime.Cli
 	return nil
 }
 
-/*GetUniverseMoonsMoonIDNotFoundBody get_universe_moons_moon_id_not_found
+/*
+GetUniverseMoonsMoonIDNotFoundBody get_universe_moons_moon_id_not_found
 //
 // Not found
 swagger:model GetUniverseMoonsMoonIDNotFoundBody
@@ -455,7 +703,8 @@ func (o *GetUniverseMoonsMoonIDNotFoundBody) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*GetUniverseMoonsMoonIDOKBody get_universe_moons_moon_id_ok
+/*
+GetUniverseMoonsMoonIDOKBody get_universe_moons_moon_id_ok
 //
 // 200 ok object
 swagger:model GetUniverseMoonsMoonIDOKBody
@@ -606,7 +855,8 @@ func (o *GetUniverseMoonsMoonIDOKBody) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*GetUniverseMoonsMoonIDOKBodyPosition get_universe_moons_moon_id_position
+/*
+GetUniverseMoonsMoonIDOKBodyPosition get_universe_moons_moon_id_position
 //
 // position object
 swagger:model GetUniverseMoonsMoonIDOKBodyPosition

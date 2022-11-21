@@ -53,10 +53,12 @@ func NewPostFleetsFleetIDWingsWingIDSquadsParamsWithHTTPClient(client *http.Clie
 	}
 }
 
-/* PostFleetsFleetIDWingsWingIDSquadsParams contains all the parameters to send to the API endpoint
-   for the post fleets fleet id wings wing id squads operation.
+/*
+PostFleetsFleetIDWingsWingIDSquadsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the post fleets fleet id wings wing id squads operation.
+
+	Typically these are written to a http.Request.
 */
 type PostFleetsFleetIDWingsWingIDSquadsParams struct {
 

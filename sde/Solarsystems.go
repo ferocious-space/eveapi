@@ -24,9 +24,9 @@ type Solarsystem struct {
 	SunTypeID                  *int32                         `bson:"sunTypeID,omitempty" db:"sunTypeID,omitempty" json:"sunTypeID,omitempty" yaml:"sunTypeID,omitempty"`
 	SecurityClass              *string                        `bson:"securityClass,omitempty" db:"securityClass,omitempty" json:"securityClass,omitempty" yaml:"securityClass,omitempty"`
 	WormholeClassID            *int32                         `bson:"wormholeClassID,omitempty" db:"wormholeClassID,omitempty" json:"wormholeClassID,omitempty" yaml:"wormholeClassID,omitempty"`
+	VisualEffect               *string                        `bson:"visualEffect,omitempty" db:"visualEffect,omitempty" json:"visualEffect,omitempty" yaml:"visualEffect,omitempty"`
 	DescriptionID              *int32                         `bson:"descriptionID,omitempty" db:"descriptionID,omitempty" json:"descriptionID,omitempty" yaml:"descriptionID,omitempty"`
 	DisallowedAnchorGroups     []int32                        `bson:"disallowedAnchorGroups,omitempty" db:"disallowedAnchorGroups,omitempty" json:"disallowedAnchorGroups,omitempty" yaml:"disallowedAnchorGroups,omitempty"`
-	VisualEffect               *string                        `bson:"visualEffect,omitempty" db:"visualEffect,omitempty" json:"visualEffect,omitempty" yaml:"visualEffect,omitempty"`
 	FactionID                  *int32                         `bson:"factionID,omitempty" db:"factionID,omitempty" json:"factionID,omitempty" yaml:"factionID,omitempty"`
 	SecondarySun               *SolarsystemSecondarySun       `bson:"secondarySun,omitempty" db:"secondarySun,omitempty" json:"secondarySun,omitempty" yaml:"secondarySun,omitempty"`
 }

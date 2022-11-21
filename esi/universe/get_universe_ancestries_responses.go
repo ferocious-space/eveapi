@@ -79,7 +79,8 @@ func NewGetUniverseAncestriesOK() *GetUniverseAncestriesOK {
 	return &GetUniverseAncestriesOK{}
 }
 
-/* GetUniverseAncestriesOK describes a response with status code 200, with default header values.
+/*
+GetUniverseAncestriesOK describes a response with status code 200, with default header values.
 
 A list of ancestries
 */
@@ -108,9 +109,39 @@ type GetUniverseAncestriesOK struct {
 	Payload []*GetUniverseAncestriesOKBodyItems0
 }
 
+// IsSuccess returns true when this get universe ancestries o k response has a 2xx status code
+func (o *GetUniverseAncestriesOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get universe ancestries o k response has a 3xx status code
+func (o *GetUniverseAncestriesOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe ancestries o k response has a 4xx status code
+func (o *GetUniverseAncestriesOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe ancestries o k response has a 5xx status code
+func (o *GetUniverseAncestriesOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe ancestries o k response a status code equal to that given
+func (o *GetUniverseAncestriesOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetUniverseAncestriesOK) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/ancestries/][%d] getUniverseAncestriesOK  %+v", 200, o.Payload)
 }
+
+func (o *GetUniverseAncestriesOK) String() string {
+	return fmt.Sprintf("[GET /v1/universe/ancestries/][%d] getUniverseAncestriesOK  %+v", 200, o.Payload)
+}
+
 func (o *GetUniverseAncestriesOK) GetPayload() []*GetUniverseAncestriesOKBodyItems0 {
 	return o.Payload
 }
@@ -165,7 +196,8 @@ func NewGetUniverseAncestriesNotModified() *GetUniverseAncestriesNotModified {
 	return &GetUniverseAncestriesNotModified{}
 }
 
-/* GetUniverseAncestriesNotModified describes a response with status code 304, with default header values.
+/*
+GetUniverseAncestriesNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -188,7 +220,36 @@ type GetUniverseAncestriesNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get universe ancestries not modified response has a 2xx status code
+func (o *GetUniverseAncestriesNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe ancestries not modified response has a 3xx status code
+func (o *GetUniverseAncestriesNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get universe ancestries not modified response has a 4xx status code
+func (o *GetUniverseAncestriesNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe ancestries not modified response has a 5xx status code
+func (o *GetUniverseAncestriesNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe ancestries not modified response a status code equal to that given
+func (o *GetUniverseAncestriesNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetUniverseAncestriesNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/universe/ancestries/][%d] getUniverseAncestriesNotModified ", 304)
+}
+
+func (o *GetUniverseAncestriesNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/universe/ancestries/][%d] getUniverseAncestriesNotModified ", 304)
 }
 
@@ -230,7 +291,8 @@ func NewGetUniverseAncestriesBadRequest() *GetUniverseAncestriesBadRequest {
 	return &GetUniverseAncestriesBadRequest{}
 }
 
-/* GetUniverseAncestriesBadRequest describes a response with status code 400, with default header values.
+/*
+GetUniverseAncestriesBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -238,9 +300,39 @@ type GetUniverseAncestriesBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get universe ancestries bad request response has a 2xx status code
+func (o *GetUniverseAncestriesBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe ancestries bad request response has a 3xx status code
+func (o *GetUniverseAncestriesBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe ancestries bad request response has a 4xx status code
+func (o *GetUniverseAncestriesBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe ancestries bad request response has a 5xx status code
+func (o *GetUniverseAncestriesBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe ancestries bad request response a status code equal to that given
+func (o *GetUniverseAncestriesBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetUniverseAncestriesBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/ancestries/][%d] getUniverseAncestriesBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetUniverseAncestriesBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/universe/ancestries/][%d] getUniverseAncestriesBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetUniverseAncestriesBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -262,7 +354,8 @@ func NewGetUniverseAncestriesEnhanceYourCalm() *GetUniverseAncestriesEnhanceYour
 	return &GetUniverseAncestriesEnhanceYourCalm{}
 }
 
-/* GetUniverseAncestriesEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetUniverseAncestriesEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -270,9 +363,39 @@ type GetUniverseAncestriesEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get universe ancestries enhance your calm response has a 2xx status code
+func (o *GetUniverseAncestriesEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe ancestries enhance your calm response has a 3xx status code
+func (o *GetUniverseAncestriesEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe ancestries enhance your calm response has a 4xx status code
+func (o *GetUniverseAncestriesEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe ancestries enhance your calm response has a 5xx status code
+func (o *GetUniverseAncestriesEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe ancestries enhance your calm response a status code equal to that given
+func (o *GetUniverseAncestriesEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetUniverseAncestriesEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/ancestries/][%d] getUniverseAncestriesEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetUniverseAncestriesEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/universe/ancestries/][%d] getUniverseAncestriesEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetUniverseAncestriesEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -294,7 +417,8 @@ func NewGetUniverseAncestriesInternalServerError() *GetUniverseAncestriesInterna
 	return &GetUniverseAncestriesInternalServerError{}
 }
 
-/* GetUniverseAncestriesInternalServerError describes a response with status code 500, with default header values.
+/*
+GetUniverseAncestriesInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -302,9 +426,39 @@ type GetUniverseAncestriesInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get universe ancestries internal server error response has a 2xx status code
+func (o *GetUniverseAncestriesInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe ancestries internal server error response has a 3xx status code
+func (o *GetUniverseAncestriesInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe ancestries internal server error response has a 4xx status code
+func (o *GetUniverseAncestriesInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe ancestries internal server error response has a 5xx status code
+func (o *GetUniverseAncestriesInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe ancestries internal server error response a status code equal to that given
+func (o *GetUniverseAncestriesInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetUniverseAncestriesInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/ancestries/][%d] getUniverseAncestriesInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetUniverseAncestriesInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/universe/ancestries/][%d] getUniverseAncestriesInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetUniverseAncestriesInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -326,7 +480,8 @@ func NewGetUniverseAncestriesServiceUnavailable() *GetUniverseAncestriesServiceU
 	return &GetUniverseAncestriesServiceUnavailable{}
 }
 
-/* GetUniverseAncestriesServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetUniverseAncestriesServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -334,9 +489,39 @@ type GetUniverseAncestriesServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get universe ancestries service unavailable response has a 2xx status code
+func (o *GetUniverseAncestriesServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe ancestries service unavailable response has a 3xx status code
+func (o *GetUniverseAncestriesServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe ancestries service unavailable response has a 4xx status code
+func (o *GetUniverseAncestriesServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe ancestries service unavailable response has a 5xx status code
+func (o *GetUniverseAncestriesServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe ancestries service unavailable response a status code equal to that given
+func (o *GetUniverseAncestriesServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetUniverseAncestriesServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/ancestries/][%d] getUniverseAncestriesServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetUniverseAncestriesServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/universe/ancestries/][%d] getUniverseAncestriesServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetUniverseAncestriesServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -358,7 +543,8 @@ func NewGetUniverseAncestriesGatewayTimeout() *GetUniverseAncestriesGatewayTimeo
 	return &GetUniverseAncestriesGatewayTimeout{}
 }
 
-/* GetUniverseAncestriesGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetUniverseAncestriesGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -366,9 +552,39 @@ type GetUniverseAncestriesGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get universe ancestries gateway timeout response has a 2xx status code
+func (o *GetUniverseAncestriesGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe ancestries gateway timeout response has a 3xx status code
+func (o *GetUniverseAncestriesGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe ancestries gateway timeout response has a 4xx status code
+func (o *GetUniverseAncestriesGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe ancestries gateway timeout response has a 5xx status code
+func (o *GetUniverseAncestriesGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe ancestries gateway timeout response a status code equal to that given
+func (o *GetUniverseAncestriesGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetUniverseAncestriesGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/ancestries/][%d] getUniverseAncestriesGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetUniverseAncestriesGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/universe/ancestries/][%d] getUniverseAncestriesGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetUniverseAncestriesGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -385,7 +601,8 @@ func (o *GetUniverseAncestriesGatewayTimeout) readResponse(response runtime.Clie
 	return nil
 }
 
-/*GetUniverseAncestriesOKBodyItems0 get_universe_ancestries_200_ok
+/*
+GetUniverseAncestriesOKBodyItems0 get_universe_ancestries_200_ok
 //
 // 200 ok object
 swagger:model GetUniverseAncestriesOKBodyItems0

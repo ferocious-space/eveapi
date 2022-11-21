@@ -42,9 +42,9 @@ type ClientService interface {
 }
 
 /*
-  GetCharactersCharacterIDCalendar lists calendar event summaries
+	GetCharactersCharacterIDCalendar lists calendar event summaries
 
-  Get 50 event summaries from the calendar. If no from_event ID is given, the resource will return the next 50 chronological event summaries from now. If a from_event ID is specified, it will return the next 50 chronological event summaries from after that event
+	Get 50 event summaries from the calendar. If no from_event ID is given, the resource will return the next 50 chronological event summaries from now. If a from_event ID is specified, it will return the next 50 chronological event summaries from after that event
 
 ---
 
@@ -87,9 +87,9 @@ func (a *Client) GetCharactersCharacterIDCalendar(params *GetCharactersCharacter
 }
 
 /*
-  GetCharactersCharacterIDCalendarEventID gets an event
+	GetCharactersCharacterIDCalendarEventID gets an event
 
-  Get all the information for a specific event
+	Get all the information for a specific event
 
 ---
 
@@ -132,9 +132,9 @@ func (a *Client) GetCharactersCharacterIDCalendarEventID(params *GetCharactersCh
 }
 
 /*
-  GetCharactersCharacterIDCalendarEventIDAttendees gets attendees
+	GetCharactersCharacterIDCalendarEventIDAttendees gets attendees
 
-  Get all invited attendees for a given event
+	Get all invited attendees for a given event
 
 ---
 
@@ -177,9 +177,9 @@ func (a *Client) GetCharactersCharacterIDCalendarEventIDAttendees(params *GetCha
 }
 
 /*
-  PutCharactersCharacterIDCalendarEventID responds to an event
+	PutCharactersCharacterIDCalendarEventID responds to an event
 
-  Set your response status to an event
+	Set your response status to an event
 
 ---
 

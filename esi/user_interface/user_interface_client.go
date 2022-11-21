@@ -44,12 +44,11 @@ type ClientService interface {
 }
 
 /*
-  PostUIAutopilotWaypoint sets autopilot waypoint
+	PostUIAutopilotWaypoint sets autopilot waypoint
 
-  Set a solar system as autopilot waypoint
+	Set a solar system as autopilot waypoint
 
 ---
-
 */
 func (a *Client) PostUIAutopilotWaypoint(params *PostUIAutopilotWaypointParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*PostUIAutopilotWaypointNoContent, error) {
 	// TODO: Validate the params before sending
@@ -88,12 +87,11 @@ func (a *Client) PostUIAutopilotWaypoint(params *PostUIAutopilotWaypointParams, 
 }
 
 /*
-  PostUIOpenwindowContract opens contract window
+	PostUIOpenwindowContract opens contract window
 
-  Open the contract window inside the client
+	Open the contract window inside the client
 
 ---
-
 */
 func (a *Client) PostUIOpenwindowContract(params *PostUIOpenwindowContractParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*PostUIOpenwindowContractNoContent, error) {
 	// TODO: Validate the params before sending
@@ -132,12 +130,11 @@ func (a *Client) PostUIOpenwindowContract(params *PostUIOpenwindowContractParams
 }
 
 /*
-  PostUIOpenwindowInformation opens information window
+	PostUIOpenwindowInformation opens information window
 
-  Open the information window for a character, corporation or alliance inside the client
+	Open the information window for a character, corporation or alliance inside the client
 
 ---
-
 */
 func (a *Client) PostUIOpenwindowInformation(params *PostUIOpenwindowInformationParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*PostUIOpenwindowInformationNoContent, error) {
 	// TODO: Validate the params before sending
@@ -176,12 +173,11 @@ func (a *Client) PostUIOpenwindowInformation(params *PostUIOpenwindowInformation
 }
 
 /*
-  PostUIOpenwindowMarketdetails opens market details
+	PostUIOpenwindowMarketdetails opens market details
 
-  Open the market details window for a specific typeID inside the client
+	Open the market details window for a specific typeID inside the client
 
 ---
-
 */
 func (a *Client) PostUIOpenwindowMarketdetails(params *PostUIOpenwindowMarketdetailsParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*PostUIOpenwindowMarketdetailsNoContent, error) {
 	// TODO: Validate the params before sending
@@ -220,12 +216,11 @@ func (a *Client) PostUIOpenwindowMarketdetails(params *PostUIOpenwindowMarketdet
 }
 
 /*
-  PostUIOpenwindowNewmail opens new mail window
+	PostUIOpenwindowNewmail opens new mail window
 
-  Open the New Mail window, according to settings from the request if applicable
+	Open the New Mail window, according to settings from the request if applicable
 
 ---
-
 */
 func (a *Client) PostUIOpenwindowNewmail(params *PostUIOpenwindowNewmailParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*PostUIOpenwindowNewmailNoContent, error) {
 	// TODO: Validate the params before sending

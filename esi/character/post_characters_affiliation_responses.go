@@ -73,7 +73,8 @@ func NewPostCharactersAffiliationOK() *PostCharactersAffiliationOK {
 	return &PostCharactersAffiliationOK{}
 }
 
-/* PostCharactersAffiliationOK describes a response with status code 200, with default header values.
+/*
+PostCharactersAffiliationOK describes a response with status code 200, with default header values.
 
 Character corporation, alliance and faction IDs
 */
@@ -81,9 +82,39 @@ type PostCharactersAffiliationOK struct {
 	Payload []*PostCharactersAffiliationOKBodyItems0
 }
 
+// IsSuccess returns true when this post characters affiliation o k response has a 2xx status code
+func (o *PostCharactersAffiliationOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this post characters affiliation o k response has a 3xx status code
+func (o *PostCharactersAffiliationOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters affiliation o k response has a 4xx status code
+func (o *PostCharactersAffiliationOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post characters affiliation o k response has a 5xx status code
+func (o *PostCharactersAffiliationOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post characters affiliation o k response a status code equal to that given
+func (o *PostCharactersAffiliationOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *PostCharactersAffiliationOK) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/affiliation/][%d] postCharactersAffiliationOK  %+v", 200, o.Payload)
 }
+
+func (o *PostCharactersAffiliationOK) String() string {
+	return fmt.Sprintf("[POST /v2/characters/affiliation/][%d] postCharactersAffiliationOK  %+v", 200, o.Payload)
+}
+
 func (o *PostCharactersAffiliationOK) GetPayload() []*PostCharactersAffiliationOKBodyItems0 {
 	return o.Payload
 }
@@ -103,7 +134,8 @@ func NewPostCharactersAffiliationBadRequest() *PostCharactersAffiliationBadReque
 	return &PostCharactersAffiliationBadRequest{}
 }
 
-/* PostCharactersAffiliationBadRequest describes a response with status code 400, with default header values.
+/*
+PostCharactersAffiliationBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -111,9 +143,39 @@ type PostCharactersAffiliationBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this post characters affiliation bad request response has a 2xx status code
+func (o *PostCharactersAffiliationBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters affiliation bad request response has a 3xx status code
+func (o *PostCharactersAffiliationBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters affiliation bad request response has a 4xx status code
+func (o *PostCharactersAffiliationBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post characters affiliation bad request response has a 5xx status code
+func (o *PostCharactersAffiliationBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post characters affiliation bad request response a status code equal to that given
+func (o *PostCharactersAffiliationBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *PostCharactersAffiliationBadRequest) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/affiliation/][%d] postCharactersAffiliationBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *PostCharactersAffiliationBadRequest) String() string {
+	return fmt.Sprintf("[POST /v2/characters/affiliation/][%d] postCharactersAffiliationBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *PostCharactersAffiliationBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -135,7 +197,8 @@ func NewPostCharactersAffiliationEnhanceYourCalm() *PostCharactersAffiliationEnh
 	return &PostCharactersAffiliationEnhanceYourCalm{}
 }
 
-/* PostCharactersAffiliationEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+PostCharactersAffiliationEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -143,9 +206,39 @@ type PostCharactersAffiliationEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this post characters affiliation enhance your calm response has a 2xx status code
+func (o *PostCharactersAffiliationEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters affiliation enhance your calm response has a 3xx status code
+func (o *PostCharactersAffiliationEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters affiliation enhance your calm response has a 4xx status code
+func (o *PostCharactersAffiliationEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post characters affiliation enhance your calm response has a 5xx status code
+func (o *PostCharactersAffiliationEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post characters affiliation enhance your calm response a status code equal to that given
+func (o *PostCharactersAffiliationEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *PostCharactersAffiliationEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/affiliation/][%d] postCharactersAffiliationEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *PostCharactersAffiliationEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[POST /v2/characters/affiliation/][%d] postCharactersAffiliationEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *PostCharactersAffiliationEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -167,7 +260,8 @@ func NewPostCharactersAffiliationInternalServerError() *PostCharactersAffiliatio
 	return &PostCharactersAffiliationInternalServerError{}
 }
 
-/* PostCharactersAffiliationInternalServerError describes a response with status code 500, with default header values.
+/*
+PostCharactersAffiliationInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -175,9 +269,39 @@ type PostCharactersAffiliationInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this post characters affiliation internal server error response has a 2xx status code
+func (o *PostCharactersAffiliationInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters affiliation internal server error response has a 3xx status code
+func (o *PostCharactersAffiliationInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters affiliation internal server error response has a 4xx status code
+func (o *PostCharactersAffiliationInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post characters affiliation internal server error response has a 5xx status code
+func (o *PostCharactersAffiliationInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post characters affiliation internal server error response a status code equal to that given
+func (o *PostCharactersAffiliationInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *PostCharactersAffiliationInternalServerError) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/affiliation/][%d] postCharactersAffiliationInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *PostCharactersAffiliationInternalServerError) String() string {
+	return fmt.Sprintf("[POST /v2/characters/affiliation/][%d] postCharactersAffiliationInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *PostCharactersAffiliationInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -199,7 +323,8 @@ func NewPostCharactersAffiliationServiceUnavailable() *PostCharactersAffiliation
 	return &PostCharactersAffiliationServiceUnavailable{}
 }
 
-/* PostCharactersAffiliationServiceUnavailable describes a response with status code 503, with default header values.
+/*
+PostCharactersAffiliationServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -207,9 +332,39 @@ type PostCharactersAffiliationServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this post characters affiliation service unavailable response has a 2xx status code
+func (o *PostCharactersAffiliationServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters affiliation service unavailable response has a 3xx status code
+func (o *PostCharactersAffiliationServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters affiliation service unavailable response has a 4xx status code
+func (o *PostCharactersAffiliationServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post characters affiliation service unavailable response has a 5xx status code
+func (o *PostCharactersAffiliationServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post characters affiliation service unavailable response a status code equal to that given
+func (o *PostCharactersAffiliationServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *PostCharactersAffiliationServiceUnavailable) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/affiliation/][%d] postCharactersAffiliationServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *PostCharactersAffiliationServiceUnavailable) String() string {
+	return fmt.Sprintf("[POST /v2/characters/affiliation/][%d] postCharactersAffiliationServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *PostCharactersAffiliationServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -231,7 +386,8 @@ func NewPostCharactersAffiliationGatewayTimeout() *PostCharactersAffiliationGate
 	return &PostCharactersAffiliationGatewayTimeout{}
 }
 
-/* PostCharactersAffiliationGatewayTimeout describes a response with status code 504, with default header values.
+/*
+PostCharactersAffiliationGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -239,9 +395,39 @@ type PostCharactersAffiliationGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this post characters affiliation gateway timeout response has a 2xx status code
+func (o *PostCharactersAffiliationGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters affiliation gateway timeout response has a 3xx status code
+func (o *PostCharactersAffiliationGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters affiliation gateway timeout response has a 4xx status code
+func (o *PostCharactersAffiliationGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post characters affiliation gateway timeout response has a 5xx status code
+func (o *PostCharactersAffiliationGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post characters affiliation gateway timeout response a status code equal to that given
+func (o *PostCharactersAffiliationGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *PostCharactersAffiliationGatewayTimeout) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/affiliation/][%d] postCharactersAffiliationGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *PostCharactersAffiliationGatewayTimeout) String() string {
+	return fmt.Sprintf("[POST /v2/characters/affiliation/][%d] postCharactersAffiliationGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *PostCharactersAffiliationGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -258,7 +444,8 @@ func (o *PostCharactersAffiliationGatewayTimeout) readResponse(response runtime.
 	return nil
 }
 
-/*PostCharactersAffiliationOKBodyItems0 post_characters_affiliation_200_ok
+/*
+PostCharactersAffiliationOKBodyItems0 post_characters_affiliation_200_ok
 //
 // 200 ok object
 swagger:model PostCharactersAffiliationOKBodyItems0

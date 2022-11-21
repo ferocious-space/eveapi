@@ -52,10 +52,12 @@ func NewGetIndustryFacilitiesParamsWithHTTPClient(client *http.Client) *GetIndus
 	}
 }
 
-/* GetIndustryFacilitiesParams contains all the parameters to send to the API endpoint
-   for the get industry facilities operation.
+/*
+GetIndustryFacilitiesParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get industry facilities operation.
+
+	Typically these are written to a http.Request.
 */
 type GetIndustryFacilitiesParams struct {
 

@@ -80,7 +80,8 @@ func NewGetIncursionsOK() *GetIncursionsOK {
 	return &GetIncursionsOK{}
 }
 
-/* GetIncursionsOK describes a response with status code 200, with default header values.
+/*
+GetIncursionsOK describes a response with status code 200, with default header values.
 
 A list of incursions
 */
@@ -105,9 +106,39 @@ type GetIncursionsOK struct {
 	Payload []*GetIncursionsOKBodyItems0
 }
 
+// IsSuccess returns true when this get incursions o k response has a 2xx status code
+func (o *GetIncursionsOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get incursions o k response has a 3xx status code
+func (o *GetIncursionsOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get incursions o k response has a 4xx status code
+func (o *GetIncursionsOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get incursions o k response has a 5xx status code
+func (o *GetIncursionsOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get incursions o k response a status code equal to that given
+func (o *GetIncursionsOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetIncursionsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/incursions/][%d] getIncursionsOK  %+v", 200, o.Payload)
 }
+
+func (o *GetIncursionsOK) String() string {
+	return fmt.Sprintf("[GET /v1/incursions/][%d] getIncursionsOK  %+v", 200, o.Payload)
+}
+
 func (o *GetIncursionsOK) GetPayload() []*GetIncursionsOKBodyItems0 {
 	return o.Payload
 }
@@ -155,7 +186,8 @@ func NewGetIncursionsNotModified() *GetIncursionsNotModified {
 	return &GetIncursionsNotModified{}
 }
 
-/* GetIncursionsNotModified describes a response with status code 304, with default header values.
+/*
+GetIncursionsNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -178,7 +210,36 @@ type GetIncursionsNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get incursions not modified response has a 2xx status code
+func (o *GetIncursionsNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get incursions not modified response has a 3xx status code
+func (o *GetIncursionsNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get incursions not modified response has a 4xx status code
+func (o *GetIncursionsNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get incursions not modified response has a 5xx status code
+func (o *GetIncursionsNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get incursions not modified response a status code equal to that given
+func (o *GetIncursionsNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetIncursionsNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/incursions/][%d] getIncursionsNotModified ", 304)
+}
+
+func (o *GetIncursionsNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/incursions/][%d] getIncursionsNotModified ", 304)
 }
 
@@ -220,7 +281,8 @@ func NewGetIncursionsBadRequest() *GetIncursionsBadRequest {
 	return &GetIncursionsBadRequest{}
 }
 
-/* GetIncursionsBadRequest describes a response with status code 400, with default header values.
+/*
+GetIncursionsBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -228,9 +290,39 @@ type GetIncursionsBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get incursions bad request response has a 2xx status code
+func (o *GetIncursionsBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get incursions bad request response has a 3xx status code
+func (o *GetIncursionsBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get incursions bad request response has a 4xx status code
+func (o *GetIncursionsBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get incursions bad request response has a 5xx status code
+func (o *GetIncursionsBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get incursions bad request response a status code equal to that given
+func (o *GetIncursionsBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetIncursionsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/incursions/][%d] getIncursionsBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetIncursionsBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/incursions/][%d] getIncursionsBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetIncursionsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -252,7 +344,8 @@ func NewGetIncursionsEnhanceYourCalm() *GetIncursionsEnhanceYourCalm {
 	return &GetIncursionsEnhanceYourCalm{}
 }
 
-/* GetIncursionsEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetIncursionsEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -260,9 +353,39 @@ type GetIncursionsEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get incursions enhance your calm response has a 2xx status code
+func (o *GetIncursionsEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get incursions enhance your calm response has a 3xx status code
+func (o *GetIncursionsEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get incursions enhance your calm response has a 4xx status code
+func (o *GetIncursionsEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get incursions enhance your calm response has a 5xx status code
+func (o *GetIncursionsEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get incursions enhance your calm response a status code equal to that given
+func (o *GetIncursionsEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetIncursionsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/incursions/][%d] getIncursionsEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetIncursionsEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/incursions/][%d] getIncursionsEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetIncursionsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -284,7 +407,8 @@ func NewGetIncursionsInternalServerError() *GetIncursionsInternalServerError {
 	return &GetIncursionsInternalServerError{}
 }
 
-/* GetIncursionsInternalServerError describes a response with status code 500, with default header values.
+/*
+GetIncursionsInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -292,9 +416,39 @@ type GetIncursionsInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get incursions internal server error response has a 2xx status code
+func (o *GetIncursionsInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get incursions internal server error response has a 3xx status code
+func (o *GetIncursionsInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get incursions internal server error response has a 4xx status code
+func (o *GetIncursionsInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get incursions internal server error response has a 5xx status code
+func (o *GetIncursionsInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get incursions internal server error response a status code equal to that given
+func (o *GetIncursionsInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetIncursionsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/incursions/][%d] getIncursionsInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetIncursionsInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/incursions/][%d] getIncursionsInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetIncursionsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -316,7 +470,8 @@ func NewGetIncursionsServiceUnavailable() *GetIncursionsServiceUnavailable {
 	return &GetIncursionsServiceUnavailable{}
 }
 
-/* GetIncursionsServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetIncursionsServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -324,9 +479,39 @@ type GetIncursionsServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get incursions service unavailable response has a 2xx status code
+func (o *GetIncursionsServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get incursions service unavailable response has a 3xx status code
+func (o *GetIncursionsServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get incursions service unavailable response has a 4xx status code
+func (o *GetIncursionsServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get incursions service unavailable response has a 5xx status code
+func (o *GetIncursionsServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get incursions service unavailable response a status code equal to that given
+func (o *GetIncursionsServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetIncursionsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/incursions/][%d] getIncursionsServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetIncursionsServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/incursions/][%d] getIncursionsServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetIncursionsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -348,7 +533,8 @@ func NewGetIncursionsGatewayTimeout() *GetIncursionsGatewayTimeout {
 	return &GetIncursionsGatewayTimeout{}
 }
 
-/* GetIncursionsGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetIncursionsGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -356,9 +542,39 @@ type GetIncursionsGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get incursions gateway timeout response has a 2xx status code
+func (o *GetIncursionsGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get incursions gateway timeout response has a 3xx status code
+func (o *GetIncursionsGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get incursions gateway timeout response has a 4xx status code
+func (o *GetIncursionsGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get incursions gateway timeout response has a 5xx status code
+func (o *GetIncursionsGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get incursions gateway timeout response a status code equal to that given
+func (o *GetIncursionsGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetIncursionsGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/incursions/][%d] getIncursionsGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetIncursionsGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/incursions/][%d] getIncursionsGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetIncursionsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -375,7 +591,8 @@ func (o *GetIncursionsGatewayTimeout) readResponse(response runtime.ClientRespon
 	return nil
 }
 
-/*GetIncursionsOKBodyItems0 get_incursions_200_ok
+/*
+GetIncursionsOKBodyItems0 get_incursions_200_ok
 //
 // 200 ok object
 swagger:model GetIncursionsOKBodyItems0

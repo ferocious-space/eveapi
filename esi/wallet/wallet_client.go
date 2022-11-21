@@ -46,13 +46,13 @@ type ClientService interface {
 }
 
 /*
-  GetCharactersCharacterIDWallet gets a character s wallet balance
+	GetCharactersCharacterIDWallet gets a character s wallet balance
 
-  Returns a character's wallet balance
+	Returns a character's wallet balance
 
 ---
 
-This route is cached for up to 120 seconds
+# This route is cached for up to 120 seconds
 
 ---
 [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/characters/{character_id}/wallet/)
@@ -94,9 +94,9 @@ func (a *Client) GetCharactersCharacterIDWallet(params *GetCharactersCharacterID
 }
 
 /*
-  GetCharactersCharacterIDWalletJournal gets character wallet journal
+	GetCharactersCharacterIDWalletJournal gets character wallet journal
 
-  Retrieve the given character's wallet journal going 30 days back
+	Retrieve the given character's wallet journal going 30 days back
 
 ---
 
@@ -139,9 +139,9 @@ func (a *Client) GetCharactersCharacterIDWalletJournal(params *GetCharactersChar
 }
 
 /*
-  GetCharactersCharacterIDWalletTransactions gets wallet transactions
+	GetCharactersCharacterIDWalletTransactions gets wallet transactions
 
-  Get wallet transactions of a character
+	Get wallet transactions of a character
 
 ---
 
@@ -184,13 +184,13 @@ func (a *Client) GetCharactersCharacterIDWalletTransactions(params *GetCharacter
 }
 
 /*
-  GetCorporationsCorporationIDWallets returns a corporation s wallet balance
+	GetCorporationsCorporationIDWallets returns a corporation s wallet balance
 
-  Get a corporation's wallets
+	Get a corporation's wallets
 
 ---
 
-This route is cached for up to 300 seconds
+# This route is cached for up to 300 seconds
 
 ---
 Requires one of the following EVE corporation role(s): Accountant, Junior_Accountant
@@ -232,13 +232,13 @@ func (a *Client) GetCorporationsCorporationIDWallets(params *GetCorporationsCorp
 }
 
 /*
-  GetCorporationsCorporationIDWalletsDivisionJournal gets corporation wallet journal
+	GetCorporationsCorporationIDWalletsDivisionJournal gets corporation wallet journal
 
-  Retrieve the given corporation's wallet journal for the given division going 30 days back
+	Retrieve the given corporation's wallet journal for the given division going 30 days back
 
 ---
 
-This route is cached for up to 3600 seconds
+# This route is cached for up to 3600 seconds
 
 ---
 Requires one of the following EVE corporation role(s): Accountant, Junior_Accountant
@@ -280,13 +280,13 @@ func (a *Client) GetCorporationsCorporationIDWalletsDivisionJournal(params *GetC
 }
 
 /*
-  GetCorporationsCorporationIDWalletsDivisionTransactions gets corporation wallet transactions
+	GetCorporationsCorporationIDWalletsDivisionTransactions gets corporation wallet transactions
 
-  Get wallet transactions of a corporation
+	Get wallet transactions of a corporation
 
 ---
 
-This route is cached for up to 3600 seconds
+# This route is cached for up to 3600 seconds
 
 ---
 Requires one of the following EVE corporation role(s): Accountant, Junior_Accountant

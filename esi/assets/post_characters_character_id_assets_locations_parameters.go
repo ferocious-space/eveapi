@@ -53,10 +53,12 @@ func NewPostCharactersCharacterIDAssetsLocationsParamsWithHTTPClient(client *htt
 	}
 }
 
-/* PostCharactersCharacterIDAssetsLocationsParams contains all the parameters to send to the API endpoint
-   for the post characters character id assets locations operation.
+/*
+PostCharactersCharacterIDAssetsLocationsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the post characters character id assets locations operation.
+
+	Typically these are written to a http.Request.
 */
 type PostCharactersCharacterIDAssetsLocationsParams struct {
 

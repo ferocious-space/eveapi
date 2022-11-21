@@ -53,10 +53,12 @@ func NewPostCorporationsCorporationIDAssetsNamesParamsWithHTTPClient(client *htt
 	}
 }
 
-/* PostCorporationsCorporationIDAssetsNamesParams contains all the parameters to send to the API endpoint
-   for the post corporations corporation id assets names operation.
+/*
+PostCorporationsCorporationIDAssetsNamesParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the post corporations corporation id assets names operation.
+
+	Typically these are written to a http.Request.
 */
 type PostCorporationsCorporationIDAssetsNamesParams struct {
 

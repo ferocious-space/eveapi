@@ -52,12 +52,11 @@ type ClientService interface {
 }
 
 /*
-  DeleteCharactersCharacterIDMailLabelsLabelID deletes a mail label
+	DeleteCharactersCharacterIDMailLabelsLabelID deletes a mail label
 
-  Delete a mail label
+	Delete a mail label
 
 ---
-
 */
 func (a *Client) DeleteCharactersCharacterIDMailLabelsLabelID(params *DeleteCharactersCharacterIDMailLabelsLabelIDParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*DeleteCharactersCharacterIDMailLabelsLabelIDNoContent, error) {
 	// TODO: Validate the params before sending
@@ -96,12 +95,11 @@ func (a *Client) DeleteCharactersCharacterIDMailLabelsLabelID(params *DeleteChar
 }
 
 /*
-  DeleteCharactersCharacterIDMailMailID deletes a mail
+	DeleteCharactersCharacterIDMailMailID deletes a mail
 
-  Delete a mail
+	Delete a mail
 
 ---
-
 */
 func (a *Client) DeleteCharactersCharacterIDMailMailID(params *DeleteCharactersCharacterIDMailMailIDParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*DeleteCharactersCharacterIDMailMailIDNoContent, error) {
 	// TODO: Validate the params before sending
@@ -140,9 +138,9 @@ func (a *Client) DeleteCharactersCharacterIDMailMailID(params *DeleteCharactersC
 }
 
 /*
-  GetCharactersCharacterIDMail returns mail headers
+	GetCharactersCharacterIDMail returns mail headers
 
-  Return the 50 most recent mail headers belonging to the character that match the query criteria. Queries can be filtered by label, and last_mail_id can be used to paginate backwards
+	Return the 50 most recent mail headers belonging to the character that match the query criteria. Queries can be filtered by label, and last_mail_id can be used to paginate backwards
 
 ---
 
@@ -185,9 +183,9 @@ func (a *Client) GetCharactersCharacterIDMail(params *GetCharactersCharacterIDMa
 }
 
 /*
-  GetCharactersCharacterIDMailLabels gets mail labels and unread counts
+	GetCharactersCharacterIDMailLabels gets mail labels and unread counts
 
-  Return a list of the users mail labels, unread counts for each label and a total unread count.
+	Return a list of the users mail labels, unread counts for each label and a total unread count.
 
 ---
 
@@ -230,9 +228,9 @@ func (a *Client) GetCharactersCharacterIDMailLabels(params *GetCharactersCharact
 }
 
 /*
-  GetCharactersCharacterIDMailLists returns mailing list subscriptions
+	GetCharactersCharacterIDMailLists returns mailing list subscriptions
 
-  Return all mailing lists that the character is subscribed to
+	Return all mailing lists that the character is subscribed to
 
 ---
 
@@ -275,9 +273,9 @@ func (a *Client) GetCharactersCharacterIDMailLists(params *GetCharactersCharacte
 }
 
 /*
-  GetCharactersCharacterIDMailMailID returns a mail
+	GetCharactersCharacterIDMailMailID returns a mail
 
-  Return the contents of an EVE mail
+	Return the contents of an EVE mail
 
 ---
 
@@ -320,12 +318,11 @@ func (a *Client) GetCharactersCharacterIDMailMailID(params *GetCharactersCharact
 }
 
 /*
-  PostCharactersCharacterIDMail sends a new mail
+	PostCharactersCharacterIDMail sends a new mail
 
-  Create and send a new mail
+	Create and send a new mail
 
 ---
-
 */
 func (a *Client) PostCharactersCharacterIDMail(params *PostCharactersCharacterIDMailParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*PostCharactersCharacterIDMailCreated, error) {
 	// TODO: Validate the params before sending
@@ -364,12 +361,11 @@ func (a *Client) PostCharactersCharacterIDMail(params *PostCharactersCharacterID
 }
 
 /*
-  PostCharactersCharacterIDMailLabels creates a mail label
+	PostCharactersCharacterIDMailLabels creates a mail label
 
-  Create a mail label
+	Create a mail label
 
 ---
-
 */
 func (a *Client) PostCharactersCharacterIDMailLabels(params *PostCharactersCharacterIDMailLabelsParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*PostCharactersCharacterIDMailLabelsCreated, error) {
 	// TODO: Validate the params before sending
@@ -408,12 +404,11 @@ func (a *Client) PostCharactersCharacterIDMailLabels(params *PostCharactersChara
 }
 
 /*
-  PutCharactersCharacterIDMailMailID updates metadata about a mail
+	PutCharactersCharacterIDMailMailID updates metadata about a mail
 
-  Update metadata about a mail
+	Update metadata about a mail
 
 ---
-
 */
 func (a *Client) PutCharactersCharacterIDMailMailID(params *PutCharactersCharacterIDMailMailIDParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*PutCharactersCharacterIDMailMailIDNoContent, error) {
 	// TODO: Validate the params before sending

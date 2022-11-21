@@ -59,7 +59,8 @@ func NewGetVerifyOK() *GetVerifyOK {
 	return &GetVerifyOK{}
 }
 
-/* GetVerifyOK describes a response with status code 200, with default header values.
+/*
+GetVerifyOK describes a response with status code 200, with default header values.
 
 SSO /verify JSON response
 */
@@ -80,9 +81,39 @@ type GetVerifyOK struct {
 	Payload *GetVerifyOKBody
 }
 
+// IsSuccess returns true when this get verify o k response has a 2xx status code
+func (o *GetVerifyOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get verify o k response has a 3xx status code
+func (o *GetVerifyOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get verify o k response has a 4xx status code
+func (o *GetVerifyOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get verify o k response has a 5xx status code
+func (o *GetVerifyOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get verify o k response a status code equal to that given
+func (o *GetVerifyOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetVerifyOK) Error() string {
 	return fmt.Sprintf("[GET /verify/][%d] getVerifyOK  %+v", 200, o.Payload)
 }
+
+func (o *GetVerifyOK) String() string {
+	return fmt.Sprintf("[GET /verify/][%d] getVerifyOK  %+v", 200, o.Payload)
+}
+
 func (o *GetVerifyOK) GetPayload() *GetVerifyOKBody {
 	return o.Payload
 }
@@ -125,7 +156,8 @@ func NewGetVerifyBadRequest() *GetVerifyBadRequest {
 	return &GetVerifyBadRequest{}
 }
 
-/* GetVerifyBadRequest describes a response with status code 400, with default header values.
+/*
+GetVerifyBadRequest describes a response with status code 400, with default header values.
 
 SSO /verify JSON error
 */
@@ -146,9 +178,39 @@ type GetVerifyBadRequest struct {
 	Payload *GetVerifyBadRequestBody
 }
 
+// IsSuccess returns true when this get verify bad request response has a 2xx status code
+func (o *GetVerifyBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get verify bad request response has a 3xx status code
+func (o *GetVerifyBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get verify bad request response has a 4xx status code
+func (o *GetVerifyBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get verify bad request response has a 5xx status code
+func (o *GetVerifyBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get verify bad request response a status code equal to that given
+func (o *GetVerifyBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetVerifyBadRequest) Error() string {
 	return fmt.Sprintf("[GET /verify/][%d] getVerifyBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetVerifyBadRequest) String() string {
+	return fmt.Sprintf("[GET /verify/][%d] getVerifyBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetVerifyBadRequest) GetPayload() *GetVerifyBadRequestBody {
 	return o.Payload
 }
@@ -191,7 +253,8 @@ func NewGetVerifyUnauthorized() *GetVerifyUnauthorized {
 	return &GetVerifyUnauthorized{}
 }
 
-/* GetVerifyUnauthorized describes a response with status code 401, with default header values.
+/*
+GetVerifyUnauthorized describes a response with status code 401, with default header values.
 
 Authorization not provided
 */
@@ -199,9 +262,39 @@ type GetVerifyUnauthorized struct {
 	Payload *GetVerifyUnauthorizedBody
 }
 
+// IsSuccess returns true when this get verify unauthorized response has a 2xx status code
+func (o *GetVerifyUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get verify unauthorized response has a 3xx status code
+func (o *GetVerifyUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get verify unauthorized response has a 4xx status code
+func (o *GetVerifyUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get verify unauthorized response has a 5xx status code
+func (o *GetVerifyUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get verify unauthorized response a status code equal to that given
+func (o *GetVerifyUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *GetVerifyUnauthorized) Error() string {
 	return fmt.Sprintf("[GET /verify/][%d] getVerifyUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *GetVerifyUnauthorized) String() string {
+	return fmt.Sprintf("[GET /verify/][%d] getVerifyUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *GetVerifyUnauthorized) GetPayload() *GetVerifyUnauthorizedBody {
 	return o.Payload
 }
@@ -223,7 +316,8 @@ func NewGetVerifyNotFound() *GetVerifyNotFound {
 	return &GetVerifyNotFound{}
 }
 
-/* GetVerifyNotFound describes a response with status code 404, with default header values.
+/*
+GetVerifyNotFound describes a response with status code 404, with default header values.
 
 Unsupported datasource
 */
@@ -231,9 +325,39 @@ type GetVerifyNotFound struct {
 	Payload *GetVerifyNotFoundBody
 }
 
+// IsSuccess returns true when this get verify not found response has a 2xx status code
+func (o *GetVerifyNotFound) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get verify not found response has a 3xx status code
+func (o *GetVerifyNotFound) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get verify not found response has a 4xx status code
+func (o *GetVerifyNotFound) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get verify not found response has a 5xx status code
+func (o *GetVerifyNotFound) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get verify not found response a status code equal to that given
+func (o *GetVerifyNotFound) IsCode(code int) bool {
+	return code == 404
+}
+
 func (o *GetVerifyNotFound) Error() string {
 	return fmt.Sprintf("[GET /verify/][%d] getVerifyNotFound  %+v", 404, o.Payload)
 }
+
+func (o *GetVerifyNotFound) String() string {
+	return fmt.Sprintf("[GET /verify/][%d] getVerifyNotFound  %+v", 404, o.Payload)
+}
+
 func (o *GetVerifyNotFound) GetPayload() *GetVerifyNotFoundBody {
 	return o.Payload
 }
@@ -250,7 +374,8 @@ func (o *GetVerifyNotFound) readResponse(response runtime.ClientResponse, consum
 	return nil
 }
 
-/*GetVerifyBadRequestBody get_verify_error
+/*
+GetVerifyBadRequestBody get_verify_error
 //
 // SSO /verify JSON
 swagger:model GetVerifyBadRequestBody
@@ -315,7 +440,8 @@ func (o *GetVerifyBadRequestBody) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*GetVerifyNotFoundBody get_verify_not_found
+/*
+GetVerifyNotFoundBody get_verify_not_found
 //
 // Unsupported datasource
 swagger:model GetVerifyNotFoundBody
@@ -375,7 +501,8 @@ func (o *GetVerifyNotFoundBody) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*GetVerifyOKBody get_verify_ok
+/*
+GetVerifyOKBody get_verify_ok
 //
 // SSO /verify JSON
 swagger:model GetVerifyOKBody
@@ -465,7 +592,8 @@ func (o *GetVerifyOKBody) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*GetVerifyUnauthorizedBody get_verify_unauthorized
+/*
+GetVerifyUnauthorizedBody get_verify_unauthorized
 //
 // Authorization not provided
 swagger:model GetVerifyUnauthorizedBody

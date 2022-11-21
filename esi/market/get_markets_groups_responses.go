@@ -75,7 +75,8 @@ func NewGetMarketsGroupsOK() *GetMarketsGroupsOK {
 	return &GetMarketsGroupsOK{}
 }
 
-/* GetMarketsGroupsOK describes a response with status code 200, with default header values.
+/*
+GetMarketsGroupsOK describes a response with status code 200, with default header values.
 
 A list of item group ids
 */
@@ -100,9 +101,39 @@ type GetMarketsGroupsOK struct {
 	Payload []int32
 }
 
+// IsSuccess returns true when this get markets groups o k response has a 2xx status code
+func (o *GetMarketsGroupsOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get markets groups o k response has a 3xx status code
+func (o *GetMarketsGroupsOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get markets groups o k response has a 4xx status code
+func (o *GetMarketsGroupsOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get markets groups o k response has a 5xx status code
+func (o *GetMarketsGroupsOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get markets groups o k response a status code equal to that given
+func (o *GetMarketsGroupsOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetMarketsGroupsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/groups/][%d] getMarketsGroupsOK  %+v", 200, o.Payload)
 }
+
+func (o *GetMarketsGroupsOK) String() string {
+	return fmt.Sprintf("[GET /v1/markets/groups/][%d] getMarketsGroupsOK  %+v", 200, o.Payload)
+}
+
 func (o *GetMarketsGroupsOK) GetPayload() []int32 {
 	return o.Payload
 }
@@ -150,7 +181,8 @@ func NewGetMarketsGroupsNotModified() *GetMarketsGroupsNotModified {
 	return &GetMarketsGroupsNotModified{}
 }
 
-/* GetMarketsGroupsNotModified describes a response with status code 304, with default header values.
+/*
+GetMarketsGroupsNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -173,7 +205,36 @@ type GetMarketsGroupsNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get markets groups not modified response has a 2xx status code
+func (o *GetMarketsGroupsNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get markets groups not modified response has a 3xx status code
+func (o *GetMarketsGroupsNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get markets groups not modified response has a 4xx status code
+func (o *GetMarketsGroupsNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get markets groups not modified response has a 5xx status code
+func (o *GetMarketsGroupsNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get markets groups not modified response a status code equal to that given
+func (o *GetMarketsGroupsNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetMarketsGroupsNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/markets/groups/][%d] getMarketsGroupsNotModified ", 304)
+}
+
+func (o *GetMarketsGroupsNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/markets/groups/][%d] getMarketsGroupsNotModified ", 304)
 }
 
@@ -215,7 +276,8 @@ func NewGetMarketsGroupsBadRequest() *GetMarketsGroupsBadRequest {
 	return &GetMarketsGroupsBadRequest{}
 }
 
-/* GetMarketsGroupsBadRequest describes a response with status code 400, with default header values.
+/*
+GetMarketsGroupsBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -223,9 +285,39 @@ type GetMarketsGroupsBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get markets groups bad request response has a 2xx status code
+func (o *GetMarketsGroupsBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get markets groups bad request response has a 3xx status code
+func (o *GetMarketsGroupsBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get markets groups bad request response has a 4xx status code
+func (o *GetMarketsGroupsBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get markets groups bad request response has a 5xx status code
+func (o *GetMarketsGroupsBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get markets groups bad request response a status code equal to that given
+func (o *GetMarketsGroupsBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetMarketsGroupsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/groups/][%d] getMarketsGroupsBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetMarketsGroupsBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/markets/groups/][%d] getMarketsGroupsBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetMarketsGroupsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -247,7 +339,8 @@ func NewGetMarketsGroupsEnhanceYourCalm() *GetMarketsGroupsEnhanceYourCalm {
 	return &GetMarketsGroupsEnhanceYourCalm{}
 }
 
-/* GetMarketsGroupsEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetMarketsGroupsEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -255,9 +348,39 @@ type GetMarketsGroupsEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get markets groups enhance your calm response has a 2xx status code
+func (o *GetMarketsGroupsEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get markets groups enhance your calm response has a 3xx status code
+func (o *GetMarketsGroupsEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get markets groups enhance your calm response has a 4xx status code
+func (o *GetMarketsGroupsEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get markets groups enhance your calm response has a 5xx status code
+func (o *GetMarketsGroupsEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get markets groups enhance your calm response a status code equal to that given
+func (o *GetMarketsGroupsEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetMarketsGroupsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/groups/][%d] getMarketsGroupsEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetMarketsGroupsEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/markets/groups/][%d] getMarketsGroupsEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetMarketsGroupsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -279,7 +402,8 @@ func NewGetMarketsGroupsInternalServerError() *GetMarketsGroupsInternalServerErr
 	return &GetMarketsGroupsInternalServerError{}
 }
 
-/* GetMarketsGroupsInternalServerError describes a response with status code 500, with default header values.
+/*
+GetMarketsGroupsInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -287,9 +411,39 @@ type GetMarketsGroupsInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get markets groups internal server error response has a 2xx status code
+func (o *GetMarketsGroupsInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get markets groups internal server error response has a 3xx status code
+func (o *GetMarketsGroupsInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get markets groups internal server error response has a 4xx status code
+func (o *GetMarketsGroupsInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get markets groups internal server error response has a 5xx status code
+func (o *GetMarketsGroupsInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get markets groups internal server error response a status code equal to that given
+func (o *GetMarketsGroupsInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetMarketsGroupsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/groups/][%d] getMarketsGroupsInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetMarketsGroupsInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/markets/groups/][%d] getMarketsGroupsInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetMarketsGroupsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -311,7 +465,8 @@ func NewGetMarketsGroupsServiceUnavailable() *GetMarketsGroupsServiceUnavailable
 	return &GetMarketsGroupsServiceUnavailable{}
 }
 
-/* GetMarketsGroupsServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetMarketsGroupsServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -319,9 +474,39 @@ type GetMarketsGroupsServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get markets groups service unavailable response has a 2xx status code
+func (o *GetMarketsGroupsServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get markets groups service unavailable response has a 3xx status code
+func (o *GetMarketsGroupsServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get markets groups service unavailable response has a 4xx status code
+func (o *GetMarketsGroupsServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get markets groups service unavailable response has a 5xx status code
+func (o *GetMarketsGroupsServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get markets groups service unavailable response a status code equal to that given
+func (o *GetMarketsGroupsServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetMarketsGroupsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/groups/][%d] getMarketsGroupsServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetMarketsGroupsServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/markets/groups/][%d] getMarketsGroupsServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetMarketsGroupsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -343,7 +528,8 @@ func NewGetMarketsGroupsGatewayTimeout() *GetMarketsGroupsGatewayTimeout {
 	return &GetMarketsGroupsGatewayTimeout{}
 }
 
-/* GetMarketsGroupsGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetMarketsGroupsGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -351,9 +537,39 @@ type GetMarketsGroupsGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get markets groups gateway timeout response has a 2xx status code
+func (o *GetMarketsGroupsGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get markets groups gateway timeout response has a 3xx status code
+func (o *GetMarketsGroupsGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get markets groups gateway timeout response has a 4xx status code
+func (o *GetMarketsGroupsGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get markets groups gateway timeout response has a 5xx status code
+func (o *GetMarketsGroupsGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get markets groups gateway timeout response a status code equal to that given
+func (o *GetMarketsGroupsGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetMarketsGroupsGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/groups/][%d] getMarketsGroupsGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetMarketsGroupsGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/markets/groups/][%d] getMarketsGroupsGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetMarketsGroupsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }

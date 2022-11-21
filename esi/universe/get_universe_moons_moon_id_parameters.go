@@ -53,10 +53,12 @@ func NewGetUniverseMoonsMoonIDParamsWithHTTPClient(client *http.Client) *GetUniv
 	}
 }
 
-/* GetUniverseMoonsMoonIDParams contains all the parameters to send to the API endpoint
-   for the get universe moons moon id operation.
+/*
+GetUniverseMoonsMoonIDParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get universe moons moon id operation.
+
+	Typically these are written to a http.Request.
 */
 type GetUniverseMoonsMoonIDParams struct {
 

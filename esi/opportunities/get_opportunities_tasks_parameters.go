@@ -52,10 +52,12 @@ func NewGetOpportunitiesTasksParamsWithHTTPClient(client *http.Client) *GetOppor
 	}
 }
 
-/* GetOpportunitiesTasksParams contains all the parameters to send to the API endpoint
-   for the get opportunities tasks operation.
+/*
+GetOpportunitiesTasksParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get opportunities tasks operation.
+
+	Typically these are written to a http.Request.
 */
 type GetOpportunitiesTasksParams struct {
 

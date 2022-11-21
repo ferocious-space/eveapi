@@ -53,10 +53,12 @@ func NewGetLoyaltyStoresCorporationIDOffersParamsWithHTTPClient(client *http.Cli
 	}
 }
 
-/* GetLoyaltyStoresCorporationIDOffersParams contains all the parameters to send to the API endpoint
-   for the get loyalty stores corporation id offers operation.
+/*
+GetLoyaltyStoresCorporationIDOffersParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get loyalty stores corporation id offers operation.
+
+	Typically these are written to a http.Request.
 */
 type GetLoyaltyStoresCorporationIDOffersParams struct {
 

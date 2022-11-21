@@ -86,7 +86,8 @@ func NewGetKillmailsKillmailIDKillmailHashOK() *GetKillmailsKillmailIDKillmailHa
 	return &GetKillmailsKillmailIDKillmailHashOK{}
 }
 
-/* GetKillmailsKillmailIDKillmailHashOK describes a response with status code 200, with default header values.
+/*
+GetKillmailsKillmailIDKillmailHashOK describes a response with status code 200, with default header values.
 
 A killmail
 */
@@ -111,9 +112,39 @@ type GetKillmailsKillmailIDKillmailHashOK struct {
 	Payload *GetKillmailsKillmailIDKillmailHashOKBody
 }
 
+// IsSuccess returns true when this get killmails killmail Id killmail hash o k response has a 2xx status code
+func (o *GetKillmailsKillmailIDKillmailHashOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get killmails killmail Id killmail hash o k response has a 3xx status code
+func (o *GetKillmailsKillmailIDKillmailHashOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get killmails killmail Id killmail hash o k response has a 4xx status code
+func (o *GetKillmailsKillmailIDKillmailHashOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get killmails killmail Id killmail hash o k response has a 5xx status code
+func (o *GetKillmailsKillmailIDKillmailHashOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get killmails killmail Id killmail hash o k response a status code equal to that given
+func (o *GetKillmailsKillmailIDKillmailHashOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetKillmailsKillmailIDKillmailHashOK) Error() string {
 	return fmt.Sprintf("[GET /v1/killmails/{killmail_id}/{killmail_hash}/][%d] getKillmailsKillmailIdKillmailHashOK  %+v", 200, o.Payload)
 }
+
+func (o *GetKillmailsKillmailIDKillmailHashOK) String() string {
+	return fmt.Sprintf("[GET /v1/killmails/{killmail_id}/{killmail_hash}/][%d] getKillmailsKillmailIdKillmailHashOK  %+v", 200, o.Payload)
+}
+
 func (o *GetKillmailsKillmailIDKillmailHashOK) GetPayload() *GetKillmailsKillmailIDKillmailHashOKBody {
 	return o.Payload
 }
@@ -163,7 +194,8 @@ func NewGetKillmailsKillmailIDKillmailHashNotModified() *GetKillmailsKillmailIDK
 	return &GetKillmailsKillmailIDKillmailHashNotModified{}
 }
 
-/* GetKillmailsKillmailIDKillmailHashNotModified describes a response with status code 304, with default header values.
+/*
+GetKillmailsKillmailIDKillmailHashNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -186,7 +218,36 @@ type GetKillmailsKillmailIDKillmailHashNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get killmails killmail Id killmail hash not modified response has a 2xx status code
+func (o *GetKillmailsKillmailIDKillmailHashNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get killmails killmail Id killmail hash not modified response has a 3xx status code
+func (o *GetKillmailsKillmailIDKillmailHashNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get killmails killmail Id killmail hash not modified response has a 4xx status code
+func (o *GetKillmailsKillmailIDKillmailHashNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get killmails killmail Id killmail hash not modified response has a 5xx status code
+func (o *GetKillmailsKillmailIDKillmailHashNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get killmails killmail Id killmail hash not modified response a status code equal to that given
+func (o *GetKillmailsKillmailIDKillmailHashNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetKillmailsKillmailIDKillmailHashNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/killmails/{killmail_id}/{killmail_hash}/][%d] getKillmailsKillmailIdKillmailHashNotModified ", 304)
+}
+
+func (o *GetKillmailsKillmailIDKillmailHashNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/killmails/{killmail_id}/{killmail_hash}/][%d] getKillmailsKillmailIdKillmailHashNotModified ", 304)
 }
 
@@ -228,7 +289,8 @@ func NewGetKillmailsKillmailIDKillmailHashBadRequest() *GetKillmailsKillmailIDKi
 	return &GetKillmailsKillmailIDKillmailHashBadRequest{}
 }
 
-/* GetKillmailsKillmailIDKillmailHashBadRequest describes a response with status code 400, with default header values.
+/*
+GetKillmailsKillmailIDKillmailHashBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -236,9 +298,39 @@ type GetKillmailsKillmailIDKillmailHashBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get killmails killmail Id killmail hash bad request response has a 2xx status code
+func (o *GetKillmailsKillmailIDKillmailHashBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get killmails killmail Id killmail hash bad request response has a 3xx status code
+func (o *GetKillmailsKillmailIDKillmailHashBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get killmails killmail Id killmail hash bad request response has a 4xx status code
+func (o *GetKillmailsKillmailIDKillmailHashBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get killmails killmail Id killmail hash bad request response has a 5xx status code
+func (o *GetKillmailsKillmailIDKillmailHashBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get killmails killmail Id killmail hash bad request response a status code equal to that given
+func (o *GetKillmailsKillmailIDKillmailHashBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetKillmailsKillmailIDKillmailHashBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/killmails/{killmail_id}/{killmail_hash}/][%d] getKillmailsKillmailIdKillmailHashBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetKillmailsKillmailIDKillmailHashBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/killmails/{killmail_id}/{killmail_hash}/][%d] getKillmailsKillmailIdKillmailHashBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetKillmailsKillmailIDKillmailHashBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -260,7 +352,8 @@ func NewGetKillmailsKillmailIDKillmailHashEnhanceYourCalm() *GetKillmailsKillmai
 	return &GetKillmailsKillmailIDKillmailHashEnhanceYourCalm{}
 }
 
-/* GetKillmailsKillmailIDKillmailHashEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetKillmailsKillmailIDKillmailHashEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -268,9 +361,39 @@ type GetKillmailsKillmailIDKillmailHashEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get killmails killmail Id killmail hash enhance your calm response has a 2xx status code
+func (o *GetKillmailsKillmailIDKillmailHashEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get killmails killmail Id killmail hash enhance your calm response has a 3xx status code
+func (o *GetKillmailsKillmailIDKillmailHashEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get killmails killmail Id killmail hash enhance your calm response has a 4xx status code
+func (o *GetKillmailsKillmailIDKillmailHashEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get killmails killmail Id killmail hash enhance your calm response has a 5xx status code
+func (o *GetKillmailsKillmailIDKillmailHashEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get killmails killmail Id killmail hash enhance your calm response a status code equal to that given
+func (o *GetKillmailsKillmailIDKillmailHashEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetKillmailsKillmailIDKillmailHashEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/killmails/{killmail_id}/{killmail_hash}/][%d] getKillmailsKillmailIdKillmailHashEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetKillmailsKillmailIDKillmailHashEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/killmails/{killmail_id}/{killmail_hash}/][%d] getKillmailsKillmailIdKillmailHashEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetKillmailsKillmailIDKillmailHashEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -292,7 +415,8 @@ func NewGetKillmailsKillmailIDKillmailHashUnprocessableEntity() *GetKillmailsKil
 	return &GetKillmailsKillmailIDKillmailHashUnprocessableEntity{}
 }
 
-/* GetKillmailsKillmailIDKillmailHashUnprocessableEntity describes a response with status code 422, with default header values.
+/*
+GetKillmailsKillmailIDKillmailHashUnprocessableEntity describes a response with status code 422, with default header values.
 
 Invalid killmail_id and/or killmail_hash
 */
@@ -300,9 +424,39 @@ type GetKillmailsKillmailIDKillmailHashUnprocessableEntity struct {
 	Payload *GetKillmailsKillmailIDKillmailHashUnprocessableEntityBody
 }
 
+// IsSuccess returns true when this get killmails killmail Id killmail hash unprocessable entity response has a 2xx status code
+func (o *GetKillmailsKillmailIDKillmailHashUnprocessableEntity) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get killmails killmail Id killmail hash unprocessable entity response has a 3xx status code
+func (o *GetKillmailsKillmailIDKillmailHashUnprocessableEntity) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get killmails killmail Id killmail hash unprocessable entity response has a 4xx status code
+func (o *GetKillmailsKillmailIDKillmailHashUnprocessableEntity) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get killmails killmail Id killmail hash unprocessable entity response has a 5xx status code
+func (o *GetKillmailsKillmailIDKillmailHashUnprocessableEntity) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get killmails killmail Id killmail hash unprocessable entity response a status code equal to that given
+func (o *GetKillmailsKillmailIDKillmailHashUnprocessableEntity) IsCode(code int) bool {
+	return code == 422
+}
+
 func (o *GetKillmailsKillmailIDKillmailHashUnprocessableEntity) Error() string {
 	return fmt.Sprintf("[GET /v1/killmails/{killmail_id}/{killmail_hash}/][%d] getKillmailsKillmailIdKillmailHashUnprocessableEntity  %+v", 422, o.Payload)
 }
+
+func (o *GetKillmailsKillmailIDKillmailHashUnprocessableEntity) String() string {
+	return fmt.Sprintf("[GET /v1/killmails/{killmail_id}/{killmail_hash}/][%d] getKillmailsKillmailIdKillmailHashUnprocessableEntity  %+v", 422, o.Payload)
+}
+
 func (o *GetKillmailsKillmailIDKillmailHashUnprocessableEntity) GetPayload() *GetKillmailsKillmailIDKillmailHashUnprocessableEntityBody {
 	return o.Payload
 }
@@ -324,7 +478,8 @@ func NewGetKillmailsKillmailIDKillmailHashInternalServerError() *GetKillmailsKil
 	return &GetKillmailsKillmailIDKillmailHashInternalServerError{}
 }
 
-/* GetKillmailsKillmailIDKillmailHashInternalServerError describes a response with status code 500, with default header values.
+/*
+GetKillmailsKillmailIDKillmailHashInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -332,9 +487,39 @@ type GetKillmailsKillmailIDKillmailHashInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get killmails killmail Id killmail hash internal server error response has a 2xx status code
+func (o *GetKillmailsKillmailIDKillmailHashInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get killmails killmail Id killmail hash internal server error response has a 3xx status code
+func (o *GetKillmailsKillmailIDKillmailHashInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get killmails killmail Id killmail hash internal server error response has a 4xx status code
+func (o *GetKillmailsKillmailIDKillmailHashInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get killmails killmail Id killmail hash internal server error response has a 5xx status code
+func (o *GetKillmailsKillmailIDKillmailHashInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get killmails killmail Id killmail hash internal server error response a status code equal to that given
+func (o *GetKillmailsKillmailIDKillmailHashInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetKillmailsKillmailIDKillmailHashInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/killmails/{killmail_id}/{killmail_hash}/][%d] getKillmailsKillmailIdKillmailHashInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetKillmailsKillmailIDKillmailHashInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/killmails/{killmail_id}/{killmail_hash}/][%d] getKillmailsKillmailIdKillmailHashInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetKillmailsKillmailIDKillmailHashInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -356,7 +541,8 @@ func NewGetKillmailsKillmailIDKillmailHashServiceUnavailable() *GetKillmailsKill
 	return &GetKillmailsKillmailIDKillmailHashServiceUnavailable{}
 }
 
-/* GetKillmailsKillmailIDKillmailHashServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetKillmailsKillmailIDKillmailHashServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -364,9 +550,39 @@ type GetKillmailsKillmailIDKillmailHashServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get killmails killmail Id killmail hash service unavailable response has a 2xx status code
+func (o *GetKillmailsKillmailIDKillmailHashServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get killmails killmail Id killmail hash service unavailable response has a 3xx status code
+func (o *GetKillmailsKillmailIDKillmailHashServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get killmails killmail Id killmail hash service unavailable response has a 4xx status code
+func (o *GetKillmailsKillmailIDKillmailHashServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get killmails killmail Id killmail hash service unavailable response has a 5xx status code
+func (o *GetKillmailsKillmailIDKillmailHashServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get killmails killmail Id killmail hash service unavailable response a status code equal to that given
+func (o *GetKillmailsKillmailIDKillmailHashServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetKillmailsKillmailIDKillmailHashServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/killmails/{killmail_id}/{killmail_hash}/][%d] getKillmailsKillmailIdKillmailHashServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetKillmailsKillmailIDKillmailHashServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/killmails/{killmail_id}/{killmail_hash}/][%d] getKillmailsKillmailIdKillmailHashServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetKillmailsKillmailIDKillmailHashServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -388,7 +604,8 @@ func NewGetKillmailsKillmailIDKillmailHashGatewayTimeout() *GetKillmailsKillmail
 	return &GetKillmailsKillmailIDKillmailHashGatewayTimeout{}
 }
 
-/* GetKillmailsKillmailIDKillmailHashGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetKillmailsKillmailIDKillmailHashGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -396,9 +613,39 @@ type GetKillmailsKillmailIDKillmailHashGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get killmails killmail Id killmail hash gateway timeout response has a 2xx status code
+func (o *GetKillmailsKillmailIDKillmailHashGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get killmails killmail Id killmail hash gateway timeout response has a 3xx status code
+func (o *GetKillmailsKillmailIDKillmailHashGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get killmails killmail Id killmail hash gateway timeout response has a 4xx status code
+func (o *GetKillmailsKillmailIDKillmailHashGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get killmails killmail Id killmail hash gateway timeout response has a 5xx status code
+func (o *GetKillmailsKillmailIDKillmailHashGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get killmails killmail Id killmail hash gateway timeout response a status code equal to that given
+func (o *GetKillmailsKillmailIDKillmailHashGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetKillmailsKillmailIDKillmailHashGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/killmails/{killmail_id}/{killmail_hash}/][%d] getKillmailsKillmailIdKillmailHashGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetKillmailsKillmailIDKillmailHashGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/killmails/{killmail_id}/{killmail_hash}/][%d] getKillmailsKillmailIdKillmailHashGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetKillmailsKillmailIDKillmailHashGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -415,7 +662,8 @@ func (o *GetKillmailsKillmailIDKillmailHashGatewayTimeout) readResponse(response
 	return nil
 }
 
-/*GetKillmailsKillmailIDKillmailHashOKBody get_killmails_killmail_id_killmail_hash_ok
+/*
+GetKillmailsKillmailIDKillmailHashOKBody get_killmails_killmail_id_killmail_hash_ok
 //
 // 200 ok object
 swagger:model GetKillmailsKillmailIDKillmailHashOKBody
@@ -652,7 +900,8 @@ func (o *GetKillmailsKillmailIDKillmailHashOKBody) UnmarshalBinary(b []byte) err
 	return nil
 }
 
-/*GetKillmailsKillmailIDKillmailHashOKBodyAttackersItems0 get_killmails_killmail_id_killmail_hash_attacker
+/*
+GetKillmailsKillmailIDKillmailHashOKBodyAttackersItems0 get_killmails_killmail_id_killmail_hash_attacker
 //
 // attacker object
 swagger:model GetKillmailsKillmailIDKillmailHashOKBodyAttackersItems0
@@ -784,7 +1033,8 @@ func (o *GetKillmailsKillmailIDKillmailHashOKBodyAttackersItems0) UnmarshalBinar
 	return nil
 }
 
-/*GetKillmailsKillmailIDKillmailHashOKBodyVictim get_killmails_killmail_id_killmail_hash_victim
+/*
+GetKillmailsKillmailIDKillmailHashOKBodyVictim get_killmails_killmail_id_killmail_hash_victim
 //
 // victim object
 swagger:model GetKillmailsKillmailIDKillmailHashOKBodyVictim
@@ -1002,7 +1252,8 @@ func (o *GetKillmailsKillmailIDKillmailHashOKBodyVictim) UnmarshalBinary(b []byt
 	return nil
 }
 
-/*GetKillmailsKillmailIDKillmailHashOKBodyVictimItemsItems0 get_killmails_killmail_id_killmail_hash_item
+/*
+GetKillmailsKillmailIDKillmailHashOKBodyVictimItemsItems0 get_killmails_killmail_id_killmail_hash_item
 //
 // item object
 swagger:model GetKillmailsKillmailIDKillmailHashOKBodyVictimItemsItems0
@@ -1184,7 +1435,8 @@ func (o *GetKillmailsKillmailIDKillmailHashOKBodyVictimItemsItems0) UnmarshalBin
 	return nil
 }
 
-/*GetKillmailsKillmailIDKillmailHashOKBodyVictimItemsItems0ItemsItems0 get_killmails_killmail_id_killmail_hash_items_item
+/*
+GetKillmailsKillmailIDKillmailHashOKBodyVictimItemsItems0ItemsItems0 get_killmails_killmail_id_killmail_hash_items_item
 //
 // item object
 swagger:model GetKillmailsKillmailIDKillmailHashOKBodyVictimItemsItems0ItemsItems0
@@ -1292,7 +1544,8 @@ func (o *GetKillmailsKillmailIDKillmailHashOKBodyVictimItemsItems0ItemsItems0) U
 	return nil
 }
 
-/*GetKillmailsKillmailIDKillmailHashOKBodyVictimPosition get_killmails_killmail_id_killmail_hash_position
+/*
+GetKillmailsKillmailIDKillmailHashOKBodyVictimPosition get_killmails_killmail_id_killmail_hash_position
 //
 // Coordinates of the victim in Cartesian space relative to the Sun
 //
@@ -1391,7 +1644,8 @@ func (o *GetKillmailsKillmailIDKillmailHashOKBodyVictimPosition) UnmarshalBinary
 	return nil
 }
 
-/*GetKillmailsKillmailIDKillmailHashUnprocessableEntityBody get_killmails_killmail_id_killmail_hash_unprocessable_entity
+/*
+GetKillmailsKillmailIDKillmailHashUnprocessableEntityBody get_killmails_killmail_id_killmail_hash_unprocessable_entity
 //
 // Unprocessable entity
 swagger:model GetKillmailsKillmailIDKillmailHashUnprocessableEntityBody

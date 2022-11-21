@@ -53,10 +53,12 @@ func NewGetMarketsRegionIDTypesParamsWithHTTPClient(client *http.Client) *GetMar
 	}
 }
 
-/* GetMarketsRegionIDTypesParams contains all the parameters to send to the API endpoint
-   for the get markets region id types operation.
+/*
+GetMarketsRegionIDTypesParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get markets region id types operation.
+
+	Typically these are written to a http.Request.
 */
 type GetMarketsRegionIDTypesParams struct {
 

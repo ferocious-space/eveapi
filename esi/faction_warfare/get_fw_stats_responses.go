@@ -79,7 +79,8 @@ func NewGetFwStatsOK() *GetFwStatsOK {
 	return &GetFwStatsOK{}
 }
 
-/* GetFwStatsOK describes a response with status code 200, with default header values.
+/*
+GetFwStatsOK describes a response with status code 200, with default header values.
 
 Per faction breakdown of faction warfare statistics
 */
@@ -104,9 +105,39 @@ type GetFwStatsOK struct {
 	Payload []*GetFwStatsOKBodyItems0
 }
 
+// IsSuccess returns true when this get fw stats o k response has a 2xx status code
+func (o *GetFwStatsOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get fw stats o k response has a 3xx status code
+func (o *GetFwStatsOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fw stats o k response has a 4xx status code
+func (o *GetFwStatsOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get fw stats o k response has a 5xx status code
+func (o *GetFwStatsOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get fw stats o k response a status code equal to that given
+func (o *GetFwStatsOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetFwStatsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/fw/stats/][%d] getFwStatsOK  %+v", 200, o.Payload)
 }
+
+func (o *GetFwStatsOK) String() string {
+	return fmt.Sprintf("[GET /v1/fw/stats/][%d] getFwStatsOK  %+v", 200, o.Payload)
+}
+
 func (o *GetFwStatsOK) GetPayload() []*GetFwStatsOKBodyItems0 {
 	return o.Payload
 }
@@ -154,7 +185,8 @@ func NewGetFwStatsNotModified() *GetFwStatsNotModified {
 	return &GetFwStatsNotModified{}
 }
 
-/* GetFwStatsNotModified describes a response with status code 304, with default header values.
+/*
+GetFwStatsNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -177,7 +209,36 @@ type GetFwStatsNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get fw stats not modified response has a 2xx status code
+func (o *GetFwStatsNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fw stats not modified response has a 3xx status code
+func (o *GetFwStatsNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get fw stats not modified response has a 4xx status code
+func (o *GetFwStatsNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get fw stats not modified response has a 5xx status code
+func (o *GetFwStatsNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get fw stats not modified response a status code equal to that given
+func (o *GetFwStatsNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetFwStatsNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/fw/stats/][%d] getFwStatsNotModified ", 304)
+}
+
+func (o *GetFwStatsNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/fw/stats/][%d] getFwStatsNotModified ", 304)
 }
 
@@ -219,7 +280,8 @@ func NewGetFwStatsBadRequest() *GetFwStatsBadRequest {
 	return &GetFwStatsBadRequest{}
 }
 
-/* GetFwStatsBadRequest describes a response with status code 400, with default header values.
+/*
+GetFwStatsBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -227,9 +289,39 @@ type GetFwStatsBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get fw stats bad request response has a 2xx status code
+func (o *GetFwStatsBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fw stats bad request response has a 3xx status code
+func (o *GetFwStatsBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fw stats bad request response has a 4xx status code
+func (o *GetFwStatsBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get fw stats bad request response has a 5xx status code
+func (o *GetFwStatsBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get fw stats bad request response a status code equal to that given
+func (o *GetFwStatsBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetFwStatsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/fw/stats/][%d] getFwStatsBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetFwStatsBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/fw/stats/][%d] getFwStatsBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetFwStatsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -251,7 +343,8 @@ func NewGetFwStatsEnhanceYourCalm() *GetFwStatsEnhanceYourCalm {
 	return &GetFwStatsEnhanceYourCalm{}
 }
 
-/* GetFwStatsEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetFwStatsEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -259,9 +352,39 @@ type GetFwStatsEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get fw stats enhance your calm response has a 2xx status code
+func (o *GetFwStatsEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fw stats enhance your calm response has a 3xx status code
+func (o *GetFwStatsEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fw stats enhance your calm response has a 4xx status code
+func (o *GetFwStatsEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get fw stats enhance your calm response has a 5xx status code
+func (o *GetFwStatsEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get fw stats enhance your calm response a status code equal to that given
+func (o *GetFwStatsEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetFwStatsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/fw/stats/][%d] getFwStatsEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetFwStatsEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/fw/stats/][%d] getFwStatsEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetFwStatsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -283,7 +406,8 @@ func NewGetFwStatsInternalServerError() *GetFwStatsInternalServerError {
 	return &GetFwStatsInternalServerError{}
 }
 
-/* GetFwStatsInternalServerError describes a response with status code 500, with default header values.
+/*
+GetFwStatsInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -291,9 +415,39 @@ type GetFwStatsInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get fw stats internal server error response has a 2xx status code
+func (o *GetFwStatsInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fw stats internal server error response has a 3xx status code
+func (o *GetFwStatsInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fw stats internal server error response has a 4xx status code
+func (o *GetFwStatsInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get fw stats internal server error response has a 5xx status code
+func (o *GetFwStatsInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get fw stats internal server error response a status code equal to that given
+func (o *GetFwStatsInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetFwStatsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/fw/stats/][%d] getFwStatsInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetFwStatsInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/fw/stats/][%d] getFwStatsInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetFwStatsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -315,7 +469,8 @@ func NewGetFwStatsServiceUnavailable() *GetFwStatsServiceUnavailable {
 	return &GetFwStatsServiceUnavailable{}
 }
 
-/* GetFwStatsServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetFwStatsServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -323,9 +478,39 @@ type GetFwStatsServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get fw stats service unavailable response has a 2xx status code
+func (o *GetFwStatsServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fw stats service unavailable response has a 3xx status code
+func (o *GetFwStatsServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fw stats service unavailable response has a 4xx status code
+func (o *GetFwStatsServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get fw stats service unavailable response has a 5xx status code
+func (o *GetFwStatsServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get fw stats service unavailable response a status code equal to that given
+func (o *GetFwStatsServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetFwStatsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/fw/stats/][%d] getFwStatsServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetFwStatsServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/fw/stats/][%d] getFwStatsServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetFwStatsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -347,7 +532,8 @@ func NewGetFwStatsGatewayTimeout() *GetFwStatsGatewayTimeout {
 	return &GetFwStatsGatewayTimeout{}
 }
 
-/* GetFwStatsGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetFwStatsGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -355,9 +541,39 @@ type GetFwStatsGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get fw stats gateway timeout response has a 2xx status code
+func (o *GetFwStatsGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fw stats gateway timeout response has a 3xx status code
+func (o *GetFwStatsGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fw stats gateway timeout response has a 4xx status code
+func (o *GetFwStatsGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get fw stats gateway timeout response has a 5xx status code
+func (o *GetFwStatsGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get fw stats gateway timeout response a status code equal to that given
+func (o *GetFwStatsGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetFwStatsGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/fw/stats/][%d] getFwStatsGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetFwStatsGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/fw/stats/][%d] getFwStatsGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetFwStatsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -374,7 +590,8 @@ func (o *GetFwStatsGatewayTimeout) readResponse(response runtime.ClientResponse,
 	return nil
 }
 
-/*GetFwStatsOKBodyItems0 get_fw_stats_200_ok
+/*
+GetFwStatsOKBodyItems0 get_fw_stats_200_ok
 //
 // 200 ok object
 swagger:model GetFwStatsOKBodyItems0
@@ -573,7 +790,8 @@ func (o *GetFwStatsOKBodyItems0) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*GetFwStatsOKBodyItems0Kills get_fw_stats_kills
+/*
+GetFwStatsOKBodyItems0Kills get_fw_stats_kills
 //
 // Summary of kills against an enemy faction for the given faction
 swagger:model GetFwStatsOKBodyItems0Kills
@@ -671,7 +889,8 @@ func (o *GetFwStatsOKBodyItems0Kills) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*GetFwStatsOKBodyItems0VictoryPoints get_fw_stats_victory_points
+/*
+GetFwStatsOKBodyItems0VictoryPoints get_fw_stats_victory_points
 //
 // Summary of victory points gained for the given faction
 swagger:model GetFwStatsOKBodyItems0VictoryPoints

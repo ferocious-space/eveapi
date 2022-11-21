@@ -79,7 +79,8 @@ func NewGetFwWarsOK() *GetFwWarsOK {
 	return &GetFwWarsOK{}
 }
 
-/* GetFwWarsOK describes a response with status code 200, with default header values.
+/*
+GetFwWarsOK describes a response with status code 200, with default header values.
 
 A list of NPC factions at war
 */
@@ -104,9 +105,39 @@ type GetFwWarsOK struct {
 	Payload []*GetFwWarsOKBodyItems0
 }
 
+// IsSuccess returns true when this get fw wars o k response has a 2xx status code
+func (o *GetFwWarsOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get fw wars o k response has a 3xx status code
+func (o *GetFwWarsOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fw wars o k response has a 4xx status code
+func (o *GetFwWarsOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get fw wars o k response has a 5xx status code
+func (o *GetFwWarsOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get fw wars o k response a status code equal to that given
+func (o *GetFwWarsOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetFwWarsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/fw/wars/][%d] getFwWarsOK  %+v", 200, o.Payload)
 }
+
+func (o *GetFwWarsOK) String() string {
+	return fmt.Sprintf("[GET /v1/fw/wars/][%d] getFwWarsOK  %+v", 200, o.Payload)
+}
+
 func (o *GetFwWarsOK) GetPayload() []*GetFwWarsOKBodyItems0 {
 	return o.Payload
 }
@@ -154,7 +185,8 @@ func NewGetFwWarsNotModified() *GetFwWarsNotModified {
 	return &GetFwWarsNotModified{}
 }
 
-/* GetFwWarsNotModified describes a response with status code 304, with default header values.
+/*
+GetFwWarsNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -177,7 +209,36 @@ type GetFwWarsNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get fw wars not modified response has a 2xx status code
+func (o *GetFwWarsNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fw wars not modified response has a 3xx status code
+func (o *GetFwWarsNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get fw wars not modified response has a 4xx status code
+func (o *GetFwWarsNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get fw wars not modified response has a 5xx status code
+func (o *GetFwWarsNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get fw wars not modified response a status code equal to that given
+func (o *GetFwWarsNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetFwWarsNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/fw/wars/][%d] getFwWarsNotModified ", 304)
+}
+
+func (o *GetFwWarsNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/fw/wars/][%d] getFwWarsNotModified ", 304)
 }
 
@@ -219,7 +280,8 @@ func NewGetFwWarsBadRequest() *GetFwWarsBadRequest {
 	return &GetFwWarsBadRequest{}
 }
 
-/* GetFwWarsBadRequest describes a response with status code 400, with default header values.
+/*
+GetFwWarsBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -227,9 +289,39 @@ type GetFwWarsBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get fw wars bad request response has a 2xx status code
+func (o *GetFwWarsBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fw wars bad request response has a 3xx status code
+func (o *GetFwWarsBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fw wars bad request response has a 4xx status code
+func (o *GetFwWarsBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get fw wars bad request response has a 5xx status code
+func (o *GetFwWarsBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get fw wars bad request response a status code equal to that given
+func (o *GetFwWarsBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetFwWarsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/fw/wars/][%d] getFwWarsBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetFwWarsBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/fw/wars/][%d] getFwWarsBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetFwWarsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -251,7 +343,8 @@ func NewGetFwWarsEnhanceYourCalm() *GetFwWarsEnhanceYourCalm {
 	return &GetFwWarsEnhanceYourCalm{}
 }
 
-/* GetFwWarsEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetFwWarsEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -259,9 +352,39 @@ type GetFwWarsEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get fw wars enhance your calm response has a 2xx status code
+func (o *GetFwWarsEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fw wars enhance your calm response has a 3xx status code
+func (o *GetFwWarsEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fw wars enhance your calm response has a 4xx status code
+func (o *GetFwWarsEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get fw wars enhance your calm response has a 5xx status code
+func (o *GetFwWarsEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get fw wars enhance your calm response a status code equal to that given
+func (o *GetFwWarsEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetFwWarsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/fw/wars/][%d] getFwWarsEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetFwWarsEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/fw/wars/][%d] getFwWarsEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetFwWarsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -283,7 +406,8 @@ func NewGetFwWarsInternalServerError() *GetFwWarsInternalServerError {
 	return &GetFwWarsInternalServerError{}
 }
 
-/* GetFwWarsInternalServerError describes a response with status code 500, with default header values.
+/*
+GetFwWarsInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -291,9 +415,39 @@ type GetFwWarsInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get fw wars internal server error response has a 2xx status code
+func (o *GetFwWarsInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fw wars internal server error response has a 3xx status code
+func (o *GetFwWarsInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fw wars internal server error response has a 4xx status code
+func (o *GetFwWarsInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get fw wars internal server error response has a 5xx status code
+func (o *GetFwWarsInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get fw wars internal server error response a status code equal to that given
+func (o *GetFwWarsInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetFwWarsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/fw/wars/][%d] getFwWarsInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetFwWarsInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/fw/wars/][%d] getFwWarsInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetFwWarsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -315,7 +469,8 @@ func NewGetFwWarsServiceUnavailable() *GetFwWarsServiceUnavailable {
 	return &GetFwWarsServiceUnavailable{}
 }
 
-/* GetFwWarsServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetFwWarsServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -323,9 +478,39 @@ type GetFwWarsServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get fw wars service unavailable response has a 2xx status code
+func (o *GetFwWarsServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fw wars service unavailable response has a 3xx status code
+func (o *GetFwWarsServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fw wars service unavailable response has a 4xx status code
+func (o *GetFwWarsServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get fw wars service unavailable response has a 5xx status code
+func (o *GetFwWarsServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get fw wars service unavailable response a status code equal to that given
+func (o *GetFwWarsServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetFwWarsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/fw/wars/][%d] getFwWarsServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetFwWarsServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/fw/wars/][%d] getFwWarsServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetFwWarsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -347,7 +532,8 @@ func NewGetFwWarsGatewayTimeout() *GetFwWarsGatewayTimeout {
 	return &GetFwWarsGatewayTimeout{}
 }
 
-/* GetFwWarsGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetFwWarsGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -355,9 +541,39 @@ type GetFwWarsGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get fw wars gateway timeout response has a 2xx status code
+func (o *GetFwWarsGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fw wars gateway timeout response has a 3xx status code
+func (o *GetFwWarsGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fw wars gateway timeout response has a 4xx status code
+func (o *GetFwWarsGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get fw wars gateway timeout response has a 5xx status code
+func (o *GetFwWarsGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get fw wars gateway timeout response a status code equal to that given
+func (o *GetFwWarsGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetFwWarsGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/fw/wars/][%d] getFwWarsGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetFwWarsGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/fw/wars/][%d] getFwWarsGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetFwWarsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -374,7 +590,8 @@ func (o *GetFwWarsGatewayTimeout) readResponse(response runtime.ClientResponse, 
 	return nil
 }
 
-/*GetFwWarsOKBodyItems0 get_fw_wars_200_ok
+/*
+GetFwWarsOKBodyItems0 get_fw_wars_200_ok
 //
 // 200 ok object
 swagger:model GetFwWarsOKBodyItems0

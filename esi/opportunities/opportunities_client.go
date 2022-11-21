@@ -44,9 +44,9 @@ type ClientService interface {
 }
 
 /*
-  GetCharactersCharacterIDOpportunities gets a character s completed tasks
+	GetCharactersCharacterIDOpportunities gets a character s completed tasks
 
-  Return a list of tasks finished by a character
+	Return a list of tasks finished by a character
 
 ---
 
@@ -89,9 +89,9 @@ func (a *Client) GetCharactersCharacterIDOpportunities(params *GetCharactersChar
 }
 
 /*
-  GetOpportunitiesGroups gets opportunities groups
+	GetOpportunitiesGroups gets opportunities groups
 
-  Return a list of opportunities groups
+	Return a list of opportunities groups
 
 ---
 
@@ -133,9 +133,9 @@ func (a *Client) GetOpportunitiesGroups(params *GetOpportunitiesGroupsParams, op
 }
 
 /*
-  GetOpportunitiesGroupsGroupID gets opportunities group
+	GetOpportunitiesGroupsGroupID gets opportunities group
 
-  Return information of an opportunities group
+	Return information of an opportunities group
 
 ---
 
@@ -177,9 +177,9 @@ func (a *Client) GetOpportunitiesGroupsGroupID(params *GetOpportunitiesGroupsGro
 }
 
 /*
-  GetOpportunitiesTasks gets opportunities tasks
+	GetOpportunitiesTasks gets opportunities tasks
 
-  Return a list of opportunities tasks
+	Return a list of opportunities tasks
 
 ---
 
@@ -221,9 +221,9 @@ func (a *Client) GetOpportunitiesTasks(params *GetOpportunitiesTasksParams, opts
 }
 
 /*
-  GetOpportunitiesTasksTaskID gets opportunities task
+	GetOpportunitiesTasksTaskID gets opportunities task
 
-  Return information of an opportunities task
+	Return information of an opportunities task
 
 ---
 

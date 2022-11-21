@@ -79,7 +79,8 @@ func NewGetOpportunitiesTasksTaskIDOK() *GetOpportunitiesTasksTaskIDOK {
 	return &GetOpportunitiesTasksTaskIDOK{}
 }
 
-/* GetOpportunitiesTasksTaskIDOK describes a response with status code 200, with default header values.
+/*
+GetOpportunitiesTasksTaskIDOK describes a response with status code 200, with default header values.
 
 Details of an opportunities task
 */
@@ -104,9 +105,39 @@ type GetOpportunitiesTasksTaskIDOK struct {
 	Payload *GetOpportunitiesTasksTaskIDOKBody
 }
 
+// IsSuccess returns true when this get opportunities tasks task Id o k response has a 2xx status code
+func (o *GetOpportunitiesTasksTaskIDOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get opportunities tasks task Id o k response has a 3xx status code
+func (o *GetOpportunitiesTasksTaskIDOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get opportunities tasks task Id o k response has a 4xx status code
+func (o *GetOpportunitiesTasksTaskIDOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get opportunities tasks task Id o k response has a 5xx status code
+func (o *GetOpportunitiesTasksTaskIDOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get opportunities tasks task Id o k response a status code equal to that given
+func (o *GetOpportunitiesTasksTaskIDOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetOpportunitiesTasksTaskIDOK) Error() string {
 	return fmt.Sprintf("[GET /v1/opportunities/tasks/{task_id}/][%d] getOpportunitiesTasksTaskIdOK  %+v", 200, o.Payload)
 }
+
+func (o *GetOpportunitiesTasksTaskIDOK) String() string {
+	return fmt.Sprintf("[GET /v1/opportunities/tasks/{task_id}/][%d] getOpportunitiesTasksTaskIdOK  %+v", 200, o.Payload)
+}
+
 func (o *GetOpportunitiesTasksTaskIDOK) GetPayload() *GetOpportunitiesTasksTaskIDOKBody {
 	return o.Payload
 }
@@ -156,7 +187,8 @@ func NewGetOpportunitiesTasksTaskIDNotModified() *GetOpportunitiesTasksTaskIDNot
 	return &GetOpportunitiesTasksTaskIDNotModified{}
 }
 
-/* GetOpportunitiesTasksTaskIDNotModified describes a response with status code 304, with default header values.
+/*
+GetOpportunitiesTasksTaskIDNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -179,7 +211,36 @@ type GetOpportunitiesTasksTaskIDNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get opportunities tasks task Id not modified response has a 2xx status code
+func (o *GetOpportunitiesTasksTaskIDNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get opportunities tasks task Id not modified response has a 3xx status code
+func (o *GetOpportunitiesTasksTaskIDNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get opportunities tasks task Id not modified response has a 4xx status code
+func (o *GetOpportunitiesTasksTaskIDNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get opportunities tasks task Id not modified response has a 5xx status code
+func (o *GetOpportunitiesTasksTaskIDNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get opportunities tasks task Id not modified response a status code equal to that given
+func (o *GetOpportunitiesTasksTaskIDNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetOpportunitiesTasksTaskIDNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/opportunities/tasks/{task_id}/][%d] getOpportunitiesTasksTaskIdNotModified ", 304)
+}
+
+func (o *GetOpportunitiesTasksTaskIDNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/opportunities/tasks/{task_id}/][%d] getOpportunitiesTasksTaskIdNotModified ", 304)
 }
 
@@ -221,7 +282,8 @@ func NewGetOpportunitiesTasksTaskIDBadRequest() *GetOpportunitiesTasksTaskIDBadR
 	return &GetOpportunitiesTasksTaskIDBadRequest{}
 }
 
-/* GetOpportunitiesTasksTaskIDBadRequest describes a response with status code 400, with default header values.
+/*
+GetOpportunitiesTasksTaskIDBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -229,9 +291,39 @@ type GetOpportunitiesTasksTaskIDBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get opportunities tasks task Id bad request response has a 2xx status code
+func (o *GetOpportunitiesTasksTaskIDBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get opportunities tasks task Id bad request response has a 3xx status code
+func (o *GetOpportunitiesTasksTaskIDBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get opportunities tasks task Id bad request response has a 4xx status code
+func (o *GetOpportunitiesTasksTaskIDBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get opportunities tasks task Id bad request response has a 5xx status code
+func (o *GetOpportunitiesTasksTaskIDBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get opportunities tasks task Id bad request response a status code equal to that given
+func (o *GetOpportunitiesTasksTaskIDBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetOpportunitiesTasksTaskIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/opportunities/tasks/{task_id}/][%d] getOpportunitiesTasksTaskIdBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetOpportunitiesTasksTaskIDBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/opportunities/tasks/{task_id}/][%d] getOpportunitiesTasksTaskIdBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetOpportunitiesTasksTaskIDBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -253,7 +345,8 @@ func NewGetOpportunitiesTasksTaskIDEnhanceYourCalm() *GetOpportunitiesTasksTaskI
 	return &GetOpportunitiesTasksTaskIDEnhanceYourCalm{}
 }
 
-/* GetOpportunitiesTasksTaskIDEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetOpportunitiesTasksTaskIDEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -261,9 +354,39 @@ type GetOpportunitiesTasksTaskIDEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get opportunities tasks task Id enhance your calm response has a 2xx status code
+func (o *GetOpportunitiesTasksTaskIDEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get opportunities tasks task Id enhance your calm response has a 3xx status code
+func (o *GetOpportunitiesTasksTaskIDEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get opportunities tasks task Id enhance your calm response has a 4xx status code
+func (o *GetOpportunitiesTasksTaskIDEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get opportunities tasks task Id enhance your calm response has a 5xx status code
+func (o *GetOpportunitiesTasksTaskIDEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get opportunities tasks task Id enhance your calm response a status code equal to that given
+func (o *GetOpportunitiesTasksTaskIDEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetOpportunitiesTasksTaskIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/opportunities/tasks/{task_id}/][%d] getOpportunitiesTasksTaskIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetOpportunitiesTasksTaskIDEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/opportunities/tasks/{task_id}/][%d] getOpportunitiesTasksTaskIdEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetOpportunitiesTasksTaskIDEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -285,7 +408,8 @@ func NewGetOpportunitiesTasksTaskIDInternalServerError() *GetOpportunitiesTasksT
 	return &GetOpportunitiesTasksTaskIDInternalServerError{}
 }
 
-/* GetOpportunitiesTasksTaskIDInternalServerError describes a response with status code 500, with default header values.
+/*
+GetOpportunitiesTasksTaskIDInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -293,9 +417,39 @@ type GetOpportunitiesTasksTaskIDInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get opportunities tasks task Id internal server error response has a 2xx status code
+func (o *GetOpportunitiesTasksTaskIDInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get opportunities tasks task Id internal server error response has a 3xx status code
+func (o *GetOpportunitiesTasksTaskIDInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get opportunities tasks task Id internal server error response has a 4xx status code
+func (o *GetOpportunitiesTasksTaskIDInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get opportunities tasks task Id internal server error response has a 5xx status code
+func (o *GetOpportunitiesTasksTaskIDInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get opportunities tasks task Id internal server error response a status code equal to that given
+func (o *GetOpportunitiesTasksTaskIDInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetOpportunitiesTasksTaskIDInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/opportunities/tasks/{task_id}/][%d] getOpportunitiesTasksTaskIdInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetOpportunitiesTasksTaskIDInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/opportunities/tasks/{task_id}/][%d] getOpportunitiesTasksTaskIdInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetOpportunitiesTasksTaskIDInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -317,7 +471,8 @@ func NewGetOpportunitiesTasksTaskIDServiceUnavailable() *GetOpportunitiesTasksTa
 	return &GetOpportunitiesTasksTaskIDServiceUnavailable{}
 }
 
-/* GetOpportunitiesTasksTaskIDServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetOpportunitiesTasksTaskIDServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -325,9 +480,39 @@ type GetOpportunitiesTasksTaskIDServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get opportunities tasks task Id service unavailable response has a 2xx status code
+func (o *GetOpportunitiesTasksTaskIDServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get opportunities tasks task Id service unavailable response has a 3xx status code
+func (o *GetOpportunitiesTasksTaskIDServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get opportunities tasks task Id service unavailable response has a 4xx status code
+func (o *GetOpportunitiesTasksTaskIDServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get opportunities tasks task Id service unavailable response has a 5xx status code
+func (o *GetOpportunitiesTasksTaskIDServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get opportunities tasks task Id service unavailable response a status code equal to that given
+func (o *GetOpportunitiesTasksTaskIDServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetOpportunitiesTasksTaskIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/opportunities/tasks/{task_id}/][%d] getOpportunitiesTasksTaskIdServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetOpportunitiesTasksTaskIDServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/opportunities/tasks/{task_id}/][%d] getOpportunitiesTasksTaskIdServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetOpportunitiesTasksTaskIDServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -349,7 +534,8 @@ func NewGetOpportunitiesTasksTaskIDGatewayTimeout() *GetOpportunitiesTasksTaskID
 	return &GetOpportunitiesTasksTaskIDGatewayTimeout{}
 }
 
-/* GetOpportunitiesTasksTaskIDGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetOpportunitiesTasksTaskIDGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -357,9 +543,39 @@ type GetOpportunitiesTasksTaskIDGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get opportunities tasks task Id gateway timeout response has a 2xx status code
+func (o *GetOpportunitiesTasksTaskIDGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get opportunities tasks task Id gateway timeout response has a 3xx status code
+func (o *GetOpportunitiesTasksTaskIDGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get opportunities tasks task Id gateway timeout response has a 4xx status code
+func (o *GetOpportunitiesTasksTaskIDGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get opportunities tasks task Id gateway timeout response has a 5xx status code
+func (o *GetOpportunitiesTasksTaskIDGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get opportunities tasks task Id gateway timeout response a status code equal to that given
+func (o *GetOpportunitiesTasksTaskIDGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetOpportunitiesTasksTaskIDGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/opportunities/tasks/{task_id}/][%d] getOpportunitiesTasksTaskIdGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetOpportunitiesTasksTaskIDGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/opportunities/tasks/{task_id}/][%d] getOpportunitiesTasksTaskIdGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetOpportunitiesTasksTaskIDGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -376,7 +592,8 @@ func (o *GetOpportunitiesTasksTaskIDGatewayTimeout) readResponse(response runtim
 	return nil
 }
 
-/*GetOpportunitiesTasksTaskIDOKBody get_opportunities_tasks_task_id_ok
+/*
+GetOpportunitiesTasksTaskIDOKBody get_opportunities_tasks_task_id_ok
 //
 // 200 ok object
 swagger:model GetOpportunitiesTasksTaskIDOKBody

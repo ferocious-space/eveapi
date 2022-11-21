@@ -75,7 +75,8 @@ func NewGetCorporationsNpccorpsOK() *GetCorporationsNpccorpsOK {
 	return &GetCorporationsNpccorpsOK{}
 }
 
-/* GetCorporationsNpccorpsOK describes a response with status code 200, with default header values.
+/*
+GetCorporationsNpccorpsOK describes a response with status code 200, with default header values.
 
 A list of npc corporation ids
 */
@@ -100,9 +101,39 @@ type GetCorporationsNpccorpsOK struct {
 	Payload []int32
 }
 
+// IsSuccess returns true when this get corporations npccorps o k response has a 2xx status code
+func (o *GetCorporationsNpccorpsOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get corporations npccorps o k response has a 3xx status code
+func (o *GetCorporationsNpccorpsOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations npccorps o k response has a 4xx status code
+func (o *GetCorporationsNpccorpsOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get corporations npccorps o k response has a 5xx status code
+func (o *GetCorporationsNpccorpsOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporations npccorps o k response a status code equal to that given
+func (o *GetCorporationsNpccorpsOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetCorporationsNpccorpsOK) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/npccorps/][%d] getCorporationsNpccorpsOK  %+v", 200, o.Payload)
 }
+
+func (o *GetCorporationsNpccorpsOK) String() string {
+	return fmt.Sprintf("[GET /v2/corporations/npccorps/][%d] getCorporationsNpccorpsOK  %+v", 200, o.Payload)
+}
+
 func (o *GetCorporationsNpccorpsOK) GetPayload() []int32 {
 	return o.Payload
 }
@@ -150,7 +181,8 @@ func NewGetCorporationsNpccorpsNotModified() *GetCorporationsNpccorpsNotModified
 	return &GetCorporationsNpccorpsNotModified{}
 }
 
-/* GetCorporationsNpccorpsNotModified describes a response with status code 304, with default header values.
+/*
+GetCorporationsNpccorpsNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -173,7 +205,36 @@ type GetCorporationsNpccorpsNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get corporations npccorps not modified response has a 2xx status code
+func (o *GetCorporationsNpccorpsNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations npccorps not modified response has a 3xx status code
+func (o *GetCorporationsNpccorpsNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get corporations npccorps not modified response has a 4xx status code
+func (o *GetCorporationsNpccorpsNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get corporations npccorps not modified response has a 5xx status code
+func (o *GetCorporationsNpccorpsNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporations npccorps not modified response a status code equal to that given
+func (o *GetCorporationsNpccorpsNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetCorporationsNpccorpsNotModified) Error() string {
+	return fmt.Sprintf("[GET /v2/corporations/npccorps/][%d] getCorporationsNpccorpsNotModified ", 304)
+}
+
+func (o *GetCorporationsNpccorpsNotModified) String() string {
 	return fmt.Sprintf("[GET /v2/corporations/npccorps/][%d] getCorporationsNpccorpsNotModified ", 304)
 }
 
@@ -215,7 +276,8 @@ func NewGetCorporationsNpccorpsBadRequest() *GetCorporationsNpccorpsBadRequest {
 	return &GetCorporationsNpccorpsBadRequest{}
 }
 
-/* GetCorporationsNpccorpsBadRequest describes a response with status code 400, with default header values.
+/*
+GetCorporationsNpccorpsBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -223,9 +285,39 @@ type GetCorporationsNpccorpsBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get corporations npccorps bad request response has a 2xx status code
+func (o *GetCorporationsNpccorpsBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations npccorps bad request response has a 3xx status code
+func (o *GetCorporationsNpccorpsBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations npccorps bad request response has a 4xx status code
+func (o *GetCorporationsNpccorpsBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get corporations npccorps bad request response has a 5xx status code
+func (o *GetCorporationsNpccorpsBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporations npccorps bad request response a status code equal to that given
+func (o *GetCorporationsNpccorpsBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetCorporationsNpccorpsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/npccorps/][%d] getCorporationsNpccorpsBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetCorporationsNpccorpsBadRequest) String() string {
+	return fmt.Sprintf("[GET /v2/corporations/npccorps/][%d] getCorporationsNpccorpsBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetCorporationsNpccorpsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -247,7 +339,8 @@ func NewGetCorporationsNpccorpsEnhanceYourCalm() *GetCorporationsNpccorpsEnhance
 	return &GetCorporationsNpccorpsEnhanceYourCalm{}
 }
 
-/* GetCorporationsNpccorpsEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetCorporationsNpccorpsEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -255,9 +348,39 @@ type GetCorporationsNpccorpsEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get corporations npccorps enhance your calm response has a 2xx status code
+func (o *GetCorporationsNpccorpsEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations npccorps enhance your calm response has a 3xx status code
+func (o *GetCorporationsNpccorpsEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations npccorps enhance your calm response has a 4xx status code
+func (o *GetCorporationsNpccorpsEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get corporations npccorps enhance your calm response has a 5xx status code
+func (o *GetCorporationsNpccorpsEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporations npccorps enhance your calm response a status code equal to that given
+func (o *GetCorporationsNpccorpsEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetCorporationsNpccorpsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/npccorps/][%d] getCorporationsNpccorpsEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetCorporationsNpccorpsEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v2/corporations/npccorps/][%d] getCorporationsNpccorpsEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetCorporationsNpccorpsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -279,7 +402,8 @@ func NewGetCorporationsNpccorpsInternalServerError() *GetCorporationsNpccorpsInt
 	return &GetCorporationsNpccorpsInternalServerError{}
 }
 
-/* GetCorporationsNpccorpsInternalServerError describes a response with status code 500, with default header values.
+/*
+GetCorporationsNpccorpsInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -287,9 +411,39 @@ type GetCorporationsNpccorpsInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get corporations npccorps internal server error response has a 2xx status code
+func (o *GetCorporationsNpccorpsInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations npccorps internal server error response has a 3xx status code
+func (o *GetCorporationsNpccorpsInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations npccorps internal server error response has a 4xx status code
+func (o *GetCorporationsNpccorpsInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get corporations npccorps internal server error response has a 5xx status code
+func (o *GetCorporationsNpccorpsInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get corporations npccorps internal server error response a status code equal to that given
+func (o *GetCorporationsNpccorpsInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetCorporationsNpccorpsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/npccorps/][%d] getCorporationsNpccorpsInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetCorporationsNpccorpsInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v2/corporations/npccorps/][%d] getCorporationsNpccorpsInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetCorporationsNpccorpsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -311,7 +465,8 @@ func NewGetCorporationsNpccorpsServiceUnavailable() *GetCorporationsNpccorpsServ
 	return &GetCorporationsNpccorpsServiceUnavailable{}
 }
 
-/* GetCorporationsNpccorpsServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetCorporationsNpccorpsServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -319,9 +474,39 @@ type GetCorporationsNpccorpsServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get corporations npccorps service unavailable response has a 2xx status code
+func (o *GetCorporationsNpccorpsServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations npccorps service unavailable response has a 3xx status code
+func (o *GetCorporationsNpccorpsServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations npccorps service unavailable response has a 4xx status code
+func (o *GetCorporationsNpccorpsServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get corporations npccorps service unavailable response has a 5xx status code
+func (o *GetCorporationsNpccorpsServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get corporations npccorps service unavailable response a status code equal to that given
+func (o *GetCorporationsNpccorpsServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetCorporationsNpccorpsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/npccorps/][%d] getCorporationsNpccorpsServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetCorporationsNpccorpsServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v2/corporations/npccorps/][%d] getCorporationsNpccorpsServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetCorporationsNpccorpsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -343,7 +528,8 @@ func NewGetCorporationsNpccorpsGatewayTimeout() *GetCorporationsNpccorpsGatewayT
 	return &GetCorporationsNpccorpsGatewayTimeout{}
 }
 
-/* GetCorporationsNpccorpsGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetCorporationsNpccorpsGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -351,9 +537,39 @@ type GetCorporationsNpccorpsGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get corporations npccorps gateway timeout response has a 2xx status code
+func (o *GetCorporationsNpccorpsGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations npccorps gateway timeout response has a 3xx status code
+func (o *GetCorporationsNpccorpsGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations npccorps gateway timeout response has a 4xx status code
+func (o *GetCorporationsNpccorpsGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get corporations npccorps gateway timeout response has a 5xx status code
+func (o *GetCorporationsNpccorpsGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get corporations npccorps gateway timeout response a status code equal to that given
+func (o *GetCorporationsNpccorpsGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetCorporationsNpccorpsGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/npccorps/][%d] getCorporationsNpccorpsGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetCorporationsNpccorpsGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v2/corporations/npccorps/][%d] getCorporationsNpccorpsGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetCorporationsNpccorpsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }

@@ -36,9 +36,9 @@ type ClientService interface {
 }
 
 /*
-  GetStatus retrieves the uptime and player counts
+	GetStatus retrieves the uptime and player counts
 
-  EVE Server status
+	EVE Server status
 
 ---
 

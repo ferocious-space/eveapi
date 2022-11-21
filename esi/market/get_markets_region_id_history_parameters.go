@@ -53,10 +53,12 @@ func NewGetMarketsRegionIDHistoryParamsWithHTTPClient(client *http.Client) *GetM
 	}
 }
 
-/* GetMarketsRegionIDHistoryParams contains all the parameters to send to the API endpoint
-   for the get markets region id history operation.
+/*
+GetMarketsRegionIDHistoryParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get markets region id history operation.
+
+	Typically these are written to a http.Request.
 */
 type GetMarketsRegionIDHistoryParams struct {
 

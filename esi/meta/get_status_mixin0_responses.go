@@ -48,7 +48,8 @@ func NewGetStatusMixin0OK() *GetStatusMixin0OK {
 	return &GetStatusMixin0OK{}
 }
 
-/* GetStatusMixin0OK describes a response with status code 200, with default header values.
+/*
+GetStatusMixin0OK describes a response with status code 200, with default header values.
 
 ESI Status
 */
@@ -69,9 +70,39 @@ type GetStatusMixin0OK struct {
 	Payload []*GetStatusMixin0OKBodyItems0
 }
 
+// IsSuccess returns true when this get status mixin0 o k response has a 2xx status code
+func (o *GetStatusMixin0OK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get status mixin0 o k response has a 3xx status code
+func (o *GetStatusMixin0OK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get status mixin0 o k response has a 4xx status code
+func (o *GetStatusMixin0OK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get status mixin0 o k response has a 5xx status code
+func (o *GetStatusMixin0OK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get status mixin0 o k response a status code equal to that given
+func (o *GetStatusMixin0OK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetStatusMixin0OK) Error() string {
 	return fmt.Sprintf("[GET /status.json][%d] getStatusMixin0OK  %+v", 200, o.Payload)
 }
+
+func (o *GetStatusMixin0OK) String() string {
+	return fmt.Sprintf("[GET /status.json][%d] getStatusMixin0OK  %+v", 200, o.Payload)
+}
+
 func (o *GetStatusMixin0OK) GetPayload() []*GetStatusMixin0OKBodyItems0 {
 	return o.Payload
 }
@@ -112,7 +143,8 @@ func NewGetStatusMixin0NotFound() *GetStatusMixin0NotFound {
 	return &GetStatusMixin0NotFound{}
 }
 
-/* GetStatusMixin0NotFound describes a response with status code 404, with default header values.
+/*
+GetStatusMixin0NotFound describes a response with status code 404, with default header values.
 
 Unsupported version
 */
@@ -120,9 +152,39 @@ type GetStatusMixin0NotFound struct {
 	Payload *GetStatusMixin0NotFoundBody
 }
 
+// IsSuccess returns true when this get status mixin0 not found response has a 2xx status code
+func (o *GetStatusMixin0NotFound) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get status mixin0 not found response has a 3xx status code
+func (o *GetStatusMixin0NotFound) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get status mixin0 not found response has a 4xx status code
+func (o *GetStatusMixin0NotFound) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get status mixin0 not found response has a 5xx status code
+func (o *GetStatusMixin0NotFound) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get status mixin0 not found response a status code equal to that given
+func (o *GetStatusMixin0NotFound) IsCode(code int) bool {
+	return code == 404
+}
+
 func (o *GetStatusMixin0NotFound) Error() string {
 	return fmt.Sprintf("[GET /status.json][%d] getStatusMixin0NotFound  %+v", 404, o.Payload)
 }
+
+func (o *GetStatusMixin0NotFound) String() string {
+	return fmt.Sprintf("[GET /status.json][%d] getStatusMixin0NotFound  %+v", 404, o.Payload)
+}
+
 func (o *GetStatusMixin0NotFound) GetPayload() *GetStatusMixin0NotFoundBody {
 	return o.Payload
 }
@@ -139,7 +201,8 @@ func (o *GetStatusMixin0NotFound) readResponse(response runtime.ClientResponse, 
 	return nil
 }
 
-/*GetStatusMixin0NotFoundBody get_status_not_found
+/*
+GetStatusMixin0NotFoundBody get_status_not_found
 //
 // Unsupported version
 swagger:model GetStatusMixin0NotFoundBody
@@ -199,7 +262,8 @@ func (o *GetStatusMixin0NotFoundBody) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*GetStatusMixin0OKBodyItems0 get_status_item
+/*
+GetStatusMixin0OKBodyItems0 get_status_item
 //
 // Per route status
 swagger:model GetStatusMixin0OKBodyItems0

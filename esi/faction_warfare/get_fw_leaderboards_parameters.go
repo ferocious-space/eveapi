@@ -52,10 +52,12 @@ func NewGetFwLeaderboardsParamsWithHTTPClient(client *http.Client) *GetFwLeaderb
 	}
 }
 
-/* GetFwLeaderboardsParams contains all the parameters to send to the API endpoint
-   for the get fw leaderboards operation.
+/*
+GetFwLeaderboardsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get fw leaderboards operation.
+
+	Typically these are written to a http.Request.
 */
 type GetFwLeaderboardsParams struct {
 

@@ -91,7 +91,8 @@ func NewGetCharactersCharacterIDSkillqueueOK() *GetCharactersCharacterIDSkillque
 	return &GetCharactersCharacterIDSkillqueueOK{}
 }
 
-/* GetCharactersCharacterIDSkillqueueOK describes a response with status code 200, with default header values.
+/*
+GetCharactersCharacterIDSkillqueueOK describes a response with status code 200, with default header values.
 
 The current skill queue, sorted ascending by finishing time
 */
@@ -116,9 +117,39 @@ type GetCharactersCharacterIDSkillqueueOK struct {
 	Payload []*GetCharactersCharacterIDSkillqueueOKBodyItems0
 }
 
+// IsSuccess returns true when this get characters character Id skillqueue o k response has a 2xx status code
+func (o *GetCharactersCharacterIDSkillqueueOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get characters character Id skillqueue o k response has a 3xx status code
+func (o *GetCharactersCharacterIDSkillqueueOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id skillqueue o k response has a 4xx status code
+func (o *GetCharactersCharacterIDSkillqueueOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id skillqueue o k response has a 5xx status code
+func (o *GetCharactersCharacterIDSkillqueueOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id skillqueue o k response a status code equal to that given
+func (o *GetCharactersCharacterIDSkillqueueOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetCharactersCharacterIDSkillqueueOK) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/skillqueue/][%d] getCharactersCharacterIdSkillqueueOK  %+v", 200, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDSkillqueueOK) String() string {
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/skillqueue/][%d] getCharactersCharacterIdSkillqueueOK  %+v", 200, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDSkillqueueOK) GetPayload() []*GetCharactersCharacterIDSkillqueueOKBodyItems0 {
 	return o.Payload
 }
@@ -166,7 +197,8 @@ func NewGetCharactersCharacterIDSkillqueueNotModified() *GetCharactersCharacterI
 	return &GetCharactersCharacterIDSkillqueueNotModified{}
 }
 
-/* GetCharactersCharacterIDSkillqueueNotModified describes a response with status code 304, with default header values.
+/*
+GetCharactersCharacterIDSkillqueueNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -189,7 +221,36 @@ type GetCharactersCharacterIDSkillqueueNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get characters character Id skillqueue not modified response has a 2xx status code
+func (o *GetCharactersCharacterIDSkillqueueNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id skillqueue not modified response has a 3xx status code
+func (o *GetCharactersCharacterIDSkillqueueNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get characters character Id skillqueue not modified response has a 4xx status code
+func (o *GetCharactersCharacterIDSkillqueueNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id skillqueue not modified response has a 5xx status code
+func (o *GetCharactersCharacterIDSkillqueueNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id skillqueue not modified response a status code equal to that given
+func (o *GetCharactersCharacterIDSkillqueueNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetCharactersCharacterIDSkillqueueNotModified) Error() string {
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/skillqueue/][%d] getCharactersCharacterIdSkillqueueNotModified ", 304)
+}
+
+func (o *GetCharactersCharacterIDSkillqueueNotModified) String() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/skillqueue/][%d] getCharactersCharacterIdSkillqueueNotModified ", 304)
 }
 
@@ -231,7 +292,8 @@ func NewGetCharactersCharacterIDSkillqueueBadRequest() *GetCharactersCharacterID
 	return &GetCharactersCharacterIDSkillqueueBadRequest{}
 }
 
-/* GetCharactersCharacterIDSkillqueueBadRequest describes a response with status code 400, with default header values.
+/*
+GetCharactersCharacterIDSkillqueueBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -239,9 +301,39 @@ type GetCharactersCharacterIDSkillqueueBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get characters character Id skillqueue bad request response has a 2xx status code
+func (o *GetCharactersCharacterIDSkillqueueBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id skillqueue bad request response has a 3xx status code
+func (o *GetCharactersCharacterIDSkillqueueBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id skillqueue bad request response has a 4xx status code
+func (o *GetCharactersCharacterIDSkillqueueBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id skillqueue bad request response has a 5xx status code
+func (o *GetCharactersCharacterIDSkillqueueBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id skillqueue bad request response a status code equal to that given
+func (o *GetCharactersCharacterIDSkillqueueBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetCharactersCharacterIDSkillqueueBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/skillqueue/][%d] getCharactersCharacterIdSkillqueueBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDSkillqueueBadRequest) String() string {
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/skillqueue/][%d] getCharactersCharacterIdSkillqueueBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDSkillqueueBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -263,7 +355,8 @@ func NewGetCharactersCharacterIDSkillqueueUnauthorized() *GetCharactersCharacter
 	return &GetCharactersCharacterIDSkillqueueUnauthorized{}
 }
 
-/* GetCharactersCharacterIDSkillqueueUnauthorized describes a response with status code 401, with default header values.
+/*
+GetCharactersCharacterIDSkillqueueUnauthorized describes a response with status code 401, with default header values.
 
 Unauthorized
 */
@@ -271,9 +364,39 @@ type GetCharactersCharacterIDSkillqueueUnauthorized struct {
 	Payload *models.Unauthorized
 }
 
+// IsSuccess returns true when this get characters character Id skillqueue unauthorized response has a 2xx status code
+func (o *GetCharactersCharacterIDSkillqueueUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id skillqueue unauthorized response has a 3xx status code
+func (o *GetCharactersCharacterIDSkillqueueUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id skillqueue unauthorized response has a 4xx status code
+func (o *GetCharactersCharacterIDSkillqueueUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id skillqueue unauthorized response has a 5xx status code
+func (o *GetCharactersCharacterIDSkillqueueUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id skillqueue unauthorized response a status code equal to that given
+func (o *GetCharactersCharacterIDSkillqueueUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *GetCharactersCharacterIDSkillqueueUnauthorized) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/skillqueue/][%d] getCharactersCharacterIdSkillqueueUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDSkillqueueUnauthorized) String() string {
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/skillqueue/][%d] getCharactersCharacterIdSkillqueueUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDSkillqueueUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
 }
@@ -295,7 +418,8 @@ func NewGetCharactersCharacterIDSkillqueueForbidden() *GetCharactersCharacterIDS
 	return &GetCharactersCharacterIDSkillqueueForbidden{}
 }
 
-/* GetCharactersCharacterIDSkillqueueForbidden describes a response with status code 403, with default header values.
+/*
+GetCharactersCharacterIDSkillqueueForbidden describes a response with status code 403, with default header values.
 
 Forbidden
 */
@@ -303,9 +427,39 @@ type GetCharactersCharacterIDSkillqueueForbidden struct {
 	Payload *models.Forbidden
 }
 
+// IsSuccess returns true when this get characters character Id skillqueue forbidden response has a 2xx status code
+func (o *GetCharactersCharacterIDSkillqueueForbidden) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id skillqueue forbidden response has a 3xx status code
+func (o *GetCharactersCharacterIDSkillqueueForbidden) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id skillqueue forbidden response has a 4xx status code
+func (o *GetCharactersCharacterIDSkillqueueForbidden) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id skillqueue forbidden response has a 5xx status code
+func (o *GetCharactersCharacterIDSkillqueueForbidden) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id skillqueue forbidden response a status code equal to that given
+func (o *GetCharactersCharacterIDSkillqueueForbidden) IsCode(code int) bool {
+	return code == 403
+}
+
 func (o *GetCharactersCharacterIDSkillqueueForbidden) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/skillqueue/][%d] getCharactersCharacterIdSkillqueueForbidden  %+v", 403, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDSkillqueueForbidden) String() string {
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/skillqueue/][%d] getCharactersCharacterIdSkillqueueForbidden  %+v", 403, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDSkillqueueForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
 }
@@ -327,7 +481,8 @@ func NewGetCharactersCharacterIDSkillqueueEnhanceYourCalm() *GetCharactersCharac
 	return &GetCharactersCharacterIDSkillqueueEnhanceYourCalm{}
 }
 
-/* GetCharactersCharacterIDSkillqueueEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetCharactersCharacterIDSkillqueueEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -335,9 +490,39 @@ type GetCharactersCharacterIDSkillqueueEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get characters character Id skillqueue enhance your calm response has a 2xx status code
+func (o *GetCharactersCharacterIDSkillqueueEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id skillqueue enhance your calm response has a 3xx status code
+func (o *GetCharactersCharacterIDSkillqueueEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id skillqueue enhance your calm response has a 4xx status code
+func (o *GetCharactersCharacterIDSkillqueueEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id skillqueue enhance your calm response has a 5xx status code
+func (o *GetCharactersCharacterIDSkillqueueEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id skillqueue enhance your calm response a status code equal to that given
+func (o *GetCharactersCharacterIDSkillqueueEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetCharactersCharacterIDSkillqueueEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/skillqueue/][%d] getCharactersCharacterIdSkillqueueEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDSkillqueueEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/skillqueue/][%d] getCharactersCharacterIdSkillqueueEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDSkillqueueEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -359,7 +544,8 @@ func NewGetCharactersCharacterIDSkillqueueInternalServerError() *GetCharactersCh
 	return &GetCharactersCharacterIDSkillqueueInternalServerError{}
 }
 
-/* GetCharactersCharacterIDSkillqueueInternalServerError describes a response with status code 500, with default header values.
+/*
+GetCharactersCharacterIDSkillqueueInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -367,9 +553,39 @@ type GetCharactersCharacterIDSkillqueueInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get characters character Id skillqueue internal server error response has a 2xx status code
+func (o *GetCharactersCharacterIDSkillqueueInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id skillqueue internal server error response has a 3xx status code
+func (o *GetCharactersCharacterIDSkillqueueInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id skillqueue internal server error response has a 4xx status code
+func (o *GetCharactersCharacterIDSkillqueueInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id skillqueue internal server error response has a 5xx status code
+func (o *GetCharactersCharacterIDSkillqueueInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id skillqueue internal server error response a status code equal to that given
+func (o *GetCharactersCharacterIDSkillqueueInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetCharactersCharacterIDSkillqueueInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/skillqueue/][%d] getCharactersCharacterIdSkillqueueInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDSkillqueueInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/skillqueue/][%d] getCharactersCharacterIdSkillqueueInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDSkillqueueInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -391,7 +607,8 @@ func NewGetCharactersCharacterIDSkillqueueServiceUnavailable() *GetCharactersCha
 	return &GetCharactersCharacterIDSkillqueueServiceUnavailable{}
 }
 
-/* GetCharactersCharacterIDSkillqueueServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetCharactersCharacterIDSkillqueueServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -399,9 +616,39 @@ type GetCharactersCharacterIDSkillqueueServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get characters character Id skillqueue service unavailable response has a 2xx status code
+func (o *GetCharactersCharacterIDSkillqueueServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id skillqueue service unavailable response has a 3xx status code
+func (o *GetCharactersCharacterIDSkillqueueServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id skillqueue service unavailable response has a 4xx status code
+func (o *GetCharactersCharacterIDSkillqueueServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id skillqueue service unavailable response has a 5xx status code
+func (o *GetCharactersCharacterIDSkillqueueServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id skillqueue service unavailable response a status code equal to that given
+func (o *GetCharactersCharacterIDSkillqueueServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetCharactersCharacterIDSkillqueueServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/skillqueue/][%d] getCharactersCharacterIdSkillqueueServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDSkillqueueServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/skillqueue/][%d] getCharactersCharacterIdSkillqueueServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDSkillqueueServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -423,7 +670,8 @@ func NewGetCharactersCharacterIDSkillqueueGatewayTimeout() *GetCharactersCharact
 	return &GetCharactersCharacterIDSkillqueueGatewayTimeout{}
 }
 
-/* GetCharactersCharacterIDSkillqueueGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetCharactersCharacterIDSkillqueueGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -431,9 +679,39 @@ type GetCharactersCharacterIDSkillqueueGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get characters character Id skillqueue gateway timeout response has a 2xx status code
+func (o *GetCharactersCharacterIDSkillqueueGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id skillqueue gateway timeout response has a 3xx status code
+func (o *GetCharactersCharacterIDSkillqueueGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id skillqueue gateway timeout response has a 4xx status code
+func (o *GetCharactersCharacterIDSkillqueueGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id skillqueue gateway timeout response has a 5xx status code
+func (o *GetCharactersCharacterIDSkillqueueGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id skillqueue gateway timeout response a status code equal to that given
+func (o *GetCharactersCharacterIDSkillqueueGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetCharactersCharacterIDSkillqueueGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/skillqueue/][%d] getCharactersCharacterIdSkillqueueGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDSkillqueueGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/skillqueue/][%d] getCharactersCharacterIdSkillqueueGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDSkillqueueGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -450,7 +728,8 @@ func (o *GetCharactersCharacterIDSkillqueueGatewayTimeout) readResponse(response
 	return nil
 }
 
-/*GetCharactersCharacterIDSkillqueueOKBodyItems0 get_characters_character_id_skillqueue_200_ok
+/*
+GetCharactersCharacterIDSkillqueueOKBodyItems0 get_characters_character_id_skillqueue_200_ok
 //
 // 200 ok object
 swagger:model GetCharactersCharacterIDSkillqueueOKBodyItems0

@@ -53,10 +53,12 @@ func NewGetCharactersCharacterIDBookmarksParamsWithHTTPClient(client *http.Clien
 	}
 }
 
-/* GetCharactersCharacterIDBookmarksParams contains all the parameters to send to the API endpoint
-   for the get characters character id bookmarks operation.
+/*
+GetCharactersCharacterIDBookmarksParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get characters character id bookmarks operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCharactersCharacterIDBookmarksParams struct {
 

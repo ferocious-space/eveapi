@@ -86,7 +86,8 @@ func NewGetDogmaEffectsEffectIDOK() *GetDogmaEffectsEffectIDOK {
 	return &GetDogmaEffectsEffectIDOK{}
 }
 
-/* GetDogmaEffectsEffectIDOK describes a response with status code 200, with default header values.
+/*
+GetDogmaEffectsEffectIDOK describes a response with status code 200, with default header values.
 
 Information about a dogma effect
 */
@@ -111,9 +112,39 @@ type GetDogmaEffectsEffectIDOK struct {
 	Payload *GetDogmaEffectsEffectIDOKBody
 }
 
+// IsSuccess returns true when this get dogma effects effect Id o k response has a 2xx status code
+func (o *GetDogmaEffectsEffectIDOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get dogma effects effect Id o k response has a 3xx status code
+func (o *GetDogmaEffectsEffectIDOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get dogma effects effect Id o k response has a 4xx status code
+func (o *GetDogmaEffectsEffectIDOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get dogma effects effect Id o k response has a 5xx status code
+func (o *GetDogmaEffectsEffectIDOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get dogma effects effect Id o k response a status code equal to that given
+func (o *GetDogmaEffectsEffectIDOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetDogmaEffectsEffectIDOK) Error() string {
 	return fmt.Sprintf("[GET /v2/dogma/effects/{effect_id}/][%d] getDogmaEffectsEffectIdOK  %+v", 200, o.Payload)
 }
+
+func (o *GetDogmaEffectsEffectIDOK) String() string {
+	return fmt.Sprintf("[GET /v2/dogma/effects/{effect_id}/][%d] getDogmaEffectsEffectIdOK  %+v", 200, o.Payload)
+}
+
 func (o *GetDogmaEffectsEffectIDOK) GetPayload() *GetDogmaEffectsEffectIDOKBody {
 	return o.Payload
 }
@@ -163,7 +194,8 @@ func NewGetDogmaEffectsEffectIDNotModified() *GetDogmaEffectsEffectIDNotModified
 	return &GetDogmaEffectsEffectIDNotModified{}
 }
 
-/* GetDogmaEffectsEffectIDNotModified describes a response with status code 304, with default header values.
+/*
+GetDogmaEffectsEffectIDNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -186,7 +218,36 @@ type GetDogmaEffectsEffectIDNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get dogma effects effect Id not modified response has a 2xx status code
+func (o *GetDogmaEffectsEffectIDNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get dogma effects effect Id not modified response has a 3xx status code
+func (o *GetDogmaEffectsEffectIDNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get dogma effects effect Id not modified response has a 4xx status code
+func (o *GetDogmaEffectsEffectIDNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get dogma effects effect Id not modified response has a 5xx status code
+func (o *GetDogmaEffectsEffectIDNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get dogma effects effect Id not modified response a status code equal to that given
+func (o *GetDogmaEffectsEffectIDNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetDogmaEffectsEffectIDNotModified) Error() string {
+	return fmt.Sprintf("[GET /v2/dogma/effects/{effect_id}/][%d] getDogmaEffectsEffectIdNotModified ", 304)
+}
+
+func (o *GetDogmaEffectsEffectIDNotModified) String() string {
 	return fmt.Sprintf("[GET /v2/dogma/effects/{effect_id}/][%d] getDogmaEffectsEffectIdNotModified ", 304)
 }
 
@@ -228,7 +289,8 @@ func NewGetDogmaEffectsEffectIDBadRequest() *GetDogmaEffectsEffectIDBadRequest {
 	return &GetDogmaEffectsEffectIDBadRequest{}
 }
 
-/* GetDogmaEffectsEffectIDBadRequest describes a response with status code 400, with default header values.
+/*
+GetDogmaEffectsEffectIDBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -236,9 +298,39 @@ type GetDogmaEffectsEffectIDBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get dogma effects effect Id bad request response has a 2xx status code
+func (o *GetDogmaEffectsEffectIDBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get dogma effects effect Id bad request response has a 3xx status code
+func (o *GetDogmaEffectsEffectIDBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get dogma effects effect Id bad request response has a 4xx status code
+func (o *GetDogmaEffectsEffectIDBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get dogma effects effect Id bad request response has a 5xx status code
+func (o *GetDogmaEffectsEffectIDBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get dogma effects effect Id bad request response a status code equal to that given
+func (o *GetDogmaEffectsEffectIDBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetDogmaEffectsEffectIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v2/dogma/effects/{effect_id}/][%d] getDogmaEffectsEffectIdBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetDogmaEffectsEffectIDBadRequest) String() string {
+	return fmt.Sprintf("[GET /v2/dogma/effects/{effect_id}/][%d] getDogmaEffectsEffectIdBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetDogmaEffectsEffectIDBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -260,7 +352,8 @@ func NewGetDogmaEffectsEffectIDNotFound() *GetDogmaEffectsEffectIDNotFound {
 	return &GetDogmaEffectsEffectIDNotFound{}
 }
 
-/* GetDogmaEffectsEffectIDNotFound describes a response with status code 404, with default header values.
+/*
+GetDogmaEffectsEffectIDNotFound describes a response with status code 404, with default header values.
 
 Dogma effect not found
 */
@@ -268,9 +361,39 @@ type GetDogmaEffectsEffectIDNotFound struct {
 	Payload *GetDogmaEffectsEffectIDNotFoundBody
 }
 
+// IsSuccess returns true when this get dogma effects effect Id not found response has a 2xx status code
+func (o *GetDogmaEffectsEffectIDNotFound) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get dogma effects effect Id not found response has a 3xx status code
+func (o *GetDogmaEffectsEffectIDNotFound) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get dogma effects effect Id not found response has a 4xx status code
+func (o *GetDogmaEffectsEffectIDNotFound) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get dogma effects effect Id not found response has a 5xx status code
+func (o *GetDogmaEffectsEffectIDNotFound) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get dogma effects effect Id not found response a status code equal to that given
+func (o *GetDogmaEffectsEffectIDNotFound) IsCode(code int) bool {
+	return code == 404
+}
+
 func (o *GetDogmaEffectsEffectIDNotFound) Error() string {
 	return fmt.Sprintf("[GET /v2/dogma/effects/{effect_id}/][%d] getDogmaEffectsEffectIdNotFound  %+v", 404, o.Payload)
 }
+
+func (o *GetDogmaEffectsEffectIDNotFound) String() string {
+	return fmt.Sprintf("[GET /v2/dogma/effects/{effect_id}/][%d] getDogmaEffectsEffectIdNotFound  %+v", 404, o.Payload)
+}
+
 func (o *GetDogmaEffectsEffectIDNotFound) GetPayload() *GetDogmaEffectsEffectIDNotFoundBody {
 	return o.Payload
 }
@@ -292,7 +415,8 @@ func NewGetDogmaEffectsEffectIDEnhanceYourCalm() *GetDogmaEffectsEffectIDEnhance
 	return &GetDogmaEffectsEffectIDEnhanceYourCalm{}
 }
 
-/* GetDogmaEffectsEffectIDEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetDogmaEffectsEffectIDEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -300,9 +424,39 @@ type GetDogmaEffectsEffectIDEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get dogma effects effect Id enhance your calm response has a 2xx status code
+func (o *GetDogmaEffectsEffectIDEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get dogma effects effect Id enhance your calm response has a 3xx status code
+func (o *GetDogmaEffectsEffectIDEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get dogma effects effect Id enhance your calm response has a 4xx status code
+func (o *GetDogmaEffectsEffectIDEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get dogma effects effect Id enhance your calm response has a 5xx status code
+func (o *GetDogmaEffectsEffectIDEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get dogma effects effect Id enhance your calm response a status code equal to that given
+func (o *GetDogmaEffectsEffectIDEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetDogmaEffectsEffectIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v2/dogma/effects/{effect_id}/][%d] getDogmaEffectsEffectIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetDogmaEffectsEffectIDEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v2/dogma/effects/{effect_id}/][%d] getDogmaEffectsEffectIdEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetDogmaEffectsEffectIDEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -324,7 +478,8 @@ func NewGetDogmaEffectsEffectIDInternalServerError() *GetDogmaEffectsEffectIDInt
 	return &GetDogmaEffectsEffectIDInternalServerError{}
 }
 
-/* GetDogmaEffectsEffectIDInternalServerError describes a response with status code 500, with default header values.
+/*
+GetDogmaEffectsEffectIDInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -332,9 +487,39 @@ type GetDogmaEffectsEffectIDInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get dogma effects effect Id internal server error response has a 2xx status code
+func (o *GetDogmaEffectsEffectIDInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get dogma effects effect Id internal server error response has a 3xx status code
+func (o *GetDogmaEffectsEffectIDInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get dogma effects effect Id internal server error response has a 4xx status code
+func (o *GetDogmaEffectsEffectIDInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get dogma effects effect Id internal server error response has a 5xx status code
+func (o *GetDogmaEffectsEffectIDInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get dogma effects effect Id internal server error response a status code equal to that given
+func (o *GetDogmaEffectsEffectIDInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetDogmaEffectsEffectIDInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v2/dogma/effects/{effect_id}/][%d] getDogmaEffectsEffectIdInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetDogmaEffectsEffectIDInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v2/dogma/effects/{effect_id}/][%d] getDogmaEffectsEffectIdInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetDogmaEffectsEffectIDInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -356,7 +541,8 @@ func NewGetDogmaEffectsEffectIDServiceUnavailable() *GetDogmaEffectsEffectIDServ
 	return &GetDogmaEffectsEffectIDServiceUnavailable{}
 }
 
-/* GetDogmaEffectsEffectIDServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetDogmaEffectsEffectIDServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -364,9 +550,39 @@ type GetDogmaEffectsEffectIDServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get dogma effects effect Id service unavailable response has a 2xx status code
+func (o *GetDogmaEffectsEffectIDServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get dogma effects effect Id service unavailable response has a 3xx status code
+func (o *GetDogmaEffectsEffectIDServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get dogma effects effect Id service unavailable response has a 4xx status code
+func (o *GetDogmaEffectsEffectIDServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get dogma effects effect Id service unavailable response has a 5xx status code
+func (o *GetDogmaEffectsEffectIDServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get dogma effects effect Id service unavailable response a status code equal to that given
+func (o *GetDogmaEffectsEffectIDServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetDogmaEffectsEffectIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v2/dogma/effects/{effect_id}/][%d] getDogmaEffectsEffectIdServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetDogmaEffectsEffectIDServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v2/dogma/effects/{effect_id}/][%d] getDogmaEffectsEffectIdServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetDogmaEffectsEffectIDServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -388,7 +604,8 @@ func NewGetDogmaEffectsEffectIDGatewayTimeout() *GetDogmaEffectsEffectIDGatewayT
 	return &GetDogmaEffectsEffectIDGatewayTimeout{}
 }
 
-/* GetDogmaEffectsEffectIDGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetDogmaEffectsEffectIDGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -396,9 +613,39 @@ type GetDogmaEffectsEffectIDGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get dogma effects effect Id gateway timeout response has a 2xx status code
+func (o *GetDogmaEffectsEffectIDGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get dogma effects effect Id gateway timeout response has a 3xx status code
+func (o *GetDogmaEffectsEffectIDGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get dogma effects effect Id gateway timeout response has a 4xx status code
+func (o *GetDogmaEffectsEffectIDGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get dogma effects effect Id gateway timeout response has a 5xx status code
+func (o *GetDogmaEffectsEffectIDGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get dogma effects effect Id gateway timeout response a status code equal to that given
+func (o *GetDogmaEffectsEffectIDGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetDogmaEffectsEffectIDGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v2/dogma/effects/{effect_id}/][%d] getDogmaEffectsEffectIdGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetDogmaEffectsEffectIDGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v2/dogma/effects/{effect_id}/][%d] getDogmaEffectsEffectIdGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetDogmaEffectsEffectIDGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -415,7 +662,8 @@ func (o *GetDogmaEffectsEffectIDGatewayTimeout) readResponse(response runtime.Cl
 	return nil
 }
 
-/*GetDogmaEffectsEffectIDNotFoundBody get_dogma_effects_effect_id_not_found
+/*
+GetDogmaEffectsEffectIDNotFoundBody get_dogma_effects_effect_id_not_found
 //
 // Not found
 swagger:model GetDogmaEffectsEffectIDNotFoundBody
@@ -456,7 +704,8 @@ func (o *GetDogmaEffectsEffectIDNotFoundBody) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*GetDogmaEffectsEffectIDOKBody get_dogma_effects_effect_id_ok
+/*
+GetDogmaEffectsEffectIDOKBody get_dogma_effects_effect_id_ok
 //
 // 200 ok object
 swagger:model GetDogmaEffectsEffectIDOKBody
@@ -682,7 +931,8 @@ func (o *GetDogmaEffectsEffectIDOKBody) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*GetDogmaEffectsEffectIDOKBodyModifiersItems0 get_dogma_effects_effect_id_modifier
+/*
+GetDogmaEffectsEffectIDOKBodyModifiersItems0 get_dogma_effects_effect_id_modifier
 //
 // modifier object
 swagger:model GetDogmaEffectsEffectIDOKBodyModifiersItems0

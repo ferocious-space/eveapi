@@ -52,10 +52,12 @@ func NewGetIncursionsParamsWithHTTPClient(client *http.Client) *GetIncursionsPar
 	}
 }
 
-/* GetIncursionsParams contains all the parameters to send to the API endpoint
-   for the get incursions operation.
+/*
+GetIncursionsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get incursions operation.
+
+	Typically these are written to a http.Request.
 */
 type GetIncursionsParams struct {
 

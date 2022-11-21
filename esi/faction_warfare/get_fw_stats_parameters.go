@@ -52,10 +52,12 @@ func NewGetFwStatsParamsWithHTTPClient(client *http.Client) *GetFwStatsParams {
 	}
 }
 
-/* GetFwStatsParams contains all the parameters to send to the API endpoint
-   for the get fw stats operation.
+/*
+GetFwStatsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get fw stats operation.
+
+	Typically these are written to a http.Request.
 */
 type GetFwStatsParams struct {
 

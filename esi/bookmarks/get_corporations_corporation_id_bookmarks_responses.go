@@ -99,7 +99,8 @@ func NewGetCorporationsCorporationIDBookmarksOK() *GetCorporationsCorporationIDB
 	}
 }
 
-/* GetCorporationsCorporationIDBookmarksOK describes a response with status code 200, with default header values.
+/*
+GetCorporationsCorporationIDBookmarksOK describes a response with status code 200, with default header values.
 
 List of corporation owned bookmarks
 */
@@ -131,9 +132,39 @@ type GetCorporationsCorporationIDBookmarksOK struct {
 	Payload []*GetCorporationsCorporationIDBookmarksOKBodyItems0
 }
 
+// IsSuccess returns true when this get corporations corporation Id bookmarks o k response has a 2xx status code
+func (o *GetCorporationsCorporationIDBookmarksOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get corporations corporation Id bookmarks o k response has a 3xx status code
+func (o *GetCorporationsCorporationIDBookmarksOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations corporation Id bookmarks o k response has a 4xx status code
+func (o *GetCorporationsCorporationIDBookmarksOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get corporations corporation Id bookmarks o k response has a 5xx status code
+func (o *GetCorporationsCorporationIDBookmarksOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporations corporation Id bookmarks o k response a status code equal to that given
+func (o *GetCorporationsCorporationIDBookmarksOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetCorporationsCorporationIDBookmarksOK) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/bookmarks/][%d] getCorporationsCorporationIdBookmarksOK  %+v", 200, o.Payload)
 }
+
+func (o *GetCorporationsCorporationIDBookmarksOK) String() string {
+	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/bookmarks/][%d] getCorporationsCorporationIdBookmarksOK  %+v", 200, o.Payload)
+}
+
 func (o *GetCorporationsCorporationIDBookmarksOK) GetPayload() []*GetCorporationsCorporationIDBookmarksOKBodyItems0 {
 	return o.Payload
 }
@@ -192,7 +223,8 @@ func NewGetCorporationsCorporationIDBookmarksNotModified() *GetCorporationsCorpo
 	return &GetCorporationsCorporationIDBookmarksNotModified{}
 }
 
-/* GetCorporationsCorporationIDBookmarksNotModified describes a response with status code 304, with default header values.
+/*
+GetCorporationsCorporationIDBookmarksNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -215,7 +247,36 @@ type GetCorporationsCorporationIDBookmarksNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get corporations corporation Id bookmarks not modified response has a 2xx status code
+func (o *GetCorporationsCorporationIDBookmarksNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations corporation Id bookmarks not modified response has a 3xx status code
+func (o *GetCorporationsCorporationIDBookmarksNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get corporations corporation Id bookmarks not modified response has a 4xx status code
+func (o *GetCorporationsCorporationIDBookmarksNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get corporations corporation Id bookmarks not modified response has a 5xx status code
+func (o *GetCorporationsCorporationIDBookmarksNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporations corporation Id bookmarks not modified response a status code equal to that given
+func (o *GetCorporationsCorporationIDBookmarksNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetCorporationsCorporationIDBookmarksNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/bookmarks/][%d] getCorporationsCorporationIdBookmarksNotModified ", 304)
+}
+
+func (o *GetCorporationsCorporationIDBookmarksNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/bookmarks/][%d] getCorporationsCorporationIdBookmarksNotModified ", 304)
 }
 
@@ -257,7 +318,8 @@ func NewGetCorporationsCorporationIDBookmarksBadRequest() *GetCorporationsCorpor
 	return &GetCorporationsCorporationIDBookmarksBadRequest{}
 }
 
-/* GetCorporationsCorporationIDBookmarksBadRequest describes a response with status code 400, with default header values.
+/*
+GetCorporationsCorporationIDBookmarksBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -265,9 +327,39 @@ type GetCorporationsCorporationIDBookmarksBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get corporations corporation Id bookmarks bad request response has a 2xx status code
+func (o *GetCorporationsCorporationIDBookmarksBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations corporation Id bookmarks bad request response has a 3xx status code
+func (o *GetCorporationsCorporationIDBookmarksBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations corporation Id bookmarks bad request response has a 4xx status code
+func (o *GetCorporationsCorporationIDBookmarksBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get corporations corporation Id bookmarks bad request response has a 5xx status code
+func (o *GetCorporationsCorporationIDBookmarksBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporations corporation Id bookmarks bad request response a status code equal to that given
+func (o *GetCorporationsCorporationIDBookmarksBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetCorporationsCorporationIDBookmarksBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/bookmarks/][%d] getCorporationsCorporationIdBookmarksBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetCorporationsCorporationIDBookmarksBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/bookmarks/][%d] getCorporationsCorporationIdBookmarksBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetCorporationsCorporationIDBookmarksBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -289,7 +381,8 @@ func NewGetCorporationsCorporationIDBookmarksUnauthorized() *GetCorporationsCorp
 	return &GetCorporationsCorporationIDBookmarksUnauthorized{}
 }
 
-/* GetCorporationsCorporationIDBookmarksUnauthorized describes a response with status code 401, with default header values.
+/*
+GetCorporationsCorporationIDBookmarksUnauthorized describes a response with status code 401, with default header values.
 
 Unauthorized
 */
@@ -297,9 +390,39 @@ type GetCorporationsCorporationIDBookmarksUnauthorized struct {
 	Payload *models.Unauthorized
 }
 
+// IsSuccess returns true when this get corporations corporation Id bookmarks unauthorized response has a 2xx status code
+func (o *GetCorporationsCorporationIDBookmarksUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations corporation Id bookmarks unauthorized response has a 3xx status code
+func (o *GetCorporationsCorporationIDBookmarksUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations corporation Id bookmarks unauthorized response has a 4xx status code
+func (o *GetCorporationsCorporationIDBookmarksUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get corporations corporation Id bookmarks unauthorized response has a 5xx status code
+func (o *GetCorporationsCorporationIDBookmarksUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporations corporation Id bookmarks unauthorized response a status code equal to that given
+func (o *GetCorporationsCorporationIDBookmarksUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *GetCorporationsCorporationIDBookmarksUnauthorized) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/bookmarks/][%d] getCorporationsCorporationIdBookmarksUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *GetCorporationsCorporationIDBookmarksUnauthorized) String() string {
+	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/bookmarks/][%d] getCorporationsCorporationIdBookmarksUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *GetCorporationsCorporationIDBookmarksUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
 }
@@ -321,7 +444,8 @@ func NewGetCorporationsCorporationIDBookmarksForbidden() *GetCorporationsCorpora
 	return &GetCorporationsCorporationIDBookmarksForbidden{}
 }
 
-/* GetCorporationsCorporationIDBookmarksForbidden describes a response with status code 403, with default header values.
+/*
+GetCorporationsCorporationIDBookmarksForbidden describes a response with status code 403, with default header values.
 
 Forbidden
 */
@@ -329,9 +453,39 @@ type GetCorporationsCorporationIDBookmarksForbidden struct {
 	Payload *models.Forbidden
 }
 
+// IsSuccess returns true when this get corporations corporation Id bookmarks forbidden response has a 2xx status code
+func (o *GetCorporationsCorporationIDBookmarksForbidden) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations corporation Id bookmarks forbidden response has a 3xx status code
+func (o *GetCorporationsCorporationIDBookmarksForbidden) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations corporation Id bookmarks forbidden response has a 4xx status code
+func (o *GetCorporationsCorporationIDBookmarksForbidden) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get corporations corporation Id bookmarks forbidden response has a 5xx status code
+func (o *GetCorporationsCorporationIDBookmarksForbidden) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporations corporation Id bookmarks forbidden response a status code equal to that given
+func (o *GetCorporationsCorporationIDBookmarksForbidden) IsCode(code int) bool {
+	return code == 403
+}
+
 func (o *GetCorporationsCorporationIDBookmarksForbidden) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/bookmarks/][%d] getCorporationsCorporationIdBookmarksForbidden  %+v", 403, o.Payload)
 }
+
+func (o *GetCorporationsCorporationIDBookmarksForbidden) String() string {
+	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/bookmarks/][%d] getCorporationsCorporationIdBookmarksForbidden  %+v", 403, o.Payload)
+}
+
 func (o *GetCorporationsCorporationIDBookmarksForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
 }
@@ -353,7 +507,8 @@ func NewGetCorporationsCorporationIDBookmarksEnhanceYourCalm() *GetCorporationsC
 	return &GetCorporationsCorporationIDBookmarksEnhanceYourCalm{}
 }
 
-/* GetCorporationsCorporationIDBookmarksEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetCorporationsCorporationIDBookmarksEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -361,9 +516,39 @@ type GetCorporationsCorporationIDBookmarksEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get corporations corporation Id bookmarks enhance your calm response has a 2xx status code
+func (o *GetCorporationsCorporationIDBookmarksEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations corporation Id bookmarks enhance your calm response has a 3xx status code
+func (o *GetCorporationsCorporationIDBookmarksEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations corporation Id bookmarks enhance your calm response has a 4xx status code
+func (o *GetCorporationsCorporationIDBookmarksEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get corporations corporation Id bookmarks enhance your calm response has a 5xx status code
+func (o *GetCorporationsCorporationIDBookmarksEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporations corporation Id bookmarks enhance your calm response a status code equal to that given
+func (o *GetCorporationsCorporationIDBookmarksEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetCorporationsCorporationIDBookmarksEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/bookmarks/][%d] getCorporationsCorporationIdBookmarksEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetCorporationsCorporationIDBookmarksEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/bookmarks/][%d] getCorporationsCorporationIdBookmarksEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetCorporationsCorporationIDBookmarksEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -385,7 +570,8 @@ func NewGetCorporationsCorporationIDBookmarksInternalServerError() *GetCorporati
 	return &GetCorporationsCorporationIDBookmarksInternalServerError{}
 }
 
-/* GetCorporationsCorporationIDBookmarksInternalServerError describes a response with status code 500, with default header values.
+/*
+GetCorporationsCorporationIDBookmarksInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -393,9 +579,39 @@ type GetCorporationsCorporationIDBookmarksInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get corporations corporation Id bookmarks internal server error response has a 2xx status code
+func (o *GetCorporationsCorporationIDBookmarksInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations corporation Id bookmarks internal server error response has a 3xx status code
+func (o *GetCorporationsCorporationIDBookmarksInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations corporation Id bookmarks internal server error response has a 4xx status code
+func (o *GetCorporationsCorporationIDBookmarksInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get corporations corporation Id bookmarks internal server error response has a 5xx status code
+func (o *GetCorporationsCorporationIDBookmarksInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get corporations corporation Id bookmarks internal server error response a status code equal to that given
+func (o *GetCorporationsCorporationIDBookmarksInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetCorporationsCorporationIDBookmarksInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/bookmarks/][%d] getCorporationsCorporationIdBookmarksInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetCorporationsCorporationIDBookmarksInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/bookmarks/][%d] getCorporationsCorporationIdBookmarksInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetCorporationsCorporationIDBookmarksInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -417,7 +633,8 @@ func NewGetCorporationsCorporationIDBookmarksServiceUnavailable() *GetCorporatio
 	return &GetCorporationsCorporationIDBookmarksServiceUnavailable{}
 }
 
-/* GetCorporationsCorporationIDBookmarksServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetCorporationsCorporationIDBookmarksServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -425,9 +642,39 @@ type GetCorporationsCorporationIDBookmarksServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get corporations corporation Id bookmarks service unavailable response has a 2xx status code
+func (o *GetCorporationsCorporationIDBookmarksServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations corporation Id bookmarks service unavailable response has a 3xx status code
+func (o *GetCorporationsCorporationIDBookmarksServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations corporation Id bookmarks service unavailable response has a 4xx status code
+func (o *GetCorporationsCorporationIDBookmarksServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get corporations corporation Id bookmarks service unavailable response has a 5xx status code
+func (o *GetCorporationsCorporationIDBookmarksServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get corporations corporation Id bookmarks service unavailable response a status code equal to that given
+func (o *GetCorporationsCorporationIDBookmarksServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetCorporationsCorporationIDBookmarksServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/bookmarks/][%d] getCorporationsCorporationIdBookmarksServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetCorporationsCorporationIDBookmarksServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/bookmarks/][%d] getCorporationsCorporationIdBookmarksServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetCorporationsCorporationIDBookmarksServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -449,7 +696,8 @@ func NewGetCorporationsCorporationIDBookmarksGatewayTimeout() *GetCorporationsCo
 	return &GetCorporationsCorporationIDBookmarksGatewayTimeout{}
 }
 
-/* GetCorporationsCorporationIDBookmarksGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetCorporationsCorporationIDBookmarksGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -457,9 +705,39 @@ type GetCorporationsCorporationIDBookmarksGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get corporations corporation Id bookmarks gateway timeout response has a 2xx status code
+func (o *GetCorporationsCorporationIDBookmarksGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations corporation Id bookmarks gateway timeout response has a 3xx status code
+func (o *GetCorporationsCorporationIDBookmarksGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations corporation Id bookmarks gateway timeout response has a 4xx status code
+func (o *GetCorporationsCorporationIDBookmarksGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get corporations corporation Id bookmarks gateway timeout response has a 5xx status code
+func (o *GetCorporationsCorporationIDBookmarksGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get corporations corporation Id bookmarks gateway timeout response a status code equal to that given
+func (o *GetCorporationsCorporationIDBookmarksGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetCorporationsCorporationIDBookmarksGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/bookmarks/][%d] getCorporationsCorporationIdBookmarksGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetCorporationsCorporationIDBookmarksGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/bookmarks/][%d] getCorporationsCorporationIdBookmarksGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetCorporationsCorporationIDBookmarksGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -476,7 +754,8 @@ func (o *GetCorporationsCorporationIDBookmarksGatewayTimeout) readResponse(respo
 	return nil
 }
 
-/*GetCorporationsCorporationIDBookmarksOKBodyItems0 get_corporations_corporation_id_bookmarks_200_ok
+/*
+GetCorporationsCorporationIDBookmarksOKBodyItems0 get_corporations_corporation_id_bookmarks_200_ok
 //
 // 200 ok object
 swagger:model GetCorporationsCorporationIDBookmarksOKBodyItems0
@@ -738,7 +1017,8 @@ func (o *GetCorporationsCorporationIDBookmarksOKBodyItems0) UnmarshalBinary(b []
 	return nil
 }
 
-/*GetCorporationsCorporationIDBookmarksOKBodyItems0Coordinates get_corporations_corporation_id_bookmarks_coordinates
+/*
+GetCorporationsCorporationIDBookmarksOKBodyItems0Coordinates get_corporations_corporation_id_bookmarks_coordinates
 //
 // Optional object that is returned if a bookmark was made on a planet or a random location in space.
 swagger:model GetCorporationsCorporationIDBookmarksOKBodyItems0Coordinates
@@ -836,7 +1116,8 @@ func (o *GetCorporationsCorporationIDBookmarksOKBodyItems0Coordinates) Unmarshal
 	return nil
 }
 
-/*GetCorporationsCorporationIDBookmarksOKBodyItems0Item get_corporations_corporation_id_bookmarks_item
+/*
+GetCorporationsCorporationIDBookmarksOKBodyItems0Item get_corporations_corporation_id_bookmarks_item
 //
 // Optional object that is returned if a bookmark was made on a particular item.
 swagger:model GetCorporationsCorporationIDBookmarksOKBodyItems0Item

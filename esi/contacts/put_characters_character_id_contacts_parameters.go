@@ -53,10 +53,12 @@ func NewPutCharactersCharacterIDContactsParamsWithHTTPClient(client *http.Client
 	}
 }
 
-/* PutCharactersCharacterIDContactsParams contains all the parameters to send to the API endpoint
-   for the put characters character id contacts operation.
+/*
+PutCharactersCharacterIDContactsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the put characters character id contacts operation.
+
+	Typically these are written to a http.Request.
 */
 type PutCharactersCharacterIDContactsParams struct {
 

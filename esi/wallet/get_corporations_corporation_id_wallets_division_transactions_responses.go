@@ -91,7 +91,8 @@ func NewGetCorporationsCorporationIDWalletsDivisionTransactionsOK() *GetCorporat
 	return &GetCorporationsCorporationIDWalletsDivisionTransactionsOK{}
 }
 
-/* GetCorporationsCorporationIDWalletsDivisionTransactionsOK describes a response with status code 200, with default header values.
+/*
+GetCorporationsCorporationIDWalletsDivisionTransactionsOK describes a response with status code 200, with default header values.
 
 Wallet transactions
 */
@@ -116,9 +117,39 @@ type GetCorporationsCorporationIDWalletsDivisionTransactionsOK struct {
 	Payload []*GetCorporationsCorporationIDWalletsDivisionTransactionsOKBodyItems0
 }
 
+// IsSuccess returns true when this get corporations corporation Id wallets division transactions o k response has a 2xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get corporations corporation Id wallets division transactions o k response has a 3xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations corporation Id wallets division transactions o k response has a 4xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get corporations corporation Id wallets division transactions o k response has a 5xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporations corporation Id wallets division transactions o k response a status code equal to that given
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/wallets/{division}/transactions/][%d] getCorporationsCorporationIdWalletsDivisionTransactionsOK  %+v", 200, o.Payload)
 }
+
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsOK) String() string {
+	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/wallets/{division}/transactions/][%d] getCorporationsCorporationIdWalletsDivisionTransactionsOK  %+v", 200, o.Payload)
+}
+
 func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsOK) GetPayload() []*GetCorporationsCorporationIDWalletsDivisionTransactionsOKBodyItems0 {
 	return o.Payload
 }
@@ -166,7 +197,8 @@ func NewGetCorporationsCorporationIDWalletsDivisionTransactionsNotModified() *Ge
 	return &GetCorporationsCorporationIDWalletsDivisionTransactionsNotModified{}
 }
 
-/* GetCorporationsCorporationIDWalletsDivisionTransactionsNotModified describes a response with status code 304, with default header values.
+/*
+GetCorporationsCorporationIDWalletsDivisionTransactionsNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -189,7 +221,36 @@ type GetCorporationsCorporationIDWalletsDivisionTransactionsNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get corporations corporation Id wallets division transactions not modified response has a 2xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations corporation Id wallets division transactions not modified response has a 3xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get corporations corporation Id wallets division transactions not modified response has a 4xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get corporations corporation Id wallets division transactions not modified response has a 5xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporations corporation Id wallets division transactions not modified response a status code equal to that given
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/wallets/{division}/transactions/][%d] getCorporationsCorporationIdWalletsDivisionTransactionsNotModified ", 304)
+}
+
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/wallets/{division}/transactions/][%d] getCorporationsCorporationIdWalletsDivisionTransactionsNotModified ", 304)
 }
 
@@ -231,7 +292,8 @@ func NewGetCorporationsCorporationIDWalletsDivisionTransactionsBadRequest() *Get
 	return &GetCorporationsCorporationIDWalletsDivisionTransactionsBadRequest{}
 }
 
-/* GetCorporationsCorporationIDWalletsDivisionTransactionsBadRequest describes a response with status code 400, with default header values.
+/*
+GetCorporationsCorporationIDWalletsDivisionTransactionsBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -239,9 +301,39 @@ type GetCorporationsCorporationIDWalletsDivisionTransactionsBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get corporations corporation Id wallets division transactions bad request response has a 2xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations corporation Id wallets division transactions bad request response has a 3xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations corporation Id wallets division transactions bad request response has a 4xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get corporations corporation Id wallets division transactions bad request response has a 5xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporations corporation Id wallets division transactions bad request response a status code equal to that given
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/wallets/{division}/transactions/][%d] getCorporationsCorporationIdWalletsDivisionTransactionsBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/wallets/{division}/transactions/][%d] getCorporationsCorporationIdWalletsDivisionTransactionsBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -263,7 +355,8 @@ func NewGetCorporationsCorporationIDWalletsDivisionTransactionsUnauthorized() *G
 	return &GetCorporationsCorporationIDWalletsDivisionTransactionsUnauthorized{}
 }
 
-/* GetCorporationsCorporationIDWalletsDivisionTransactionsUnauthorized describes a response with status code 401, with default header values.
+/*
+GetCorporationsCorporationIDWalletsDivisionTransactionsUnauthorized describes a response with status code 401, with default header values.
 
 Unauthorized
 */
@@ -271,9 +364,39 @@ type GetCorporationsCorporationIDWalletsDivisionTransactionsUnauthorized struct 
 	Payload *models.Unauthorized
 }
 
+// IsSuccess returns true when this get corporations corporation Id wallets division transactions unauthorized response has a 2xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations corporation Id wallets division transactions unauthorized response has a 3xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations corporation Id wallets division transactions unauthorized response has a 4xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get corporations corporation Id wallets division transactions unauthorized response has a 5xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporations corporation Id wallets division transactions unauthorized response a status code equal to that given
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsUnauthorized) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/wallets/{division}/transactions/][%d] getCorporationsCorporationIdWalletsDivisionTransactionsUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsUnauthorized) String() string {
+	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/wallets/{division}/transactions/][%d] getCorporationsCorporationIdWalletsDivisionTransactionsUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
 }
@@ -295,7 +418,8 @@ func NewGetCorporationsCorporationIDWalletsDivisionTransactionsForbidden() *GetC
 	return &GetCorporationsCorporationIDWalletsDivisionTransactionsForbidden{}
 }
 
-/* GetCorporationsCorporationIDWalletsDivisionTransactionsForbidden describes a response with status code 403, with default header values.
+/*
+GetCorporationsCorporationIDWalletsDivisionTransactionsForbidden describes a response with status code 403, with default header values.
 
 Forbidden
 */
@@ -303,9 +427,39 @@ type GetCorporationsCorporationIDWalletsDivisionTransactionsForbidden struct {
 	Payload *models.Forbidden
 }
 
+// IsSuccess returns true when this get corporations corporation Id wallets division transactions forbidden response has a 2xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsForbidden) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations corporation Id wallets division transactions forbidden response has a 3xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsForbidden) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations corporation Id wallets division transactions forbidden response has a 4xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsForbidden) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get corporations corporation Id wallets division transactions forbidden response has a 5xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsForbidden) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporations corporation Id wallets division transactions forbidden response a status code equal to that given
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsForbidden) IsCode(code int) bool {
+	return code == 403
+}
+
 func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsForbidden) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/wallets/{division}/transactions/][%d] getCorporationsCorporationIdWalletsDivisionTransactionsForbidden  %+v", 403, o.Payload)
 }
+
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsForbidden) String() string {
+	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/wallets/{division}/transactions/][%d] getCorporationsCorporationIdWalletsDivisionTransactionsForbidden  %+v", 403, o.Payload)
+}
+
 func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
 }
@@ -327,7 +481,8 @@ func NewGetCorporationsCorporationIDWalletsDivisionTransactionsEnhanceYourCalm()
 	return &GetCorporationsCorporationIDWalletsDivisionTransactionsEnhanceYourCalm{}
 }
 
-/* GetCorporationsCorporationIDWalletsDivisionTransactionsEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetCorporationsCorporationIDWalletsDivisionTransactionsEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -335,9 +490,39 @@ type GetCorporationsCorporationIDWalletsDivisionTransactionsEnhanceYourCalm stru
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get corporations corporation Id wallets division transactions enhance your calm response has a 2xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations corporation Id wallets division transactions enhance your calm response has a 3xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations corporation Id wallets division transactions enhance your calm response has a 4xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get corporations corporation Id wallets division transactions enhance your calm response has a 5xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporations corporation Id wallets division transactions enhance your calm response a status code equal to that given
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/wallets/{division}/transactions/][%d] getCorporationsCorporationIdWalletsDivisionTransactionsEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/wallets/{division}/transactions/][%d] getCorporationsCorporationIdWalletsDivisionTransactionsEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -359,7 +544,8 @@ func NewGetCorporationsCorporationIDWalletsDivisionTransactionsInternalServerErr
 	return &GetCorporationsCorporationIDWalletsDivisionTransactionsInternalServerError{}
 }
 
-/* GetCorporationsCorporationIDWalletsDivisionTransactionsInternalServerError describes a response with status code 500, with default header values.
+/*
+GetCorporationsCorporationIDWalletsDivisionTransactionsInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -367,9 +553,39 @@ type GetCorporationsCorporationIDWalletsDivisionTransactionsInternalServerError 
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get corporations corporation Id wallets division transactions internal server error response has a 2xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations corporation Id wallets division transactions internal server error response has a 3xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations corporation Id wallets division transactions internal server error response has a 4xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get corporations corporation Id wallets division transactions internal server error response has a 5xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get corporations corporation Id wallets division transactions internal server error response a status code equal to that given
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/wallets/{division}/transactions/][%d] getCorporationsCorporationIdWalletsDivisionTransactionsInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/wallets/{division}/transactions/][%d] getCorporationsCorporationIdWalletsDivisionTransactionsInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -391,7 +607,8 @@ func NewGetCorporationsCorporationIDWalletsDivisionTransactionsServiceUnavailabl
 	return &GetCorporationsCorporationIDWalletsDivisionTransactionsServiceUnavailable{}
 }
 
-/* GetCorporationsCorporationIDWalletsDivisionTransactionsServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetCorporationsCorporationIDWalletsDivisionTransactionsServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -399,9 +616,39 @@ type GetCorporationsCorporationIDWalletsDivisionTransactionsServiceUnavailable s
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get corporations corporation Id wallets division transactions service unavailable response has a 2xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations corporation Id wallets division transactions service unavailable response has a 3xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations corporation Id wallets division transactions service unavailable response has a 4xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get corporations corporation Id wallets division transactions service unavailable response has a 5xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get corporations corporation Id wallets division transactions service unavailable response a status code equal to that given
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/wallets/{division}/transactions/][%d] getCorporationsCorporationIdWalletsDivisionTransactionsServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/wallets/{division}/transactions/][%d] getCorporationsCorporationIdWalletsDivisionTransactionsServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -423,7 +670,8 @@ func NewGetCorporationsCorporationIDWalletsDivisionTransactionsGatewayTimeout() 
 	return &GetCorporationsCorporationIDWalletsDivisionTransactionsGatewayTimeout{}
 }
 
-/* GetCorporationsCorporationIDWalletsDivisionTransactionsGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetCorporationsCorporationIDWalletsDivisionTransactionsGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -431,9 +679,39 @@ type GetCorporationsCorporationIDWalletsDivisionTransactionsGatewayTimeout struc
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get corporations corporation Id wallets division transactions gateway timeout response has a 2xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations corporation Id wallets division transactions gateway timeout response has a 3xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations corporation Id wallets division transactions gateway timeout response has a 4xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get corporations corporation Id wallets division transactions gateway timeout response has a 5xx status code
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get corporations corporation Id wallets division transactions gateway timeout response a status code equal to that given
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/wallets/{division}/transactions/][%d] getCorporationsCorporationIdWalletsDivisionTransactionsGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/wallets/{division}/transactions/][%d] getCorporationsCorporationIdWalletsDivisionTransactionsGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -450,7 +728,8 @@ func (o *GetCorporationsCorporationIDWalletsDivisionTransactionsGatewayTimeout) 
 	return nil
 }
 
-/*GetCorporationsCorporationIDWalletsDivisionTransactionsOKBodyItems0 get_corporations_corporation_id_wallets_division_transactions_200_ok
+/*
+GetCorporationsCorporationIDWalletsDivisionTransactionsOKBodyItems0 get_corporations_corporation_id_wallets_division_transactions_200_ok
 //
 // wallet transaction
 swagger:model GetCorporationsCorporationIDWalletsDivisionTransactionsOKBodyItems0

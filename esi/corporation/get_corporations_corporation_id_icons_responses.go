@@ -83,7 +83,8 @@ func NewGetCorporationsCorporationIDIconsOK() *GetCorporationsCorporationIDIcons
 	return &GetCorporationsCorporationIDIconsOK{}
 }
 
-/* GetCorporationsCorporationIDIconsOK describes a response with status code 200, with default header values.
+/*
+GetCorporationsCorporationIDIconsOK describes a response with status code 200, with default header values.
 
 Urls for icons for the given corporation id and server
 */
@@ -108,9 +109,39 @@ type GetCorporationsCorporationIDIconsOK struct {
 	Payload *GetCorporationsCorporationIDIconsOKBody
 }
 
+// IsSuccess returns true when this get corporations corporation Id icons o k response has a 2xx status code
+func (o *GetCorporationsCorporationIDIconsOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get corporations corporation Id icons o k response has a 3xx status code
+func (o *GetCorporationsCorporationIDIconsOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations corporation Id icons o k response has a 4xx status code
+func (o *GetCorporationsCorporationIDIconsOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get corporations corporation Id icons o k response has a 5xx status code
+func (o *GetCorporationsCorporationIDIconsOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporations corporation Id icons o k response a status code equal to that given
+func (o *GetCorporationsCorporationIDIconsOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetCorporationsCorporationIDIconsOK) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsOK  %+v", 200, o.Payload)
 }
+
+func (o *GetCorporationsCorporationIDIconsOK) String() string {
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsOK  %+v", 200, o.Payload)
+}
+
 func (o *GetCorporationsCorporationIDIconsOK) GetPayload() *GetCorporationsCorporationIDIconsOKBody {
 	return o.Payload
 }
@@ -160,7 +191,8 @@ func NewGetCorporationsCorporationIDIconsNotModified() *GetCorporationsCorporati
 	return &GetCorporationsCorporationIDIconsNotModified{}
 }
 
-/* GetCorporationsCorporationIDIconsNotModified describes a response with status code 304, with default header values.
+/*
+GetCorporationsCorporationIDIconsNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -183,7 +215,36 @@ type GetCorporationsCorporationIDIconsNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get corporations corporation Id icons not modified response has a 2xx status code
+func (o *GetCorporationsCorporationIDIconsNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations corporation Id icons not modified response has a 3xx status code
+func (o *GetCorporationsCorporationIDIconsNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get corporations corporation Id icons not modified response has a 4xx status code
+func (o *GetCorporationsCorporationIDIconsNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get corporations corporation Id icons not modified response has a 5xx status code
+func (o *GetCorporationsCorporationIDIconsNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporations corporation Id icons not modified response a status code equal to that given
+func (o *GetCorporationsCorporationIDIconsNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetCorporationsCorporationIDIconsNotModified) Error() string {
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsNotModified ", 304)
+}
+
+func (o *GetCorporationsCorporationIDIconsNotModified) String() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsNotModified ", 304)
 }
 
@@ -225,7 +286,8 @@ func NewGetCorporationsCorporationIDIconsBadRequest() *GetCorporationsCorporatio
 	return &GetCorporationsCorporationIDIconsBadRequest{}
 }
 
-/* GetCorporationsCorporationIDIconsBadRequest describes a response with status code 400, with default header values.
+/*
+GetCorporationsCorporationIDIconsBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -233,9 +295,39 @@ type GetCorporationsCorporationIDIconsBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get corporations corporation Id icons bad request response has a 2xx status code
+func (o *GetCorporationsCorporationIDIconsBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations corporation Id icons bad request response has a 3xx status code
+func (o *GetCorporationsCorporationIDIconsBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations corporation Id icons bad request response has a 4xx status code
+func (o *GetCorporationsCorporationIDIconsBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get corporations corporation Id icons bad request response has a 5xx status code
+func (o *GetCorporationsCorporationIDIconsBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporations corporation Id icons bad request response a status code equal to that given
+func (o *GetCorporationsCorporationIDIconsBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetCorporationsCorporationIDIconsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetCorporationsCorporationIDIconsBadRequest) String() string {
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetCorporationsCorporationIDIconsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -257,7 +349,8 @@ func NewGetCorporationsCorporationIDIconsNotFound() *GetCorporationsCorporationI
 	return &GetCorporationsCorporationIDIconsNotFound{}
 }
 
-/* GetCorporationsCorporationIDIconsNotFound describes a response with status code 404, with default header values.
+/*
+GetCorporationsCorporationIDIconsNotFound describes a response with status code 404, with default header values.
 
 No image server for this datasource
 */
@@ -265,9 +358,39 @@ type GetCorporationsCorporationIDIconsNotFound struct {
 	Payload *GetCorporationsCorporationIDIconsNotFoundBody
 }
 
+// IsSuccess returns true when this get corporations corporation Id icons not found response has a 2xx status code
+func (o *GetCorporationsCorporationIDIconsNotFound) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations corporation Id icons not found response has a 3xx status code
+func (o *GetCorporationsCorporationIDIconsNotFound) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations corporation Id icons not found response has a 4xx status code
+func (o *GetCorporationsCorporationIDIconsNotFound) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get corporations corporation Id icons not found response has a 5xx status code
+func (o *GetCorporationsCorporationIDIconsNotFound) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporations corporation Id icons not found response a status code equal to that given
+func (o *GetCorporationsCorporationIDIconsNotFound) IsCode(code int) bool {
+	return code == 404
+}
+
 func (o *GetCorporationsCorporationIDIconsNotFound) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsNotFound  %+v", 404, o.Payload)
 }
+
+func (o *GetCorporationsCorporationIDIconsNotFound) String() string {
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsNotFound  %+v", 404, o.Payload)
+}
+
 func (o *GetCorporationsCorporationIDIconsNotFound) GetPayload() *GetCorporationsCorporationIDIconsNotFoundBody {
 	return o.Payload
 }
@@ -289,7 +412,8 @@ func NewGetCorporationsCorporationIDIconsEnhanceYourCalm() *GetCorporationsCorpo
 	return &GetCorporationsCorporationIDIconsEnhanceYourCalm{}
 }
 
-/* GetCorporationsCorporationIDIconsEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetCorporationsCorporationIDIconsEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -297,9 +421,39 @@ type GetCorporationsCorporationIDIconsEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get corporations corporation Id icons enhance your calm response has a 2xx status code
+func (o *GetCorporationsCorporationIDIconsEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations corporation Id icons enhance your calm response has a 3xx status code
+func (o *GetCorporationsCorporationIDIconsEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations corporation Id icons enhance your calm response has a 4xx status code
+func (o *GetCorporationsCorporationIDIconsEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get corporations corporation Id icons enhance your calm response has a 5xx status code
+func (o *GetCorporationsCorporationIDIconsEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporations corporation Id icons enhance your calm response a status code equal to that given
+func (o *GetCorporationsCorporationIDIconsEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetCorporationsCorporationIDIconsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetCorporationsCorporationIDIconsEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetCorporationsCorporationIDIconsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -321,7 +475,8 @@ func NewGetCorporationsCorporationIDIconsInternalServerError() *GetCorporationsC
 	return &GetCorporationsCorporationIDIconsInternalServerError{}
 }
 
-/* GetCorporationsCorporationIDIconsInternalServerError describes a response with status code 500, with default header values.
+/*
+GetCorporationsCorporationIDIconsInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -329,9 +484,39 @@ type GetCorporationsCorporationIDIconsInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get corporations corporation Id icons internal server error response has a 2xx status code
+func (o *GetCorporationsCorporationIDIconsInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations corporation Id icons internal server error response has a 3xx status code
+func (o *GetCorporationsCorporationIDIconsInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations corporation Id icons internal server error response has a 4xx status code
+func (o *GetCorporationsCorporationIDIconsInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get corporations corporation Id icons internal server error response has a 5xx status code
+func (o *GetCorporationsCorporationIDIconsInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get corporations corporation Id icons internal server error response a status code equal to that given
+func (o *GetCorporationsCorporationIDIconsInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetCorporationsCorporationIDIconsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetCorporationsCorporationIDIconsInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetCorporationsCorporationIDIconsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -353,7 +538,8 @@ func NewGetCorporationsCorporationIDIconsServiceUnavailable() *GetCorporationsCo
 	return &GetCorporationsCorporationIDIconsServiceUnavailable{}
 }
 
-/* GetCorporationsCorporationIDIconsServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetCorporationsCorporationIDIconsServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -361,9 +547,39 @@ type GetCorporationsCorporationIDIconsServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get corporations corporation Id icons service unavailable response has a 2xx status code
+func (o *GetCorporationsCorporationIDIconsServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations corporation Id icons service unavailable response has a 3xx status code
+func (o *GetCorporationsCorporationIDIconsServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations corporation Id icons service unavailable response has a 4xx status code
+func (o *GetCorporationsCorporationIDIconsServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get corporations corporation Id icons service unavailable response has a 5xx status code
+func (o *GetCorporationsCorporationIDIconsServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get corporations corporation Id icons service unavailable response a status code equal to that given
+func (o *GetCorporationsCorporationIDIconsServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetCorporationsCorporationIDIconsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetCorporationsCorporationIDIconsServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetCorporationsCorporationIDIconsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -385,7 +601,8 @@ func NewGetCorporationsCorporationIDIconsGatewayTimeout() *GetCorporationsCorpor
 	return &GetCorporationsCorporationIDIconsGatewayTimeout{}
 }
 
-/* GetCorporationsCorporationIDIconsGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetCorporationsCorporationIDIconsGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -393,9 +610,39 @@ type GetCorporationsCorporationIDIconsGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get corporations corporation Id icons gateway timeout response has a 2xx status code
+func (o *GetCorporationsCorporationIDIconsGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations corporation Id icons gateway timeout response has a 3xx status code
+func (o *GetCorporationsCorporationIDIconsGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations corporation Id icons gateway timeout response has a 4xx status code
+func (o *GetCorporationsCorporationIDIconsGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get corporations corporation Id icons gateway timeout response has a 5xx status code
+func (o *GetCorporationsCorporationIDIconsGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get corporations corporation Id icons gateway timeout response a status code equal to that given
+func (o *GetCorporationsCorporationIDIconsGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetCorporationsCorporationIDIconsGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetCorporationsCorporationIDIconsGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetCorporationsCorporationIDIconsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -412,7 +659,8 @@ func (o *GetCorporationsCorporationIDIconsGatewayTimeout) readResponse(response 
 	return nil
 }
 
-/*GetCorporationsCorporationIDIconsNotFoundBody get_corporations_corporation_id_icons_not_found
+/*
+GetCorporationsCorporationIDIconsNotFoundBody get_corporations_corporation_id_icons_not_found
 //
 // No image server for this datasource
 swagger:model GetCorporationsCorporationIDIconsNotFoundBody
@@ -453,7 +701,8 @@ func (o *GetCorporationsCorporationIDIconsNotFoundBody) UnmarshalBinary(b []byte
 	return nil
 }
 
-/*GetCorporationsCorporationIDIconsOKBody get_corporations_corporation_id_icons_ok
+/*
+GetCorporationsCorporationIDIconsOKBody get_corporations_corporation_id_icons_ok
 //
 // 200 ok object
 swagger:model GetCorporationsCorporationIDIconsOKBody

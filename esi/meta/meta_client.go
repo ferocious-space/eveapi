@@ -44,9 +44,9 @@ type ClientService interface {
 }
 
 /*
-  GetHeaders debugs request headers
+GetHeaders debugs request headers
 
-  Echo the request headers for debugging purposes. Note that the 'Connection' header and any 'X-' headers are not included
+Echo the request headers for debugging purposes. Note that the 'Connection' header and any 'X-' headers are not included
 */
 func (a *Client) GetHeaders(params *GetHeadersParams, opts ...ClientOption) (*GetHeadersOK, error) {
 	// TODO: Validate the params before sending
@@ -84,9 +84,9 @@ func (a *Client) GetHeaders(params *GetHeadersParams, opts ...ClientOption) (*Ge
 }
 
 /*
-  GetPing pings route
+GetPing pings route
 
-  Ping the ESI routers
+Ping the ESI routers
 */
 func (a *Client) GetPing(params *GetPingParams, opts ...ClientOption) (*GetPingOK, error) {
 	// TODO: Validate the params before sending
@@ -124,9 +124,9 @@ func (a *Client) GetPing(params *GetPingParams, opts ...ClientOption) (*GetPingO
 }
 
 /*
-  GetStatusMixin0 es s i health status
+GetStatusMixin0 es s i health status
 
-  Provides a general health indicator per route and method
+Provides a general health indicator per route and method
 */
 func (a *Client) GetStatusMixin0(params *GetStatusMixin0Params, opts ...ClientOption) (*GetStatusMixin0OK, error) {
 	// TODO: Validate the params before sending
@@ -164,9 +164,9 @@ func (a *Client) GetStatusMixin0(params *GetStatusMixin0Params, opts ...ClientOp
 }
 
 /*
-  GetVerify verifies access token
+GetVerify verifies access token
 
-  Verify authorization tokens in ESI's auth cache
+Verify authorization tokens in ESI's auth cache
 */
 func (a *Client) GetVerify(params *GetVerifyParams, opts ...ClientOption) (*GetVerifyOK, error) {
 	// TODO: Validate the params before sending
@@ -204,9 +204,9 @@ func (a *Client) GetVerify(params *GetVerifyParams, opts ...ClientOption) (*GetV
 }
 
 /*
-  GetVersions lists versions
+GetVersions lists versions
 
-  List all endpoint versions
+List all endpoint versions
 */
 func (a *Client) GetVersions(params *GetVersionsParams, opts ...ClientOption) (*GetVersionsOK, error) {
 	// TODO: Validate the params before sending

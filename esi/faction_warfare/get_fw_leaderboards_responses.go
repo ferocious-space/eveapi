@@ -80,7 +80,8 @@ func NewGetFwLeaderboardsOK() *GetFwLeaderboardsOK {
 	return &GetFwLeaderboardsOK{}
 }
 
-/* GetFwLeaderboardsOK describes a response with status code 200, with default header values.
+/*
+GetFwLeaderboardsOK describes a response with status code 200, with default header values.
 
 Corporation leaderboard of kills and victory points within faction warfare
 */
@@ -105,9 +106,39 @@ type GetFwLeaderboardsOK struct {
 	Payload *GetFwLeaderboardsOKBody
 }
 
+// IsSuccess returns true when this get fw leaderboards o k response has a 2xx status code
+func (o *GetFwLeaderboardsOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get fw leaderboards o k response has a 3xx status code
+func (o *GetFwLeaderboardsOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fw leaderboards o k response has a 4xx status code
+func (o *GetFwLeaderboardsOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get fw leaderboards o k response has a 5xx status code
+func (o *GetFwLeaderboardsOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get fw leaderboards o k response a status code equal to that given
+func (o *GetFwLeaderboardsOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetFwLeaderboardsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/fw/leaderboards/][%d] getFwLeaderboardsOK  %+v", 200, o.Payload)
 }
+
+func (o *GetFwLeaderboardsOK) String() string {
+	return fmt.Sprintf("[GET /v1/fw/leaderboards/][%d] getFwLeaderboardsOK  %+v", 200, o.Payload)
+}
+
 func (o *GetFwLeaderboardsOK) GetPayload() *GetFwLeaderboardsOKBody {
 	return o.Payload
 }
@@ -157,7 +188,8 @@ func NewGetFwLeaderboardsNotModified() *GetFwLeaderboardsNotModified {
 	return &GetFwLeaderboardsNotModified{}
 }
 
-/* GetFwLeaderboardsNotModified describes a response with status code 304, with default header values.
+/*
+GetFwLeaderboardsNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -180,7 +212,36 @@ type GetFwLeaderboardsNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get fw leaderboards not modified response has a 2xx status code
+func (o *GetFwLeaderboardsNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fw leaderboards not modified response has a 3xx status code
+func (o *GetFwLeaderboardsNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get fw leaderboards not modified response has a 4xx status code
+func (o *GetFwLeaderboardsNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get fw leaderboards not modified response has a 5xx status code
+func (o *GetFwLeaderboardsNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get fw leaderboards not modified response a status code equal to that given
+func (o *GetFwLeaderboardsNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetFwLeaderboardsNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/fw/leaderboards/][%d] getFwLeaderboardsNotModified ", 304)
+}
+
+func (o *GetFwLeaderboardsNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/fw/leaderboards/][%d] getFwLeaderboardsNotModified ", 304)
 }
 
@@ -222,7 +283,8 @@ func NewGetFwLeaderboardsBadRequest() *GetFwLeaderboardsBadRequest {
 	return &GetFwLeaderboardsBadRequest{}
 }
 
-/* GetFwLeaderboardsBadRequest describes a response with status code 400, with default header values.
+/*
+GetFwLeaderboardsBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -230,9 +292,39 @@ type GetFwLeaderboardsBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get fw leaderboards bad request response has a 2xx status code
+func (o *GetFwLeaderboardsBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fw leaderboards bad request response has a 3xx status code
+func (o *GetFwLeaderboardsBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fw leaderboards bad request response has a 4xx status code
+func (o *GetFwLeaderboardsBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get fw leaderboards bad request response has a 5xx status code
+func (o *GetFwLeaderboardsBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get fw leaderboards bad request response a status code equal to that given
+func (o *GetFwLeaderboardsBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetFwLeaderboardsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/fw/leaderboards/][%d] getFwLeaderboardsBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetFwLeaderboardsBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/fw/leaderboards/][%d] getFwLeaderboardsBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetFwLeaderboardsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -254,7 +346,8 @@ func NewGetFwLeaderboardsEnhanceYourCalm() *GetFwLeaderboardsEnhanceYourCalm {
 	return &GetFwLeaderboardsEnhanceYourCalm{}
 }
 
-/* GetFwLeaderboardsEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetFwLeaderboardsEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -262,9 +355,39 @@ type GetFwLeaderboardsEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get fw leaderboards enhance your calm response has a 2xx status code
+func (o *GetFwLeaderboardsEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fw leaderboards enhance your calm response has a 3xx status code
+func (o *GetFwLeaderboardsEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fw leaderboards enhance your calm response has a 4xx status code
+func (o *GetFwLeaderboardsEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get fw leaderboards enhance your calm response has a 5xx status code
+func (o *GetFwLeaderboardsEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get fw leaderboards enhance your calm response a status code equal to that given
+func (o *GetFwLeaderboardsEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetFwLeaderboardsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/fw/leaderboards/][%d] getFwLeaderboardsEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetFwLeaderboardsEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/fw/leaderboards/][%d] getFwLeaderboardsEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetFwLeaderboardsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -286,7 +409,8 @@ func NewGetFwLeaderboardsInternalServerError() *GetFwLeaderboardsInternalServerE
 	return &GetFwLeaderboardsInternalServerError{}
 }
 
-/* GetFwLeaderboardsInternalServerError describes a response with status code 500, with default header values.
+/*
+GetFwLeaderboardsInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -294,9 +418,39 @@ type GetFwLeaderboardsInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get fw leaderboards internal server error response has a 2xx status code
+func (o *GetFwLeaderboardsInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fw leaderboards internal server error response has a 3xx status code
+func (o *GetFwLeaderboardsInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fw leaderboards internal server error response has a 4xx status code
+func (o *GetFwLeaderboardsInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get fw leaderboards internal server error response has a 5xx status code
+func (o *GetFwLeaderboardsInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get fw leaderboards internal server error response a status code equal to that given
+func (o *GetFwLeaderboardsInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetFwLeaderboardsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/fw/leaderboards/][%d] getFwLeaderboardsInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetFwLeaderboardsInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/fw/leaderboards/][%d] getFwLeaderboardsInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetFwLeaderboardsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -318,7 +472,8 @@ func NewGetFwLeaderboardsServiceUnavailable() *GetFwLeaderboardsServiceUnavailab
 	return &GetFwLeaderboardsServiceUnavailable{}
 }
 
-/* GetFwLeaderboardsServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetFwLeaderboardsServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -326,9 +481,39 @@ type GetFwLeaderboardsServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get fw leaderboards service unavailable response has a 2xx status code
+func (o *GetFwLeaderboardsServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fw leaderboards service unavailable response has a 3xx status code
+func (o *GetFwLeaderboardsServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fw leaderboards service unavailable response has a 4xx status code
+func (o *GetFwLeaderboardsServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get fw leaderboards service unavailable response has a 5xx status code
+func (o *GetFwLeaderboardsServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get fw leaderboards service unavailable response a status code equal to that given
+func (o *GetFwLeaderboardsServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetFwLeaderboardsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/fw/leaderboards/][%d] getFwLeaderboardsServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetFwLeaderboardsServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/fw/leaderboards/][%d] getFwLeaderboardsServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetFwLeaderboardsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -350,7 +535,8 @@ func NewGetFwLeaderboardsGatewayTimeout() *GetFwLeaderboardsGatewayTimeout {
 	return &GetFwLeaderboardsGatewayTimeout{}
 }
 
-/* GetFwLeaderboardsGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetFwLeaderboardsGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -358,9 +544,39 @@ type GetFwLeaderboardsGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get fw leaderboards gateway timeout response has a 2xx status code
+func (o *GetFwLeaderboardsGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fw leaderboards gateway timeout response has a 3xx status code
+func (o *GetFwLeaderboardsGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fw leaderboards gateway timeout response has a 4xx status code
+func (o *GetFwLeaderboardsGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get fw leaderboards gateway timeout response has a 5xx status code
+func (o *GetFwLeaderboardsGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get fw leaderboards gateway timeout response a status code equal to that given
+func (o *GetFwLeaderboardsGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetFwLeaderboardsGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/fw/leaderboards/][%d] getFwLeaderboardsGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetFwLeaderboardsGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/fw/leaderboards/][%d] getFwLeaderboardsGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetFwLeaderboardsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -377,7 +593,8 @@ func (o *GetFwLeaderboardsGatewayTimeout) readResponse(response runtime.ClientRe
 	return nil
 }
 
-/*GetFwLeaderboardsOKBody get_fw_leaderboards_ok
+/*
+GetFwLeaderboardsOKBody get_fw_leaderboards_ok
 //
 // 200 ok object
 swagger:model GetFwLeaderboardsOKBody
@@ -519,7 +736,8 @@ func (o *GetFwLeaderboardsOKBody) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*GetFwLeaderboardsOKBodyKills get_fw_leaderboards_kills
+/*
+GetFwLeaderboardsOKBodyKills get_fw_leaderboards_kills
 //
 // Top 4 rankings of factions by number of kills from yesterday, last week and in total
 swagger:model GetFwLeaderboardsOKBodyKills
@@ -769,7 +987,8 @@ func (o *GetFwLeaderboardsOKBodyKills) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*GetFwLeaderboardsOKBodyKillsActiveTotalItems0 get_fw_leaderboards_active_total_active_total
+/*
+GetFwLeaderboardsOKBodyKillsActiveTotalItems0 get_fw_leaderboards_active_total_active_total
 //
 // active_total object
 swagger:model GetFwLeaderboardsOKBodyKillsActiveTotalItems0
@@ -815,7 +1034,8 @@ func (o *GetFwLeaderboardsOKBodyKillsActiveTotalItems0) UnmarshalBinary(b []byte
 	return nil
 }
 
-/*GetFwLeaderboardsOKBodyKillsLastWeekItems0 get_fw_leaderboards_last_week_last_week
+/*
+GetFwLeaderboardsOKBodyKillsLastWeekItems0 get_fw_leaderboards_last_week_last_week
 //
 // last_week object
 swagger:model GetFwLeaderboardsOKBodyKillsLastWeekItems0
@@ -861,7 +1081,8 @@ func (o *GetFwLeaderboardsOKBodyKillsLastWeekItems0) UnmarshalBinary(b []byte) e
 	return nil
 }
 
-/*GetFwLeaderboardsOKBodyKillsYesterdayItems0 get_fw_leaderboards_yesterday_yesterday
+/*
+GetFwLeaderboardsOKBodyKillsYesterdayItems0 get_fw_leaderboards_yesterday_yesterday
 //
 // yesterday object
 swagger:model GetFwLeaderboardsOKBodyKillsYesterdayItems0
@@ -907,7 +1128,8 @@ func (o *GetFwLeaderboardsOKBodyKillsYesterdayItems0) UnmarshalBinary(b []byte) 
 	return nil
 }
 
-/*GetFwLeaderboardsOKBodyVictoryPoints get_fw_leaderboards_victory_points
+/*
+GetFwLeaderboardsOKBodyVictoryPoints get_fw_leaderboards_victory_points
 //
 // Top 4 rankings of factions by victory points from yesterday, last week and in total
 swagger:model GetFwLeaderboardsOKBodyVictoryPoints
@@ -1157,7 +1379,8 @@ func (o *GetFwLeaderboardsOKBodyVictoryPoints) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*GetFwLeaderboardsOKBodyVictoryPointsActiveTotalItems0 get_fw_leaderboards_active_total_active_total_1
+/*
+GetFwLeaderboardsOKBodyVictoryPointsActiveTotalItems0 get_fw_leaderboards_active_total_active_total_1
 //
 // active_total object
 swagger:model GetFwLeaderboardsOKBodyVictoryPointsActiveTotalItems0
@@ -1203,7 +1426,8 @@ func (o *GetFwLeaderboardsOKBodyVictoryPointsActiveTotalItems0) UnmarshalBinary(
 	return nil
 }
 
-/*GetFwLeaderboardsOKBodyVictoryPointsLastWeekItems0 get_fw_leaderboards_last_week_last_week_1
+/*
+GetFwLeaderboardsOKBodyVictoryPointsLastWeekItems0 get_fw_leaderboards_last_week_last_week_1
 //
 // last_week object
 swagger:model GetFwLeaderboardsOKBodyVictoryPointsLastWeekItems0
@@ -1249,7 +1473,8 @@ func (o *GetFwLeaderboardsOKBodyVictoryPointsLastWeekItems0) UnmarshalBinary(b [
 	return nil
 }
 
-/*GetFwLeaderboardsOKBodyVictoryPointsYesterdayItems0 get_fw_leaderboards_yesterday_yesterday_1
+/*
+GetFwLeaderboardsOKBodyVictoryPointsYesterdayItems0 get_fw_leaderboards_yesterday_yesterday_1
 //
 // yesterday object
 swagger:model GetFwLeaderboardsOKBodyVictoryPointsYesterdayItems0

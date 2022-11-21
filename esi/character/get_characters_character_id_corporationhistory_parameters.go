@@ -53,10 +53,12 @@ func NewGetCharactersCharacterIDCorporationhistoryParamsWithHTTPClient(client *h
 	}
 }
 
-/* GetCharactersCharacterIDCorporationhistoryParams contains all the parameters to send to the API endpoint
-   for the get characters character id corporationhistory operation.
+/*
+GetCharactersCharacterIDCorporationhistoryParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get characters character id corporationhistory operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCharactersCharacterIDCorporationhistoryParams struct {
 

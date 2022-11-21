@@ -37,7 +37,8 @@ func NewGetVersionsOK() *GetVersionsOK {
 	return &GetVersionsOK{}
 }
 
-/* GetVersionsOK describes a response with status code 200, with default header values.
+/*
+GetVersionsOK describes a response with status code 200, with default header values.
 
 Version list
 */
@@ -58,9 +59,39 @@ type GetVersionsOK struct {
 	Payload []string
 }
 
+// IsSuccess returns true when this get versions o k response has a 2xx status code
+func (o *GetVersionsOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get versions o k response has a 3xx status code
+func (o *GetVersionsOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get versions o k response has a 4xx status code
+func (o *GetVersionsOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get versions o k response has a 5xx status code
+func (o *GetVersionsOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get versions o k response a status code equal to that given
+func (o *GetVersionsOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetVersionsOK) Error() string {
 	return fmt.Sprintf("[GET /versions/][%d] getVersionsOK  %+v", 200, o.Payload)
 }
+
+func (o *GetVersionsOK) String() string {
+	return fmt.Sprintf("[GET /versions/][%d] getVersionsOK  %+v", 200, o.Payload)
+}
+
 func (o *GetVersionsOK) GetPayload() []string {
 	return o.Payload
 }

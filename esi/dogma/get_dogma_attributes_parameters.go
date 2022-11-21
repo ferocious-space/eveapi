@@ -52,10 +52,12 @@ func NewGetDogmaAttributesParamsWithHTTPClient(client *http.Client) *GetDogmaAtt
 	}
 }
 
-/* GetDogmaAttributesParams contains all the parameters to send to the API endpoint
-   for the get dogma attributes operation.
+/*
+GetDogmaAttributesParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get dogma attributes operation.
+
+	Typically these are written to a http.Request.
 */
 type GetDogmaAttributesParams struct {
 

@@ -100,7 +100,8 @@ func NewGetMarketsStructuresStructureIDOK() *GetMarketsStructuresStructureIDOK {
 	}
 }
 
-/* GetMarketsStructuresStructureIDOK describes a response with status code 200, with default header values.
+/*
+GetMarketsStructuresStructureIDOK describes a response with status code 200, with default header values.
 
 A list of orders
 */
@@ -132,9 +133,39 @@ type GetMarketsStructuresStructureIDOK struct {
 	Payload []*GetMarketsStructuresStructureIDOKBodyItems0
 }
 
+// IsSuccess returns true when this get markets structures structure Id o k response has a 2xx status code
+func (o *GetMarketsStructuresStructureIDOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get markets structures structure Id o k response has a 3xx status code
+func (o *GetMarketsStructuresStructureIDOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get markets structures structure Id o k response has a 4xx status code
+func (o *GetMarketsStructuresStructureIDOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get markets structures structure Id o k response has a 5xx status code
+func (o *GetMarketsStructuresStructureIDOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get markets structures structure Id o k response a status code equal to that given
+func (o *GetMarketsStructuresStructureIDOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetMarketsStructuresStructureIDOK) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/structures/{structure_id}/][%d] getMarketsStructuresStructureIdOK  %+v", 200, o.Payload)
 }
+
+func (o *GetMarketsStructuresStructureIDOK) String() string {
+	return fmt.Sprintf("[GET /v1/markets/structures/{structure_id}/][%d] getMarketsStructuresStructureIdOK  %+v", 200, o.Payload)
+}
+
 func (o *GetMarketsStructuresStructureIDOK) GetPayload() []*GetMarketsStructuresStructureIDOKBodyItems0 {
 	return o.Payload
 }
@@ -193,7 +224,8 @@ func NewGetMarketsStructuresStructureIDNotModified() *GetMarketsStructuresStruct
 	return &GetMarketsStructuresStructureIDNotModified{}
 }
 
-/* GetMarketsStructuresStructureIDNotModified describes a response with status code 304, with default header values.
+/*
+GetMarketsStructuresStructureIDNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -216,7 +248,36 @@ type GetMarketsStructuresStructureIDNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get markets structures structure Id not modified response has a 2xx status code
+func (o *GetMarketsStructuresStructureIDNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get markets structures structure Id not modified response has a 3xx status code
+func (o *GetMarketsStructuresStructureIDNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get markets structures structure Id not modified response has a 4xx status code
+func (o *GetMarketsStructuresStructureIDNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get markets structures structure Id not modified response has a 5xx status code
+func (o *GetMarketsStructuresStructureIDNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get markets structures structure Id not modified response a status code equal to that given
+func (o *GetMarketsStructuresStructureIDNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetMarketsStructuresStructureIDNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/markets/structures/{structure_id}/][%d] getMarketsStructuresStructureIdNotModified ", 304)
+}
+
+func (o *GetMarketsStructuresStructureIDNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/markets/structures/{structure_id}/][%d] getMarketsStructuresStructureIdNotModified ", 304)
 }
 
@@ -258,7 +319,8 @@ func NewGetMarketsStructuresStructureIDBadRequest() *GetMarketsStructuresStructu
 	return &GetMarketsStructuresStructureIDBadRequest{}
 }
 
-/* GetMarketsStructuresStructureIDBadRequest describes a response with status code 400, with default header values.
+/*
+GetMarketsStructuresStructureIDBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -266,9 +328,39 @@ type GetMarketsStructuresStructureIDBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get markets structures structure Id bad request response has a 2xx status code
+func (o *GetMarketsStructuresStructureIDBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get markets structures structure Id bad request response has a 3xx status code
+func (o *GetMarketsStructuresStructureIDBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get markets structures structure Id bad request response has a 4xx status code
+func (o *GetMarketsStructuresStructureIDBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get markets structures structure Id bad request response has a 5xx status code
+func (o *GetMarketsStructuresStructureIDBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get markets structures structure Id bad request response a status code equal to that given
+func (o *GetMarketsStructuresStructureIDBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetMarketsStructuresStructureIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/structures/{structure_id}/][%d] getMarketsStructuresStructureIdBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetMarketsStructuresStructureIDBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/markets/structures/{structure_id}/][%d] getMarketsStructuresStructureIdBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetMarketsStructuresStructureIDBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -290,7 +382,8 @@ func NewGetMarketsStructuresStructureIDUnauthorized() *GetMarketsStructuresStruc
 	return &GetMarketsStructuresStructureIDUnauthorized{}
 }
 
-/* GetMarketsStructuresStructureIDUnauthorized describes a response with status code 401, with default header values.
+/*
+GetMarketsStructuresStructureIDUnauthorized describes a response with status code 401, with default header values.
 
 Unauthorized
 */
@@ -298,9 +391,39 @@ type GetMarketsStructuresStructureIDUnauthorized struct {
 	Payload *models.Unauthorized
 }
 
+// IsSuccess returns true when this get markets structures structure Id unauthorized response has a 2xx status code
+func (o *GetMarketsStructuresStructureIDUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get markets structures structure Id unauthorized response has a 3xx status code
+func (o *GetMarketsStructuresStructureIDUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get markets structures structure Id unauthorized response has a 4xx status code
+func (o *GetMarketsStructuresStructureIDUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get markets structures structure Id unauthorized response has a 5xx status code
+func (o *GetMarketsStructuresStructureIDUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get markets structures structure Id unauthorized response a status code equal to that given
+func (o *GetMarketsStructuresStructureIDUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *GetMarketsStructuresStructureIDUnauthorized) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/structures/{structure_id}/][%d] getMarketsStructuresStructureIdUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *GetMarketsStructuresStructureIDUnauthorized) String() string {
+	return fmt.Sprintf("[GET /v1/markets/structures/{structure_id}/][%d] getMarketsStructuresStructureIdUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *GetMarketsStructuresStructureIDUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
 }
@@ -322,7 +445,8 @@ func NewGetMarketsStructuresStructureIDForbidden() *GetMarketsStructuresStructur
 	return &GetMarketsStructuresStructureIDForbidden{}
 }
 
-/* GetMarketsStructuresStructureIDForbidden describes a response with status code 403, with default header values.
+/*
+GetMarketsStructuresStructureIDForbidden describes a response with status code 403, with default header values.
 
 Forbidden
 */
@@ -330,9 +454,39 @@ type GetMarketsStructuresStructureIDForbidden struct {
 	Payload *models.Forbidden
 }
 
+// IsSuccess returns true when this get markets structures structure Id forbidden response has a 2xx status code
+func (o *GetMarketsStructuresStructureIDForbidden) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get markets structures structure Id forbidden response has a 3xx status code
+func (o *GetMarketsStructuresStructureIDForbidden) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get markets structures structure Id forbidden response has a 4xx status code
+func (o *GetMarketsStructuresStructureIDForbidden) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get markets structures structure Id forbidden response has a 5xx status code
+func (o *GetMarketsStructuresStructureIDForbidden) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get markets structures structure Id forbidden response a status code equal to that given
+func (o *GetMarketsStructuresStructureIDForbidden) IsCode(code int) bool {
+	return code == 403
+}
+
 func (o *GetMarketsStructuresStructureIDForbidden) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/structures/{structure_id}/][%d] getMarketsStructuresStructureIdForbidden  %+v", 403, o.Payload)
 }
+
+func (o *GetMarketsStructuresStructureIDForbidden) String() string {
+	return fmt.Sprintf("[GET /v1/markets/structures/{structure_id}/][%d] getMarketsStructuresStructureIdForbidden  %+v", 403, o.Payload)
+}
+
 func (o *GetMarketsStructuresStructureIDForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
 }
@@ -354,7 +508,8 @@ func NewGetMarketsStructuresStructureIDEnhanceYourCalm() *GetMarketsStructuresSt
 	return &GetMarketsStructuresStructureIDEnhanceYourCalm{}
 }
 
-/* GetMarketsStructuresStructureIDEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetMarketsStructuresStructureIDEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -362,9 +517,39 @@ type GetMarketsStructuresStructureIDEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get markets structures structure Id enhance your calm response has a 2xx status code
+func (o *GetMarketsStructuresStructureIDEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get markets structures structure Id enhance your calm response has a 3xx status code
+func (o *GetMarketsStructuresStructureIDEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get markets structures structure Id enhance your calm response has a 4xx status code
+func (o *GetMarketsStructuresStructureIDEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get markets structures structure Id enhance your calm response has a 5xx status code
+func (o *GetMarketsStructuresStructureIDEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get markets structures structure Id enhance your calm response a status code equal to that given
+func (o *GetMarketsStructuresStructureIDEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetMarketsStructuresStructureIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/structures/{structure_id}/][%d] getMarketsStructuresStructureIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetMarketsStructuresStructureIDEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/markets/structures/{structure_id}/][%d] getMarketsStructuresStructureIdEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetMarketsStructuresStructureIDEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -386,7 +571,8 @@ func NewGetMarketsStructuresStructureIDInternalServerError() *GetMarketsStructur
 	return &GetMarketsStructuresStructureIDInternalServerError{}
 }
 
-/* GetMarketsStructuresStructureIDInternalServerError describes a response with status code 500, with default header values.
+/*
+GetMarketsStructuresStructureIDInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -394,9 +580,39 @@ type GetMarketsStructuresStructureIDInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get markets structures structure Id internal server error response has a 2xx status code
+func (o *GetMarketsStructuresStructureIDInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get markets structures structure Id internal server error response has a 3xx status code
+func (o *GetMarketsStructuresStructureIDInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get markets structures structure Id internal server error response has a 4xx status code
+func (o *GetMarketsStructuresStructureIDInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get markets structures structure Id internal server error response has a 5xx status code
+func (o *GetMarketsStructuresStructureIDInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get markets structures structure Id internal server error response a status code equal to that given
+func (o *GetMarketsStructuresStructureIDInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetMarketsStructuresStructureIDInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/structures/{structure_id}/][%d] getMarketsStructuresStructureIdInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetMarketsStructuresStructureIDInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/markets/structures/{structure_id}/][%d] getMarketsStructuresStructureIdInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetMarketsStructuresStructureIDInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -418,7 +634,8 @@ func NewGetMarketsStructuresStructureIDServiceUnavailable() *GetMarketsStructure
 	return &GetMarketsStructuresStructureIDServiceUnavailable{}
 }
 
-/* GetMarketsStructuresStructureIDServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetMarketsStructuresStructureIDServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -426,9 +643,39 @@ type GetMarketsStructuresStructureIDServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get markets structures structure Id service unavailable response has a 2xx status code
+func (o *GetMarketsStructuresStructureIDServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get markets structures structure Id service unavailable response has a 3xx status code
+func (o *GetMarketsStructuresStructureIDServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get markets structures structure Id service unavailable response has a 4xx status code
+func (o *GetMarketsStructuresStructureIDServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get markets structures structure Id service unavailable response has a 5xx status code
+func (o *GetMarketsStructuresStructureIDServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get markets structures structure Id service unavailable response a status code equal to that given
+func (o *GetMarketsStructuresStructureIDServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetMarketsStructuresStructureIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/structures/{structure_id}/][%d] getMarketsStructuresStructureIdServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetMarketsStructuresStructureIDServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/markets/structures/{structure_id}/][%d] getMarketsStructuresStructureIdServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetMarketsStructuresStructureIDServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -450,7 +697,8 @@ func NewGetMarketsStructuresStructureIDGatewayTimeout() *GetMarketsStructuresStr
 	return &GetMarketsStructuresStructureIDGatewayTimeout{}
 }
 
-/* GetMarketsStructuresStructureIDGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetMarketsStructuresStructureIDGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -458,9 +706,39 @@ type GetMarketsStructuresStructureIDGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get markets structures structure Id gateway timeout response has a 2xx status code
+func (o *GetMarketsStructuresStructureIDGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get markets structures structure Id gateway timeout response has a 3xx status code
+func (o *GetMarketsStructuresStructureIDGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get markets structures structure Id gateway timeout response has a 4xx status code
+func (o *GetMarketsStructuresStructureIDGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get markets structures structure Id gateway timeout response has a 5xx status code
+func (o *GetMarketsStructuresStructureIDGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get markets structures structure Id gateway timeout response a status code equal to that given
+func (o *GetMarketsStructuresStructureIDGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetMarketsStructuresStructureIDGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/structures/{structure_id}/][%d] getMarketsStructuresStructureIdGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetMarketsStructuresStructureIDGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/markets/structures/{structure_id}/][%d] getMarketsStructuresStructureIdGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetMarketsStructuresStructureIDGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -477,7 +755,8 @@ func (o *GetMarketsStructuresStructureIDGatewayTimeout) readResponse(response ru
 	return nil
 }
 
-/*GetMarketsStructuresStructureIDOKBodyItems0 get_markets_structures_structure_id_200_ok
+/*
+GetMarketsStructuresStructureIDOKBodyItems0 get_markets_structures_structure_id_200_ok
 //
 // 200 ok object
 swagger:model GetMarketsStructuresStructureIDOKBodyItems0

@@ -89,14 +89,44 @@ func NewDeleteCharactersCharacterIDMailLabelsLabelIDNoContent() *DeleteCharacter
 	return &DeleteCharactersCharacterIDMailLabelsLabelIDNoContent{}
 }
 
-/* DeleteCharactersCharacterIDMailLabelsLabelIDNoContent describes a response with status code 204, with default header values.
+/*
+DeleteCharactersCharacterIDMailLabelsLabelIDNoContent describes a response with status code 204, with default header values.
 
 Label deleted
 */
 type DeleteCharactersCharacterIDMailLabelsLabelIDNoContent struct {
 }
 
+// IsSuccess returns true when this delete characters character Id mail labels label Id no content response has a 2xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDNoContent) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this delete characters character Id mail labels label Id no content response has a 3xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDNoContent) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this delete characters character Id mail labels label Id no content response has a 4xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDNoContent) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this delete characters character Id mail labels label Id no content response has a 5xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDNoContent) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this delete characters character Id mail labels label Id no content response a status code equal to that given
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDNoContent) IsCode(code int) bool {
+	return code == 204
+}
+
 func (o *DeleteCharactersCharacterIDMailLabelsLabelIDNoContent) Error() string {
+	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/mail/labels/{label_id}/][%d] deleteCharactersCharacterIdMailLabelsLabelIdNoContent ", 204)
+}
+
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDNoContent) String() string {
 	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/mail/labels/{label_id}/][%d] deleteCharactersCharacterIdMailLabelsLabelIdNoContent ", 204)
 }
 
@@ -110,7 +140,8 @@ func NewDeleteCharactersCharacterIDMailLabelsLabelIDBadRequest() *DeleteCharacte
 	return &DeleteCharactersCharacterIDMailLabelsLabelIDBadRequest{}
 }
 
-/* DeleteCharactersCharacterIDMailLabelsLabelIDBadRequest describes a response with status code 400, with default header values.
+/*
+DeleteCharactersCharacterIDMailLabelsLabelIDBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -118,9 +149,39 @@ type DeleteCharactersCharacterIDMailLabelsLabelIDBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this delete characters character Id mail labels label Id bad request response has a 2xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this delete characters character Id mail labels label Id bad request response has a 3xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this delete characters character Id mail labels label Id bad request response has a 4xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this delete characters character Id mail labels label Id bad request response has a 5xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this delete characters character Id mail labels label Id bad request response a status code equal to that given
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *DeleteCharactersCharacterIDMailLabelsLabelIDBadRequest) Error() string {
 	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/mail/labels/{label_id}/][%d] deleteCharactersCharacterIdMailLabelsLabelIdBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDBadRequest) String() string {
+	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/mail/labels/{label_id}/][%d] deleteCharactersCharacterIdMailLabelsLabelIdBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *DeleteCharactersCharacterIDMailLabelsLabelIDBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -142,7 +203,8 @@ func NewDeleteCharactersCharacterIDMailLabelsLabelIDUnauthorized() *DeleteCharac
 	return &DeleteCharactersCharacterIDMailLabelsLabelIDUnauthorized{}
 }
 
-/* DeleteCharactersCharacterIDMailLabelsLabelIDUnauthorized describes a response with status code 401, with default header values.
+/*
+DeleteCharactersCharacterIDMailLabelsLabelIDUnauthorized describes a response with status code 401, with default header values.
 
 Unauthorized
 */
@@ -150,9 +212,39 @@ type DeleteCharactersCharacterIDMailLabelsLabelIDUnauthorized struct {
 	Payload *models.Unauthorized
 }
 
+// IsSuccess returns true when this delete characters character Id mail labels label Id unauthorized response has a 2xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this delete characters character Id mail labels label Id unauthorized response has a 3xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this delete characters character Id mail labels label Id unauthorized response has a 4xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this delete characters character Id mail labels label Id unauthorized response has a 5xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this delete characters character Id mail labels label Id unauthorized response a status code equal to that given
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *DeleteCharactersCharacterIDMailLabelsLabelIDUnauthorized) Error() string {
 	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/mail/labels/{label_id}/][%d] deleteCharactersCharacterIdMailLabelsLabelIdUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDUnauthorized) String() string {
+	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/mail/labels/{label_id}/][%d] deleteCharactersCharacterIdMailLabelsLabelIdUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *DeleteCharactersCharacterIDMailLabelsLabelIDUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
 }
@@ -174,7 +266,8 @@ func NewDeleteCharactersCharacterIDMailLabelsLabelIDForbidden() *DeleteCharacter
 	return &DeleteCharactersCharacterIDMailLabelsLabelIDForbidden{}
 }
 
-/* DeleteCharactersCharacterIDMailLabelsLabelIDForbidden describes a response with status code 403, with default header values.
+/*
+DeleteCharactersCharacterIDMailLabelsLabelIDForbidden describes a response with status code 403, with default header values.
 
 Forbidden
 */
@@ -182,9 +275,39 @@ type DeleteCharactersCharacterIDMailLabelsLabelIDForbidden struct {
 	Payload *models.Forbidden
 }
 
+// IsSuccess returns true when this delete characters character Id mail labels label Id forbidden response has a 2xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDForbidden) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this delete characters character Id mail labels label Id forbidden response has a 3xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDForbidden) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this delete characters character Id mail labels label Id forbidden response has a 4xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDForbidden) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this delete characters character Id mail labels label Id forbidden response has a 5xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDForbidden) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this delete characters character Id mail labels label Id forbidden response a status code equal to that given
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDForbidden) IsCode(code int) bool {
+	return code == 403
+}
+
 func (o *DeleteCharactersCharacterIDMailLabelsLabelIDForbidden) Error() string {
 	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/mail/labels/{label_id}/][%d] deleteCharactersCharacterIdMailLabelsLabelIdForbidden  %+v", 403, o.Payload)
 }
+
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDForbidden) String() string {
+	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/mail/labels/{label_id}/][%d] deleteCharactersCharacterIdMailLabelsLabelIdForbidden  %+v", 403, o.Payload)
+}
+
 func (o *DeleteCharactersCharacterIDMailLabelsLabelIDForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
 }
@@ -206,7 +329,8 @@ func NewDeleteCharactersCharacterIDMailLabelsLabelIDEnhanceYourCalm() *DeleteCha
 	return &DeleteCharactersCharacterIDMailLabelsLabelIDEnhanceYourCalm{}
 }
 
-/* DeleteCharactersCharacterIDMailLabelsLabelIDEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+DeleteCharactersCharacterIDMailLabelsLabelIDEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -214,9 +338,39 @@ type DeleteCharactersCharacterIDMailLabelsLabelIDEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this delete characters character Id mail labels label Id enhance your calm response has a 2xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this delete characters character Id mail labels label Id enhance your calm response has a 3xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this delete characters character Id mail labels label Id enhance your calm response has a 4xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this delete characters character Id mail labels label Id enhance your calm response has a 5xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this delete characters character Id mail labels label Id enhance your calm response a status code equal to that given
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *DeleteCharactersCharacterIDMailLabelsLabelIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/mail/labels/{label_id}/][%d] deleteCharactersCharacterIdMailLabelsLabelIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/mail/labels/{label_id}/][%d] deleteCharactersCharacterIdMailLabelsLabelIdEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *DeleteCharactersCharacterIDMailLabelsLabelIDEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -238,7 +392,8 @@ func NewDeleteCharactersCharacterIDMailLabelsLabelIDUnprocessableEntity() *Delet
 	return &DeleteCharactersCharacterIDMailLabelsLabelIDUnprocessableEntity{}
 }
 
-/* DeleteCharactersCharacterIDMailLabelsLabelIDUnprocessableEntity describes a response with status code 422, with default header values.
+/*
+DeleteCharactersCharacterIDMailLabelsLabelIDUnprocessableEntity describes a response with status code 422, with default header values.
 
 Default labels cannot be deleted
 */
@@ -246,9 +401,39 @@ type DeleteCharactersCharacterIDMailLabelsLabelIDUnprocessableEntity struct {
 	Payload *DeleteCharactersCharacterIDMailLabelsLabelIDUnprocessableEntityBody
 }
 
+// IsSuccess returns true when this delete characters character Id mail labels label Id unprocessable entity response has a 2xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDUnprocessableEntity) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this delete characters character Id mail labels label Id unprocessable entity response has a 3xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDUnprocessableEntity) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this delete characters character Id mail labels label Id unprocessable entity response has a 4xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDUnprocessableEntity) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this delete characters character Id mail labels label Id unprocessable entity response has a 5xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDUnprocessableEntity) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this delete characters character Id mail labels label Id unprocessable entity response a status code equal to that given
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDUnprocessableEntity) IsCode(code int) bool {
+	return code == 422
+}
+
 func (o *DeleteCharactersCharacterIDMailLabelsLabelIDUnprocessableEntity) Error() string {
 	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/mail/labels/{label_id}/][%d] deleteCharactersCharacterIdMailLabelsLabelIdUnprocessableEntity  %+v", 422, o.Payload)
 }
+
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDUnprocessableEntity) String() string {
+	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/mail/labels/{label_id}/][%d] deleteCharactersCharacterIdMailLabelsLabelIdUnprocessableEntity  %+v", 422, o.Payload)
+}
+
 func (o *DeleteCharactersCharacterIDMailLabelsLabelIDUnprocessableEntity) GetPayload() *DeleteCharactersCharacterIDMailLabelsLabelIDUnprocessableEntityBody {
 	return o.Payload
 }
@@ -270,7 +455,8 @@ func NewDeleteCharactersCharacterIDMailLabelsLabelIDInternalServerError() *Delet
 	return &DeleteCharactersCharacterIDMailLabelsLabelIDInternalServerError{}
 }
 
-/* DeleteCharactersCharacterIDMailLabelsLabelIDInternalServerError describes a response with status code 500, with default header values.
+/*
+DeleteCharactersCharacterIDMailLabelsLabelIDInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -278,9 +464,39 @@ type DeleteCharactersCharacterIDMailLabelsLabelIDInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this delete characters character Id mail labels label Id internal server error response has a 2xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this delete characters character Id mail labels label Id internal server error response has a 3xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this delete characters character Id mail labels label Id internal server error response has a 4xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this delete characters character Id mail labels label Id internal server error response has a 5xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this delete characters character Id mail labels label Id internal server error response a status code equal to that given
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *DeleteCharactersCharacterIDMailLabelsLabelIDInternalServerError) Error() string {
 	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/mail/labels/{label_id}/][%d] deleteCharactersCharacterIdMailLabelsLabelIdInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDInternalServerError) String() string {
+	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/mail/labels/{label_id}/][%d] deleteCharactersCharacterIdMailLabelsLabelIdInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *DeleteCharactersCharacterIDMailLabelsLabelIDInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -302,7 +518,8 @@ func NewDeleteCharactersCharacterIDMailLabelsLabelIDServiceUnavailable() *Delete
 	return &DeleteCharactersCharacterIDMailLabelsLabelIDServiceUnavailable{}
 }
 
-/* DeleteCharactersCharacterIDMailLabelsLabelIDServiceUnavailable describes a response with status code 503, with default header values.
+/*
+DeleteCharactersCharacterIDMailLabelsLabelIDServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -310,9 +527,39 @@ type DeleteCharactersCharacterIDMailLabelsLabelIDServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this delete characters character Id mail labels label Id service unavailable response has a 2xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this delete characters character Id mail labels label Id service unavailable response has a 3xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this delete characters character Id mail labels label Id service unavailable response has a 4xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this delete characters character Id mail labels label Id service unavailable response has a 5xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this delete characters character Id mail labels label Id service unavailable response a status code equal to that given
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *DeleteCharactersCharacterIDMailLabelsLabelIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/mail/labels/{label_id}/][%d] deleteCharactersCharacterIdMailLabelsLabelIdServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDServiceUnavailable) String() string {
+	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/mail/labels/{label_id}/][%d] deleteCharactersCharacterIdMailLabelsLabelIdServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *DeleteCharactersCharacterIDMailLabelsLabelIDServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -334,7 +581,8 @@ func NewDeleteCharactersCharacterIDMailLabelsLabelIDGatewayTimeout() *DeleteChar
 	return &DeleteCharactersCharacterIDMailLabelsLabelIDGatewayTimeout{}
 }
 
-/* DeleteCharactersCharacterIDMailLabelsLabelIDGatewayTimeout describes a response with status code 504, with default header values.
+/*
+DeleteCharactersCharacterIDMailLabelsLabelIDGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -342,9 +590,39 @@ type DeleteCharactersCharacterIDMailLabelsLabelIDGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this delete characters character Id mail labels label Id gateway timeout response has a 2xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this delete characters character Id mail labels label Id gateway timeout response has a 3xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this delete characters character Id mail labels label Id gateway timeout response has a 4xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this delete characters character Id mail labels label Id gateway timeout response has a 5xx status code
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this delete characters character Id mail labels label Id gateway timeout response a status code equal to that given
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *DeleteCharactersCharacterIDMailLabelsLabelIDGatewayTimeout) Error() string {
 	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/mail/labels/{label_id}/][%d] deleteCharactersCharacterIdMailLabelsLabelIdGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDGatewayTimeout) String() string {
+	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/mail/labels/{label_id}/][%d] deleteCharactersCharacterIdMailLabelsLabelIdGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *DeleteCharactersCharacterIDMailLabelsLabelIDGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -361,7 +639,8 @@ func (o *DeleteCharactersCharacterIDMailLabelsLabelIDGatewayTimeout) readRespons
 	return nil
 }
 
-/*DeleteCharactersCharacterIDMailLabelsLabelIDUnprocessableEntityBody delete_characters_character_id_mail_labels_label_id_unprocessable_entity
+/*
+DeleteCharactersCharacterIDMailLabelsLabelIDUnprocessableEntityBody delete_characters_character_id_mail_labels_label_id_unprocessable_entity
 //
 // Unprocessable entity
 swagger:model DeleteCharactersCharacterIDMailLabelsLabelIDUnprocessableEntityBody

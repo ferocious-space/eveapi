@@ -97,7 +97,8 @@ func NewGetCharactersCharacterIDContractsContractIDBidsOK() *GetCharactersCharac
 	return &GetCharactersCharacterIDContractsContractIDBidsOK{}
 }
 
-/* GetCharactersCharacterIDContractsContractIDBidsOK describes a response with status code 200, with default header values.
+/*
+GetCharactersCharacterIDContractsContractIDBidsOK describes a response with status code 200, with default header values.
 
 A list of bids
 */
@@ -122,9 +123,39 @@ type GetCharactersCharacterIDContractsContractIDBidsOK struct {
 	Payload []*GetCharactersCharacterIDContractsContractIDBidsOKBodyItems0
 }
 
+// IsSuccess returns true when this get characters character Id contracts contract Id bids o k response has a 2xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get characters character Id contracts contract Id bids o k response has a 3xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id contracts contract Id bids o k response has a 4xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id contracts contract Id bids o k response has a 5xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id contracts contract Id bids o k response a status code equal to that given
+func (o *GetCharactersCharacterIDContractsContractIDBidsOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetCharactersCharacterIDContractsContractIDBidsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/contracts/{contract_id}/bids/][%d] getCharactersCharacterIdContractsContractIdBidsOK  %+v", 200, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDContractsContractIDBidsOK) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/contracts/{contract_id}/bids/][%d] getCharactersCharacterIdContractsContractIdBidsOK  %+v", 200, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDContractsContractIDBidsOK) GetPayload() []*GetCharactersCharacterIDContractsContractIDBidsOKBodyItems0 {
 	return o.Payload
 }
@@ -172,7 +203,8 @@ func NewGetCharactersCharacterIDContractsContractIDBidsNotModified() *GetCharact
 	return &GetCharactersCharacterIDContractsContractIDBidsNotModified{}
 }
 
-/* GetCharactersCharacterIDContractsContractIDBidsNotModified describes a response with status code 304, with default header values.
+/*
+GetCharactersCharacterIDContractsContractIDBidsNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -195,7 +227,36 @@ type GetCharactersCharacterIDContractsContractIDBidsNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get characters character Id contracts contract Id bids not modified response has a 2xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id contracts contract Id bids not modified response has a 3xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get characters character Id contracts contract Id bids not modified response has a 4xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id contracts contract Id bids not modified response has a 5xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id contracts contract Id bids not modified response a status code equal to that given
+func (o *GetCharactersCharacterIDContractsContractIDBidsNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetCharactersCharacterIDContractsContractIDBidsNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/contracts/{contract_id}/bids/][%d] getCharactersCharacterIdContractsContractIdBidsNotModified ", 304)
+}
+
+func (o *GetCharactersCharacterIDContractsContractIDBidsNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/contracts/{contract_id}/bids/][%d] getCharactersCharacterIdContractsContractIdBidsNotModified ", 304)
 }
 
@@ -237,7 +298,8 @@ func NewGetCharactersCharacterIDContractsContractIDBidsBadRequest() *GetCharacte
 	return &GetCharactersCharacterIDContractsContractIDBidsBadRequest{}
 }
 
-/* GetCharactersCharacterIDContractsContractIDBidsBadRequest describes a response with status code 400, with default header values.
+/*
+GetCharactersCharacterIDContractsContractIDBidsBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -245,9 +307,39 @@ type GetCharactersCharacterIDContractsContractIDBidsBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get characters character Id contracts contract Id bids bad request response has a 2xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id contracts contract Id bids bad request response has a 3xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id contracts contract Id bids bad request response has a 4xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id contracts contract Id bids bad request response has a 5xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id contracts contract Id bids bad request response a status code equal to that given
+func (o *GetCharactersCharacterIDContractsContractIDBidsBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetCharactersCharacterIDContractsContractIDBidsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/contracts/{contract_id}/bids/][%d] getCharactersCharacterIdContractsContractIdBidsBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDContractsContractIDBidsBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/contracts/{contract_id}/bids/][%d] getCharactersCharacterIdContractsContractIdBidsBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDContractsContractIDBidsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -269,7 +361,8 @@ func NewGetCharactersCharacterIDContractsContractIDBidsUnauthorized() *GetCharac
 	return &GetCharactersCharacterIDContractsContractIDBidsUnauthorized{}
 }
 
-/* GetCharactersCharacterIDContractsContractIDBidsUnauthorized describes a response with status code 401, with default header values.
+/*
+GetCharactersCharacterIDContractsContractIDBidsUnauthorized describes a response with status code 401, with default header values.
 
 Unauthorized
 */
@@ -277,9 +370,39 @@ type GetCharactersCharacterIDContractsContractIDBidsUnauthorized struct {
 	Payload *models.Unauthorized
 }
 
+// IsSuccess returns true when this get characters character Id contracts contract Id bids unauthorized response has a 2xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id contracts contract Id bids unauthorized response has a 3xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id contracts contract Id bids unauthorized response has a 4xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id contracts contract Id bids unauthorized response has a 5xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id contracts contract Id bids unauthorized response a status code equal to that given
+func (o *GetCharactersCharacterIDContractsContractIDBidsUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *GetCharactersCharacterIDContractsContractIDBidsUnauthorized) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/contracts/{contract_id}/bids/][%d] getCharactersCharacterIdContractsContractIdBidsUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDContractsContractIDBidsUnauthorized) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/contracts/{contract_id}/bids/][%d] getCharactersCharacterIdContractsContractIdBidsUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDContractsContractIDBidsUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
 }
@@ -301,7 +424,8 @@ func NewGetCharactersCharacterIDContractsContractIDBidsForbidden() *GetCharacter
 	return &GetCharactersCharacterIDContractsContractIDBidsForbidden{}
 }
 
-/* GetCharactersCharacterIDContractsContractIDBidsForbidden describes a response with status code 403, with default header values.
+/*
+GetCharactersCharacterIDContractsContractIDBidsForbidden describes a response with status code 403, with default header values.
 
 Forbidden
 */
@@ -309,9 +433,39 @@ type GetCharactersCharacterIDContractsContractIDBidsForbidden struct {
 	Payload *models.Forbidden
 }
 
+// IsSuccess returns true when this get characters character Id contracts contract Id bids forbidden response has a 2xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsForbidden) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id contracts contract Id bids forbidden response has a 3xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsForbidden) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id contracts contract Id bids forbidden response has a 4xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsForbidden) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id contracts contract Id bids forbidden response has a 5xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsForbidden) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id contracts contract Id bids forbidden response a status code equal to that given
+func (o *GetCharactersCharacterIDContractsContractIDBidsForbidden) IsCode(code int) bool {
+	return code == 403
+}
+
 func (o *GetCharactersCharacterIDContractsContractIDBidsForbidden) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/contracts/{contract_id}/bids/][%d] getCharactersCharacterIdContractsContractIdBidsForbidden  %+v", 403, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDContractsContractIDBidsForbidden) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/contracts/{contract_id}/bids/][%d] getCharactersCharacterIdContractsContractIdBidsForbidden  %+v", 403, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDContractsContractIDBidsForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
 }
@@ -333,7 +487,8 @@ func NewGetCharactersCharacterIDContractsContractIDBidsNotFound() *GetCharacters
 	return &GetCharactersCharacterIDContractsContractIDBidsNotFound{}
 }
 
-/* GetCharactersCharacterIDContractsContractIDBidsNotFound describes a response with status code 404, with default header values.
+/*
+GetCharactersCharacterIDContractsContractIDBidsNotFound describes a response with status code 404, with default header values.
 
 Not found
 */
@@ -341,9 +496,39 @@ type GetCharactersCharacterIDContractsContractIDBidsNotFound struct {
 	Payload *GetCharactersCharacterIDContractsContractIDBidsNotFoundBody
 }
 
+// IsSuccess returns true when this get characters character Id contracts contract Id bids not found response has a 2xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsNotFound) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id contracts contract Id bids not found response has a 3xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsNotFound) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id contracts contract Id bids not found response has a 4xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsNotFound) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id contracts contract Id bids not found response has a 5xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsNotFound) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id contracts contract Id bids not found response a status code equal to that given
+func (o *GetCharactersCharacterIDContractsContractIDBidsNotFound) IsCode(code int) bool {
+	return code == 404
+}
+
 func (o *GetCharactersCharacterIDContractsContractIDBidsNotFound) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/contracts/{contract_id}/bids/][%d] getCharactersCharacterIdContractsContractIdBidsNotFound  %+v", 404, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDContractsContractIDBidsNotFound) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/contracts/{contract_id}/bids/][%d] getCharactersCharacterIdContractsContractIdBidsNotFound  %+v", 404, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDContractsContractIDBidsNotFound) GetPayload() *GetCharactersCharacterIDContractsContractIDBidsNotFoundBody {
 	return o.Payload
 }
@@ -365,7 +550,8 @@ func NewGetCharactersCharacterIDContractsContractIDBidsEnhanceYourCalm() *GetCha
 	return &GetCharactersCharacterIDContractsContractIDBidsEnhanceYourCalm{}
 }
 
-/* GetCharactersCharacterIDContractsContractIDBidsEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetCharactersCharacterIDContractsContractIDBidsEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -373,9 +559,39 @@ type GetCharactersCharacterIDContractsContractIDBidsEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get characters character Id contracts contract Id bids enhance your calm response has a 2xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id contracts contract Id bids enhance your calm response has a 3xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id contracts contract Id bids enhance your calm response has a 4xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id contracts contract Id bids enhance your calm response has a 5xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id contracts contract Id bids enhance your calm response a status code equal to that given
+func (o *GetCharactersCharacterIDContractsContractIDBidsEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetCharactersCharacterIDContractsContractIDBidsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/contracts/{contract_id}/bids/][%d] getCharactersCharacterIdContractsContractIdBidsEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDContractsContractIDBidsEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/contracts/{contract_id}/bids/][%d] getCharactersCharacterIdContractsContractIdBidsEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDContractsContractIDBidsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -397,7 +613,8 @@ func NewGetCharactersCharacterIDContractsContractIDBidsInternalServerError() *Ge
 	return &GetCharactersCharacterIDContractsContractIDBidsInternalServerError{}
 }
 
-/* GetCharactersCharacterIDContractsContractIDBidsInternalServerError describes a response with status code 500, with default header values.
+/*
+GetCharactersCharacterIDContractsContractIDBidsInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -405,9 +622,39 @@ type GetCharactersCharacterIDContractsContractIDBidsInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get characters character Id contracts contract Id bids internal server error response has a 2xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id contracts contract Id bids internal server error response has a 3xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id contracts contract Id bids internal server error response has a 4xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id contracts contract Id bids internal server error response has a 5xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id contracts contract Id bids internal server error response a status code equal to that given
+func (o *GetCharactersCharacterIDContractsContractIDBidsInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetCharactersCharacterIDContractsContractIDBidsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/contracts/{contract_id}/bids/][%d] getCharactersCharacterIdContractsContractIdBidsInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDContractsContractIDBidsInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/contracts/{contract_id}/bids/][%d] getCharactersCharacterIdContractsContractIdBidsInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDContractsContractIDBidsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -429,7 +676,8 @@ func NewGetCharactersCharacterIDContractsContractIDBidsServiceUnavailable() *Get
 	return &GetCharactersCharacterIDContractsContractIDBidsServiceUnavailable{}
 }
 
-/* GetCharactersCharacterIDContractsContractIDBidsServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetCharactersCharacterIDContractsContractIDBidsServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -437,9 +685,39 @@ type GetCharactersCharacterIDContractsContractIDBidsServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get characters character Id contracts contract Id bids service unavailable response has a 2xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id contracts contract Id bids service unavailable response has a 3xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id contracts contract Id bids service unavailable response has a 4xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id contracts contract Id bids service unavailable response has a 5xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id contracts contract Id bids service unavailable response a status code equal to that given
+func (o *GetCharactersCharacterIDContractsContractIDBidsServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetCharactersCharacterIDContractsContractIDBidsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/contracts/{contract_id}/bids/][%d] getCharactersCharacterIdContractsContractIdBidsServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDContractsContractIDBidsServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/contracts/{contract_id}/bids/][%d] getCharactersCharacterIdContractsContractIdBidsServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDContractsContractIDBidsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -461,7 +739,8 @@ func NewGetCharactersCharacterIDContractsContractIDBidsGatewayTimeout() *GetChar
 	return &GetCharactersCharacterIDContractsContractIDBidsGatewayTimeout{}
 }
 
-/* GetCharactersCharacterIDContractsContractIDBidsGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetCharactersCharacterIDContractsContractIDBidsGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -469,9 +748,39 @@ type GetCharactersCharacterIDContractsContractIDBidsGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get characters character Id contracts contract Id bids gateway timeout response has a 2xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id contracts contract Id bids gateway timeout response has a 3xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id contracts contract Id bids gateway timeout response has a 4xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id contracts contract Id bids gateway timeout response has a 5xx status code
+func (o *GetCharactersCharacterIDContractsContractIDBidsGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id contracts contract Id bids gateway timeout response a status code equal to that given
+func (o *GetCharactersCharacterIDContractsContractIDBidsGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetCharactersCharacterIDContractsContractIDBidsGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/contracts/{contract_id}/bids/][%d] getCharactersCharacterIdContractsContractIdBidsGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDContractsContractIDBidsGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/contracts/{contract_id}/bids/][%d] getCharactersCharacterIdContractsContractIdBidsGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDContractsContractIDBidsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -488,7 +797,8 @@ func (o *GetCharactersCharacterIDContractsContractIDBidsGatewayTimeout) readResp
 	return nil
 }
 
-/*GetCharactersCharacterIDContractsContractIDBidsNotFoundBody get_characters_character_id_contracts_contract_id_bids_not_found
+/*
+GetCharactersCharacterIDContractsContractIDBidsNotFoundBody get_characters_character_id_contracts_contract_id_bids_not_found
 //
 // Not found
 swagger:model GetCharactersCharacterIDContractsContractIDBidsNotFoundBody
@@ -529,7 +839,8 @@ func (o *GetCharactersCharacterIDContractsContractIDBidsNotFoundBody) UnmarshalB
 	return nil
 }
 
-/*GetCharactersCharacterIDContractsContractIDBidsOKBodyItems0 get_characters_character_id_contracts_contract_id_bids_200_ok
+/*
+GetCharactersCharacterIDContractsContractIDBidsOKBodyItems0 get_characters_character_id_contracts_contract_id_bids_200_ok
 //
 // 200 ok object
 swagger:model GetCharactersCharacterIDContractsContractIDBidsOKBodyItems0

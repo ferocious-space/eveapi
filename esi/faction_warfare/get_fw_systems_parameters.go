@@ -52,10 +52,12 @@ func NewGetFwSystemsParamsWithHTTPClient(client *http.Client) *GetFwSystemsParam
 	}
 }
 
-/* GetFwSystemsParams contains all the parameters to send to the API endpoint
-   for the get fw systems operation.
+/*
+GetFwSystemsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get fw systems operation.
+
+	Typically these are written to a http.Request.
 */
 type GetFwSystemsParams struct {
 

@@ -53,10 +53,12 @@ func NewGetCorporationsCorporationIDAlliancehistoryParamsWithHTTPClient(client *
 	}
 }
 
-/* GetCorporationsCorporationIDAlliancehistoryParams contains all the parameters to send to the API endpoint
-   for the get corporations corporation id alliancehistory operation.
+/*
+GetCorporationsCorporationIDAlliancehistoryParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get corporations corporation id alliancehistory operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCorporationsCorporationIDAlliancehistoryParams struct {
 

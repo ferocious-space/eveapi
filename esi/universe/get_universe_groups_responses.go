@@ -85,7 +85,8 @@ func NewGetUniverseGroupsOK() *GetUniverseGroupsOK {
 	}
 }
 
-/* GetUniverseGroupsOK describes a response with status code 200, with default header values.
+/*
+GetUniverseGroupsOK describes a response with status code 200, with default header values.
 
 A list of item group ids
 */
@@ -117,9 +118,39 @@ type GetUniverseGroupsOK struct {
 	Payload []int32
 }
 
+// IsSuccess returns true when this get universe groups o k response has a 2xx status code
+func (o *GetUniverseGroupsOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get universe groups o k response has a 3xx status code
+func (o *GetUniverseGroupsOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe groups o k response has a 4xx status code
+func (o *GetUniverseGroupsOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe groups o k response has a 5xx status code
+func (o *GetUniverseGroupsOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe groups o k response a status code equal to that given
+func (o *GetUniverseGroupsOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetUniverseGroupsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/groups/][%d] getUniverseGroupsOK  %+v", 200, o.Payload)
 }
+
+func (o *GetUniverseGroupsOK) String() string {
+	return fmt.Sprintf("[GET /v1/universe/groups/][%d] getUniverseGroupsOK  %+v", 200, o.Payload)
+}
+
 func (o *GetUniverseGroupsOK) GetPayload() []int32 {
 	return o.Payload
 }
@@ -178,7 +209,8 @@ func NewGetUniverseGroupsNotModified() *GetUniverseGroupsNotModified {
 	return &GetUniverseGroupsNotModified{}
 }
 
-/* GetUniverseGroupsNotModified describes a response with status code 304, with default header values.
+/*
+GetUniverseGroupsNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -201,7 +233,36 @@ type GetUniverseGroupsNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get universe groups not modified response has a 2xx status code
+func (o *GetUniverseGroupsNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe groups not modified response has a 3xx status code
+func (o *GetUniverseGroupsNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get universe groups not modified response has a 4xx status code
+func (o *GetUniverseGroupsNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe groups not modified response has a 5xx status code
+func (o *GetUniverseGroupsNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe groups not modified response a status code equal to that given
+func (o *GetUniverseGroupsNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetUniverseGroupsNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/universe/groups/][%d] getUniverseGroupsNotModified ", 304)
+}
+
+func (o *GetUniverseGroupsNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/universe/groups/][%d] getUniverseGroupsNotModified ", 304)
 }
 
@@ -243,7 +304,8 @@ func NewGetUniverseGroupsBadRequest() *GetUniverseGroupsBadRequest {
 	return &GetUniverseGroupsBadRequest{}
 }
 
-/* GetUniverseGroupsBadRequest describes a response with status code 400, with default header values.
+/*
+GetUniverseGroupsBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -251,9 +313,39 @@ type GetUniverseGroupsBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get universe groups bad request response has a 2xx status code
+func (o *GetUniverseGroupsBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe groups bad request response has a 3xx status code
+func (o *GetUniverseGroupsBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe groups bad request response has a 4xx status code
+func (o *GetUniverseGroupsBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe groups bad request response has a 5xx status code
+func (o *GetUniverseGroupsBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe groups bad request response a status code equal to that given
+func (o *GetUniverseGroupsBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetUniverseGroupsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/groups/][%d] getUniverseGroupsBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetUniverseGroupsBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/universe/groups/][%d] getUniverseGroupsBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetUniverseGroupsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -275,7 +367,8 @@ func NewGetUniverseGroupsEnhanceYourCalm() *GetUniverseGroupsEnhanceYourCalm {
 	return &GetUniverseGroupsEnhanceYourCalm{}
 }
 
-/* GetUniverseGroupsEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetUniverseGroupsEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -283,9 +376,39 @@ type GetUniverseGroupsEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get universe groups enhance your calm response has a 2xx status code
+func (o *GetUniverseGroupsEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe groups enhance your calm response has a 3xx status code
+func (o *GetUniverseGroupsEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe groups enhance your calm response has a 4xx status code
+func (o *GetUniverseGroupsEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe groups enhance your calm response has a 5xx status code
+func (o *GetUniverseGroupsEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe groups enhance your calm response a status code equal to that given
+func (o *GetUniverseGroupsEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetUniverseGroupsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/groups/][%d] getUniverseGroupsEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetUniverseGroupsEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/universe/groups/][%d] getUniverseGroupsEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetUniverseGroupsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -307,7 +430,8 @@ func NewGetUniverseGroupsInternalServerError() *GetUniverseGroupsInternalServerE
 	return &GetUniverseGroupsInternalServerError{}
 }
 
-/* GetUniverseGroupsInternalServerError describes a response with status code 500, with default header values.
+/*
+GetUniverseGroupsInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -315,9 +439,39 @@ type GetUniverseGroupsInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get universe groups internal server error response has a 2xx status code
+func (o *GetUniverseGroupsInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe groups internal server error response has a 3xx status code
+func (o *GetUniverseGroupsInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe groups internal server error response has a 4xx status code
+func (o *GetUniverseGroupsInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe groups internal server error response has a 5xx status code
+func (o *GetUniverseGroupsInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe groups internal server error response a status code equal to that given
+func (o *GetUniverseGroupsInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetUniverseGroupsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/groups/][%d] getUniverseGroupsInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetUniverseGroupsInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/universe/groups/][%d] getUniverseGroupsInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetUniverseGroupsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -339,7 +493,8 @@ func NewGetUniverseGroupsServiceUnavailable() *GetUniverseGroupsServiceUnavailab
 	return &GetUniverseGroupsServiceUnavailable{}
 }
 
-/* GetUniverseGroupsServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetUniverseGroupsServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -347,9 +502,39 @@ type GetUniverseGroupsServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get universe groups service unavailable response has a 2xx status code
+func (o *GetUniverseGroupsServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe groups service unavailable response has a 3xx status code
+func (o *GetUniverseGroupsServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe groups service unavailable response has a 4xx status code
+func (o *GetUniverseGroupsServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe groups service unavailable response has a 5xx status code
+func (o *GetUniverseGroupsServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe groups service unavailable response a status code equal to that given
+func (o *GetUniverseGroupsServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetUniverseGroupsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/groups/][%d] getUniverseGroupsServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetUniverseGroupsServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/universe/groups/][%d] getUniverseGroupsServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetUniverseGroupsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -371,7 +556,8 @@ func NewGetUniverseGroupsGatewayTimeout() *GetUniverseGroupsGatewayTimeout {
 	return &GetUniverseGroupsGatewayTimeout{}
 }
 
-/* GetUniverseGroupsGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetUniverseGroupsGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -379,9 +565,39 @@ type GetUniverseGroupsGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get universe groups gateway timeout response has a 2xx status code
+func (o *GetUniverseGroupsGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe groups gateway timeout response has a 3xx status code
+func (o *GetUniverseGroupsGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe groups gateway timeout response has a 4xx status code
+func (o *GetUniverseGroupsGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe groups gateway timeout response has a 5xx status code
+func (o *GetUniverseGroupsGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe groups gateway timeout response a status code equal to that given
+func (o *GetUniverseGroupsGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetUniverseGroupsGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/groups/][%d] getUniverseGroupsGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetUniverseGroupsGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/universe/groups/][%d] getUniverseGroupsGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetUniverseGroupsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }

@@ -79,7 +79,8 @@ func NewGetUniverseBloodlinesOK() *GetUniverseBloodlinesOK {
 	return &GetUniverseBloodlinesOK{}
 }
 
-/* GetUniverseBloodlinesOK describes a response with status code 200, with default header values.
+/*
+GetUniverseBloodlinesOK describes a response with status code 200, with default header values.
 
 A list of bloodlines
 */
@@ -108,9 +109,39 @@ type GetUniverseBloodlinesOK struct {
 	Payload []*GetUniverseBloodlinesOKBodyItems0
 }
 
+// IsSuccess returns true when this get universe bloodlines o k response has a 2xx status code
+func (o *GetUniverseBloodlinesOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get universe bloodlines o k response has a 3xx status code
+func (o *GetUniverseBloodlinesOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe bloodlines o k response has a 4xx status code
+func (o *GetUniverseBloodlinesOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe bloodlines o k response has a 5xx status code
+func (o *GetUniverseBloodlinesOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe bloodlines o k response a status code equal to that given
+func (o *GetUniverseBloodlinesOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetUniverseBloodlinesOK) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/bloodlines/][%d] getUniverseBloodlinesOK  %+v", 200, o.Payload)
 }
+
+func (o *GetUniverseBloodlinesOK) String() string {
+	return fmt.Sprintf("[GET /v1/universe/bloodlines/][%d] getUniverseBloodlinesOK  %+v", 200, o.Payload)
+}
+
 func (o *GetUniverseBloodlinesOK) GetPayload() []*GetUniverseBloodlinesOKBodyItems0 {
 	return o.Payload
 }
@@ -165,7 +196,8 @@ func NewGetUniverseBloodlinesNotModified() *GetUniverseBloodlinesNotModified {
 	return &GetUniverseBloodlinesNotModified{}
 }
 
-/* GetUniverseBloodlinesNotModified describes a response with status code 304, with default header values.
+/*
+GetUniverseBloodlinesNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -188,7 +220,36 @@ type GetUniverseBloodlinesNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get universe bloodlines not modified response has a 2xx status code
+func (o *GetUniverseBloodlinesNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe bloodlines not modified response has a 3xx status code
+func (o *GetUniverseBloodlinesNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get universe bloodlines not modified response has a 4xx status code
+func (o *GetUniverseBloodlinesNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe bloodlines not modified response has a 5xx status code
+func (o *GetUniverseBloodlinesNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe bloodlines not modified response a status code equal to that given
+func (o *GetUniverseBloodlinesNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetUniverseBloodlinesNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/universe/bloodlines/][%d] getUniverseBloodlinesNotModified ", 304)
+}
+
+func (o *GetUniverseBloodlinesNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/universe/bloodlines/][%d] getUniverseBloodlinesNotModified ", 304)
 }
 
@@ -230,7 +291,8 @@ func NewGetUniverseBloodlinesBadRequest() *GetUniverseBloodlinesBadRequest {
 	return &GetUniverseBloodlinesBadRequest{}
 }
 
-/* GetUniverseBloodlinesBadRequest describes a response with status code 400, with default header values.
+/*
+GetUniverseBloodlinesBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -238,9 +300,39 @@ type GetUniverseBloodlinesBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get universe bloodlines bad request response has a 2xx status code
+func (o *GetUniverseBloodlinesBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe bloodlines bad request response has a 3xx status code
+func (o *GetUniverseBloodlinesBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe bloodlines bad request response has a 4xx status code
+func (o *GetUniverseBloodlinesBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe bloodlines bad request response has a 5xx status code
+func (o *GetUniverseBloodlinesBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe bloodlines bad request response a status code equal to that given
+func (o *GetUniverseBloodlinesBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetUniverseBloodlinesBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/bloodlines/][%d] getUniverseBloodlinesBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetUniverseBloodlinesBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/universe/bloodlines/][%d] getUniverseBloodlinesBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetUniverseBloodlinesBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -262,7 +354,8 @@ func NewGetUniverseBloodlinesEnhanceYourCalm() *GetUniverseBloodlinesEnhanceYour
 	return &GetUniverseBloodlinesEnhanceYourCalm{}
 }
 
-/* GetUniverseBloodlinesEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetUniverseBloodlinesEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -270,9 +363,39 @@ type GetUniverseBloodlinesEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get universe bloodlines enhance your calm response has a 2xx status code
+func (o *GetUniverseBloodlinesEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe bloodlines enhance your calm response has a 3xx status code
+func (o *GetUniverseBloodlinesEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe bloodlines enhance your calm response has a 4xx status code
+func (o *GetUniverseBloodlinesEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe bloodlines enhance your calm response has a 5xx status code
+func (o *GetUniverseBloodlinesEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe bloodlines enhance your calm response a status code equal to that given
+func (o *GetUniverseBloodlinesEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetUniverseBloodlinesEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/bloodlines/][%d] getUniverseBloodlinesEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetUniverseBloodlinesEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/universe/bloodlines/][%d] getUniverseBloodlinesEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetUniverseBloodlinesEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -294,7 +417,8 @@ func NewGetUniverseBloodlinesInternalServerError() *GetUniverseBloodlinesInterna
 	return &GetUniverseBloodlinesInternalServerError{}
 }
 
-/* GetUniverseBloodlinesInternalServerError describes a response with status code 500, with default header values.
+/*
+GetUniverseBloodlinesInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -302,9 +426,39 @@ type GetUniverseBloodlinesInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get universe bloodlines internal server error response has a 2xx status code
+func (o *GetUniverseBloodlinesInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe bloodlines internal server error response has a 3xx status code
+func (o *GetUniverseBloodlinesInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe bloodlines internal server error response has a 4xx status code
+func (o *GetUniverseBloodlinesInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe bloodlines internal server error response has a 5xx status code
+func (o *GetUniverseBloodlinesInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe bloodlines internal server error response a status code equal to that given
+func (o *GetUniverseBloodlinesInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetUniverseBloodlinesInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/bloodlines/][%d] getUniverseBloodlinesInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetUniverseBloodlinesInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/universe/bloodlines/][%d] getUniverseBloodlinesInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetUniverseBloodlinesInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -326,7 +480,8 @@ func NewGetUniverseBloodlinesServiceUnavailable() *GetUniverseBloodlinesServiceU
 	return &GetUniverseBloodlinesServiceUnavailable{}
 }
 
-/* GetUniverseBloodlinesServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetUniverseBloodlinesServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -334,9 +489,39 @@ type GetUniverseBloodlinesServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get universe bloodlines service unavailable response has a 2xx status code
+func (o *GetUniverseBloodlinesServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe bloodlines service unavailable response has a 3xx status code
+func (o *GetUniverseBloodlinesServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe bloodlines service unavailable response has a 4xx status code
+func (o *GetUniverseBloodlinesServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe bloodlines service unavailable response has a 5xx status code
+func (o *GetUniverseBloodlinesServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe bloodlines service unavailable response a status code equal to that given
+func (o *GetUniverseBloodlinesServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetUniverseBloodlinesServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/bloodlines/][%d] getUniverseBloodlinesServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetUniverseBloodlinesServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/universe/bloodlines/][%d] getUniverseBloodlinesServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetUniverseBloodlinesServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -358,7 +543,8 @@ func NewGetUniverseBloodlinesGatewayTimeout() *GetUniverseBloodlinesGatewayTimeo
 	return &GetUniverseBloodlinesGatewayTimeout{}
 }
 
-/* GetUniverseBloodlinesGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetUniverseBloodlinesGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -366,9 +552,39 @@ type GetUniverseBloodlinesGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get universe bloodlines gateway timeout response has a 2xx status code
+func (o *GetUniverseBloodlinesGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe bloodlines gateway timeout response has a 3xx status code
+func (o *GetUniverseBloodlinesGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe bloodlines gateway timeout response has a 4xx status code
+func (o *GetUniverseBloodlinesGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe bloodlines gateway timeout response has a 5xx status code
+func (o *GetUniverseBloodlinesGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe bloodlines gateway timeout response a status code equal to that given
+func (o *GetUniverseBloodlinesGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetUniverseBloodlinesGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/bloodlines/][%d] getUniverseBloodlinesGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetUniverseBloodlinesGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/universe/bloodlines/][%d] getUniverseBloodlinesGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetUniverseBloodlinesGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -385,7 +601,8 @@ func (o *GetUniverseBloodlinesGatewayTimeout) readResponse(response runtime.Clie
 	return nil
 }
 
-/*GetUniverseBloodlinesOKBodyItems0 get_universe_bloodlines_200_ok
+/*
+GetUniverseBloodlinesOKBodyItems0 get_universe_bloodlines_200_ok
 //
 // 200 ok object
 swagger:model GetUniverseBloodlinesOKBodyItems0

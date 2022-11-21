@@ -52,12 +52,11 @@ type ClientService interface {
 }
 
 /*
-  DeleteCharactersCharacterIDContacts deletes contacts
+	DeleteCharactersCharacterIDContacts deletes contacts
 
-  Bulk delete contacts
+	Bulk delete contacts
 
 ---
-
 */
 func (a *Client) DeleteCharactersCharacterIDContacts(params *DeleteCharactersCharacterIDContactsParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*DeleteCharactersCharacterIDContactsNoContent, error) {
 	// TODO: Validate the params before sending
@@ -96,9 +95,9 @@ func (a *Client) DeleteCharactersCharacterIDContacts(params *DeleteCharactersCha
 }
 
 /*
-  GetAlliancesAllianceIDContacts gets alliance contacts
+	GetAlliancesAllianceIDContacts gets alliance contacts
 
-  Return contacts of an alliance
+	Return contacts of an alliance
 
 ---
 
@@ -141,9 +140,9 @@ func (a *Client) GetAlliancesAllianceIDContacts(params *GetAlliancesAllianceIDCo
 }
 
 /*
-  GetAlliancesAllianceIDContactsLabels gets alliance contact labels
+	GetAlliancesAllianceIDContactsLabels gets alliance contact labels
 
-  Return custom labels for an alliance's contacts
+	Return custom labels for an alliance's contacts
 
 ---
 
@@ -186,9 +185,9 @@ func (a *Client) GetAlliancesAllianceIDContactsLabels(params *GetAlliancesAllian
 }
 
 /*
-  GetCharactersCharacterIDContacts gets contacts
+	GetCharactersCharacterIDContacts gets contacts
 
-  Return contacts of a character
+	Return contacts of a character
 
 ---
 
@@ -231,9 +230,9 @@ func (a *Client) GetCharactersCharacterIDContacts(params *GetCharactersCharacter
 }
 
 /*
-  GetCharactersCharacterIDContactsLabels gets contact labels
+	GetCharactersCharacterIDContactsLabels gets contact labels
 
-  Return custom labels for a character's contacts
+	Return custom labels for a character's contacts
 
 ---
 
@@ -276,9 +275,9 @@ func (a *Client) GetCharactersCharacterIDContactsLabels(params *GetCharactersCha
 }
 
 /*
-  GetCorporationsCorporationIDContacts gets corporation contacts
+	GetCorporationsCorporationIDContacts gets corporation contacts
 
-  Return contacts of a corporation
+	Return contacts of a corporation
 
 ---
 
@@ -321,9 +320,9 @@ func (a *Client) GetCorporationsCorporationIDContacts(params *GetCorporationsCor
 }
 
 /*
-  GetCorporationsCorporationIDContactsLabels gets corporation contact labels
+	GetCorporationsCorporationIDContactsLabels gets corporation contact labels
 
-  Return custom labels for a corporation's contacts
+	Return custom labels for a corporation's contacts
 
 ---
 
@@ -366,12 +365,11 @@ func (a *Client) GetCorporationsCorporationIDContactsLabels(params *GetCorporati
 }
 
 /*
-  PostCharactersCharacterIDContacts adds contacts
+	PostCharactersCharacterIDContacts adds contacts
 
-  Bulk add contacts with same settings
+	Bulk add contacts with same settings
 
 ---
-
 */
 func (a *Client) PostCharactersCharacterIDContacts(params *PostCharactersCharacterIDContactsParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*PostCharactersCharacterIDContactsCreated, error) {
 	// TODO: Validate the params before sending
@@ -410,12 +408,11 @@ func (a *Client) PostCharactersCharacterIDContacts(params *PostCharactersCharact
 }
 
 /*
-  PutCharactersCharacterIDContacts edits contacts
+	PutCharactersCharacterIDContacts edits contacts
 
-  Bulk edit contacts with same settings
+	Bulk edit contacts with same settings
 
 ---
-
 */
 func (a *Client) PutCharactersCharacterIDContacts(params *PutCharactersCharacterIDContactsParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*PutCharactersCharacterIDContactsNoContent, error) {
 	// TODO: Validate the params before sending

@@ -53,10 +53,12 @@ func NewGetCharactersCharacterIDImplantsParamsWithHTTPClient(client *http.Client
 	}
 }
 
-/* GetCharactersCharacterIDImplantsParams contains all the parameters to send to the API endpoint
-   for the get characters character id implants operation.
+/*
+GetCharactersCharacterIDImplantsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get characters character id implants operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCharactersCharacterIDImplantsParams struct {
 

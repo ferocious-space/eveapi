@@ -52,10 +52,12 @@ func NewGetFwWarsParamsWithHTTPClient(client *http.Client) *GetFwWarsParams {
 	}
 }
 
-/* GetFwWarsParams contains all the parameters to send to the API endpoint
-   for the get fw wars operation.
+/*
+GetFwWarsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get fw wars operation.
+
+	Typically these are written to a http.Request.
 */
 type GetFwWarsParams struct {
 

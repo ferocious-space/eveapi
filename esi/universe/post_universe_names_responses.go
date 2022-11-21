@@ -80,7 +80,8 @@ func NewPostUniverseNamesOK() *PostUniverseNamesOK {
 	return &PostUniverseNamesOK{}
 }
 
-/* PostUniverseNamesOK describes a response with status code 200, with default header values.
+/*
+PostUniverseNamesOK describes a response with status code 200, with default header values.
 
 List of id/name associations for a set of IDs. All IDs must resolve to a name, or nothing will be returned
 */
@@ -88,9 +89,39 @@ type PostUniverseNamesOK struct {
 	Payload []*PostUniverseNamesOKBodyItems0
 }
 
+// IsSuccess returns true when this post universe names o k response has a 2xx status code
+func (o *PostUniverseNamesOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this post universe names o k response has a 3xx status code
+func (o *PostUniverseNamesOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post universe names o k response has a 4xx status code
+func (o *PostUniverseNamesOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post universe names o k response has a 5xx status code
+func (o *PostUniverseNamesOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post universe names o k response a status code equal to that given
+func (o *PostUniverseNamesOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *PostUniverseNamesOK) Error() string {
 	return fmt.Sprintf("[POST /v3/universe/names/][%d] postUniverseNamesOK  %+v", 200, o.Payload)
 }
+
+func (o *PostUniverseNamesOK) String() string {
+	return fmt.Sprintf("[POST /v3/universe/names/][%d] postUniverseNamesOK  %+v", 200, o.Payload)
+}
+
 func (o *PostUniverseNamesOK) GetPayload() []*PostUniverseNamesOKBodyItems0 {
 	return o.Payload
 }
@@ -110,7 +141,8 @@ func NewPostUniverseNamesBadRequest() *PostUniverseNamesBadRequest {
 	return &PostUniverseNamesBadRequest{}
 }
 
-/* PostUniverseNamesBadRequest describes a response with status code 400, with default header values.
+/*
+PostUniverseNamesBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -118,9 +150,39 @@ type PostUniverseNamesBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this post universe names bad request response has a 2xx status code
+func (o *PostUniverseNamesBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post universe names bad request response has a 3xx status code
+func (o *PostUniverseNamesBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post universe names bad request response has a 4xx status code
+func (o *PostUniverseNamesBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post universe names bad request response has a 5xx status code
+func (o *PostUniverseNamesBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post universe names bad request response a status code equal to that given
+func (o *PostUniverseNamesBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *PostUniverseNamesBadRequest) Error() string {
 	return fmt.Sprintf("[POST /v3/universe/names/][%d] postUniverseNamesBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *PostUniverseNamesBadRequest) String() string {
+	return fmt.Sprintf("[POST /v3/universe/names/][%d] postUniverseNamesBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *PostUniverseNamesBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -142,7 +204,8 @@ func NewPostUniverseNamesNotFound() *PostUniverseNamesNotFound {
 	return &PostUniverseNamesNotFound{}
 }
 
-/* PostUniverseNamesNotFound describes a response with status code 404, with default header values.
+/*
+PostUniverseNamesNotFound describes a response with status code 404, with default header values.
 
 Ensure all IDs are valid before resolving
 */
@@ -150,9 +213,39 @@ type PostUniverseNamesNotFound struct {
 	Payload *PostUniverseNamesNotFoundBody
 }
 
+// IsSuccess returns true when this post universe names not found response has a 2xx status code
+func (o *PostUniverseNamesNotFound) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post universe names not found response has a 3xx status code
+func (o *PostUniverseNamesNotFound) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post universe names not found response has a 4xx status code
+func (o *PostUniverseNamesNotFound) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post universe names not found response has a 5xx status code
+func (o *PostUniverseNamesNotFound) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post universe names not found response a status code equal to that given
+func (o *PostUniverseNamesNotFound) IsCode(code int) bool {
+	return code == 404
+}
+
 func (o *PostUniverseNamesNotFound) Error() string {
 	return fmt.Sprintf("[POST /v3/universe/names/][%d] postUniverseNamesNotFound  %+v", 404, o.Payload)
 }
+
+func (o *PostUniverseNamesNotFound) String() string {
+	return fmt.Sprintf("[POST /v3/universe/names/][%d] postUniverseNamesNotFound  %+v", 404, o.Payload)
+}
+
 func (o *PostUniverseNamesNotFound) GetPayload() *PostUniverseNamesNotFoundBody {
 	return o.Payload
 }
@@ -174,7 +267,8 @@ func NewPostUniverseNamesEnhanceYourCalm() *PostUniverseNamesEnhanceYourCalm {
 	return &PostUniverseNamesEnhanceYourCalm{}
 }
 
-/* PostUniverseNamesEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+PostUniverseNamesEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -182,9 +276,39 @@ type PostUniverseNamesEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this post universe names enhance your calm response has a 2xx status code
+func (o *PostUniverseNamesEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post universe names enhance your calm response has a 3xx status code
+func (o *PostUniverseNamesEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post universe names enhance your calm response has a 4xx status code
+func (o *PostUniverseNamesEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post universe names enhance your calm response has a 5xx status code
+func (o *PostUniverseNamesEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post universe names enhance your calm response a status code equal to that given
+func (o *PostUniverseNamesEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *PostUniverseNamesEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[POST /v3/universe/names/][%d] postUniverseNamesEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *PostUniverseNamesEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[POST /v3/universe/names/][%d] postUniverseNamesEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *PostUniverseNamesEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -206,7 +330,8 @@ func NewPostUniverseNamesInternalServerError() *PostUniverseNamesInternalServerE
 	return &PostUniverseNamesInternalServerError{}
 }
 
-/* PostUniverseNamesInternalServerError describes a response with status code 500, with default header values.
+/*
+PostUniverseNamesInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -214,9 +339,39 @@ type PostUniverseNamesInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this post universe names internal server error response has a 2xx status code
+func (o *PostUniverseNamesInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post universe names internal server error response has a 3xx status code
+func (o *PostUniverseNamesInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post universe names internal server error response has a 4xx status code
+func (o *PostUniverseNamesInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post universe names internal server error response has a 5xx status code
+func (o *PostUniverseNamesInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post universe names internal server error response a status code equal to that given
+func (o *PostUniverseNamesInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *PostUniverseNamesInternalServerError) Error() string {
 	return fmt.Sprintf("[POST /v3/universe/names/][%d] postUniverseNamesInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *PostUniverseNamesInternalServerError) String() string {
+	return fmt.Sprintf("[POST /v3/universe/names/][%d] postUniverseNamesInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *PostUniverseNamesInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -238,7 +393,8 @@ func NewPostUniverseNamesServiceUnavailable() *PostUniverseNamesServiceUnavailab
 	return &PostUniverseNamesServiceUnavailable{}
 }
 
-/* PostUniverseNamesServiceUnavailable describes a response with status code 503, with default header values.
+/*
+PostUniverseNamesServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -246,9 +402,39 @@ type PostUniverseNamesServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this post universe names service unavailable response has a 2xx status code
+func (o *PostUniverseNamesServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post universe names service unavailable response has a 3xx status code
+func (o *PostUniverseNamesServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post universe names service unavailable response has a 4xx status code
+func (o *PostUniverseNamesServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post universe names service unavailable response has a 5xx status code
+func (o *PostUniverseNamesServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post universe names service unavailable response a status code equal to that given
+func (o *PostUniverseNamesServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *PostUniverseNamesServiceUnavailable) Error() string {
 	return fmt.Sprintf("[POST /v3/universe/names/][%d] postUniverseNamesServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *PostUniverseNamesServiceUnavailable) String() string {
+	return fmt.Sprintf("[POST /v3/universe/names/][%d] postUniverseNamesServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *PostUniverseNamesServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -270,7 +456,8 @@ func NewPostUniverseNamesGatewayTimeout() *PostUniverseNamesGatewayTimeout {
 	return &PostUniverseNamesGatewayTimeout{}
 }
 
-/* PostUniverseNamesGatewayTimeout describes a response with status code 504, with default header values.
+/*
+PostUniverseNamesGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -278,9 +465,39 @@ type PostUniverseNamesGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this post universe names gateway timeout response has a 2xx status code
+func (o *PostUniverseNamesGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post universe names gateway timeout response has a 3xx status code
+func (o *PostUniverseNamesGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post universe names gateway timeout response has a 4xx status code
+func (o *PostUniverseNamesGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post universe names gateway timeout response has a 5xx status code
+func (o *PostUniverseNamesGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post universe names gateway timeout response a status code equal to that given
+func (o *PostUniverseNamesGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *PostUniverseNamesGatewayTimeout) Error() string {
 	return fmt.Sprintf("[POST /v3/universe/names/][%d] postUniverseNamesGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *PostUniverseNamesGatewayTimeout) String() string {
+	return fmt.Sprintf("[POST /v3/universe/names/][%d] postUniverseNamesGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *PostUniverseNamesGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -297,7 +514,8 @@ func (o *PostUniverseNamesGatewayTimeout) readResponse(response runtime.ClientRe
 	return nil
 }
 
-/*PostUniverseNamesNotFoundBody post_universe_names_not_found
+/*
+PostUniverseNamesNotFoundBody post_universe_names_not_found
 //
 // Not found
 swagger:model PostUniverseNamesNotFoundBody
@@ -338,7 +556,8 @@ func (o *PostUniverseNamesNotFoundBody) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*PostUniverseNamesOKBodyItems0 post_universe_names_200_ok
+/*
+PostUniverseNamesOKBodyItems0 post_universe_names_200_ok
 //
 // 200 ok object
 swagger:model PostUniverseNamesOKBodyItems0

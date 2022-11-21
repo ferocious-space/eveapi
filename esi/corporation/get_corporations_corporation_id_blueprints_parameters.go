@@ -53,10 +53,12 @@ func NewGetCorporationsCorporationIDBlueprintsParamsWithHTTPClient(client *http.
 	}
 }
 
-/* GetCorporationsCorporationIDBlueprintsParams contains all the parameters to send to the API endpoint
-   for the get corporations corporation id blueprints operation.
+/*
+GetCorporationsCorporationIDBlueprintsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get corporations corporation id blueprints operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCorporationsCorporationIDBlueprintsParams struct {
 

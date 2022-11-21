@@ -40,9 +40,9 @@ type ClientService interface {
 }
 
 /*
-  GetCharactersCharacterIDKillmailsRecent gets a character s recent kills and losses
+	GetCharactersCharacterIDKillmailsRecent gets a character s recent kills and losses
 
-  Return a list of a character's kills and losses going back 90 days
+	Return a list of a character's kills and losses going back 90 days
 
 ---
 
@@ -85,13 +85,13 @@ func (a *Client) GetCharactersCharacterIDKillmailsRecent(params *GetCharactersCh
 }
 
 /*
-  GetCorporationsCorporationIDKillmailsRecent gets a corporation s recent kills and losses
+	GetCorporationsCorporationIDKillmailsRecent gets a corporation s recent kills and losses
 
-  Get a list of a corporation's kills and losses going back 90 days
+	Get a list of a corporation's kills and losses going back 90 days
 
 ---
 
-This route is cached for up to 300 seconds
+# This route is cached for up to 300 seconds
 
 ---
 Requires one of the following EVE corporation role(s): Director
@@ -133,9 +133,9 @@ func (a *Client) GetCorporationsCorporationIDKillmailsRecent(params *GetCorporat
 }
 
 /*
-  GetKillmailsKillmailIDKillmailHash gets a single killmail
+	GetKillmailsKillmailIDKillmailHash gets a single killmail
 
-  Return a single killmail from its ID and hash
+	Return a single killmail from its ID and hash
 
 ---
 

@@ -42,9 +42,9 @@ type ClientService interface {
 }
 
 /*
-  GetCharactersCharacterIDBookmarks lists bookmarks
+	GetCharactersCharacterIDBookmarks lists bookmarks
 
-  A list of your character's personal bookmarks
+	A list of your character's personal bookmarks
 
 ---
 
@@ -87,9 +87,9 @@ func (a *Client) GetCharactersCharacterIDBookmarks(params *GetCharactersCharacte
 }
 
 /*
-  GetCharactersCharacterIDBookmarksFolders lists bookmark folders
+	GetCharactersCharacterIDBookmarksFolders lists bookmark folders
 
-  A list of your character's personal bookmark folders
+	A list of your character's personal bookmark folders
 
 ---
 
@@ -132,9 +132,9 @@ func (a *Client) GetCharactersCharacterIDBookmarksFolders(params *GetCharactersC
 }
 
 /*
-  GetCorporationsCorporationIDBookmarks lists corporation bookmarks
+	GetCorporationsCorporationIDBookmarks lists corporation bookmarks
 
-  A list of your corporation's bookmarks
+	A list of your corporation's bookmarks
 
 ---
 
@@ -177,9 +177,9 @@ func (a *Client) GetCorporationsCorporationIDBookmarks(params *GetCorporationsCo
 }
 
 /*
-  GetCorporationsCorporationIDBookmarksFolders lists corporation bookmark folders
+	GetCorporationsCorporationIDBookmarksFolders lists corporation bookmark folders
 
-  A list of your corporation's bookmark folders
+	A list of your corporation's bookmark folders
 
 ---
 

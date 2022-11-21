@@ -53,10 +53,12 @@ func NewDeleteCharactersCharacterIDMailLabelsLabelIDParamsWithHTTPClient(client 
 	}
 }
 
-/* DeleteCharactersCharacterIDMailLabelsLabelIDParams contains all the parameters to send to the API endpoint
-   for the delete characters character id mail labels label id operation.
+/*
+DeleteCharactersCharacterIDMailLabelsLabelIDParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the delete characters character id mail labels label id operation.
+
+	Typically these are written to a http.Request.
 */
 type DeleteCharactersCharacterIDMailLabelsLabelIDParams struct {
 

@@ -94,7 +94,8 @@ func NewGetContractsPublicRegionIDOK() *GetContractsPublicRegionIDOK {
 	}
 }
 
-/* GetContractsPublicRegionIDOK describes a response with status code 200, with default header values.
+/*
+GetContractsPublicRegionIDOK describes a response with status code 200, with default header values.
 
 A list of contracts
 */
@@ -126,9 +127,39 @@ type GetContractsPublicRegionIDOK struct {
 	Payload []*GetContractsPublicRegionIDOKBodyItems0
 }
 
+// IsSuccess returns true when this get contracts public region Id o k response has a 2xx status code
+func (o *GetContractsPublicRegionIDOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get contracts public region Id o k response has a 3xx status code
+func (o *GetContractsPublicRegionIDOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get contracts public region Id o k response has a 4xx status code
+func (o *GetContractsPublicRegionIDOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get contracts public region Id o k response has a 5xx status code
+func (o *GetContractsPublicRegionIDOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get contracts public region Id o k response a status code equal to that given
+func (o *GetContractsPublicRegionIDOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetContractsPublicRegionIDOK) Error() string {
 	return fmt.Sprintf("[GET /v1/contracts/public/{region_id}/][%d] getContractsPublicRegionIdOK  %+v", 200, o.Payload)
 }
+
+func (o *GetContractsPublicRegionIDOK) String() string {
+	return fmt.Sprintf("[GET /v1/contracts/public/{region_id}/][%d] getContractsPublicRegionIdOK  %+v", 200, o.Payload)
+}
+
 func (o *GetContractsPublicRegionIDOK) GetPayload() []*GetContractsPublicRegionIDOKBodyItems0 {
 	return o.Payload
 }
@@ -187,7 +218,8 @@ func NewGetContractsPublicRegionIDNotModified() *GetContractsPublicRegionIDNotMo
 	return &GetContractsPublicRegionIDNotModified{}
 }
 
-/* GetContractsPublicRegionIDNotModified describes a response with status code 304, with default header values.
+/*
+GetContractsPublicRegionIDNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -210,7 +242,36 @@ type GetContractsPublicRegionIDNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get contracts public region Id not modified response has a 2xx status code
+func (o *GetContractsPublicRegionIDNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get contracts public region Id not modified response has a 3xx status code
+func (o *GetContractsPublicRegionIDNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get contracts public region Id not modified response has a 4xx status code
+func (o *GetContractsPublicRegionIDNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get contracts public region Id not modified response has a 5xx status code
+func (o *GetContractsPublicRegionIDNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get contracts public region Id not modified response a status code equal to that given
+func (o *GetContractsPublicRegionIDNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetContractsPublicRegionIDNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/contracts/public/{region_id}/][%d] getContractsPublicRegionIdNotModified ", 304)
+}
+
+func (o *GetContractsPublicRegionIDNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/contracts/public/{region_id}/][%d] getContractsPublicRegionIdNotModified ", 304)
 }
 
@@ -252,7 +313,8 @@ func NewGetContractsPublicRegionIDBadRequest() *GetContractsPublicRegionIDBadReq
 	return &GetContractsPublicRegionIDBadRequest{}
 }
 
-/* GetContractsPublicRegionIDBadRequest describes a response with status code 400, with default header values.
+/*
+GetContractsPublicRegionIDBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -260,9 +322,39 @@ type GetContractsPublicRegionIDBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get contracts public region Id bad request response has a 2xx status code
+func (o *GetContractsPublicRegionIDBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get contracts public region Id bad request response has a 3xx status code
+func (o *GetContractsPublicRegionIDBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get contracts public region Id bad request response has a 4xx status code
+func (o *GetContractsPublicRegionIDBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get contracts public region Id bad request response has a 5xx status code
+func (o *GetContractsPublicRegionIDBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get contracts public region Id bad request response a status code equal to that given
+func (o *GetContractsPublicRegionIDBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetContractsPublicRegionIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/contracts/public/{region_id}/][%d] getContractsPublicRegionIdBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetContractsPublicRegionIDBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/contracts/public/{region_id}/][%d] getContractsPublicRegionIdBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetContractsPublicRegionIDBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -284,7 +376,8 @@ func NewGetContractsPublicRegionIDNotFound() *GetContractsPublicRegionIDNotFound
 	return &GetContractsPublicRegionIDNotFound{}
 }
 
-/* GetContractsPublicRegionIDNotFound describes a response with status code 404, with default header values.
+/*
+GetContractsPublicRegionIDNotFound describes a response with status code 404, with default header values.
 
 Region not found
 */
@@ -292,9 +385,39 @@ type GetContractsPublicRegionIDNotFound struct {
 	Payload *GetContractsPublicRegionIDNotFoundBody
 }
 
+// IsSuccess returns true when this get contracts public region Id not found response has a 2xx status code
+func (o *GetContractsPublicRegionIDNotFound) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get contracts public region Id not found response has a 3xx status code
+func (o *GetContractsPublicRegionIDNotFound) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get contracts public region Id not found response has a 4xx status code
+func (o *GetContractsPublicRegionIDNotFound) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get contracts public region Id not found response has a 5xx status code
+func (o *GetContractsPublicRegionIDNotFound) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get contracts public region Id not found response a status code equal to that given
+func (o *GetContractsPublicRegionIDNotFound) IsCode(code int) bool {
+	return code == 404
+}
+
 func (o *GetContractsPublicRegionIDNotFound) Error() string {
 	return fmt.Sprintf("[GET /v1/contracts/public/{region_id}/][%d] getContractsPublicRegionIdNotFound  %+v", 404, o.Payload)
 }
+
+func (o *GetContractsPublicRegionIDNotFound) String() string {
+	return fmt.Sprintf("[GET /v1/contracts/public/{region_id}/][%d] getContractsPublicRegionIdNotFound  %+v", 404, o.Payload)
+}
+
 func (o *GetContractsPublicRegionIDNotFound) GetPayload() *GetContractsPublicRegionIDNotFoundBody {
 	return o.Payload
 }
@@ -316,7 +439,8 @@ func NewGetContractsPublicRegionIDEnhanceYourCalm() *GetContractsPublicRegionIDE
 	return &GetContractsPublicRegionIDEnhanceYourCalm{}
 }
 
-/* GetContractsPublicRegionIDEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetContractsPublicRegionIDEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -324,9 +448,39 @@ type GetContractsPublicRegionIDEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get contracts public region Id enhance your calm response has a 2xx status code
+func (o *GetContractsPublicRegionIDEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get contracts public region Id enhance your calm response has a 3xx status code
+func (o *GetContractsPublicRegionIDEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get contracts public region Id enhance your calm response has a 4xx status code
+func (o *GetContractsPublicRegionIDEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get contracts public region Id enhance your calm response has a 5xx status code
+func (o *GetContractsPublicRegionIDEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get contracts public region Id enhance your calm response a status code equal to that given
+func (o *GetContractsPublicRegionIDEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetContractsPublicRegionIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/contracts/public/{region_id}/][%d] getContractsPublicRegionIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetContractsPublicRegionIDEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/contracts/public/{region_id}/][%d] getContractsPublicRegionIdEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetContractsPublicRegionIDEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -348,7 +502,8 @@ func NewGetContractsPublicRegionIDInternalServerError() *GetContractsPublicRegio
 	return &GetContractsPublicRegionIDInternalServerError{}
 }
 
-/* GetContractsPublicRegionIDInternalServerError describes a response with status code 500, with default header values.
+/*
+GetContractsPublicRegionIDInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -356,9 +511,39 @@ type GetContractsPublicRegionIDInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get contracts public region Id internal server error response has a 2xx status code
+func (o *GetContractsPublicRegionIDInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get contracts public region Id internal server error response has a 3xx status code
+func (o *GetContractsPublicRegionIDInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get contracts public region Id internal server error response has a 4xx status code
+func (o *GetContractsPublicRegionIDInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get contracts public region Id internal server error response has a 5xx status code
+func (o *GetContractsPublicRegionIDInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get contracts public region Id internal server error response a status code equal to that given
+func (o *GetContractsPublicRegionIDInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetContractsPublicRegionIDInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/contracts/public/{region_id}/][%d] getContractsPublicRegionIdInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetContractsPublicRegionIDInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/contracts/public/{region_id}/][%d] getContractsPublicRegionIdInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetContractsPublicRegionIDInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -380,7 +565,8 @@ func NewGetContractsPublicRegionIDServiceUnavailable() *GetContractsPublicRegion
 	return &GetContractsPublicRegionIDServiceUnavailable{}
 }
 
-/* GetContractsPublicRegionIDServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetContractsPublicRegionIDServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -388,9 +574,39 @@ type GetContractsPublicRegionIDServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get contracts public region Id service unavailable response has a 2xx status code
+func (o *GetContractsPublicRegionIDServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get contracts public region Id service unavailable response has a 3xx status code
+func (o *GetContractsPublicRegionIDServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get contracts public region Id service unavailable response has a 4xx status code
+func (o *GetContractsPublicRegionIDServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get contracts public region Id service unavailable response has a 5xx status code
+func (o *GetContractsPublicRegionIDServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get contracts public region Id service unavailable response a status code equal to that given
+func (o *GetContractsPublicRegionIDServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetContractsPublicRegionIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/contracts/public/{region_id}/][%d] getContractsPublicRegionIdServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetContractsPublicRegionIDServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/contracts/public/{region_id}/][%d] getContractsPublicRegionIdServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetContractsPublicRegionIDServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -412,7 +628,8 @@ func NewGetContractsPublicRegionIDGatewayTimeout() *GetContractsPublicRegionIDGa
 	return &GetContractsPublicRegionIDGatewayTimeout{}
 }
 
-/* GetContractsPublicRegionIDGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetContractsPublicRegionIDGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -420,9 +637,39 @@ type GetContractsPublicRegionIDGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get contracts public region Id gateway timeout response has a 2xx status code
+func (o *GetContractsPublicRegionIDGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get contracts public region Id gateway timeout response has a 3xx status code
+func (o *GetContractsPublicRegionIDGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get contracts public region Id gateway timeout response has a 4xx status code
+func (o *GetContractsPublicRegionIDGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get contracts public region Id gateway timeout response has a 5xx status code
+func (o *GetContractsPublicRegionIDGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get contracts public region Id gateway timeout response a status code equal to that given
+func (o *GetContractsPublicRegionIDGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetContractsPublicRegionIDGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/contracts/public/{region_id}/][%d] getContractsPublicRegionIdGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetContractsPublicRegionIDGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/contracts/public/{region_id}/][%d] getContractsPublicRegionIdGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetContractsPublicRegionIDGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -439,7 +686,8 @@ func (o *GetContractsPublicRegionIDGatewayTimeout) readResponse(response runtime
 	return nil
 }
 
-/*GetContractsPublicRegionIDNotFoundBody get_contracts_public_region_id_not_found
+/*
+GetContractsPublicRegionIDNotFoundBody get_contracts_public_region_id_not_found
 //
 // Not found
 swagger:model GetContractsPublicRegionIDNotFoundBody
@@ -480,7 +728,8 @@ func (o *GetContractsPublicRegionIDNotFoundBody) UnmarshalBinary(b []byte) error
 	return nil
 }
 
-/*GetContractsPublicRegionIDOKBodyItems0 get_contracts_public_region_id_200_ok
+/*
+GetContractsPublicRegionIDOKBodyItems0 get_contracts_public_region_id_200_ok
 //
 // 200 ok object
 swagger:model GetContractsPublicRegionIDOKBodyItems0

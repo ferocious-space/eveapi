@@ -93,7 +93,8 @@ func NewGetWarsWarIDKillmailsOK() *GetWarsWarIDKillmailsOK {
 	}
 }
 
-/* GetWarsWarIDKillmailsOK describes a response with status code 200, with default header values.
+/*
+GetWarsWarIDKillmailsOK describes a response with status code 200, with default header values.
 
 A list of killmail IDs and hashes
 */
@@ -125,9 +126,39 @@ type GetWarsWarIDKillmailsOK struct {
 	Payload []*GetWarsWarIDKillmailsOKBodyItems0
 }
 
+// IsSuccess returns true when this get wars war Id killmails o k response has a 2xx status code
+func (o *GetWarsWarIDKillmailsOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get wars war Id killmails o k response has a 3xx status code
+func (o *GetWarsWarIDKillmailsOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get wars war Id killmails o k response has a 4xx status code
+func (o *GetWarsWarIDKillmailsOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get wars war Id killmails o k response has a 5xx status code
+func (o *GetWarsWarIDKillmailsOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get wars war Id killmails o k response a status code equal to that given
+func (o *GetWarsWarIDKillmailsOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetWarsWarIDKillmailsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/wars/{war_id}/killmails/][%d] getWarsWarIdKillmailsOK  %+v", 200, o.Payload)
 }
+
+func (o *GetWarsWarIDKillmailsOK) String() string {
+	return fmt.Sprintf("[GET /v1/wars/{war_id}/killmails/][%d] getWarsWarIdKillmailsOK  %+v", 200, o.Payload)
+}
+
 func (o *GetWarsWarIDKillmailsOK) GetPayload() []*GetWarsWarIDKillmailsOKBodyItems0 {
 	return o.Payload
 }
@@ -186,7 +217,8 @@ func NewGetWarsWarIDKillmailsNotModified() *GetWarsWarIDKillmailsNotModified {
 	return &GetWarsWarIDKillmailsNotModified{}
 }
 
-/* GetWarsWarIDKillmailsNotModified describes a response with status code 304, with default header values.
+/*
+GetWarsWarIDKillmailsNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -209,7 +241,36 @@ type GetWarsWarIDKillmailsNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get wars war Id killmails not modified response has a 2xx status code
+func (o *GetWarsWarIDKillmailsNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get wars war Id killmails not modified response has a 3xx status code
+func (o *GetWarsWarIDKillmailsNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get wars war Id killmails not modified response has a 4xx status code
+func (o *GetWarsWarIDKillmailsNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get wars war Id killmails not modified response has a 5xx status code
+func (o *GetWarsWarIDKillmailsNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get wars war Id killmails not modified response a status code equal to that given
+func (o *GetWarsWarIDKillmailsNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetWarsWarIDKillmailsNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/wars/{war_id}/killmails/][%d] getWarsWarIdKillmailsNotModified ", 304)
+}
+
+func (o *GetWarsWarIDKillmailsNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/wars/{war_id}/killmails/][%d] getWarsWarIdKillmailsNotModified ", 304)
 }
 
@@ -251,7 +312,8 @@ func NewGetWarsWarIDKillmailsBadRequest() *GetWarsWarIDKillmailsBadRequest {
 	return &GetWarsWarIDKillmailsBadRequest{}
 }
 
-/* GetWarsWarIDKillmailsBadRequest describes a response with status code 400, with default header values.
+/*
+GetWarsWarIDKillmailsBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -259,9 +321,39 @@ type GetWarsWarIDKillmailsBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get wars war Id killmails bad request response has a 2xx status code
+func (o *GetWarsWarIDKillmailsBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get wars war Id killmails bad request response has a 3xx status code
+func (o *GetWarsWarIDKillmailsBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get wars war Id killmails bad request response has a 4xx status code
+func (o *GetWarsWarIDKillmailsBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get wars war Id killmails bad request response has a 5xx status code
+func (o *GetWarsWarIDKillmailsBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get wars war Id killmails bad request response a status code equal to that given
+func (o *GetWarsWarIDKillmailsBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetWarsWarIDKillmailsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/wars/{war_id}/killmails/][%d] getWarsWarIdKillmailsBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetWarsWarIDKillmailsBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/wars/{war_id}/killmails/][%d] getWarsWarIdKillmailsBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetWarsWarIDKillmailsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -283,7 +375,8 @@ func NewGetWarsWarIDKillmailsEnhanceYourCalm() *GetWarsWarIDKillmailsEnhanceYour
 	return &GetWarsWarIDKillmailsEnhanceYourCalm{}
 }
 
-/* GetWarsWarIDKillmailsEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetWarsWarIDKillmailsEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -291,9 +384,39 @@ type GetWarsWarIDKillmailsEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get wars war Id killmails enhance your calm response has a 2xx status code
+func (o *GetWarsWarIDKillmailsEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get wars war Id killmails enhance your calm response has a 3xx status code
+func (o *GetWarsWarIDKillmailsEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get wars war Id killmails enhance your calm response has a 4xx status code
+func (o *GetWarsWarIDKillmailsEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get wars war Id killmails enhance your calm response has a 5xx status code
+func (o *GetWarsWarIDKillmailsEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get wars war Id killmails enhance your calm response a status code equal to that given
+func (o *GetWarsWarIDKillmailsEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetWarsWarIDKillmailsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/wars/{war_id}/killmails/][%d] getWarsWarIdKillmailsEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetWarsWarIDKillmailsEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/wars/{war_id}/killmails/][%d] getWarsWarIdKillmailsEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetWarsWarIDKillmailsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -315,7 +438,8 @@ func NewGetWarsWarIDKillmailsUnprocessableEntity() *GetWarsWarIDKillmailsUnproce
 	return &GetWarsWarIDKillmailsUnprocessableEntity{}
 }
 
-/* GetWarsWarIDKillmailsUnprocessableEntity describes a response with status code 422, with default header values.
+/*
+GetWarsWarIDKillmailsUnprocessableEntity describes a response with status code 422, with default header values.
 
 War not found
 */
@@ -323,9 +447,39 @@ type GetWarsWarIDKillmailsUnprocessableEntity struct {
 	Payload *GetWarsWarIDKillmailsUnprocessableEntityBody
 }
 
+// IsSuccess returns true when this get wars war Id killmails unprocessable entity response has a 2xx status code
+func (o *GetWarsWarIDKillmailsUnprocessableEntity) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get wars war Id killmails unprocessable entity response has a 3xx status code
+func (o *GetWarsWarIDKillmailsUnprocessableEntity) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get wars war Id killmails unprocessable entity response has a 4xx status code
+func (o *GetWarsWarIDKillmailsUnprocessableEntity) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get wars war Id killmails unprocessable entity response has a 5xx status code
+func (o *GetWarsWarIDKillmailsUnprocessableEntity) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get wars war Id killmails unprocessable entity response a status code equal to that given
+func (o *GetWarsWarIDKillmailsUnprocessableEntity) IsCode(code int) bool {
+	return code == 422
+}
+
 func (o *GetWarsWarIDKillmailsUnprocessableEntity) Error() string {
 	return fmt.Sprintf("[GET /v1/wars/{war_id}/killmails/][%d] getWarsWarIdKillmailsUnprocessableEntity  %+v", 422, o.Payload)
 }
+
+func (o *GetWarsWarIDKillmailsUnprocessableEntity) String() string {
+	return fmt.Sprintf("[GET /v1/wars/{war_id}/killmails/][%d] getWarsWarIdKillmailsUnprocessableEntity  %+v", 422, o.Payload)
+}
+
 func (o *GetWarsWarIDKillmailsUnprocessableEntity) GetPayload() *GetWarsWarIDKillmailsUnprocessableEntityBody {
 	return o.Payload
 }
@@ -347,7 +501,8 @@ func NewGetWarsWarIDKillmailsInternalServerError() *GetWarsWarIDKillmailsInterna
 	return &GetWarsWarIDKillmailsInternalServerError{}
 }
 
-/* GetWarsWarIDKillmailsInternalServerError describes a response with status code 500, with default header values.
+/*
+GetWarsWarIDKillmailsInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -355,9 +510,39 @@ type GetWarsWarIDKillmailsInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get wars war Id killmails internal server error response has a 2xx status code
+func (o *GetWarsWarIDKillmailsInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get wars war Id killmails internal server error response has a 3xx status code
+func (o *GetWarsWarIDKillmailsInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get wars war Id killmails internal server error response has a 4xx status code
+func (o *GetWarsWarIDKillmailsInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get wars war Id killmails internal server error response has a 5xx status code
+func (o *GetWarsWarIDKillmailsInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get wars war Id killmails internal server error response a status code equal to that given
+func (o *GetWarsWarIDKillmailsInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetWarsWarIDKillmailsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/wars/{war_id}/killmails/][%d] getWarsWarIdKillmailsInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetWarsWarIDKillmailsInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/wars/{war_id}/killmails/][%d] getWarsWarIdKillmailsInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetWarsWarIDKillmailsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -379,7 +564,8 @@ func NewGetWarsWarIDKillmailsServiceUnavailable() *GetWarsWarIDKillmailsServiceU
 	return &GetWarsWarIDKillmailsServiceUnavailable{}
 }
 
-/* GetWarsWarIDKillmailsServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetWarsWarIDKillmailsServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -387,9 +573,39 @@ type GetWarsWarIDKillmailsServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get wars war Id killmails service unavailable response has a 2xx status code
+func (o *GetWarsWarIDKillmailsServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get wars war Id killmails service unavailable response has a 3xx status code
+func (o *GetWarsWarIDKillmailsServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get wars war Id killmails service unavailable response has a 4xx status code
+func (o *GetWarsWarIDKillmailsServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get wars war Id killmails service unavailable response has a 5xx status code
+func (o *GetWarsWarIDKillmailsServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get wars war Id killmails service unavailable response a status code equal to that given
+func (o *GetWarsWarIDKillmailsServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetWarsWarIDKillmailsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/wars/{war_id}/killmails/][%d] getWarsWarIdKillmailsServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetWarsWarIDKillmailsServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/wars/{war_id}/killmails/][%d] getWarsWarIdKillmailsServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetWarsWarIDKillmailsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -411,7 +627,8 @@ func NewGetWarsWarIDKillmailsGatewayTimeout() *GetWarsWarIDKillmailsGatewayTimeo
 	return &GetWarsWarIDKillmailsGatewayTimeout{}
 }
 
-/* GetWarsWarIDKillmailsGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetWarsWarIDKillmailsGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -419,9 +636,39 @@ type GetWarsWarIDKillmailsGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get wars war Id killmails gateway timeout response has a 2xx status code
+func (o *GetWarsWarIDKillmailsGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get wars war Id killmails gateway timeout response has a 3xx status code
+func (o *GetWarsWarIDKillmailsGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get wars war Id killmails gateway timeout response has a 4xx status code
+func (o *GetWarsWarIDKillmailsGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get wars war Id killmails gateway timeout response has a 5xx status code
+func (o *GetWarsWarIDKillmailsGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get wars war Id killmails gateway timeout response a status code equal to that given
+func (o *GetWarsWarIDKillmailsGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetWarsWarIDKillmailsGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/wars/{war_id}/killmails/][%d] getWarsWarIdKillmailsGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetWarsWarIDKillmailsGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/wars/{war_id}/killmails/][%d] getWarsWarIdKillmailsGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetWarsWarIDKillmailsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -438,7 +685,8 @@ func (o *GetWarsWarIDKillmailsGatewayTimeout) readResponse(response runtime.Clie
 	return nil
 }
 
-/*GetWarsWarIDKillmailsOKBodyItems0 get_wars_war_id_killmails_200_ok
+/*
+GetWarsWarIDKillmailsOKBodyItems0 get_wars_war_id_killmails_200_ok
 //
 // 200 ok object
 swagger:model GetWarsWarIDKillmailsOKBodyItems0
@@ -517,7 +765,8 @@ func (o *GetWarsWarIDKillmailsOKBodyItems0) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*GetWarsWarIDKillmailsUnprocessableEntityBody get_wars_war_id_killmails_unprocessable_entity
+/*
+GetWarsWarIDKillmailsUnprocessableEntityBody get_wars_war_id_killmails_unprocessable_entity
 //
 // Unprocessable entity
 swagger:model GetWarsWarIDKillmailsUnprocessableEntityBody

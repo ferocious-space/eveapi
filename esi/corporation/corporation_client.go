@@ -78,9 +78,9 @@ type ClientService interface {
 }
 
 /*
-  GetCorporationsCorporationID gets corporation information
+	GetCorporationsCorporationID gets corporation information
 
-  Public information about a corporation
+	Public information about a corporation
 
 ---
 
@@ -122,9 +122,9 @@ func (a *Client) GetCorporationsCorporationID(params *GetCorporationsCorporation
 }
 
 /*
-  GetCorporationsCorporationIDAlliancehistory gets alliance history
+	GetCorporationsCorporationIDAlliancehistory gets alliance history
 
-  Get a list of all the alliances a corporation has been a member of
+	Get a list of all the alliances a corporation has been a member of
 
 ---
 
@@ -166,13 +166,13 @@ func (a *Client) GetCorporationsCorporationIDAlliancehistory(params *GetCorporat
 }
 
 /*
-  GetCorporationsCorporationIDBlueprints gets corporation blueprints
+	GetCorporationsCorporationIDBlueprints gets corporation blueprints
 
-  Returns a list of blueprints the corporation owns
+	Returns a list of blueprints the corporation owns
 
 ---
 
-This route is cached for up to 3600 seconds
+# This route is cached for up to 3600 seconds
 
 ---
 Requires one of the following EVE corporation role(s): Director
@@ -214,13 +214,13 @@ func (a *Client) GetCorporationsCorporationIDBlueprints(params *GetCorporationsC
 }
 
 /*
-  GetCorporationsCorporationIDContainersLogs gets all corporation a l s c logs
+	GetCorporationsCorporationIDContainersLogs gets all corporation a l s c logs
 
-  Returns logs recorded in the past seven days from all audit log secure containers (ALSC) owned by a given corporation
+	Returns logs recorded in the past seven days from all audit log secure containers (ALSC) owned by a given corporation
 
 ---
 
-This route is cached for up to 600 seconds
+# This route is cached for up to 600 seconds
 
 ---
 Requires one of the following EVE corporation role(s): Director
@@ -262,13 +262,13 @@ func (a *Client) GetCorporationsCorporationIDContainersLogs(params *GetCorporati
 }
 
 /*
-  GetCorporationsCorporationIDDivisions gets corporation divisions
+	GetCorporationsCorporationIDDivisions gets corporation divisions
 
-  Return corporation hangar and wallet division names, only show if a division is not using the default name
+	Return corporation hangar and wallet division names, only show if a division is not using the default name
 
 ---
 
-This route is cached for up to 3600 seconds
+# This route is cached for up to 3600 seconds
 
 ---
 Requires one of the following EVE corporation role(s): Director
@@ -310,13 +310,13 @@ func (a *Client) GetCorporationsCorporationIDDivisions(params *GetCorporationsCo
 }
 
 /*
-  GetCorporationsCorporationIDFacilities gets corporation facilities
+	GetCorporationsCorporationIDFacilities gets corporation facilities
 
-  Return a corporation's facilities
+	Return a corporation's facilities
 
 ---
 
-This route is cached for up to 3600 seconds
+# This route is cached for up to 3600 seconds
 
 ---
 Requires one of the following EVE corporation role(s): Factory_Manager
@@ -358,9 +358,9 @@ func (a *Client) GetCorporationsCorporationIDFacilities(params *GetCorporationsC
 }
 
 /*
-  GetCorporationsCorporationIDIcons gets corporation icon
+	GetCorporationsCorporationIDIcons gets corporation icon
 
-  Get the icon urls for a corporation
+	Get the icon urls for a corporation
 
 ---
 
@@ -402,9 +402,9 @@ func (a *Client) GetCorporationsCorporationIDIcons(params *GetCorporationsCorpor
 }
 
 /*
-  GetCorporationsCorporationIDMedals gets corporation medals
+	GetCorporationsCorporationIDMedals gets corporation medals
 
-  Returns a corporation's medals
+	Returns a corporation's medals
 
 ---
 
@@ -447,13 +447,13 @@ func (a *Client) GetCorporationsCorporationIDMedals(params *GetCorporationsCorpo
 }
 
 /*
-  GetCorporationsCorporationIDMedalsIssued gets corporation issued medals
+	GetCorporationsCorporationIDMedalsIssued gets corporation issued medals
 
-  Returns medals issued by a corporation
+	Returns medals issued by a corporation
 
 ---
 
-This route is cached for up to 3600 seconds
+# This route is cached for up to 3600 seconds
 
 ---
 Requires one of the following EVE corporation role(s): Director
@@ -495,9 +495,9 @@ func (a *Client) GetCorporationsCorporationIDMedalsIssued(params *GetCorporation
 }
 
 /*
-  GetCorporationsCorporationIDMembers gets corporation members
+	GetCorporationsCorporationIDMembers gets corporation members
 
-  Return the current member list of a corporation, the token's character need to be a member of the corporation.
+	Return the current member list of a corporation, the token's character need to be a member of the corporation.
 
 ---
 
@@ -540,13 +540,13 @@ func (a *Client) GetCorporationsCorporationIDMembers(params *GetCorporationsCorp
 }
 
 /*
-  GetCorporationsCorporationIDMembersLimit gets corporation member limit
+	GetCorporationsCorporationIDMembersLimit gets corporation member limit
 
-  Return a corporation's member limit, not including CEO himself
+	Return a corporation's member limit, not including CEO himself
 
 ---
 
-This route is cached for up to 3600 seconds
+# This route is cached for up to 3600 seconds
 
 ---
 Requires one of the following EVE corporation role(s): Director
@@ -588,13 +588,13 @@ func (a *Client) GetCorporationsCorporationIDMembersLimit(params *GetCorporation
 }
 
 /*
-  GetCorporationsCorporationIDMembersTitles gets corporation s members titles
+	GetCorporationsCorporationIDMembersTitles gets corporation s members titles
 
-  Returns a corporation's members' titles
+	Returns a corporation's members' titles
 
 ---
 
-This route is cached for up to 3600 seconds
+# This route is cached for up to 3600 seconds
 
 ---
 Requires one of the following EVE corporation role(s): Director
@@ -636,13 +636,13 @@ func (a *Client) GetCorporationsCorporationIDMembersTitles(params *GetCorporatio
 }
 
 /*
-  GetCorporationsCorporationIDMembertracking tracks corporation members
+	GetCorporationsCorporationIDMembertracking tracks corporation members
 
-  Returns additional information about a corporation's members which helps tracking their activities
+	Returns additional information about a corporation's members which helps tracking their activities
 
 ---
 
-This route is cached for up to 3600 seconds
+# This route is cached for up to 3600 seconds
 
 ---
 Requires one of the following EVE corporation role(s): Director
@@ -684,9 +684,9 @@ func (a *Client) GetCorporationsCorporationIDMembertracking(params *GetCorporati
 }
 
 /*
-  GetCorporationsCorporationIDRoles gets corporation member roles
+	GetCorporationsCorporationIDRoles gets corporation member roles
 
-  Return the roles of all members if the character has the personnel manager role or any grantable role.
+	Return the roles of all members if the character has the personnel manager role or any grantable role.
 
 ---
 
@@ -729,13 +729,13 @@ func (a *Client) GetCorporationsCorporationIDRoles(params *GetCorporationsCorpor
 }
 
 /*
-  GetCorporationsCorporationIDRolesHistory gets corporation member roles history
+	GetCorporationsCorporationIDRolesHistory gets corporation member roles history
 
-  Return how roles have changed for a coporation's members, up to a month
+	Return how roles have changed for a coporation's members, up to a month
 
 ---
 
-This route is cached for up to 3600 seconds
+# This route is cached for up to 3600 seconds
 
 ---
 Requires one of the following EVE corporation role(s): Director
@@ -777,13 +777,13 @@ func (a *Client) GetCorporationsCorporationIDRolesHistory(params *GetCorporation
 }
 
 /*
-  GetCorporationsCorporationIDShareholders gets corporation shareholders
+	GetCorporationsCorporationIDShareholders gets corporation shareholders
 
-  Return the current shareholders of a corporation.
+	Return the current shareholders of a corporation.
 
 ---
 
-This route is cached for up to 3600 seconds
+# This route is cached for up to 3600 seconds
 
 ---
 Requires one of the following EVE corporation role(s): Director
@@ -825,9 +825,9 @@ func (a *Client) GetCorporationsCorporationIDShareholders(params *GetCorporation
 }
 
 /*
-  GetCorporationsCorporationIDStandings gets corporation standings
+	GetCorporationsCorporationIDStandings gets corporation standings
 
-  Return corporation standings from agents, NPC corporations, and factions
+	Return corporation standings from agents, NPC corporations, and factions
 
 ---
 
@@ -870,13 +870,13 @@ func (a *Client) GetCorporationsCorporationIDStandings(params *GetCorporationsCo
 }
 
 /*
-  GetCorporationsCorporationIDStarbases gets corporation starbases p o ses
+	GetCorporationsCorporationIDStarbases gets corporation starbases p o ses
 
-  Returns list of corporation starbases (POSes)
+	Returns list of corporation starbases (POSes)
 
 ---
 
-This route is cached for up to 3600 seconds
+# This route is cached for up to 3600 seconds
 
 ---
 Requires one of the following EVE corporation role(s): Director
@@ -918,13 +918,13 @@ func (a *Client) GetCorporationsCorporationIDStarbases(params *GetCorporationsCo
 }
 
 /*
-  GetCorporationsCorporationIDStarbasesStarbaseID gets starbase p o s detail
+	GetCorporationsCorporationIDStarbasesStarbaseID gets starbase p o s detail
 
-  Returns various settings and fuels of a starbase (POS)
+	Returns various settings and fuels of a starbase (POS)
 
 ---
 
-This route is cached for up to 3600 seconds
+# This route is cached for up to 3600 seconds
 
 ---
 Requires one of the following EVE corporation role(s): Director
@@ -966,13 +966,13 @@ func (a *Client) GetCorporationsCorporationIDStarbasesStarbaseID(params *GetCorp
 }
 
 /*
-  GetCorporationsCorporationIDStructures gets corporation structures
+	GetCorporationsCorporationIDStructures gets corporation structures
 
-  Get a list of corporation structures. This route's version includes the changes to structures detailed in this blog: https://www.eveonline.com/article/upwell-2.0-structures-changes-coming-on-february-13th
+	Get a list of corporation structures. This route's version includes the changes to structures detailed in this blog: https://www.eveonline.com/article/upwell-2.0-structures-changes-coming-on-february-13th
 
 ---
 
-This route is cached for up to 3600 seconds
+# This route is cached for up to 3600 seconds
 
 ---
 Requires one of the following EVE corporation role(s): Station_Manager
@@ -1014,13 +1014,13 @@ func (a *Client) GetCorporationsCorporationIDStructures(params *GetCorporationsC
 }
 
 /*
-  GetCorporationsCorporationIDTitles gets corporation titles
+	GetCorporationsCorporationIDTitles gets corporation titles
 
-  Returns a corporation's titles
+	Returns a corporation's titles
 
 ---
 
-This route is cached for up to 3600 seconds
+# This route is cached for up to 3600 seconds
 
 ---
 Requires one of the following EVE corporation role(s): Director
@@ -1062,9 +1062,9 @@ func (a *Client) GetCorporationsCorporationIDTitles(params *GetCorporationsCorpo
 }
 
 /*
-  GetCorporationsNpccorps gets npc corporations
+	GetCorporationsNpccorps gets npc corporations
 
-  Get a list of npc corporations
+	Get a list of npc corporations
 
 ---
 

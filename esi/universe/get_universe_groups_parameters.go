@@ -53,10 +53,12 @@ func NewGetUniverseGroupsParamsWithHTTPClient(client *http.Client) *GetUniverseG
 	}
 }
 
-/* GetUniverseGroupsParams contains all the parameters to send to the API endpoint
-   for the get universe groups operation.
+/*
+GetUniverseGroupsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get universe groups operation.
+
+	Typically these are written to a http.Request.
 */
 type GetUniverseGroupsParams struct {
 

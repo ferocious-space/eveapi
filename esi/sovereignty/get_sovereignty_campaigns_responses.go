@@ -81,7 +81,8 @@ func NewGetSovereigntyCampaignsOK() *GetSovereigntyCampaignsOK {
 	return &GetSovereigntyCampaignsOK{}
 }
 
-/* GetSovereigntyCampaignsOK describes a response with status code 200, with default header values.
+/*
+GetSovereigntyCampaignsOK describes a response with status code 200, with default header values.
 
 A list of sovereignty campaigns
 */
@@ -106,9 +107,39 @@ type GetSovereigntyCampaignsOK struct {
 	Payload []*GetSovereigntyCampaignsOKBodyItems0
 }
 
+// IsSuccess returns true when this get sovereignty campaigns o k response has a 2xx status code
+func (o *GetSovereigntyCampaignsOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get sovereignty campaigns o k response has a 3xx status code
+func (o *GetSovereigntyCampaignsOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get sovereignty campaigns o k response has a 4xx status code
+func (o *GetSovereigntyCampaignsOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get sovereignty campaigns o k response has a 5xx status code
+func (o *GetSovereigntyCampaignsOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get sovereignty campaigns o k response a status code equal to that given
+func (o *GetSovereigntyCampaignsOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetSovereigntyCampaignsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/campaigns/][%d] getSovereigntyCampaignsOK  %+v", 200, o.Payload)
 }
+
+func (o *GetSovereigntyCampaignsOK) String() string {
+	return fmt.Sprintf("[GET /v1/sovereignty/campaigns/][%d] getSovereigntyCampaignsOK  %+v", 200, o.Payload)
+}
+
 func (o *GetSovereigntyCampaignsOK) GetPayload() []*GetSovereigntyCampaignsOKBodyItems0 {
 	return o.Payload
 }
@@ -156,7 +187,8 @@ func NewGetSovereigntyCampaignsNotModified() *GetSovereigntyCampaignsNotModified
 	return &GetSovereigntyCampaignsNotModified{}
 }
 
-/* GetSovereigntyCampaignsNotModified describes a response with status code 304, with default header values.
+/*
+GetSovereigntyCampaignsNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -179,7 +211,36 @@ type GetSovereigntyCampaignsNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get sovereignty campaigns not modified response has a 2xx status code
+func (o *GetSovereigntyCampaignsNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get sovereignty campaigns not modified response has a 3xx status code
+func (o *GetSovereigntyCampaignsNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get sovereignty campaigns not modified response has a 4xx status code
+func (o *GetSovereigntyCampaignsNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get sovereignty campaigns not modified response has a 5xx status code
+func (o *GetSovereigntyCampaignsNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get sovereignty campaigns not modified response a status code equal to that given
+func (o *GetSovereigntyCampaignsNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetSovereigntyCampaignsNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/sovereignty/campaigns/][%d] getSovereigntyCampaignsNotModified ", 304)
+}
+
+func (o *GetSovereigntyCampaignsNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/campaigns/][%d] getSovereigntyCampaignsNotModified ", 304)
 }
 
@@ -221,7 +282,8 @@ func NewGetSovereigntyCampaignsBadRequest() *GetSovereigntyCampaignsBadRequest {
 	return &GetSovereigntyCampaignsBadRequest{}
 }
 
-/* GetSovereigntyCampaignsBadRequest describes a response with status code 400, with default header values.
+/*
+GetSovereigntyCampaignsBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -229,9 +291,39 @@ type GetSovereigntyCampaignsBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get sovereignty campaigns bad request response has a 2xx status code
+func (o *GetSovereigntyCampaignsBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get sovereignty campaigns bad request response has a 3xx status code
+func (o *GetSovereigntyCampaignsBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get sovereignty campaigns bad request response has a 4xx status code
+func (o *GetSovereigntyCampaignsBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get sovereignty campaigns bad request response has a 5xx status code
+func (o *GetSovereigntyCampaignsBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get sovereignty campaigns bad request response a status code equal to that given
+func (o *GetSovereigntyCampaignsBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetSovereigntyCampaignsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/campaigns/][%d] getSovereigntyCampaignsBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetSovereigntyCampaignsBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/sovereignty/campaigns/][%d] getSovereigntyCampaignsBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetSovereigntyCampaignsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -253,7 +345,8 @@ func NewGetSovereigntyCampaignsEnhanceYourCalm() *GetSovereigntyCampaignsEnhance
 	return &GetSovereigntyCampaignsEnhanceYourCalm{}
 }
 
-/* GetSovereigntyCampaignsEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetSovereigntyCampaignsEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -261,9 +354,39 @@ type GetSovereigntyCampaignsEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get sovereignty campaigns enhance your calm response has a 2xx status code
+func (o *GetSovereigntyCampaignsEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get sovereignty campaigns enhance your calm response has a 3xx status code
+func (o *GetSovereigntyCampaignsEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get sovereignty campaigns enhance your calm response has a 4xx status code
+func (o *GetSovereigntyCampaignsEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get sovereignty campaigns enhance your calm response has a 5xx status code
+func (o *GetSovereigntyCampaignsEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get sovereignty campaigns enhance your calm response a status code equal to that given
+func (o *GetSovereigntyCampaignsEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetSovereigntyCampaignsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/campaigns/][%d] getSovereigntyCampaignsEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetSovereigntyCampaignsEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/sovereignty/campaigns/][%d] getSovereigntyCampaignsEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetSovereigntyCampaignsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -285,7 +408,8 @@ func NewGetSovereigntyCampaignsInternalServerError() *GetSovereigntyCampaignsInt
 	return &GetSovereigntyCampaignsInternalServerError{}
 }
 
-/* GetSovereigntyCampaignsInternalServerError describes a response with status code 500, with default header values.
+/*
+GetSovereigntyCampaignsInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -293,9 +417,39 @@ type GetSovereigntyCampaignsInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get sovereignty campaigns internal server error response has a 2xx status code
+func (o *GetSovereigntyCampaignsInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get sovereignty campaigns internal server error response has a 3xx status code
+func (o *GetSovereigntyCampaignsInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get sovereignty campaigns internal server error response has a 4xx status code
+func (o *GetSovereigntyCampaignsInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get sovereignty campaigns internal server error response has a 5xx status code
+func (o *GetSovereigntyCampaignsInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get sovereignty campaigns internal server error response a status code equal to that given
+func (o *GetSovereigntyCampaignsInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetSovereigntyCampaignsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/campaigns/][%d] getSovereigntyCampaignsInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetSovereigntyCampaignsInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/sovereignty/campaigns/][%d] getSovereigntyCampaignsInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetSovereigntyCampaignsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -317,7 +471,8 @@ func NewGetSovereigntyCampaignsServiceUnavailable() *GetSovereigntyCampaignsServ
 	return &GetSovereigntyCampaignsServiceUnavailable{}
 }
 
-/* GetSovereigntyCampaignsServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetSovereigntyCampaignsServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -325,9 +480,39 @@ type GetSovereigntyCampaignsServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get sovereignty campaigns service unavailable response has a 2xx status code
+func (o *GetSovereigntyCampaignsServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get sovereignty campaigns service unavailable response has a 3xx status code
+func (o *GetSovereigntyCampaignsServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get sovereignty campaigns service unavailable response has a 4xx status code
+func (o *GetSovereigntyCampaignsServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get sovereignty campaigns service unavailable response has a 5xx status code
+func (o *GetSovereigntyCampaignsServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get sovereignty campaigns service unavailable response a status code equal to that given
+func (o *GetSovereigntyCampaignsServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetSovereigntyCampaignsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/campaigns/][%d] getSovereigntyCampaignsServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetSovereigntyCampaignsServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/sovereignty/campaigns/][%d] getSovereigntyCampaignsServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetSovereigntyCampaignsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -349,7 +534,8 @@ func NewGetSovereigntyCampaignsGatewayTimeout() *GetSovereigntyCampaignsGatewayT
 	return &GetSovereigntyCampaignsGatewayTimeout{}
 }
 
-/* GetSovereigntyCampaignsGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetSovereigntyCampaignsGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -357,9 +543,39 @@ type GetSovereigntyCampaignsGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get sovereignty campaigns gateway timeout response has a 2xx status code
+func (o *GetSovereigntyCampaignsGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get sovereignty campaigns gateway timeout response has a 3xx status code
+func (o *GetSovereigntyCampaignsGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get sovereignty campaigns gateway timeout response has a 4xx status code
+func (o *GetSovereigntyCampaignsGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get sovereignty campaigns gateway timeout response has a 5xx status code
+func (o *GetSovereigntyCampaignsGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get sovereignty campaigns gateway timeout response a status code equal to that given
+func (o *GetSovereigntyCampaignsGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetSovereigntyCampaignsGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/campaigns/][%d] getSovereigntyCampaignsGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetSovereigntyCampaignsGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/sovereignty/campaigns/][%d] getSovereigntyCampaignsGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetSovereigntyCampaignsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -376,7 +592,8 @@ func (o *GetSovereigntyCampaignsGatewayTimeout) readResponse(response runtime.Cl
 	return nil
 }
 
-/*GetSovereigntyCampaignsOKBodyItems0 get_sovereignty_campaigns_200_ok
+/*
+GetSovereigntyCampaignsOKBodyItems0 get_sovereignty_campaigns_200_ok
 //
 // 200 ok object
 swagger:model GetSovereigntyCampaignsOKBodyItems0
@@ -672,7 +889,8 @@ func (o *GetSovereigntyCampaignsOKBodyItems0) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*GetSovereigntyCampaignsOKBodyItems0ParticipantsItems0 get_sovereignty_campaigns_participant
+/*
+GetSovereigntyCampaignsOKBodyItems0ParticipantsItems0 get_sovereignty_campaigns_participant
 //
 // participant object
 swagger:model GetSovereigntyCampaignsOKBodyItems0ParticipantsItems0

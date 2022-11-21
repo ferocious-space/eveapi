@@ -52,10 +52,12 @@ func NewGetUniverseStructuresParamsWithHTTPClient(client *http.Client) *GetUnive
 	}
 }
 
-/* GetUniverseStructuresParams contains all the parameters to send to the API endpoint
-   for the get universe structures operation.
+/*
+GetUniverseStructuresParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get universe structures operation.
+
+	Typically these are written to a http.Request.
 */
 type GetUniverseStructuresParams struct {
 

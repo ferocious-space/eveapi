@@ -85,7 +85,8 @@ func NewPostCharactersCharacterIDAssetsLocationsOK() *PostCharactersCharacterIDA
 	return &PostCharactersCharacterIDAssetsLocationsOK{}
 }
 
-/* PostCharactersCharacterIDAssetsLocationsOK describes a response with status code 200, with default header values.
+/*
+PostCharactersCharacterIDAssetsLocationsOK describes a response with status code 200, with default header values.
 
 List of asset locations
 */
@@ -93,9 +94,39 @@ type PostCharactersCharacterIDAssetsLocationsOK struct {
 	Payload []*PostCharactersCharacterIDAssetsLocationsOKBodyItems0
 }
 
+// IsSuccess returns true when this post characters character Id assets locations o k response has a 2xx status code
+func (o *PostCharactersCharacterIDAssetsLocationsOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this post characters character Id assets locations o k response has a 3xx status code
+func (o *PostCharactersCharacterIDAssetsLocationsOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id assets locations o k response has a 4xx status code
+func (o *PostCharactersCharacterIDAssetsLocationsOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post characters character Id assets locations o k response has a 5xx status code
+func (o *PostCharactersCharacterIDAssetsLocationsOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post characters character Id assets locations o k response a status code equal to that given
+func (o *PostCharactersCharacterIDAssetsLocationsOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *PostCharactersCharacterIDAssetsLocationsOK) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/assets/locations/][%d] postCharactersCharacterIdAssetsLocationsOK  %+v", 200, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDAssetsLocationsOK) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/assets/locations/][%d] postCharactersCharacterIdAssetsLocationsOK  %+v", 200, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDAssetsLocationsOK) GetPayload() []*PostCharactersCharacterIDAssetsLocationsOKBodyItems0 {
 	return o.Payload
 }
@@ -115,7 +146,8 @@ func NewPostCharactersCharacterIDAssetsLocationsBadRequest() *PostCharactersChar
 	return &PostCharactersCharacterIDAssetsLocationsBadRequest{}
 }
 
-/* PostCharactersCharacterIDAssetsLocationsBadRequest describes a response with status code 400, with default header values.
+/*
+PostCharactersCharacterIDAssetsLocationsBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -123,9 +155,39 @@ type PostCharactersCharacterIDAssetsLocationsBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this post characters character Id assets locations bad request response has a 2xx status code
+func (o *PostCharactersCharacterIDAssetsLocationsBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id assets locations bad request response has a 3xx status code
+func (o *PostCharactersCharacterIDAssetsLocationsBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id assets locations bad request response has a 4xx status code
+func (o *PostCharactersCharacterIDAssetsLocationsBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post characters character Id assets locations bad request response has a 5xx status code
+func (o *PostCharactersCharacterIDAssetsLocationsBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post characters character Id assets locations bad request response a status code equal to that given
+func (o *PostCharactersCharacterIDAssetsLocationsBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *PostCharactersCharacterIDAssetsLocationsBadRequest) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/assets/locations/][%d] postCharactersCharacterIdAssetsLocationsBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDAssetsLocationsBadRequest) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/assets/locations/][%d] postCharactersCharacterIdAssetsLocationsBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDAssetsLocationsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -147,7 +209,8 @@ func NewPostCharactersCharacterIDAssetsLocationsUnauthorized() *PostCharactersCh
 	return &PostCharactersCharacterIDAssetsLocationsUnauthorized{}
 }
 
-/* PostCharactersCharacterIDAssetsLocationsUnauthorized describes a response with status code 401, with default header values.
+/*
+PostCharactersCharacterIDAssetsLocationsUnauthorized describes a response with status code 401, with default header values.
 
 Unauthorized
 */
@@ -155,9 +218,39 @@ type PostCharactersCharacterIDAssetsLocationsUnauthorized struct {
 	Payload *models.Unauthorized
 }
 
+// IsSuccess returns true when this post characters character Id assets locations unauthorized response has a 2xx status code
+func (o *PostCharactersCharacterIDAssetsLocationsUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id assets locations unauthorized response has a 3xx status code
+func (o *PostCharactersCharacterIDAssetsLocationsUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id assets locations unauthorized response has a 4xx status code
+func (o *PostCharactersCharacterIDAssetsLocationsUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post characters character Id assets locations unauthorized response has a 5xx status code
+func (o *PostCharactersCharacterIDAssetsLocationsUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post characters character Id assets locations unauthorized response a status code equal to that given
+func (o *PostCharactersCharacterIDAssetsLocationsUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *PostCharactersCharacterIDAssetsLocationsUnauthorized) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/assets/locations/][%d] postCharactersCharacterIdAssetsLocationsUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDAssetsLocationsUnauthorized) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/assets/locations/][%d] postCharactersCharacterIdAssetsLocationsUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDAssetsLocationsUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
 }
@@ -179,7 +272,8 @@ func NewPostCharactersCharacterIDAssetsLocationsForbidden() *PostCharactersChara
 	return &PostCharactersCharacterIDAssetsLocationsForbidden{}
 }
 
-/* PostCharactersCharacterIDAssetsLocationsForbidden describes a response with status code 403, with default header values.
+/*
+PostCharactersCharacterIDAssetsLocationsForbidden describes a response with status code 403, with default header values.
 
 Forbidden
 */
@@ -187,9 +281,39 @@ type PostCharactersCharacterIDAssetsLocationsForbidden struct {
 	Payload *models.Forbidden
 }
 
+// IsSuccess returns true when this post characters character Id assets locations forbidden response has a 2xx status code
+func (o *PostCharactersCharacterIDAssetsLocationsForbidden) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id assets locations forbidden response has a 3xx status code
+func (o *PostCharactersCharacterIDAssetsLocationsForbidden) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id assets locations forbidden response has a 4xx status code
+func (o *PostCharactersCharacterIDAssetsLocationsForbidden) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post characters character Id assets locations forbidden response has a 5xx status code
+func (o *PostCharactersCharacterIDAssetsLocationsForbidden) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post characters character Id assets locations forbidden response a status code equal to that given
+func (o *PostCharactersCharacterIDAssetsLocationsForbidden) IsCode(code int) bool {
+	return code == 403
+}
+
 func (o *PostCharactersCharacterIDAssetsLocationsForbidden) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/assets/locations/][%d] postCharactersCharacterIdAssetsLocationsForbidden  %+v", 403, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDAssetsLocationsForbidden) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/assets/locations/][%d] postCharactersCharacterIdAssetsLocationsForbidden  %+v", 403, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDAssetsLocationsForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
 }
@@ -211,7 +335,8 @@ func NewPostCharactersCharacterIDAssetsLocationsEnhanceYourCalm() *PostCharacter
 	return &PostCharactersCharacterIDAssetsLocationsEnhanceYourCalm{}
 }
 
-/* PostCharactersCharacterIDAssetsLocationsEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+PostCharactersCharacterIDAssetsLocationsEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -219,9 +344,39 @@ type PostCharactersCharacterIDAssetsLocationsEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this post characters character Id assets locations enhance your calm response has a 2xx status code
+func (o *PostCharactersCharacterIDAssetsLocationsEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id assets locations enhance your calm response has a 3xx status code
+func (o *PostCharactersCharacterIDAssetsLocationsEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id assets locations enhance your calm response has a 4xx status code
+func (o *PostCharactersCharacterIDAssetsLocationsEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post characters character Id assets locations enhance your calm response has a 5xx status code
+func (o *PostCharactersCharacterIDAssetsLocationsEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post characters character Id assets locations enhance your calm response a status code equal to that given
+func (o *PostCharactersCharacterIDAssetsLocationsEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *PostCharactersCharacterIDAssetsLocationsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/assets/locations/][%d] postCharactersCharacterIdAssetsLocationsEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDAssetsLocationsEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/assets/locations/][%d] postCharactersCharacterIdAssetsLocationsEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDAssetsLocationsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -243,7 +398,8 @@ func NewPostCharactersCharacterIDAssetsLocationsInternalServerError() *PostChara
 	return &PostCharactersCharacterIDAssetsLocationsInternalServerError{}
 }
 
-/* PostCharactersCharacterIDAssetsLocationsInternalServerError describes a response with status code 500, with default header values.
+/*
+PostCharactersCharacterIDAssetsLocationsInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -251,9 +407,39 @@ type PostCharactersCharacterIDAssetsLocationsInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this post characters character Id assets locations internal server error response has a 2xx status code
+func (o *PostCharactersCharacterIDAssetsLocationsInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id assets locations internal server error response has a 3xx status code
+func (o *PostCharactersCharacterIDAssetsLocationsInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id assets locations internal server error response has a 4xx status code
+func (o *PostCharactersCharacterIDAssetsLocationsInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post characters character Id assets locations internal server error response has a 5xx status code
+func (o *PostCharactersCharacterIDAssetsLocationsInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post characters character Id assets locations internal server error response a status code equal to that given
+func (o *PostCharactersCharacterIDAssetsLocationsInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *PostCharactersCharacterIDAssetsLocationsInternalServerError) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/assets/locations/][%d] postCharactersCharacterIdAssetsLocationsInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDAssetsLocationsInternalServerError) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/assets/locations/][%d] postCharactersCharacterIdAssetsLocationsInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDAssetsLocationsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -275,7 +461,8 @@ func NewPostCharactersCharacterIDAssetsLocationsServiceUnavailable() *PostCharac
 	return &PostCharactersCharacterIDAssetsLocationsServiceUnavailable{}
 }
 
-/* PostCharactersCharacterIDAssetsLocationsServiceUnavailable describes a response with status code 503, with default header values.
+/*
+PostCharactersCharacterIDAssetsLocationsServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -283,9 +470,39 @@ type PostCharactersCharacterIDAssetsLocationsServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this post characters character Id assets locations service unavailable response has a 2xx status code
+func (o *PostCharactersCharacterIDAssetsLocationsServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id assets locations service unavailable response has a 3xx status code
+func (o *PostCharactersCharacterIDAssetsLocationsServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id assets locations service unavailable response has a 4xx status code
+func (o *PostCharactersCharacterIDAssetsLocationsServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post characters character Id assets locations service unavailable response has a 5xx status code
+func (o *PostCharactersCharacterIDAssetsLocationsServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post characters character Id assets locations service unavailable response a status code equal to that given
+func (o *PostCharactersCharacterIDAssetsLocationsServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *PostCharactersCharacterIDAssetsLocationsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/assets/locations/][%d] postCharactersCharacterIdAssetsLocationsServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDAssetsLocationsServiceUnavailable) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/assets/locations/][%d] postCharactersCharacterIdAssetsLocationsServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDAssetsLocationsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -307,7 +524,8 @@ func NewPostCharactersCharacterIDAssetsLocationsGatewayTimeout() *PostCharacters
 	return &PostCharactersCharacterIDAssetsLocationsGatewayTimeout{}
 }
 
-/* PostCharactersCharacterIDAssetsLocationsGatewayTimeout describes a response with status code 504, with default header values.
+/*
+PostCharactersCharacterIDAssetsLocationsGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -315,9 +533,39 @@ type PostCharactersCharacterIDAssetsLocationsGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this post characters character Id assets locations gateway timeout response has a 2xx status code
+func (o *PostCharactersCharacterIDAssetsLocationsGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id assets locations gateway timeout response has a 3xx status code
+func (o *PostCharactersCharacterIDAssetsLocationsGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id assets locations gateway timeout response has a 4xx status code
+func (o *PostCharactersCharacterIDAssetsLocationsGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post characters character Id assets locations gateway timeout response has a 5xx status code
+func (o *PostCharactersCharacterIDAssetsLocationsGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post characters character Id assets locations gateway timeout response a status code equal to that given
+func (o *PostCharactersCharacterIDAssetsLocationsGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *PostCharactersCharacterIDAssetsLocationsGatewayTimeout) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/assets/locations/][%d] postCharactersCharacterIdAssetsLocationsGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDAssetsLocationsGatewayTimeout) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/assets/locations/][%d] postCharactersCharacterIdAssetsLocationsGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDAssetsLocationsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -334,7 +582,8 @@ func (o *PostCharactersCharacterIDAssetsLocationsGatewayTimeout) readResponse(re
 	return nil
 }
 
-/*PostCharactersCharacterIDAssetsLocationsOKBodyItems0 post_characters_character_id_assets_locations_200_ok
+/*
+PostCharactersCharacterIDAssetsLocationsOKBodyItems0 post_characters_character_id_assets_locations_200_ok
 //
 // 200 ok object
 swagger:model PostCharactersCharacterIDAssetsLocationsOKBodyItems0
@@ -447,7 +696,8 @@ func (o *PostCharactersCharacterIDAssetsLocationsOKBodyItems0) UnmarshalBinary(b
 	return nil
 }
 
-/*PostCharactersCharacterIDAssetsLocationsOKBodyItems0Position post_characters_character_id_assets_locations_position
+/*
+PostCharactersCharacterIDAssetsLocationsOKBodyItems0Position post_characters_character_id_assets_locations_position
 //
 // position object
 swagger:model PostCharactersCharacterIDAssetsLocationsOKBodyItems0Position

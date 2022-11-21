@@ -53,10 +53,12 @@ func NewGetMarketsStructuresStructureIDParamsWithHTTPClient(client *http.Client)
 	}
 }
 
-/* GetMarketsStructuresStructureIDParams contains all the parameters to send to the API endpoint
-   for the get markets structures structure id operation.
+/*
+GetMarketsStructuresStructureIDParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get markets structures structure id operation.
+
+	Typically these are written to a http.Request.
 */
 type GetMarketsStructuresStructureIDParams struct {
 

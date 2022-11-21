@@ -79,7 +79,8 @@ func NewGetSovereigntyStructuresOK() *GetSovereigntyStructuresOK {
 	return &GetSovereigntyStructuresOK{}
 }
 
-/* GetSovereigntyStructuresOK describes a response with status code 200, with default header values.
+/*
+GetSovereigntyStructuresOK describes a response with status code 200, with default header values.
 
 A list of sovereignty structures
 */
@@ -104,9 +105,39 @@ type GetSovereigntyStructuresOK struct {
 	Payload []*GetSovereigntyStructuresOKBodyItems0
 }
 
+// IsSuccess returns true when this get sovereignty structures o k response has a 2xx status code
+func (o *GetSovereigntyStructuresOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get sovereignty structures o k response has a 3xx status code
+func (o *GetSovereigntyStructuresOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get sovereignty structures o k response has a 4xx status code
+func (o *GetSovereigntyStructuresOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get sovereignty structures o k response has a 5xx status code
+func (o *GetSovereigntyStructuresOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get sovereignty structures o k response a status code equal to that given
+func (o *GetSovereigntyStructuresOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetSovereigntyStructuresOK) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/structures/][%d] getSovereigntyStructuresOK  %+v", 200, o.Payload)
 }
+
+func (o *GetSovereigntyStructuresOK) String() string {
+	return fmt.Sprintf("[GET /v1/sovereignty/structures/][%d] getSovereigntyStructuresOK  %+v", 200, o.Payload)
+}
+
 func (o *GetSovereigntyStructuresOK) GetPayload() []*GetSovereigntyStructuresOKBodyItems0 {
 	return o.Payload
 }
@@ -154,7 +185,8 @@ func NewGetSovereigntyStructuresNotModified() *GetSovereigntyStructuresNotModifi
 	return &GetSovereigntyStructuresNotModified{}
 }
 
-/* GetSovereigntyStructuresNotModified describes a response with status code 304, with default header values.
+/*
+GetSovereigntyStructuresNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -177,7 +209,36 @@ type GetSovereigntyStructuresNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get sovereignty structures not modified response has a 2xx status code
+func (o *GetSovereigntyStructuresNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get sovereignty structures not modified response has a 3xx status code
+func (o *GetSovereigntyStructuresNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get sovereignty structures not modified response has a 4xx status code
+func (o *GetSovereigntyStructuresNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get sovereignty structures not modified response has a 5xx status code
+func (o *GetSovereigntyStructuresNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get sovereignty structures not modified response a status code equal to that given
+func (o *GetSovereigntyStructuresNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetSovereigntyStructuresNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/sovereignty/structures/][%d] getSovereigntyStructuresNotModified ", 304)
+}
+
+func (o *GetSovereigntyStructuresNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/structures/][%d] getSovereigntyStructuresNotModified ", 304)
 }
 
@@ -219,7 +280,8 @@ func NewGetSovereigntyStructuresBadRequest() *GetSovereigntyStructuresBadRequest
 	return &GetSovereigntyStructuresBadRequest{}
 }
 
-/* GetSovereigntyStructuresBadRequest describes a response with status code 400, with default header values.
+/*
+GetSovereigntyStructuresBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -227,9 +289,39 @@ type GetSovereigntyStructuresBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get sovereignty structures bad request response has a 2xx status code
+func (o *GetSovereigntyStructuresBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get sovereignty structures bad request response has a 3xx status code
+func (o *GetSovereigntyStructuresBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get sovereignty structures bad request response has a 4xx status code
+func (o *GetSovereigntyStructuresBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get sovereignty structures bad request response has a 5xx status code
+func (o *GetSovereigntyStructuresBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get sovereignty structures bad request response a status code equal to that given
+func (o *GetSovereigntyStructuresBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetSovereigntyStructuresBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/structures/][%d] getSovereigntyStructuresBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetSovereigntyStructuresBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/sovereignty/structures/][%d] getSovereigntyStructuresBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetSovereigntyStructuresBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -251,7 +343,8 @@ func NewGetSovereigntyStructuresEnhanceYourCalm() *GetSovereigntyStructuresEnhan
 	return &GetSovereigntyStructuresEnhanceYourCalm{}
 }
 
-/* GetSovereigntyStructuresEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetSovereigntyStructuresEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -259,9 +352,39 @@ type GetSovereigntyStructuresEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get sovereignty structures enhance your calm response has a 2xx status code
+func (o *GetSovereigntyStructuresEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get sovereignty structures enhance your calm response has a 3xx status code
+func (o *GetSovereigntyStructuresEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get sovereignty structures enhance your calm response has a 4xx status code
+func (o *GetSovereigntyStructuresEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get sovereignty structures enhance your calm response has a 5xx status code
+func (o *GetSovereigntyStructuresEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get sovereignty structures enhance your calm response a status code equal to that given
+func (o *GetSovereigntyStructuresEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetSovereigntyStructuresEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/structures/][%d] getSovereigntyStructuresEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetSovereigntyStructuresEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/sovereignty/structures/][%d] getSovereigntyStructuresEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetSovereigntyStructuresEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -283,7 +406,8 @@ func NewGetSovereigntyStructuresInternalServerError() *GetSovereigntyStructuresI
 	return &GetSovereigntyStructuresInternalServerError{}
 }
 
-/* GetSovereigntyStructuresInternalServerError describes a response with status code 500, with default header values.
+/*
+GetSovereigntyStructuresInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -291,9 +415,39 @@ type GetSovereigntyStructuresInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get sovereignty structures internal server error response has a 2xx status code
+func (o *GetSovereigntyStructuresInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get sovereignty structures internal server error response has a 3xx status code
+func (o *GetSovereigntyStructuresInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get sovereignty structures internal server error response has a 4xx status code
+func (o *GetSovereigntyStructuresInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get sovereignty structures internal server error response has a 5xx status code
+func (o *GetSovereigntyStructuresInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get sovereignty structures internal server error response a status code equal to that given
+func (o *GetSovereigntyStructuresInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetSovereigntyStructuresInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/structures/][%d] getSovereigntyStructuresInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetSovereigntyStructuresInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/sovereignty/structures/][%d] getSovereigntyStructuresInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetSovereigntyStructuresInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -315,7 +469,8 @@ func NewGetSovereigntyStructuresServiceUnavailable() *GetSovereigntyStructuresSe
 	return &GetSovereigntyStructuresServiceUnavailable{}
 }
 
-/* GetSovereigntyStructuresServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetSovereigntyStructuresServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -323,9 +478,39 @@ type GetSovereigntyStructuresServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get sovereignty structures service unavailable response has a 2xx status code
+func (o *GetSovereigntyStructuresServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get sovereignty structures service unavailable response has a 3xx status code
+func (o *GetSovereigntyStructuresServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get sovereignty structures service unavailable response has a 4xx status code
+func (o *GetSovereigntyStructuresServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get sovereignty structures service unavailable response has a 5xx status code
+func (o *GetSovereigntyStructuresServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get sovereignty structures service unavailable response a status code equal to that given
+func (o *GetSovereigntyStructuresServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetSovereigntyStructuresServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/structures/][%d] getSovereigntyStructuresServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetSovereigntyStructuresServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/sovereignty/structures/][%d] getSovereigntyStructuresServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetSovereigntyStructuresServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -347,7 +532,8 @@ func NewGetSovereigntyStructuresGatewayTimeout() *GetSovereigntyStructuresGatewa
 	return &GetSovereigntyStructuresGatewayTimeout{}
 }
 
-/* GetSovereigntyStructuresGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetSovereigntyStructuresGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -355,9 +541,39 @@ type GetSovereigntyStructuresGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get sovereignty structures gateway timeout response has a 2xx status code
+func (o *GetSovereigntyStructuresGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get sovereignty structures gateway timeout response has a 3xx status code
+func (o *GetSovereigntyStructuresGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get sovereignty structures gateway timeout response has a 4xx status code
+func (o *GetSovereigntyStructuresGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get sovereignty structures gateway timeout response has a 5xx status code
+func (o *GetSovereigntyStructuresGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get sovereignty structures gateway timeout response a status code equal to that given
+func (o *GetSovereigntyStructuresGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetSovereigntyStructuresGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/structures/][%d] getSovereigntyStructuresGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetSovereigntyStructuresGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/sovereignty/structures/][%d] getSovereigntyStructuresGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetSovereigntyStructuresGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -374,7 +590,8 @@ func (o *GetSovereigntyStructuresGatewayTimeout) readResponse(response runtime.C
 	return nil
 }
 
-/*GetSovereigntyStructuresOKBodyItems0 get_sovereignty_structures_200_ok
+/*
+GetSovereigntyStructuresOKBodyItems0 get_sovereignty_structures_200_ok
 //
 // 200 ok object
 swagger:model GetSovereigntyStructuresOKBodyItems0

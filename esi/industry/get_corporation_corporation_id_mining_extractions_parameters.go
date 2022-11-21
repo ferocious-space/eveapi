@@ -53,10 +53,12 @@ func NewGetCorporationCorporationIDMiningExtractionsParamsWithHTTPClient(client 
 	}
 }
 
-/* GetCorporationCorporationIDMiningExtractionsParams contains all the parameters to send to the API endpoint
-   for the get corporation corporation id mining extractions operation.
+/*
+GetCorporationCorporationIDMiningExtractionsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get corporation corporation id mining extractions operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCorporationCorporationIDMiningExtractionsParams struct {
 

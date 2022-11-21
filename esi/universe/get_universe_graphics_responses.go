@@ -75,7 +75,8 @@ func NewGetUniverseGraphicsOK() *GetUniverseGraphicsOK {
 	return &GetUniverseGraphicsOK{}
 }
 
-/* GetUniverseGraphicsOK describes a response with status code 200, with default header values.
+/*
+GetUniverseGraphicsOK describes a response with status code 200, with default header values.
 
 A list of graphic ids
 */
@@ -100,9 +101,39 @@ type GetUniverseGraphicsOK struct {
 	Payload []int32
 }
 
+// IsSuccess returns true when this get universe graphics o k response has a 2xx status code
+func (o *GetUniverseGraphicsOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get universe graphics o k response has a 3xx status code
+func (o *GetUniverseGraphicsOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe graphics o k response has a 4xx status code
+func (o *GetUniverseGraphicsOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe graphics o k response has a 5xx status code
+func (o *GetUniverseGraphicsOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe graphics o k response a status code equal to that given
+func (o *GetUniverseGraphicsOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetUniverseGraphicsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/graphics/][%d] getUniverseGraphicsOK  %+v", 200, o.Payload)
 }
+
+func (o *GetUniverseGraphicsOK) String() string {
+	return fmt.Sprintf("[GET /v1/universe/graphics/][%d] getUniverseGraphicsOK  %+v", 200, o.Payload)
+}
+
 func (o *GetUniverseGraphicsOK) GetPayload() []int32 {
 	return o.Payload
 }
@@ -150,7 +181,8 @@ func NewGetUniverseGraphicsNotModified() *GetUniverseGraphicsNotModified {
 	return &GetUniverseGraphicsNotModified{}
 }
 
-/* GetUniverseGraphicsNotModified describes a response with status code 304, with default header values.
+/*
+GetUniverseGraphicsNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -173,7 +205,36 @@ type GetUniverseGraphicsNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get universe graphics not modified response has a 2xx status code
+func (o *GetUniverseGraphicsNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe graphics not modified response has a 3xx status code
+func (o *GetUniverseGraphicsNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get universe graphics not modified response has a 4xx status code
+func (o *GetUniverseGraphicsNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe graphics not modified response has a 5xx status code
+func (o *GetUniverseGraphicsNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe graphics not modified response a status code equal to that given
+func (o *GetUniverseGraphicsNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetUniverseGraphicsNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/universe/graphics/][%d] getUniverseGraphicsNotModified ", 304)
+}
+
+func (o *GetUniverseGraphicsNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/universe/graphics/][%d] getUniverseGraphicsNotModified ", 304)
 }
 
@@ -215,7 +276,8 @@ func NewGetUniverseGraphicsBadRequest() *GetUniverseGraphicsBadRequest {
 	return &GetUniverseGraphicsBadRequest{}
 }
 
-/* GetUniverseGraphicsBadRequest describes a response with status code 400, with default header values.
+/*
+GetUniverseGraphicsBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -223,9 +285,39 @@ type GetUniverseGraphicsBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get universe graphics bad request response has a 2xx status code
+func (o *GetUniverseGraphicsBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe graphics bad request response has a 3xx status code
+func (o *GetUniverseGraphicsBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe graphics bad request response has a 4xx status code
+func (o *GetUniverseGraphicsBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe graphics bad request response has a 5xx status code
+func (o *GetUniverseGraphicsBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe graphics bad request response a status code equal to that given
+func (o *GetUniverseGraphicsBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetUniverseGraphicsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/graphics/][%d] getUniverseGraphicsBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetUniverseGraphicsBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/universe/graphics/][%d] getUniverseGraphicsBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetUniverseGraphicsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -247,7 +339,8 @@ func NewGetUniverseGraphicsEnhanceYourCalm() *GetUniverseGraphicsEnhanceYourCalm
 	return &GetUniverseGraphicsEnhanceYourCalm{}
 }
 
-/* GetUniverseGraphicsEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetUniverseGraphicsEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -255,9 +348,39 @@ type GetUniverseGraphicsEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get universe graphics enhance your calm response has a 2xx status code
+func (o *GetUniverseGraphicsEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe graphics enhance your calm response has a 3xx status code
+func (o *GetUniverseGraphicsEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe graphics enhance your calm response has a 4xx status code
+func (o *GetUniverseGraphicsEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe graphics enhance your calm response has a 5xx status code
+func (o *GetUniverseGraphicsEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe graphics enhance your calm response a status code equal to that given
+func (o *GetUniverseGraphicsEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetUniverseGraphicsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/graphics/][%d] getUniverseGraphicsEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetUniverseGraphicsEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/universe/graphics/][%d] getUniverseGraphicsEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetUniverseGraphicsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -279,7 +402,8 @@ func NewGetUniverseGraphicsInternalServerError() *GetUniverseGraphicsInternalSer
 	return &GetUniverseGraphicsInternalServerError{}
 }
 
-/* GetUniverseGraphicsInternalServerError describes a response with status code 500, with default header values.
+/*
+GetUniverseGraphicsInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -287,9 +411,39 @@ type GetUniverseGraphicsInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get universe graphics internal server error response has a 2xx status code
+func (o *GetUniverseGraphicsInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe graphics internal server error response has a 3xx status code
+func (o *GetUniverseGraphicsInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe graphics internal server error response has a 4xx status code
+func (o *GetUniverseGraphicsInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe graphics internal server error response has a 5xx status code
+func (o *GetUniverseGraphicsInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe graphics internal server error response a status code equal to that given
+func (o *GetUniverseGraphicsInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetUniverseGraphicsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/graphics/][%d] getUniverseGraphicsInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetUniverseGraphicsInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/universe/graphics/][%d] getUniverseGraphicsInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetUniverseGraphicsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -311,7 +465,8 @@ func NewGetUniverseGraphicsServiceUnavailable() *GetUniverseGraphicsServiceUnava
 	return &GetUniverseGraphicsServiceUnavailable{}
 }
 
-/* GetUniverseGraphicsServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetUniverseGraphicsServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -319,9 +474,39 @@ type GetUniverseGraphicsServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get universe graphics service unavailable response has a 2xx status code
+func (o *GetUniverseGraphicsServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe graphics service unavailable response has a 3xx status code
+func (o *GetUniverseGraphicsServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe graphics service unavailable response has a 4xx status code
+func (o *GetUniverseGraphicsServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe graphics service unavailable response has a 5xx status code
+func (o *GetUniverseGraphicsServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe graphics service unavailable response a status code equal to that given
+func (o *GetUniverseGraphicsServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetUniverseGraphicsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/graphics/][%d] getUniverseGraphicsServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetUniverseGraphicsServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/universe/graphics/][%d] getUniverseGraphicsServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetUniverseGraphicsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -343,7 +528,8 @@ func NewGetUniverseGraphicsGatewayTimeout() *GetUniverseGraphicsGatewayTimeout {
 	return &GetUniverseGraphicsGatewayTimeout{}
 }
 
-/* GetUniverseGraphicsGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetUniverseGraphicsGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -351,9 +537,39 @@ type GetUniverseGraphicsGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get universe graphics gateway timeout response has a 2xx status code
+func (o *GetUniverseGraphicsGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe graphics gateway timeout response has a 3xx status code
+func (o *GetUniverseGraphicsGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe graphics gateway timeout response has a 4xx status code
+func (o *GetUniverseGraphicsGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe graphics gateway timeout response has a 5xx status code
+func (o *GetUniverseGraphicsGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe graphics gateway timeout response a status code equal to that given
+func (o *GetUniverseGraphicsGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetUniverseGraphicsGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/graphics/][%d] getUniverseGraphicsGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetUniverseGraphicsGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/universe/graphics/][%d] getUniverseGraphicsGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetUniverseGraphicsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }

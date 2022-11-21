@@ -85,7 +85,8 @@ func NewGetUniversePlanetsPlanetIDOK() *GetUniversePlanetsPlanetIDOK {
 	return &GetUniversePlanetsPlanetIDOK{}
 }
 
-/* GetUniversePlanetsPlanetIDOK describes a response with status code 200, with default header values.
+/*
+GetUniversePlanetsPlanetIDOK describes a response with status code 200, with default header values.
 
 Information about a planet
 */
@@ -110,9 +111,39 @@ type GetUniversePlanetsPlanetIDOK struct {
 	Payload *GetUniversePlanetsPlanetIDOKBody
 }
 
+// IsSuccess returns true when this get universe planets planet Id o k response has a 2xx status code
+func (o *GetUniversePlanetsPlanetIDOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get universe planets planet Id o k response has a 3xx status code
+func (o *GetUniversePlanetsPlanetIDOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe planets planet Id o k response has a 4xx status code
+func (o *GetUniversePlanetsPlanetIDOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe planets planet Id o k response has a 5xx status code
+func (o *GetUniversePlanetsPlanetIDOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe planets planet Id o k response a status code equal to that given
+func (o *GetUniversePlanetsPlanetIDOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetUniversePlanetsPlanetIDOK) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/planets/{planet_id}/][%d] getUniversePlanetsPlanetIdOK  %+v", 200, o.Payload)
 }
+
+func (o *GetUniversePlanetsPlanetIDOK) String() string {
+	return fmt.Sprintf("[GET /v1/universe/planets/{planet_id}/][%d] getUniversePlanetsPlanetIdOK  %+v", 200, o.Payload)
+}
+
 func (o *GetUniversePlanetsPlanetIDOK) GetPayload() *GetUniversePlanetsPlanetIDOKBody {
 	return o.Payload
 }
@@ -162,7 +193,8 @@ func NewGetUniversePlanetsPlanetIDNotModified() *GetUniversePlanetsPlanetIDNotMo
 	return &GetUniversePlanetsPlanetIDNotModified{}
 }
 
-/* GetUniversePlanetsPlanetIDNotModified describes a response with status code 304, with default header values.
+/*
+GetUniversePlanetsPlanetIDNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -185,7 +217,36 @@ type GetUniversePlanetsPlanetIDNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get universe planets planet Id not modified response has a 2xx status code
+func (o *GetUniversePlanetsPlanetIDNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe planets planet Id not modified response has a 3xx status code
+func (o *GetUniversePlanetsPlanetIDNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get universe planets planet Id not modified response has a 4xx status code
+func (o *GetUniversePlanetsPlanetIDNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe planets planet Id not modified response has a 5xx status code
+func (o *GetUniversePlanetsPlanetIDNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe planets planet Id not modified response a status code equal to that given
+func (o *GetUniversePlanetsPlanetIDNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetUniversePlanetsPlanetIDNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/universe/planets/{planet_id}/][%d] getUniversePlanetsPlanetIdNotModified ", 304)
+}
+
+func (o *GetUniversePlanetsPlanetIDNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/universe/planets/{planet_id}/][%d] getUniversePlanetsPlanetIdNotModified ", 304)
 }
 
@@ -227,7 +288,8 @@ func NewGetUniversePlanetsPlanetIDBadRequest() *GetUniversePlanetsPlanetIDBadReq
 	return &GetUniversePlanetsPlanetIDBadRequest{}
 }
 
-/* GetUniversePlanetsPlanetIDBadRequest describes a response with status code 400, with default header values.
+/*
+GetUniversePlanetsPlanetIDBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -235,9 +297,39 @@ type GetUniversePlanetsPlanetIDBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get universe planets planet Id bad request response has a 2xx status code
+func (o *GetUniversePlanetsPlanetIDBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe planets planet Id bad request response has a 3xx status code
+func (o *GetUniversePlanetsPlanetIDBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe planets planet Id bad request response has a 4xx status code
+func (o *GetUniversePlanetsPlanetIDBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe planets planet Id bad request response has a 5xx status code
+func (o *GetUniversePlanetsPlanetIDBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe planets planet Id bad request response a status code equal to that given
+func (o *GetUniversePlanetsPlanetIDBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetUniversePlanetsPlanetIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/planets/{planet_id}/][%d] getUniversePlanetsPlanetIdBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetUniversePlanetsPlanetIDBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/universe/planets/{planet_id}/][%d] getUniversePlanetsPlanetIdBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetUniversePlanetsPlanetIDBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -259,7 +351,8 @@ func NewGetUniversePlanetsPlanetIDNotFound() *GetUniversePlanetsPlanetIDNotFound
 	return &GetUniversePlanetsPlanetIDNotFound{}
 }
 
-/* GetUniversePlanetsPlanetIDNotFound describes a response with status code 404, with default header values.
+/*
+GetUniversePlanetsPlanetIDNotFound describes a response with status code 404, with default header values.
 
 Planet not found
 */
@@ -267,9 +360,39 @@ type GetUniversePlanetsPlanetIDNotFound struct {
 	Payload *GetUniversePlanetsPlanetIDNotFoundBody
 }
 
+// IsSuccess returns true when this get universe planets planet Id not found response has a 2xx status code
+func (o *GetUniversePlanetsPlanetIDNotFound) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe planets planet Id not found response has a 3xx status code
+func (o *GetUniversePlanetsPlanetIDNotFound) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe planets planet Id not found response has a 4xx status code
+func (o *GetUniversePlanetsPlanetIDNotFound) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe planets planet Id not found response has a 5xx status code
+func (o *GetUniversePlanetsPlanetIDNotFound) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe planets planet Id not found response a status code equal to that given
+func (o *GetUniversePlanetsPlanetIDNotFound) IsCode(code int) bool {
+	return code == 404
+}
+
 func (o *GetUniversePlanetsPlanetIDNotFound) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/planets/{planet_id}/][%d] getUniversePlanetsPlanetIdNotFound  %+v", 404, o.Payload)
 }
+
+func (o *GetUniversePlanetsPlanetIDNotFound) String() string {
+	return fmt.Sprintf("[GET /v1/universe/planets/{planet_id}/][%d] getUniversePlanetsPlanetIdNotFound  %+v", 404, o.Payload)
+}
+
 func (o *GetUniversePlanetsPlanetIDNotFound) GetPayload() *GetUniversePlanetsPlanetIDNotFoundBody {
 	return o.Payload
 }
@@ -291,7 +414,8 @@ func NewGetUniversePlanetsPlanetIDEnhanceYourCalm() *GetUniversePlanetsPlanetIDE
 	return &GetUniversePlanetsPlanetIDEnhanceYourCalm{}
 }
 
-/* GetUniversePlanetsPlanetIDEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetUniversePlanetsPlanetIDEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -299,9 +423,39 @@ type GetUniversePlanetsPlanetIDEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get universe planets planet Id enhance your calm response has a 2xx status code
+func (o *GetUniversePlanetsPlanetIDEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe planets planet Id enhance your calm response has a 3xx status code
+func (o *GetUniversePlanetsPlanetIDEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe planets planet Id enhance your calm response has a 4xx status code
+func (o *GetUniversePlanetsPlanetIDEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe planets planet Id enhance your calm response has a 5xx status code
+func (o *GetUniversePlanetsPlanetIDEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe planets planet Id enhance your calm response a status code equal to that given
+func (o *GetUniversePlanetsPlanetIDEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetUniversePlanetsPlanetIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/planets/{planet_id}/][%d] getUniversePlanetsPlanetIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetUniversePlanetsPlanetIDEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/universe/planets/{planet_id}/][%d] getUniversePlanetsPlanetIdEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetUniversePlanetsPlanetIDEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -323,7 +477,8 @@ func NewGetUniversePlanetsPlanetIDInternalServerError() *GetUniversePlanetsPlane
 	return &GetUniversePlanetsPlanetIDInternalServerError{}
 }
 
-/* GetUniversePlanetsPlanetIDInternalServerError describes a response with status code 500, with default header values.
+/*
+GetUniversePlanetsPlanetIDInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -331,9 +486,39 @@ type GetUniversePlanetsPlanetIDInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get universe planets planet Id internal server error response has a 2xx status code
+func (o *GetUniversePlanetsPlanetIDInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe planets planet Id internal server error response has a 3xx status code
+func (o *GetUniversePlanetsPlanetIDInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe planets planet Id internal server error response has a 4xx status code
+func (o *GetUniversePlanetsPlanetIDInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe planets planet Id internal server error response has a 5xx status code
+func (o *GetUniversePlanetsPlanetIDInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe planets planet Id internal server error response a status code equal to that given
+func (o *GetUniversePlanetsPlanetIDInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetUniversePlanetsPlanetIDInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/planets/{planet_id}/][%d] getUniversePlanetsPlanetIdInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetUniversePlanetsPlanetIDInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/universe/planets/{planet_id}/][%d] getUniversePlanetsPlanetIdInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetUniversePlanetsPlanetIDInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -355,7 +540,8 @@ func NewGetUniversePlanetsPlanetIDServiceUnavailable() *GetUniversePlanetsPlanet
 	return &GetUniversePlanetsPlanetIDServiceUnavailable{}
 }
 
-/* GetUniversePlanetsPlanetIDServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetUniversePlanetsPlanetIDServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -363,9 +549,39 @@ type GetUniversePlanetsPlanetIDServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get universe planets planet Id service unavailable response has a 2xx status code
+func (o *GetUniversePlanetsPlanetIDServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe planets planet Id service unavailable response has a 3xx status code
+func (o *GetUniversePlanetsPlanetIDServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe planets planet Id service unavailable response has a 4xx status code
+func (o *GetUniversePlanetsPlanetIDServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe planets planet Id service unavailable response has a 5xx status code
+func (o *GetUniversePlanetsPlanetIDServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe planets planet Id service unavailable response a status code equal to that given
+func (o *GetUniversePlanetsPlanetIDServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetUniversePlanetsPlanetIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/planets/{planet_id}/][%d] getUniversePlanetsPlanetIdServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetUniversePlanetsPlanetIDServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/universe/planets/{planet_id}/][%d] getUniversePlanetsPlanetIdServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetUniversePlanetsPlanetIDServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -387,7 +603,8 @@ func NewGetUniversePlanetsPlanetIDGatewayTimeout() *GetUniversePlanetsPlanetIDGa
 	return &GetUniversePlanetsPlanetIDGatewayTimeout{}
 }
 
-/* GetUniversePlanetsPlanetIDGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetUniversePlanetsPlanetIDGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -395,9 +612,39 @@ type GetUniversePlanetsPlanetIDGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get universe planets planet Id gateway timeout response has a 2xx status code
+func (o *GetUniversePlanetsPlanetIDGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe planets planet Id gateway timeout response has a 3xx status code
+func (o *GetUniversePlanetsPlanetIDGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe planets planet Id gateway timeout response has a 4xx status code
+func (o *GetUniversePlanetsPlanetIDGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe planets planet Id gateway timeout response has a 5xx status code
+func (o *GetUniversePlanetsPlanetIDGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe planets planet Id gateway timeout response a status code equal to that given
+func (o *GetUniversePlanetsPlanetIDGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetUniversePlanetsPlanetIDGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/planets/{planet_id}/][%d] getUniversePlanetsPlanetIdGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetUniversePlanetsPlanetIDGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/universe/planets/{planet_id}/][%d] getUniversePlanetsPlanetIdGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetUniversePlanetsPlanetIDGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -414,7 +661,8 @@ func (o *GetUniversePlanetsPlanetIDGatewayTimeout) readResponse(response runtime
 	return nil
 }
 
-/*GetUniversePlanetsPlanetIDNotFoundBody get_universe_planets_planet_id_not_found
+/*
+GetUniversePlanetsPlanetIDNotFoundBody get_universe_planets_planet_id_not_found
 //
 // Not found
 swagger:model GetUniversePlanetsPlanetIDNotFoundBody
@@ -455,7 +703,8 @@ func (o *GetUniversePlanetsPlanetIDNotFoundBody) UnmarshalBinary(b []byte) error
 	return nil
 }
 
-/*GetUniversePlanetsPlanetIDOKBody get_universe_planets_planet_id_ok
+/*
+GetUniversePlanetsPlanetIDOKBody get_universe_planets_planet_id_ok
 //
 // 200 ok object
 swagger:model GetUniversePlanetsPlanetIDOKBody
@@ -625,7 +874,8 @@ func (o *GetUniversePlanetsPlanetIDOKBody) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*GetUniversePlanetsPlanetIDOKBodyPosition get_universe_planets_planet_id_position
+/*
+GetUniversePlanetsPlanetIDOKBodyPosition get_universe_planets_planet_id_position
 //
 // position object
 swagger:model GetUniversePlanetsPlanetIDOKBodyPosition

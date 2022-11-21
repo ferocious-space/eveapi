@@ -83,7 +83,8 @@ func NewGetRouteOriginDestinationOK() *GetRouteOriginDestinationOK {
 	return &GetRouteOriginDestinationOK{}
 }
 
-/* GetRouteOriginDestinationOK describes a response with status code 200, with default header values.
+/*
+GetRouteOriginDestinationOK describes a response with status code 200, with default header values.
 
 Solar systems in route from origin to destination
 */
@@ -108,9 +109,39 @@ type GetRouteOriginDestinationOK struct {
 	Payload []int32
 }
 
+// IsSuccess returns true when this get route origin destination o k response has a 2xx status code
+func (o *GetRouteOriginDestinationOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get route origin destination o k response has a 3xx status code
+func (o *GetRouteOriginDestinationOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get route origin destination o k response has a 4xx status code
+func (o *GetRouteOriginDestinationOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get route origin destination o k response has a 5xx status code
+func (o *GetRouteOriginDestinationOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get route origin destination o k response a status code equal to that given
+func (o *GetRouteOriginDestinationOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetRouteOriginDestinationOK) Error() string {
 	return fmt.Sprintf("[GET /v1/route/{origin}/{destination}/][%d] getRouteOriginDestinationOK  %+v", 200, o.Payload)
 }
+
+func (o *GetRouteOriginDestinationOK) String() string {
+	return fmt.Sprintf("[GET /v1/route/{origin}/{destination}/][%d] getRouteOriginDestinationOK  %+v", 200, o.Payload)
+}
+
 func (o *GetRouteOriginDestinationOK) GetPayload() []int32 {
 	return o.Payload
 }
@@ -158,7 +189,8 @@ func NewGetRouteOriginDestinationNotModified() *GetRouteOriginDestinationNotModi
 	return &GetRouteOriginDestinationNotModified{}
 }
 
-/* GetRouteOriginDestinationNotModified describes a response with status code 304, with default header values.
+/*
+GetRouteOriginDestinationNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -181,7 +213,36 @@ type GetRouteOriginDestinationNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get route origin destination not modified response has a 2xx status code
+func (o *GetRouteOriginDestinationNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get route origin destination not modified response has a 3xx status code
+func (o *GetRouteOriginDestinationNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get route origin destination not modified response has a 4xx status code
+func (o *GetRouteOriginDestinationNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get route origin destination not modified response has a 5xx status code
+func (o *GetRouteOriginDestinationNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get route origin destination not modified response a status code equal to that given
+func (o *GetRouteOriginDestinationNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetRouteOriginDestinationNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/route/{origin}/{destination}/][%d] getRouteOriginDestinationNotModified ", 304)
+}
+
+func (o *GetRouteOriginDestinationNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/route/{origin}/{destination}/][%d] getRouteOriginDestinationNotModified ", 304)
 }
 
@@ -223,7 +284,8 @@ func NewGetRouteOriginDestinationBadRequest() *GetRouteOriginDestinationBadReque
 	return &GetRouteOriginDestinationBadRequest{}
 }
 
-/* GetRouteOriginDestinationBadRequest describes a response with status code 400, with default header values.
+/*
+GetRouteOriginDestinationBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -231,9 +293,39 @@ type GetRouteOriginDestinationBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get route origin destination bad request response has a 2xx status code
+func (o *GetRouteOriginDestinationBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get route origin destination bad request response has a 3xx status code
+func (o *GetRouteOriginDestinationBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get route origin destination bad request response has a 4xx status code
+func (o *GetRouteOriginDestinationBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get route origin destination bad request response has a 5xx status code
+func (o *GetRouteOriginDestinationBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get route origin destination bad request response a status code equal to that given
+func (o *GetRouteOriginDestinationBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetRouteOriginDestinationBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/route/{origin}/{destination}/][%d] getRouteOriginDestinationBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetRouteOriginDestinationBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/route/{origin}/{destination}/][%d] getRouteOriginDestinationBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetRouteOriginDestinationBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -255,7 +347,8 @@ func NewGetRouteOriginDestinationNotFound() *GetRouteOriginDestinationNotFound {
 	return &GetRouteOriginDestinationNotFound{}
 }
 
-/* GetRouteOriginDestinationNotFound describes a response with status code 404, with default header values.
+/*
+GetRouteOriginDestinationNotFound describes a response with status code 404, with default header values.
 
 No route found
 */
@@ -263,9 +356,39 @@ type GetRouteOriginDestinationNotFound struct {
 	Payload *GetRouteOriginDestinationNotFoundBody
 }
 
+// IsSuccess returns true when this get route origin destination not found response has a 2xx status code
+func (o *GetRouteOriginDestinationNotFound) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get route origin destination not found response has a 3xx status code
+func (o *GetRouteOriginDestinationNotFound) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get route origin destination not found response has a 4xx status code
+func (o *GetRouteOriginDestinationNotFound) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get route origin destination not found response has a 5xx status code
+func (o *GetRouteOriginDestinationNotFound) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get route origin destination not found response a status code equal to that given
+func (o *GetRouteOriginDestinationNotFound) IsCode(code int) bool {
+	return code == 404
+}
+
 func (o *GetRouteOriginDestinationNotFound) Error() string {
 	return fmt.Sprintf("[GET /v1/route/{origin}/{destination}/][%d] getRouteOriginDestinationNotFound  %+v", 404, o.Payload)
 }
+
+func (o *GetRouteOriginDestinationNotFound) String() string {
+	return fmt.Sprintf("[GET /v1/route/{origin}/{destination}/][%d] getRouteOriginDestinationNotFound  %+v", 404, o.Payload)
+}
+
 func (o *GetRouteOriginDestinationNotFound) GetPayload() *GetRouteOriginDestinationNotFoundBody {
 	return o.Payload
 }
@@ -287,7 +410,8 @@ func NewGetRouteOriginDestinationEnhanceYourCalm() *GetRouteOriginDestinationEnh
 	return &GetRouteOriginDestinationEnhanceYourCalm{}
 }
 
-/* GetRouteOriginDestinationEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetRouteOriginDestinationEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -295,9 +419,39 @@ type GetRouteOriginDestinationEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get route origin destination enhance your calm response has a 2xx status code
+func (o *GetRouteOriginDestinationEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get route origin destination enhance your calm response has a 3xx status code
+func (o *GetRouteOriginDestinationEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get route origin destination enhance your calm response has a 4xx status code
+func (o *GetRouteOriginDestinationEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get route origin destination enhance your calm response has a 5xx status code
+func (o *GetRouteOriginDestinationEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get route origin destination enhance your calm response a status code equal to that given
+func (o *GetRouteOriginDestinationEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetRouteOriginDestinationEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/route/{origin}/{destination}/][%d] getRouteOriginDestinationEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetRouteOriginDestinationEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/route/{origin}/{destination}/][%d] getRouteOriginDestinationEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetRouteOriginDestinationEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -319,7 +473,8 @@ func NewGetRouteOriginDestinationInternalServerError() *GetRouteOriginDestinatio
 	return &GetRouteOriginDestinationInternalServerError{}
 }
 
-/* GetRouteOriginDestinationInternalServerError describes a response with status code 500, with default header values.
+/*
+GetRouteOriginDestinationInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -327,9 +482,39 @@ type GetRouteOriginDestinationInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get route origin destination internal server error response has a 2xx status code
+func (o *GetRouteOriginDestinationInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get route origin destination internal server error response has a 3xx status code
+func (o *GetRouteOriginDestinationInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get route origin destination internal server error response has a 4xx status code
+func (o *GetRouteOriginDestinationInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get route origin destination internal server error response has a 5xx status code
+func (o *GetRouteOriginDestinationInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get route origin destination internal server error response a status code equal to that given
+func (o *GetRouteOriginDestinationInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetRouteOriginDestinationInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/route/{origin}/{destination}/][%d] getRouteOriginDestinationInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetRouteOriginDestinationInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/route/{origin}/{destination}/][%d] getRouteOriginDestinationInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetRouteOriginDestinationInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -351,7 +536,8 @@ func NewGetRouteOriginDestinationServiceUnavailable() *GetRouteOriginDestination
 	return &GetRouteOriginDestinationServiceUnavailable{}
 }
 
-/* GetRouteOriginDestinationServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetRouteOriginDestinationServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -359,9 +545,39 @@ type GetRouteOriginDestinationServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get route origin destination service unavailable response has a 2xx status code
+func (o *GetRouteOriginDestinationServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get route origin destination service unavailable response has a 3xx status code
+func (o *GetRouteOriginDestinationServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get route origin destination service unavailable response has a 4xx status code
+func (o *GetRouteOriginDestinationServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get route origin destination service unavailable response has a 5xx status code
+func (o *GetRouteOriginDestinationServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get route origin destination service unavailable response a status code equal to that given
+func (o *GetRouteOriginDestinationServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetRouteOriginDestinationServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/route/{origin}/{destination}/][%d] getRouteOriginDestinationServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetRouteOriginDestinationServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/route/{origin}/{destination}/][%d] getRouteOriginDestinationServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetRouteOriginDestinationServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -383,7 +599,8 @@ func NewGetRouteOriginDestinationGatewayTimeout() *GetRouteOriginDestinationGate
 	return &GetRouteOriginDestinationGatewayTimeout{}
 }
 
-/* GetRouteOriginDestinationGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetRouteOriginDestinationGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -391,9 +608,39 @@ type GetRouteOriginDestinationGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get route origin destination gateway timeout response has a 2xx status code
+func (o *GetRouteOriginDestinationGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get route origin destination gateway timeout response has a 3xx status code
+func (o *GetRouteOriginDestinationGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get route origin destination gateway timeout response has a 4xx status code
+func (o *GetRouteOriginDestinationGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get route origin destination gateway timeout response has a 5xx status code
+func (o *GetRouteOriginDestinationGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get route origin destination gateway timeout response a status code equal to that given
+func (o *GetRouteOriginDestinationGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetRouteOriginDestinationGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/route/{origin}/{destination}/][%d] getRouteOriginDestinationGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetRouteOriginDestinationGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/route/{origin}/{destination}/][%d] getRouteOriginDestinationGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetRouteOriginDestinationGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -410,7 +657,8 @@ func (o *GetRouteOriginDestinationGatewayTimeout) readResponse(response runtime.
 	return nil
 }
 
-/*GetRouteOriginDestinationNotFoundBody get_route_origin_destination_not_found
+/*
+GetRouteOriginDestinationNotFoundBody get_route_origin_destination_not_found
 //
 // Not found
 swagger:model GetRouteOriginDestinationNotFoundBody

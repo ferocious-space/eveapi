@@ -16,7 +16,7 @@ import (
 
 // InternalServerError Internal server error
 //
-// Internal server error model
+// # Internal server error model
 //
 // swagger:model internal_server_error
 type InternalServerError struct {

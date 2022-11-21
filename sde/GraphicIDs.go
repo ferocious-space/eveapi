@@ -31,6 +31,7 @@ type GraphicID struct {
 	SofFactionName *string            `bson:"sofFactionName,omitempty" db:"sofFactionName,omitempty" json:"sofFactionName,omitempty" yaml:"sofFactionName,omitempty"`
 	SofHullName    *string            `bson:"sofHullName,omitempty" db:"sofHullName,omitempty" json:"sofHullName,omitempty" yaml:"sofHullName,omitempty"`
 	SofRaceName    *string            `bson:"sofRaceName,omitempty" db:"sofRaceName,omitempty" json:"sofRaceName,omitempty" yaml:"sofRaceName,omitempty"`
+	SofLayout      []string           `bson:"sofLayout,omitempty" db:"sofLayout,omitempty" json:"sofLayout,omitempty" yaml:"sofLayout,omitempty"`
 }
 type GraphicIDIconInfo struct {
 	Folder *string `bson:"folder,omitempty" db:"folder,omitempty" json:"folder,omitempty" yaml:"folder,omitempty"`

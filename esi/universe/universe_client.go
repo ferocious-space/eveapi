@@ -94,9 +94,9 @@ type ClientService interface {
 }
 
 /*
-  GetUniverseAncestries gets ancestries
+	GetUniverseAncestries gets ancestries
 
-  Get all character ancestries
+	Get all character ancestries
 
 ---
 
@@ -138,9 +138,9 @@ func (a *Client) GetUniverseAncestries(params *GetUniverseAncestriesParams, opts
 }
 
 /*
-  GetUniverseAsteroidBeltsAsteroidBeltID gets asteroid belt information
+	GetUniverseAsteroidBeltsAsteroidBeltID gets asteroid belt information
 
-  Get information on an asteroid belt
+	Get information on an asteroid belt
 
 ---
 
@@ -182,9 +182,9 @@ func (a *Client) GetUniverseAsteroidBeltsAsteroidBeltID(params *GetUniverseAster
 }
 
 /*
-  GetUniverseBloodlines gets bloodlines
+	GetUniverseBloodlines gets bloodlines
 
-  Get a list of bloodlines
+	Get a list of bloodlines
 
 ---
 
@@ -226,9 +226,9 @@ func (a *Client) GetUniverseBloodlines(params *GetUniverseBloodlinesParams, opts
 }
 
 /*
-  GetUniverseCategories gets item categories
+	GetUniverseCategories gets item categories
 
-  Get a list of item categories
+	Get a list of item categories
 
 ---
 
@@ -270,9 +270,9 @@ func (a *Client) GetUniverseCategories(params *GetUniverseCategoriesParams, opts
 }
 
 /*
-  GetUniverseCategoriesCategoryID gets item category information
+	GetUniverseCategoriesCategoryID gets item category information
 
-  Get information of an item category
+	Get information of an item category
 
 ---
 
@@ -314,9 +314,9 @@ func (a *Client) GetUniverseCategoriesCategoryID(params *GetUniverseCategoriesCa
 }
 
 /*
-  GetUniverseConstellations gets constellations
+	GetUniverseConstellations gets constellations
 
-  Get a list of constellations
+	Get a list of constellations
 
 ---
 
@@ -358,9 +358,9 @@ func (a *Client) GetUniverseConstellations(params *GetUniverseConstellationsPara
 }
 
 /*
-  GetUniverseConstellationsConstellationID gets constellation information
+	GetUniverseConstellationsConstellationID gets constellation information
 
-  Get information on a constellation
+	Get information on a constellation
 
 ---
 
@@ -402,9 +402,9 @@ func (a *Client) GetUniverseConstellationsConstellationID(params *GetUniverseCon
 }
 
 /*
-  GetUniverseFactions gets factions
+	GetUniverseFactions gets factions
 
-  Get a list of factions
+	Get a list of factions
 
 ---
 
@@ -446,9 +446,9 @@ func (a *Client) GetUniverseFactions(params *GetUniverseFactionsParams, opts ...
 }
 
 /*
-  GetUniverseGraphics gets graphics
+	GetUniverseGraphics gets graphics
 
-  Get a list of graphics
+	Get a list of graphics
 
 ---
 
@@ -490,9 +490,9 @@ func (a *Client) GetUniverseGraphics(params *GetUniverseGraphicsParams, opts ...
 }
 
 /*
-  GetUniverseGraphicsGraphicID gets graphic information
+	GetUniverseGraphicsGraphicID gets graphic information
 
-  Get information on a graphic
+	Get information on a graphic
 
 ---
 
@@ -534,9 +534,9 @@ func (a *Client) GetUniverseGraphicsGraphicID(params *GetUniverseGraphicsGraphic
 }
 
 /*
-  GetUniverseGroups gets item groups
+	GetUniverseGroups gets item groups
 
-  Get a list of item groups
+	Get a list of item groups
 
 ---
 
@@ -578,9 +578,9 @@ func (a *Client) GetUniverseGroups(params *GetUniverseGroupsParams, opts ...Clie
 }
 
 /*
-  GetUniverseGroupsGroupID gets item group information
+	GetUniverseGroupsGroupID gets item group information
 
-  Get information on an item group
+	Get information on an item group
 
 ---
 
@@ -622,9 +622,9 @@ func (a *Client) GetUniverseGroupsGroupID(params *GetUniverseGroupsGroupIDParams
 }
 
 /*
-  GetUniverseMoonsMoonID gets moon information
+	GetUniverseMoonsMoonID gets moon information
 
-  Get information on a moon
+	Get information on a moon
 
 ---
 
@@ -666,9 +666,9 @@ func (a *Client) GetUniverseMoonsMoonID(params *GetUniverseMoonsMoonIDParams, op
 }
 
 /*
-  GetUniversePlanetsPlanetID gets planet information
+	GetUniversePlanetsPlanetID gets planet information
 
-  Get information on a planet
+	Get information on a planet
 
 ---
 
@@ -710,9 +710,9 @@ func (a *Client) GetUniversePlanetsPlanetID(params *GetUniversePlanetsPlanetIDPa
 }
 
 /*
-  GetUniverseRaces gets character races
+	GetUniverseRaces gets character races
 
-  Get a list of character races
+	Get a list of character races
 
 ---
 
@@ -754,9 +754,9 @@ func (a *Client) GetUniverseRaces(params *GetUniverseRacesParams, opts ...Client
 }
 
 /*
-  GetUniverseRegions gets regions
+	GetUniverseRegions gets regions
 
-  Get a list of regions
+	Get a list of regions
 
 ---
 
@@ -798,9 +798,9 @@ func (a *Client) GetUniverseRegions(params *GetUniverseRegionsParams, opts ...Cl
 }
 
 /*
-  GetUniverseRegionsRegionID gets region information
+	GetUniverseRegionsRegionID gets region information
 
-  Get information on a region
+	Get information on a region
 
 ---
 
@@ -842,9 +842,9 @@ func (a *Client) GetUniverseRegionsRegionID(params *GetUniverseRegionsRegionIDPa
 }
 
 /*
-  GetUniverseStargatesStargateID gets stargate information
+	GetUniverseStargatesStargateID gets stargate information
 
-  Get information on a stargate
+	Get information on a stargate
 
 ---
 
@@ -886,9 +886,9 @@ func (a *Client) GetUniverseStargatesStargateID(params *GetUniverseStargatesStar
 }
 
 /*
-  GetUniverseStarsStarID gets star information
+	GetUniverseStarsStarID gets star information
 
-  Get information on a star
+	Get information on a star
 
 ---
 
@@ -930,9 +930,9 @@ func (a *Client) GetUniverseStarsStarID(params *GetUniverseStarsStarIDParams, op
 }
 
 /*
-  GetUniverseStationsStationID gets station information
+	GetUniverseStationsStationID gets station information
 
-  Get information on a station
+	Get information on a station
 
 ---
 
@@ -974,9 +974,9 @@ func (a *Client) GetUniverseStationsStationID(params *GetUniverseStationsStation
 }
 
 /*
-  GetUniverseStructures lists all public structures
+	GetUniverseStructures lists all public structures
 
-  List all public structures
+	List all public structures
 
 ---
 
@@ -1018,9 +1018,9 @@ func (a *Client) GetUniverseStructures(params *GetUniverseStructuresParams, opts
 }
 
 /*
-  GetUniverseStructuresStructureID gets structure information
+	GetUniverseStructuresStructureID gets structure information
 
-  Returns information on requested structure if you are on the ACL. Otherwise, returns "Forbidden" for all inputs.
+	Returns information on requested structure if you are on the ACL. Otherwise, returns "Forbidden" for all inputs.
 
 ---
 
@@ -1063,9 +1063,9 @@ func (a *Client) GetUniverseStructuresStructureID(params *GetUniverseStructuresS
 }
 
 /*
-  GetUniverseSystemJumps gets system jumps
+	GetUniverseSystemJumps gets system jumps
 
-  Get the number of jumps in solar systems within the last hour ending at the timestamp of the Last-Modified header, excluding wormhole space. Only systems with jumps will be listed
+	Get the number of jumps in solar systems within the last hour ending at the timestamp of the Last-Modified header, excluding wormhole space. Only systems with jumps will be listed
 
 ---
 
@@ -1107,9 +1107,9 @@ func (a *Client) GetUniverseSystemJumps(params *GetUniverseSystemJumpsParams, op
 }
 
 /*
-  GetUniverseSystemKills gets system kills
+	GetUniverseSystemKills gets system kills
 
-  Get the number of ship, pod and NPC kills per solar system within the last hour ending at the timestamp of the Last-Modified header, excluding wormhole space. Only systems with kills will be listed
+	Get the number of ship, pod and NPC kills per solar system within the last hour ending at the timestamp of the Last-Modified header, excluding wormhole space. Only systems with kills will be listed
 
 ---
 
@@ -1151,9 +1151,9 @@ func (a *Client) GetUniverseSystemKills(params *GetUniverseSystemKillsParams, op
 }
 
 /*
-  GetUniverseSystems gets solar systems
+	GetUniverseSystems gets solar systems
 
-  Get a list of solar systems
+	Get a list of solar systems
 
 ---
 
@@ -1195,9 +1195,9 @@ func (a *Client) GetUniverseSystems(params *GetUniverseSystemsParams, opts ...Cl
 }
 
 /*
-  GetUniverseSystemsSystemID gets solar system information
+	GetUniverseSystemsSystemID gets solar system information
 
-  Get information on a solar system.
+	Get information on a solar system.
 
 ---
 
@@ -1239,9 +1239,9 @@ func (a *Client) GetUniverseSystemsSystemID(params *GetUniverseSystemsSystemIDPa
 }
 
 /*
-  GetUniverseTypes gets types
+	GetUniverseTypes gets types
 
-  Get a list of type ids
+	Get a list of type ids
 
 ---
 
@@ -1283,9 +1283,9 @@ func (a *Client) GetUniverseTypes(params *GetUniverseTypesParams, opts ...Client
 }
 
 /*
-  GetUniverseTypesTypeID gets type information
+	GetUniverseTypesTypeID gets type information
 
-  Get information on a type
+	Get information on a type
 
 ---
 
@@ -1327,12 +1327,11 @@ func (a *Client) GetUniverseTypesTypeID(params *GetUniverseTypesTypeIDParams, op
 }
 
 /*
-  PostUniverseIds bulks names to i ds
+	PostUniverseIds bulks names to i ds
 
-  Resolve a set of names to IDs in the following categories: agents, alliances, characters, constellations, corporations factions, inventory_types, regions, stations, and systems. Only exact matches will be returned. All names searched for are cached for 12 hours
+	Resolve a set of names to IDs in the following categories: agents, alliances, characters, constellations, corporations factions, inventory_types, regions, stations, and systems. Only exact matches will be returned. All names searched for are cached for 12 hours
 
 ---
-
 */
 func (a *Client) PostUniverseIds(params *PostUniverseIdsParams, opts ...ClientOption) (*PostUniverseIdsOK, error) {
 	// TODO: Validate the params before sending
@@ -1370,12 +1369,11 @@ func (a *Client) PostUniverseIds(params *PostUniverseIdsParams, opts ...ClientOp
 }
 
 /*
-  PostUniverseNames gets names and categories for a set of i ds
+	PostUniverseNames gets names and categories for a set of i ds
 
-  Resolve a set of IDs to names and categories. Supported ID's for resolving are: Characters, Corporations, Alliances, Stations, Solar Systems, Constellations, Regions, Types, Factions
+	Resolve a set of IDs to names and categories. Supported ID's for resolving are: Characters, Corporations, Alliances, Stations, Solar Systems, Constellations, Regions, Types, Factions
 
 ---
-
 */
 func (a *Client) PostUniverseNames(params *PostUniverseNamesParams, opts ...ClientOption) (*PostUniverseNamesOK, error) {
 	// TODO: Validate the params before sending

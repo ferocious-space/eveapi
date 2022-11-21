@@ -53,10 +53,12 @@ func NewGetContractsPublicItemsContractIDParamsWithHTTPClient(client *http.Clien
 	}
 }
 
-/* GetContractsPublicItemsContractIDParams contains all the parameters to send to the API endpoint
-   for the get contracts public items contract id operation.
+/*
+GetContractsPublicItemsContractIDParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get contracts public items contract id operation.
+
+	Typically these are written to a http.Request.
 */
 type GetContractsPublicItemsContractIDParams struct {
 

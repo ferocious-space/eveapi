@@ -53,10 +53,12 @@ func NewGetCorporationsCorporationIDWalletsDivisionJournalParamsWithHTTPClient(c
 	}
 }
 
-/* GetCorporationsCorporationIDWalletsDivisionJournalParams contains all the parameters to send to the API endpoint
-   for the get corporations corporation id wallets division journal operation.
+/*
+GetCorporationsCorporationIDWalletsDivisionJournalParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get corporations corporation id wallets division journal operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCorporationsCorporationIDWalletsDivisionJournalParams struct {
 

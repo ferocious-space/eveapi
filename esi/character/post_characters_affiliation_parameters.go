@@ -52,10 +52,12 @@ func NewPostCharactersAffiliationParamsWithHTTPClient(client *http.Client) *Post
 	}
 }
 
-/* PostCharactersAffiliationParams contains all the parameters to send to the API endpoint
-   for the post characters affiliation operation.
+/*
+PostCharactersAffiliationParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the post characters affiliation operation.
+
+	Typically these are written to a http.Request.
 */
 type PostCharactersAffiliationParams struct {
 

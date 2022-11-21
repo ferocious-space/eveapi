@@ -97,7 +97,8 @@ func NewGetMarketsRegionIDHistoryOK() *GetMarketsRegionIDHistoryOK {
 	return &GetMarketsRegionIDHistoryOK{}
 }
 
-/* GetMarketsRegionIDHistoryOK describes a response with status code 200, with default header values.
+/*
+GetMarketsRegionIDHistoryOK describes a response with status code 200, with default header values.
 
 A list of historical market statistics
 */
@@ -122,9 +123,39 @@ type GetMarketsRegionIDHistoryOK struct {
 	Payload []*GetMarketsRegionIDHistoryOKBodyItems0
 }
 
+// IsSuccess returns true when this get markets region Id history o k response has a 2xx status code
+func (o *GetMarketsRegionIDHistoryOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get markets region Id history o k response has a 3xx status code
+func (o *GetMarketsRegionIDHistoryOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get markets region Id history o k response has a 4xx status code
+func (o *GetMarketsRegionIDHistoryOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get markets region Id history o k response has a 5xx status code
+func (o *GetMarketsRegionIDHistoryOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get markets region Id history o k response a status code equal to that given
+func (o *GetMarketsRegionIDHistoryOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetMarketsRegionIDHistoryOK) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/{region_id}/history/][%d] getMarketsRegionIdHistoryOK  %+v", 200, o.Payload)
 }
+
+func (o *GetMarketsRegionIDHistoryOK) String() string {
+	return fmt.Sprintf("[GET /v1/markets/{region_id}/history/][%d] getMarketsRegionIdHistoryOK  %+v", 200, o.Payload)
+}
+
 func (o *GetMarketsRegionIDHistoryOK) GetPayload() []*GetMarketsRegionIDHistoryOKBodyItems0 {
 	return o.Payload
 }
@@ -172,7 +203,8 @@ func NewGetMarketsRegionIDHistoryNotModified() *GetMarketsRegionIDHistoryNotModi
 	return &GetMarketsRegionIDHistoryNotModified{}
 }
 
-/* GetMarketsRegionIDHistoryNotModified describes a response with status code 304, with default header values.
+/*
+GetMarketsRegionIDHistoryNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -195,7 +227,36 @@ type GetMarketsRegionIDHistoryNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get markets region Id history not modified response has a 2xx status code
+func (o *GetMarketsRegionIDHistoryNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get markets region Id history not modified response has a 3xx status code
+func (o *GetMarketsRegionIDHistoryNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get markets region Id history not modified response has a 4xx status code
+func (o *GetMarketsRegionIDHistoryNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get markets region Id history not modified response has a 5xx status code
+func (o *GetMarketsRegionIDHistoryNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get markets region Id history not modified response a status code equal to that given
+func (o *GetMarketsRegionIDHistoryNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetMarketsRegionIDHistoryNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/markets/{region_id}/history/][%d] getMarketsRegionIdHistoryNotModified ", 304)
+}
+
+func (o *GetMarketsRegionIDHistoryNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/markets/{region_id}/history/][%d] getMarketsRegionIdHistoryNotModified ", 304)
 }
 
@@ -237,7 +298,8 @@ func NewGetMarketsRegionIDHistoryBadRequest() *GetMarketsRegionIDHistoryBadReque
 	return &GetMarketsRegionIDHistoryBadRequest{}
 }
 
-/* GetMarketsRegionIDHistoryBadRequest describes a response with status code 400, with default header values.
+/*
+GetMarketsRegionIDHistoryBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -245,9 +307,39 @@ type GetMarketsRegionIDHistoryBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get markets region Id history bad request response has a 2xx status code
+func (o *GetMarketsRegionIDHistoryBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get markets region Id history bad request response has a 3xx status code
+func (o *GetMarketsRegionIDHistoryBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get markets region Id history bad request response has a 4xx status code
+func (o *GetMarketsRegionIDHistoryBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get markets region Id history bad request response has a 5xx status code
+func (o *GetMarketsRegionIDHistoryBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get markets region Id history bad request response a status code equal to that given
+func (o *GetMarketsRegionIDHistoryBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetMarketsRegionIDHistoryBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/{region_id}/history/][%d] getMarketsRegionIdHistoryBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetMarketsRegionIDHistoryBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/markets/{region_id}/history/][%d] getMarketsRegionIdHistoryBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetMarketsRegionIDHistoryBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -269,7 +361,8 @@ func NewGetMarketsRegionIDHistoryNotFound() *GetMarketsRegionIDHistoryNotFound {
 	return &GetMarketsRegionIDHistoryNotFound{}
 }
 
-/* GetMarketsRegionIDHistoryNotFound describes a response with status code 404, with default header values.
+/*
+GetMarketsRegionIDHistoryNotFound describes a response with status code 404, with default header values.
 
 Type not found
 */
@@ -277,9 +370,39 @@ type GetMarketsRegionIDHistoryNotFound struct {
 	Payload *GetMarketsRegionIDHistoryNotFoundBody
 }
 
+// IsSuccess returns true when this get markets region Id history not found response has a 2xx status code
+func (o *GetMarketsRegionIDHistoryNotFound) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get markets region Id history not found response has a 3xx status code
+func (o *GetMarketsRegionIDHistoryNotFound) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get markets region Id history not found response has a 4xx status code
+func (o *GetMarketsRegionIDHistoryNotFound) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get markets region Id history not found response has a 5xx status code
+func (o *GetMarketsRegionIDHistoryNotFound) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get markets region Id history not found response a status code equal to that given
+func (o *GetMarketsRegionIDHistoryNotFound) IsCode(code int) bool {
+	return code == 404
+}
+
 func (o *GetMarketsRegionIDHistoryNotFound) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/{region_id}/history/][%d] getMarketsRegionIdHistoryNotFound  %+v", 404, o.Payload)
 }
+
+func (o *GetMarketsRegionIDHistoryNotFound) String() string {
+	return fmt.Sprintf("[GET /v1/markets/{region_id}/history/][%d] getMarketsRegionIdHistoryNotFound  %+v", 404, o.Payload)
+}
+
 func (o *GetMarketsRegionIDHistoryNotFound) GetPayload() *GetMarketsRegionIDHistoryNotFoundBody {
 	return o.Payload
 }
@@ -301,7 +424,8 @@ func NewGetMarketsRegionIDHistoryEnhanceYourCalm() *GetMarketsRegionIDHistoryEnh
 	return &GetMarketsRegionIDHistoryEnhanceYourCalm{}
 }
 
-/* GetMarketsRegionIDHistoryEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetMarketsRegionIDHistoryEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -309,9 +433,39 @@ type GetMarketsRegionIDHistoryEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get markets region Id history enhance your calm response has a 2xx status code
+func (o *GetMarketsRegionIDHistoryEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get markets region Id history enhance your calm response has a 3xx status code
+func (o *GetMarketsRegionIDHistoryEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get markets region Id history enhance your calm response has a 4xx status code
+func (o *GetMarketsRegionIDHistoryEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get markets region Id history enhance your calm response has a 5xx status code
+func (o *GetMarketsRegionIDHistoryEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get markets region Id history enhance your calm response a status code equal to that given
+func (o *GetMarketsRegionIDHistoryEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetMarketsRegionIDHistoryEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/{region_id}/history/][%d] getMarketsRegionIdHistoryEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetMarketsRegionIDHistoryEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/markets/{region_id}/history/][%d] getMarketsRegionIdHistoryEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetMarketsRegionIDHistoryEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -333,7 +487,8 @@ func NewGetMarketsRegionIDHistoryUnprocessableEntity() *GetMarketsRegionIDHistor
 	return &GetMarketsRegionIDHistoryUnprocessableEntity{}
 }
 
-/* GetMarketsRegionIDHistoryUnprocessableEntity describes a response with status code 422, with default header values.
+/*
+GetMarketsRegionIDHistoryUnprocessableEntity describes a response with status code 422, with default header values.
 
 Not found
 */
@@ -341,9 +496,39 @@ type GetMarketsRegionIDHistoryUnprocessableEntity struct {
 	Payload *GetMarketsRegionIDHistoryUnprocessableEntityBody
 }
 
+// IsSuccess returns true when this get markets region Id history unprocessable entity response has a 2xx status code
+func (o *GetMarketsRegionIDHistoryUnprocessableEntity) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get markets region Id history unprocessable entity response has a 3xx status code
+func (o *GetMarketsRegionIDHistoryUnprocessableEntity) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get markets region Id history unprocessable entity response has a 4xx status code
+func (o *GetMarketsRegionIDHistoryUnprocessableEntity) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get markets region Id history unprocessable entity response has a 5xx status code
+func (o *GetMarketsRegionIDHistoryUnprocessableEntity) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get markets region Id history unprocessable entity response a status code equal to that given
+func (o *GetMarketsRegionIDHistoryUnprocessableEntity) IsCode(code int) bool {
+	return code == 422
+}
+
 func (o *GetMarketsRegionIDHistoryUnprocessableEntity) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/{region_id}/history/][%d] getMarketsRegionIdHistoryUnprocessableEntity  %+v", 422, o.Payload)
 }
+
+func (o *GetMarketsRegionIDHistoryUnprocessableEntity) String() string {
+	return fmt.Sprintf("[GET /v1/markets/{region_id}/history/][%d] getMarketsRegionIdHistoryUnprocessableEntity  %+v", 422, o.Payload)
+}
+
 func (o *GetMarketsRegionIDHistoryUnprocessableEntity) GetPayload() *GetMarketsRegionIDHistoryUnprocessableEntityBody {
 	return o.Payload
 }
@@ -365,7 +550,8 @@ func NewGetMarketsRegionIDHistoryInternalServerError() *GetMarketsRegionIDHistor
 	return &GetMarketsRegionIDHistoryInternalServerError{}
 }
 
-/* GetMarketsRegionIDHistoryInternalServerError describes a response with status code 500, with default header values.
+/*
+GetMarketsRegionIDHistoryInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -373,9 +559,39 @@ type GetMarketsRegionIDHistoryInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get markets region Id history internal server error response has a 2xx status code
+func (o *GetMarketsRegionIDHistoryInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get markets region Id history internal server error response has a 3xx status code
+func (o *GetMarketsRegionIDHistoryInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get markets region Id history internal server error response has a 4xx status code
+func (o *GetMarketsRegionIDHistoryInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get markets region Id history internal server error response has a 5xx status code
+func (o *GetMarketsRegionIDHistoryInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get markets region Id history internal server error response a status code equal to that given
+func (o *GetMarketsRegionIDHistoryInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetMarketsRegionIDHistoryInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/{region_id}/history/][%d] getMarketsRegionIdHistoryInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetMarketsRegionIDHistoryInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/markets/{region_id}/history/][%d] getMarketsRegionIdHistoryInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetMarketsRegionIDHistoryInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -397,7 +613,8 @@ func NewGetMarketsRegionIDHistoryServiceUnavailable() *GetMarketsRegionIDHistory
 	return &GetMarketsRegionIDHistoryServiceUnavailable{}
 }
 
-/* GetMarketsRegionIDHistoryServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetMarketsRegionIDHistoryServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -405,9 +622,39 @@ type GetMarketsRegionIDHistoryServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get markets region Id history service unavailable response has a 2xx status code
+func (o *GetMarketsRegionIDHistoryServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get markets region Id history service unavailable response has a 3xx status code
+func (o *GetMarketsRegionIDHistoryServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get markets region Id history service unavailable response has a 4xx status code
+func (o *GetMarketsRegionIDHistoryServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get markets region Id history service unavailable response has a 5xx status code
+func (o *GetMarketsRegionIDHistoryServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get markets region Id history service unavailable response a status code equal to that given
+func (o *GetMarketsRegionIDHistoryServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetMarketsRegionIDHistoryServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/{region_id}/history/][%d] getMarketsRegionIdHistoryServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetMarketsRegionIDHistoryServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/markets/{region_id}/history/][%d] getMarketsRegionIdHistoryServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetMarketsRegionIDHistoryServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -429,7 +676,8 @@ func NewGetMarketsRegionIDHistoryGatewayTimeout() *GetMarketsRegionIDHistoryGate
 	return &GetMarketsRegionIDHistoryGatewayTimeout{}
 }
 
-/* GetMarketsRegionIDHistoryGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetMarketsRegionIDHistoryGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -437,9 +685,39 @@ type GetMarketsRegionIDHistoryGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get markets region Id history gateway timeout response has a 2xx status code
+func (o *GetMarketsRegionIDHistoryGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get markets region Id history gateway timeout response has a 3xx status code
+func (o *GetMarketsRegionIDHistoryGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get markets region Id history gateway timeout response has a 4xx status code
+func (o *GetMarketsRegionIDHistoryGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get markets region Id history gateway timeout response has a 5xx status code
+func (o *GetMarketsRegionIDHistoryGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get markets region Id history gateway timeout response a status code equal to that given
+func (o *GetMarketsRegionIDHistoryGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetMarketsRegionIDHistoryGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/{region_id}/history/][%d] getMarketsRegionIdHistoryGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetMarketsRegionIDHistoryGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/markets/{region_id}/history/][%d] getMarketsRegionIdHistoryGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetMarketsRegionIDHistoryGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -461,7 +739,8 @@ func NewGetMarketsRegionIDHistoryStatus520() *GetMarketsRegionIDHistoryStatus520
 	return &GetMarketsRegionIDHistoryStatus520{}
 }
 
-/* GetMarketsRegionIDHistoryStatus520 describes a response with status code 520, with default header values.
+/*
+GetMarketsRegionIDHistoryStatus520 describes a response with status code 520, with default header values.
 
 Internal error thrown from the EVE server
 */
@@ -469,9 +748,39 @@ type GetMarketsRegionIDHistoryStatus520 struct {
 	Payload *GetMarketsRegionIDHistoryStatus520Body
 }
 
+// IsSuccess returns true when this get markets region Id history status520 response has a 2xx status code
+func (o *GetMarketsRegionIDHistoryStatus520) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get markets region Id history status520 response has a 3xx status code
+func (o *GetMarketsRegionIDHistoryStatus520) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get markets region Id history status520 response has a 4xx status code
+func (o *GetMarketsRegionIDHistoryStatus520) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get markets region Id history status520 response has a 5xx status code
+func (o *GetMarketsRegionIDHistoryStatus520) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get markets region Id history status520 response a status code equal to that given
+func (o *GetMarketsRegionIDHistoryStatus520) IsCode(code int) bool {
+	return code == 520
+}
+
 func (o *GetMarketsRegionIDHistoryStatus520) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/{region_id}/history/][%d] getMarketsRegionIdHistoryStatus520  %+v", 520, o.Payload)
 }
+
+func (o *GetMarketsRegionIDHistoryStatus520) String() string {
+	return fmt.Sprintf("[GET /v1/markets/{region_id}/history/][%d] getMarketsRegionIdHistoryStatus520  %+v", 520, o.Payload)
+}
+
 func (o *GetMarketsRegionIDHistoryStatus520) GetPayload() *GetMarketsRegionIDHistoryStatus520Body {
 	return o.Payload
 }
@@ -488,7 +797,8 @@ func (o *GetMarketsRegionIDHistoryStatus520) readResponse(response runtime.Clien
 	return nil
 }
 
-/*GetMarketsRegionIDHistoryNotFoundBody get_markets_region_id_history_not_found
+/*
+GetMarketsRegionIDHistoryNotFoundBody get_markets_region_id_history_not_found
 //
 // Not found
 swagger:model GetMarketsRegionIDHistoryNotFoundBody
@@ -529,7 +839,8 @@ func (o *GetMarketsRegionIDHistoryNotFoundBody) UnmarshalBinary(b []byte) error 
 	return nil
 }
 
-/*GetMarketsRegionIDHistoryOKBodyItems0 get_markets_region_id_history_200_ok
+/*
+GetMarketsRegionIDHistoryOKBodyItems0 get_markets_region_id_history_200_ok
 //
 // 200 ok object
 swagger:model GetMarketsRegionIDHistoryOKBodyItems0
@@ -689,7 +1000,8 @@ func (o *GetMarketsRegionIDHistoryOKBodyItems0) UnmarshalBinary(b []byte) error 
 	return nil
 }
 
-/*GetMarketsRegionIDHistoryStatus520Body get_markets_region_id_history_error_520
+/*
+GetMarketsRegionIDHistoryStatus520Body get_markets_region_id_history_error_520
 //
 // Error 520
 swagger:model GetMarketsRegionIDHistoryStatus520Body
@@ -730,7 +1042,8 @@ func (o *GetMarketsRegionIDHistoryStatus520Body) UnmarshalBinary(b []byte) error
 	return nil
 }
 
-/*GetMarketsRegionIDHistoryUnprocessableEntityBody get_markets_region_id_history_unprocessable_entity
+/*
+GetMarketsRegionIDHistoryUnprocessableEntityBody get_markets_region_id_history_unprocessable_entity
 //
 // Unprocessable entity
 swagger:model GetMarketsRegionIDHistoryUnprocessableEntityBody

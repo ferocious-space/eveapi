@@ -75,7 +75,8 @@ func NewGetAlliancesOK() *GetAlliancesOK {
 	return &GetAlliancesOK{}
 }
 
-/* GetAlliancesOK describes a response with status code 200, with default header values.
+/*
+GetAlliancesOK describes a response with status code 200, with default header values.
 
 List of Alliance IDs
 */
@@ -100,9 +101,39 @@ type GetAlliancesOK struct {
 	Payload []*int32
 }
 
+// IsSuccess returns true when this get alliances o k response has a 2xx status code
+func (o *GetAlliancesOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get alliances o k response has a 3xx status code
+func (o *GetAlliancesOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get alliances o k response has a 4xx status code
+func (o *GetAlliancesOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get alliances o k response has a 5xx status code
+func (o *GetAlliancesOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get alliances o k response a status code equal to that given
+func (o *GetAlliancesOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetAlliancesOK) Error() string {
 	return fmt.Sprintf("[GET /v1/alliances/][%d] getAlliancesOK  %+v", 200, o.Payload)
 }
+
+func (o *GetAlliancesOK) String() string {
+	return fmt.Sprintf("[GET /v1/alliances/][%d] getAlliancesOK  %+v", 200, o.Payload)
+}
+
 func (o *GetAlliancesOK) GetPayload() []*int32 {
 	return o.Payload
 }
@@ -150,7 +181,8 @@ func NewGetAlliancesNotModified() *GetAlliancesNotModified {
 	return &GetAlliancesNotModified{}
 }
 
-/* GetAlliancesNotModified describes a response with status code 304, with default header values.
+/*
+GetAlliancesNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -173,7 +205,36 @@ type GetAlliancesNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get alliances not modified response has a 2xx status code
+func (o *GetAlliancesNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get alliances not modified response has a 3xx status code
+func (o *GetAlliancesNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get alliances not modified response has a 4xx status code
+func (o *GetAlliancesNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get alliances not modified response has a 5xx status code
+func (o *GetAlliancesNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get alliances not modified response a status code equal to that given
+func (o *GetAlliancesNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetAlliancesNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/alliances/][%d] getAlliancesNotModified ", 304)
+}
+
+func (o *GetAlliancesNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/alliances/][%d] getAlliancesNotModified ", 304)
 }
 
@@ -215,7 +276,8 @@ func NewGetAlliancesBadRequest() *GetAlliancesBadRequest {
 	return &GetAlliancesBadRequest{}
 }
 
-/* GetAlliancesBadRequest describes a response with status code 400, with default header values.
+/*
+GetAlliancesBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -223,9 +285,39 @@ type GetAlliancesBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get alliances bad request response has a 2xx status code
+func (o *GetAlliancesBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get alliances bad request response has a 3xx status code
+func (o *GetAlliancesBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get alliances bad request response has a 4xx status code
+func (o *GetAlliancesBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get alliances bad request response has a 5xx status code
+func (o *GetAlliancesBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get alliances bad request response a status code equal to that given
+func (o *GetAlliancesBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetAlliancesBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/alliances/][%d] getAlliancesBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetAlliancesBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/alliances/][%d] getAlliancesBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetAlliancesBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -247,7 +339,8 @@ func NewGetAlliancesEnhanceYourCalm() *GetAlliancesEnhanceYourCalm {
 	return &GetAlliancesEnhanceYourCalm{}
 }
 
-/* GetAlliancesEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetAlliancesEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -255,9 +348,39 @@ type GetAlliancesEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get alliances enhance your calm response has a 2xx status code
+func (o *GetAlliancesEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get alliances enhance your calm response has a 3xx status code
+func (o *GetAlliancesEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get alliances enhance your calm response has a 4xx status code
+func (o *GetAlliancesEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get alliances enhance your calm response has a 5xx status code
+func (o *GetAlliancesEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get alliances enhance your calm response a status code equal to that given
+func (o *GetAlliancesEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetAlliancesEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/alliances/][%d] getAlliancesEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetAlliancesEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/alliances/][%d] getAlliancesEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetAlliancesEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -279,7 +402,8 @@ func NewGetAlliancesInternalServerError() *GetAlliancesInternalServerError {
 	return &GetAlliancesInternalServerError{}
 }
 
-/* GetAlliancesInternalServerError describes a response with status code 500, with default header values.
+/*
+GetAlliancesInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -287,9 +411,39 @@ type GetAlliancesInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get alliances internal server error response has a 2xx status code
+func (o *GetAlliancesInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get alliances internal server error response has a 3xx status code
+func (o *GetAlliancesInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get alliances internal server error response has a 4xx status code
+func (o *GetAlliancesInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get alliances internal server error response has a 5xx status code
+func (o *GetAlliancesInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get alliances internal server error response a status code equal to that given
+func (o *GetAlliancesInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetAlliancesInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/alliances/][%d] getAlliancesInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetAlliancesInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/alliances/][%d] getAlliancesInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetAlliancesInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -311,7 +465,8 @@ func NewGetAlliancesServiceUnavailable() *GetAlliancesServiceUnavailable {
 	return &GetAlliancesServiceUnavailable{}
 }
 
-/* GetAlliancesServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetAlliancesServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -319,9 +474,39 @@ type GetAlliancesServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get alliances service unavailable response has a 2xx status code
+func (o *GetAlliancesServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get alliances service unavailable response has a 3xx status code
+func (o *GetAlliancesServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get alliances service unavailable response has a 4xx status code
+func (o *GetAlliancesServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get alliances service unavailable response has a 5xx status code
+func (o *GetAlliancesServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get alliances service unavailable response a status code equal to that given
+func (o *GetAlliancesServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetAlliancesServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/alliances/][%d] getAlliancesServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetAlliancesServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/alliances/][%d] getAlliancesServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetAlliancesServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -343,7 +528,8 @@ func NewGetAlliancesGatewayTimeout() *GetAlliancesGatewayTimeout {
 	return &GetAlliancesGatewayTimeout{}
 }
 
-/* GetAlliancesGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetAlliancesGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -351,9 +537,39 @@ type GetAlliancesGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get alliances gateway timeout response has a 2xx status code
+func (o *GetAlliancesGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get alliances gateway timeout response has a 3xx status code
+func (o *GetAlliancesGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get alliances gateway timeout response has a 4xx status code
+func (o *GetAlliancesGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get alliances gateway timeout response has a 5xx status code
+func (o *GetAlliancesGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get alliances gateway timeout response a status code equal to that given
+func (o *GetAlliancesGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetAlliancesGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/alliances/][%d] getAlliancesGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetAlliancesGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/alliances/][%d] getAlliancesGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetAlliancesGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }

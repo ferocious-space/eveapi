@@ -53,10 +53,12 @@ func NewGetContractsPublicRegionIDParamsWithHTTPClient(client *http.Client) *Get
 	}
 }
 
-/* GetContractsPublicRegionIDParams contains all the parameters to send to the API endpoint
-   for the get contracts public region id operation.
+/*
+GetContractsPublicRegionIDParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get contracts public region id operation.
+
+	Typically these are written to a http.Request.
 */
 type GetContractsPublicRegionIDParams struct {
 

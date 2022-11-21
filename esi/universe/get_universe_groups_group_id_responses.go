@@ -85,7 +85,8 @@ func NewGetUniverseGroupsGroupIDOK() *GetUniverseGroupsGroupIDOK {
 	return &GetUniverseGroupsGroupIDOK{}
 }
 
-/* GetUniverseGroupsGroupIDOK describes a response with status code 200, with default header values.
+/*
+GetUniverseGroupsGroupIDOK describes a response with status code 200, with default header values.
 
 Information about an item group
 */
@@ -114,9 +115,39 @@ type GetUniverseGroupsGroupIDOK struct {
 	Payload *GetUniverseGroupsGroupIDOKBody
 }
 
+// IsSuccess returns true when this get universe groups group Id o k response has a 2xx status code
+func (o *GetUniverseGroupsGroupIDOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get universe groups group Id o k response has a 3xx status code
+func (o *GetUniverseGroupsGroupIDOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe groups group Id o k response has a 4xx status code
+func (o *GetUniverseGroupsGroupIDOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe groups group Id o k response has a 5xx status code
+func (o *GetUniverseGroupsGroupIDOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe groups group Id o k response a status code equal to that given
+func (o *GetUniverseGroupsGroupIDOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetUniverseGroupsGroupIDOK) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/groups/{group_id}/][%d] getUniverseGroupsGroupIdOK  %+v", 200, o.Payload)
 }
+
+func (o *GetUniverseGroupsGroupIDOK) String() string {
+	return fmt.Sprintf("[GET /v1/universe/groups/{group_id}/][%d] getUniverseGroupsGroupIdOK  %+v", 200, o.Payload)
+}
+
 func (o *GetUniverseGroupsGroupIDOK) GetPayload() *GetUniverseGroupsGroupIDOKBody {
 	return o.Payload
 }
@@ -173,7 +204,8 @@ func NewGetUniverseGroupsGroupIDNotModified() *GetUniverseGroupsGroupIDNotModifi
 	return &GetUniverseGroupsGroupIDNotModified{}
 }
 
-/* GetUniverseGroupsGroupIDNotModified describes a response with status code 304, with default header values.
+/*
+GetUniverseGroupsGroupIDNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -196,7 +228,36 @@ type GetUniverseGroupsGroupIDNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get universe groups group Id not modified response has a 2xx status code
+func (o *GetUniverseGroupsGroupIDNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe groups group Id not modified response has a 3xx status code
+func (o *GetUniverseGroupsGroupIDNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get universe groups group Id not modified response has a 4xx status code
+func (o *GetUniverseGroupsGroupIDNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe groups group Id not modified response has a 5xx status code
+func (o *GetUniverseGroupsGroupIDNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe groups group Id not modified response a status code equal to that given
+func (o *GetUniverseGroupsGroupIDNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetUniverseGroupsGroupIDNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/universe/groups/{group_id}/][%d] getUniverseGroupsGroupIdNotModified ", 304)
+}
+
+func (o *GetUniverseGroupsGroupIDNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/universe/groups/{group_id}/][%d] getUniverseGroupsGroupIdNotModified ", 304)
 }
 
@@ -238,7 +299,8 @@ func NewGetUniverseGroupsGroupIDBadRequest() *GetUniverseGroupsGroupIDBadRequest
 	return &GetUniverseGroupsGroupIDBadRequest{}
 }
 
-/* GetUniverseGroupsGroupIDBadRequest describes a response with status code 400, with default header values.
+/*
+GetUniverseGroupsGroupIDBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -246,9 +308,39 @@ type GetUniverseGroupsGroupIDBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get universe groups group Id bad request response has a 2xx status code
+func (o *GetUniverseGroupsGroupIDBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe groups group Id bad request response has a 3xx status code
+func (o *GetUniverseGroupsGroupIDBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe groups group Id bad request response has a 4xx status code
+func (o *GetUniverseGroupsGroupIDBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe groups group Id bad request response has a 5xx status code
+func (o *GetUniverseGroupsGroupIDBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe groups group Id bad request response a status code equal to that given
+func (o *GetUniverseGroupsGroupIDBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetUniverseGroupsGroupIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/groups/{group_id}/][%d] getUniverseGroupsGroupIdBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetUniverseGroupsGroupIDBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/universe/groups/{group_id}/][%d] getUniverseGroupsGroupIdBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetUniverseGroupsGroupIDBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -270,7 +362,8 @@ func NewGetUniverseGroupsGroupIDNotFound() *GetUniverseGroupsGroupIDNotFound {
 	return &GetUniverseGroupsGroupIDNotFound{}
 }
 
-/* GetUniverseGroupsGroupIDNotFound describes a response with status code 404, with default header values.
+/*
+GetUniverseGroupsGroupIDNotFound describes a response with status code 404, with default header values.
 
 Group not found
 */
@@ -278,9 +371,39 @@ type GetUniverseGroupsGroupIDNotFound struct {
 	Payload *GetUniverseGroupsGroupIDNotFoundBody
 }
 
+// IsSuccess returns true when this get universe groups group Id not found response has a 2xx status code
+func (o *GetUniverseGroupsGroupIDNotFound) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe groups group Id not found response has a 3xx status code
+func (o *GetUniverseGroupsGroupIDNotFound) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe groups group Id not found response has a 4xx status code
+func (o *GetUniverseGroupsGroupIDNotFound) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe groups group Id not found response has a 5xx status code
+func (o *GetUniverseGroupsGroupIDNotFound) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe groups group Id not found response a status code equal to that given
+func (o *GetUniverseGroupsGroupIDNotFound) IsCode(code int) bool {
+	return code == 404
+}
+
 func (o *GetUniverseGroupsGroupIDNotFound) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/groups/{group_id}/][%d] getUniverseGroupsGroupIdNotFound  %+v", 404, o.Payload)
 }
+
+func (o *GetUniverseGroupsGroupIDNotFound) String() string {
+	return fmt.Sprintf("[GET /v1/universe/groups/{group_id}/][%d] getUniverseGroupsGroupIdNotFound  %+v", 404, o.Payload)
+}
+
 func (o *GetUniverseGroupsGroupIDNotFound) GetPayload() *GetUniverseGroupsGroupIDNotFoundBody {
 	return o.Payload
 }
@@ -302,7 +425,8 @@ func NewGetUniverseGroupsGroupIDEnhanceYourCalm() *GetUniverseGroupsGroupIDEnhan
 	return &GetUniverseGroupsGroupIDEnhanceYourCalm{}
 }
 
-/* GetUniverseGroupsGroupIDEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetUniverseGroupsGroupIDEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -310,9 +434,39 @@ type GetUniverseGroupsGroupIDEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get universe groups group Id enhance your calm response has a 2xx status code
+func (o *GetUniverseGroupsGroupIDEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe groups group Id enhance your calm response has a 3xx status code
+func (o *GetUniverseGroupsGroupIDEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe groups group Id enhance your calm response has a 4xx status code
+func (o *GetUniverseGroupsGroupIDEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe groups group Id enhance your calm response has a 5xx status code
+func (o *GetUniverseGroupsGroupIDEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe groups group Id enhance your calm response a status code equal to that given
+func (o *GetUniverseGroupsGroupIDEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetUniverseGroupsGroupIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/groups/{group_id}/][%d] getUniverseGroupsGroupIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetUniverseGroupsGroupIDEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/universe/groups/{group_id}/][%d] getUniverseGroupsGroupIdEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetUniverseGroupsGroupIDEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -334,7 +488,8 @@ func NewGetUniverseGroupsGroupIDInternalServerError() *GetUniverseGroupsGroupIDI
 	return &GetUniverseGroupsGroupIDInternalServerError{}
 }
 
-/* GetUniverseGroupsGroupIDInternalServerError describes a response with status code 500, with default header values.
+/*
+GetUniverseGroupsGroupIDInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -342,9 +497,39 @@ type GetUniverseGroupsGroupIDInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get universe groups group Id internal server error response has a 2xx status code
+func (o *GetUniverseGroupsGroupIDInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe groups group Id internal server error response has a 3xx status code
+func (o *GetUniverseGroupsGroupIDInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe groups group Id internal server error response has a 4xx status code
+func (o *GetUniverseGroupsGroupIDInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe groups group Id internal server error response has a 5xx status code
+func (o *GetUniverseGroupsGroupIDInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe groups group Id internal server error response a status code equal to that given
+func (o *GetUniverseGroupsGroupIDInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetUniverseGroupsGroupIDInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/groups/{group_id}/][%d] getUniverseGroupsGroupIdInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetUniverseGroupsGroupIDInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/universe/groups/{group_id}/][%d] getUniverseGroupsGroupIdInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetUniverseGroupsGroupIDInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -366,7 +551,8 @@ func NewGetUniverseGroupsGroupIDServiceUnavailable() *GetUniverseGroupsGroupIDSe
 	return &GetUniverseGroupsGroupIDServiceUnavailable{}
 }
 
-/* GetUniverseGroupsGroupIDServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetUniverseGroupsGroupIDServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -374,9 +560,39 @@ type GetUniverseGroupsGroupIDServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get universe groups group Id service unavailable response has a 2xx status code
+func (o *GetUniverseGroupsGroupIDServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe groups group Id service unavailable response has a 3xx status code
+func (o *GetUniverseGroupsGroupIDServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe groups group Id service unavailable response has a 4xx status code
+func (o *GetUniverseGroupsGroupIDServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe groups group Id service unavailable response has a 5xx status code
+func (o *GetUniverseGroupsGroupIDServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe groups group Id service unavailable response a status code equal to that given
+func (o *GetUniverseGroupsGroupIDServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetUniverseGroupsGroupIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/groups/{group_id}/][%d] getUniverseGroupsGroupIdServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetUniverseGroupsGroupIDServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/universe/groups/{group_id}/][%d] getUniverseGroupsGroupIdServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetUniverseGroupsGroupIDServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -398,7 +614,8 @@ func NewGetUniverseGroupsGroupIDGatewayTimeout() *GetUniverseGroupsGroupIDGatewa
 	return &GetUniverseGroupsGroupIDGatewayTimeout{}
 }
 
-/* GetUniverseGroupsGroupIDGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetUniverseGroupsGroupIDGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -406,9 +623,39 @@ type GetUniverseGroupsGroupIDGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get universe groups group Id gateway timeout response has a 2xx status code
+func (o *GetUniverseGroupsGroupIDGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe groups group Id gateway timeout response has a 3xx status code
+func (o *GetUniverseGroupsGroupIDGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe groups group Id gateway timeout response has a 4xx status code
+func (o *GetUniverseGroupsGroupIDGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe groups group Id gateway timeout response has a 5xx status code
+func (o *GetUniverseGroupsGroupIDGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe groups group Id gateway timeout response a status code equal to that given
+func (o *GetUniverseGroupsGroupIDGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetUniverseGroupsGroupIDGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/groups/{group_id}/][%d] getUniverseGroupsGroupIdGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetUniverseGroupsGroupIDGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/universe/groups/{group_id}/][%d] getUniverseGroupsGroupIdGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetUniverseGroupsGroupIDGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -425,7 +672,8 @@ func (o *GetUniverseGroupsGroupIDGatewayTimeout) readResponse(response runtime.C
 	return nil
 }
 
-/*GetUniverseGroupsGroupIDNotFoundBody get_universe_groups_group_id_not_found
+/*
+GetUniverseGroupsGroupIDNotFoundBody get_universe_groups_group_id_not_found
 //
 // Not found
 swagger:model GetUniverseGroupsGroupIDNotFoundBody
@@ -466,7 +714,8 @@ func (o *GetUniverseGroupsGroupIDNotFoundBody) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*GetUniverseGroupsGroupIDOKBody get_universe_groups_group_id_ok
+/*
+GetUniverseGroupsGroupIDOKBody get_universe_groups_group_id_ok
 //
 // 200 ok object
 swagger:model GetUniverseGroupsGroupIDOKBody

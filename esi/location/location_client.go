@@ -40,9 +40,9 @@ type ClientService interface {
 }
 
 /*
-  GetCharactersCharacterIDLocation gets character location
+	GetCharactersCharacterIDLocation gets character location
 
-  Information about the characters current location. Returns the current solar system id, and also the current station or structure ID if applicable
+	Information about the characters current location. Returns the current solar system id, and also the current station or structure ID if applicable
 
 ---
 
@@ -85,9 +85,9 @@ func (a *Client) GetCharactersCharacterIDLocation(params *GetCharactersCharacter
 }
 
 /*
-  GetCharactersCharacterIDOnline gets character online
+	GetCharactersCharacterIDOnline gets character online
 
-  Checks if the character is currently online
+	Checks if the character is currently online
 
 ---
 
@@ -130,9 +130,9 @@ func (a *Client) GetCharactersCharacterIDOnline(params *GetCharactersCharacterID
 }
 
 /*
-  GetCharactersCharacterIDShip gets current ship
+	GetCharactersCharacterIDShip gets current ship
 
-  Get the current ship type, name and id
+	Get the current ship type, name and id
 
 ---
 

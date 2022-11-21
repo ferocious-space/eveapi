@@ -53,10 +53,12 @@ func NewDeleteCharactersCharacterIDFittingsFittingIDParamsWithHTTPClient(client 
 	}
 }
 
-/* DeleteCharactersCharacterIDFittingsFittingIDParams contains all the parameters to send to the API endpoint
-   for the delete characters character id fittings fitting id operation.
+/*
+DeleteCharactersCharacterIDFittingsFittingIDParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the delete characters character id fittings fitting id operation.
+
+	Typically these are written to a http.Request.
 */
 type DeleteCharactersCharacterIDFittingsFittingIDParams struct {
 

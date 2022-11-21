@@ -53,10 +53,12 @@ func NewPostUIOpenwindowContractParamsWithHTTPClient(client *http.Client) *PostU
 	}
 }
 
-/* PostUIOpenwindowContractParams contains all the parameters to send to the API endpoint
-   for the post ui openwindow contract operation.
+/*
+PostUIOpenwindowContractParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the post ui openwindow contract operation.
+
+	Typically these are written to a http.Request.
 */
 type PostUIOpenwindowContractParams struct {
 

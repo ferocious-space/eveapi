@@ -53,10 +53,12 @@ func NewGetCharactersCharacterIDPlanetsParamsWithHTTPClient(client *http.Client)
 	}
 }
 
-/* GetCharactersCharacterIDPlanetsParams contains all the parameters to send to the API endpoint
-   for the get characters character id planets operation.
+/*
+GetCharactersCharacterIDPlanetsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get characters character id planets operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCharactersCharacterIDPlanetsParams struct {
 

@@ -53,10 +53,12 @@ func NewGetUniverseTypesTypeIDParamsWithHTTPClient(client *http.Client) *GetUniv
 	}
 }
 
-/* GetUniverseTypesTypeIDParams contains all the parameters to send to the API endpoint
-   for the get universe types type id operation.
+/*
+GetUniverseTypesTypeIDParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get universe types type id operation.
+
+	Typically these are written to a http.Request.
 */
 type GetUniverseTypesTypeIDParams struct {
 

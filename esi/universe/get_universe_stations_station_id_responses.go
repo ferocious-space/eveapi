@@ -87,7 +87,8 @@ func NewGetUniverseStationsStationIDOK() *GetUniverseStationsStationIDOK {
 	return &GetUniverseStationsStationIDOK{}
 }
 
-/* GetUniverseStationsStationIDOK describes a response with status code 200, with default header values.
+/*
+GetUniverseStationsStationIDOK describes a response with status code 200, with default header values.
 
 Information about a station
 */
@@ -112,9 +113,39 @@ type GetUniverseStationsStationIDOK struct {
 	Payload *GetUniverseStationsStationIDOKBody
 }
 
+// IsSuccess returns true when this get universe stations station Id o k response has a 2xx status code
+func (o *GetUniverseStationsStationIDOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get universe stations station Id o k response has a 3xx status code
+func (o *GetUniverseStationsStationIDOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe stations station Id o k response has a 4xx status code
+func (o *GetUniverseStationsStationIDOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe stations station Id o k response has a 5xx status code
+func (o *GetUniverseStationsStationIDOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe stations station Id o k response a status code equal to that given
+func (o *GetUniverseStationsStationIDOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetUniverseStationsStationIDOK) Error() string {
 	return fmt.Sprintf("[GET /v2/universe/stations/{station_id}/][%d] getUniverseStationsStationIdOK  %+v", 200, o.Payload)
 }
+
+func (o *GetUniverseStationsStationIDOK) String() string {
+	return fmt.Sprintf("[GET /v2/universe/stations/{station_id}/][%d] getUniverseStationsStationIdOK  %+v", 200, o.Payload)
+}
+
 func (o *GetUniverseStationsStationIDOK) GetPayload() *GetUniverseStationsStationIDOKBody {
 	return o.Payload
 }
@@ -164,7 +195,8 @@ func NewGetUniverseStationsStationIDNotModified() *GetUniverseStationsStationIDN
 	return &GetUniverseStationsStationIDNotModified{}
 }
 
-/* GetUniverseStationsStationIDNotModified describes a response with status code 304, with default header values.
+/*
+GetUniverseStationsStationIDNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -187,7 +219,36 @@ type GetUniverseStationsStationIDNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get universe stations station Id not modified response has a 2xx status code
+func (o *GetUniverseStationsStationIDNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe stations station Id not modified response has a 3xx status code
+func (o *GetUniverseStationsStationIDNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get universe stations station Id not modified response has a 4xx status code
+func (o *GetUniverseStationsStationIDNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe stations station Id not modified response has a 5xx status code
+func (o *GetUniverseStationsStationIDNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe stations station Id not modified response a status code equal to that given
+func (o *GetUniverseStationsStationIDNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetUniverseStationsStationIDNotModified) Error() string {
+	return fmt.Sprintf("[GET /v2/universe/stations/{station_id}/][%d] getUniverseStationsStationIdNotModified ", 304)
+}
+
+func (o *GetUniverseStationsStationIDNotModified) String() string {
 	return fmt.Sprintf("[GET /v2/universe/stations/{station_id}/][%d] getUniverseStationsStationIdNotModified ", 304)
 }
 
@@ -229,7 +290,8 @@ func NewGetUniverseStationsStationIDBadRequest() *GetUniverseStationsStationIDBa
 	return &GetUniverseStationsStationIDBadRequest{}
 }
 
-/* GetUniverseStationsStationIDBadRequest describes a response with status code 400, with default header values.
+/*
+GetUniverseStationsStationIDBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -237,9 +299,39 @@ type GetUniverseStationsStationIDBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get universe stations station Id bad request response has a 2xx status code
+func (o *GetUniverseStationsStationIDBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe stations station Id bad request response has a 3xx status code
+func (o *GetUniverseStationsStationIDBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe stations station Id bad request response has a 4xx status code
+func (o *GetUniverseStationsStationIDBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe stations station Id bad request response has a 5xx status code
+func (o *GetUniverseStationsStationIDBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe stations station Id bad request response a status code equal to that given
+func (o *GetUniverseStationsStationIDBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetUniverseStationsStationIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v2/universe/stations/{station_id}/][%d] getUniverseStationsStationIdBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetUniverseStationsStationIDBadRequest) String() string {
+	return fmt.Sprintf("[GET /v2/universe/stations/{station_id}/][%d] getUniverseStationsStationIdBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetUniverseStationsStationIDBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -261,7 +353,8 @@ func NewGetUniverseStationsStationIDNotFound() *GetUniverseStationsStationIDNotF
 	return &GetUniverseStationsStationIDNotFound{}
 }
 
-/* GetUniverseStationsStationIDNotFound describes a response with status code 404, with default header values.
+/*
+GetUniverseStationsStationIDNotFound describes a response with status code 404, with default header values.
 
 Station not found
 */
@@ -269,9 +362,39 @@ type GetUniverseStationsStationIDNotFound struct {
 	Payload *GetUniverseStationsStationIDNotFoundBody
 }
 
+// IsSuccess returns true when this get universe stations station Id not found response has a 2xx status code
+func (o *GetUniverseStationsStationIDNotFound) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe stations station Id not found response has a 3xx status code
+func (o *GetUniverseStationsStationIDNotFound) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe stations station Id not found response has a 4xx status code
+func (o *GetUniverseStationsStationIDNotFound) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe stations station Id not found response has a 5xx status code
+func (o *GetUniverseStationsStationIDNotFound) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe stations station Id not found response a status code equal to that given
+func (o *GetUniverseStationsStationIDNotFound) IsCode(code int) bool {
+	return code == 404
+}
+
 func (o *GetUniverseStationsStationIDNotFound) Error() string {
 	return fmt.Sprintf("[GET /v2/universe/stations/{station_id}/][%d] getUniverseStationsStationIdNotFound  %+v", 404, o.Payload)
 }
+
+func (o *GetUniverseStationsStationIDNotFound) String() string {
+	return fmt.Sprintf("[GET /v2/universe/stations/{station_id}/][%d] getUniverseStationsStationIdNotFound  %+v", 404, o.Payload)
+}
+
 func (o *GetUniverseStationsStationIDNotFound) GetPayload() *GetUniverseStationsStationIDNotFoundBody {
 	return o.Payload
 }
@@ -293,7 +416,8 @@ func NewGetUniverseStationsStationIDEnhanceYourCalm() *GetUniverseStationsStatio
 	return &GetUniverseStationsStationIDEnhanceYourCalm{}
 }
 
-/* GetUniverseStationsStationIDEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetUniverseStationsStationIDEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -301,9 +425,39 @@ type GetUniverseStationsStationIDEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get universe stations station Id enhance your calm response has a 2xx status code
+func (o *GetUniverseStationsStationIDEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe stations station Id enhance your calm response has a 3xx status code
+func (o *GetUniverseStationsStationIDEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe stations station Id enhance your calm response has a 4xx status code
+func (o *GetUniverseStationsStationIDEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe stations station Id enhance your calm response has a 5xx status code
+func (o *GetUniverseStationsStationIDEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe stations station Id enhance your calm response a status code equal to that given
+func (o *GetUniverseStationsStationIDEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetUniverseStationsStationIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v2/universe/stations/{station_id}/][%d] getUniverseStationsStationIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetUniverseStationsStationIDEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v2/universe/stations/{station_id}/][%d] getUniverseStationsStationIdEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetUniverseStationsStationIDEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -325,7 +479,8 @@ func NewGetUniverseStationsStationIDInternalServerError() *GetUniverseStationsSt
 	return &GetUniverseStationsStationIDInternalServerError{}
 }
 
-/* GetUniverseStationsStationIDInternalServerError describes a response with status code 500, with default header values.
+/*
+GetUniverseStationsStationIDInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -333,9 +488,39 @@ type GetUniverseStationsStationIDInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get universe stations station Id internal server error response has a 2xx status code
+func (o *GetUniverseStationsStationIDInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe stations station Id internal server error response has a 3xx status code
+func (o *GetUniverseStationsStationIDInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe stations station Id internal server error response has a 4xx status code
+func (o *GetUniverseStationsStationIDInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe stations station Id internal server error response has a 5xx status code
+func (o *GetUniverseStationsStationIDInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe stations station Id internal server error response a status code equal to that given
+func (o *GetUniverseStationsStationIDInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetUniverseStationsStationIDInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v2/universe/stations/{station_id}/][%d] getUniverseStationsStationIdInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetUniverseStationsStationIDInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v2/universe/stations/{station_id}/][%d] getUniverseStationsStationIdInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetUniverseStationsStationIDInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -357,7 +542,8 @@ func NewGetUniverseStationsStationIDServiceUnavailable() *GetUniverseStationsSta
 	return &GetUniverseStationsStationIDServiceUnavailable{}
 }
 
-/* GetUniverseStationsStationIDServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetUniverseStationsStationIDServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -365,9 +551,39 @@ type GetUniverseStationsStationIDServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get universe stations station Id service unavailable response has a 2xx status code
+func (o *GetUniverseStationsStationIDServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe stations station Id service unavailable response has a 3xx status code
+func (o *GetUniverseStationsStationIDServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe stations station Id service unavailable response has a 4xx status code
+func (o *GetUniverseStationsStationIDServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe stations station Id service unavailable response has a 5xx status code
+func (o *GetUniverseStationsStationIDServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe stations station Id service unavailable response a status code equal to that given
+func (o *GetUniverseStationsStationIDServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetUniverseStationsStationIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v2/universe/stations/{station_id}/][%d] getUniverseStationsStationIdServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetUniverseStationsStationIDServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v2/universe/stations/{station_id}/][%d] getUniverseStationsStationIdServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetUniverseStationsStationIDServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -389,7 +605,8 @@ func NewGetUniverseStationsStationIDGatewayTimeout() *GetUniverseStationsStation
 	return &GetUniverseStationsStationIDGatewayTimeout{}
 }
 
-/* GetUniverseStationsStationIDGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetUniverseStationsStationIDGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -397,9 +614,39 @@ type GetUniverseStationsStationIDGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get universe stations station Id gateway timeout response has a 2xx status code
+func (o *GetUniverseStationsStationIDGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe stations station Id gateway timeout response has a 3xx status code
+func (o *GetUniverseStationsStationIDGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe stations station Id gateway timeout response has a 4xx status code
+func (o *GetUniverseStationsStationIDGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe stations station Id gateway timeout response has a 5xx status code
+func (o *GetUniverseStationsStationIDGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe stations station Id gateway timeout response a status code equal to that given
+func (o *GetUniverseStationsStationIDGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetUniverseStationsStationIDGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v2/universe/stations/{station_id}/][%d] getUniverseStationsStationIdGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetUniverseStationsStationIDGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v2/universe/stations/{station_id}/][%d] getUniverseStationsStationIdGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetUniverseStationsStationIDGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -416,7 +663,8 @@ func (o *GetUniverseStationsStationIDGatewayTimeout) readResponse(response runti
 	return nil
 }
 
-/*GetUniverseStationsStationIDNotFoundBody get_universe_stations_station_id_not_found
+/*
+GetUniverseStationsStationIDNotFoundBody get_universe_stations_station_id_not_found
 //
 // Not found
 swagger:model GetUniverseStationsStationIDNotFoundBody
@@ -457,7 +705,8 @@ func (o *GetUniverseStationsStationIDNotFoundBody) UnmarshalBinary(b []byte) err
 	return nil
 }
 
-/*GetUniverseStationsStationIDOKBody get_universe_stations_station_id_ok
+/*
+GetUniverseStationsStationIDOKBody get_universe_stations_station_id_ok
 //
 // 200 ok object
 swagger:model GetUniverseStationsStationIDOKBody
@@ -767,7 +1016,8 @@ func (o *GetUniverseStationsStationIDOKBody) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*GetUniverseStationsStationIDOKBodyPosition get_universe_stations_station_id_position
+/*
+GetUniverseStationsStationIDOKBodyPosition get_universe_stations_station_id_position
 //
 // position object
 swagger:model GetUniverseStationsStationIDOKBodyPosition

@@ -87,7 +87,8 @@ func NewPostCharactersCharacterIDFittingsCreated() *PostCharactersCharacterIDFit
 	return &PostCharactersCharacterIDFittingsCreated{}
 }
 
-/* PostCharactersCharacterIDFittingsCreated describes a response with status code 201, with default header values.
+/*
+PostCharactersCharacterIDFittingsCreated describes a response with status code 201, with default header values.
 
 A list of fittings
 */
@@ -95,9 +96,39 @@ type PostCharactersCharacterIDFittingsCreated struct {
 	Payload *PostCharactersCharacterIDFittingsCreatedBody
 }
 
+// IsSuccess returns true when this post characters character Id fittings created response has a 2xx status code
+func (o *PostCharactersCharacterIDFittingsCreated) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this post characters character Id fittings created response has a 3xx status code
+func (o *PostCharactersCharacterIDFittingsCreated) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id fittings created response has a 4xx status code
+func (o *PostCharactersCharacterIDFittingsCreated) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post characters character Id fittings created response has a 5xx status code
+func (o *PostCharactersCharacterIDFittingsCreated) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post characters character Id fittings created response a status code equal to that given
+func (o *PostCharactersCharacterIDFittingsCreated) IsCode(code int) bool {
+	return code == 201
+}
+
 func (o *PostCharactersCharacterIDFittingsCreated) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/fittings/][%d] postCharactersCharacterIdFittingsCreated  %+v", 201, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDFittingsCreated) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/fittings/][%d] postCharactersCharacterIdFittingsCreated  %+v", 201, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDFittingsCreated) GetPayload() *PostCharactersCharacterIDFittingsCreatedBody {
 	return o.Payload
 }
@@ -119,7 +150,8 @@ func NewPostCharactersCharacterIDFittingsBadRequest() *PostCharactersCharacterID
 	return &PostCharactersCharacterIDFittingsBadRequest{}
 }
 
-/* PostCharactersCharacterIDFittingsBadRequest describes a response with status code 400, with default header values.
+/*
+PostCharactersCharacterIDFittingsBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -127,9 +159,39 @@ type PostCharactersCharacterIDFittingsBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this post characters character Id fittings bad request response has a 2xx status code
+func (o *PostCharactersCharacterIDFittingsBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id fittings bad request response has a 3xx status code
+func (o *PostCharactersCharacterIDFittingsBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id fittings bad request response has a 4xx status code
+func (o *PostCharactersCharacterIDFittingsBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post characters character Id fittings bad request response has a 5xx status code
+func (o *PostCharactersCharacterIDFittingsBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post characters character Id fittings bad request response a status code equal to that given
+func (o *PostCharactersCharacterIDFittingsBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *PostCharactersCharacterIDFittingsBadRequest) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/fittings/][%d] postCharactersCharacterIdFittingsBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDFittingsBadRequest) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/fittings/][%d] postCharactersCharacterIdFittingsBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDFittingsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -151,7 +213,8 @@ func NewPostCharactersCharacterIDFittingsUnauthorized() *PostCharactersCharacter
 	return &PostCharactersCharacterIDFittingsUnauthorized{}
 }
 
-/* PostCharactersCharacterIDFittingsUnauthorized describes a response with status code 401, with default header values.
+/*
+PostCharactersCharacterIDFittingsUnauthorized describes a response with status code 401, with default header values.
 
 Unauthorized
 */
@@ -159,9 +222,39 @@ type PostCharactersCharacterIDFittingsUnauthorized struct {
 	Payload *models.Unauthorized
 }
 
+// IsSuccess returns true when this post characters character Id fittings unauthorized response has a 2xx status code
+func (o *PostCharactersCharacterIDFittingsUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id fittings unauthorized response has a 3xx status code
+func (o *PostCharactersCharacterIDFittingsUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id fittings unauthorized response has a 4xx status code
+func (o *PostCharactersCharacterIDFittingsUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post characters character Id fittings unauthorized response has a 5xx status code
+func (o *PostCharactersCharacterIDFittingsUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post characters character Id fittings unauthorized response a status code equal to that given
+func (o *PostCharactersCharacterIDFittingsUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *PostCharactersCharacterIDFittingsUnauthorized) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/fittings/][%d] postCharactersCharacterIdFittingsUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDFittingsUnauthorized) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/fittings/][%d] postCharactersCharacterIdFittingsUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDFittingsUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
 }
@@ -183,7 +276,8 @@ func NewPostCharactersCharacterIDFittingsForbidden() *PostCharactersCharacterIDF
 	return &PostCharactersCharacterIDFittingsForbidden{}
 }
 
-/* PostCharactersCharacterIDFittingsForbidden describes a response with status code 403, with default header values.
+/*
+PostCharactersCharacterIDFittingsForbidden describes a response with status code 403, with default header values.
 
 Forbidden
 */
@@ -191,9 +285,39 @@ type PostCharactersCharacterIDFittingsForbidden struct {
 	Payload *models.Forbidden
 }
 
+// IsSuccess returns true when this post characters character Id fittings forbidden response has a 2xx status code
+func (o *PostCharactersCharacterIDFittingsForbidden) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id fittings forbidden response has a 3xx status code
+func (o *PostCharactersCharacterIDFittingsForbidden) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id fittings forbidden response has a 4xx status code
+func (o *PostCharactersCharacterIDFittingsForbidden) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post characters character Id fittings forbidden response has a 5xx status code
+func (o *PostCharactersCharacterIDFittingsForbidden) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post characters character Id fittings forbidden response a status code equal to that given
+func (o *PostCharactersCharacterIDFittingsForbidden) IsCode(code int) bool {
+	return code == 403
+}
+
 func (o *PostCharactersCharacterIDFittingsForbidden) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/fittings/][%d] postCharactersCharacterIdFittingsForbidden  %+v", 403, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDFittingsForbidden) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/fittings/][%d] postCharactersCharacterIdFittingsForbidden  %+v", 403, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDFittingsForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
 }
@@ -215,7 +339,8 @@ func NewPostCharactersCharacterIDFittingsEnhanceYourCalm() *PostCharactersCharac
 	return &PostCharactersCharacterIDFittingsEnhanceYourCalm{}
 }
 
-/* PostCharactersCharacterIDFittingsEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+PostCharactersCharacterIDFittingsEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -223,9 +348,39 @@ type PostCharactersCharacterIDFittingsEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this post characters character Id fittings enhance your calm response has a 2xx status code
+func (o *PostCharactersCharacterIDFittingsEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id fittings enhance your calm response has a 3xx status code
+func (o *PostCharactersCharacterIDFittingsEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id fittings enhance your calm response has a 4xx status code
+func (o *PostCharactersCharacterIDFittingsEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post characters character Id fittings enhance your calm response has a 5xx status code
+func (o *PostCharactersCharacterIDFittingsEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post characters character Id fittings enhance your calm response a status code equal to that given
+func (o *PostCharactersCharacterIDFittingsEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *PostCharactersCharacterIDFittingsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/fittings/][%d] postCharactersCharacterIdFittingsEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDFittingsEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/fittings/][%d] postCharactersCharacterIdFittingsEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDFittingsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -247,7 +402,8 @@ func NewPostCharactersCharacterIDFittingsInternalServerError() *PostCharactersCh
 	return &PostCharactersCharacterIDFittingsInternalServerError{}
 }
 
-/* PostCharactersCharacterIDFittingsInternalServerError describes a response with status code 500, with default header values.
+/*
+PostCharactersCharacterIDFittingsInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -255,9 +411,39 @@ type PostCharactersCharacterIDFittingsInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this post characters character Id fittings internal server error response has a 2xx status code
+func (o *PostCharactersCharacterIDFittingsInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id fittings internal server error response has a 3xx status code
+func (o *PostCharactersCharacterIDFittingsInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id fittings internal server error response has a 4xx status code
+func (o *PostCharactersCharacterIDFittingsInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post characters character Id fittings internal server error response has a 5xx status code
+func (o *PostCharactersCharacterIDFittingsInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post characters character Id fittings internal server error response a status code equal to that given
+func (o *PostCharactersCharacterIDFittingsInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *PostCharactersCharacterIDFittingsInternalServerError) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/fittings/][%d] postCharactersCharacterIdFittingsInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDFittingsInternalServerError) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/fittings/][%d] postCharactersCharacterIdFittingsInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDFittingsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -279,7 +465,8 @@ func NewPostCharactersCharacterIDFittingsServiceUnavailable() *PostCharactersCha
 	return &PostCharactersCharacterIDFittingsServiceUnavailable{}
 }
 
-/* PostCharactersCharacterIDFittingsServiceUnavailable describes a response with status code 503, with default header values.
+/*
+PostCharactersCharacterIDFittingsServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -287,9 +474,39 @@ type PostCharactersCharacterIDFittingsServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this post characters character Id fittings service unavailable response has a 2xx status code
+func (o *PostCharactersCharacterIDFittingsServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id fittings service unavailable response has a 3xx status code
+func (o *PostCharactersCharacterIDFittingsServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id fittings service unavailable response has a 4xx status code
+func (o *PostCharactersCharacterIDFittingsServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post characters character Id fittings service unavailable response has a 5xx status code
+func (o *PostCharactersCharacterIDFittingsServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post characters character Id fittings service unavailable response a status code equal to that given
+func (o *PostCharactersCharacterIDFittingsServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *PostCharactersCharacterIDFittingsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/fittings/][%d] postCharactersCharacterIdFittingsServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDFittingsServiceUnavailable) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/fittings/][%d] postCharactersCharacterIdFittingsServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDFittingsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -311,7 +528,8 @@ func NewPostCharactersCharacterIDFittingsGatewayTimeout() *PostCharactersCharact
 	return &PostCharactersCharacterIDFittingsGatewayTimeout{}
 }
 
-/* PostCharactersCharacterIDFittingsGatewayTimeout describes a response with status code 504, with default header values.
+/*
+PostCharactersCharacterIDFittingsGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -319,9 +537,39 @@ type PostCharactersCharacterIDFittingsGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this post characters character Id fittings gateway timeout response has a 2xx status code
+func (o *PostCharactersCharacterIDFittingsGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id fittings gateway timeout response has a 3xx status code
+func (o *PostCharactersCharacterIDFittingsGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id fittings gateway timeout response has a 4xx status code
+func (o *PostCharactersCharacterIDFittingsGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post characters character Id fittings gateway timeout response has a 5xx status code
+func (o *PostCharactersCharacterIDFittingsGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post characters character Id fittings gateway timeout response a status code equal to that given
+func (o *PostCharactersCharacterIDFittingsGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *PostCharactersCharacterIDFittingsGatewayTimeout) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/fittings/][%d] postCharactersCharacterIdFittingsGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDFittingsGatewayTimeout) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/fittings/][%d] postCharactersCharacterIdFittingsGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDFittingsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -338,7 +586,8 @@ func (o *PostCharactersCharacterIDFittingsGatewayTimeout) readResponse(response 
 	return nil
 }
 
-/*PostCharactersCharacterIDFittingsBody post_characters_character_id_fittings_fitting
+/*
+PostCharactersCharacterIDFittingsBody post_characters_character_id_fittings_fitting
 //
 // fitting object
 swagger:model PostCharactersCharacterIDFittingsBody
@@ -357,7 +606,7 @@ type PostCharactersCharacterIDFittingsBody struct {
 	//
 	// items array
 	// Required: true
-	// Max Items: 255
+	// Max Items: 512
 	// Min Items: 1
 	Items []*PostCharactersCharacterIDFittingsParamsBodyItemsItems0 `json:"items"`
 
@@ -431,7 +680,7 @@ func (o *PostCharactersCharacterIDFittingsBody) validateItems(formats strfmt.Reg
 		return err
 	}
 
-	if err := validate.MaxItems("fitting"+"."+"items", "body", iItemsSize, 255); err != nil {
+	if err := validate.MaxItems("fitting"+"."+"items", "body", iItemsSize, 512); err != nil {
 		return err
 	}
 
@@ -534,7 +783,8 @@ func (o *PostCharactersCharacterIDFittingsBody) UnmarshalBinary(b []byte) error 
 	return nil
 }
 
-/*PostCharactersCharacterIDFittingsCreatedBody post_characters_character_id_fittings_created
+/*
+PostCharactersCharacterIDFittingsCreatedBody post_characters_character_id_fittings_created
 //
 // 201 created object
 swagger:model PostCharactersCharacterIDFittingsCreatedBody
@@ -594,7 +844,8 @@ func (o *PostCharactersCharacterIDFittingsCreatedBody) UnmarshalBinary(b []byte)
 	return nil
 }
 
-/*PostCharactersCharacterIDFittingsParamsBodyItemsItems0 post_characters_character_id_fittings_item
+/*
+PostCharactersCharacterIDFittingsParamsBodyItemsItems0 post_characters_character_id_fittings_item
 //
 // item object
 swagger:model PostCharactersCharacterIDFittingsParamsBodyItemsItems0

@@ -53,10 +53,12 @@ func NewGetUniverseStarsStarIDParamsWithHTTPClient(client *http.Client) *GetUniv
 	}
 }
 
-/* GetUniverseStarsStarIDParams contains all the parameters to send to the API endpoint
-   for the get universe stars star id operation.
+/*
+GetUniverseStarsStarIDParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get universe stars star id operation.
+
+	Typically these are written to a http.Request.
 */
 type GetUniverseStarsStarIDParams struct {
 

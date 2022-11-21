@@ -53,10 +53,12 @@ func NewGetUniverseConstellationsConstellationIDParamsWithHTTPClient(client *htt
 	}
 }
 
-/* GetUniverseConstellationsConstellationIDParams contains all the parameters to send to the API endpoint
-   for the get universe constellations constellation id operation.
+/*
+GetUniverseConstellationsConstellationIDParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get universe constellations constellation id operation.
+
+	Typically these are written to a http.Request.
 */
 type GetUniverseConstellationsConstellationIDParams struct {
 

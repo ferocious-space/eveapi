@@ -53,10 +53,12 @@ func NewGetCharactersCharacterIDAttributesParamsWithHTTPClient(client *http.Clie
 	}
 }
 
-/* GetCharactersCharacterIDAttributesParams contains all the parameters to send to the API endpoint
-   for the get characters character id attributes operation.
+/*
+GetCharactersCharacterIDAttributesParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get characters character id attributes operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCharactersCharacterIDAttributesParams struct {
 

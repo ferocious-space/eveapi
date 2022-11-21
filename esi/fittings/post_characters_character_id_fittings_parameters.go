@@ -53,10 +53,12 @@ func NewPostCharactersCharacterIDFittingsParamsWithHTTPClient(client *http.Clien
 	}
 }
 
-/* PostCharactersCharacterIDFittingsParams contains all the parameters to send to the API endpoint
-   for the post characters character id fittings operation.
+/*
+PostCharactersCharacterIDFittingsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the post characters character id fittings operation.
+
+	Typically these are written to a http.Request.
 */
 type PostCharactersCharacterIDFittingsParams struct {
 

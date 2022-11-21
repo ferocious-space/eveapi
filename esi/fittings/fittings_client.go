@@ -40,12 +40,11 @@ type ClientService interface {
 }
 
 /*
-  DeleteCharactersCharacterIDFittingsFittingID deletes fitting
+	DeleteCharactersCharacterIDFittingsFittingID deletes fitting
 
-  Delete a fitting from a character
+	Delete a fitting from a character
 
 ---
-
 */
 func (a *Client) DeleteCharactersCharacterIDFittingsFittingID(params *DeleteCharactersCharacterIDFittingsFittingIDParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*DeleteCharactersCharacterIDFittingsFittingIDNoContent, error) {
 	// TODO: Validate the params before sending
@@ -84,9 +83,9 @@ func (a *Client) DeleteCharactersCharacterIDFittingsFittingID(params *DeleteChar
 }
 
 /*
-  GetCharactersCharacterIDFittings gets fittings
+	GetCharactersCharacterIDFittings gets fittings
 
-  Return fittings of a character
+	Return fittings of a character
 
 ---
 
@@ -129,12 +128,11 @@ func (a *Client) GetCharactersCharacterIDFittings(params *GetCharactersCharacter
 }
 
 /*
-  PostCharactersCharacterIDFittings creates fitting
+	PostCharactersCharacterIDFittings creates fitting
 
-  Save a new fitting for a character
+	Save a new fitting for a character
 
 ---
-
 */
 func (a *Client) PostCharactersCharacterIDFittings(params *PostCharactersCharacterIDFittingsParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*PostCharactersCharacterIDFittingsCreated, error) {
 	// TODO: Validate the params before sending

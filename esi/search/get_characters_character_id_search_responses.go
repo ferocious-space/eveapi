@@ -91,7 +91,8 @@ func NewGetCharactersCharacterIDSearchOK() *GetCharactersCharacterIDSearchOK {
 	return &GetCharactersCharacterIDSearchOK{}
 }
 
-/* GetCharactersCharacterIDSearchOK describes a response with status code 200, with default header values.
+/*
+GetCharactersCharacterIDSearchOK describes a response with status code 200, with default header values.
 
 A list of search results
 */
@@ -120,9 +121,39 @@ type GetCharactersCharacterIDSearchOK struct {
 	Payload *GetCharactersCharacterIDSearchOKBody
 }
 
+// IsSuccess returns true when this get characters character Id search o k response has a 2xx status code
+func (o *GetCharactersCharacterIDSearchOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get characters character Id search o k response has a 3xx status code
+func (o *GetCharactersCharacterIDSearchOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id search o k response has a 4xx status code
+func (o *GetCharactersCharacterIDSearchOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id search o k response has a 5xx status code
+func (o *GetCharactersCharacterIDSearchOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id search o k response a status code equal to that given
+func (o *GetCharactersCharacterIDSearchOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetCharactersCharacterIDSearchOK) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/search/][%d] getCharactersCharacterIdSearchOK  %+v", 200, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDSearchOK) String() string {
+	return fmt.Sprintf("[GET /v3/characters/{character_id}/search/][%d] getCharactersCharacterIdSearchOK  %+v", 200, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDSearchOK) GetPayload() *GetCharactersCharacterIDSearchOKBody {
 	return o.Payload
 }
@@ -179,7 +210,8 @@ func NewGetCharactersCharacterIDSearchNotModified() *GetCharactersCharacterIDSea
 	return &GetCharactersCharacterIDSearchNotModified{}
 }
 
-/* GetCharactersCharacterIDSearchNotModified describes a response with status code 304, with default header values.
+/*
+GetCharactersCharacterIDSearchNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -202,7 +234,36 @@ type GetCharactersCharacterIDSearchNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get characters character Id search not modified response has a 2xx status code
+func (o *GetCharactersCharacterIDSearchNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id search not modified response has a 3xx status code
+func (o *GetCharactersCharacterIDSearchNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get characters character Id search not modified response has a 4xx status code
+func (o *GetCharactersCharacterIDSearchNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id search not modified response has a 5xx status code
+func (o *GetCharactersCharacterIDSearchNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id search not modified response a status code equal to that given
+func (o *GetCharactersCharacterIDSearchNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetCharactersCharacterIDSearchNotModified) Error() string {
+	return fmt.Sprintf("[GET /v3/characters/{character_id}/search/][%d] getCharactersCharacterIdSearchNotModified ", 304)
+}
+
+func (o *GetCharactersCharacterIDSearchNotModified) String() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/search/][%d] getCharactersCharacterIdSearchNotModified ", 304)
 }
 
@@ -244,7 +305,8 @@ func NewGetCharactersCharacterIDSearchBadRequest() *GetCharactersCharacterIDSear
 	return &GetCharactersCharacterIDSearchBadRequest{}
 }
 
-/* GetCharactersCharacterIDSearchBadRequest describes a response with status code 400, with default header values.
+/*
+GetCharactersCharacterIDSearchBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -252,9 +314,39 @@ type GetCharactersCharacterIDSearchBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get characters character Id search bad request response has a 2xx status code
+func (o *GetCharactersCharacterIDSearchBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id search bad request response has a 3xx status code
+func (o *GetCharactersCharacterIDSearchBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id search bad request response has a 4xx status code
+func (o *GetCharactersCharacterIDSearchBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id search bad request response has a 5xx status code
+func (o *GetCharactersCharacterIDSearchBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id search bad request response a status code equal to that given
+func (o *GetCharactersCharacterIDSearchBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetCharactersCharacterIDSearchBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/search/][%d] getCharactersCharacterIdSearchBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDSearchBadRequest) String() string {
+	return fmt.Sprintf("[GET /v3/characters/{character_id}/search/][%d] getCharactersCharacterIdSearchBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDSearchBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -276,7 +368,8 @@ func NewGetCharactersCharacterIDSearchUnauthorized() *GetCharactersCharacterIDSe
 	return &GetCharactersCharacterIDSearchUnauthorized{}
 }
 
-/* GetCharactersCharacterIDSearchUnauthorized describes a response with status code 401, with default header values.
+/*
+GetCharactersCharacterIDSearchUnauthorized describes a response with status code 401, with default header values.
 
 Unauthorized
 */
@@ -284,9 +377,39 @@ type GetCharactersCharacterIDSearchUnauthorized struct {
 	Payload *models.Unauthorized
 }
 
+// IsSuccess returns true when this get characters character Id search unauthorized response has a 2xx status code
+func (o *GetCharactersCharacterIDSearchUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id search unauthorized response has a 3xx status code
+func (o *GetCharactersCharacterIDSearchUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id search unauthorized response has a 4xx status code
+func (o *GetCharactersCharacterIDSearchUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id search unauthorized response has a 5xx status code
+func (o *GetCharactersCharacterIDSearchUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id search unauthorized response a status code equal to that given
+func (o *GetCharactersCharacterIDSearchUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *GetCharactersCharacterIDSearchUnauthorized) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/search/][%d] getCharactersCharacterIdSearchUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDSearchUnauthorized) String() string {
+	return fmt.Sprintf("[GET /v3/characters/{character_id}/search/][%d] getCharactersCharacterIdSearchUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDSearchUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
 }
@@ -308,7 +431,8 @@ func NewGetCharactersCharacterIDSearchForbidden() *GetCharactersCharacterIDSearc
 	return &GetCharactersCharacterIDSearchForbidden{}
 }
 
-/* GetCharactersCharacterIDSearchForbidden describes a response with status code 403, with default header values.
+/*
+GetCharactersCharacterIDSearchForbidden describes a response with status code 403, with default header values.
 
 Forbidden
 */
@@ -316,9 +440,39 @@ type GetCharactersCharacterIDSearchForbidden struct {
 	Payload *models.Forbidden
 }
 
+// IsSuccess returns true when this get characters character Id search forbidden response has a 2xx status code
+func (o *GetCharactersCharacterIDSearchForbidden) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id search forbidden response has a 3xx status code
+func (o *GetCharactersCharacterIDSearchForbidden) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id search forbidden response has a 4xx status code
+func (o *GetCharactersCharacterIDSearchForbidden) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id search forbidden response has a 5xx status code
+func (o *GetCharactersCharacterIDSearchForbidden) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id search forbidden response a status code equal to that given
+func (o *GetCharactersCharacterIDSearchForbidden) IsCode(code int) bool {
+	return code == 403
+}
+
 func (o *GetCharactersCharacterIDSearchForbidden) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/search/][%d] getCharactersCharacterIdSearchForbidden  %+v", 403, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDSearchForbidden) String() string {
+	return fmt.Sprintf("[GET /v3/characters/{character_id}/search/][%d] getCharactersCharacterIdSearchForbidden  %+v", 403, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDSearchForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
 }
@@ -340,7 +494,8 @@ func NewGetCharactersCharacterIDSearchEnhanceYourCalm() *GetCharactersCharacterI
 	return &GetCharactersCharacterIDSearchEnhanceYourCalm{}
 }
 
-/* GetCharactersCharacterIDSearchEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetCharactersCharacterIDSearchEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -348,9 +503,39 @@ type GetCharactersCharacterIDSearchEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get characters character Id search enhance your calm response has a 2xx status code
+func (o *GetCharactersCharacterIDSearchEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id search enhance your calm response has a 3xx status code
+func (o *GetCharactersCharacterIDSearchEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id search enhance your calm response has a 4xx status code
+func (o *GetCharactersCharacterIDSearchEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id search enhance your calm response has a 5xx status code
+func (o *GetCharactersCharacterIDSearchEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id search enhance your calm response a status code equal to that given
+func (o *GetCharactersCharacterIDSearchEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetCharactersCharacterIDSearchEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/search/][%d] getCharactersCharacterIdSearchEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDSearchEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v3/characters/{character_id}/search/][%d] getCharactersCharacterIdSearchEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDSearchEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -372,7 +557,8 @@ func NewGetCharactersCharacterIDSearchInternalServerError() *GetCharactersCharac
 	return &GetCharactersCharacterIDSearchInternalServerError{}
 }
 
-/* GetCharactersCharacterIDSearchInternalServerError describes a response with status code 500, with default header values.
+/*
+GetCharactersCharacterIDSearchInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -380,9 +566,39 @@ type GetCharactersCharacterIDSearchInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get characters character Id search internal server error response has a 2xx status code
+func (o *GetCharactersCharacterIDSearchInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id search internal server error response has a 3xx status code
+func (o *GetCharactersCharacterIDSearchInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id search internal server error response has a 4xx status code
+func (o *GetCharactersCharacterIDSearchInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id search internal server error response has a 5xx status code
+func (o *GetCharactersCharacterIDSearchInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id search internal server error response a status code equal to that given
+func (o *GetCharactersCharacterIDSearchInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetCharactersCharacterIDSearchInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/search/][%d] getCharactersCharacterIdSearchInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDSearchInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v3/characters/{character_id}/search/][%d] getCharactersCharacterIdSearchInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDSearchInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -404,7 +620,8 @@ func NewGetCharactersCharacterIDSearchServiceUnavailable() *GetCharactersCharact
 	return &GetCharactersCharacterIDSearchServiceUnavailable{}
 }
 
-/* GetCharactersCharacterIDSearchServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetCharactersCharacterIDSearchServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -412,9 +629,39 @@ type GetCharactersCharacterIDSearchServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get characters character Id search service unavailable response has a 2xx status code
+func (o *GetCharactersCharacterIDSearchServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id search service unavailable response has a 3xx status code
+func (o *GetCharactersCharacterIDSearchServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id search service unavailable response has a 4xx status code
+func (o *GetCharactersCharacterIDSearchServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id search service unavailable response has a 5xx status code
+func (o *GetCharactersCharacterIDSearchServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id search service unavailable response a status code equal to that given
+func (o *GetCharactersCharacterIDSearchServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetCharactersCharacterIDSearchServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/search/][%d] getCharactersCharacterIdSearchServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDSearchServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v3/characters/{character_id}/search/][%d] getCharactersCharacterIdSearchServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDSearchServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -436,7 +683,8 @@ func NewGetCharactersCharacterIDSearchGatewayTimeout() *GetCharactersCharacterID
 	return &GetCharactersCharacterIDSearchGatewayTimeout{}
 }
 
-/* GetCharactersCharacterIDSearchGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetCharactersCharacterIDSearchGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -444,9 +692,39 @@ type GetCharactersCharacterIDSearchGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get characters character Id search gateway timeout response has a 2xx status code
+func (o *GetCharactersCharacterIDSearchGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id search gateway timeout response has a 3xx status code
+func (o *GetCharactersCharacterIDSearchGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id search gateway timeout response has a 4xx status code
+func (o *GetCharactersCharacterIDSearchGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id search gateway timeout response has a 5xx status code
+func (o *GetCharactersCharacterIDSearchGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id search gateway timeout response a status code equal to that given
+func (o *GetCharactersCharacterIDSearchGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetCharactersCharacterIDSearchGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/search/][%d] getCharactersCharacterIdSearchGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDSearchGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v3/characters/{character_id}/search/][%d] getCharactersCharacterIdSearchGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDSearchGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -463,7 +741,8 @@ func (o *GetCharactersCharacterIDSearchGatewayTimeout) readResponse(response run
 	return nil
 }
 
-/*GetCharactersCharacterIDSearchOKBody get_characters_character_id_search_ok
+/*
+GetCharactersCharacterIDSearchOKBody get_characters_character_id_search_ok
 //
 // 200 ok object
 swagger:model GetCharactersCharacterIDSearchOKBody

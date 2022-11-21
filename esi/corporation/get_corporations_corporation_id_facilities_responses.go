@@ -91,7 +91,8 @@ func NewGetCorporationsCorporationIDFacilitiesOK() *GetCorporationsCorporationID
 	return &GetCorporationsCorporationIDFacilitiesOK{}
 }
 
-/* GetCorporationsCorporationIDFacilitiesOK describes a response with status code 200, with default header values.
+/*
+GetCorporationsCorporationIDFacilitiesOK describes a response with status code 200, with default header values.
 
 List of corporation facilities
 */
@@ -116,9 +117,39 @@ type GetCorporationsCorporationIDFacilitiesOK struct {
 	Payload []*GetCorporationsCorporationIDFacilitiesOKBodyItems0
 }
 
+// IsSuccess returns true when this get corporations corporation Id facilities o k response has a 2xx status code
+func (o *GetCorporationsCorporationIDFacilitiesOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get corporations corporation Id facilities o k response has a 3xx status code
+func (o *GetCorporationsCorporationIDFacilitiesOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations corporation Id facilities o k response has a 4xx status code
+func (o *GetCorporationsCorporationIDFacilitiesOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get corporations corporation Id facilities o k response has a 5xx status code
+func (o *GetCorporationsCorporationIDFacilitiesOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporations corporation Id facilities o k response a status code equal to that given
+func (o *GetCorporationsCorporationIDFacilitiesOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetCorporationsCorporationIDFacilitiesOK) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/facilities/][%d] getCorporationsCorporationIdFacilitiesOK  %+v", 200, o.Payload)
 }
+
+func (o *GetCorporationsCorporationIDFacilitiesOK) String() string {
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/facilities/][%d] getCorporationsCorporationIdFacilitiesOK  %+v", 200, o.Payload)
+}
+
 func (o *GetCorporationsCorporationIDFacilitiesOK) GetPayload() []*GetCorporationsCorporationIDFacilitiesOKBodyItems0 {
 	return o.Payload
 }
@@ -166,7 +197,8 @@ func NewGetCorporationsCorporationIDFacilitiesNotModified() *GetCorporationsCorp
 	return &GetCorporationsCorporationIDFacilitiesNotModified{}
 }
 
-/* GetCorporationsCorporationIDFacilitiesNotModified describes a response with status code 304, with default header values.
+/*
+GetCorporationsCorporationIDFacilitiesNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -189,7 +221,36 @@ type GetCorporationsCorporationIDFacilitiesNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get corporations corporation Id facilities not modified response has a 2xx status code
+func (o *GetCorporationsCorporationIDFacilitiesNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations corporation Id facilities not modified response has a 3xx status code
+func (o *GetCorporationsCorporationIDFacilitiesNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get corporations corporation Id facilities not modified response has a 4xx status code
+func (o *GetCorporationsCorporationIDFacilitiesNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get corporations corporation Id facilities not modified response has a 5xx status code
+func (o *GetCorporationsCorporationIDFacilitiesNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporations corporation Id facilities not modified response a status code equal to that given
+func (o *GetCorporationsCorporationIDFacilitiesNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetCorporationsCorporationIDFacilitiesNotModified) Error() string {
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/facilities/][%d] getCorporationsCorporationIdFacilitiesNotModified ", 304)
+}
+
+func (o *GetCorporationsCorporationIDFacilitiesNotModified) String() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/facilities/][%d] getCorporationsCorporationIdFacilitiesNotModified ", 304)
 }
 
@@ -231,7 +292,8 @@ func NewGetCorporationsCorporationIDFacilitiesBadRequest() *GetCorporationsCorpo
 	return &GetCorporationsCorporationIDFacilitiesBadRequest{}
 }
 
-/* GetCorporationsCorporationIDFacilitiesBadRequest describes a response with status code 400, with default header values.
+/*
+GetCorporationsCorporationIDFacilitiesBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -239,9 +301,39 @@ type GetCorporationsCorporationIDFacilitiesBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get corporations corporation Id facilities bad request response has a 2xx status code
+func (o *GetCorporationsCorporationIDFacilitiesBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations corporation Id facilities bad request response has a 3xx status code
+func (o *GetCorporationsCorporationIDFacilitiesBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations corporation Id facilities bad request response has a 4xx status code
+func (o *GetCorporationsCorporationIDFacilitiesBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get corporations corporation Id facilities bad request response has a 5xx status code
+func (o *GetCorporationsCorporationIDFacilitiesBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporations corporation Id facilities bad request response a status code equal to that given
+func (o *GetCorporationsCorporationIDFacilitiesBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetCorporationsCorporationIDFacilitiesBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/facilities/][%d] getCorporationsCorporationIdFacilitiesBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetCorporationsCorporationIDFacilitiesBadRequest) String() string {
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/facilities/][%d] getCorporationsCorporationIdFacilitiesBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetCorporationsCorporationIDFacilitiesBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -263,7 +355,8 @@ func NewGetCorporationsCorporationIDFacilitiesUnauthorized() *GetCorporationsCor
 	return &GetCorporationsCorporationIDFacilitiesUnauthorized{}
 }
 
-/* GetCorporationsCorporationIDFacilitiesUnauthorized describes a response with status code 401, with default header values.
+/*
+GetCorporationsCorporationIDFacilitiesUnauthorized describes a response with status code 401, with default header values.
 
 Unauthorized
 */
@@ -271,9 +364,39 @@ type GetCorporationsCorporationIDFacilitiesUnauthorized struct {
 	Payload *models.Unauthorized
 }
 
+// IsSuccess returns true when this get corporations corporation Id facilities unauthorized response has a 2xx status code
+func (o *GetCorporationsCorporationIDFacilitiesUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations corporation Id facilities unauthorized response has a 3xx status code
+func (o *GetCorporationsCorporationIDFacilitiesUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations corporation Id facilities unauthorized response has a 4xx status code
+func (o *GetCorporationsCorporationIDFacilitiesUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get corporations corporation Id facilities unauthorized response has a 5xx status code
+func (o *GetCorporationsCorporationIDFacilitiesUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporations corporation Id facilities unauthorized response a status code equal to that given
+func (o *GetCorporationsCorporationIDFacilitiesUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *GetCorporationsCorporationIDFacilitiesUnauthorized) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/facilities/][%d] getCorporationsCorporationIdFacilitiesUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *GetCorporationsCorporationIDFacilitiesUnauthorized) String() string {
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/facilities/][%d] getCorporationsCorporationIdFacilitiesUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *GetCorporationsCorporationIDFacilitiesUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
 }
@@ -295,7 +418,8 @@ func NewGetCorporationsCorporationIDFacilitiesForbidden() *GetCorporationsCorpor
 	return &GetCorporationsCorporationIDFacilitiesForbidden{}
 }
 
-/* GetCorporationsCorporationIDFacilitiesForbidden describes a response with status code 403, with default header values.
+/*
+GetCorporationsCorporationIDFacilitiesForbidden describes a response with status code 403, with default header values.
 
 Forbidden
 */
@@ -303,9 +427,39 @@ type GetCorporationsCorporationIDFacilitiesForbidden struct {
 	Payload *models.Forbidden
 }
 
+// IsSuccess returns true when this get corporations corporation Id facilities forbidden response has a 2xx status code
+func (o *GetCorporationsCorporationIDFacilitiesForbidden) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations corporation Id facilities forbidden response has a 3xx status code
+func (o *GetCorporationsCorporationIDFacilitiesForbidden) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations corporation Id facilities forbidden response has a 4xx status code
+func (o *GetCorporationsCorporationIDFacilitiesForbidden) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get corporations corporation Id facilities forbidden response has a 5xx status code
+func (o *GetCorporationsCorporationIDFacilitiesForbidden) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporations corporation Id facilities forbidden response a status code equal to that given
+func (o *GetCorporationsCorporationIDFacilitiesForbidden) IsCode(code int) bool {
+	return code == 403
+}
+
 func (o *GetCorporationsCorporationIDFacilitiesForbidden) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/facilities/][%d] getCorporationsCorporationIdFacilitiesForbidden  %+v", 403, o.Payload)
 }
+
+func (o *GetCorporationsCorporationIDFacilitiesForbidden) String() string {
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/facilities/][%d] getCorporationsCorporationIdFacilitiesForbidden  %+v", 403, o.Payload)
+}
+
 func (o *GetCorporationsCorporationIDFacilitiesForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
 }
@@ -327,7 +481,8 @@ func NewGetCorporationsCorporationIDFacilitiesEnhanceYourCalm() *GetCorporations
 	return &GetCorporationsCorporationIDFacilitiesEnhanceYourCalm{}
 }
 
-/* GetCorporationsCorporationIDFacilitiesEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetCorporationsCorporationIDFacilitiesEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -335,9 +490,39 @@ type GetCorporationsCorporationIDFacilitiesEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get corporations corporation Id facilities enhance your calm response has a 2xx status code
+func (o *GetCorporationsCorporationIDFacilitiesEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations corporation Id facilities enhance your calm response has a 3xx status code
+func (o *GetCorporationsCorporationIDFacilitiesEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations corporation Id facilities enhance your calm response has a 4xx status code
+func (o *GetCorporationsCorporationIDFacilitiesEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get corporations corporation Id facilities enhance your calm response has a 5xx status code
+func (o *GetCorporationsCorporationIDFacilitiesEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporations corporation Id facilities enhance your calm response a status code equal to that given
+func (o *GetCorporationsCorporationIDFacilitiesEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetCorporationsCorporationIDFacilitiesEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/facilities/][%d] getCorporationsCorporationIdFacilitiesEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetCorporationsCorporationIDFacilitiesEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/facilities/][%d] getCorporationsCorporationIdFacilitiesEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetCorporationsCorporationIDFacilitiesEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -359,7 +544,8 @@ func NewGetCorporationsCorporationIDFacilitiesInternalServerError() *GetCorporat
 	return &GetCorporationsCorporationIDFacilitiesInternalServerError{}
 }
 
-/* GetCorporationsCorporationIDFacilitiesInternalServerError describes a response with status code 500, with default header values.
+/*
+GetCorporationsCorporationIDFacilitiesInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -367,9 +553,39 @@ type GetCorporationsCorporationIDFacilitiesInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get corporations corporation Id facilities internal server error response has a 2xx status code
+func (o *GetCorporationsCorporationIDFacilitiesInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations corporation Id facilities internal server error response has a 3xx status code
+func (o *GetCorporationsCorporationIDFacilitiesInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations corporation Id facilities internal server error response has a 4xx status code
+func (o *GetCorporationsCorporationIDFacilitiesInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get corporations corporation Id facilities internal server error response has a 5xx status code
+func (o *GetCorporationsCorporationIDFacilitiesInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get corporations corporation Id facilities internal server error response a status code equal to that given
+func (o *GetCorporationsCorporationIDFacilitiesInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetCorporationsCorporationIDFacilitiesInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/facilities/][%d] getCorporationsCorporationIdFacilitiesInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetCorporationsCorporationIDFacilitiesInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/facilities/][%d] getCorporationsCorporationIdFacilitiesInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetCorporationsCorporationIDFacilitiesInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -391,7 +607,8 @@ func NewGetCorporationsCorporationIDFacilitiesServiceUnavailable() *GetCorporati
 	return &GetCorporationsCorporationIDFacilitiesServiceUnavailable{}
 }
 
-/* GetCorporationsCorporationIDFacilitiesServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetCorporationsCorporationIDFacilitiesServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -399,9 +616,39 @@ type GetCorporationsCorporationIDFacilitiesServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get corporations corporation Id facilities service unavailable response has a 2xx status code
+func (o *GetCorporationsCorporationIDFacilitiesServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations corporation Id facilities service unavailable response has a 3xx status code
+func (o *GetCorporationsCorporationIDFacilitiesServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations corporation Id facilities service unavailable response has a 4xx status code
+func (o *GetCorporationsCorporationIDFacilitiesServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get corporations corporation Id facilities service unavailable response has a 5xx status code
+func (o *GetCorporationsCorporationIDFacilitiesServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get corporations corporation Id facilities service unavailable response a status code equal to that given
+func (o *GetCorporationsCorporationIDFacilitiesServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetCorporationsCorporationIDFacilitiesServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/facilities/][%d] getCorporationsCorporationIdFacilitiesServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetCorporationsCorporationIDFacilitiesServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/facilities/][%d] getCorporationsCorporationIdFacilitiesServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetCorporationsCorporationIDFacilitiesServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -423,7 +670,8 @@ func NewGetCorporationsCorporationIDFacilitiesGatewayTimeout() *GetCorporationsC
 	return &GetCorporationsCorporationIDFacilitiesGatewayTimeout{}
 }
 
-/* GetCorporationsCorporationIDFacilitiesGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetCorporationsCorporationIDFacilitiesGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -431,9 +679,39 @@ type GetCorporationsCorporationIDFacilitiesGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get corporations corporation Id facilities gateway timeout response has a 2xx status code
+func (o *GetCorporationsCorporationIDFacilitiesGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporations corporation Id facilities gateway timeout response has a 3xx status code
+func (o *GetCorporationsCorporationIDFacilitiesGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporations corporation Id facilities gateway timeout response has a 4xx status code
+func (o *GetCorporationsCorporationIDFacilitiesGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get corporations corporation Id facilities gateway timeout response has a 5xx status code
+func (o *GetCorporationsCorporationIDFacilitiesGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get corporations corporation Id facilities gateway timeout response a status code equal to that given
+func (o *GetCorporationsCorporationIDFacilitiesGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetCorporationsCorporationIDFacilitiesGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/facilities/][%d] getCorporationsCorporationIdFacilitiesGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetCorporationsCorporationIDFacilitiesGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/facilities/][%d] getCorporationsCorporationIdFacilitiesGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetCorporationsCorporationIDFacilitiesGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -450,7 +728,8 @@ func (o *GetCorporationsCorporationIDFacilitiesGatewayTimeout) readResponse(resp
 	return nil
 }
 
-/*GetCorporationsCorporationIDFacilitiesOKBodyItems0 get_corporations_corporation_id_facilities_200_ok
+/*
+GetCorporationsCorporationIDFacilitiesOKBodyItems0 get_corporations_corporation_id_facilities_200_ok
 //
 // 200 ok object
 swagger:model GetCorporationsCorporationIDFacilitiesOKBodyItems0

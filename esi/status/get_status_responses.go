@@ -79,7 +79,8 @@ func NewGetStatusOK() *GetStatusOK {
 	return &GetStatusOK{}
 }
 
-/* GetStatusOK describes a response with status code 200, with default header values.
+/*
+GetStatusOK describes a response with status code 200, with default header values.
 
 Server status
 */
@@ -104,9 +105,39 @@ type GetStatusOK struct {
 	Payload *GetStatusOKBody
 }
 
+// IsSuccess returns true when this get status o k response has a 2xx status code
+func (o *GetStatusOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get status o k response has a 3xx status code
+func (o *GetStatusOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get status o k response has a 4xx status code
+func (o *GetStatusOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get status o k response has a 5xx status code
+func (o *GetStatusOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get status o k response a status code equal to that given
+func (o *GetStatusOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetStatusOK) Error() string {
 	return fmt.Sprintf("[GET /v1/status/][%d] getStatusOK  %+v", 200, o.Payload)
 }
+
+func (o *GetStatusOK) String() string {
+	return fmt.Sprintf("[GET /v1/status/][%d] getStatusOK  %+v", 200, o.Payload)
+}
+
 func (o *GetStatusOK) GetPayload() *GetStatusOKBody {
 	return o.Payload
 }
@@ -156,7 +187,8 @@ func NewGetStatusNotModified() *GetStatusNotModified {
 	return &GetStatusNotModified{}
 }
 
-/* GetStatusNotModified describes a response with status code 304, with default header values.
+/*
+GetStatusNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -179,7 +211,36 @@ type GetStatusNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get status not modified response has a 2xx status code
+func (o *GetStatusNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get status not modified response has a 3xx status code
+func (o *GetStatusNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get status not modified response has a 4xx status code
+func (o *GetStatusNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get status not modified response has a 5xx status code
+func (o *GetStatusNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get status not modified response a status code equal to that given
+func (o *GetStatusNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetStatusNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/status/][%d] getStatusNotModified ", 304)
+}
+
+func (o *GetStatusNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/status/][%d] getStatusNotModified ", 304)
 }
 
@@ -221,7 +282,8 @@ func NewGetStatusBadRequest() *GetStatusBadRequest {
 	return &GetStatusBadRequest{}
 }
 
-/* GetStatusBadRequest describes a response with status code 400, with default header values.
+/*
+GetStatusBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -229,9 +291,39 @@ type GetStatusBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get status bad request response has a 2xx status code
+func (o *GetStatusBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get status bad request response has a 3xx status code
+func (o *GetStatusBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get status bad request response has a 4xx status code
+func (o *GetStatusBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get status bad request response has a 5xx status code
+func (o *GetStatusBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get status bad request response a status code equal to that given
+func (o *GetStatusBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetStatusBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/status/][%d] getStatusBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetStatusBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/status/][%d] getStatusBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetStatusBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -253,7 +345,8 @@ func NewGetStatusEnhanceYourCalm() *GetStatusEnhanceYourCalm {
 	return &GetStatusEnhanceYourCalm{}
 }
 
-/* GetStatusEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetStatusEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -261,9 +354,39 @@ type GetStatusEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get status enhance your calm response has a 2xx status code
+func (o *GetStatusEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get status enhance your calm response has a 3xx status code
+func (o *GetStatusEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get status enhance your calm response has a 4xx status code
+func (o *GetStatusEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get status enhance your calm response has a 5xx status code
+func (o *GetStatusEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get status enhance your calm response a status code equal to that given
+func (o *GetStatusEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetStatusEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/status/][%d] getStatusEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetStatusEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/status/][%d] getStatusEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetStatusEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -285,7 +408,8 @@ func NewGetStatusInternalServerError() *GetStatusInternalServerError {
 	return &GetStatusInternalServerError{}
 }
 
-/* GetStatusInternalServerError describes a response with status code 500, with default header values.
+/*
+GetStatusInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -293,9 +417,39 @@ type GetStatusInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get status internal server error response has a 2xx status code
+func (o *GetStatusInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get status internal server error response has a 3xx status code
+func (o *GetStatusInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get status internal server error response has a 4xx status code
+func (o *GetStatusInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get status internal server error response has a 5xx status code
+func (o *GetStatusInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get status internal server error response a status code equal to that given
+func (o *GetStatusInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetStatusInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/status/][%d] getStatusInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetStatusInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/status/][%d] getStatusInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetStatusInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -317,7 +471,8 @@ func NewGetStatusServiceUnavailable() *GetStatusServiceUnavailable {
 	return &GetStatusServiceUnavailable{}
 }
 
-/* GetStatusServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetStatusServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -325,9 +480,39 @@ type GetStatusServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get status service unavailable response has a 2xx status code
+func (o *GetStatusServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get status service unavailable response has a 3xx status code
+func (o *GetStatusServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get status service unavailable response has a 4xx status code
+func (o *GetStatusServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get status service unavailable response has a 5xx status code
+func (o *GetStatusServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get status service unavailable response a status code equal to that given
+func (o *GetStatusServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetStatusServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/status/][%d] getStatusServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetStatusServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/status/][%d] getStatusServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetStatusServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -349,7 +534,8 @@ func NewGetStatusGatewayTimeout() *GetStatusGatewayTimeout {
 	return &GetStatusGatewayTimeout{}
 }
 
-/* GetStatusGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetStatusGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -357,9 +543,39 @@ type GetStatusGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get status gateway timeout response has a 2xx status code
+func (o *GetStatusGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get status gateway timeout response has a 3xx status code
+func (o *GetStatusGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get status gateway timeout response has a 4xx status code
+func (o *GetStatusGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get status gateway timeout response has a 5xx status code
+func (o *GetStatusGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get status gateway timeout response a status code equal to that given
+func (o *GetStatusGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetStatusGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/status/][%d] getStatusGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetStatusGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/status/][%d] getStatusGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetStatusGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -376,7 +592,8 @@ func (o *GetStatusGatewayTimeout) readResponse(response runtime.ClientResponse, 
 	return nil
 }
 
-/*GetStatusOKBody get_status_ok
+/*
+GetStatusOKBody get_status_ok
 //
 // 200 ok object
 swagger:model GetStatusOKBody

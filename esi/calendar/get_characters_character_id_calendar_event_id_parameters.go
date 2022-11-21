@@ -53,10 +53,12 @@ func NewGetCharactersCharacterIDCalendarEventIDParamsWithHTTPClient(client *http
 	}
 }
 
-/* GetCharactersCharacterIDCalendarEventIDParams contains all the parameters to send to the API endpoint
-   for the get characters character id calendar event id operation.
+/*
+GetCharactersCharacterIDCalendarEventIDParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get characters character id calendar event id operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCharactersCharacterIDCalendarEventIDParams struct {
 

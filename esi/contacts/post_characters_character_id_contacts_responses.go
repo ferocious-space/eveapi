@@ -89,7 +89,8 @@ func NewPostCharactersCharacterIDContactsCreated() *PostCharactersCharacterIDCon
 	return &PostCharactersCharacterIDContactsCreated{}
 }
 
-/* PostCharactersCharacterIDContactsCreated describes a response with status code 201, with default header values.
+/*
+PostCharactersCharacterIDContactsCreated describes a response with status code 201, with default header values.
 
 A list of contact ids that successfully created
 */
@@ -97,9 +98,39 @@ type PostCharactersCharacterIDContactsCreated struct {
 	Payload []int32
 }
 
+// IsSuccess returns true when this post characters character Id contacts created response has a 2xx status code
+func (o *PostCharactersCharacterIDContactsCreated) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this post characters character Id contacts created response has a 3xx status code
+func (o *PostCharactersCharacterIDContactsCreated) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id contacts created response has a 4xx status code
+func (o *PostCharactersCharacterIDContactsCreated) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post characters character Id contacts created response has a 5xx status code
+func (o *PostCharactersCharacterIDContactsCreated) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post characters character Id contacts created response a status code equal to that given
+func (o *PostCharactersCharacterIDContactsCreated) IsCode(code int) bool {
+	return code == 201
+}
+
 func (o *PostCharactersCharacterIDContactsCreated) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/contacts/][%d] postCharactersCharacterIdContactsCreated  %+v", 201, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDContactsCreated) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/contacts/][%d] postCharactersCharacterIdContactsCreated  %+v", 201, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDContactsCreated) GetPayload() []int32 {
 	return o.Payload
 }
@@ -119,7 +150,8 @@ func NewPostCharactersCharacterIDContactsBadRequest() *PostCharactersCharacterID
 	return &PostCharactersCharacterIDContactsBadRequest{}
 }
 
-/* PostCharactersCharacterIDContactsBadRequest describes a response with status code 400, with default header values.
+/*
+PostCharactersCharacterIDContactsBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -127,9 +159,39 @@ type PostCharactersCharacterIDContactsBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this post characters character Id contacts bad request response has a 2xx status code
+func (o *PostCharactersCharacterIDContactsBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id contacts bad request response has a 3xx status code
+func (o *PostCharactersCharacterIDContactsBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id contacts bad request response has a 4xx status code
+func (o *PostCharactersCharacterIDContactsBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post characters character Id contacts bad request response has a 5xx status code
+func (o *PostCharactersCharacterIDContactsBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post characters character Id contacts bad request response a status code equal to that given
+func (o *PostCharactersCharacterIDContactsBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *PostCharactersCharacterIDContactsBadRequest) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/contacts/][%d] postCharactersCharacterIdContactsBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDContactsBadRequest) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/contacts/][%d] postCharactersCharacterIdContactsBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDContactsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -151,7 +213,8 @@ func NewPostCharactersCharacterIDContactsUnauthorized() *PostCharactersCharacter
 	return &PostCharactersCharacterIDContactsUnauthorized{}
 }
 
-/* PostCharactersCharacterIDContactsUnauthorized describes a response with status code 401, with default header values.
+/*
+PostCharactersCharacterIDContactsUnauthorized describes a response with status code 401, with default header values.
 
 Unauthorized
 */
@@ -159,9 +222,39 @@ type PostCharactersCharacterIDContactsUnauthorized struct {
 	Payload *models.Unauthorized
 }
 
+// IsSuccess returns true when this post characters character Id contacts unauthorized response has a 2xx status code
+func (o *PostCharactersCharacterIDContactsUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id contacts unauthorized response has a 3xx status code
+func (o *PostCharactersCharacterIDContactsUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id contacts unauthorized response has a 4xx status code
+func (o *PostCharactersCharacterIDContactsUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post characters character Id contacts unauthorized response has a 5xx status code
+func (o *PostCharactersCharacterIDContactsUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post characters character Id contacts unauthorized response a status code equal to that given
+func (o *PostCharactersCharacterIDContactsUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *PostCharactersCharacterIDContactsUnauthorized) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/contacts/][%d] postCharactersCharacterIdContactsUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDContactsUnauthorized) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/contacts/][%d] postCharactersCharacterIdContactsUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDContactsUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
 }
@@ -183,7 +276,8 @@ func NewPostCharactersCharacterIDContactsForbidden() *PostCharactersCharacterIDC
 	return &PostCharactersCharacterIDContactsForbidden{}
 }
 
-/* PostCharactersCharacterIDContactsForbidden describes a response with status code 403, with default header values.
+/*
+PostCharactersCharacterIDContactsForbidden describes a response with status code 403, with default header values.
 
 Forbidden
 */
@@ -191,9 +285,39 @@ type PostCharactersCharacterIDContactsForbidden struct {
 	Payload *models.Forbidden
 }
 
+// IsSuccess returns true when this post characters character Id contacts forbidden response has a 2xx status code
+func (o *PostCharactersCharacterIDContactsForbidden) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id contacts forbidden response has a 3xx status code
+func (o *PostCharactersCharacterIDContactsForbidden) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id contacts forbidden response has a 4xx status code
+func (o *PostCharactersCharacterIDContactsForbidden) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post characters character Id contacts forbidden response has a 5xx status code
+func (o *PostCharactersCharacterIDContactsForbidden) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post characters character Id contacts forbidden response a status code equal to that given
+func (o *PostCharactersCharacterIDContactsForbidden) IsCode(code int) bool {
+	return code == 403
+}
+
 func (o *PostCharactersCharacterIDContactsForbidden) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/contacts/][%d] postCharactersCharacterIdContactsForbidden  %+v", 403, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDContactsForbidden) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/contacts/][%d] postCharactersCharacterIdContactsForbidden  %+v", 403, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDContactsForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
 }
@@ -215,7 +339,8 @@ func NewPostCharactersCharacterIDContactsEnhanceYourCalm() *PostCharactersCharac
 	return &PostCharactersCharacterIDContactsEnhanceYourCalm{}
 }
 
-/* PostCharactersCharacterIDContactsEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+PostCharactersCharacterIDContactsEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -223,9 +348,39 @@ type PostCharactersCharacterIDContactsEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this post characters character Id contacts enhance your calm response has a 2xx status code
+func (o *PostCharactersCharacterIDContactsEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id contacts enhance your calm response has a 3xx status code
+func (o *PostCharactersCharacterIDContactsEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id contacts enhance your calm response has a 4xx status code
+func (o *PostCharactersCharacterIDContactsEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post characters character Id contacts enhance your calm response has a 5xx status code
+func (o *PostCharactersCharacterIDContactsEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post characters character Id contacts enhance your calm response a status code equal to that given
+func (o *PostCharactersCharacterIDContactsEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *PostCharactersCharacterIDContactsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/contacts/][%d] postCharactersCharacterIdContactsEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDContactsEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/contacts/][%d] postCharactersCharacterIdContactsEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDContactsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -247,7 +402,8 @@ func NewPostCharactersCharacterIDContactsInternalServerError() *PostCharactersCh
 	return &PostCharactersCharacterIDContactsInternalServerError{}
 }
 
-/* PostCharactersCharacterIDContactsInternalServerError describes a response with status code 500, with default header values.
+/*
+PostCharactersCharacterIDContactsInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -255,9 +411,39 @@ type PostCharactersCharacterIDContactsInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this post characters character Id contacts internal server error response has a 2xx status code
+func (o *PostCharactersCharacterIDContactsInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id contacts internal server error response has a 3xx status code
+func (o *PostCharactersCharacterIDContactsInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id contacts internal server error response has a 4xx status code
+func (o *PostCharactersCharacterIDContactsInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post characters character Id contacts internal server error response has a 5xx status code
+func (o *PostCharactersCharacterIDContactsInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post characters character Id contacts internal server error response a status code equal to that given
+func (o *PostCharactersCharacterIDContactsInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *PostCharactersCharacterIDContactsInternalServerError) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/contacts/][%d] postCharactersCharacterIdContactsInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDContactsInternalServerError) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/contacts/][%d] postCharactersCharacterIdContactsInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDContactsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -279,7 +465,8 @@ func NewPostCharactersCharacterIDContactsServiceUnavailable() *PostCharactersCha
 	return &PostCharactersCharacterIDContactsServiceUnavailable{}
 }
 
-/* PostCharactersCharacterIDContactsServiceUnavailable describes a response with status code 503, with default header values.
+/*
+PostCharactersCharacterIDContactsServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -287,9 +474,39 @@ type PostCharactersCharacterIDContactsServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this post characters character Id contacts service unavailable response has a 2xx status code
+func (o *PostCharactersCharacterIDContactsServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id contacts service unavailable response has a 3xx status code
+func (o *PostCharactersCharacterIDContactsServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id contacts service unavailable response has a 4xx status code
+func (o *PostCharactersCharacterIDContactsServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post characters character Id contacts service unavailable response has a 5xx status code
+func (o *PostCharactersCharacterIDContactsServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post characters character Id contacts service unavailable response a status code equal to that given
+func (o *PostCharactersCharacterIDContactsServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *PostCharactersCharacterIDContactsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/contacts/][%d] postCharactersCharacterIdContactsServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDContactsServiceUnavailable) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/contacts/][%d] postCharactersCharacterIdContactsServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDContactsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -311,7 +528,8 @@ func NewPostCharactersCharacterIDContactsGatewayTimeout() *PostCharactersCharact
 	return &PostCharactersCharacterIDContactsGatewayTimeout{}
 }
 
-/* PostCharactersCharacterIDContactsGatewayTimeout describes a response with status code 504, with default header values.
+/*
+PostCharactersCharacterIDContactsGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -319,9 +537,39 @@ type PostCharactersCharacterIDContactsGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this post characters character Id contacts gateway timeout response has a 2xx status code
+func (o *PostCharactersCharacterIDContactsGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id contacts gateway timeout response has a 3xx status code
+func (o *PostCharactersCharacterIDContactsGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id contacts gateway timeout response has a 4xx status code
+func (o *PostCharactersCharacterIDContactsGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post characters character Id contacts gateway timeout response has a 5xx status code
+func (o *PostCharactersCharacterIDContactsGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post characters character Id contacts gateway timeout response a status code equal to that given
+func (o *PostCharactersCharacterIDContactsGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *PostCharactersCharacterIDContactsGatewayTimeout) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/contacts/][%d] postCharactersCharacterIdContactsGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDContactsGatewayTimeout) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/contacts/][%d] postCharactersCharacterIdContactsGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDContactsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -343,7 +591,8 @@ func NewPostCharactersCharacterIDContactsStatus520() *PostCharactersCharacterIDC
 	return &PostCharactersCharacterIDContactsStatus520{}
 }
 
-/* PostCharactersCharacterIDContactsStatus520 describes a response with status code 520, with default header values.
+/*
+PostCharactersCharacterIDContactsStatus520 describes a response with status code 520, with default header values.
 
 Internal error thrown from the EVE server
 */
@@ -351,9 +600,39 @@ type PostCharactersCharacterIDContactsStatus520 struct {
 	Payload *PostCharactersCharacterIDContactsStatus520Body
 }
 
+// IsSuccess returns true when this post characters character Id contacts status520 response has a 2xx status code
+func (o *PostCharactersCharacterIDContactsStatus520) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id contacts status520 response has a 3xx status code
+func (o *PostCharactersCharacterIDContactsStatus520) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id contacts status520 response has a 4xx status code
+func (o *PostCharactersCharacterIDContactsStatus520) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post characters character Id contacts status520 response has a 5xx status code
+func (o *PostCharactersCharacterIDContactsStatus520) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post characters character Id contacts status520 response a status code equal to that given
+func (o *PostCharactersCharacterIDContactsStatus520) IsCode(code int) bool {
+	return code == 520
+}
+
 func (o *PostCharactersCharacterIDContactsStatus520) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/contacts/][%d] postCharactersCharacterIdContactsStatus520  %+v", 520, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDContactsStatus520) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/contacts/][%d] postCharactersCharacterIdContactsStatus520  %+v", 520, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDContactsStatus520) GetPayload() *PostCharactersCharacterIDContactsStatus520Body {
 	return o.Payload
 }
@@ -370,7 +649,8 @@ func (o *PostCharactersCharacterIDContactsStatus520) readResponse(response runti
 	return nil
 }
 
-/*PostCharactersCharacterIDContactsStatus520Body post_characters_character_id_contacts_error_520
+/*
+PostCharactersCharacterIDContactsStatus520Body post_characters_character_id_contacts_error_520
 //
 // Error 520
 swagger:model PostCharactersCharacterIDContactsStatus520Body

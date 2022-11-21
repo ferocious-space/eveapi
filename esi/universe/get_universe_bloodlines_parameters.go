@@ -52,10 +52,12 @@ func NewGetUniverseBloodlinesParamsWithHTTPClient(client *http.Client) *GetUnive
 	}
 }
 
-/* GetUniverseBloodlinesParams contains all the parameters to send to the API endpoint
-   for the get universe bloodlines operation.
+/*
+GetUniverseBloodlinesParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get universe bloodlines operation.
+
+	Typically these are written to a http.Request.
 */
 type GetUniverseBloodlinesParams struct {
 

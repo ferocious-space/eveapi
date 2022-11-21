@@ -85,7 +85,8 @@ func NewGetUniverseSchematicsSchematicIDOK() *GetUniverseSchematicsSchematicIDOK
 	return &GetUniverseSchematicsSchematicIDOK{}
 }
 
-/* GetUniverseSchematicsSchematicIDOK describes a response with status code 200, with default header values.
+/*
+GetUniverseSchematicsSchematicIDOK describes a response with status code 200, with default header values.
 
 Public data about a schematic
 */
@@ -110,9 +111,39 @@ type GetUniverseSchematicsSchematicIDOK struct {
 	Payload *GetUniverseSchematicsSchematicIDOKBody
 }
 
+// IsSuccess returns true when this get universe schematics schematic Id o k response has a 2xx status code
+func (o *GetUniverseSchematicsSchematicIDOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get universe schematics schematic Id o k response has a 3xx status code
+func (o *GetUniverseSchematicsSchematicIDOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe schematics schematic Id o k response has a 4xx status code
+func (o *GetUniverseSchematicsSchematicIDOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe schematics schematic Id o k response has a 5xx status code
+func (o *GetUniverseSchematicsSchematicIDOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe schematics schematic Id o k response a status code equal to that given
+func (o *GetUniverseSchematicsSchematicIDOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetUniverseSchematicsSchematicIDOK) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/schematics/{schematic_id}/][%d] getUniverseSchematicsSchematicIdOK  %+v", 200, o.Payload)
 }
+
+func (o *GetUniverseSchematicsSchematicIDOK) String() string {
+	return fmt.Sprintf("[GET /v1/universe/schematics/{schematic_id}/][%d] getUniverseSchematicsSchematicIdOK  %+v", 200, o.Payload)
+}
+
 func (o *GetUniverseSchematicsSchematicIDOK) GetPayload() *GetUniverseSchematicsSchematicIDOKBody {
 	return o.Payload
 }
@@ -162,7 +193,8 @@ func NewGetUniverseSchematicsSchematicIDNotModified() *GetUniverseSchematicsSche
 	return &GetUniverseSchematicsSchematicIDNotModified{}
 }
 
-/* GetUniverseSchematicsSchematicIDNotModified describes a response with status code 304, with default header values.
+/*
+GetUniverseSchematicsSchematicIDNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -185,7 +217,36 @@ type GetUniverseSchematicsSchematicIDNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get universe schematics schematic Id not modified response has a 2xx status code
+func (o *GetUniverseSchematicsSchematicIDNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe schematics schematic Id not modified response has a 3xx status code
+func (o *GetUniverseSchematicsSchematicIDNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get universe schematics schematic Id not modified response has a 4xx status code
+func (o *GetUniverseSchematicsSchematicIDNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe schematics schematic Id not modified response has a 5xx status code
+func (o *GetUniverseSchematicsSchematicIDNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe schematics schematic Id not modified response a status code equal to that given
+func (o *GetUniverseSchematicsSchematicIDNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetUniverseSchematicsSchematicIDNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/universe/schematics/{schematic_id}/][%d] getUniverseSchematicsSchematicIdNotModified ", 304)
+}
+
+func (o *GetUniverseSchematicsSchematicIDNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/universe/schematics/{schematic_id}/][%d] getUniverseSchematicsSchematicIdNotModified ", 304)
 }
 
@@ -227,7 +288,8 @@ func NewGetUniverseSchematicsSchematicIDBadRequest() *GetUniverseSchematicsSchem
 	return &GetUniverseSchematicsSchematicIDBadRequest{}
 }
 
-/* GetUniverseSchematicsSchematicIDBadRequest describes a response with status code 400, with default header values.
+/*
+GetUniverseSchematicsSchematicIDBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -235,9 +297,39 @@ type GetUniverseSchematicsSchematicIDBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get universe schematics schematic Id bad request response has a 2xx status code
+func (o *GetUniverseSchematicsSchematicIDBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe schematics schematic Id bad request response has a 3xx status code
+func (o *GetUniverseSchematicsSchematicIDBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe schematics schematic Id bad request response has a 4xx status code
+func (o *GetUniverseSchematicsSchematicIDBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe schematics schematic Id bad request response has a 5xx status code
+func (o *GetUniverseSchematicsSchematicIDBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe schematics schematic Id bad request response a status code equal to that given
+func (o *GetUniverseSchematicsSchematicIDBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetUniverseSchematicsSchematicIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/schematics/{schematic_id}/][%d] getUniverseSchematicsSchematicIdBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetUniverseSchematicsSchematicIDBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/universe/schematics/{schematic_id}/][%d] getUniverseSchematicsSchematicIdBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetUniverseSchematicsSchematicIDBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -259,7 +351,8 @@ func NewGetUniverseSchematicsSchematicIDNotFound() *GetUniverseSchematicsSchemat
 	return &GetUniverseSchematicsSchematicIDNotFound{}
 }
 
-/* GetUniverseSchematicsSchematicIDNotFound describes a response with status code 404, with default header values.
+/*
+GetUniverseSchematicsSchematicIDNotFound describes a response with status code 404, with default header values.
 
 Schematic not found
 */
@@ -267,9 +360,39 @@ type GetUniverseSchematicsSchematicIDNotFound struct {
 	Payload *GetUniverseSchematicsSchematicIDNotFoundBody
 }
 
+// IsSuccess returns true when this get universe schematics schematic Id not found response has a 2xx status code
+func (o *GetUniverseSchematicsSchematicIDNotFound) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe schematics schematic Id not found response has a 3xx status code
+func (o *GetUniverseSchematicsSchematicIDNotFound) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe schematics schematic Id not found response has a 4xx status code
+func (o *GetUniverseSchematicsSchematicIDNotFound) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe schematics schematic Id not found response has a 5xx status code
+func (o *GetUniverseSchematicsSchematicIDNotFound) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe schematics schematic Id not found response a status code equal to that given
+func (o *GetUniverseSchematicsSchematicIDNotFound) IsCode(code int) bool {
+	return code == 404
+}
+
 func (o *GetUniverseSchematicsSchematicIDNotFound) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/schematics/{schematic_id}/][%d] getUniverseSchematicsSchematicIdNotFound  %+v", 404, o.Payload)
 }
+
+func (o *GetUniverseSchematicsSchematicIDNotFound) String() string {
+	return fmt.Sprintf("[GET /v1/universe/schematics/{schematic_id}/][%d] getUniverseSchematicsSchematicIdNotFound  %+v", 404, o.Payload)
+}
+
 func (o *GetUniverseSchematicsSchematicIDNotFound) GetPayload() *GetUniverseSchematicsSchematicIDNotFoundBody {
 	return o.Payload
 }
@@ -291,7 +414,8 @@ func NewGetUniverseSchematicsSchematicIDEnhanceYourCalm() *GetUniverseSchematics
 	return &GetUniverseSchematicsSchematicIDEnhanceYourCalm{}
 }
 
-/* GetUniverseSchematicsSchematicIDEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetUniverseSchematicsSchematicIDEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -299,9 +423,39 @@ type GetUniverseSchematicsSchematicIDEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get universe schematics schematic Id enhance your calm response has a 2xx status code
+func (o *GetUniverseSchematicsSchematicIDEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe schematics schematic Id enhance your calm response has a 3xx status code
+func (o *GetUniverseSchematicsSchematicIDEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe schematics schematic Id enhance your calm response has a 4xx status code
+func (o *GetUniverseSchematicsSchematicIDEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe schematics schematic Id enhance your calm response has a 5xx status code
+func (o *GetUniverseSchematicsSchematicIDEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe schematics schematic Id enhance your calm response a status code equal to that given
+func (o *GetUniverseSchematicsSchematicIDEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetUniverseSchematicsSchematicIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/schematics/{schematic_id}/][%d] getUniverseSchematicsSchematicIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetUniverseSchematicsSchematicIDEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/universe/schematics/{schematic_id}/][%d] getUniverseSchematicsSchematicIdEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetUniverseSchematicsSchematicIDEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -323,7 +477,8 @@ func NewGetUniverseSchematicsSchematicIDInternalServerError() *GetUniverseSchema
 	return &GetUniverseSchematicsSchematicIDInternalServerError{}
 }
 
-/* GetUniverseSchematicsSchematicIDInternalServerError describes a response with status code 500, with default header values.
+/*
+GetUniverseSchematicsSchematicIDInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -331,9 +486,39 @@ type GetUniverseSchematicsSchematicIDInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get universe schematics schematic Id internal server error response has a 2xx status code
+func (o *GetUniverseSchematicsSchematicIDInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe schematics schematic Id internal server error response has a 3xx status code
+func (o *GetUniverseSchematicsSchematicIDInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe schematics schematic Id internal server error response has a 4xx status code
+func (o *GetUniverseSchematicsSchematicIDInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe schematics schematic Id internal server error response has a 5xx status code
+func (o *GetUniverseSchematicsSchematicIDInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe schematics schematic Id internal server error response a status code equal to that given
+func (o *GetUniverseSchematicsSchematicIDInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetUniverseSchematicsSchematicIDInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/schematics/{schematic_id}/][%d] getUniverseSchematicsSchematicIdInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetUniverseSchematicsSchematicIDInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/universe/schematics/{schematic_id}/][%d] getUniverseSchematicsSchematicIdInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetUniverseSchematicsSchematicIDInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -355,7 +540,8 @@ func NewGetUniverseSchematicsSchematicIDServiceUnavailable() *GetUniverseSchemat
 	return &GetUniverseSchematicsSchematicIDServiceUnavailable{}
 }
 
-/* GetUniverseSchematicsSchematicIDServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetUniverseSchematicsSchematicIDServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -363,9 +549,39 @@ type GetUniverseSchematicsSchematicIDServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get universe schematics schematic Id service unavailable response has a 2xx status code
+func (o *GetUniverseSchematicsSchematicIDServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe schematics schematic Id service unavailable response has a 3xx status code
+func (o *GetUniverseSchematicsSchematicIDServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe schematics schematic Id service unavailable response has a 4xx status code
+func (o *GetUniverseSchematicsSchematicIDServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe schematics schematic Id service unavailable response has a 5xx status code
+func (o *GetUniverseSchematicsSchematicIDServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe schematics schematic Id service unavailable response a status code equal to that given
+func (o *GetUniverseSchematicsSchematicIDServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetUniverseSchematicsSchematicIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/schematics/{schematic_id}/][%d] getUniverseSchematicsSchematicIdServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetUniverseSchematicsSchematicIDServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/universe/schematics/{schematic_id}/][%d] getUniverseSchematicsSchematicIdServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetUniverseSchematicsSchematicIDServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -387,7 +603,8 @@ func NewGetUniverseSchematicsSchematicIDGatewayTimeout() *GetUniverseSchematicsS
 	return &GetUniverseSchematicsSchematicIDGatewayTimeout{}
 }
 
-/* GetUniverseSchematicsSchematicIDGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetUniverseSchematicsSchematicIDGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -395,9 +612,39 @@ type GetUniverseSchematicsSchematicIDGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get universe schematics schematic Id gateway timeout response has a 2xx status code
+func (o *GetUniverseSchematicsSchematicIDGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe schematics schematic Id gateway timeout response has a 3xx status code
+func (o *GetUniverseSchematicsSchematicIDGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe schematics schematic Id gateway timeout response has a 4xx status code
+func (o *GetUniverseSchematicsSchematicIDGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe schematics schematic Id gateway timeout response has a 5xx status code
+func (o *GetUniverseSchematicsSchematicIDGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe schematics schematic Id gateway timeout response a status code equal to that given
+func (o *GetUniverseSchematicsSchematicIDGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetUniverseSchematicsSchematicIDGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/schematics/{schematic_id}/][%d] getUniverseSchematicsSchematicIdGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetUniverseSchematicsSchematicIDGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/universe/schematics/{schematic_id}/][%d] getUniverseSchematicsSchematicIdGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetUniverseSchematicsSchematicIDGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -414,7 +661,8 @@ func (o *GetUniverseSchematicsSchematicIDGatewayTimeout) readResponse(response r
 	return nil
 }
 
-/*GetUniverseSchematicsSchematicIDNotFoundBody get_universe_schematics_schematic_id_not_found
+/*
+GetUniverseSchematicsSchematicIDNotFoundBody get_universe_schematics_schematic_id_not_found
 //
 // Schematic not found
 swagger:model GetUniverseSchematicsSchematicIDNotFoundBody
@@ -455,7 +703,8 @@ func (o *GetUniverseSchematicsSchematicIDNotFoundBody) UnmarshalBinary(b []byte)
 	return nil
 }
 
-/*GetUniverseSchematicsSchematicIDOKBody get_universe_schematics_schematic_id_ok
+/*
+GetUniverseSchematicsSchematicIDOKBody get_universe_schematics_schematic_id_ok
 //
 // 200 ok object
 swagger:model GetUniverseSchematicsSchematicIDOKBody

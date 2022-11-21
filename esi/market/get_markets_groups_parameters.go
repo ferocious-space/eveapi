@@ -52,10 +52,12 @@ func NewGetMarketsGroupsParamsWithHTTPClient(client *http.Client) *GetMarketsGro
 	}
 }
 
-/* GetMarketsGroupsParams contains all the parameters to send to the API endpoint
-   for the get markets groups operation.
+/*
+GetMarketsGroupsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get markets groups operation.
+
+	Typically these are written to a http.Request.
 */
 type GetMarketsGroupsParams struct {
 

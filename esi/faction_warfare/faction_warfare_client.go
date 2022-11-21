@@ -50,9 +50,9 @@ type ClientService interface {
 }
 
 /*
-  GetCharactersCharacterIDFwStats overviews of a character involved in faction warfare
+	GetCharactersCharacterIDFwStats overviews of a character involved in faction warfare
 
-  Statistical overview of a character involved in faction warfare
+	Statistical overview of a character involved in faction warfare
 
 ---
 
@@ -95,9 +95,9 @@ func (a *Client) GetCharactersCharacterIDFwStats(params *GetCharactersCharacterI
 }
 
 /*
-  GetCorporationsCorporationIDFwStats overviews of a corporation involved in faction warfare
+	GetCorporationsCorporationIDFwStats overviews of a corporation involved in faction warfare
 
-  Statistics about a corporation involved in faction warfare
+	Statistics about a corporation involved in faction warfare
 
 ---
 
@@ -140,9 +140,9 @@ func (a *Client) GetCorporationsCorporationIDFwStats(params *GetCorporationsCorp
 }
 
 /*
-  GetFwLeaderboards lists of the top factions in faction warfare
+	GetFwLeaderboards lists of the top factions in faction warfare
 
-  Top 4 leaderboard of factions for kills and victory points separated by total, last week and yesterday
+	Top 4 leaderboard of factions for kills and victory points separated by total, last week and yesterday
 
 ---
 
@@ -184,9 +184,9 @@ func (a *Client) GetFwLeaderboards(params *GetFwLeaderboardsParams, opts ...Clie
 }
 
 /*
-  GetFwLeaderboardsCharacters lists of the top pilots in faction warfare
+	GetFwLeaderboardsCharacters lists of the top pilots in faction warfare
 
-  Top 100 leaderboard of pilots for kills and victory points separated by total, last week and yesterday
+	Top 100 leaderboard of pilots for kills and victory points separated by total, last week and yesterday
 
 ---
 
@@ -228,9 +228,9 @@ func (a *Client) GetFwLeaderboardsCharacters(params *GetFwLeaderboardsCharacters
 }
 
 /*
-  GetFwLeaderboardsCorporations lists of the top corporations in faction warfare
+	GetFwLeaderboardsCorporations lists of the top corporations in faction warfare
 
-  Top 10 leaderboard of corporations for kills and victory points separated by total, last week and yesterday
+	Top 10 leaderboard of corporations for kills and victory points separated by total, last week and yesterday
 
 ---
 
@@ -272,9 +272,9 @@ func (a *Client) GetFwLeaderboardsCorporations(params *GetFwLeaderboardsCorporat
 }
 
 /*
-  GetFwStats ans overview of statistics about factions involved in faction warfare
+	GetFwStats ans overview of statistics about factions involved in faction warfare
 
-  Statistical overviews of factions involved in faction warfare
+	Statistical overviews of factions involved in faction warfare
 
 ---
 
@@ -316,9 +316,9 @@ func (a *Client) GetFwStats(params *GetFwStatsParams, opts ...ClientOption) (*Ge
 }
 
 /*
-  GetFwSystems ownerships of faction warfare systems
+	GetFwSystems ownerships of faction warfare systems
 
-  An overview of the current ownership of faction warfare solar systems
+	An overview of the current ownership of faction warfare solar systems
 
 ---
 
@@ -360,9 +360,9 @@ func (a *Client) GetFwSystems(params *GetFwSystemsParams, opts ...ClientOption) 
 }
 
 /*
-  GetFwWars data about which n p c factions are at war
+	GetFwWars data about which n p c factions are at war
 
-  Data about which NPC factions are at war
+	Data about which NPC factions are at war
 
 ---
 

@@ -52,10 +52,12 @@ func NewGetSovereigntyStructuresParamsWithHTTPClient(client *http.Client) *GetSo
 	}
 }
 
-/* GetSovereigntyStructuresParams contains all the parameters to send to the API endpoint
-   for the get sovereignty structures operation.
+/*
+GetSovereigntyStructuresParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get sovereignty structures operation.
+
+	Typically these are written to a http.Request.
 */
 type GetSovereigntyStructuresParams struct {
 

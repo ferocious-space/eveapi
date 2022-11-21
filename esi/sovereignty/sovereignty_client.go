@@ -40,9 +40,9 @@ type ClientService interface {
 }
 
 /*
-  GetSovereigntyCampaigns lists sovereignty campaigns
+	GetSovereigntyCampaigns lists sovereignty campaigns
 
-  Shows sovereignty data for campaigns.
+	Shows sovereignty data for campaigns.
 
 ---
 
@@ -84,9 +84,9 @@ func (a *Client) GetSovereigntyCampaigns(params *GetSovereigntyCampaignsParams, 
 }
 
 /*
-  GetSovereigntyMap lists sovereignty of systems
+	GetSovereigntyMap lists sovereignty of systems
 
-  Shows sovereignty information for solar systems
+	Shows sovereignty information for solar systems
 
 ---
 
@@ -128,9 +128,9 @@ func (a *Client) GetSovereigntyMap(params *GetSovereigntyMapParams, opts ...Clie
 }
 
 /*
-  GetSovereigntyStructures lists sovereignty structures
+	GetSovereigntyStructures lists sovereignty structures
 
-  Shows sovereignty data for structures.
+	Shows sovereignty data for structures.
 
 ---
 

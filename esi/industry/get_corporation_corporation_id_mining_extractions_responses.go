@@ -99,7 +99,8 @@ func NewGetCorporationCorporationIDMiningExtractionsOK() *GetCorporationCorporat
 	}
 }
 
-/* GetCorporationCorporationIDMiningExtractionsOK describes a response with status code 200, with default header values.
+/*
+GetCorporationCorporationIDMiningExtractionsOK describes a response with status code 200, with default header values.
 
 A list of chunk timers
 */
@@ -131,9 +132,39 @@ type GetCorporationCorporationIDMiningExtractionsOK struct {
 	Payload []*GetCorporationCorporationIDMiningExtractionsOKBodyItems0
 }
 
+// IsSuccess returns true when this get corporation corporation Id mining extractions o k response has a 2xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get corporation corporation Id mining extractions o k response has a 3xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporation corporation Id mining extractions o k response has a 4xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get corporation corporation Id mining extractions o k response has a 5xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporation corporation Id mining extractions o k response a status code equal to that given
+func (o *GetCorporationCorporationIDMiningExtractionsOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetCorporationCorporationIDMiningExtractionsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/corporation/{corporation_id}/mining/extractions/][%d] getCorporationCorporationIdMiningExtractionsOK  %+v", 200, o.Payload)
 }
+
+func (o *GetCorporationCorporationIDMiningExtractionsOK) String() string {
+	return fmt.Sprintf("[GET /v1/corporation/{corporation_id}/mining/extractions/][%d] getCorporationCorporationIdMiningExtractionsOK  %+v", 200, o.Payload)
+}
+
 func (o *GetCorporationCorporationIDMiningExtractionsOK) GetPayload() []*GetCorporationCorporationIDMiningExtractionsOKBodyItems0 {
 	return o.Payload
 }
@@ -192,7 +223,8 @@ func NewGetCorporationCorporationIDMiningExtractionsNotModified() *GetCorporatio
 	return &GetCorporationCorporationIDMiningExtractionsNotModified{}
 }
 
-/* GetCorporationCorporationIDMiningExtractionsNotModified describes a response with status code 304, with default header values.
+/*
+GetCorporationCorporationIDMiningExtractionsNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -215,7 +247,36 @@ type GetCorporationCorporationIDMiningExtractionsNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get corporation corporation Id mining extractions not modified response has a 2xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporation corporation Id mining extractions not modified response has a 3xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get corporation corporation Id mining extractions not modified response has a 4xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get corporation corporation Id mining extractions not modified response has a 5xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporation corporation Id mining extractions not modified response a status code equal to that given
+func (o *GetCorporationCorporationIDMiningExtractionsNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetCorporationCorporationIDMiningExtractionsNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/corporation/{corporation_id}/mining/extractions/][%d] getCorporationCorporationIdMiningExtractionsNotModified ", 304)
+}
+
+func (o *GetCorporationCorporationIDMiningExtractionsNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/corporation/{corporation_id}/mining/extractions/][%d] getCorporationCorporationIdMiningExtractionsNotModified ", 304)
 }
 
@@ -257,7 +318,8 @@ func NewGetCorporationCorporationIDMiningExtractionsBadRequest() *GetCorporation
 	return &GetCorporationCorporationIDMiningExtractionsBadRequest{}
 }
 
-/* GetCorporationCorporationIDMiningExtractionsBadRequest describes a response with status code 400, with default header values.
+/*
+GetCorporationCorporationIDMiningExtractionsBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -265,9 +327,39 @@ type GetCorporationCorporationIDMiningExtractionsBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get corporation corporation Id mining extractions bad request response has a 2xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporation corporation Id mining extractions bad request response has a 3xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporation corporation Id mining extractions bad request response has a 4xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get corporation corporation Id mining extractions bad request response has a 5xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporation corporation Id mining extractions bad request response a status code equal to that given
+func (o *GetCorporationCorporationIDMiningExtractionsBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetCorporationCorporationIDMiningExtractionsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/corporation/{corporation_id}/mining/extractions/][%d] getCorporationCorporationIdMiningExtractionsBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetCorporationCorporationIDMiningExtractionsBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/corporation/{corporation_id}/mining/extractions/][%d] getCorporationCorporationIdMiningExtractionsBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetCorporationCorporationIDMiningExtractionsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -289,7 +381,8 @@ func NewGetCorporationCorporationIDMiningExtractionsUnauthorized() *GetCorporati
 	return &GetCorporationCorporationIDMiningExtractionsUnauthorized{}
 }
 
-/* GetCorporationCorporationIDMiningExtractionsUnauthorized describes a response with status code 401, with default header values.
+/*
+GetCorporationCorporationIDMiningExtractionsUnauthorized describes a response with status code 401, with default header values.
 
 Unauthorized
 */
@@ -297,9 +390,39 @@ type GetCorporationCorporationIDMiningExtractionsUnauthorized struct {
 	Payload *models.Unauthorized
 }
 
+// IsSuccess returns true when this get corporation corporation Id mining extractions unauthorized response has a 2xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporation corporation Id mining extractions unauthorized response has a 3xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporation corporation Id mining extractions unauthorized response has a 4xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get corporation corporation Id mining extractions unauthorized response has a 5xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporation corporation Id mining extractions unauthorized response a status code equal to that given
+func (o *GetCorporationCorporationIDMiningExtractionsUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *GetCorporationCorporationIDMiningExtractionsUnauthorized) Error() string {
 	return fmt.Sprintf("[GET /v1/corporation/{corporation_id}/mining/extractions/][%d] getCorporationCorporationIdMiningExtractionsUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *GetCorporationCorporationIDMiningExtractionsUnauthorized) String() string {
+	return fmt.Sprintf("[GET /v1/corporation/{corporation_id}/mining/extractions/][%d] getCorporationCorporationIdMiningExtractionsUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *GetCorporationCorporationIDMiningExtractionsUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
 }
@@ -321,7 +444,8 @@ func NewGetCorporationCorporationIDMiningExtractionsForbidden() *GetCorporationC
 	return &GetCorporationCorporationIDMiningExtractionsForbidden{}
 }
 
-/* GetCorporationCorporationIDMiningExtractionsForbidden describes a response with status code 403, with default header values.
+/*
+GetCorporationCorporationIDMiningExtractionsForbidden describes a response with status code 403, with default header values.
 
 Forbidden
 */
@@ -329,9 +453,39 @@ type GetCorporationCorporationIDMiningExtractionsForbidden struct {
 	Payload *models.Forbidden
 }
 
+// IsSuccess returns true when this get corporation corporation Id mining extractions forbidden response has a 2xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsForbidden) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporation corporation Id mining extractions forbidden response has a 3xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsForbidden) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporation corporation Id mining extractions forbidden response has a 4xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsForbidden) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get corporation corporation Id mining extractions forbidden response has a 5xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsForbidden) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporation corporation Id mining extractions forbidden response a status code equal to that given
+func (o *GetCorporationCorporationIDMiningExtractionsForbidden) IsCode(code int) bool {
+	return code == 403
+}
+
 func (o *GetCorporationCorporationIDMiningExtractionsForbidden) Error() string {
 	return fmt.Sprintf("[GET /v1/corporation/{corporation_id}/mining/extractions/][%d] getCorporationCorporationIdMiningExtractionsForbidden  %+v", 403, o.Payload)
 }
+
+func (o *GetCorporationCorporationIDMiningExtractionsForbidden) String() string {
+	return fmt.Sprintf("[GET /v1/corporation/{corporation_id}/mining/extractions/][%d] getCorporationCorporationIdMiningExtractionsForbidden  %+v", 403, o.Payload)
+}
+
 func (o *GetCorporationCorporationIDMiningExtractionsForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
 }
@@ -353,7 +507,8 @@ func NewGetCorporationCorporationIDMiningExtractionsEnhanceYourCalm() *GetCorpor
 	return &GetCorporationCorporationIDMiningExtractionsEnhanceYourCalm{}
 }
 
-/* GetCorporationCorporationIDMiningExtractionsEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetCorporationCorporationIDMiningExtractionsEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -361,9 +516,39 @@ type GetCorporationCorporationIDMiningExtractionsEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get corporation corporation Id mining extractions enhance your calm response has a 2xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporation corporation Id mining extractions enhance your calm response has a 3xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporation corporation Id mining extractions enhance your calm response has a 4xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get corporation corporation Id mining extractions enhance your calm response has a 5xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get corporation corporation Id mining extractions enhance your calm response a status code equal to that given
+func (o *GetCorporationCorporationIDMiningExtractionsEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetCorporationCorporationIDMiningExtractionsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/corporation/{corporation_id}/mining/extractions/][%d] getCorporationCorporationIdMiningExtractionsEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetCorporationCorporationIDMiningExtractionsEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/corporation/{corporation_id}/mining/extractions/][%d] getCorporationCorporationIdMiningExtractionsEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetCorporationCorporationIDMiningExtractionsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -385,7 +570,8 @@ func NewGetCorporationCorporationIDMiningExtractionsInternalServerError() *GetCo
 	return &GetCorporationCorporationIDMiningExtractionsInternalServerError{}
 }
 
-/* GetCorporationCorporationIDMiningExtractionsInternalServerError describes a response with status code 500, with default header values.
+/*
+GetCorporationCorporationIDMiningExtractionsInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -393,9 +579,39 @@ type GetCorporationCorporationIDMiningExtractionsInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get corporation corporation Id mining extractions internal server error response has a 2xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporation corporation Id mining extractions internal server error response has a 3xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporation corporation Id mining extractions internal server error response has a 4xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get corporation corporation Id mining extractions internal server error response has a 5xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get corporation corporation Id mining extractions internal server error response a status code equal to that given
+func (o *GetCorporationCorporationIDMiningExtractionsInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetCorporationCorporationIDMiningExtractionsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/corporation/{corporation_id}/mining/extractions/][%d] getCorporationCorporationIdMiningExtractionsInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetCorporationCorporationIDMiningExtractionsInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/corporation/{corporation_id}/mining/extractions/][%d] getCorporationCorporationIdMiningExtractionsInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetCorporationCorporationIDMiningExtractionsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -417,7 +633,8 @@ func NewGetCorporationCorporationIDMiningExtractionsServiceUnavailable() *GetCor
 	return &GetCorporationCorporationIDMiningExtractionsServiceUnavailable{}
 }
 
-/* GetCorporationCorporationIDMiningExtractionsServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetCorporationCorporationIDMiningExtractionsServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -425,9 +642,39 @@ type GetCorporationCorporationIDMiningExtractionsServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get corporation corporation Id mining extractions service unavailable response has a 2xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporation corporation Id mining extractions service unavailable response has a 3xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporation corporation Id mining extractions service unavailable response has a 4xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get corporation corporation Id mining extractions service unavailable response has a 5xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get corporation corporation Id mining extractions service unavailable response a status code equal to that given
+func (o *GetCorporationCorporationIDMiningExtractionsServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetCorporationCorporationIDMiningExtractionsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/corporation/{corporation_id}/mining/extractions/][%d] getCorporationCorporationIdMiningExtractionsServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetCorporationCorporationIDMiningExtractionsServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/corporation/{corporation_id}/mining/extractions/][%d] getCorporationCorporationIdMiningExtractionsServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetCorporationCorporationIDMiningExtractionsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -449,7 +696,8 @@ func NewGetCorporationCorporationIDMiningExtractionsGatewayTimeout() *GetCorpora
 	return &GetCorporationCorporationIDMiningExtractionsGatewayTimeout{}
 }
 
-/* GetCorporationCorporationIDMiningExtractionsGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetCorporationCorporationIDMiningExtractionsGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -457,9 +705,39 @@ type GetCorporationCorporationIDMiningExtractionsGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get corporation corporation Id mining extractions gateway timeout response has a 2xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get corporation corporation Id mining extractions gateway timeout response has a 3xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get corporation corporation Id mining extractions gateway timeout response has a 4xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get corporation corporation Id mining extractions gateway timeout response has a 5xx status code
+func (o *GetCorporationCorporationIDMiningExtractionsGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get corporation corporation Id mining extractions gateway timeout response a status code equal to that given
+func (o *GetCorporationCorporationIDMiningExtractionsGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetCorporationCorporationIDMiningExtractionsGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/corporation/{corporation_id}/mining/extractions/][%d] getCorporationCorporationIdMiningExtractionsGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetCorporationCorporationIDMiningExtractionsGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/corporation/{corporation_id}/mining/extractions/][%d] getCorporationCorporationIdMiningExtractionsGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetCorporationCorporationIDMiningExtractionsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -476,7 +754,8 @@ func (o *GetCorporationCorporationIDMiningExtractionsGatewayTimeout) readRespons
 	return nil
 }
 
-/*GetCorporationCorporationIDMiningExtractionsOKBodyItems0 get_corporation_corporation_id_mining_extractions_200_ok
+/*
+GetCorporationCorporationIDMiningExtractionsOKBodyItems0 get_corporation_corporation_id_mining_extractions_200_ok
 //
 // 200 ok object
 swagger:model GetCorporationCorporationIDMiningExtractionsOKBodyItems0

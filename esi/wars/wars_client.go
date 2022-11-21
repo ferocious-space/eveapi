@@ -40,9 +40,9 @@ type ClientService interface {
 }
 
 /*
-  GetWars lists wars
+	GetWars lists wars
 
-  Return a list of wars
+	Return a list of wars
 
 ---
 
@@ -84,9 +84,9 @@ func (a *Client) GetWars(params *GetWarsParams, opts ...ClientOption) (*GetWarsO
 }
 
 /*
-  GetWarsWarID gets war information
+	GetWarsWarID gets war information
 
-  Return details about a war
+	Return details about a war
 
 ---
 
@@ -128,9 +128,9 @@ func (a *Client) GetWarsWarID(params *GetWarsWarIDParams, opts ...ClientOption) 
 }
 
 /*
-  GetWarsWarIDKillmails lists kills for a war
+	GetWarsWarIDKillmails lists kills for a war
 
-  Return a list of kills related to a war
+	Return a list of kills related to a war
 
 ---
 

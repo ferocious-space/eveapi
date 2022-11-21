@@ -53,10 +53,12 @@ func NewPostUIOpenwindowInformationParamsWithHTTPClient(client *http.Client) *Po
 	}
 }
 
-/* PostUIOpenwindowInformationParams contains all the parameters to send to the API endpoint
-   for the post ui openwindow information operation.
+/*
+PostUIOpenwindowInformationParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the post ui openwindow information operation.
+
+	Typically these are written to a http.Request.
 */
 type PostUIOpenwindowInformationParams struct {
 

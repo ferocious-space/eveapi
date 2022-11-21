@@ -53,10 +53,12 @@ func NewPostCharactersCharacterIDMailLabelsParamsWithHTTPClient(client *http.Cli
 	}
 }
 
-/* PostCharactersCharacterIDMailLabelsParams contains all the parameters to send to the API endpoint
-   for the post characters character id mail labels operation.
+/*
+PostCharactersCharacterIDMailLabelsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the post characters character id mail labels operation.
+
+	Typically these are written to a http.Request.
 */
 type PostCharactersCharacterIDMailLabelsParams struct {
 

@@ -81,7 +81,8 @@ func NewPostCharactersCharacterIDCspaCreated() *PostCharactersCharacterIDCspaCre
 	return &PostCharactersCharacterIDCspaCreated{}
 }
 
-/* PostCharactersCharacterIDCspaCreated describes a response with status code 201, with default header values.
+/*
+PostCharactersCharacterIDCspaCreated describes a response with status code 201, with default header values.
 
 Aggregate cost of sending a mail from the source character to the target characters, in ISK
 */
@@ -89,9 +90,39 @@ type PostCharactersCharacterIDCspaCreated struct {
 	Payload float32
 }
 
+// IsSuccess returns true when this post characters character Id cspa created response has a 2xx status code
+func (o *PostCharactersCharacterIDCspaCreated) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this post characters character Id cspa created response has a 3xx status code
+func (o *PostCharactersCharacterIDCspaCreated) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id cspa created response has a 4xx status code
+func (o *PostCharactersCharacterIDCspaCreated) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post characters character Id cspa created response has a 5xx status code
+func (o *PostCharactersCharacterIDCspaCreated) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post characters character Id cspa created response a status code equal to that given
+func (o *PostCharactersCharacterIDCspaCreated) IsCode(code int) bool {
+	return code == 201
+}
+
 func (o *PostCharactersCharacterIDCspaCreated) Error() string {
 	return fmt.Sprintf("[POST /v5/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaCreated  %+v", 201, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDCspaCreated) String() string {
+	return fmt.Sprintf("[POST /v5/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaCreated  %+v", 201, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDCspaCreated) GetPayload() float32 {
 	return o.Payload
 }
@@ -111,7 +142,8 @@ func NewPostCharactersCharacterIDCspaBadRequest() *PostCharactersCharacterIDCspa
 	return &PostCharactersCharacterIDCspaBadRequest{}
 }
 
-/* PostCharactersCharacterIDCspaBadRequest describes a response with status code 400, with default header values.
+/*
+PostCharactersCharacterIDCspaBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -119,9 +151,39 @@ type PostCharactersCharacterIDCspaBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this post characters character Id cspa bad request response has a 2xx status code
+func (o *PostCharactersCharacterIDCspaBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id cspa bad request response has a 3xx status code
+func (o *PostCharactersCharacterIDCspaBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id cspa bad request response has a 4xx status code
+func (o *PostCharactersCharacterIDCspaBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post characters character Id cspa bad request response has a 5xx status code
+func (o *PostCharactersCharacterIDCspaBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post characters character Id cspa bad request response a status code equal to that given
+func (o *PostCharactersCharacterIDCspaBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *PostCharactersCharacterIDCspaBadRequest) Error() string {
 	return fmt.Sprintf("[POST /v5/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDCspaBadRequest) String() string {
+	return fmt.Sprintf("[POST /v5/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDCspaBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -143,7 +205,8 @@ func NewPostCharactersCharacterIDCspaUnauthorized() *PostCharactersCharacterIDCs
 	return &PostCharactersCharacterIDCspaUnauthorized{}
 }
 
-/* PostCharactersCharacterIDCspaUnauthorized describes a response with status code 401, with default header values.
+/*
+PostCharactersCharacterIDCspaUnauthorized describes a response with status code 401, with default header values.
 
 Unauthorized
 */
@@ -151,9 +214,39 @@ type PostCharactersCharacterIDCspaUnauthorized struct {
 	Payload *models.Unauthorized
 }
 
+// IsSuccess returns true when this post characters character Id cspa unauthorized response has a 2xx status code
+func (o *PostCharactersCharacterIDCspaUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id cspa unauthorized response has a 3xx status code
+func (o *PostCharactersCharacterIDCspaUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id cspa unauthorized response has a 4xx status code
+func (o *PostCharactersCharacterIDCspaUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post characters character Id cspa unauthorized response has a 5xx status code
+func (o *PostCharactersCharacterIDCspaUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post characters character Id cspa unauthorized response a status code equal to that given
+func (o *PostCharactersCharacterIDCspaUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *PostCharactersCharacterIDCspaUnauthorized) Error() string {
 	return fmt.Sprintf("[POST /v5/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDCspaUnauthorized) String() string {
+	return fmt.Sprintf("[POST /v5/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDCspaUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
 }
@@ -175,7 +268,8 @@ func NewPostCharactersCharacterIDCspaForbidden() *PostCharactersCharacterIDCspaF
 	return &PostCharactersCharacterIDCspaForbidden{}
 }
 
-/* PostCharactersCharacterIDCspaForbidden describes a response with status code 403, with default header values.
+/*
+PostCharactersCharacterIDCspaForbidden describes a response with status code 403, with default header values.
 
 Forbidden
 */
@@ -183,9 +277,39 @@ type PostCharactersCharacterIDCspaForbidden struct {
 	Payload *models.Forbidden
 }
 
+// IsSuccess returns true when this post characters character Id cspa forbidden response has a 2xx status code
+func (o *PostCharactersCharacterIDCspaForbidden) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id cspa forbidden response has a 3xx status code
+func (o *PostCharactersCharacterIDCspaForbidden) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id cspa forbidden response has a 4xx status code
+func (o *PostCharactersCharacterIDCspaForbidden) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post characters character Id cspa forbidden response has a 5xx status code
+func (o *PostCharactersCharacterIDCspaForbidden) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post characters character Id cspa forbidden response a status code equal to that given
+func (o *PostCharactersCharacterIDCspaForbidden) IsCode(code int) bool {
+	return code == 403
+}
+
 func (o *PostCharactersCharacterIDCspaForbidden) Error() string {
 	return fmt.Sprintf("[POST /v5/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaForbidden  %+v", 403, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDCspaForbidden) String() string {
+	return fmt.Sprintf("[POST /v5/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaForbidden  %+v", 403, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDCspaForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
 }
@@ -207,7 +331,8 @@ func NewPostCharactersCharacterIDCspaEnhanceYourCalm() *PostCharactersCharacterI
 	return &PostCharactersCharacterIDCspaEnhanceYourCalm{}
 }
 
-/* PostCharactersCharacterIDCspaEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+PostCharactersCharacterIDCspaEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -215,9 +340,39 @@ type PostCharactersCharacterIDCspaEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this post characters character Id cspa enhance your calm response has a 2xx status code
+func (o *PostCharactersCharacterIDCspaEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id cspa enhance your calm response has a 3xx status code
+func (o *PostCharactersCharacterIDCspaEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id cspa enhance your calm response has a 4xx status code
+func (o *PostCharactersCharacterIDCspaEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post characters character Id cspa enhance your calm response has a 5xx status code
+func (o *PostCharactersCharacterIDCspaEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post characters character Id cspa enhance your calm response a status code equal to that given
+func (o *PostCharactersCharacterIDCspaEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *PostCharactersCharacterIDCspaEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[POST /v5/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDCspaEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[POST /v5/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDCspaEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -239,7 +394,8 @@ func NewPostCharactersCharacterIDCspaInternalServerError() *PostCharactersCharac
 	return &PostCharactersCharacterIDCspaInternalServerError{}
 }
 
-/* PostCharactersCharacterIDCspaInternalServerError describes a response with status code 500, with default header values.
+/*
+PostCharactersCharacterIDCspaInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -247,9 +403,39 @@ type PostCharactersCharacterIDCspaInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this post characters character Id cspa internal server error response has a 2xx status code
+func (o *PostCharactersCharacterIDCspaInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id cspa internal server error response has a 3xx status code
+func (o *PostCharactersCharacterIDCspaInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id cspa internal server error response has a 4xx status code
+func (o *PostCharactersCharacterIDCspaInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post characters character Id cspa internal server error response has a 5xx status code
+func (o *PostCharactersCharacterIDCspaInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post characters character Id cspa internal server error response a status code equal to that given
+func (o *PostCharactersCharacterIDCspaInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *PostCharactersCharacterIDCspaInternalServerError) Error() string {
 	return fmt.Sprintf("[POST /v5/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDCspaInternalServerError) String() string {
+	return fmt.Sprintf("[POST /v5/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDCspaInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -271,7 +457,8 @@ func NewPostCharactersCharacterIDCspaServiceUnavailable() *PostCharactersCharact
 	return &PostCharactersCharacterIDCspaServiceUnavailable{}
 }
 
-/* PostCharactersCharacterIDCspaServiceUnavailable describes a response with status code 503, with default header values.
+/*
+PostCharactersCharacterIDCspaServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -279,9 +466,39 @@ type PostCharactersCharacterIDCspaServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this post characters character Id cspa service unavailable response has a 2xx status code
+func (o *PostCharactersCharacterIDCspaServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id cspa service unavailable response has a 3xx status code
+func (o *PostCharactersCharacterIDCspaServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id cspa service unavailable response has a 4xx status code
+func (o *PostCharactersCharacterIDCspaServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post characters character Id cspa service unavailable response has a 5xx status code
+func (o *PostCharactersCharacterIDCspaServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post characters character Id cspa service unavailable response a status code equal to that given
+func (o *PostCharactersCharacterIDCspaServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *PostCharactersCharacterIDCspaServiceUnavailable) Error() string {
 	return fmt.Sprintf("[POST /v5/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDCspaServiceUnavailable) String() string {
+	return fmt.Sprintf("[POST /v5/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDCspaServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -303,7 +520,8 @@ func NewPostCharactersCharacterIDCspaGatewayTimeout() *PostCharactersCharacterID
 	return &PostCharactersCharacterIDCspaGatewayTimeout{}
 }
 
-/* PostCharactersCharacterIDCspaGatewayTimeout describes a response with status code 504, with default header values.
+/*
+PostCharactersCharacterIDCspaGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -311,9 +529,39 @@ type PostCharactersCharacterIDCspaGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this post characters character Id cspa gateway timeout response has a 2xx status code
+func (o *PostCharactersCharacterIDCspaGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id cspa gateway timeout response has a 3xx status code
+func (o *PostCharactersCharacterIDCspaGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id cspa gateway timeout response has a 4xx status code
+func (o *PostCharactersCharacterIDCspaGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post characters character Id cspa gateway timeout response has a 5xx status code
+func (o *PostCharactersCharacterIDCspaGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post characters character Id cspa gateway timeout response a status code equal to that given
+func (o *PostCharactersCharacterIDCspaGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *PostCharactersCharacterIDCspaGatewayTimeout) Error() string {
 	return fmt.Sprintf("[POST /v5/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDCspaGatewayTimeout) String() string {
+	return fmt.Sprintf("[POST /v5/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDCspaGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }

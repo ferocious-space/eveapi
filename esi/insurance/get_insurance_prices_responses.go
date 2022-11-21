@@ -80,7 +80,8 @@ func NewGetInsurancePricesOK() *GetInsurancePricesOK {
 	return &GetInsurancePricesOK{}
 }
 
-/* GetInsurancePricesOK describes a response with status code 200, with default header values.
+/*
+GetInsurancePricesOK describes a response with status code 200, with default header values.
 
 A list of insurance levels for all ship types
 */
@@ -109,9 +110,39 @@ type GetInsurancePricesOK struct {
 	Payload []*GetInsurancePricesOKBodyItems0
 }
 
+// IsSuccess returns true when this get insurance prices o k response has a 2xx status code
+func (o *GetInsurancePricesOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get insurance prices o k response has a 3xx status code
+func (o *GetInsurancePricesOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get insurance prices o k response has a 4xx status code
+func (o *GetInsurancePricesOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get insurance prices o k response has a 5xx status code
+func (o *GetInsurancePricesOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get insurance prices o k response a status code equal to that given
+func (o *GetInsurancePricesOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetInsurancePricesOK) Error() string {
 	return fmt.Sprintf("[GET /v1/insurance/prices/][%d] getInsurancePricesOK  %+v", 200, o.Payload)
 }
+
+func (o *GetInsurancePricesOK) String() string {
+	return fmt.Sprintf("[GET /v1/insurance/prices/][%d] getInsurancePricesOK  %+v", 200, o.Payload)
+}
+
 func (o *GetInsurancePricesOK) GetPayload() []*GetInsurancePricesOKBodyItems0 {
 	return o.Payload
 }
@@ -166,7 +197,8 @@ func NewGetInsurancePricesNotModified() *GetInsurancePricesNotModified {
 	return &GetInsurancePricesNotModified{}
 }
 
-/* GetInsurancePricesNotModified describes a response with status code 304, with default header values.
+/*
+GetInsurancePricesNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -189,7 +221,36 @@ type GetInsurancePricesNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get insurance prices not modified response has a 2xx status code
+func (o *GetInsurancePricesNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get insurance prices not modified response has a 3xx status code
+func (o *GetInsurancePricesNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get insurance prices not modified response has a 4xx status code
+func (o *GetInsurancePricesNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get insurance prices not modified response has a 5xx status code
+func (o *GetInsurancePricesNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get insurance prices not modified response a status code equal to that given
+func (o *GetInsurancePricesNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetInsurancePricesNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/insurance/prices/][%d] getInsurancePricesNotModified ", 304)
+}
+
+func (o *GetInsurancePricesNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/insurance/prices/][%d] getInsurancePricesNotModified ", 304)
 }
 
@@ -231,7 +292,8 @@ func NewGetInsurancePricesBadRequest() *GetInsurancePricesBadRequest {
 	return &GetInsurancePricesBadRequest{}
 }
 
-/* GetInsurancePricesBadRequest describes a response with status code 400, with default header values.
+/*
+GetInsurancePricesBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -239,9 +301,39 @@ type GetInsurancePricesBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get insurance prices bad request response has a 2xx status code
+func (o *GetInsurancePricesBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get insurance prices bad request response has a 3xx status code
+func (o *GetInsurancePricesBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get insurance prices bad request response has a 4xx status code
+func (o *GetInsurancePricesBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get insurance prices bad request response has a 5xx status code
+func (o *GetInsurancePricesBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get insurance prices bad request response a status code equal to that given
+func (o *GetInsurancePricesBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetInsurancePricesBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/insurance/prices/][%d] getInsurancePricesBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetInsurancePricesBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/insurance/prices/][%d] getInsurancePricesBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetInsurancePricesBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -263,7 +355,8 @@ func NewGetInsurancePricesEnhanceYourCalm() *GetInsurancePricesEnhanceYourCalm {
 	return &GetInsurancePricesEnhanceYourCalm{}
 }
 
-/* GetInsurancePricesEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetInsurancePricesEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -271,9 +364,39 @@ type GetInsurancePricesEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get insurance prices enhance your calm response has a 2xx status code
+func (o *GetInsurancePricesEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get insurance prices enhance your calm response has a 3xx status code
+func (o *GetInsurancePricesEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get insurance prices enhance your calm response has a 4xx status code
+func (o *GetInsurancePricesEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get insurance prices enhance your calm response has a 5xx status code
+func (o *GetInsurancePricesEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get insurance prices enhance your calm response a status code equal to that given
+func (o *GetInsurancePricesEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetInsurancePricesEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/insurance/prices/][%d] getInsurancePricesEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetInsurancePricesEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/insurance/prices/][%d] getInsurancePricesEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetInsurancePricesEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -295,7 +418,8 @@ func NewGetInsurancePricesInternalServerError() *GetInsurancePricesInternalServe
 	return &GetInsurancePricesInternalServerError{}
 }
 
-/* GetInsurancePricesInternalServerError describes a response with status code 500, with default header values.
+/*
+GetInsurancePricesInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -303,9 +427,39 @@ type GetInsurancePricesInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get insurance prices internal server error response has a 2xx status code
+func (o *GetInsurancePricesInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get insurance prices internal server error response has a 3xx status code
+func (o *GetInsurancePricesInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get insurance prices internal server error response has a 4xx status code
+func (o *GetInsurancePricesInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get insurance prices internal server error response has a 5xx status code
+func (o *GetInsurancePricesInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get insurance prices internal server error response a status code equal to that given
+func (o *GetInsurancePricesInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetInsurancePricesInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/insurance/prices/][%d] getInsurancePricesInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetInsurancePricesInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/insurance/prices/][%d] getInsurancePricesInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetInsurancePricesInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -327,7 +481,8 @@ func NewGetInsurancePricesServiceUnavailable() *GetInsurancePricesServiceUnavail
 	return &GetInsurancePricesServiceUnavailable{}
 }
 
-/* GetInsurancePricesServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetInsurancePricesServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -335,9 +490,39 @@ type GetInsurancePricesServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get insurance prices service unavailable response has a 2xx status code
+func (o *GetInsurancePricesServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get insurance prices service unavailable response has a 3xx status code
+func (o *GetInsurancePricesServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get insurance prices service unavailable response has a 4xx status code
+func (o *GetInsurancePricesServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get insurance prices service unavailable response has a 5xx status code
+func (o *GetInsurancePricesServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get insurance prices service unavailable response a status code equal to that given
+func (o *GetInsurancePricesServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetInsurancePricesServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/insurance/prices/][%d] getInsurancePricesServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetInsurancePricesServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/insurance/prices/][%d] getInsurancePricesServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetInsurancePricesServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -359,7 +544,8 @@ func NewGetInsurancePricesGatewayTimeout() *GetInsurancePricesGatewayTimeout {
 	return &GetInsurancePricesGatewayTimeout{}
 }
 
-/* GetInsurancePricesGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetInsurancePricesGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -367,9 +553,39 @@ type GetInsurancePricesGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get insurance prices gateway timeout response has a 2xx status code
+func (o *GetInsurancePricesGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get insurance prices gateway timeout response has a 3xx status code
+func (o *GetInsurancePricesGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get insurance prices gateway timeout response has a 4xx status code
+func (o *GetInsurancePricesGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get insurance prices gateway timeout response has a 5xx status code
+func (o *GetInsurancePricesGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get insurance prices gateway timeout response a status code equal to that given
+func (o *GetInsurancePricesGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetInsurancePricesGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/insurance/prices/][%d] getInsurancePricesGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetInsurancePricesGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/insurance/prices/][%d] getInsurancePricesGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetInsurancePricesGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -386,7 +602,8 @@ func (o *GetInsurancePricesGatewayTimeout) readResponse(response runtime.ClientR
 	return nil
 }
 
-/*GetInsurancePricesOKBodyItems0 get_insurance_prices_200_ok
+/*
+GetInsurancePricesOKBodyItems0 get_insurance_prices_200_ok
 //
 // 200 ok object
 swagger:model GetInsurancePricesOKBodyItems0
@@ -519,7 +736,8 @@ func (o *GetInsurancePricesOKBodyItems0) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*GetInsurancePricesOKBodyItems0LevelsItems0 get_insurance_prices_level
+/*
+GetInsurancePricesOKBodyItems0LevelsItems0 get_insurance_prices_level
 //
 // level object
 swagger:model GetInsurancePricesOKBodyItems0LevelsItems0

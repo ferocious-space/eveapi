@@ -53,10 +53,12 @@ func NewGetCharactersCharacterIDContractsParamsWithHTTPClient(client *http.Clien
 	}
 }
 
-/* GetCharactersCharacterIDContractsParams contains all the parameters to send to the API endpoint
-   for the get characters character id contracts operation.
+/*
+GetCharactersCharacterIDContractsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get characters character id contracts operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCharactersCharacterIDContractsParams struct {
 

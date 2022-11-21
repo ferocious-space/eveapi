@@ -93,7 +93,8 @@ func NewGetCharactersCharacterIDClonesOK() *GetCharactersCharacterIDClonesOK {
 	return &GetCharactersCharacterIDClonesOK{}
 }
 
-/* GetCharactersCharacterIDClonesOK describes a response with status code 200, with default header values.
+/*
+GetCharactersCharacterIDClonesOK describes a response with status code 200, with default header values.
 
 Clone information for the given character
 */
@@ -118,9 +119,39 @@ type GetCharactersCharacterIDClonesOK struct {
 	Payload *GetCharactersCharacterIDClonesOKBody
 }
 
+// IsSuccess returns true when this get characters character Id clones o k response has a 2xx status code
+func (o *GetCharactersCharacterIDClonesOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get characters character Id clones o k response has a 3xx status code
+func (o *GetCharactersCharacterIDClonesOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id clones o k response has a 4xx status code
+func (o *GetCharactersCharacterIDClonesOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id clones o k response has a 5xx status code
+func (o *GetCharactersCharacterIDClonesOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id clones o k response a status code equal to that given
+func (o *GetCharactersCharacterIDClonesOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetCharactersCharacterIDClonesOK) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/clones/][%d] getCharactersCharacterIdClonesOK  %+v", 200, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDClonesOK) String() string {
+	return fmt.Sprintf("[GET /v3/characters/{character_id}/clones/][%d] getCharactersCharacterIdClonesOK  %+v", 200, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDClonesOK) GetPayload() *GetCharactersCharacterIDClonesOKBody {
 	return o.Payload
 }
@@ -170,7 +201,8 @@ func NewGetCharactersCharacterIDClonesNotModified() *GetCharactersCharacterIDClo
 	return &GetCharactersCharacterIDClonesNotModified{}
 }
 
-/* GetCharactersCharacterIDClonesNotModified describes a response with status code 304, with default header values.
+/*
+GetCharactersCharacterIDClonesNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -193,7 +225,36 @@ type GetCharactersCharacterIDClonesNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get characters character Id clones not modified response has a 2xx status code
+func (o *GetCharactersCharacterIDClonesNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id clones not modified response has a 3xx status code
+func (o *GetCharactersCharacterIDClonesNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get characters character Id clones not modified response has a 4xx status code
+func (o *GetCharactersCharacterIDClonesNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id clones not modified response has a 5xx status code
+func (o *GetCharactersCharacterIDClonesNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id clones not modified response a status code equal to that given
+func (o *GetCharactersCharacterIDClonesNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetCharactersCharacterIDClonesNotModified) Error() string {
+	return fmt.Sprintf("[GET /v3/characters/{character_id}/clones/][%d] getCharactersCharacterIdClonesNotModified ", 304)
+}
+
+func (o *GetCharactersCharacterIDClonesNotModified) String() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/clones/][%d] getCharactersCharacterIdClonesNotModified ", 304)
 }
 
@@ -235,7 +296,8 @@ func NewGetCharactersCharacterIDClonesBadRequest() *GetCharactersCharacterIDClon
 	return &GetCharactersCharacterIDClonesBadRequest{}
 }
 
-/* GetCharactersCharacterIDClonesBadRequest describes a response with status code 400, with default header values.
+/*
+GetCharactersCharacterIDClonesBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -243,9 +305,39 @@ type GetCharactersCharacterIDClonesBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get characters character Id clones bad request response has a 2xx status code
+func (o *GetCharactersCharacterIDClonesBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id clones bad request response has a 3xx status code
+func (o *GetCharactersCharacterIDClonesBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id clones bad request response has a 4xx status code
+func (o *GetCharactersCharacterIDClonesBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id clones bad request response has a 5xx status code
+func (o *GetCharactersCharacterIDClonesBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id clones bad request response a status code equal to that given
+func (o *GetCharactersCharacterIDClonesBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetCharactersCharacterIDClonesBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/clones/][%d] getCharactersCharacterIdClonesBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDClonesBadRequest) String() string {
+	return fmt.Sprintf("[GET /v3/characters/{character_id}/clones/][%d] getCharactersCharacterIdClonesBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDClonesBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -267,7 +359,8 @@ func NewGetCharactersCharacterIDClonesUnauthorized() *GetCharactersCharacterIDCl
 	return &GetCharactersCharacterIDClonesUnauthorized{}
 }
 
-/* GetCharactersCharacterIDClonesUnauthorized describes a response with status code 401, with default header values.
+/*
+GetCharactersCharacterIDClonesUnauthorized describes a response with status code 401, with default header values.
 
 Unauthorized
 */
@@ -275,9 +368,39 @@ type GetCharactersCharacterIDClonesUnauthorized struct {
 	Payload *models.Unauthorized
 }
 
+// IsSuccess returns true when this get characters character Id clones unauthorized response has a 2xx status code
+func (o *GetCharactersCharacterIDClonesUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id clones unauthorized response has a 3xx status code
+func (o *GetCharactersCharacterIDClonesUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id clones unauthorized response has a 4xx status code
+func (o *GetCharactersCharacterIDClonesUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id clones unauthorized response has a 5xx status code
+func (o *GetCharactersCharacterIDClonesUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id clones unauthorized response a status code equal to that given
+func (o *GetCharactersCharacterIDClonesUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *GetCharactersCharacterIDClonesUnauthorized) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/clones/][%d] getCharactersCharacterIdClonesUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDClonesUnauthorized) String() string {
+	return fmt.Sprintf("[GET /v3/characters/{character_id}/clones/][%d] getCharactersCharacterIdClonesUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDClonesUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
 }
@@ -299,7 +422,8 @@ func NewGetCharactersCharacterIDClonesForbidden() *GetCharactersCharacterIDClone
 	return &GetCharactersCharacterIDClonesForbidden{}
 }
 
-/* GetCharactersCharacterIDClonesForbidden describes a response with status code 403, with default header values.
+/*
+GetCharactersCharacterIDClonesForbidden describes a response with status code 403, with default header values.
 
 Forbidden
 */
@@ -307,9 +431,39 @@ type GetCharactersCharacterIDClonesForbidden struct {
 	Payload *models.Forbidden
 }
 
+// IsSuccess returns true when this get characters character Id clones forbidden response has a 2xx status code
+func (o *GetCharactersCharacterIDClonesForbidden) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id clones forbidden response has a 3xx status code
+func (o *GetCharactersCharacterIDClonesForbidden) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id clones forbidden response has a 4xx status code
+func (o *GetCharactersCharacterIDClonesForbidden) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id clones forbidden response has a 5xx status code
+func (o *GetCharactersCharacterIDClonesForbidden) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id clones forbidden response a status code equal to that given
+func (o *GetCharactersCharacterIDClonesForbidden) IsCode(code int) bool {
+	return code == 403
+}
+
 func (o *GetCharactersCharacterIDClonesForbidden) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/clones/][%d] getCharactersCharacterIdClonesForbidden  %+v", 403, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDClonesForbidden) String() string {
+	return fmt.Sprintf("[GET /v3/characters/{character_id}/clones/][%d] getCharactersCharacterIdClonesForbidden  %+v", 403, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDClonesForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
 }
@@ -331,7 +485,8 @@ func NewGetCharactersCharacterIDClonesEnhanceYourCalm() *GetCharactersCharacterI
 	return &GetCharactersCharacterIDClonesEnhanceYourCalm{}
 }
 
-/* GetCharactersCharacterIDClonesEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetCharactersCharacterIDClonesEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -339,9 +494,39 @@ type GetCharactersCharacterIDClonesEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get characters character Id clones enhance your calm response has a 2xx status code
+func (o *GetCharactersCharacterIDClonesEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id clones enhance your calm response has a 3xx status code
+func (o *GetCharactersCharacterIDClonesEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id clones enhance your calm response has a 4xx status code
+func (o *GetCharactersCharacterIDClonesEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id clones enhance your calm response has a 5xx status code
+func (o *GetCharactersCharacterIDClonesEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id clones enhance your calm response a status code equal to that given
+func (o *GetCharactersCharacterIDClonesEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetCharactersCharacterIDClonesEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/clones/][%d] getCharactersCharacterIdClonesEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDClonesEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v3/characters/{character_id}/clones/][%d] getCharactersCharacterIdClonesEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDClonesEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -363,7 +548,8 @@ func NewGetCharactersCharacterIDClonesInternalServerError() *GetCharactersCharac
 	return &GetCharactersCharacterIDClonesInternalServerError{}
 }
 
-/* GetCharactersCharacterIDClonesInternalServerError describes a response with status code 500, with default header values.
+/*
+GetCharactersCharacterIDClonesInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -371,9 +557,39 @@ type GetCharactersCharacterIDClonesInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get characters character Id clones internal server error response has a 2xx status code
+func (o *GetCharactersCharacterIDClonesInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id clones internal server error response has a 3xx status code
+func (o *GetCharactersCharacterIDClonesInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id clones internal server error response has a 4xx status code
+func (o *GetCharactersCharacterIDClonesInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id clones internal server error response has a 5xx status code
+func (o *GetCharactersCharacterIDClonesInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id clones internal server error response a status code equal to that given
+func (o *GetCharactersCharacterIDClonesInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetCharactersCharacterIDClonesInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/clones/][%d] getCharactersCharacterIdClonesInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDClonesInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v3/characters/{character_id}/clones/][%d] getCharactersCharacterIdClonesInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDClonesInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -395,7 +611,8 @@ func NewGetCharactersCharacterIDClonesServiceUnavailable() *GetCharactersCharact
 	return &GetCharactersCharacterIDClonesServiceUnavailable{}
 }
 
-/* GetCharactersCharacterIDClonesServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetCharactersCharacterIDClonesServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -403,9 +620,39 @@ type GetCharactersCharacterIDClonesServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get characters character Id clones service unavailable response has a 2xx status code
+func (o *GetCharactersCharacterIDClonesServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id clones service unavailable response has a 3xx status code
+func (o *GetCharactersCharacterIDClonesServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id clones service unavailable response has a 4xx status code
+func (o *GetCharactersCharacterIDClonesServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id clones service unavailable response has a 5xx status code
+func (o *GetCharactersCharacterIDClonesServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id clones service unavailable response a status code equal to that given
+func (o *GetCharactersCharacterIDClonesServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetCharactersCharacterIDClonesServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/clones/][%d] getCharactersCharacterIdClonesServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDClonesServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v3/characters/{character_id}/clones/][%d] getCharactersCharacterIdClonesServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDClonesServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -427,7 +674,8 @@ func NewGetCharactersCharacterIDClonesGatewayTimeout() *GetCharactersCharacterID
 	return &GetCharactersCharacterIDClonesGatewayTimeout{}
 }
 
-/* GetCharactersCharacterIDClonesGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetCharactersCharacterIDClonesGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -435,9 +683,39 @@ type GetCharactersCharacterIDClonesGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get characters character Id clones gateway timeout response has a 2xx status code
+func (o *GetCharactersCharacterIDClonesGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id clones gateway timeout response has a 3xx status code
+func (o *GetCharactersCharacterIDClonesGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id clones gateway timeout response has a 4xx status code
+func (o *GetCharactersCharacterIDClonesGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id clones gateway timeout response has a 5xx status code
+func (o *GetCharactersCharacterIDClonesGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id clones gateway timeout response a status code equal to that given
+func (o *GetCharactersCharacterIDClonesGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetCharactersCharacterIDClonesGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/clones/][%d] getCharactersCharacterIdClonesGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDClonesGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v3/characters/{character_id}/clones/][%d] getCharactersCharacterIdClonesGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDClonesGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -454,7 +732,8 @@ func (o *GetCharactersCharacterIDClonesGatewayTimeout) readResponse(response run
 	return nil
 }
 
-/*GetCharactersCharacterIDClonesOKBody get_characters_character_id_clones_ok
+/*
+GetCharactersCharacterIDClonesOKBody get_characters_character_id_clones_ok
 //
 // 200 ok object
 swagger:model GetCharactersCharacterIDClonesOKBody
@@ -468,7 +747,7 @@ type GetCharactersCharacterIDClonesOKBody struct {
 	//
 	// jump_clones array
 	// Required: true
-	// Max Items: 10
+	// Max Items: 64
 	JumpClones []*GetCharactersCharacterIDClonesOKBodyJumpClonesItems0 `json:"jump_clones"`
 
 	// get_characters_character_id_clones_last_clone_jump_date
@@ -537,7 +816,7 @@ func (o *GetCharactersCharacterIDClonesOKBody) validateJumpClones(formats strfmt
 
 	iJumpClonesSize := int64(len(o.JumpClones))
 
-	if err := validate.MaxItems("getCharactersCharacterIdClonesOK"+"."+"jump_clones", "body", iJumpClonesSize, 10); err != nil {
+	if err := validate.MaxItems("getCharactersCharacterIdClonesOK"+"."+"jump_clones", "body", iJumpClonesSize, 64); err != nil {
 		return err
 	}
 
@@ -658,7 +937,8 @@ func (o *GetCharactersCharacterIDClonesOKBody) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*GetCharactersCharacterIDClonesOKBodyHomeLocation get_characters_character_id_clones_home_location
+/*
+GetCharactersCharacterIDClonesOKBodyHomeLocation get_characters_character_id_clones_home_location
 //
 // home_location object
 swagger:model GetCharactersCharacterIDClonesOKBodyHomeLocation
@@ -756,7 +1036,8 @@ func (o *GetCharactersCharacterIDClonesOKBodyHomeLocation) UnmarshalBinary(b []b
 	return nil
 }
 
-/*GetCharactersCharacterIDClonesOKBodyJumpClonesItems0 get_characters_character_id_clones_jump_clone
+/*
+GetCharactersCharacterIDClonesOKBodyJumpClonesItems0 get_characters_character_id_clones_jump_clone
 //
 // jump_clone object
 swagger:model GetCharactersCharacterIDClonesOKBodyJumpClonesItems0
@@ -767,7 +1048,7 @@ type GetCharactersCharacterIDClonesOKBodyJumpClonesItems0 struct {
 	//
 	// implants array
 	// Required: true
-	// Max Items: 11
+	// Max Items: 64
 	Implants []int32 `json:"implants"`
 
 	// get_characters_character_id_clones_jump_clone_id
@@ -829,7 +1110,7 @@ func (o *GetCharactersCharacterIDClonesOKBodyJumpClonesItems0) validateImplants(
 
 	iImplantsSize := int64(len(o.Implants))
 
-	if err := validate.MaxItems("implants", "body", iImplantsSize, 11); err != nil {
+	if err := validate.MaxItems("implants", "body", iImplantsSize, 64); err != nil {
 		return err
 	}
 

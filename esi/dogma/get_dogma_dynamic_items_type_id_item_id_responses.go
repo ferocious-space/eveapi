@@ -86,7 +86,8 @@ func NewGetDogmaDynamicItemsTypeIDItemIDOK() *GetDogmaDynamicItemsTypeIDItemIDOK
 	return &GetDogmaDynamicItemsTypeIDItemIDOK{}
 }
 
-/* GetDogmaDynamicItemsTypeIDItemIDOK describes a response with status code 200, with default header values.
+/*
+GetDogmaDynamicItemsTypeIDItemIDOK describes a response with status code 200, with default header values.
 
 Details about a dynamic item
 */
@@ -111,9 +112,39 @@ type GetDogmaDynamicItemsTypeIDItemIDOK struct {
 	Payload *GetDogmaDynamicItemsTypeIDItemIDOKBody
 }
 
+// IsSuccess returns true when this get dogma dynamic items type Id item Id o k response has a 2xx status code
+func (o *GetDogmaDynamicItemsTypeIDItemIDOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get dogma dynamic items type Id item Id o k response has a 3xx status code
+func (o *GetDogmaDynamicItemsTypeIDItemIDOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get dogma dynamic items type Id item Id o k response has a 4xx status code
+func (o *GetDogmaDynamicItemsTypeIDItemIDOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get dogma dynamic items type Id item Id o k response has a 5xx status code
+func (o *GetDogmaDynamicItemsTypeIDItemIDOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get dogma dynamic items type Id item Id o k response a status code equal to that given
+func (o *GetDogmaDynamicItemsTypeIDItemIDOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetDogmaDynamicItemsTypeIDItemIDOK) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/dynamic/items/{type_id}/{item_id}/][%d] getDogmaDynamicItemsTypeIdItemIdOK  %+v", 200, o.Payload)
 }
+
+func (o *GetDogmaDynamicItemsTypeIDItemIDOK) String() string {
+	return fmt.Sprintf("[GET /v1/dogma/dynamic/items/{type_id}/{item_id}/][%d] getDogmaDynamicItemsTypeIdItemIdOK  %+v", 200, o.Payload)
+}
+
 func (o *GetDogmaDynamicItemsTypeIDItemIDOK) GetPayload() *GetDogmaDynamicItemsTypeIDItemIDOKBody {
 	return o.Payload
 }
@@ -163,7 +194,8 @@ func NewGetDogmaDynamicItemsTypeIDItemIDNotModified() *GetDogmaDynamicItemsTypeI
 	return &GetDogmaDynamicItemsTypeIDItemIDNotModified{}
 }
 
-/* GetDogmaDynamicItemsTypeIDItemIDNotModified describes a response with status code 304, with default header values.
+/*
+GetDogmaDynamicItemsTypeIDItemIDNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -186,7 +218,36 @@ type GetDogmaDynamicItemsTypeIDItemIDNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get dogma dynamic items type Id item Id not modified response has a 2xx status code
+func (o *GetDogmaDynamicItemsTypeIDItemIDNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get dogma dynamic items type Id item Id not modified response has a 3xx status code
+func (o *GetDogmaDynamicItemsTypeIDItemIDNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get dogma dynamic items type Id item Id not modified response has a 4xx status code
+func (o *GetDogmaDynamicItemsTypeIDItemIDNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get dogma dynamic items type Id item Id not modified response has a 5xx status code
+func (o *GetDogmaDynamicItemsTypeIDItemIDNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get dogma dynamic items type Id item Id not modified response a status code equal to that given
+func (o *GetDogmaDynamicItemsTypeIDItemIDNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetDogmaDynamicItemsTypeIDItemIDNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/dogma/dynamic/items/{type_id}/{item_id}/][%d] getDogmaDynamicItemsTypeIdItemIdNotModified ", 304)
+}
+
+func (o *GetDogmaDynamicItemsTypeIDItemIDNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/dogma/dynamic/items/{type_id}/{item_id}/][%d] getDogmaDynamicItemsTypeIdItemIdNotModified ", 304)
 }
 
@@ -228,7 +289,8 @@ func NewGetDogmaDynamicItemsTypeIDItemIDBadRequest() *GetDogmaDynamicItemsTypeID
 	return &GetDogmaDynamicItemsTypeIDItemIDBadRequest{}
 }
 
-/* GetDogmaDynamicItemsTypeIDItemIDBadRequest describes a response with status code 400, with default header values.
+/*
+GetDogmaDynamicItemsTypeIDItemIDBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -236,9 +298,39 @@ type GetDogmaDynamicItemsTypeIDItemIDBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get dogma dynamic items type Id item Id bad request response has a 2xx status code
+func (o *GetDogmaDynamicItemsTypeIDItemIDBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get dogma dynamic items type Id item Id bad request response has a 3xx status code
+func (o *GetDogmaDynamicItemsTypeIDItemIDBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get dogma dynamic items type Id item Id bad request response has a 4xx status code
+func (o *GetDogmaDynamicItemsTypeIDItemIDBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get dogma dynamic items type Id item Id bad request response has a 5xx status code
+func (o *GetDogmaDynamicItemsTypeIDItemIDBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get dogma dynamic items type Id item Id bad request response a status code equal to that given
+func (o *GetDogmaDynamicItemsTypeIDItemIDBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetDogmaDynamicItemsTypeIDItemIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/dynamic/items/{type_id}/{item_id}/][%d] getDogmaDynamicItemsTypeIdItemIdBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetDogmaDynamicItemsTypeIDItemIDBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/dogma/dynamic/items/{type_id}/{item_id}/][%d] getDogmaDynamicItemsTypeIdItemIdBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetDogmaDynamicItemsTypeIDItemIDBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -260,7 +352,8 @@ func NewGetDogmaDynamicItemsTypeIDItemIDNotFound() *GetDogmaDynamicItemsTypeIDIt
 	return &GetDogmaDynamicItemsTypeIDItemIDNotFound{}
 }
 
-/* GetDogmaDynamicItemsTypeIDItemIDNotFound describes a response with status code 404, with default header values.
+/*
+GetDogmaDynamicItemsTypeIDItemIDNotFound describes a response with status code 404, with default header values.
 
 Item not found
 */
@@ -268,9 +361,39 @@ type GetDogmaDynamicItemsTypeIDItemIDNotFound struct {
 	Payload *GetDogmaDynamicItemsTypeIDItemIDNotFoundBody
 }
 
+// IsSuccess returns true when this get dogma dynamic items type Id item Id not found response has a 2xx status code
+func (o *GetDogmaDynamicItemsTypeIDItemIDNotFound) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get dogma dynamic items type Id item Id not found response has a 3xx status code
+func (o *GetDogmaDynamicItemsTypeIDItemIDNotFound) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get dogma dynamic items type Id item Id not found response has a 4xx status code
+func (o *GetDogmaDynamicItemsTypeIDItemIDNotFound) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get dogma dynamic items type Id item Id not found response has a 5xx status code
+func (o *GetDogmaDynamicItemsTypeIDItemIDNotFound) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get dogma dynamic items type Id item Id not found response a status code equal to that given
+func (o *GetDogmaDynamicItemsTypeIDItemIDNotFound) IsCode(code int) bool {
+	return code == 404
+}
+
 func (o *GetDogmaDynamicItemsTypeIDItemIDNotFound) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/dynamic/items/{type_id}/{item_id}/][%d] getDogmaDynamicItemsTypeIdItemIdNotFound  %+v", 404, o.Payload)
 }
+
+func (o *GetDogmaDynamicItemsTypeIDItemIDNotFound) String() string {
+	return fmt.Sprintf("[GET /v1/dogma/dynamic/items/{type_id}/{item_id}/][%d] getDogmaDynamicItemsTypeIdItemIdNotFound  %+v", 404, o.Payload)
+}
+
 func (o *GetDogmaDynamicItemsTypeIDItemIDNotFound) GetPayload() *GetDogmaDynamicItemsTypeIDItemIDNotFoundBody {
 	return o.Payload
 }
@@ -292,7 +415,8 @@ func NewGetDogmaDynamicItemsTypeIDItemIDEnhanceYourCalm() *GetDogmaDynamicItemsT
 	return &GetDogmaDynamicItemsTypeIDItemIDEnhanceYourCalm{}
 }
 
-/* GetDogmaDynamicItemsTypeIDItemIDEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetDogmaDynamicItemsTypeIDItemIDEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -300,9 +424,39 @@ type GetDogmaDynamicItemsTypeIDItemIDEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get dogma dynamic items type Id item Id enhance your calm response has a 2xx status code
+func (o *GetDogmaDynamicItemsTypeIDItemIDEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get dogma dynamic items type Id item Id enhance your calm response has a 3xx status code
+func (o *GetDogmaDynamicItemsTypeIDItemIDEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get dogma dynamic items type Id item Id enhance your calm response has a 4xx status code
+func (o *GetDogmaDynamicItemsTypeIDItemIDEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get dogma dynamic items type Id item Id enhance your calm response has a 5xx status code
+func (o *GetDogmaDynamicItemsTypeIDItemIDEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get dogma dynamic items type Id item Id enhance your calm response a status code equal to that given
+func (o *GetDogmaDynamicItemsTypeIDItemIDEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetDogmaDynamicItemsTypeIDItemIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/dynamic/items/{type_id}/{item_id}/][%d] getDogmaDynamicItemsTypeIdItemIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetDogmaDynamicItemsTypeIDItemIDEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/dogma/dynamic/items/{type_id}/{item_id}/][%d] getDogmaDynamicItemsTypeIdItemIdEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetDogmaDynamicItemsTypeIDItemIDEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -324,7 +478,8 @@ func NewGetDogmaDynamicItemsTypeIDItemIDInternalServerError() *GetDogmaDynamicIt
 	return &GetDogmaDynamicItemsTypeIDItemIDInternalServerError{}
 }
 
-/* GetDogmaDynamicItemsTypeIDItemIDInternalServerError describes a response with status code 500, with default header values.
+/*
+GetDogmaDynamicItemsTypeIDItemIDInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -332,9 +487,39 @@ type GetDogmaDynamicItemsTypeIDItemIDInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get dogma dynamic items type Id item Id internal server error response has a 2xx status code
+func (o *GetDogmaDynamicItemsTypeIDItemIDInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get dogma dynamic items type Id item Id internal server error response has a 3xx status code
+func (o *GetDogmaDynamicItemsTypeIDItemIDInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get dogma dynamic items type Id item Id internal server error response has a 4xx status code
+func (o *GetDogmaDynamicItemsTypeIDItemIDInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get dogma dynamic items type Id item Id internal server error response has a 5xx status code
+func (o *GetDogmaDynamicItemsTypeIDItemIDInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get dogma dynamic items type Id item Id internal server error response a status code equal to that given
+func (o *GetDogmaDynamicItemsTypeIDItemIDInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetDogmaDynamicItemsTypeIDItemIDInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/dynamic/items/{type_id}/{item_id}/][%d] getDogmaDynamicItemsTypeIdItemIdInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetDogmaDynamicItemsTypeIDItemIDInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/dogma/dynamic/items/{type_id}/{item_id}/][%d] getDogmaDynamicItemsTypeIdItemIdInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetDogmaDynamicItemsTypeIDItemIDInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -356,7 +541,8 @@ func NewGetDogmaDynamicItemsTypeIDItemIDServiceUnavailable() *GetDogmaDynamicIte
 	return &GetDogmaDynamicItemsTypeIDItemIDServiceUnavailable{}
 }
 
-/* GetDogmaDynamicItemsTypeIDItemIDServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetDogmaDynamicItemsTypeIDItemIDServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -364,9 +550,39 @@ type GetDogmaDynamicItemsTypeIDItemIDServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get dogma dynamic items type Id item Id service unavailable response has a 2xx status code
+func (o *GetDogmaDynamicItemsTypeIDItemIDServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get dogma dynamic items type Id item Id service unavailable response has a 3xx status code
+func (o *GetDogmaDynamicItemsTypeIDItemIDServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get dogma dynamic items type Id item Id service unavailable response has a 4xx status code
+func (o *GetDogmaDynamicItemsTypeIDItemIDServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get dogma dynamic items type Id item Id service unavailable response has a 5xx status code
+func (o *GetDogmaDynamicItemsTypeIDItemIDServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get dogma dynamic items type Id item Id service unavailable response a status code equal to that given
+func (o *GetDogmaDynamicItemsTypeIDItemIDServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetDogmaDynamicItemsTypeIDItemIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/dynamic/items/{type_id}/{item_id}/][%d] getDogmaDynamicItemsTypeIdItemIdServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetDogmaDynamicItemsTypeIDItemIDServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/dogma/dynamic/items/{type_id}/{item_id}/][%d] getDogmaDynamicItemsTypeIdItemIdServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetDogmaDynamicItemsTypeIDItemIDServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -388,7 +604,8 @@ func NewGetDogmaDynamicItemsTypeIDItemIDGatewayTimeout() *GetDogmaDynamicItemsTy
 	return &GetDogmaDynamicItemsTypeIDItemIDGatewayTimeout{}
 }
 
-/* GetDogmaDynamicItemsTypeIDItemIDGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetDogmaDynamicItemsTypeIDItemIDGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -396,9 +613,39 @@ type GetDogmaDynamicItemsTypeIDItemIDGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get dogma dynamic items type Id item Id gateway timeout response has a 2xx status code
+func (o *GetDogmaDynamicItemsTypeIDItemIDGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get dogma dynamic items type Id item Id gateway timeout response has a 3xx status code
+func (o *GetDogmaDynamicItemsTypeIDItemIDGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get dogma dynamic items type Id item Id gateway timeout response has a 4xx status code
+func (o *GetDogmaDynamicItemsTypeIDItemIDGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get dogma dynamic items type Id item Id gateway timeout response has a 5xx status code
+func (o *GetDogmaDynamicItemsTypeIDItemIDGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get dogma dynamic items type Id item Id gateway timeout response a status code equal to that given
+func (o *GetDogmaDynamicItemsTypeIDItemIDGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetDogmaDynamicItemsTypeIDItemIDGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/dynamic/items/{type_id}/{item_id}/][%d] getDogmaDynamicItemsTypeIdItemIdGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetDogmaDynamicItemsTypeIDItemIDGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/dogma/dynamic/items/{type_id}/{item_id}/][%d] getDogmaDynamicItemsTypeIdItemIdGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetDogmaDynamicItemsTypeIDItemIDGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -415,7 +662,8 @@ func (o *GetDogmaDynamicItemsTypeIDItemIDGatewayTimeout) readResponse(response r
 	return nil
 }
 
-/*GetDogmaDynamicItemsTypeIDItemIDNotFoundBody get_dogma_dynamic_items_type_id_item_id_not_found
+/*
+GetDogmaDynamicItemsTypeIDItemIDNotFoundBody get_dogma_dynamic_items_type_id_item_id_not_found
 //
 // Not found
 swagger:model GetDogmaDynamicItemsTypeIDItemIDNotFoundBody
@@ -456,7 +704,8 @@ func (o *GetDogmaDynamicItemsTypeIDItemIDNotFoundBody) UnmarshalBinary(b []byte)
 	return nil
 }
 
-/*GetDogmaDynamicItemsTypeIDItemIDOKBody get_dogma_dynamic_items_type_id_item_id_ok
+/*
+GetDogmaDynamicItemsTypeIDItemIDOKBody get_dogma_dynamic_items_type_id_item_id_ok
 //
 // 200 ok object
 swagger:model GetDogmaDynamicItemsTypeIDItemIDOKBody
@@ -695,7 +944,8 @@ func (o *GetDogmaDynamicItemsTypeIDItemIDOKBody) UnmarshalBinary(b []byte) error
 	return nil
 }
 
-/*GetDogmaDynamicItemsTypeIDItemIDOKBodyDogmaAttributesItems0 get_dogma_dynamic_items_type_id_item_id_dogma_attribute
+/*
+GetDogmaDynamicItemsTypeIDItemIDOKBodyDogmaAttributesItems0 get_dogma_dynamic_items_type_id_item_id_dogma_attribute
 //
 // dogma_attribute object
 swagger:model GetDogmaDynamicItemsTypeIDItemIDOKBodyDogmaAttributesItems0
@@ -774,7 +1024,8 @@ func (o *GetDogmaDynamicItemsTypeIDItemIDOKBodyDogmaAttributesItems0) UnmarshalB
 	return nil
 }
 
-/*GetDogmaDynamicItemsTypeIDItemIDOKBodyDogmaEffectsItems0 get_dogma_dynamic_items_type_id_item_id_dogma_effect
+/*
+GetDogmaDynamicItemsTypeIDItemIDOKBodyDogmaEffectsItems0 get_dogma_dynamic_items_type_id_item_id_dogma_effect
 //
 // dogma_effect object
 swagger:model GetDogmaDynamicItemsTypeIDItemIDOKBodyDogmaEffectsItems0

@@ -16,7 +16,7 @@ import (
 
 // Forbidden Forbidden
 //
-// Forbidden model
+// # Forbidden model
 //
 // swagger:model forbidden
 type Forbidden struct {

@@ -53,10 +53,12 @@ func NewGetCorporationsCorporationIDStructuresParamsWithHTTPClient(client *http.
 	}
 }
 
-/* GetCorporationsCorporationIDStructuresParams contains all the parameters to send to the API endpoint
-   for the get corporations corporation id structures operation.
+/*
+GetCorporationsCorporationIDStructuresParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get corporations corporation id structures operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCorporationsCorporationIDStructuresParams struct {
 

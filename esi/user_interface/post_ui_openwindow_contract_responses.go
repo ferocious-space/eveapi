@@ -81,14 +81,44 @@ func NewPostUIOpenwindowContractNoContent() *PostUIOpenwindowContractNoContent {
 	return &PostUIOpenwindowContractNoContent{}
 }
 
-/* PostUIOpenwindowContractNoContent describes a response with status code 204, with default header values.
+/*
+PostUIOpenwindowContractNoContent describes a response with status code 204, with default header values.
 
 Open window request received
 */
 type PostUIOpenwindowContractNoContent struct {
 }
 
+// IsSuccess returns true when this post Ui openwindow contract no content response has a 2xx status code
+func (o *PostUIOpenwindowContractNoContent) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this post Ui openwindow contract no content response has a 3xx status code
+func (o *PostUIOpenwindowContractNoContent) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post Ui openwindow contract no content response has a 4xx status code
+func (o *PostUIOpenwindowContractNoContent) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post Ui openwindow contract no content response has a 5xx status code
+func (o *PostUIOpenwindowContractNoContent) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post Ui openwindow contract no content response a status code equal to that given
+func (o *PostUIOpenwindowContractNoContent) IsCode(code int) bool {
+	return code == 204
+}
+
 func (o *PostUIOpenwindowContractNoContent) Error() string {
+	return fmt.Sprintf("[POST /v1/ui/openwindow/contract/][%d] postUiOpenwindowContractNoContent ", 204)
+}
+
+func (o *PostUIOpenwindowContractNoContent) String() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/contract/][%d] postUiOpenwindowContractNoContent ", 204)
 }
 
@@ -102,7 +132,8 @@ func NewPostUIOpenwindowContractBadRequest() *PostUIOpenwindowContractBadRequest
 	return &PostUIOpenwindowContractBadRequest{}
 }
 
-/* PostUIOpenwindowContractBadRequest describes a response with status code 400, with default header values.
+/*
+PostUIOpenwindowContractBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -110,9 +141,39 @@ type PostUIOpenwindowContractBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this post Ui openwindow contract bad request response has a 2xx status code
+func (o *PostUIOpenwindowContractBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post Ui openwindow contract bad request response has a 3xx status code
+func (o *PostUIOpenwindowContractBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post Ui openwindow contract bad request response has a 4xx status code
+func (o *PostUIOpenwindowContractBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post Ui openwindow contract bad request response has a 5xx status code
+func (o *PostUIOpenwindowContractBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post Ui openwindow contract bad request response a status code equal to that given
+func (o *PostUIOpenwindowContractBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *PostUIOpenwindowContractBadRequest) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/contract/][%d] postUiOpenwindowContractBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *PostUIOpenwindowContractBadRequest) String() string {
+	return fmt.Sprintf("[POST /v1/ui/openwindow/contract/][%d] postUiOpenwindowContractBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *PostUIOpenwindowContractBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -134,7 +195,8 @@ func NewPostUIOpenwindowContractUnauthorized() *PostUIOpenwindowContractUnauthor
 	return &PostUIOpenwindowContractUnauthorized{}
 }
 
-/* PostUIOpenwindowContractUnauthorized describes a response with status code 401, with default header values.
+/*
+PostUIOpenwindowContractUnauthorized describes a response with status code 401, with default header values.
 
 Unauthorized
 */
@@ -142,9 +204,39 @@ type PostUIOpenwindowContractUnauthorized struct {
 	Payload *models.Unauthorized
 }
 
+// IsSuccess returns true when this post Ui openwindow contract unauthorized response has a 2xx status code
+func (o *PostUIOpenwindowContractUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post Ui openwindow contract unauthorized response has a 3xx status code
+func (o *PostUIOpenwindowContractUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post Ui openwindow contract unauthorized response has a 4xx status code
+func (o *PostUIOpenwindowContractUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post Ui openwindow contract unauthorized response has a 5xx status code
+func (o *PostUIOpenwindowContractUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post Ui openwindow contract unauthorized response a status code equal to that given
+func (o *PostUIOpenwindowContractUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *PostUIOpenwindowContractUnauthorized) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/contract/][%d] postUiOpenwindowContractUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *PostUIOpenwindowContractUnauthorized) String() string {
+	return fmt.Sprintf("[POST /v1/ui/openwindow/contract/][%d] postUiOpenwindowContractUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *PostUIOpenwindowContractUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
 }
@@ -166,7 +258,8 @@ func NewPostUIOpenwindowContractForbidden() *PostUIOpenwindowContractForbidden {
 	return &PostUIOpenwindowContractForbidden{}
 }
 
-/* PostUIOpenwindowContractForbidden describes a response with status code 403, with default header values.
+/*
+PostUIOpenwindowContractForbidden describes a response with status code 403, with default header values.
 
 Forbidden
 */
@@ -174,9 +267,39 @@ type PostUIOpenwindowContractForbidden struct {
 	Payload *models.Forbidden
 }
 
+// IsSuccess returns true when this post Ui openwindow contract forbidden response has a 2xx status code
+func (o *PostUIOpenwindowContractForbidden) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post Ui openwindow contract forbidden response has a 3xx status code
+func (o *PostUIOpenwindowContractForbidden) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post Ui openwindow contract forbidden response has a 4xx status code
+func (o *PostUIOpenwindowContractForbidden) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post Ui openwindow contract forbidden response has a 5xx status code
+func (o *PostUIOpenwindowContractForbidden) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post Ui openwindow contract forbidden response a status code equal to that given
+func (o *PostUIOpenwindowContractForbidden) IsCode(code int) bool {
+	return code == 403
+}
+
 func (o *PostUIOpenwindowContractForbidden) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/contract/][%d] postUiOpenwindowContractForbidden  %+v", 403, o.Payload)
 }
+
+func (o *PostUIOpenwindowContractForbidden) String() string {
+	return fmt.Sprintf("[POST /v1/ui/openwindow/contract/][%d] postUiOpenwindowContractForbidden  %+v", 403, o.Payload)
+}
+
 func (o *PostUIOpenwindowContractForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
 }
@@ -198,7 +321,8 @@ func NewPostUIOpenwindowContractEnhanceYourCalm() *PostUIOpenwindowContractEnhan
 	return &PostUIOpenwindowContractEnhanceYourCalm{}
 }
 
-/* PostUIOpenwindowContractEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+PostUIOpenwindowContractEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -206,9 +330,39 @@ type PostUIOpenwindowContractEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this post Ui openwindow contract enhance your calm response has a 2xx status code
+func (o *PostUIOpenwindowContractEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post Ui openwindow contract enhance your calm response has a 3xx status code
+func (o *PostUIOpenwindowContractEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post Ui openwindow contract enhance your calm response has a 4xx status code
+func (o *PostUIOpenwindowContractEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post Ui openwindow contract enhance your calm response has a 5xx status code
+func (o *PostUIOpenwindowContractEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post Ui openwindow contract enhance your calm response a status code equal to that given
+func (o *PostUIOpenwindowContractEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *PostUIOpenwindowContractEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/contract/][%d] postUiOpenwindowContractEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *PostUIOpenwindowContractEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[POST /v1/ui/openwindow/contract/][%d] postUiOpenwindowContractEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *PostUIOpenwindowContractEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -230,7 +384,8 @@ func NewPostUIOpenwindowContractInternalServerError() *PostUIOpenwindowContractI
 	return &PostUIOpenwindowContractInternalServerError{}
 }
 
-/* PostUIOpenwindowContractInternalServerError describes a response with status code 500, with default header values.
+/*
+PostUIOpenwindowContractInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -238,9 +393,39 @@ type PostUIOpenwindowContractInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this post Ui openwindow contract internal server error response has a 2xx status code
+func (o *PostUIOpenwindowContractInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post Ui openwindow contract internal server error response has a 3xx status code
+func (o *PostUIOpenwindowContractInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post Ui openwindow contract internal server error response has a 4xx status code
+func (o *PostUIOpenwindowContractInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post Ui openwindow contract internal server error response has a 5xx status code
+func (o *PostUIOpenwindowContractInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post Ui openwindow contract internal server error response a status code equal to that given
+func (o *PostUIOpenwindowContractInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *PostUIOpenwindowContractInternalServerError) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/contract/][%d] postUiOpenwindowContractInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *PostUIOpenwindowContractInternalServerError) String() string {
+	return fmt.Sprintf("[POST /v1/ui/openwindow/contract/][%d] postUiOpenwindowContractInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *PostUIOpenwindowContractInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -262,7 +447,8 @@ func NewPostUIOpenwindowContractServiceUnavailable() *PostUIOpenwindowContractSe
 	return &PostUIOpenwindowContractServiceUnavailable{}
 }
 
-/* PostUIOpenwindowContractServiceUnavailable describes a response with status code 503, with default header values.
+/*
+PostUIOpenwindowContractServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -270,9 +456,39 @@ type PostUIOpenwindowContractServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this post Ui openwindow contract service unavailable response has a 2xx status code
+func (o *PostUIOpenwindowContractServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post Ui openwindow contract service unavailable response has a 3xx status code
+func (o *PostUIOpenwindowContractServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post Ui openwindow contract service unavailable response has a 4xx status code
+func (o *PostUIOpenwindowContractServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post Ui openwindow contract service unavailable response has a 5xx status code
+func (o *PostUIOpenwindowContractServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post Ui openwindow contract service unavailable response a status code equal to that given
+func (o *PostUIOpenwindowContractServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *PostUIOpenwindowContractServiceUnavailable) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/contract/][%d] postUiOpenwindowContractServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *PostUIOpenwindowContractServiceUnavailable) String() string {
+	return fmt.Sprintf("[POST /v1/ui/openwindow/contract/][%d] postUiOpenwindowContractServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *PostUIOpenwindowContractServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -294,7 +510,8 @@ func NewPostUIOpenwindowContractGatewayTimeout() *PostUIOpenwindowContractGatewa
 	return &PostUIOpenwindowContractGatewayTimeout{}
 }
 
-/* PostUIOpenwindowContractGatewayTimeout describes a response with status code 504, with default header values.
+/*
+PostUIOpenwindowContractGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -302,9 +519,39 @@ type PostUIOpenwindowContractGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this post Ui openwindow contract gateway timeout response has a 2xx status code
+func (o *PostUIOpenwindowContractGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post Ui openwindow contract gateway timeout response has a 3xx status code
+func (o *PostUIOpenwindowContractGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post Ui openwindow contract gateway timeout response has a 4xx status code
+func (o *PostUIOpenwindowContractGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post Ui openwindow contract gateway timeout response has a 5xx status code
+func (o *PostUIOpenwindowContractGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post Ui openwindow contract gateway timeout response a status code equal to that given
+func (o *PostUIOpenwindowContractGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *PostUIOpenwindowContractGatewayTimeout) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/contract/][%d] postUiOpenwindowContractGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *PostUIOpenwindowContractGatewayTimeout) String() string {
+	return fmt.Sprintf("[POST /v1/ui/openwindow/contract/][%d] postUiOpenwindowContractGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *PostUIOpenwindowContractGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }

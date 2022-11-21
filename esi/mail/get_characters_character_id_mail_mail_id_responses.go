@@ -99,7 +99,8 @@ func NewGetCharactersCharacterIDMailMailIDOK() *GetCharactersCharacterIDMailMail
 	return &GetCharactersCharacterIDMailMailIDOK{}
 }
 
-/* GetCharactersCharacterIDMailMailIDOK describes a response with status code 200, with default header values.
+/*
+GetCharactersCharacterIDMailMailIDOK describes a response with status code 200, with default header values.
 
 Contents of a mail
 */
@@ -124,9 +125,39 @@ type GetCharactersCharacterIDMailMailIDOK struct {
 	Payload *GetCharactersCharacterIDMailMailIDOKBody
 }
 
+// IsSuccess returns true when this get characters character Id mail mail Id o k response has a 2xx status code
+func (o *GetCharactersCharacterIDMailMailIDOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get characters character Id mail mail Id o k response has a 3xx status code
+func (o *GetCharactersCharacterIDMailMailIDOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id mail mail Id o k response has a 4xx status code
+func (o *GetCharactersCharacterIDMailMailIDOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id mail mail Id o k response has a 5xx status code
+func (o *GetCharactersCharacterIDMailMailIDOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id mail mail Id o k response a status code equal to that given
+func (o *GetCharactersCharacterIDMailMailIDOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetCharactersCharacterIDMailMailIDOK) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/mail/{mail_id}/][%d] getCharactersCharacterIdMailMailIdOK  %+v", 200, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDMailMailIDOK) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/mail/{mail_id}/][%d] getCharactersCharacterIdMailMailIdOK  %+v", 200, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDMailMailIDOK) GetPayload() *GetCharactersCharacterIDMailMailIDOKBody {
 	return o.Payload
 }
@@ -176,7 +207,8 @@ func NewGetCharactersCharacterIDMailMailIDNotModified() *GetCharactersCharacterI
 	return &GetCharactersCharacterIDMailMailIDNotModified{}
 }
 
-/* GetCharactersCharacterIDMailMailIDNotModified describes a response with status code 304, with default header values.
+/*
+GetCharactersCharacterIDMailMailIDNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -199,7 +231,36 @@ type GetCharactersCharacterIDMailMailIDNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get characters character Id mail mail Id not modified response has a 2xx status code
+func (o *GetCharactersCharacterIDMailMailIDNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id mail mail Id not modified response has a 3xx status code
+func (o *GetCharactersCharacterIDMailMailIDNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get characters character Id mail mail Id not modified response has a 4xx status code
+func (o *GetCharactersCharacterIDMailMailIDNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id mail mail Id not modified response has a 5xx status code
+func (o *GetCharactersCharacterIDMailMailIDNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id mail mail Id not modified response a status code equal to that given
+func (o *GetCharactersCharacterIDMailMailIDNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetCharactersCharacterIDMailMailIDNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/mail/{mail_id}/][%d] getCharactersCharacterIdMailMailIdNotModified ", 304)
+}
+
+func (o *GetCharactersCharacterIDMailMailIDNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/mail/{mail_id}/][%d] getCharactersCharacterIdMailMailIdNotModified ", 304)
 }
 
@@ -241,7 +302,8 @@ func NewGetCharactersCharacterIDMailMailIDBadRequest() *GetCharactersCharacterID
 	return &GetCharactersCharacterIDMailMailIDBadRequest{}
 }
 
-/* GetCharactersCharacterIDMailMailIDBadRequest describes a response with status code 400, with default header values.
+/*
+GetCharactersCharacterIDMailMailIDBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -249,9 +311,39 @@ type GetCharactersCharacterIDMailMailIDBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get characters character Id mail mail Id bad request response has a 2xx status code
+func (o *GetCharactersCharacterIDMailMailIDBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id mail mail Id bad request response has a 3xx status code
+func (o *GetCharactersCharacterIDMailMailIDBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id mail mail Id bad request response has a 4xx status code
+func (o *GetCharactersCharacterIDMailMailIDBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id mail mail Id bad request response has a 5xx status code
+func (o *GetCharactersCharacterIDMailMailIDBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id mail mail Id bad request response a status code equal to that given
+func (o *GetCharactersCharacterIDMailMailIDBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetCharactersCharacterIDMailMailIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/mail/{mail_id}/][%d] getCharactersCharacterIdMailMailIdBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDMailMailIDBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/mail/{mail_id}/][%d] getCharactersCharacterIdMailMailIdBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDMailMailIDBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -273,7 +365,8 @@ func NewGetCharactersCharacterIDMailMailIDUnauthorized() *GetCharactersCharacter
 	return &GetCharactersCharacterIDMailMailIDUnauthorized{}
 }
 
-/* GetCharactersCharacterIDMailMailIDUnauthorized describes a response with status code 401, with default header values.
+/*
+GetCharactersCharacterIDMailMailIDUnauthorized describes a response with status code 401, with default header values.
 
 Unauthorized
 */
@@ -281,9 +374,39 @@ type GetCharactersCharacterIDMailMailIDUnauthorized struct {
 	Payload *models.Unauthorized
 }
 
+// IsSuccess returns true when this get characters character Id mail mail Id unauthorized response has a 2xx status code
+func (o *GetCharactersCharacterIDMailMailIDUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id mail mail Id unauthorized response has a 3xx status code
+func (o *GetCharactersCharacterIDMailMailIDUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id mail mail Id unauthorized response has a 4xx status code
+func (o *GetCharactersCharacterIDMailMailIDUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id mail mail Id unauthorized response has a 5xx status code
+func (o *GetCharactersCharacterIDMailMailIDUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id mail mail Id unauthorized response a status code equal to that given
+func (o *GetCharactersCharacterIDMailMailIDUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *GetCharactersCharacterIDMailMailIDUnauthorized) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/mail/{mail_id}/][%d] getCharactersCharacterIdMailMailIdUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDMailMailIDUnauthorized) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/mail/{mail_id}/][%d] getCharactersCharacterIdMailMailIdUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDMailMailIDUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
 }
@@ -305,7 +428,8 @@ func NewGetCharactersCharacterIDMailMailIDForbidden() *GetCharactersCharacterIDM
 	return &GetCharactersCharacterIDMailMailIDForbidden{}
 }
 
-/* GetCharactersCharacterIDMailMailIDForbidden describes a response with status code 403, with default header values.
+/*
+GetCharactersCharacterIDMailMailIDForbidden describes a response with status code 403, with default header values.
 
 Forbidden
 */
@@ -313,9 +437,39 @@ type GetCharactersCharacterIDMailMailIDForbidden struct {
 	Payload *models.Forbidden
 }
 
+// IsSuccess returns true when this get characters character Id mail mail Id forbidden response has a 2xx status code
+func (o *GetCharactersCharacterIDMailMailIDForbidden) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id mail mail Id forbidden response has a 3xx status code
+func (o *GetCharactersCharacterIDMailMailIDForbidden) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id mail mail Id forbidden response has a 4xx status code
+func (o *GetCharactersCharacterIDMailMailIDForbidden) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id mail mail Id forbidden response has a 5xx status code
+func (o *GetCharactersCharacterIDMailMailIDForbidden) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id mail mail Id forbidden response a status code equal to that given
+func (o *GetCharactersCharacterIDMailMailIDForbidden) IsCode(code int) bool {
+	return code == 403
+}
+
 func (o *GetCharactersCharacterIDMailMailIDForbidden) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/mail/{mail_id}/][%d] getCharactersCharacterIdMailMailIdForbidden  %+v", 403, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDMailMailIDForbidden) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/mail/{mail_id}/][%d] getCharactersCharacterIdMailMailIdForbidden  %+v", 403, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDMailMailIDForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
 }
@@ -337,7 +491,8 @@ func NewGetCharactersCharacterIDMailMailIDNotFound() *GetCharactersCharacterIDMa
 	return &GetCharactersCharacterIDMailMailIDNotFound{}
 }
 
-/* GetCharactersCharacterIDMailMailIDNotFound describes a response with status code 404, with default header values.
+/*
+GetCharactersCharacterIDMailMailIDNotFound describes a response with status code 404, with default header values.
 
 Mail not found
 */
@@ -345,9 +500,39 @@ type GetCharactersCharacterIDMailMailIDNotFound struct {
 	Payload *GetCharactersCharacterIDMailMailIDNotFoundBody
 }
 
+// IsSuccess returns true when this get characters character Id mail mail Id not found response has a 2xx status code
+func (o *GetCharactersCharacterIDMailMailIDNotFound) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id mail mail Id not found response has a 3xx status code
+func (o *GetCharactersCharacterIDMailMailIDNotFound) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id mail mail Id not found response has a 4xx status code
+func (o *GetCharactersCharacterIDMailMailIDNotFound) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id mail mail Id not found response has a 5xx status code
+func (o *GetCharactersCharacterIDMailMailIDNotFound) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id mail mail Id not found response a status code equal to that given
+func (o *GetCharactersCharacterIDMailMailIDNotFound) IsCode(code int) bool {
+	return code == 404
+}
+
 func (o *GetCharactersCharacterIDMailMailIDNotFound) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/mail/{mail_id}/][%d] getCharactersCharacterIdMailMailIdNotFound  %+v", 404, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDMailMailIDNotFound) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/mail/{mail_id}/][%d] getCharactersCharacterIdMailMailIdNotFound  %+v", 404, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDMailMailIDNotFound) GetPayload() *GetCharactersCharacterIDMailMailIDNotFoundBody {
 	return o.Payload
 }
@@ -369,7 +554,8 @@ func NewGetCharactersCharacterIDMailMailIDEnhanceYourCalm() *GetCharactersCharac
 	return &GetCharactersCharacterIDMailMailIDEnhanceYourCalm{}
 }
 
-/* GetCharactersCharacterIDMailMailIDEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetCharactersCharacterIDMailMailIDEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -377,9 +563,39 @@ type GetCharactersCharacterIDMailMailIDEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get characters character Id mail mail Id enhance your calm response has a 2xx status code
+func (o *GetCharactersCharacterIDMailMailIDEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id mail mail Id enhance your calm response has a 3xx status code
+func (o *GetCharactersCharacterIDMailMailIDEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id mail mail Id enhance your calm response has a 4xx status code
+func (o *GetCharactersCharacterIDMailMailIDEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id mail mail Id enhance your calm response has a 5xx status code
+func (o *GetCharactersCharacterIDMailMailIDEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id mail mail Id enhance your calm response a status code equal to that given
+func (o *GetCharactersCharacterIDMailMailIDEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetCharactersCharacterIDMailMailIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/mail/{mail_id}/][%d] getCharactersCharacterIdMailMailIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDMailMailIDEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/mail/{mail_id}/][%d] getCharactersCharacterIdMailMailIdEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDMailMailIDEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -401,7 +617,8 @@ func NewGetCharactersCharacterIDMailMailIDInternalServerError() *GetCharactersCh
 	return &GetCharactersCharacterIDMailMailIDInternalServerError{}
 }
 
-/* GetCharactersCharacterIDMailMailIDInternalServerError describes a response with status code 500, with default header values.
+/*
+GetCharactersCharacterIDMailMailIDInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -409,9 +626,39 @@ type GetCharactersCharacterIDMailMailIDInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get characters character Id mail mail Id internal server error response has a 2xx status code
+func (o *GetCharactersCharacterIDMailMailIDInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id mail mail Id internal server error response has a 3xx status code
+func (o *GetCharactersCharacterIDMailMailIDInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id mail mail Id internal server error response has a 4xx status code
+func (o *GetCharactersCharacterIDMailMailIDInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id mail mail Id internal server error response has a 5xx status code
+func (o *GetCharactersCharacterIDMailMailIDInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id mail mail Id internal server error response a status code equal to that given
+func (o *GetCharactersCharacterIDMailMailIDInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetCharactersCharacterIDMailMailIDInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/mail/{mail_id}/][%d] getCharactersCharacterIdMailMailIdInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDMailMailIDInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/mail/{mail_id}/][%d] getCharactersCharacterIdMailMailIdInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDMailMailIDInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -433,7 +680,8 @@ func NewGetCharactersCharacterIDMailMailIDServiceUnavailable() *GetCharactersCha
 	return &GetCharactersCharacterIDMailMailIDServiceUnavailable{}
 }
 
-/* GetCharactersCharacterIDMailMailIDServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetCharactersCharacterIDMailMailIDServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -441,9 +689,39 @@ type GetCharactersCharacterIDMailMailIDServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get characters character Id mail mail Id service unavailable response has a 2xx status code
+func (o *GetCharactersCharacterIDMailMailIDServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id mail mail Id service unavailable response has a 3xx status code
+func (o *GetCharactersCharacterIDMailMailIDServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id mail mail Id service unavailable response has a 4xx status code
+func (o *GetCharactersCharacterIDMailMailIDServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id mail mail Id service unavailable response has a 5xx status code
+func (o *GetCharactersCharacterIDMailMailIDServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id mail mail Id service unavailable response a status code equal to that given
+func (o *GetCharactersCharacterIDMailMailIDServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetCharactersCharacterIDMailMailIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/mail/{mail_id}/][%d] getCharactersCharacterIdMailMailIdServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDMailMailIDServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/mail/{mail_id}/][%d] getCharactersCharacterIdMailMailIdServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDMailMailIDServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -465,7 +743,8 @@ func NewGetCharactersCharacterIDMailMailIDGatewayTimeout() *GetCharactersCharact
 	return &GetCharactersCharacterIDMailMailIDGatewayTimeout{}
 }
 
-/* GetCharactersCharacterIDMailMailIDGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetCharactersCharacterIDMailMailIDGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -473,9 +752,39 @@ type GetCharactersCharacterIDMailMailIDGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get characters character Id mail mail Id gateway timeout response has a 2xx status code
+func (o *GetCharactersCharacterIDMailMailIDGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id mail mail Id gateway timeout response has a 3xx status code
+func (o *GetCharactersCharacterIDMailMailIDGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id mail mail Id gateway timeout response has a 4xx status code
+func (o *GetCharactersCharacterIDMailMailIDGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id mail mail Id gateway timeout response has a 5xx status code
+func (o *GetCharactersCharacterIDMailMailIDGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id mail mail Id gateway timeout response a status code equal to that given
+func (o *GetCharactersCharacterIDMailMailIDGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetCharactersCharacterIDMailMailIDGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/mail/{mail_id}/][%d] getCharactersCharacterIdMailMailIdGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDMailMailIDGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/mail/{mail_id}/][%d] getCharactersCharacterIdMailMailIdGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDMailMailIDGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -492,7 +801,8 @@ func (o *GetCharactersCharacterIDMailMailIDGatewayTimeout) readResponse(response
 	return nil
 }
 
-/*GetCharactersCharacterIDMailMailIDNotFoundBody get_characters_character_id_mail_mail_id_not_found
+/*
+GetCharactersCharacterIDMailMailIDNotFoundBody get_characters_character_id_mail_mail_id_not_found
 //
 // Not found
 swagger:model GetCharactersCharacterIDMailMailIDNotFoundBody
@@ -533,7 +843,8 @@ func (o *GetCharactersCharacterIDMailMailIDNotFoundBody) UnmarshalBinary(b []byt
 	return nil
 }
 
-/*GetCharactersCharacterIDMailMailIDOKBody get_characters_character_id_mail_mail_id_ok
+/*
+GetCharactersCharacterIDMailMailIDOKBody get_characters_character_id_mail_mail_id_ok
 //
 // 200 ok object
 swagger:model GetCharactersCharacterIDMailMailIDOKBody
@@ -732,7 +1043,8 @@ func (o *GetCharactersCharacterIDMailMailIDOKBody) UnmarshalBinary(b []byte) err
 	return nil
 }
 
-/*GetCharactersCharacterIDMailMailIDOKBodyRecipientsItems0 get_characters_character_id_mail_mail_id_recipient
+/*
+GetCharactersCharacterIDMailMailIDOKBodyRecipientsItems0 get_characters_character_id_mail_mail_id_recipient
 //
 // recipient object
 swagger:model GetCharactersCharacterIDMailMailIDOKBodyRecipientsItems0

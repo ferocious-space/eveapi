@@ -53,10 +53,12 @@ func NewGetCharactersCharacterIDOpportunitiesParamsWithHTTPClient(client *http.C
 	}
 }
 
-/* GetCharactersCharacterIDOpportunitiesParams contains all the parameters to send to the API endpoint
-   for the get characters character id opportunities operation.
+/*
+GetCharactersCharacterIDOpportunitiesParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get characters character id opportunities operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCharactersCharacterIDOpportunitiesParams struct {
 

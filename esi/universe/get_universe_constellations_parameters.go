@@ -52,10 +52,12 @@ func NewGetUniverseConstellationsParamsWithHTTPClient(client *http.Client) *GetU
 	}
 }
 
-/* GetUniverseConstellationsParams contains all the parameters to send to the API endpoint
-   for the get universe constellations operation.
+/*
+GetUniverseConstellationsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get universe constellations operation.
+
+	Typically these are written to a http.Request.
 */
 type GetUniverseConstellationsParams struct {
 

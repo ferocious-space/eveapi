@@ -46,9 +46,9 @@ type ClientService interface {
 }
 
 /*
-  GetCharactersCharacterIDAssets gets character assets
+	GetCharactersCharacterIDAssets gets character assets
 
-  Return a list of the characters assets
+	Return a list of the characters assets
 
 ---
 
@@ -91,13 +91,13 @@ func (a *Client) GetCharactersCharacterIDAssets(params *GetCharactersCharacterID
 }
 
 /*
-  GetCorporationsCorporationIDAssets gets corporation assets
+	GetCorporationsCorporationIDAssets gets corporation assets
 
-  Return a list of the corporation assets
+	Return a list of the corporation assets
 
 ---
 
-This route is cached for up to 3600 seconds
+# This route is cached for up to 3600 seconds
 
 ---
 Requires one of the following EVE corporation role(s): Director
@@ -139,12 +139,11 @@ func (a *Client) GetCorporationsCorporationIDAssets(params *GetCorporationsCorpo
 }
 
 /*
-  PostCharactersCharacterIDAssetsLocations gets character asset locations
+	PostCharactersCharacterIDAssetsLocations gets character asset locations
 
-  Return locations for a set of item ids, which you can get from character assets endpoint. Coordinates for items in hangars or stations are set to (0,0,0)
+	Return locations for a set of item ids, which you can get from character assets endpoint. Coordinates for items in hangars or stations are set to (0,0,0)
 
 ---
-
 */
 func (a *Client) PostCharactersCharacterIDAssetsLocations(params *PostCharactersCharacterIDAssetsLocationsParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*PostCharactersCharacterIDAssetsLocationsOK, error) {
 	// TODO: Validate the params before sending
@@ -183,12 +182,11 @@ func (a *Client) PostCharactersCharacterIDAssetsLocations(params *PostCharacters
 }
 
 /*
-  PostCharactersCharacterIDAssetsNames gets character asset names
+	PostCharactersCharacterIDAssetsNames gets character asset names
 
-  Return names for a set of item ids, which you can get from character assets endpoint. Typically used for items that can customize names, like containers or ships.
+	Return names for a set of item ids, which you can get from character assets endpoint. Typically used for items that can customize names, like containers or ships.
 
 ---
-
 */
 func (a *Client) PostCharactersCharacterIDAssetsNames(params *PostCharactersCharacterIDAssetsNamesParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*PostCharactersCharacterIDAssetsNamesOK, error) {
 	// TODO: Validate the params before sending
@@ -227,9 +225,9 @@ func (a *Client) PostCharactersCharacterIDAssetsNames(params *PostCharactersChar
 }
 
 /*
-  PostCorporationsCorporationIDAssetsLocations gets corporation asset locations
+	PostCorporationsCorporationIDAssetsLocations gets corporation asset locations
 
-  Return locations for a set of item ids, which you can get from corporation assets endpoint. Coordinates for items in hangars or stations are set to (0,0,0)
+	Return locations for a set of item ids, which you can get from corporation assets endpoint. Coordinates for items in hangars or stations are set to (0,0,0)
 
 ---
 
@@ -272,9 +270,9 @@ func (a *Client) PostCorporationsCorporationIDAssetsLocations(params *PostCorpor
 }
 
 /*
-  PostCorporationsCorporationIDAssetsNames gets corporation asset names
+	PostCorporationsCorporationIDAssetsNames gets corporation asset names
 
-  Return names for a set of item ids, which you can get from corporation assets endpoint. Only valid for items that can customize names, like containers or ships
+	Return names for a set of item ids, which you can get from corporation assets endpoint. Only valid for items that can customize names, like containers or ships
 
 ---
 

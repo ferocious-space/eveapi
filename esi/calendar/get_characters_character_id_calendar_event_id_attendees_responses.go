@@ -98,7 +98,8 @@ func NewGetCharactersCharacterIDCalendarEventIDAttendeesOK() *GetCharactersChara
 	return &GetCharactersCharacterIDCalendarEventIDAttendeesOK{}
 }
 
-/* GetCharactersCharacterIDCalendarEventIDAttendeesOK describes a response with status code 200, with default header values.
+/*
+GetCharactersCharacterIDCalendarEventIDAttendeesOK describes a response with status code 200, with default header values.
 
 List of attendees
 */
@@ -123,9 +124,39 @@ type GetCharactersCharacterIDCalendarEventIDAttendeesOK struct {
 	Payload []*GetCharactersCharacterIDCalendarEventIDAttendeesOKBodyItems0
 }
 
+// IsSuccess returns true when this get characters character Id calendar event Id attendees o k response has a 2xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get characters character Id calendar event Id attendees o k response has a 3xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id calendar event Id attendees o k response has a 4xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id calendar event Id attendees o k response has a 5xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id calendar event Id attendees o k response a status code equal to that given
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetCharactersCharacterIDCalendarEventIDAttendeesOK) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/calendar/{event_id}/attendees/][%d] getCharactersCharacterIdCalendarEventIdAttendeesOK  %+v", 200, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesOK) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/calendar/{event_id}/attendees/][%d] getCharactersCharacterIdCalendarEventIdAttendeesOK  %+v", 200, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDCalendarEventIDAttendeesOK) GetPayload() []*GetCharactersCharacterIDCalendarEventIDAttendeesOKBodyItems0 {
 	return o.Payload
 }
@@ -173,7 +204,8 @@ func NewGetCharactersCharacterIDCalendarEventIDAttendeesNotModified() *GetCharac
 	return &GetCharactersCharacterIDCalendarEventIDAttendeesNotModified{}
 }
 
-/* GetCharactersCharacterIDCalendarEventIDAttendeesNotModified describes a response with status code 304, with default header values.
+/*
+GetCharactersCharacterIDCalendarEventIDAttendeesNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -196,7 +228,36 @@ type GetCharactersCharacterIDCalendarEventIDAttendeesNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get characters character Id calendar event Id attendees not modified response has a 2xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id calendar event Id attendees not modified response has a 3xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get characters character Id calendar event Id attendees not modified response has a 4xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id calendar event Id attendees not modified response has a 5xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id calendar event Id attendees not modified response a status code equal to that given
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetCharactersCharacterIDCalendarEventIDAttendeesNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/calendar/{event_id}/attendees/][%d] getCharactersCharacterIdCalendarEventIdAttendeesNotModified ", 304)
+}
+
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/calendar/{event_id}/attendees/][%d] getCharactersCharacterIdCalendarEventIdAttendeesNotModified ", 304)
 }
 
@@ -238,7 +299,8 @@ func NewGetCharactersCharacterIDCalendarEventIDAttendeesBadRequest() *GetCharact
 	return &GetCharactersCharacterIDCalendarEventIDAttendeesBadRequest{}
 }
 
-/* GetCharactersCharacterIDCalendarEventIDAttendeesBadRequest describes a response with status code 400, with default header values.
+/*
+GetCharactersCharacterIDCalendarEventIDAttendeesBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -246,9 +308,39 @@ type GetCharactersCharacterIDCalendarEventIDAttendeesBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get characters character Id calendar event Id attendees bad request response has a 2xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id calendar event Id attendees bad request response has a 3xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id calendar event Id attendees bad request response has a 4xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id calendar event Id attendees bad request response has a 5xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id calendar event Id attendees bad request response a status code equal to that given
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetCharactersCharacterIDCalendarEventIDAttendeesBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/calendar/{event_id}/attendees/][%d] getCharactersCharacterIdCalendarEventIdAttendeesBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/calendar/{event_id}/attendees/][%d] getCharactersCharacterIdCalendarEventIdAttendeesBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDCalendarEventIDAttendeesBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -270,7 +362,8 @@ func NewGetCharactersCharacterIDCalendarEventIDAttendeesUnauthorized() *GetChara
 	return &GetCharactersCharacterIDCalendarEventIDAttendeesUnauthorized{}
 }
 
-/* GetCharactersCharacterIDCalendarEventIDAttendeesUnauthorized describes a response with status code 401, with default header values.
+/*
+GetCharactersCharacterIDCalendarEventIDAttendeesUnauthorized describes a response with status code 401, with default header values.
 
 Unauthorized
 */
@@ -278,9 +371,39 @@ type GetCharactersCharacterIDCalendarEventIDAttendeesUnauthorized struct {
 	Payload *models.Unauthorized
 }
 
+// IsSuccess returns true when this get characters character Id calendar event Id attendees unauthorized response has a 2xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id calendar event Id attendees unauthorized response has a 3xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id calendar event Id attendees unauthorized response has a 4xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id calendar event Id attendees unauthorized response has a 5xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id calendar event Id attendees unauthorized response a status code equal to that given
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *GetCharactersCharacterIDCalendarEventIDAttendeesUnauthorized) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/calendar/{event_id}/attendees/][%d] getCharactersCharacterIdCalendarEventIdAttendeesUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesUnauthorized) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/calendar/{event_id}/attendees/][%d] getCharactersCharacterIdCalendarEventIdAttendeesUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDCalendarEventIDAttendeesUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
 }
@@ -302,7 +425,8 @@ func NewGetCharactersCharacterIDCalendarEventIDAttendeesForbidden() *GetCharacte
 	return &GetCharactersCharacterIDCalendarEventIDAttendeesForbidden{}
 }
 
-/* GetCharactersCharacterIDCalendarEventIDAttendeesForbidden describes a response with status code 403, with default header values.
+/*
+GetCharactersCharacterIDCalendarEventIDAttendeesForbidden describes a response with status code 403, with default header values.
 
 Forbidden
 */
@@ -310,9 +434,39 @@ type GetCharactersCharacterIDCalendarEventIDAttendeesForbidden struct {
 	Payload *models.Forbidden
 }
 
+// IsSuccess returns true when this get characters character Id calendar event Id attendees forbidden response has a 2xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesForbidden) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id calendar event Id attendees forbidden response has a 3xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesForbidden) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id calendar event Id attendees forbidden response has a 4xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesForbidden) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id calendar event Id attendees forbidden response has a 5xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesForbidden) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id calendar event Id attendees forbidden response a status code equal to that given
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesForbidden) IsCode(code int) bool {
+	return code == 403
+}
+
 func (o *GetCharactersCharacterIDCalendarEventIDAttendeesForbidden) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/calendar/{event_id}/attendees/][%d] getCharactersCharacterIdCalendarEventIdAttendeesForbidden  %+v", 403, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesForbidden) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/calendar/{event_id}/attendees/][%d] getCharactersCharacterIdCalendarEventIdAttendeesForbidden  %+v", 403, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDCalendarEventIDAttendeesForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
 }
@@ -334,7 +488,8 @@ func NewGetCharactersCharacterIDCalendarEventIDAttendeesNotFound() *GetCharacter
 	return &GetCharactersCharacterIDCalendarEventIDAttendeesNotFound{}
 }
 
-/* GetCharactersCharacterIDCalendarEventIDAttendeesNotFound describes a response with status code 404, with default header values.
+/*
+GetCharactersCharacterIDCalendarEventIDAttendeesNotFound describes a response with status code 404, with default header values.
 
 Not found
 */
@@ -342,9 +497,39 @@ type GetCharactersCharacterIDCalendarEventIDAttendeesNotFound struct {
 	Payload *GetCharactersCharacterIDCalendarEventIDAttendeesNotFoundBody
 }
 
+// IsSuccess returns true when this get characters character Id calendar event Id attendees not found response has a 2xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesNotFound) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id calendar event Id attendees not found response has a 3xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesNotFound) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id calendar event Id attendees not found response has a 4xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesNotFound) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id calendar event Id attendees not found response has a 5xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesNotFound) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id calendar event Id attendees not found response a status code equal to that given
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesNotFound) IsCode(code int) bool {
+	return code == 404
+}
+
 func (o *GetCharactersCharacterIDCalendarEventIDAttendeesNotFound) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/calendar/{event_id}/attendees/][%d] getCharactersCharacterIdCalendarEventIdAttendeesNotFound  %+v", 404, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesNotFound) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/calendar/{event_id}/attendees/][%d] getCharactersCharacterIdCalendarEventIdAttendeesNotFound  %+v", 404, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDCalendarEventIDAttendeesNotFound) GetPayload() *GetCharactersCharacterIDCalendarEventIDAttendeesNotFoundBody {
 	return o.Payload
 }
@@ -366,7 +551,8 @@ func NewGetCharactersCharacterIDCalendarEventIDAttendeesEnhanceYourCalm() *GetCh
 	return &GetCharactersCharacterIDCalendarEventIDAttendeesEnhanceYourCalm{}
 }
 
-/* GetCharactersCharacterIDCalendarEventIDAttendeesEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetCharactersCharacterIDCalendarEventIDAttendeesEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -374,9 +560,39 @@ type GetCharactersCharacterIDCalendarEventIDAttendeesEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get characters character Id calendar event Id attendees enhance your calm response has a 2xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id calendar event Id attendees enhance your calm response has a 3xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id calendar event Id attendees enhance your calm response has a 4xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id calendar event Id attendees enhance your calm response has a 5xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id calendar event Id attendees enhance your calm response a status code equal to that given
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetCharactersCharacterIDCalendarEventIDAttendeesEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/calendar/{event_id}/attendees/][%d] getCharactersCharacterIdCalendarEventIdAttendeesEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/calendar/{event_id}/attendees/][%d] getCharactersCharacterIdCalendarEventIdAttendeesEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDCalendarEventIDAttendeesEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -398,7 +614,8 @@ func NewGetCharactersCharacterIDCalendarEventIDAttendeesInternalServerError() *G
 	return &GetCharactersCharacterIDCalendarEventIDAttendeesInternalServerError{}
 }
 
-/* GetCharactersCharacterIDCalendarEventIDAttendeesInternalServerError describes a response with status code 500, with default header values.
+/*
+GetCharactersCharacterIDCalendarEventIDAttendeesInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -406,9 +623,39 @@ type GetCharactersCharacterIDCalendarEventIDAttendeesInternalServerError struct 
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get characters character Id calendar event Id attendees internal server error response has a 2xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id calendar event Id attendees internal server error response has a 3xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id calendar event Id attendees internal server error response has a 4xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id calendar event Id attendees internal server error response has a 5xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id calendar event Id attendees internal server error response a status code equal to that given
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetCharactersCharacterIDCalendarEventIDAttendeesInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/calendar/{event_id}/attendees/][%d] getCharactersCharacterIdCalendarEventIdAttendeesInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/calendar/{event_id}/attendees/][%d] getCharactersCharacterIdCalendarEventIdAttendeesInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDCalendarEventIDAttendeesInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -430,7 +677,8 @@ func NewGetCharactersCharacterIDCalendarEventIDAttendeesServiceUnavailable() *Ge
 	return &GetCharactersCharacterIDCalendarEventIDAttendeesServiceUnavailable{}
 }
 
-/* GetCharactersCharacterIDCalendarEventIDAttendeesServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetCharactersCharacterIDCalendarEventIDAttendeesServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -438,9 +686,39 @@ type GetCharactersCharacterIDCalendarEventIDAttendeesServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get characters character Id calendar event Id attendees service unavailable response has a 2xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id calendar event Id attendees service unavailable response has a 3xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id calendar event Id attendees service unavailable response has a 4xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id calendar event Id attendees service unavailable response has a 5xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id calendar event Id attendees service unavailable response a status code equal to that given
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetCharactersCharacterIDCalendarEventIDAttendeesServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/calendar/{event_id}/attendees/][%d] getCharactersCharacterIdCalendarEventIdAttendeesServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/calendar/{event_id}/attendees/][%d] getCharactersCharacterIdCalendarEventIdAttendeesServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDCalendarEventIDAttendeesServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -462,7 +740,8 @@ func NewGetCharactersCharacterIDCalendarEventIDAttendeesGatewayTimeout() *GetCha
 	return &GetCharactersCharacterIDCalendarEventIDAttendeesGatewayTimeout{}
 }
 
-/* GetCharactersCharacterIDCalendarEventIDAttendeesGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetCharactersCharacterIDCalendarEventIDAttendeesGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -470,9 +749,39 @@ type GetCharactersCharacterIDCalendarEventIDAttendeesGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get characters character Id calendar event Id attendees gateway timeout response has a 2xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id calendar event Id attendees gateway timeout response has a 3xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id calendar event Id attendees gateway timeout response has a 4xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id calendar event Id attendees gateway timeout response has a 5xx status code
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id calendar event Id attendees gateway timeout response a status code equal to that given
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetCharactersCharacterIDCalendarEventIDAttendeesGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/calendar/{event_id}/attendees/][%d] getCharactersCharacterIdCalendarEventIdAttendeesGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDCalendarEventIDAttendeesGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/calendar/{event_id}/attendees/][%d] getCharactersCharacterIdCalendarEventIdAttendeesGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDCalendarEventIDAttendeesGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -489,7 +798,8 @@ func (o *GetCharactersCharacterIDCalendarEventIDAttendeesGatewayTimeout) readRes
 	return nil
 }
 
-/*GetCharactersCharacterIDCalendarEventIDAttendeesNotFoundBody get_characters_character_id_calendar_event_id_attendees_not_found
+/*
+GetCharactersCharacterIDCalendarEventIDAttendeesNotFoundBody get_characters_character_id_calendar_event_id_attendees_not_found
 //
 // Not found
 swagger:model GetCharactersCharacterIDCalendarEventIDAttendeesNotFoundBody
@@ -530,7 +840,8 @@ func (o *GetCharactersCharacterIDCalendarEventIDAttendeesNotFoundBody) Unmarshal
 	return nil
 }
 
-/*GetCharactersCharacterIDCalendarEventIDAttendeesOKBodyItems0 get_characters_character_id_calendar_event_id_attendees_200_ok
+/*
+GetCharactersCharacterIDCalendarEventIDAttendeesOKBodyItems0 get_characters_character_id_calendar_event_id_attendees_200_ok
 //
 // character_id and response of an attendee
 swagger:model GetCharactersCharacterIDCalendarEventIDAttendeesOKBodyItems0

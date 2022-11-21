@@ -98,14 +98,44 @@ func NewPostFleetsFleetIDMembersNoContent() *PostFleetsFleetIDMembersNoContent {
 	return &PostFleetsFleetIDMembersNoContent{}
 }
 
-/* PostFleetsFleetIDMembersNoContent describes a response with status code 204, with default header values.
+/*
+PostFleetsFleetIDMembersNoContent describes a response with status code 204, with default header values.
 
 Fleet invitation sent
 */
 type PostFleetsFleetIDMembersNoContent struct {
 }
 
+// IsSuccess returns true when this post fleets fleet Id members no content response has a 2xx status code
+func (o *PostFleetsFleetIDMembersNoContent) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this post fleets fleet Id members no content response has a 3xx status code
+func (o *PostFleetsFleetIDMembersNoContent) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post fleets fleet Id members no content response has a 4xx status code
+func (o *PostFleetsFleetIDMembersNoContent) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post fleets fleet Id members no content response has a 5xx status code
+func (o *PostFleetsFleetIDMembersNoContent) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post fleets fleet Id members no content response a status code equal to that given
+func (o *PostFleetsFleetIDMembersNoContent) IsCode(code int) bool {
+	return code == 204
+}
+
 func (o *PostFleetsFleetIDMembersNoContent) Error() string {
+	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/members/][%d] postFleetsFleetIdMembersNoContent ", 204)
+}
+
+func (o *PostFleetsFleetIDMembersNoContent) String() string {
 	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/members/][%d] postFleetsFleetIdMembersNoContent ", 204)
 }
 
@@ -119,7 +149,8 @@ func NewPostFleetsFleetIDMembersBadRequest() *PostFleetsFleetIDMembersBadRequest
 	return &PostFleetsFleetIDMembersBadRequest{}
 }
 
-/* PostFleetsFleetIDMembersBadRequest describes a response with status code 400, with default header values.
+/*
+PostFleetsFleetIDMembersBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -127,9 +158,39 @@ type PostFleetsFleetIDMembersBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this post fleets fleet Id members bad request response has a 2xx status code
+func (o *PostFleetsFleetIDMembersBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post fleets fleet Id members bad request response has a 3xx status code
+func (o *PostFleetsFleetIDMembersBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post fleets fleet Id members bad request response has a 4xx status code
+func (o *PostFleetsFleetIDMembersBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post fleets fleet Id members bad request response has a 5xx status code
+func (o *PostFleetsFleetIDMembersBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post fleets fleet Id members bad request response a status code equal to that given
+func (o *PostFleetsFleetIDMembersBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *PostFleetsFleetIDMembersBadRequest) Error() string {
 	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/members/][%d] postFleetsFleetIdMembersBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *PostFleetsFleetIDMembersBadRequest) String() string {
+	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/members/][%d] postFleetsFleetIdMembersBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *PostFleetsFleetIDMembersBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -151,7 +212,8 @@ func NewPostFleetsFleetIDMembersUnauthorized() *PostFleetsFleetIDMembersUnauthor
 	return &PostFleetsFleetIDMembersUnauthorized{}
 }
 
-/* PostFleetsFleetIDMembersUnauthorized describes a response with status code 401, with default header values.
+/*
+PostFleetsFleetIDMembersUnauthorized describes a response with status code 401, with default header values.
 
 Unauthorized
 */
@@ -159,9 +221,39 @@ type PostFleetsFleetIDMembersUnauthorized struct {
 	Payload *models.Unauthorized
 }
 
+// IsSuccess returns true when this post fleets fleet Id members unauthorized response has a 2xx status code
+func (o *PostFleetsFleetIDMembersUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post fleets fleet Id members unauthorized response has a 3xx status code
+func (o *PostFleetsFleetIDMembersUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post fleets fleet Id members unauthorized response has a 4xx status code
+func (o *PostFleetsFleetIDMembersUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post fleets fleet Id members unauthorized response has a 5xx status code
+func (o *PostFleetsFleetIDMembersUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post fleets fleet Id members unauthorized response a status code equal to that given
+func (o *PostFleetsFleetIDMembersUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *PostFleetsFleetIDMembersUnauthorized) Error() string {
 	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/members/][%d] postFleetsFleetIdMembersUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *PostFleetsFleetIDMembersUnauthorized) String() string {
+	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/members/][%d] postFleetsFleetIdMembersUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *PostFleetsFleetIDMembersUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
 }
@@ -183,7 +275,8 @@ func NewPostFleetsFleetIDMembersForbidden() *PostFleetsFleetIDMembersForbidden {
 	return &PostFleetsFleetIDMembersForbidden{}
 }
 
-/* PostFleetsFleetIDMembersForbidden describes a response with status code 403, with default header values.
+/*
+PostFleetsFleetIDMembersForbidden describes a response with status code 403, with default header values.
 
 Forbidden
 */
@@ -191,9 +284,39 @@ type PostFleetsFleetIDMembersForbidden struct {
 	Payload *models.Forbidden
 }
 
+// IsSuccess returns true when this post fleets fleet Id members forbidden response has a 2xx status code
+func (o *PostFleetsFleetIDMembersForbidden) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post fleets fleet Id members forbidden response has a 3xx status code
+func (o *PostFleetsFleetIDMembersForbidden) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post fleets fleet Id members forbidden response has a 4xx status code
+func (o *PostFleetsFleetIDMembersForbidden) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post fleets fleet Id members forbidden response has a 5xx status code
+func (o *PostFleetsFleetIDMembersForbidden) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post fleets fleet Id members forbidden response a status code equal to that given
+func (o *PostFleetsFleetIDMembersForbidden) IsCode(code int) bool {
+	return code == 403
+}
+
 func (o *PostFleetsFleetIDMembersForbidden) Error() string {
 	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/members/][%d] postFleetsFleetIdMembersForbidden  %+v", 403, o.Payload)
 }
+
+func (o *PostFleetsFleetIDMembersForbidden) String() string {
+	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/members/][%d] postFleetsFleetIdMembersForbidden  %+v", 403, o.Payload)
+}
+
 func (o *PostFleetsFleetIDMembersForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
 }
@@ -215,7 +338,8 @@ func NewPostFleetsFleetIDMembersNotFound() *PostFleetsFleetIDMembersNotFound {
 	return &PostFleetsFleetIDMembersNotFound{}
 }
 
-/* PostFleetsFleetIDMembersNotFound describes a response with status code 404, with default header values.
+/*
+PostFleetsFleetIDMembersNotFound describes a response with status code 404, with default header values.
 
 The fleet does not exist or you don't have access to it
 */
@@ -223,9 +347,39 @@ type PostFleetsFleetIDMembersNotFound struct {
 	Payload *PostFleetsFleetIDMembersNotFoundBody
 }
 
+// IsSuccess returns true when this post fleets fleet Id members not found response has a 2xx status code
+func (o *PostFleetsFleetIDMembersNotFound) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post fleets fleet Id members not found response has a 3xx status code
+func (o *PostFleetsFleetIDMembersNotFound) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post fleets fleet Id members not found response has a 4xx status code
+func (o *PostFleetsFleetIDMembersNotFound) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post fleets fleet Id members not found response has a 5xx status code
+func (o *PostFleetsFleetIDMembersNotFound) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post fleets fleet Id members not found response a status code equal to that given
+func (o *PostFleetsFleetIDMembersNotFound) IsCode(code int) bool {
+	return code == 404
+}
+
 func (o *PostFleetsFleetIDMembersNotFound) Error() string {
 	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/members/][%d] postFleetsFleetIdMembersNotFound  %+v", 404, o.Payload)
 }
+
+func (o *PostFleetsFleetIDMembersNotFound) String() string {
+	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/members/][%d] postFleetsFleetIdMembersNotFound  %+v", 404, o.Payload)
+}
+
 func (o *PostFleetsFleetIDMembersNotFound) GetPayload() *PostFleetsFleetIDMembersNotFoundBody {
 	return o.Payload
 }
@@ -247,7 +401,8 @@ func NewPostFleetsFleetIDMembersEnhanceYourCalm() *PostFleetsFleetIDMembersEnhan
 	return &PostFleetsFleetIDMembersEnhanceYourCalm{}
 }
 
-/* PostFleetsFleetIDMembersEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+PostFleetsFleetIDMembersEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -255,9 +410,39 @@ type PostFleetsFleetIDMembersEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this post fleets fleet Id members enhance your calm response has a 2xx status code
+func (o *PostFleetsFleetIDMembersEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post fleets fleet Id members enhance your calm response has a 3xx status code
+func (o *PostFleetsFleetIDMembersEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post fleets fleet Id members enhance your calm response has a 4xx status code
+func (o *PostFleetsFleetIDMembersEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post fleets fleet Id members enhance your calm response has a 5xx status code
+func (o *PostFleetsFleetIDMembersEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post fleets fleet Id members enhance your calm response a status code equal to that given
+func (o *PostFleetsFleetIDMembersEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *PostFleetsFleetIDMembersEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/members/][%d] postFleetsFleetIdMembersEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *PostFleetsFleetIDMembersEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/members/][%d] postFleetsFleetIdMembersEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *PostFleetsFleetIDMembersEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -279,7 +464,8 @@ func NewPostFleetsFleetIDMembersUnprocessableEntity() *PostFleetsFleetIDMembersU
 	return &PostFleetsFleetIDMembersUnprocessableEntity{}
 }
 
-/* PostFleetsFleetIDMembersUnprocessableEntity describes a response with status code 422, with default header values.
+/*
+PostFleetsFleetIDMembersUnprocessableEntity describes a response with status code 422, with default header values.
 
 Errors in invitation
 */
@@ -287,9 +473,39 @@ type PostFleetsFleetIDMembersUnprocessableEntity struct {
 	Payload *PostFleetsFleetIDMembersUnprocessableEntityBody
 }
 
+// IsSuccess returns true when this post fleets fleet Id members unprocessable entity response has a 2xx status code
+func (o *PostFleetsFleetIDMembersUnprocessableEntity) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post fleets fleet Id members unprocessable entity response has a 3xx status code
+func (o *PostFleetsFleetIDMembersUnprocessableEntity) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post fleets fleet Id members unprocessable entity response has a 4xx status code
+func (o *PostFleetsFleetIDMembersUnprocessableEntity) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post fleets fleet Id members unprocessable entity response has a 5xx status code
+func (o *PostFleetsFleetIDMembersUnprocessableEntity) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post fleets fleet Id members unprocessable entity response a status code equal to that given
+func (o *PostFleetsFleetIDMembersUnprocessableEntity) IsCode(code int) bool {
+	return code == 422
+}
+
 func (o *PostFleetsFleetIDMembersUnprocessableEntity) Error() string {
 	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/members/][%d] postFleetsFleetIdMembersUnprocessableEntity  %+v", 422, o.Payload)
 }
+
+func (o *PostFleetsFleetIDMembersUnprocessableEntity) String() string {
+	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/members/][%d] postFleetsFleetIdMembersUnprocessableEntity  %+v", 422, o.Payload)
+}
+
 func (o *PostFleetsFleetIDMembersUnprocessableEntity) GetPayload() *PostFleetsFleetIDMembersUnprocessableEntityBody {
 	return o.Payload
 }
@@ -311,7 +527,8 @@ func NewPostFleetsFleetIDMembersInternalServerError() *PostFleetsFleetIDMembersI
 	return &PostFleetsFleetIDMembersInternalServerError{}
 }
 
-/* PostFleetsFleetIDMembersInternalServerError describes a response with status code 500, with default header values.
+/*
+PostFleetsFleetIDMembersInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -319,9 +536,39 @@ type PostFleetsFleetIDMembersInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this post fleets fleet Id members internal server error response has a 2xx status code
+func (o *PostFleetsFleetIDMembersInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post fleets fleet Id members internal server error response has a 3xx status code
+func (o *PostFleetsFleetIDMembersInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post fleets fleet Id members internal server error response has a 4xx status code
+func (o *PostFleetsFleetIDMembersInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post fleets fleet Id members internal server error response has a 5xx status code
+func (o *PostFleetsFleetIDMembersInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post fleets fleet Id members internal server error response a status code equal to that given
+func (o *PostFleetsFleetIDMembersInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *PostFleetsFleetIDMembersInternalServerError) Error() string {
 	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/members/][%d] postFleetsFleetIdMembersInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *PostFleetsFleetIDMembersInternalServerError) String() string {
+	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/members/][%d] postFleetsFleetIdMembersInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *PostFleetsFleetIDMembersInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -343,7 +590,8 @@ func NewPostFleetsFleetIDMembersServiceUnavailable() *PostFleetsFleetIDMembersSe
 	return &PostFleetsFleetIDMembersServiceUnavailable{}
 }
 
-/* PostFleetsFleetIDMembersServiceUnavailable describes a response with status code 503, with default header values.
+/*
+PostFleetsFleetIDMembersServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -351,9 +599,39 @@ type PostFleetsFleetIDMembersServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this post fleets fleet Id members service unavailable response has a 2xx status code
+func (o *PostFleetsFleetIDMembersServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post fleets fleet Id members service unavailable response has a 3xx status code
+func (o *PostFleetsFleetIDMembersServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post fleets fleet Id members service unavailable response has a 4xx status code
+func (o *PostFleetsFleetIDMembersServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post fleets fleet Id members service unavailable response has a 5xx status code
+func (o *PostFleetsFleetIDMembersServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post fleets fleet Id members service unavailable response a status code equal to that given
+func (o *PostFleetsFleetIDMembersServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *PostFleetsFleetIDMembersServiceUnavailable) Error() string {
 	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/members/][%d] postFleetsFleetIdMembersServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *PostFleetsFleetIDMembersServiceUnavailable) String() string {
+	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/members/][%d] postFleetsFleetIdMembersServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *PostFleetsFleetIDMembersServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -375,7 +653,8 @@ func NewPostFleetsFleetIDMembersGatewayTimeout() *PostFleetsFleetIDMembersGatewa
 	return &PostFleetsFleetIDMembersGatewayTimeout{}
 }
 
-/* PostFleetsFleetIDMembersGatewayTimeout describes a response with status code 504, with default header values.
+/*
+PostFleetsFleetIDMembersGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -383,9 +662,39 @@ type PostFleetsFleetIDMembersGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this post fleets fleet Id members gateway timeout response has a 2xx status code
+func (o *PostFleetsFleetIDMembersGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post fleets fleet Id members gateway timeout response has a 3xx status code
+func (o *PostFleetsFleetIDMembersGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post fleets fleet Id members gateway timeout response has a 4xx status code
+func (o *PostFleetsFleetIDMembersGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post fleets fleet Id members gateway timeout response has a 5xx status code
+func (o *PostFleetsFleetIDMembersGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post fleets fleet Id members gateway timeout response a status code equal to that given
+func (o *PostFleetsFleetIDMembersGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *PostFleetsFleetIDMembersGatewayTimeout) Error() string {
 	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/members/][%d] postFleetsFleetIdMembersGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *PostFleetsFleetIDMembersGatewayTimeout) String() string {
+	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/members/][%d] postFleetsFleetIdMembersGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *PostFleetsFleetIDMembersGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -402,7 +711,8 @@ func (o *PostFleetsFleetIDMembersGatewayTimeout) readResponse(response runtime.C
 	return nil
 }
 
-/*PostFleetsFleetIDMembersBody post_fleets_fleet_id_members_invitation
+/*
+PostFleetsFleetIDMembersBody post_fleets_fleet_id_members_invitation
 //
 // invitation object
 swagger:model PostFleetsFleetIDMembersBody
@@ -566,7 +876,8 @@ func (o *PostFleetsFleetIDMembersBody) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*PostFleetsFleetIDMembersNotFoundBody post_fleets_fleet_id_members_not_found
+/*
+PostFleetsFleetIDMembersNotFoundBody post_fleets_fleet_id_members_not_found
 //
 // Not found
 swagger:model PostFleetsFleetIDMembersNotFoundBody
@@ -607,7 +918,8 @@ func (o *PostFleetsFleetIDMembersNotFoundBody) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*PostFleetsFleetIDMembersUnprocessableEntityBody post_fleets_fleet_id_members_unprocessable_entity
+/*
+PostFleetsFleetIDMembersUnprocessableEntityBody post_fleets_fleet_id_members_unprocessable_entity
 //
 // 422 unprocessable entity object
 swagger:model PostFleetsFleetIDMembersUnprocessableEntityBody

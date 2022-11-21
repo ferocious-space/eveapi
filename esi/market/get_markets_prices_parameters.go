@@ -52,10 +52,12 @@ func NewGetMarketsPricesParamsWithHTTPClient(client *http.Client) *GetMarketsPri
 	}
 }
 
-/* GetMarketsPricesParams contains all the parameters to send to the API endpoint
-   for the get markets prices operation.
+/*
+GetMarketsPricesParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get markets prices operation.
+
+	Typically these are written to a http.Request.
 */
 type GetMarketsPricesParams struct {
 

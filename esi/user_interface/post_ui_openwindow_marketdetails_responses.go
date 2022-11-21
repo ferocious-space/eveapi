@@ -81,14 +81,44 @@ func NewPostUIOpenwindowMarketdetailsNoContent() *PostUIOpenwindowMarketdetailsN
 	return &PostUIOpenwindowMarketdetailsNoContent{}
 }
 
-/* PostUIOpenwindowMarketdetailsNoContent describes a response with status code 204, with default header values.
+/*
+PostUIOpenwindowMarketdetailsNoContent describes a response with status code 204, with default header values.
 
 Open window request received
 */
 type PostUIOpenwindowMarketdetailsNoContent struct {
 }
 
+// IsSuccess returns true when this post Ui openwindow marketdetails no content response has a 2xx status code
+func (o *PostUIOpenwindowMarketdetailsNoContent) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this post Ui openwindow marketdetails no content response has a 3xx status code
+func (o *PostUIOpenwindowMarketdetailsNoContent) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post Ui openwindow marketdetails no content response has a 4xx status code
+func (o *PostUIOpenwindowMarketdetailsNoContent) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post Ui openwindow marketdetails no content response has a 5xx status code
+func (o *PostUIOpenwindowMarketdetailsNoContent) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post Ui openwindow marketdetails no content response a status code equal to that given
+func (o *PostUIOpenwindowMarketdetailsNoContent) IsCode(code int) bool {
+	return code == 204
+}
+
 func (o *PostUIOpenwindowMarketdetailsNoContent) Error() string {
+	return fmt.Sprintf("[POST /v1/ui/openwindow/marketdetails/][%d] postUiOpenwindowMarketdetailsNoContent ", 204)
+}
+
+func (o *PostUIOpenwindowMarketdetailsNoContent) String() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/marketdetails/][%d] postUiOpenwindowMarketdetailsNoContent ", 204)
 }
 
@@ -102,7 +132,8 @@ func NewPostUIOpenwindowMarketdetailsBadRequest() *PostUIOpenwindowMarketdetails
 	return &PostUIOpenwindowMarketdetailsBadRequest{}
 }
 
-/* PostUIOpenwindowMarketdetailsBadRequest describes a response with status code 400, with default header values.
+/*
+PostUIOpenwindowMarketdetailsBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -110,9 +141,39 @@ type PostUIOpenwindowMarketdetailsBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this post Ui openwindow marketdetails bad request response has a 2xx status code
+func (o *PostUIOpenwindowMarketdetailsBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post Ui openwindow marketdetails bad request response has a 3xx status code
+func (o *PostUIOpenwindowMarketdetailsBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post Ui openwindow marketdetails bad request response has a 4xx status code
+func (o *PostUIOpenwindowMarketdetailsBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post Ui openwindow marketdetails bad request response has a 5xx status code
+func (o *PostUIOpenwindowMarketdetailsBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post Ui openwindow marketdetails bad request response a status code equal to that given
+func (o *PostUIOpenwindowMarketdetailsBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *PostUIOpenwindowMarketdetailsBadRequest) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/marketdetails/][%d] postUiOpenwindowMarketdetailsBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *PostUIOpenwindowMarketdetailsBadRequest) String() string {
+	return fmt.Sprintf("[POST /v1/ui/openwindow/marketdetails/][%d] postUiOpenwindowMarketdetailsBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *PostUIOpenwindowMarketdetailsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -134,7 +195,8 @@ func NewPostUIOpenwindowMarketdetailsUnauthorized() *PostUIOpenwindowMarketdetai
 	return &PostUIOpenwindowMarketdetailsUnauthorized{}
 }
 
-/* PostUIOpenwindowMarketdetailsUnauthorized describes a response with status code 401, with default header values.
+/*
+PostUIOpenwindowMarketdetailsUnauthorized describes a response with status code 401, with default header values.
 
 Unauthorized
 */
@@ -142,9 +204,39 @@ type PostUIOpenwindowMarketdetailsUnauthorized struct {
 	Payload *models.Unauthorized
 }
 
+// IsSuccess returns true when this post Ui openwindow marketdetails unauthorized response has a 2xx status code
+func (o *PostUIOpenwindowMarketdetailsUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post Ui openwindow marketdetails unauthorized response has a 3xx status code
+func (o *PostUIOpenwindowMarketdetailsUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post Ui openwindow marketdetails unauthorized response has a 4xx status code
+func (o *PostUIOpenwindowMarketdetailsUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post Ui openwindow marketdetails unauthorized response has a 5xx status code
+func (o *PostUIOpenwindowMarketdetailsUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post Ui openwindow marketdetails unauthorized response a status code equal to that given
+func (o *PostUIOpenwindowMarketdetailsUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *PostUIOpenwindowMarketdetailsUnauthorized) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/marketdetails/][%d] postUiOpenwindowMarketdetailsUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *PostUIOpenwindowMarketdetailsUnauthorized) String() string {
+	return fmt.Sprintf("[POST /v1/ui/openwindow/marketdetails/][%d] postUiOpenwindowMarketdetailsUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *PostUIOpenwindowMarketdetailsUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
 }
@@ -166,7 +258,8 @@ func NewPostUIOpenwindowMarketdetailsForbidden() *PostUIOpenwindowMarketdetailsF
 	return &PostUIOpenwindowMarketdetailsForbidden{}
 }
 
-/* PostUIOpenwindowMarketdetailsForbidden describes a response with status code 403, with default header values.
+/*
+PostUIOpenwindowMarketdetailsForbidden describes a response with status code 403, with default header values.
 
 Forbidden
 */
@@ -174,9 +267,39 @@ type PostUIOpenwindowMarketdetailsForbidden struct {
 	Payload *models.Forbidden
 }
 
+// IsSuccess returns true when this post Ui openwindow marketdetails forbidden response has a 2xx status code
+func (o *PostUIOpenwindowMarketdetailsForbidden) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post Ui openwindow marketdetails forbidden response has a 3xx status code
+func (o *PostUIOpenwindowMarketdetailsForbidden) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post Ui openwindow marketdetails forbidden response has a 4xx status code
+func (o *PostUIOpenwindowMarketdetailsForbidden) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post Ui openwindow marketdetails forbidden response has a 5xx status code
+func (o *PostUIOpenwindowMarketdetailsForbidden) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post Ui openwindow marketdetails forbidden response a status code equal to that given
+func (o *PostUIOpenwindowMarketdetailsForbidden) IsCode(code int) bool {
+	return code == 403
+}
+
 func (o *PostUIOpenwindowMarketdetailsForbidden) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/marketdetails/][%d] postUiOpenwindowMarketdetailsForbidden  %+v", 403, o.Payload)
 }
+
+func (o *PostUIOpenwindowMarketdetailsForbidden) String() string {
+	return fmt.Sprintf("[POST /v1/ui/openwindow/marketdetails/][%d] postUiOpenwindowMarketdetailsForbidden  %+v", 403, o.Payload)
+}
+
 func (o *PostUIOpenwindowMarketdetailsForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
 }
@@ -198,7 +321,8 @@ func NewPostUIOpenwindowMarketdetailsEnhanceYourCalm() *PostUIOpenwindowMarketde
 	return &PostUIOpenwindowMarketdetailsEnhanceYourCalm{}
 }
 
-/* PostUIOpenwindowMarketdetailsEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+PostUIOpenwindowMarketdetailsEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -206,9 +330,39 @@ type PostUIOpenwindowMarketdetailsEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this post Ui openwindow marketdetails enhance your calm response has a 2xx status code
+func (o *PostUIOpenwindowMarketdetailsEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post Ui openwindow marketdetails enhance your calm response has a 3xx status code
+func (o *PostUIOpenwindowMarketdetailsEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post Ui openwindow marketdetails enhance your calm response has a 4xx status code
+func (o *PostUIOpenwindowMarketdetailsEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post Ui openwindow marketdetails enhance your calm response has a 5xx status code
+func (o *PostUIOpenwindowMarketdetailsEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post Ui openwindow marketdetails enhance your calm response a status code equal to that given
+func (o *PostUIOpenwindowMarketdetailsEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *PostUIOpenwindowMarketdetailsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/marketdetails/][%d] postUiOpenwindowMarketdetailsEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *PostUIOpenwindowMarketdetailsEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[POST /v1/ui/openwindow/marketdetails/][%d] postUiOpenwindowMarketdetailsEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *PostUIOpenwindowMarketdetailsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -230,7 +384,8 @@ func NewPostUIOpenwindowMarketdetailsInternalServerError() *PostUIOpenwindowMark
 	return &PostUIOpenwindowMarketdetailsInternalServerError{}
 }
 
-/* PostUIOpenwindowMarketdetailsInternalServerError describes a response with status code 500, with default header values.
+/*
+PostUIOpenwindowMarketdetailsInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -238,9 +393,39 @@ type PostUIOpenwindowMarketdetailsInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this post Ui openwindow marketdetails internal server error response has a 2xx status code
+func (o *PostUIOpenwindowMarketdetailsInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post Ui openwindow marketdetails internal server error response has a 3xx status code
+func (o *PostUIOpenwindowMarketdetailsInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post Ui openwindow marketdetails internal server error response has a 4xx status code
+func (o *PostUIOpenwindowMarketdetailsInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post Ui openwindow marketdetails internal server error response has a 5xx status code
+func (o *PostUIOpenwindowMarketdetailsInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post Ui openwindow marketdetails internal server error response a status code equal to that given
+func (o *PostUIOpenwindowMarketdetailsInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *PostUIOpenwindowMarketdetailsInternalServerError) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/marketdetails/][%d] postUiOpenwindowMarketdetailsInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *PostUIOpenwindowMarketdetailsInternalServerError) String() string {
+	return fmt.Sprintf("[POST /v1/ui/openwindow/marketdetails/][%d] postUiOpenwindowMarketdetailsInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *PostUIOpenwindowMarketdetailsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -262,7 +447,8 @@ func NewPostUIOpenwindowMarketdetailsServiceUnavailable() *PostUIOpenwindowMarke
 	return &PostUIOpenwindowMarketdetailsServiceUnavailable{}
 }
 
-/* PostUIOpenwindowMarketdetailsServiceUnavailable describes a response with status code 503, with default header values.
+/*
+PostUIOpenwindowMarketdetailsServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -270,9 +456,39 @@ type PostUIOpenwindowMarketdetailsServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this post Ui openwindow marketdetails service unavailable response has a 2xx status code
+func (o *PostUIOpenwindowMarketdetailsServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post Ui openwindow marketdetails service unavailable response has a 3xx status code
+func (o *PostUIOpenwindowMarketdetailsServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post Ui openwindow marketdetails service unavailable response has a 4xx status code
+func (o *PostUIOpenwindowMarketdetailsServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post Ui openwindow marketdetails service unavailable response has a 5xx status code
+func (o *PostUIOpenwindowMarketdetailsServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post Ui openwindow marketdetails service unavailable response a status code equal to that given
+func (o *PostUIOpenwindowMarketdetailsServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *PostUIOpenwindowMarketdetailsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/marketdetails/][%d] postUiOpenwindowMarketdetailsServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *PostUIOpenwindowMarketdetailsServiceUnavailable) String() string {
+	return fmt.Sprintf("[POST /v1/ui/openwindow/marketdetails/][%d] postUiOpenwindowMarketdetailsServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *PostUIOpenwindowMarketdetailsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -294,7 +510,8 @@ func NewPostUIOpenwindowMarketdetailsGatewayTimeout() *PostUIOpenwindowMarketdet
 	return &PostUIOpenwindowMarketdetailsGatewayTimeout{}
 }
 
-/* PostUIOpenwindowMarketdetailsGatewayTimeout describes a response with status code 504, with default header values.
+/*
+PostUIOpenwindowMarketdetailsGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -302,9 +519,39 @@ type PostUIOpenwindowMarketdetailsGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this post Ui openwindow marketdetails gateway timeout response has a 2xx status code
+func (o *PostUIOpenwindowMarketdetailsGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post Ui openwindow marketdetails gateway timeout response has a 3xx status code
+func (o *PostUIOpenwindowMarketdetailsGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post Ui openwindow marketdetails gateway timeout response has a 4xx status code
+func (o *PostUIOpenwindowMarketdetailsGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post Ui openwindow marketdetails gateway timeout response has a 5xx status code
+func (o *PostUIOpenwindowMarketdetailsGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post Ui openwindow marketdetails gateway timeout response a status code equal to that given
+func (o *PostUIOpenwindowMarketdetailsGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *PostUIOpenwindowMarketdetailsGatewayTimeout) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/marketdetails/][%d] postUiOpenwindowMarketdetailsGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *PostUIOpenwindowMarketdetailsGatewayTimeout) String() string {
+	return fmt.Sprintf("[POST /v1/ui/openwindow/marketdetails/][%d] postUiOpenwindowMarketdetailsGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *PostUIOpenwindowMarketdetailsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }

@@ -52,10 +52,12 @@ func NewGetUniverseRacesParamsWithHTTPClient(client *http.Client) *GetUniverseRa
 	}
 }
 
-/* GetUniverseRacesParams contains all the parameters to send to the API endpoint
-   for the get universe races operation.
+/*
+GetUniverseRacesParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get universe races operation.
+
+	Typically these are written to a http.Request.
 */
 type GetUniverseRacesParams struct {
 

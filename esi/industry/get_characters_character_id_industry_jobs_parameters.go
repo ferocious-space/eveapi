@@ -53,10 +53,12 @@ func NewGetCharactersCharacterIDIndustryJobsParamsWithHTTPClient(client *http.Cl
 	}
 }
 
-/* GetCharactersCharacterIDIndustryJobsParams contains all the parameters to send to the API endpoint
-   for the get characters character id industry jobs operation.
+/*
+GetCharactersCharacterIDIndustryJobsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get characters character id industry jobs operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCharactersCharacterIDIndustryJobsParams struct {
 

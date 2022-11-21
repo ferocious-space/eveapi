@@ -92,7 +92,8 @@ func NewGetCharactersCharacterIDPlanetsPlanetIDOK() *GetCharactersCharacterIDPla
 	return &GetCharactersCharacterIDPlanetsPlanetIDOK{}
 }
 
-/* GetCharactersCharacterIDPlanetsPlanetIDOK describes a response with status code 200, with default header values.
+/*
+GetCharactersCharacterIDPlanetsPlanetIDOK describes a response with status code 200, with default header values.
 
 Colony layout
 */
@@ -100,9 +101,39 @@ type GetCharactersCharacterIDPlanetsPlanetIDOK struct {
 	Payload *GetCharactersCharacterIDPlanetsPlanetIDOKBody
 }
 
+// IsSuccess returns true when this get characters character Id planets planet Id o k response has a 2xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get characters character Id planets planet Id o k response has a 3xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id planets planet Id o k response has a 4xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id planets planet Id o k response has a 5xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id planets planet Id o k response a status code equal to that given
+func (o *GetCharactersCharacterIDPlanetsPlanetIDOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetCharactersCharacterIDPlanetsPlanetIDOK) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/planets/{planet_id}/][%d] getCharactersCharacterIdPlanetsPlanetIdOK  %+v", 200, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDPlanetsPlanetIDOK) String() string {
+	return fmt.Sprintf("[GET /v3/characters/{character_id}/planets/{planet_id}/][%d] getCharactersCharacterIdPlanetsPlanetIdOK  %+v", 200, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDPlanetsPlanetIDOK) GetPayload() *GetCharactersCharacterIDPlanetsPlanetIDOKBody {
 	return o.Payload
 }
@@ -124,7 +155,8 @@ func NewGetCharactersCharacterIDPlanetsPlanetIDBadRequest() *GetCharactersCharac
 	return &GetCharactersCharacterIDPlanetsPlanetIDBadRequest{}
 }
 
-/* GetCharactersCharacterIDPlanetsPlanetIDBadRequest describes a response with status code 400, with default header values.
+/*
+GetCharactersCharacterIDPlanetsPlanetIDBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -132,9 +164,39 @@ type GetCharactersCharacterIDPlanetsPlanetIDBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get characters character Id planets planet Id bad request response has a 2xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id planets planet Id bad request response has a 3xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id planets planet Id bad request response has a 4xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id planets planet Id bad request response has a 5xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id planets planet Id bad request response a status code equal to that given
+func (o *GetCharactersCharacterIDPlanetsPlanetIDBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetCharactersCharacterIDPlanetsPlanetIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/planets/{planet_id}/][%d] getCharactersCharacterIdPlanetsPlanetIdBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDPlanetsPlanetIDBadRequest) String() string {
+	return fmt.Sprintf("[GET /v3/characters/{character_id}/planets/{planet_id}/][%d] getCharactersCharacterIdPlanetsPlanetIdBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDPlanetsPlanetIDBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -156,7 +218,8 @@ func NewGetCharactersCharacterIDPlanetsPlanetIDUnauthorized() *GetCharactersChar
 	return &GetCharactersCharacterIDPlanetsPlanetIDUnauthorized{}
 }
 
-/* GetCharactersCharacterIDPlanetsPlanetIDUnauthorized describes a response with status code 401, with default header values.
+/*
+GetCharactersCharacterIDPlanetsPlanetIDUnauthorized describes a response with status code 401, with default header values.
 
 Unauthorized
 */
@@ -164,9 +227,39 @@ type GetCharactersCharacterIDPlanetsPlanetIDUnauthorized struct {
 	Payload *models.Unauthorized
 }
 
+// IsSuccess returns true when this get characters character Id planets planet Id unauthorized response has a 2xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id planets planet Id unauthorized response has a 3xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id planets planet Id unauthorized response has a 4xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id planets planet Id unauthorized response has a 5xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id planets planet Id unauthorized response a status code equal to that given
+func (o *GetCharactersCharacterIDPlanetsPlanetIDUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *GetCharactersCharacterIDPlanetsPlanetIDUnauthorized) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/planets/{planet_id}/][%d] getCharactersCharacterIdPlanetsPlanetIdUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDPlanetsPlanetIDUnauthorized) String() string {
+	return fmt.Sprintf("[GET /v3/characters/{character_id}/planets/{planet_id}/][%d] getCharactersCharacterIdPlanetsPlanetIdUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDPlanetsPlanetIDUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
 }
@@ -188,7 +281,8 @@ func NewGetCharactersCharacterIDPlanetsPlanetIDForbidden() *GetCharactersCharact
 	return &GetCharactersCharacterIDPlanetsPlanetIDForbidden{}
 }
 
-/* GetCharactersCharacterIDPlanetsPlanetIDForbidden describes a response with status code 403, with default header values.
+/*
+GetCharactersCharacterIDPlanetsPlanetIDForbidden describes a response with status code 403, with default header values.
 
 Forbidden
 */
@@ -196,9 +290,39 @@ type GetCharactersCharacterIDPlanetsPlanetIDForbidden struct {
 	Payload *models.Forbidden
 }
 
+// IsSuccess returns true when this get characters character Id planets planet Id forbidden response has a 2xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDForbidden) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id planets planet Id forbidden response has a 3xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDForbidden) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id planets planet Id forbidden response has a 4xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDForbidden) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id planets planet Id forbidden response has a 5xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDForbidden) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id planets planet Id forbidden response a status code equal to that given
+func (o *GetCharactersCharacterIDPlanetsPlanetIDForbidden) IsCode(code int) bool {
+	return code == 403
+}
+
 func (o *GetCharactersCharacterIDPlanetsPlanetIDForbidden) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/planets/{planet_id}/][%d] getCharactersCharacterIdPlanetsPlanetIdForbidden  %+v", 403, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDPlanetsPlanetIDForbidden) String() string {
+	return fmt.Sprintf("[GET /v3/characters/{character_id}/planets/{planet_id}/][%d] getCharactersCharacterIdPlanetsPlanetIdForbidden  %+v", 403, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDPlanetsPlanetIDForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
 }
@@ -220,7 +344,8 @@ func NewGetCharactersCharacterIDPlanetsPlanetIDNotFound() *GetCharactersCharacte
 	return &GetCharactersCharacterIDPlanetsPlanetIDNotFound{}
 }
 
-/* GetCharactersCharacterIDPlanetsPlanetIDNotFound describes a response with status code 404, with default header values.
+/*
+GetCharactersCharacterIDPlanetsPlanetIDNotFound describes a response with status code 404, with default header values.
 
 Colony not found
 */
@@ -228,9 +353,39 @@ type GetCharactersCharacterIDPlanetsPlanetIDNotFound struct {
 	Payload *GetCharactersCharacterIDPlanetsPlanetIDNotFoundBody
 }
 
+// IsSuccess returns true when this get characters character Id planets planet Id not found response has a 2xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDNotFound) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id planets planet Id not found response has a 3xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDNotFound) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id planets planet Id not found response has a 4xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDNotFound) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id planets planet Id not found response has a 5xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDNotFound) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id planets planet Id not found response a status code equal to that given
+func (o *GetCharactersCharacterIDPlanetsPlanetIDNotFound) IsCode(code int) bool {
+	return code == 404
+}
+
 func (o *GetCharactersCharacterIDPlanetsPlanetIDNotFound) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/planets/{planet_id}/][%d] getCharactersCharacterIdPlanetsPlanetIdNotFound  %+v", 404, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDPlanetsPlanetIDNotFound) String() string {
+	return fmt.Sprintf("[GET /v3/characters/{character_id}/planets/{planet_id}/][%d] getCharactersCharacterIdPlanetsPlanetIdNotFound  %+v", 404, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDPlanetsPlanetIDNotFound) GetPayload() *GetCharactersCharacterIDPlanetsPlanetIDNotFoundBody {
 	return o.Payload
 }
@@ -252,7 +407,8 @@ func NewGetCharactersCharacterIDPlanetsPlanetIDEnhanceYourCalm() *GetCharactersC
 	return &GetCharactersCharacterIDPlanetsPlanetIDEnhanceYourCalm{}
 }
 
-/* GetCharactersCharacterIDPlanetsPlanetIDEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetCharactersCharacterIDPlanetsPlanetIDEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -260,9 +416,39 @@ type GetCharactersCharacterIDPlanetsPlanetIDEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get characters character Id planets planet Id enhance your calm response has a 2xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id planets planet Id enhance your calm response has a 3xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id planets planet Id enhance your calm response has a 4xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id planets planet Id enhance your calm response has a 5xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id planets planet Id enhance your calm response a status code equal to that given
+func (o *GetCharactersCharacterIDPlanetsPlanetIDEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetCharactersCharacterIDPlanetsPlanetIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/planets/{planet_id}/][%d] getCharactersCharacterIdPlanetsPlanetIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDPlanetsPlanetIDEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v3/characters/{character_id}/planets/{planet_id}/][%d] getCharactersCharacterIdPlanetsPlanetIdEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDPlanetsPlanetIDEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -284,7 +470,8 @@ func NewGetCharactersCharacterIDPlanetsPlanetIDInternalServerError() *GetCharact
 	return &GetCharactersCharacterIDPlanetsPlanetIDInternalServerError{}
 }
 
-/* GetCharactersCharacterIDPlanetsPlanetIDInternalServerError describes a response with status code 500, with default header values.
+/*
+GetCharactersCharacterIDPlanetsPlanetIDInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -292,9 +479,39 @@ type GetCharactersCharacterIDPlanetsPlanetIDInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get characters character Id planets planet Id internal server error response has a 2xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id planets planet Id internal server error response has a 3xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id planets planet Id internal server error response has a 4xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id planets planet Id internal server error response has a 5xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id planets planet Id internal server error response a status code equal to that given
+func (o *GetCharactersCharacterIDPlanetsPlanetIDInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetCharactersCharacterIDPlanetsPlanetIDInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/planets/{planet_id}/][%d] getCharactersCharacterIdPlanetsPlanetIdInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDPlanetsPlanetIDInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v3/characters/{character_id}/planets/{planet_id}/][%d] getCharactersCharacterIdPlanetsPlanetIdInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDPlanetsPlanetIDInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -316,7 +533,8 @@ func NewGetCharactersCharacterIDPlanetsPlanetIDServiceUnavailable() *GetCharacte
 	return &GetCharactersCharacterIDPlanetsPlanetIDServiceUnavailable{}
 }
 
-/* GetCharactersCharacterIDPlanetsPlanetIDServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetCharactersCharacterIDPlanetsPlanetIDServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -324,9 +542,39 @@ type GetCharactersCharacterIDPlanetsPlanetIDServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get characters character Id planets planet Id service unavailable response has a 2xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id planets planet Id service unavailable response has a 3xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id planets planet Id service unavailable response has a 4xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id planets planet Id service unavailable response has a 5xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id planets planet Id service unavailable response a status code equal to that given
+func (o *GetCharactersCharacterIDPlanetsPlanetIDServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetCharactersCharacterIDPlanetsPlanetIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/planets/{planet_id}/][%d] getCharactersCharacterIdPlanetsPlanetIdServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDPlanetsPlanetIDServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v3/characters/{character_id}/planets/{planet_id}/][%d] getCharactersCharacterIdPlanetsPlanetIdServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDPlanetsPlanetIDServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -348,7 +596,8 @@ func NewGetCharactersCharacterIDPlanetsPlanetIDGatewayTimeout() *GetCharactersCh
 	return &GetCharactersCharacterIDPlanetsPlanetIDGatewayTimeout{}
 }
 
-/* GetCharactersCharacterIDPlanetsPlanetIDGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetCharactersCharacterIDPlanetsPlanetIDGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -356,9 +605,39 @@ type GetCharactersCharacterIDPlanetsPlanetIDGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get characters character Id planets planet Id gateway timeout response has a 2xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id planets planet Id gateway timeout response has a 3xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id planets planet Id gateway timeout response has a 4xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id planets planet Id gateway timeout response has a 5xx status code
+func (o *GetCharactersCharacterIDPlanetsPlanetIDGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id planets planet Id gateway timeout response a status code equal to that given
+func (o *GetCharactersCharacterIDPlanetsPlanetIDGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetCharactersCharacterIDPlanetsPlanetIDGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/planets/{planet_id}/][%d] getCharactersCharacterIdPlanetsPlanetIdGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDPlanetsPlanetIDGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v3/characters/{character_id}/planets/{planet_id}/][%d] getCharactersCharacterIdPlanetsPlanetIdGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDPlanetsPlanetIDGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -375,7 +654,8 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDGatewayTimeout) readResponse(res
 	return nil
 }
 
-/*GetCharactersCharacterIDPlanetsPlanetIDNotFoundBody get_characters_character_id_planets_planet_id_not_found
+/*
+GetCharactersCharacterIDPlanetsPlanetIDNotFoundBody get_characters_character_id_planets_planet_id_not_found
 //
 // Colony not found
 swagger:model GetCharactersCharacterIDPlanetsPlanetIDNotFoundBody
@@ -416,7 +696,8 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDNotFoundBody) UnmarshalBinary(b 
 	return nil
 }
 
-/*GetCharactersCharacterIDPlanetsPlanetIDOKBody get_characters_character_id_planets_planet_id_ok
+/*
+GetCharactersCharacterIDPlanetsPlanetIDOKBody get_characters_character_id_planets_planet_id_ok
 //
 // 200 ok object
 swagger:model GetCharactersCharacterIDPlanetsPlanetIDOKBody
@@ -666,7 +947,8 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDOKBody) UnmarshalBinary(b []byte
 	return nil
 }
 
-/*GetCharactersCharacterIDPlanetsPlanetIDOKBodyLinksItems0 get_characters_character_id_planets_planet_id_link
+/*
+GetCharactersCharacterIDPlanetsPlanetIDOKBodyLinksItems0 get_characters_character_id_planets_planet_id_link
 //
 // link object
 swagger:model GetCharactersCharacterIDPlanetsPlanetIDOKBodyLinksItems0
@@ -774,7 +1056,8 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDOKBodyLinksItems0) UnmarshalBina
 	return nil
 }
 
-/*GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0 get_characters_character_id_planets_planet_id_pin
+/*
+GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0 get_characters_character_id_planets_planet_id_pin
 //
 // pin object
 swagger:model GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0
@@ -1125,7 +1408,8 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0) UnmarshalBinar
 	return nil
 }
 
-/*GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0ContentsItems0 get_characters_character_id_planets_planet_id_content
+/*
+GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0ContentsItems0 get_characters_character_id_planets_planet_id_content
 //
 // content object
 swagger:model GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0ContentsItems0
@@ -1204,7 +1488,8 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0ContentsItems0) 
 	return nil
 }
 
-/*GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0ExtractorDetails get_characters_character_id_planets_planet_id_extractor_details
+/*
+GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0ExtractorDetails get_characters_character_id_planets_planet_id_extractor_details
 //
 // extractor_details object
 swagger:model GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0ExtractorDetails
@@ -1338,7 +1623,8 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0ExtractorDetails
 	return nil
 }
 
-/*GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0ExtractorDetailsHeadsItems0 get_characters_character_id_planets_planet_id_head
+/*
+GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0ExtractorDetailsHeadsItems0 get_characters_character_id_planets_planet_id_head
 //
 // head object
 swagger:model GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0ExtractorDetailsHeadsItems0
@@ -1446,7 +1732,8 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0ExtractorDetails
 	return nil
 }
 
-/*GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0FactoryDetails get_characters_character_id_planets_planet_id_factory_details
+/*
+GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0FactoryDetails get_characters_character_id_planets_planet_id_factory_details
 //
 // factory_details object
 swagger:model GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0FactoryDetails
@@ -1506,7 +1793,8 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0FactoryDetails) 
 	return nil
 }
 
-/*GetCharactersCharacterIDPlanetsPlanetIDOKBodyRoutesItems0 get_characters_character_id_planets_planet_id_route
+/*
+GetCharactersCharacterIDPlanetsPlanetIDOKBodyRoutesItems0 get_characters_character_id_planets_planet_id_route
 //
 // route object
 swagger:model GetCharactersCharacterIDPlanetsPlanetIDOKBodyRoutesItems0

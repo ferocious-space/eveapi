@@ -53,10 +53,12 @@ func NewGetFleetsFleetIDParamsWithHTTPClient(client *http.Client) *GetFleetsFlee
 	}
 }
 
-/* GetFleetsFleetIDParams contains all the parameters to send to the API endpoint
-   for the get fleets fleet id operation.
+/*
+GetFleetsFleetIDParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get fleets fleet id operation.
+
+	Typically these are written to a http.Request.
 */
 type GetFleetsFleetIDParams struct {
 

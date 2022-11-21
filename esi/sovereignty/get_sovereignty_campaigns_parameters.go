@@ -52,10 +52,12 @@ func NewGetSovereigntyCampaignsParamsWithHTTPClient(client *http.Client) *GetSov
 	}
 }
 
-/* GetSovereigntyCampaignsParams contains all the parameters to send to the API endpoint
-   for the get sovereignty campaigns operation.
+/*
+GetSovereigntyCampaignsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get sovereignty campaigns operation.
+
+	Typically these are written to a http.Request.
 */
 type GetSovereigntyCampaignsParams struct {
 

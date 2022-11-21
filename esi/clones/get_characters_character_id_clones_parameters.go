@@ -53,10 +53,12 @@ func NewGetCharactersCharacterIDClonesParamsWithHTTPClient(client *http.Client) 
 	}
 }
 
-/* GetCharactersCharacterIDClonesParams contains all the parameters to send to the API endpoint
-   for the get characters character id clones operation.
+/*
+GetCharactersCharacterIDClonesParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get characters character id clones operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCharactersCharacterIDClonesParams struct {
 

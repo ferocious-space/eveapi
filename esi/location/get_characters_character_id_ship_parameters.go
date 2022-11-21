@@ -53,10 +53,12 @@ func NewGetCharactersCharacterIDShipParamsWithHTTPClient(client *http.Client) *G
 	}
 }
 
-/* GetCharactersCharacterIDShipParams contains all the parameters to send to the API endpoint
-   for the get characters character id ship operation.
+/*
+GetCharactersCharacterIDShipParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get characters character id ship operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCharactersCharacterIDShipParams struct {
 

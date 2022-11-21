@@ -53,10 +53,12 @@ func NewPutCharactersCharacterIDMailMailIDParamsWithHTTPClient(client *http.Clie
 	}
 }
 
-/* PutCharactersCharacterIDMailMailIDParams contains all the parameters to send to the API endpoint
-   for the put characters character id mail mail id operation.
+/*
+PutCharactersCharacterIDMailMailIDParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the put characters character id mail mail id operation.
+
+	Typically these are written to a http.Request.
 */
 type PutCharactersCharacterIDMailMailIDParams struct {
 

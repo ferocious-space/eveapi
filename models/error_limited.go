@@ -16,7 +16,7 @@ import (
 
 // ErrorLimited Error limited
 //
-// Error limited model
+// # Error limited model
 //
 // swagger:model error_limited
 type ErrorLimited struct {

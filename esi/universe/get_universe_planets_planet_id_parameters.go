@@ -53,10 +53,12 @@ func NewGetUniversePlanetsPlanetIDParamsWithHTTPClient(client *http.Client) *Get
 	}
 }
 
-/* GetUniversePlanetsPlanetIDParams contains all the parameters to send to the API endpoint
-   for the get universe planets planet id operation.
+/*
+GetUniversePlanetsPlanetIDParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get universe planets planet id operation.
+
+	Typically these are written to a http.Request.
 */
 type GetUniversePlanetsPlanetIDParams struct {
 

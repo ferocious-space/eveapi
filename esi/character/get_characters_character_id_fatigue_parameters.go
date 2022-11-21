@@ -53,10 +53,12 @@ func NewGetCharactersCharacterIDFatigueParamsWithHTTPClient(client *http.Client)
 	}
 }
 
-/* GetCharactersCharacterIDFatigueParams contains all the parameters to send to the API endpoint
-   for the get characters character id fatigue operation.
+/*
+GetCharactersCharacterIDFatigueParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get characters character id fatigue operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCharactersCharacterIDFatigueParams struct {
 

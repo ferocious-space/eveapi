@@ -52,10 +52,12 @@ func NewGetCorporationsNpccorpsParamsWithHTTPClient(client *http.Client) *GetCor
 	}
 }
 
-/* GetCorporationsNpccorpsParams contains all the parameters to send to the API endpoint
-   for the get corporations npccorps operation.
+/*
+GetCorporationsNpccorpsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get corporations npccorps operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCorporationsNpccorpsParams struct {
 

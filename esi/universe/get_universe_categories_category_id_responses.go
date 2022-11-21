@@ -85,7 +85,8 @@ func NewGetUniverseCategoriesCategoryIDOK() *GetUniverseCategoriesCategoryIDOK {
 	return &GetUniverseCategoriesCategoryIDOK{}
 }
 
-/* GetUniverseCategoriesCategoryIDOK describes a response with status code 200, with default header values.
+/*
+GetUniverseCategoriesCategoryIDOK describes a response with status code 200, with default header values.
 
 Information about an item category
 */
@@ -114,9 +115,39 @@ type GetUniverseCategoriesCategoryIDOK struct {
 	Payload *GetUniverseCategoriesCategoryIDOKBody
 }
 
+// IsSuccess returns true when this get universe categories category Id o k response has a 2xx status code
+func (o *GetUniverseCategoriesCategoryIDOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get universe categories category Id o k response has a 3xx status code
+func (o *GetUniverseCategoriesCategoryIDOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe categories category Id o k response has a 4xx status code
+func (o *GetUniverseCategoriesCategoryIDOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe categories category Id o k response has a 5xx status code
+func (o *GetUniverseCategoriesCategoryIDOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe categories category Id o k response a status code equal to that given
+func (o *GetUniverseCategoriesCategoryIDOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetUniverseCategoriesCategoryIDOK) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/categories/{category_id}/][%d] getUniverseCategoriesCategoryIdOK  %+v", 200, o.Payload)
 }
+
+func (o *GetUniverseCategoriesCategoryIDOK) String() string {
+	return fmt.Sprintf("[GET /v1/universe/categories/{category_id}/][%d] getUniverseCategoriesCategoryIdOK  %+v", 200, o.Payload)
+}
+
 func (o *GetUniverseCategoriesCategoryIDOK) GetPayload() *GetUniverseCategoriesCategoryIDOKBody {
 	return o.Payload
 }
@@ -173,7 +204,8 @@ func NewGetUniverseCategoriesCategoryIDNotModified() *GetUniverseCategoriesCateg
 	return &GetUniverseCategoriesCategoryIDNotModified{}
 }
 
-/* GetUniverseCategoriesCategoryIDNotModified describes a response with status code 304, with default header values.
+/*
+GetUniverseCategoriesCategoryIDNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -196,7 +228,36 @@ type GetUniverseCategoriesCategoryIDNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get universe categories category Id not modified response has a 2xx status code
+func (o *GetUniverseCategoriesCategoryIDNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe categories category Id not modified response has a 3xx status code
+func (o *GetUniverseCategoriesCategoryIDNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get universe categories category Id not modified response has a 4xx status code
+func (o *GetUniverseCategoriesCategoryIDNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe categories category Id not modified response has a 5xx status code
+func (o *GetUniverseCategoriesCategoryIDNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe categories category Id not modified response a status code equal to that given
+func (o *GetUniverseCategoriesCategoryIDNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetUniverseCategoriesCategoryIDNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/universe/categories/{category_id}/][%d] getUniverseCategoriesCategoryIdNotModified ", 304)
+}
+
+func (o *GetUniverseCategoriesCategoryIDNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/universe/categories/{category_id}/][%d] getUniverseCategoriesCategoryIdNotModified ", 304)
 }
 
@@ -238,7 +299,8 @@ func NewGetUniverseCategoriesCategoryIDBadRequest() *GetUniverseCategoriesCatego
 	return &GetUniverseCategoriesCategoryIDBadRequest{}
 }
 
-/* GetUniverseCategoriesCategoryIDBadRequest describes a response with status code 400, with default header values.
+/*
+GetUniverseCategoriesCategoryIDBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -246,9 +308,39 @@ type GetUniverseCategoriesCategoryIDBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get universe categories category Id bad request response has a 2xx status code
+func (o *GetUniverseCategoriesCategoryIDBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe categories category Id bad request response has a 3xx status code
+func (o *GetUniverseCategoriesCategoryIDBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe categories category Id bad request response has a 4xx status code
+func (o *GetUniverseCategoriesCategoryIDBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe categories category Id bad request response has a 5xx status code
+func (o *GetUniverseCategoriesCategoryIDBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe categories category Id bad request response a status code equal to that given
+func (o *GetUniverseCategoriesCategoryIDBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetUniverseCategoriesCategoryIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/categories/{category_id}/][%d] getUniverseCategoriesCategoryIdBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetUniverseCategoriesCategoryIDBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/universe/categories/{category_id}/][%d] getUniverseCategoriesCategoryIdBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetUniverseCategoriesCategoryIDBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -270,7 +362,8 @@ func NewGetUniverseCategoriesCategoryIDNotFound() *GetUniverseCategoriesCategory
 	return &GetUniverseCategoriesCategoryIDNotFound{}
 }
 
-/* GetUniverseCategoriesCategoryIDNotFound describes a response with status code 404, with default header values.
+/*
+GetUniverseCategoriesCategoryIDNotFound describes a response with status code 404, with default header values.
 
 Category not found
 */
@@ -278,9 +371,39 @@ type GetUniverseCategoriesCategoryIDNotFound struct {
 	Payload *GetUniverseCategoriesCategoryIDNotFoundBody
 }
 
+// IsSuccess returns true when this get universe categories category Id not found response has a 2xx status code
+func (o *GetUniverseCategoriesCategoryIDNotFound) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe categories category Id not found response has a 3xx status code
+func (o *GetUniverseCategoriesCategoryIDNotFound) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe categories category Id not found response has a 4xx status code
+func (o *GetUniverseCategoriesCategoryIDNotFound) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe categories category Id not found response has a 5xx status code
+func (o *GetUniverseCategoriesCategoryIDNotFound) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe categories category Id not found response a status code equal to that given
+func (o *GetUniverseCategoriesCategoryIDNotFound) IsCode(code int) bool {
+	return code == 404
+}
+
 func (o *GetUniverseCategoriesCategoryIDNotFound) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/categories/{category_id}/][%d] getUniverseCategoriesCategoryIdNotFound  %+v", 404, o.Payload)
 }
+
+func (o *GetUniverseCategoriesCategoryIDNotFound) String() string {
+	return fmt.Sprintf("[GET /v1/universe/categories/{category_id}/][%d] getUniverseCategoriesCategoryIdNotFound  %+v", 404, o.Payload)
+}
+
 func (o *GetUniverseCategoriesCategoryIDNotFound) GetPayload() *GetUniverseCategoriesCategoryIDNotFoundBody {
 	return o.Payload
 }
@@ -302,7 +425,8 @@ func NewGetUniverseCategoriesCategoryIDEnhanceYourCalm() *GetUniverseCategoriesC
 	return &GetUniverseCategoriesCategoryIDEnhanceYourCalm{}
 }
 
-/* GetUniverseCategoriesCategoryIDEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetUniverseCategoriesCategoryIDEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -310,9 +434,39 @@ type GetUniverseCategoriesCategoryIDEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get universe categories category Id enhance your calm response has a 2xx status code
+func (o *GetUniverseCategoriesCategoryIDEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe categories category Id enhance your calm response has a 3xx status code
+func (o *GetUniverseCategoriesCategoryIDEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe categories category Id enhance your calm response has a 4xx status code
+func (o *GetUniverseCategoriesCategoryIDEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe categories category Id enhance your calm response has a 5xx status code
+func (o *GetUniverseCategoriesCategoryIDEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe categories category Id enhance your calm response a status code equal to that given
+func (o *GetUniverseCategoriesCategoryIDEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetUniverseCategoriesCategoryIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/categories/{category_id}/][%d] getUniverseCategoriesCategoryIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetUniverseCategoriesCategoryIDEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/universe/categories/{category_id}/][%d] getUniverseCategoriesCategoryIdEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetUniverseCategoriesCategoryIDEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -334,7 +488,8 @@ func NewGetUniverseCategoriesCategoryIDInternalServerError() *GetUniverseCategor
 	return &GetUniverseCategoriesCategoryIDInternalServerError{}
 }
 
-/* GetUniverseCategoriesCategoryIDInternalServerError describes a response with status code 500, with default header values.
+/*
+GetUniverseCategoriesCategoryIDInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -342,9 +497,39 @@ type GetUniverseCategoriesCategoryIDInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get universe categories category Id internal server error response has a 2xx status code
+func (o *GetUniverseCategoriesCategoryIDInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe categories category Id internal server error response has a 3xx status code
+func (o *GetUniverseCategoriesCategoryIDInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe categories category Id internal server error response has a 4xx status code
+func (o *GetUniverseCategoriesCategoryIDInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe categories category Id internal server error response has a 5xx status code
+func (o *GetUniverseCategoriesCategoryIDInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe categories category Id internal server error response a status code equal to that given
+func (o *GetUniverseCategoriesCategoryIDInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetUniverseCategoriesCategoryIDInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/categories/{category_id}/][%d] getUniverseCategoriesCategoryIdInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetUniverseCategoriesCategoryIDInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/universe/categories/{category_id}/][%d] getUniverseCategoriesCategoryIdInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetUniverseCategoriesCategoryIDInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -366,7 +551,8 @@ func NewGetUniverseCategoriesCategoryIDServiceUnavailable() *GetUniverseCategori
 	return &GetUniverseCategoriesCategoryIDServiceUnavailable{}
 }
 
-/* GetUniverseCategoriesCategoryIDServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetUniverseCategoriesCategoryIDServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -374,9 +560,39 @@ type GetUniverseCategoriesCategoryIDServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get universe categories category Id service unavailable response has a 2xx status code
+func (o *GetUniverseCategoriesCategoryIDServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe categories category Id service unavailable response has a 3xx status code
+func (o *GetUniverseCategoriesCategoryIDServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe categories category Id service unavailable response has a 4xx status code
+func (o *GetUniverseCategoriesCategoryIDServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe categories category Id service unavailable response has a 5xx status code
+func (o *GetUniverseCategoriesCategoryIDServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe categories category Id service unavailable response a status code equal to that given
+func (o *GetUniverseCategoriesCategoryIDServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetUniverseCategoriesCategoryIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/categories/{category_id}/][%d] getUniverseCategoriesCategoryIdServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetUniverseCategoriesCategoryIDServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/universe/categories/{category_id}/][%d] getUniverseCategoriesCategoryIdServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetUniverseCategoriesCategoryIDServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -398,7 +614,8 @@ func NewGetUniverseCategoriesCategoryIDGatewayTimeout() *GetUniverseCategoriesCa
 	return &GetUniverseCategoriesCategoryIDGatewayTimeout{}
 }
 
-/* GetUniverseCategoriesCategoryIDGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetUniverseCategoriesCategoryIDGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -406,9 +623,39 @@ type GetUniverseCategoriesCategoryIDGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get universe categories category Id gateway timeout response has a 2xx status code
+func (o *GetUniverseCategoriesCategoryIDGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe categories category Id gateway timeout response has a 3xx status code
+func (o *GetUniverseCategoriesCategoryIDGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe categories category Id gateway timeout response has a 4xx status code
+func (o *GetUniverseCategoriesCategoryIDGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe categories category Id gateway timeout response has a 5xx status code
+func (o *GetUniverseCategoriesCategoryIDGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe categories category Id gateway timeout response a status code equal to that given
+func (o *GetUniverseCategoriesCategoryIDGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetUniverseCategoriesCategoryIDGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/categories/{category_id}/][%d] getUniverseCategoriesCategoryIdGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetUniverseCategoriesCategoryIDGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/universe/categories/{category_id}/][%d] getUniverseCategoriesCategoryIdGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetUniverseCategoriesCategoryIDGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -425,7 +672,8 @@ func (o *GetUniverseCategoriesCategoryIDGatewayTimeout) readResponse(response ru
 	return nil
 }
 
-/*GetUniverseCategoriesCategoryIDNotFoundBody get_universe_categories_category_id_not_found
+/*
+GetUniverseCategoriesCategoryIDNotFoundBody get_universe_categories_category_id_not_found
 //
 // Not found
 swagger:model GetUniverseCategoriesCategoryIDNotFoundBody
@@ -466,7 +714,8 @@ func (o *GetUniverseCategoriesCategoryIDNotFoundBody) UnmarshalBinary(b []byte) 
 	return nil
 }
 
-/*GetUniverseCategoriesCategoryIDOKBody get_universe_categories_category_id_ok
+/*
+GetUniverseCategoriesCategoryIDOKBody get_universe_categories_category_id_ok
 //
 // 200 ok object
 swagger:model GetUniverseCategoriesCategoryIDOKBody

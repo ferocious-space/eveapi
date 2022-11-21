@@ -83,7 +83,8 @@ func NewGetCharactersCharacterIDPortraitOK() *GetCharactersCharacterIDPortraitOK
 	return &GetCharactersCharacterIDPortraitOK{}
 }
 
-/* GetCharactersCharacterIDPortraitOK describes a response with status code 200, with default header values.
+/*
+GetCharactersCharacterIDPortraitOK describes a response with status code 200, with default header values.
 
 Public data for the given character
 */
@@ -108,9 +109,39 @@ type GetCharactersCharacterIDPortraitOK struct {
 	Payload *GetCharactersCharacterIDPortraitOKBody
 }
 
+// IsSuccess returns true when this get characters character Id portrait o k response has a 2xx status code
+func (o *GetCharactersCharacterIDPortraitOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get characters character Id portrait o k response has a 3xx status code
+func (o *GetCharactersCharacterIDPortraitOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id portrait o k response has a 4xx status code
+func (o *GetCharactersCharacterIDPortraitOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id portrait o k response has a 5xx status code
+func (o *GetCharactersCharacterIDPortraitOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id portrait o k response a status code equal to that given
+func (o *GetCharactersCharacterIDPortraitOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetCharactersCharacterIDPortraitOK) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/portrait/][%d] getCharactersCharacterIdPortraitOK  %+v", 200, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDPortraitOK) String() string {
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/portrait/][%d] getCharactersCharacterIdPortraitOK  %+v", 200, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDPortraitOK) GetPayload() *GetCharactersCharacterIDPortraitOKBody {
 	return o.Payload
 }
@@ -160,7 +191,8 @@ func NewGetCharactersCharacterIDPortraitNotModified() *GetCharactersCharacterIDP
 	return &GetCharactersCharacterIDPortraitNotModified{}
 }
 
-/* GetCharactersCharacterIDPortraitNotModified describes a response with status code 304, with default header values.
+/*
+GetCharactersCharacterIDPortraitNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -183,7 +215,36 @@ type GetCharactersCharacterIDPortraitNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get characters character Id portrait not modified response has a 2xx status code
+func (o *GetCharactersCharacterIDPortraitNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id portrait not modified response has a 3xx status code
+func (o *GetCharactersCharacterIDPortraitNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get characters character Id portrait not modified response has a 4xx status code
+func (o *GetCharactersCharacterIDPortraitNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id portrait not modified response has a 5xx status code
+func (o *GetCharactersCharacterIDPortraitNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id portrait not modified response a status code equal to that given
+func (o *GetCharactersCharacterIDPortraitNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetCharactersCharacterIDPortraitNotModified) Error() string {
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/portrait/][%d] getCharactersCharacterIdPortraitNotModified ", 304)
+}
+
+func (o *GetCharactersCharacterIDPortraitNotModified) String() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/portrait/][%d] getCharactersCharacterIdPortraitNotModified ", 304)
 }
 
@@ -225,7 +286,8 @@ func NewGetCharactersCharacterIDPortraitBadRequest() *GetCharactersCharacterIDPo
 	return &GetCharactersCharacterIDPortraitBadRequest{}
 }
 
-/* GetCharactersCharacterIDPortraitBadRequest describes a response with status code 400, with default header values.
+/*
+GetCharactersCharacterIDPortraitBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -233,9 +295,39 @@ type GetCharactersCharacterIDPortraitBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get characters character Id portrait bad request response has a 2xx status code
+func (o *GetCharactersCharacterIDPortraitBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id portrait bad request response has a 3xx status code
+func (o *GetCharactersCharacterIDPortraitBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id portrait bad request response has a 4xx status code
+func (o *GetCharactersCharacterIDPortraitBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id portrait bad request response has a 5xx status code
+func (o *GetCharactersCharacterIDPortraitBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id portrait bad request response a status code equal to that given
+func (o *GetCharactersCharacterIDPortraitBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetCharactersCharacterIDPortraitBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/portrait/][%d] getCharactersCharacterIdPortraitBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDPortraitBadRequest) String() string {
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/portrait/][%d] getCharactersCharacterIdPortraitBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDPortraitBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -257,7 +349,8 @@ func NewGetCharactersCharacterIDPortraitNotFound() *GetCharactersCharacterIDPort
 	return &GetCharactersCharacterIDPortraitNotFound{}
 }
 
-/* GetCharactersCharacterIDPortraitNotFound describes a response with status code 404, with default header values.
+/*
+GetCharactersCharacterIDPortraitNotFound describes a response with status code 404, with default header values.
 
 No image server for this datasource
 */
@@ -265,9 +358,39 @@ type GetCharactersCharacterIDPortraitNotFound struct {
 	Payload *GetCharactersCharacterIDPortraitNotFoundBody
 }
 
+// IsSuccess returns true when this get characters character Id portrait not found response has a 2xx status code
+func (o *GetCharactersCharacterIDPortraitNotFound) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id portrait not found response has a 3xx status code
+func (o *GetCharactersCharacterIDPortraitNotFound) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id portrait not found response has a 4xx status code
+func (o *GetCharactersCharacterIDPortraitNotFound) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id portrait not found response has a 5xx status code
+func (o *GetCharactersCharacterIDPortraitNotFound) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id portrait not found response a status code equal to that given
+func (o *GetCharactersCharacterIDPortraitNotFound) IsCode(code int) bool {
+	return code == 404
+}
+
 func (o *GetCharactersCharacterIDPortraitNotFound) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/portrait/][%d] getCharactersCharacterIdPortraitNotFound  %+v", 404, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDPortraitNotFound) String() string {
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/portrait/][%d] getCharactersCharacterIdPortraitNotFound  %+v", 404, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDPortraitNotFound) GetPayload() *GetCharactersCharacterIDPortraitNotFoundBody {
 	return o.Payload
 }
@@ -289,7 +412,8 @@ func NewGetCharactersCharacterIDPortraitEnhanceYourCalm() *GetCharactersCharacte
 	return &GetCharactersCharacterIDPortraitEnhanceYourCalm{}
 }
 
-/* GetCharactersCharacterIDPortraitEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetCharactersCharacterIDPortraitEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -297,9 +421,39 @@ type GetCharactersCharacterIDPortraitEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get characters character Id portrait enhance your calm response has a 2xx status code
+func (o *GetCharactersCharacterIDPortraitEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id portrait enhance your calm response has a 3xx status code
+func (o *GetCharactersCharacterIDPortraitEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id portrait enhance your calm response has a 4xx status code
+func (o *GetCharactersCharacterIDPortraitEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id portrait enhance your calm response has a 5xx status code
+func (o *GetCharactersCharacterIDPortraitEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id portrait enhance your calm response a status code equal to that given
+func (o *GetCharactersCharacterIDPortraitEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetCharactersCharacterIDPortraitEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/portrait/][%d] getCharactersCharacterIdPortraitEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDPortraitEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/portrait/][%d] getCharactersCharacterIdPortraitEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDPortraitEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -321,7 +475,8 @@ func NewGetCharactersCharacterIDPortraitInternalServerError() *GetCharactersChar
 	return &GetCharactersCharacterIDPortraitInternalServerError{}
 }
 
-/* GetCharactersCharacterIDPortraitInternalServerError describes a response with status code 500, with default header values.
+/*
+GetCharactersCharacterIDPortraitInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -329,9 +484,39 @@ type GetCharactersCharacterIDPortraitInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get characters character Id portrait internal server error response has a 2xx status code
+func (o *GetCharactersCharacterIDPortraitInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id portrait internal server error response has a 3xx status code
+func (o *GetCharactersCharacterIDPortraitInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id portrait internal server error response has a 4xx status code
+func (o *GetCharactersCharacterIDPortraitInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id portrait internal server error response has a 5xx status code
+func (o *GetCharactersCharacterIDPortraitInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id portrait internal server error response a status code equal to that given
+func (o *GetCharactersCharacterIDPortraitInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetCharactersCharacterIDPortraitInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/portrait/][%d] getCharactersCharacterIdPortraitInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDPortraitInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/portrait/][%d] getCharactersCharacterIdPortraitInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDPortraitInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -353,7 +538,8 @@ func NewGetCharactersCharacterIDPortraitServiceUnavailable() *GetCharactersChara
 	return &GetCharactersCharacterIDPortraitServiceUnavailable{}
 }
 
-/* GetCharactersCharacterIDPortraitServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetCharactersCharacterIDPortraitServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -361,9 +547,39 @@ type GetCharactersCharacterIDPortraitServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get characters character Id portrait service unavailable response has a 2xx status code
+func (o *GetCharactersCharacterIDPortraitServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id portrait service unavailable response has a 3xx status code
+func (o *GetCharactersCharacterIDPortraitServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id portrait service unavailable response has a 4xx status code
+func (o *GetCharactersCharacterIDPortraitServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id portrait service unavailable response has a 5xx status code
+func (o *GetCharactersCharacterIDPortraitServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id portrait service unavailable response a status code equal to that given
+func (o *GetCharactersCharacterIDPortraitServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetCharactersCharacterIDPortraitServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/portrait/][%d] getCharactersCharacterIdPortraitServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDPortraitServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/portrait/][%d] getCharactersCharacterIdPortraitServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDPortraitServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -385,7 +601,8 @@ func NewGetCharactersCharacterIDPortraitGatewayTimeout() *GetCharactersCharacter
 	return &GetCharactersCharacterIDPortraitGatewayTimeout{}
 }
 
-/* GetCharactersCharacterIDPortraitGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetCharactersCharacterIDPortraitGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -393,9 +610,39 @@ type GetCharactersCharacterIDPortraitGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get characters character Id portrait gateway timeout response has a 2xx status code
+func (o *GetCharactersCharacterIDPortraitGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id portrait gateway timeout response has a 3xx status code
+func (o *GetCharactersCharacterIDPortraitGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id portrait gateway timeout response has a 4xx status code
+func (o *GetCharactersCharacterIDPortraitGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id portrait gateway timeout response has a 5xx status code
+func (o *GetCharactersCharacterIDPortraitGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id portrait gateway timeout response a status code equal to that given
+func (o *GetCharactersCharacterIDPortraitGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetCharactersCharacterIDPortraitGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/portrait/][%d] getCharactersCharacterIdPortraitGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDPortraitGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/portrait/][%d] getCharactersCharacterIdPortraitGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDPortraitGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -412,7 +659,8 @@ func (o *GetCharactersCharacterIDPortraitGatewayTimeout) readResponse(response r
 	return nil
 }
 
-/*GetCharactersCharacterIDPortraitNotFoundBody get_characters_character_id_portrait_not_found
+/*
+GetCharactersCharacterIDPortraitNotFoundBody get_characters_character_id_portrait_not_found
 //
 // No image server for this datasource
 swagger:model GetCharactersCharacterIDPortraitNotFoundBody
@@ -453,7 +701,8 @@ func (o *GetCharactersCharacterIDPortraitNotFoundBody) UnmarshalBinary(b []byte)
 	return nil
 }
 
-/*GetCharactersCharacterIDPortraitOKBody get_characters_character_id_portrait_ok
+/*
+GetCharactersCharacterIDPortraitOKBody get_characters_character_id_portrait_ok
 //
 // 200 ok object
 swagger:model GetCharactersCharacterIDPortraitOKBody

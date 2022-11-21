@@ -38,9 +38,9 @@ type ClientService interface {
 }
 
 /*
-  GetCharactersCharacterIDClones gets clones
+	GetCharactersCharacterIDClones gets clones
 
-  A list of the character's clones
+	A list of the character's clones
 
 ---
 
@@ -83,9 +83,9 @@ func (a *Client) GetCharactersCharacterIDClones(params *GetCharactersCharacterID
 }
 
 /*
-  GetCharactersCharacterIDImplants gets active implants
+	GetCharactersCharacterIDImplants gets active implants
 
-  Return implants on the active clone of a character
+	Return implants on the active clone of a character
 
 ---
 

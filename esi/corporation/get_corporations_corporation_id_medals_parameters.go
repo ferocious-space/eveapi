@@ -53,10 +53,12 @@ func NewGetCorporationsCorporationIDMedalsParamsWithHTTPClient(client *http.Clie
 	}
 }
 
-/* GetCorporationsCorporationIDMedalsParams contains all the parameters to send to the API endpoint
-   for the get corporations corporation id medals operation.
+/*
+GetCorporationsCorporationIDMedalsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get corporations corporation id medals operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCorporationsCorporationIDMedalsParams struct {
 

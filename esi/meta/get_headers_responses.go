@@ -37,7 +37,8 @@ func NewGetHeadersOK() *GetHeadersOK {
 	return &GetHeadersOK{}
 }
 
-/* GetHeadersOK describes a response with status code 200, with default header values.
+/*
+GetHeadersOK describes a response with status code 200, with default header values.
 
 Headers OK
 */
@@ -45,9 +46,39 @@ type GetHeadersOK struct {
 	Payload map[string]string
 }
 
+// IsSuccess returns true when this get headers o k response has a 2xx status code
+func (o *GetHeadersOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get headers o k response has a 3xx status code
+func (o *GetHeadersOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get headers o k response has a 4xx status code
+func (o *GetHeadersOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get headers o k response has a 5xx status code
+func (o *GetHeadersOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get headers o k response a status code equal to that given
+func (o *GetHeadersOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetHeadersOK) Error() string {
 	return fmt.Sprintf("[GET /headers/][%d] getHeadersOK  %+v", 200, o.Payload)
 }
+
+func (o *GetHeadersOK) String() string {
+	return fmt.Sprintf("[GET /headers/][%d] getHeadersOK  %+v", 200, o.Payload)
+}
+
 func (o *GetHeadersOK) GetPayload() map[string]string {
 	return o.Payload
 }

@@ -38,9 +38,9 @@ type ClientService interface {
 }
 
 /*
-  GetCharactersCharacterIDLoyaltyPoints gets loyalty points
+	GetCharactersCharacterIDLoyaltyPoints gets loyalty points
 
-  Return a list of loyalty points for all corporations the character has worked for
+	Return a list of loyalty points for all corporations the character has worked for
 
 ---
 
@@ -83,9 +83,9 @@ func (a *Client) GetCharactersCharacterIDLoyaltyPoints(params *GetCharactersChar
 }
 
 /*
-  GetLoyaltyStoresCorporationIDOffers lists loyalty store offers
+	GetLoyaltyStoresCorporationIDOffers lists loyalty store offers
 
-  Return a list of offers from a specific corporation's loyalty store
+	Return a list of offers from a specific corporation's loyalty store
 
 ---
 

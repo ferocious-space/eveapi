@@ -53,10 +53,12 @@ func NewGetCharactersCharacterIDBlueprintsParamsWithHTTPClient(client *http.Clie
 	}
 }
 
-/* GetCharactersCharacterIDBlueprintsParams contains all the parameters to send to the API endpoint
-   for the get characters character id blueprints operation.
+/*
+GetCharactersCharacterIDBlueprintsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get characters character id blueprints operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCharactersCharacterIDBlueprintsParams struct {
 

@@ -91,7 +91,8 @@ func NewGetCharactersCharacterIDOnlineOK() *GetCharactersCharacterIDOnlineOK {
 	return &GetCharactersCharacterIDOnlineOK{}
 }
 
-/* GetCharactersCharacterIDOnlineOK describes a response with status code 200, with default header values.
+/*
+GetCharactersCharacterIDOnlineOK describes a response with status code 200, with default header values.
 
 Object describing the character's online status
 */
@@ -116,9 +117,39 @@ type GetCharactersCharacterIDOnlineOK struct {
 	Payload *GetCharactersCharacterIDOnlineOKBody
 }
 
+// IsSuccess returns true when this get characters character Id online o k response has a 2xx status code
+func (o *GetCharactersCharacterIDOnlineOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get characters character Id online o k response has a 3xx status code
+func (o *GetCharactersCharacterIDOnlineOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id online o k response has a 4xx status code
+func (o *GetCharactersCharacterIDOnlineOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id online o k response has a 5xx status code
+func (o *GetCharactersCharacterIDOnlineOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id online o k response a status code equal to that given
+func (o *GetCharactersCharacterIDOnlineOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetCharactersCharacterIDOnlineOK) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/online/][%d] getCharactersCharacterIdOnlineOK  %+v", 200, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDOnlineOK) String() string {
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/online/][%d] getCharactersCharacterIdOnlineOK  %+v", 200, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDOnlineOK) GetPayload() *GetCharactersCharacterIDOnlineOKBody {
 	return o.Payload
 }
@@ -168,7 +199,8 @@ func NewGetCharactersCharacterIDOnlineNotModified() *GetCharactersCharacterIDOnl
 	return &GetCharactersCharacterIDOnlineNotModified{}
 }
 
-/* GetCharactersCharacterIDOnlineNotModified describes a response with status code 304, with default header values.
+/*
+GetCharactersCharacterIDOnlineNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -191,7 +223,36 @@ type GetCharactersCharacterIDOnlineNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get characters character Id online not modified response has a 2xx status code
+func (o *GetCharactersCharacterIDOnlineNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id online not modified response has a 3xx status code
+func (o *GetCharactersCharacterIDOnlineNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get characters character Id online not modified response has a 4xx status code
+func (o *GetCharactersCharacterIDOnlineNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id online not modified response has a 5xx status code
+func (o *GetCharactersCharacterIDOnlineNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id online not modified response a status code equal to that given
+func (o *GetCharactersCharacterIDOnlineNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetCharactersCharacterIDOnlineNotModified) Error() string {
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/online/][%d] getCharactersCharacterIdOnlineNotModified ", 304)
+}
+
+func (o *GetCharactersCharacterIDOnlineNotModified) String() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/online/][%d] getCharactersCharacterIdOnlineNotModified ", 304)
 }
 
@@ -233,7 +294,8 @@ func NewGetCharactersCharacterIDOnlineBadRequest() *GetCharactersCharacterIDOnli
 	return &GetCharactersCharacterIDOnlineBadRequest{}
 }
 
-/* GetCharactersCharacterIDOnlineBadRequest describes a response with status code 400, with default header values.
+/*
+GetCharactersCharacterIDOnlineBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -241,9 +303,39 @@ type GetCharactersCharacterIDOnlineBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get characters character Id online bad request response has a 2xx status code
+func (o *GetCharactersCharacterIDOnlineBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id online bad request response has a 3xx status code
+func (o *GetCharactersCharacterIDOnlineBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id online bad request response has a 4xx status code
+func (o *GetCharactersCharacterIDOnlineBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id online bad request response has a 5xx status code
+func (o *GetCharactersCharacterIDOnlineBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id online bad request response a status code equal to that given
+func (o *GetCharactersCharacterIDOnlineBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetCharactersCharacterIDOnlineBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/online/][%d] getCharactersCharacterIdOnlineBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDOnlineBadRequest) String() string {
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/online/][%d] getCharactersCharacterIdOnlineBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDOnlineBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -265,7 +357,8 @@ func NewGetCharactersCharacterIDOnlineUnauthorized() *GetCharactersCharacterIDOn
 	return &GetCharactersCharacterIDOnlineUnauthorized{}
 }
 
-/* GetCharactersCharacterIDOnlineUnauthorized describes a response with status code 401, with default header values.
+/*
+GetCharactersCharacterIDOnlineUnauthorized describes a response with status code 401, with default header values.
 
 Unauthorized
 */
@@ -273,9 +366,39 @@ type GetCharactersCharacterIDOnlineUnauthorized struct {
 	Payload *models.Unauthorized
 }
 
+// IsSuccess returns true when this get characters character Id online unauthorized response has a 2xx status code
+func (o *GetCharactersCharacterIDOnlineUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id online unauthorized response has a 3xx status code
+func (o *GetCharactersCharacterIDOnlineUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id online unauthorized response has a 4xx status code
+func (o *GetCharactersCharacterIDOnlineUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id online unauthorized response has a 5xx status code
+func (o *GetCharactersCharacterIDOnlineUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id online unauthorized response a status code equal to that given
+func (o *GetCharactersCharacterIDOnlineUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *GetCharactersCharacterIDOnlineUnauthorized) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/online/][%d] getCharactersCharacterIdOnlineUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDOnlineUnauthorized) String() string {
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/online/][%d] getCharactersCharacterIdOnlineUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDOnlineUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
 }
@@ -297,7 +420,8 @@ func NewGetCharactersCharacterIDOnlineForbidden() *GetCharactersCharacterIDOnlin
 	return &GetCharactersCharacterIDOnlineForbidden{}
 }
 
-/* GetCharactersCharacterIDOnlineForbidden describes a response with status code 403, with default header values.
+/*
+GetCharactersCharacterIDOnlineForbidden describes a response with status code 403, with default header values.
 
 Forbidden
 */
@@ -305,9 +429,39 @@ type GetCharactersCharacterIDOnlineForbidden struct {
 	Payload *models.Forbidden
 }
 
+// IsSuccess returns true when this get characters character Id online forbidden response has a 2xx status code
+func (o *GetCharactersCharacterIDOnlineForbidden) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id online forbidden response has a 3xx status code
+func (o *GetCharactersCharacterIDOnlineForbidden) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id online forbidden response has a 4xx status code
+func (o *GetCharactersCharacterIDOnlineForbidden) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id online forbidden response has a 5xx status code
+func (o *GetCharactersCharacterIDOnlineForbidden) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id online forbidden response a status code equal to that given
+func (o *GetCharactersCharacterIDOnlineForbidden) IsCode(code int) bool {
+	return code == 403
+}
+
 func (o *GetCharactersCharacterIDOnlineForbidden) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/online/][%d] getCharactersCharacterIdOnlineForbidden  %+v", 403, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDOnlineForbidden) String() string {
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/online/][%d] getCharactersCharacterIdOnlineForbidden  %+v", 403, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDOnlineForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
 }
@@ -329,7 +483,8 @@ func NewGetCharactersCharacterIDOnlineEnhanceYourCalm() *GetCharactersCharacterI
 	return &GetCharactersCharacterIDOnlineEnhanceYourCalm{}
 }
 
-/* GetCharactersCharacterIDOnlineEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetCharactersCharacterIDOnlineEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -337,9 +492,39 @@ type GetCharactersCharacterIDOnlineEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get characters character Id online enhance your calm response has a 2xx status code
+func (o *GetCharactersCharacterIDOnlineEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id online enhance your calm response has a 3xx status code
+func (o *GetCharactersCharacterIDOnlineEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id online enhance your calm response has a 4xx status code
+func (o *GetCharactersCharacterIDOnlineEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id online enhance your calm response has a 5xx status code
+func (o *GetCharactersCharacterIDOnlineEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id online enhance your calm response a status code equal to that given
+func (o *GetCharactersCharacterIDOnlineEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetCharactersCharacterIDOnlineEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/online/][%d] getCharactersCharacterIdOnlineEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDOnlineEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/online/][%d] getCharactersCharacterIdOnlineEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDOnlineEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -361,7 +546,8 @@ func NewGetCharactersCharacterIDOnlineInternalServerError() *GetCharactersCharac
 	return &GetCharactersCharacterIDOnlineInternalServerError{}
 }
 
-/* GetCharactersCharacterIDOnlineInternalServerError describes a response with status code 500, with default header values.
+/*
+GetCharactersCharacterIDOnlineInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -369,9 +555,39 @@ type GetCharactersCharacterIDOnlineInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get characters character Id online internal server error response has a 2xx status code
+func (o *GetCharactersCharacterIDOnlineInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id online internal server error response has a 3xx status code
+func (o *GetCharactersCharacterIDOnlineInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id online internal server error response has a 4xx status code
+func (o *GetCharactersCharacterIDOnlineInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id online internal server error response has a 5xx status code
+func (o *GetCharactersCharacterIDOnlineInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id online internal server error response a status code equal to that given
+func (o *GetCharactersCharacterIDOnlineInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetCharactersCharacterIDOnlineInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/online/][%d] getCharactersCharacterIdOnlineInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDOnlineInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/online/][%d] getCharactersCharacterIdOnlineInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDOnlineInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -393,7 +609,8 @@ func NewGetCharactersCharacterIDOnlineServiceUnavailable() *GetCharactersCharact
 	return &GetCharactersCharacterIDOnlineServiceUnavailable{}
 }
 
-/* GetCharactersCharacterIDOnlineServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetCharactersCharacterIDOnlineServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -401,9 +618,39 @@ type GetCharactersCharacterIDOnlineServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get characters character Id online service unavailable response has a 2xx status code
+func (o *GetCharactersCharacterIDOnlineServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id online service unavailable response has a 3xx status code
+func (o *GetCharactersCharacterIDOnlineServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id online service unavailable response has a 4xx status code
+func (o *GetCharactersCharacterIDOnlineServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id online service unavailable response has a 5xx status code
+func (o *GetCharactersCharacterIDOnlineServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id online service unavailable response a status code equal to that given
+func (o *GetCharactersCharacterIDOnlineServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetCharactersCharacterIDOnlineServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/online/][%d] getCharactersCharacterIdOnlineServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDOnlineServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/online/][%d] getCharactersCharacterIdOnlineServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDOnlineServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -425,7 +672,8 @@ func NewGetCharactersCharacterIDOnlineGatewayTimeout() *GetCharactersCharacterID
 	return &GetCharactersCharacterIDOnlineGatewayTimeout{}
 }
 
-/* GetCharactersCharacterIDOnlineGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetCharactersCharacterIDOnlineGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -433,9 +681,39 @@ type GetCharactersCharacterIDOnlineGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get characters character Id online gateway timeout response has a 2xx status code
+func (o *GetCharactersCharacterIDOnlineGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id online gateway timeout response has a 3xx status code
+func (o *GetCharactersCharacterIDOnlineGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id online gateway timeout response has a 4xx status code
+func (o *GetCharactersCharacterIDOnlineGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id online gateway timeout response has a 5xx status code
+func (o *GetCharactersCharacterIDOnlineGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id online gateway timeout response a status code equal to that given
+func (o *GetCharactersCharacterIDOnlineGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetCharactersCharacterIDOnlineGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/online/][%d] getCharactersCharacterIdOnlineGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDOnlineGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v2/characters/{character_id}/online/][%d] getCharactersCharacterIdOnlineGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDOnlineGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -452,7 +730,8 @@ func (o *GetCharactersCharacterIDOnlineGatewayTimeout) readResponse(response run
 	return nil
 }
 
-/*GetCharactersCharacterIDOnlineOKBody get_characters_character_id_online_ok
+/*
+GetCharactersCharacterIDOnlineOKBody get_characters_character_id_online_ok
 //
 // 200 ok object
 swagger:model GetCharactersCharacterIDOnlineOKBody

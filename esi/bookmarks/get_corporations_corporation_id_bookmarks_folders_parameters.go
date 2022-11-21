@@ -53,10 +53,12 @@ func NewGetCorporationsCorporationIDBookmarksFoldersParamsWithHTTPClient(client 
 	}
 }
 
-/* GetCorporationsCorporationIDBookmarksFoldersParams contains all the parameters to send to the API endpoint
-   for the get corporations corporation id bookmarks folders operation.
+/*
+GetCorporationsCorporationIDBookmarksFoldersParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get corporations corporation id bookmarks folders operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCorporationsCorporationIDBookmarksFoldersParams struct {
 

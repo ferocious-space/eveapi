@@ -81,14 +81,44 @@ func NewDeleteCharactersCharacterIDFittingsFittingIDNoContent() *DeleteCharacter
 	return &DeleteCharactersCharacterIDFittingsFittingIDNoContent{}
 }
 
-/* DeleteCharactersCharacterIDFittingsFittingIDNoContent describes a response with status code 204, with default header values.
+/*
+DeleteCharactersCharacterIDFittingsFittingIDNoContent describes a response with status code 204, with default header values.
 
 Fitting deleted
 */
 type DeleteCharactersCharacterIDFittingsFittingIDNoContent struct {
 }
 
+// IsSuccess returns true when this delete characters character Id fittings fitting Id no content response has a 2xx status code
+func (o *DeleteCharactersCharacterIDFittingsFittingIDNoContent) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this delete characters character Id fittings fitting Id no content response has a 3xx status code
+func (o *DeleteCharactersCharacterIDFittingsFittingIDNoContent) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this delete characters character Id fittings fitting Id no content response has a 4xx status code
+func (o *DeleteCharactersCharacterIDFittingsFittingIDNoContent) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this delete characters character Id fittings fitting Id no content response has a 5xx status code
+func (o *DeleteCharactersCharacterIDFittingsFittingIDNoContent) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this delete characters character Id fittings fitting Id no content response a status code equal to that given
+func (o *DeleteCharactersCharacterIDFittingsFittingIDNoContent) IsCode(code int) bool {
+	return code == 204
+}
+
 func (o *DeleteCharactersCharacterIDFittingsFittingIDNoContent) Error() string {
+	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/fittings/{fitting_id}/][%d] deleteCharactersCharacterIdFittingsFittingIdNoContent ", 204)
+}
+
+func (o *DeleteCharactersCharacterIDFittingsFittingIDNoContent) String() string {
 	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/fittings/{fitting_id}/][%d] deleteCharactersCharacterIdFittingsFittingIdNoContent ", 204)
 }
 
@@ -102,7 +132,8 @@ func NewDeleteCharactersCharacterIDFittingsFittingIDBadRequest() *DeleteCharacte
 	return &DeleteCharactersCharacterIDFittingsFittingIDBadRequest{}
 }
 
-/* DeleteCharactersCharacterIDFittingsFittingIDBadRequest describes a response with status code 400, with default header values.
+/*
+DeleteCharactersCharacterIDFittingsFittingIDBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -110,9 +141,39 @@ type DeleteCharactersCharacterIDFittingsFittingIDBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this delete characters character Id fittings fitting Id bad request response has a 2xx status code
+func (o *DeleteCharactersCharacterIDFittingsFittingIDBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this delete characters character Id fittings fitting Id bad request response has a 3xx status code
+func (o *DeleteCharactersCharacterIDFittingsFittingIDBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this delete characters character Id fittings fitting Id bad request response has a 4xx status code
+func (o *DeleteCharactersCharacterIDFittingsFittingIDBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this delete characters character Id fittings fitting Id bad request response has a 5xx status code
+func (o *DeleteCharactersCharacterIDFittingsFittingIDBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this delete characters character Id fittings fitting Id bad request response a status code equal to that given
+func (o *DeleteCharactersCharacterIDFittingsFittingIDBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *DeleteCharactersCharacterIDFittingsFittingIDBadRequest) Error() string {
 	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/fittings/{fitting_id}/][%d] deleteCharactersCharacterIdFittingsFittingIdBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *DeleteCharactersCharacterIDFittingsFittingIDBadRequest) String() string {
+	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/fittings/{fitting_id}/][%d] deleteCharactersCharacterIdFittingsFittingIdBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *DeleteCharactersCharacterIDFittingsFittingIDBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -134,7 +195,8 @@ func NewDeleteCharactersCharacterIDFittingsFittingIDUnauthorized() *DeleteCharac
 	return &DeleteCharactersCharacterIDFittingsFittingIDUnauthorized{}
 }
 
-/* DeleteCharactersCharacterIDFittingsFittingIDUnauthorized describes a response with status code 401, with default header values.
+/*
+DeleteCharactersCharacterIDFittingsFittingIDUnauthorized describes a response with status code 401, with default header values.
 
 Unauthorized
 */
@@ -142,9 +204,39 @@ type DeleteCharactersCharacterIDFittingsFittingIDUnauthorized struct {
 	Payload *models.Unauthorized
 }
 
+// IsSuccess returns true when this delete characters character Id fittings fitting Id unauthorized response has a 2xx status code
+func (o *DeleteCharactersCharacterIDFittingsFittingIDUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this delete characters character Id fittings fitting Id unauthorized response has a 3xx status code
+func (o *DeleteCharactersCharacterIDFittingsFittingIDUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this delete characters character Id fittings fitting Id unauthorized response has a 4xx status code
+func (o *DeleteCharactersCharacterIDFittingsFittingIDUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this delete characters character Id fittings fitting Id unauthorized response has a 5xx status code
+func (o *DeleteCharactersCharacterIDFittingsFittingIDUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this delete characters character Id fittings fitting Id unauthorized response a status code equal to that given
+func (o *DeleteCharactersCharacterIDFittingsFittingIDUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *DeleteCharactersCharacterIDFittingsFittingIDUnauthorized) Error() string {
 	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/fittings/{fitting_id}/][%d] deleteCharactersCharacterIdFittingsFittingIdUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *DeleteCharactersCharacterIDFittingsFittingIDUnauthorized) String() string {
+	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/fittings/{fitting_id}/][%d] deleteCharactersCharacterIdFittingsFittingIdUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *DeleteCharactersCharacterIDFittingsFittingIDUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
 }
@@ -166,7 +258,8 @@ func NewDeleteCharactersCharacterIDFittingsFittingIDForbidden() *DeleteCharacter
 	return &DeleteCharactersCharacterIDFittingsFittingIDForbidden{}
 }
 
-/* DeleteCharactersCharacterIDFittingsFittingIDForbidden describes a response with status code 403, with default header values.
+/*
+DeleteCharactersCharacterIDFittingsFittingIDForbidden describes a response with status code 403, with default header values.
 
 Forbidden
 */
@@ -174,9 +267,39 @@ type DeleteCharactersCharacterIDFittingsFittingIDForbidden struct {
 	Payload *models.Forbidden
 }
 
+// IsSuccess returns true when this delete characters character Id fittings fitting Id forbidden response has a 2xx status code
+func (o *DeleteCharactersCharacterIDFittingsFittingIDForbidden) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this delete characters character Id fittings fitting Id forbidden response has a 3xx status code
+func (o *DeleteCharactersCharacterIDFittingsFittingIDForbidden) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this delete characters character Id fittings fitting Id forbidden response has a 4xx status code
+func (o *DeleteCharactersCharacterIDFittingsFittingIDForbidden) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this delete characters character Id fittings fitting Id forbidden response has a 5xx status code
+func (o *DeleteCharactersCharacterIDFittingsFittingIDForbidden) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this delete characters character Id fittings fitting Id forbidden response a status code equal to that given
+func (o *DeleteCharactersCharacterIDFittingsFittingIDForbidden) IsCode(code int) bool {
+	return code == 403
+}
+
 func (o *DeleteCharactersCharacterIDFittingsFittingIDForbidden) Error() string {
 	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/fittings/{fitting_id}/][%d] deleteCharactersCharacterIdFittingsFittingIdForbidden  %+v", 403, o.Payload)
 }
+
+func (o *DeleteCharactersCharacterIDFittingsFittingIDForbidden) String() string {
+	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/fittings/{fitting_id}/][%d] deleteCharactersCharacterIdFittingsFittingIdForbidden  %+v", 403, o.Payload)
+}
+
 func (o *DeleteCharactersCharacterIDFittingsFittingIDForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
 }
@@ -198,7 +321,8 @@ func NewDeleteCharactersCharacterIDFittingsFittingIDEnhanceYourCalm() *DeleteCha
 	return &DeleteCharactersCharacterIDFittingsFittingIDEnhanceYourCalm{}
 }
 
-/* DeleteCharactersCharacterIDFittingsFittingIDEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+DeleteCharactersCharacterIDFittingsFittingIDEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -206,9 +330,39 @@ type DeleteCharactersCharacterIDFittingsFittingIDEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this delete characters character Id fittings fitting Id enhance your calm response has a 2xx status code
+func (o *DeleteCharactersCharacterIDFittingsFittingIDEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this delete characters character Id fittings fitting Id enhance your calm response has a 3xx status code
+func (o *DeleteCharactersCharacterIDFittingsFittingIDEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this delete characters character Id fittings fitting Id enhance your calm response has a 4xx status code
+func (o *DeleteCharactersCharacterIDFittingsFittingIDEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this delete characters character Id fittings fitting Id enhance your calm response has a 5xx status code
+func (o *DeleteCharactersCharacterIDFittingsFittingIDEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this delete characters character Id fittings fitting Id enhance your calm response a status code equal to that given
+func (o *DeleteCharactersCharacterIDFittingsFittingIDEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *DeleteCharactersCharacterIDFittingsFittingIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/fittings/{fitting_id}/][%d] deleteCharactersCharacterIdFittingsFittingIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *DeleteCharactersCharacterIDFittingsFittingIDEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/fittings/{fitting_id}/][%d] deleteCharactersCharacterIdFittingsFittingIdEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *DeleteCharactersCharacterIDFittingsFittingIDEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -230,7 +384,8 @@ func NewDeleteCharactersCharacterIDFittingsFittingIDInternalServerError() *Delet
 	return &DeleteCharactersCharacterIDFittingsFittingIDInternalServerError{}
 }
 
-/* DeleteCharactersCharacterIDFittingsFittingIDInternalServerError describes a response with status code 500, with default header values.
+/*
+DeleteCharactersCharacterIDFittingsFittingIDInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -238,9 +393,39 @@ type DeleteCharactersCharacterIDFittingsFittingIDInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this delete characters character Id fittings fitting Id internal server error response has a 2xx status code
+func (o *DeleteCharactersCharacterIDFittingsFittingIDInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this delete characters character Id fittings fitting Id internal server error response has a 3xx status code
+func (o *DeleteCharactersCharacterIDFittingsFittingIDInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this delete characters character Id fittings fitting Id internal server error response has a 4xx status code
+func (o *DeleteCharactersCharacterIDFittingsFittingIDInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this delete characters character Id fittings fitting Id internal server error response has a 5xx status code
+func (o *DeleteCharactersCharacterIDFittingsFittingIDInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this delete characters character Id fittings fitting Id internal server error response a status code equal to that given
+func (o *DeleteCharactersCharacterIDFittingsFittingIDInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *DeleteCharactersCharacterIDFittingsFittingIDInternalServerError) Error() string {
 	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/fittings/{fitting_id}/][%d] deleteCharactersCharacterIdFittingsFittingIdInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *DeleteCharactersCharacterIDFittingsFittingIDInternalServerError) String() string {
+	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/fittings/{fitting_id}/][%d] deleteCharactersCharacterIdFittingsFittingIdInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *DeleteCharactersCharacterIDFittingsFittingIDInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -262,7 +447,8 @@ func NewDeleteCharactersCharacterIDFittingsFittingIDServiceUnavailable() *Delete
 	return &DeleteCharactersCharacterIDFittingsFittingIDServiceUnavailable{}
 }
 
-/* DeleteCharactersCharacterIDFittingsFittingIDServiceUnavailable describes a response with status code 503, with default header values.
+/*
+DeleteCharactersCharacterIDFittingsFittingIDServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -270,9 +456,39 @@ type DeleteCharactersCharacterIDFittingsFittingIDServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this delete characters character Id fittings fitting Id service unavailable response has a 2xx status code
+func (o *DeleteCharactersCharacterIDFittingsFittingIDServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this delete characters character Id fittings fitting Id service unavailable response has a 3xx status code
+func (o *DeleteCharactersCharacterIDFittingsFittingIDServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this delete characters character Id fittings fitting Id service unavailable response has a 4xx status code
+func (o *DeleteCharactersCharacterIDFittingsFittingIDServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this delete characters character Id fittings fitting Id service unavailable response has a 5xx status code
+func (o *DeleteCharactersCharacterIDFittingsFittingIDServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this delete characters character Id fittings fitting Id service unavailable response a status code equal to that given
+func (o *DeleteCharactersCharacterIDFittingsFittingIDServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *DeleteCharactersCharacterIDFittingsFittingIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/fittings/{fitting_id}/][%d] deleteCharactersCharacterIdFittingsFittingIdServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *DeleteCharactersCharacterIDFittingsFittingIDServiceUnavailable) String() string {
+	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/fittings/{fitting_id}/][%d] deleteCharactersCharacterIdFittingsFittingIdServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *DeleteCharactersCharacterIDFittingsFittingIDServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -294,7 +510,8 @@ func NewDeleteCharactersCharacterIDFittingsFittingIDGatewayTimeout() *DeleteChar
 	return &DeleteCharactersCharacterIDFittingsFittingIDGatewayTimeout{}
 }
 
-/* DeleteCharactersCharacterIDFittingsFittingIDGatewayTimeout describes a response with status code 504, with default header values.
+/*
+DeleteCharactersCharacterIDFittingsFittingIDGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -302,9 +519,39 @@ type DeleteCharactersCharacterIDFittingsFittingIDGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this delete characters character Id fittings fitting Id gateway timeout response has a 2xx status code
+func (o *DeleteCharactersCharacterIDFittingsFittingIDGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this delete characters character Id fittings fitting Id gateway timeout response has a 3xx status code
+func (o *DeleteCharactersCharacterIDFittingsFittingIDGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this delete characters character Id fittings fitting Id gateway timeout response has a 4xx status code
+func (o *DeleteCharactersCharacterIDFittingsFittingIDGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this delete characters character Id fittings fitting Id gateway timeout response has a 5xx status code
+func (o *DeleteCharactersCharacterIDFittingsFittingIDGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this delete characters character Id fittings fitting Id gateway timeout response a status code equal to that given
+func (o *DeleteCharactersCharacterIDFittingsFittingIDGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *DeleteCharactersCharacterIDFittingsFittingIDGatewayTimeout) Error() string {
 	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/fittings/{fitting_id}/][%d] deleteCharactersCharacterIdFittingsFittingIdGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *DeleteCharactersCharacterIDFittingsFittingIDGatewayTimeout) String() string {
+	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/fittings/{fitting_id}/][%d] deleteCharactersCharacterIdFittingsFittingIdGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *DeleteCharactersCharacterIDFittingsFittingIDGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }

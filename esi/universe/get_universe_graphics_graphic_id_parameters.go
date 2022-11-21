@@ -53,10 +53,12 @@ func NewGetUniverseGraphicsGraphicIDParamsWithHTTPClient(client *http.Client) *G
 	}
 }
 
-/* GetUniverseGraphicsGraphicIDParams contains all the parameters to send to the API endpoint
-   for the get universe graphics graphic id operation.
+/*
+GetUniverseGraphicsGraphicIDParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get universe graphics graphic id operation.
+
+	Typically these are written to a http.Request.
 */
 type GetUniverseGraphicsGraphicIDParams struct {
 

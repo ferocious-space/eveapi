@@ -53,10 +53,12 @@ func NewGetCharactersCharacterIDAgentsResearchParamsWithHTTPClient(client *http.
 	}
 }
 
-/* GetCharactersCharacterIDAgentsResearchParams contains all the parameters to send to the API endpoint
-   for the get characters character id agents research operation.
+/*
+GetCharactersCharacterIDAgentsResearchParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get characters character id agents research operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCharactersCharacterIDAgentsResearchParams struct {
 

@@ -52,10 +52,12 @@ func NewGetUniverseGraphicsParamsWithHTTPClient(client *http.Client) *GetUnivers
 	}
 }
 
-/* GetUniverseGraphicsParams contains all the parameters to send to the API endpoint
-   for the get universe graphics operation.
+/*
+GetUniverseGraphicsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get universe graphics operation.
+
+	Typically these are written to a http.Request.
 */
 type GetUniverseGraphicsParams struct {
 

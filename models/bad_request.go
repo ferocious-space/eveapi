@@ -16,7 +16,7 @@ import (
 
 // BadRequest Bad request
 //
-// Bad request model
+// # Bad request model
 //
 // swagger:model bad_request
 type BadRequest struct {

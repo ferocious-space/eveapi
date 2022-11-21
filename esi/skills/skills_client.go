@@ -40,9 +40,9 @@ type ClientService interface {
 }
 
 /*
-  GetCharactersCharacterIDAttributes gets character attributes
+	GetCharactersCharacterIDAttributes gets character attributes
 
-  Return attributes of a character
+	Return attributes of a character
 
 ---
 
@@ -85,9 +85,9 @@ func (a *Client) GetCharactersCharacterIDAttributes(params *GetCharactersCharact
 }
 
 /*
-  GetCharactersCharacterIDSkillqueue gets character s skill queue
+	GetCharactersCharacterIDSkillqueue gets character s skill queue
 
-  List the configured skill queue for the given character
+	List the configured skill queue for the given character
 
 ---
 
@@ -130,9 +130,9 @@ func (a *Client) GetCharactersCharacterIDSkillqueue(params *GetCharactersCharact
 }
 
 /*
-  GetCharactersCharacterIDSkills gets character skills
+	GetCharactersCharacterIDSkills gets character skills
 
-  List all trained skills for the given character
+	List all trained skills for the given character
 
 ---
 

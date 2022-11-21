@@ -97,7 +97,8 @@ func NewGetFleetsFleetIDOK() *GetFleetsFleetIDOK {
 	return &GetFleetsFleetIDOK{}
 }
 
-/* GetFleetsFleetIDOK describes a response with status code 200, with default header values.
+/*
+GetFleetsFleetIDOK describes a response with status code 200, with default header values.
 
 Details about a fleet
 */
@@ -122,9 +123,39 @@ type GetFleetsFleetIDOK struct {
 	Payload *GetFleetsFleetIDOKBody
 }
 
+// IsSuccess returns true when this get fleets fleet Id o k response has a 2xx status code
+func (o *GetFleetsFleetIDOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get fleets fleet Id o k response has a 3xx status code
+func (o *GetFleetsFleetIDOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fleets fleet Id o k response has a 4xx status code
+func (o *GetFleetsFleetIDOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get fleets fleet Id o k response has a 5xx status code
+func (o *GetFleetsFleetIDOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get fleets fleet Id o k response a status code equal to that given
+func (o *GetFleetsFleetIDOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetFleetsFleetIDOK) Error() string {
 	return fmt.Sprintf("[GET /v1/fleets/{fleet_id}/][%d] getFleetsFleetIdOK  %+v", 200, o.Payload)
 }
+
+func (o *GetFleetsFleetIDOK) String() string {
+	return fmt.Sprintf("[GET /v1/fleets/{fleet_id}/][%d] getFleetsFleetIdOK  %+v", 200, o.Payload)
+}
+
 func (o *GetFleetsFleetIDOK) GetPayload() *GetFleetsFleetIDOKBody {
 	return o.Payload
 }
@@ -174,7 +205,8 @@ func NewGetFleetsFleetIDNotModified() *GetFleetsFleetIDNotModified {
 	return &GetFleetsFleetIDNotModified{}
 }
 
-/* GetFleetsFleetIDNotModified describes a response with status code 304, with default header values.
+/*
+GetFleetsFleetIDNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -197,7 +229,36 @@ type GetFleetsFleetIDNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get fleets fleet Id not modified response has a 2xx status code
+func (o *GetFleetsFleetIDNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fleets fleet Id not modified response has a 3xx status code
+func (o *GetFleetsFleetIDNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get fleets fleet Id not modified response has a 4xx status code
+func (o *GetFleetsFleetIDNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get fleets fleet Id not modified response has a 5xx status code
+func (o *GetFleetsFleetIDNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get fleets fleet Id not modified response a status code equal to that given
+func (o *GetFleetsFleetIDNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetFleetsFleetIDNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/fleets/{fleet_id}/][%d] getFleetsFleetIdNotModified ", 304)
+}
+
+func (o *GetFleetsFleetIDNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/fleets/{fleet_id}/][%d] getFleetsFleetIdNotModified ", 304)
 }
 
@@ -239,7 +300,8 @@ func NewGetFleetsFleetIDBadRequest() *GetFleetsFleetIDBadRequest {
 	return &GetFleetsFleetIDBadRequest{}
 }
 
-/* GetFleetsFleetIDBadRequest describes a response with status code 400, with default header values.
+/*
+GetFleetsFleetIDBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -247,9 +309,39 @@ type GetFleetsFleetIDBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get fleets fleet Id bad request response has a 2xx status code
+func (o *GetFleetsFleetIDBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fleets fleet Id bad request response has a 3xx status code
+func (o *GetFleetsFleetIDBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fleets fleet Id bad request response has a 4xx status code
+func (o *GetFleetsFleetIDBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get fleets fleet Id bad request response has a 5xx status code
+func (o *GetFleetsFleetIDBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get fleets fleet Id bad request response a status code equal to that given
+func (o *GetFleetsFleetIDBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetFleetsFleetIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/fleets/{fleet_id}/][%d] getFleetsFleetIdBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetFleetsFleetIDBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/fleets/{fleet_id}/][%d] getFleetsFleetIdBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetFleetsFleetIDBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -271,7 +363,8 @@ func NewGetFleetsFleetIDUnauthorized() *GetFleetsFleetIDUnauthorized {
 	return &GetFleetsFleetIDUnauthorized{}
 }
 
-/* GetFleetsFleetIDUnauthorized describes a response with status code 401, with default header values.
+/*
+GetFleetsFleetIDUnauthorized describes a response with status code 401, with default header values.
 
 Unauthorized
 */
@@ -279,9 +372,39 @@ type GetFleetsFleetIDUnauthorized struct {
 	Payload *models.Unauthorized
 }
 
+// IsSuccess returns true when this get fleets fleet Id unauthorized response has a 2xx status code
+func (o *GetFleetsFleetIDUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fleets fleet Id unauthorized response has a 3xx status code
+func (o *GetFleetsFleetIDUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fleets fleet Id unauthorized response has a 4xx status code
+func (o *GetFleetsFleetIDUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get fleets fleet Id unauthorized response has a 5xx status code
+func (o *GetFleetsFleetIDUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get fleets fleet Id unauthorized response a status code equal to that given
+func (o *GetFleetsFleetIDUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *GetFleetsFleetIDUnauthorized) Error() string {
 	return fmt.Sprintf("[GET /v1/fleets/{fleet_id}/][%d] getFleetsFleetIdUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *GetFleetsFleetIDUnauthorized) String() string {
+	return fmt.Sprintf("[GET /v1/fleets/{fleet_id}/][%d] getFleetsFleetIdUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *GetFleetsFleetIDUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
 }
@@ -303,7 +426,8 @@ func NewGetFleetsFleetIDForbidden() *GetFleetsFleetIDForbidden {
 	return &GetFleetsFleetIDForbidden{}
 }
 
-/* GetFleetsFleetIDForbidden describes a response with status code 403, with default header values.
+/*
+GetFleetsFleetIDForbidden describes a response with status code 403, with default header values.
 
 Forbidden
 */
@@ -311,9 +435,39 @@ type GetFleetsFleetIDForbidden struct {
 	Payload *models.Forbidden
 }
 
+// IsSuccess returns true when this get fleets fleet Id forbidden response has a 2xx status code
+func (o *GetFleetsFleetIDForbidden) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fleets fleet Id forbidden response has a 3xx status code
+func (o *GetFleetsFleetIDForbidden) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fleets fleet Id forbidden response has a 4xx status code
+func (o *GetFleetsFleetIDForbidden) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get fleets fleet Id forbidden response has a 5xx status code
+func (o *GetFleetsFleetIDForbidden) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get fleets fleet Id forbidden response a status code equal to that given
+func (o *GetFleetsFleetIDForbidden) IsCode(code int) bool {
+	return code == 403
+}
+
 func (o *GetFleetsFleetIDForbidden) Error() string {
 	return fmt.Sprintf("[GET /v1/fleets/{fleet_id}/][%d] getFleetsFleetIdForbidden  %+v", 403, o.Payload)
 }
+
+func (o *GetFleetsFleetIDForbidden) String() string {
+	return fmt.Sprintf("[GET /v1/fleets/{fleet_id}/][%d] getFleetsFleetIdForbidden  %+v", 403, o.Payload)
+}
+
 func (o *GetFleetsFleetIDForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
 }
@@ -335,7 +489,8 @@ func NewGetFleetsFleetIDNotFound() *GetFleetsFleetIDNotFound {
 	return &GetFleetsFleetIDNotFound{}
 }
 
-/* GetFleetsFleetIDNotFound describes a response with status code 404, with default header values.
+/*
+GetFleetsFleetIDNotFound describes a response with status code 404, with default header values.
 
 The fleet does not exist or you don't have access to it
 */
@@ -343,9 +498,39 @@ type GetFleetsFleetIDNotFound struct {
 	Payload *GetFleetsFleetIDNotFoundBody
 }
 
+// IsSuccess returns true when this get fleets fleet Id not found response has a 2xx status code
+func (o *GetFleetsFleetIDNotFound) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fleets fleet Id not found response has a 3xx status code
+func (o *GetFleetsFleetIDNotFound) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fleets fleet Id not found response has a 4xx status code
+func (o *GetFleetsFleetIDNotFound) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get fleets fleet Id not found response has a 5xx status code
+func (o *GetFleetsFleetIDNotFound) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get fleets fleet Id not found response a status code equal to that given
+func (o *GetFleetsFleetIDNotFound) IsCode(code int) bool {
+	return code == 404
+}
+
 func (o *GetFleetsFleetIDNotFound) Error() string {
 	return fmt.Sprintf("[GET /v1/fleets/{fleet_id}/][%d] getFleetsFleetIdNotFound  %+v", 404, o.Payload)
 }
+
+func (o *GetFleetsFleetIDNotFound) String() string {
+	return fmt.Sprintf("[GET /v1/fleets/{fleet_id}/][%d] getFleetsFleetIdNotFound  %+v", 404, o.Payload)
+}
+
 func (o *GetFleetsFleetIDNotFound) GetPayload() *GetFleetsFleetIDNotFoundBody {
 	return o.Payload
 }
@@ -367,7 +552,8 @@ func NewGetFleetsFleetIDEnhanceYourCalm() *GetFleetsFleetIDEnhanceYourCalm {
 	return &GetFleetsFleetIDEnhanceYourCalm{}
 }
 
-/* GetFleetsFleetIDEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetFleetsFleetIDEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -375,9 +561,39 @@ type GetFleetsFleetIDEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get fleets fleet Id enhance your calm response has a 2xx status code
+func (o *GetFleetsFleetIDEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fleets fleet Id enhance your calm response has a 3xx status code
+func (o *GetFleetsFleetIDEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fleets fleet Id enhance your calm response has a 4xx status code
+func (o *GetFleetsFleetIDEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get fleets fleet Id enhance your calm response has a 5xx status code
+func (o *GetFleetsFleetIDEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get fleets fleet Id enhance your calm response a status code equal to that given
+func (o *GetFleetsFleetIDEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetFleetsFleetIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/fleets/{fleet_id}/][%d] getFleetsFleetIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetFleetsFleetIDEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/fleets/{fleet_id}/][%d] getFleetsFleetIdEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetFleetsFleetIDEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -399,7 +615,8 @@ func NewGetFleetsFleetIDInternalServerError() *GetFleetsFleetIDInternalServerErr
 	return &GetFleetsFleetIDInternalServerError{}
 }
 
-/* GetFleetsFleetIDInternalServerError describes a response with status code 500, with default header values.
+/*
+GetFleetsFleetIDInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -407,9 +624,39 @@ type GetFleetsFleetIDInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get fleets fleet Id internal server error response has a 2xx status code
+func (o *GetFleetsFleetIDInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fleets fleet Id internal server error response has a 3xx status code
+func (o *GetFleetsFleetIDInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fleets fleet Id internal server error response has a 4xx status code
+func (o *GetFleetsFleetIDInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get fleets fleet Id internal server error response has a 5xx status code
+func (o *GetFleetsFleetIDInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get fleets fleet Id internal server error response a status code equal to that given
+func (o *GetFleetsFleetIDInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetFleetsFleetIDInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/fleets/{fleet_id}/][%d] getFleetsFleetIdInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetFleetsFleetIDInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/fleets/{fleet_id}/][%d] getFleetsFleetIdInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetFleetsFleetIDInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -431,7 +678,8 @@ func NewGetFleetsFleetIDServiceUnavailable() *GetFleetsFleetIDServiceUnavailable
 	return &GetFleetsFleetIDServiceUnavailable{}
 }
 
-/* GetFleetsFleetIDServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetFleetsFleetIDServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -439,9 +687,39 @@ type GetFleetsFleetIDServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get fleets fleet Id service unavailable response has a 2xx status code
+func (o *GetFleetsFleetIDServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fleets fleet Id service unavailable response has a 3xx status code
+func (o *GetFleetsFleetIDServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fleets fleet Id service unavailable response has a 4xx status code
+func (o *GetFleetsFleetIDServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get fleets fleet Id service unavailable response has a 5xx status code
+func (o *GetFleetsFleetIDServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get fleets fleet Id service unavailable response a status code equal to that given
+func (o *GetFleetsFleetIDServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetFleetsFleetIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/fleets/{fleet_id}/][%d] getFleetsFleetIdServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetFleetsFleetIDServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/fleets/{fleet_id}/][%d] getFleetsFleetIdServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetFleetsFleetIDServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -463,7 +741,8 @@ func NewGetFleetsFleetIDGatewayTimeout() *GetFleetsFleetIDGatewayTimeout {
 	return &GetFleetsFleetIDGatewayTimeout{}
 }
 
-/* GetFleetsFleetIDGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetFleetsFleetIDGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -471,9 +750,39 @@ type GetFleetsFleetIDGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get fleets fleet Id gateway timeout response has a 2xx status code
+func (o *GetFleetsFleetIDGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fleets fleet Id gateway timeout response has a 3xx status code
+func (o *GetFleetsFleetIDGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fleets fleet Id gateway timeout response has a 4xx status code
+func (o *GetFleetsFleetIDGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get fleets fleet Id gateway timeout response has a 5xx status code
+func (o *GetFleetsFleetIDGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get fleets fleet Id gateway timeout response a status code equal to that given
+func (o *GetFleetsFleetIDGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetFleetsFleetIDGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/fleets/{fleet_id}/][%d] getFleetsFleetIdGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetFleetsFleetIDGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/fleets/{fleet_id}/][%d] getFleetsFleetIdGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetFleetsFleetIDGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -490,7 +799,8 @@ func (o *GetFleetsFleetIDGatewayTimeout) readResponse(response runtime.ClientRes
 	return nil
 }
 
-/*GetFleetsFleetIDNotFoundBody get_fleets_fleet_id_not_found
+/*
+GetFleetsFleetIDNotFoundBody get_fleets_fleet_id_not_found
 //
 // Not found
 swagger:model GetFleetsFleetIDNotFoundBody
@@ -531,7 +841,8 @@ func (o *GetFleetsFleetIDNotFoundBody) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*GetFleetsFleetIDOKBody get_fleets_fleet_id_ok
+/*
+GetFleetsFleetIDOKBody get_fleets_fleet_id_ok
 //
 // 200 ok object
 swagger:model GetFleetsFleetIDOKBody

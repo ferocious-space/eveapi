@@ -52,10 +52,12 @@ func NewGetUniverseRegionsParamsWithHTTPClient(client *http.Client) *GetUniverse
 	}
 }
 
-/* GetUniverseRegionsParams contains all the parameters to send to the API endpoint
-   for the get universe regions operation.
+/*
+GetUniverseRegionsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get universe regions operation.
+
+	Typically these are written to a http.Request.
 */
 type GetUniverseRegionsParams struct {
 

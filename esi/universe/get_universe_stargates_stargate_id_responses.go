@@ -85,7 +85,8 @@ func NewGetUniverseStargatesStargateIDOK() *GetUniverseStargatesStargateIDOK {
 	return &GetUniverseStargatesStargateIDOK{}
 }
 
-/* GetUniverseStargatesStargateIDOK describes a response with status code 200, with default header values.
+/*
+GetUniverseStargatesStargateIDOK describes a response with status code 200, with default header values.
 
 Information about a stargate
 */
@@ -110,9 +111,39 @@ type GetUniverseStargatesStargateIDOK struct {
 	Payload *GetUniverseStargatesStargateIDOKBody
 }
 
+// IsSuccess returns true when this get universe stargates stargate Id o k response has a 2xx status code
+func (o *GetUniverseStargatesStargateIDOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get universe stargates stargate Id o k response has a 3xx status code
+func (o *GetUniverseStargatesStargateIDOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe stargates stargate Id o k response has a 4xx status code
+func (o *GetUniverseStargatesStargateIDOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe stargates stargate Id o k response has a 5xx status code
+func (o *GetUniverseStargatesStargateIDOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe stargates stargate Id o k response a status code equal to that given
+func (o *GetUniverseStargatesStargateIDOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetUniverseStargatesStargateIDOK) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/stargates/{stargate_id}/][%d] getUniverseStargatesStargateIdOK  %+v", 200, o.Payload)
 }
+
+func (o *GetUniverseStargatesStargateIDOK) String() string {
+	return fmt.Sprintf("[GET /v1/universe/stargates/{stargate_id}/][%d] getUniverseStargatesStargateIdOK  %+v", 200, o.Payload)
+}
+
 func (o *GetUniverseStargatesStargateIDOK) GetPayload() *GetUniverseStargatesStargateIDOKBody {
 	return o.Payload
 }
@@ -162,7 +193,8 @@ func NewGetUniverseStargatesStargateIDNotModified() *GetUniverseStargatesStargat
 	return &GetUniverseStargatesStargateIDNotModified{}
 }
 
-/* GetUniverseStargatesStargateIDNotModified describes a response with status code 304, with default header values.
+/*
+GetUniverseStargatesStargateIDNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -185,7 +217,36 @@ type GetUniverseStargatesStargateIDNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get universe stargates stargate Id not modified response has a 2xx status code
+func (o *GetUniverseStargatesStargateIDNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe stargates stargate Id not modified response has a 3xx status code
+func (o *GetUniverseStargatesStargateIDNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get universe stargates stargate Id not modified response has a 4xx status code
+func (o *GetUniverseStargatesStargateIDNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe stargates stargate Id not modified response has a 5xx status code
+func (o *GetUniverseStargatesStargateIDNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe stargates stargate Id not modified response a status code equal to that given
+func (o *GetUniverseStargatesStargateIDNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetUniverseStargatesStargateIDNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/universe/stargates/{stargate_id}/][%d] getUniverseStargatesStargateIdNotModified ", 304)
+}
+
+func (o *GetUniverseStargatesStargateIDNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/universe/stargates/{stargate_id}/][%d] getUniverseStargatesStargateIdNotModified ", 304)
 }
 
@@ -227,7 +288,8 @@ func NewGetUniverseStargatesStargateIDBadRequest() *GetUniverseStargatesStargate
 	return &GetUniverseStargatesStargateIDBadRequest{}
 }
 
-/* GetUniverseStargatesStargateIDBadRequest describes a response with status code 400, with default header values.
+/*
+GetUniverseStargatesStargateIDBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -235,9 +297,39 @@ type GetUniverseStargatesStargateIDBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get universe stargates stargate Id bad request response has a 2xx status code
+func (o *GetUniverseStargatesStargateIDBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe stargates stargate Id bad request response has a 3xx status code
+func (o *GetUniverseStargatesStargateIDBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe stargates stargate Id bad request response has a 4xx status code
+func (o *GetUniverseStargatesStargateIDBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe stargates stargate Id bad request response has a 5xx status code
+func (o *GetUniverseStargatesStargateIDBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe stargates stargate Id bad request response a status code equal to that given
+func (o *GetUniverseStargatesStargateIDBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetUniverseStargatesStargateIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/stargates/{stargate_id}/][%d] getUniverseStargatesStargateIdBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetUniverseStargatesStargateIDBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/universe/stargates/{stargate_id}/][%d] getUniverseStargatesStargateIdBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetUniverseStargatesStargateIDBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -259,7 +351,8 @@ func NewGetUniverseStargatesStargateIDNotFound() *GetUniverseStargatesStargateID
 	return &GetUniverseStargatesStargateIDNotFound{}
 }
 
-/* GetUniverseStargatesStargateIDNotFound describes a response with status code 404, with default header values.
+/*
+GetUniverseStargatesStargateIDNotFound describes a response with status code 404, with default header values.
 
 Stargate not found
 */
@@ -267,9 +360,39 @@ type GetUniverseStargatesStargateIDNotFound struct {
 	Payload *GetUniverseStargatesStargateIDNotFoundBody
 }
 
+// IsSuccess returns true when this get universe stargates stargate Id not found response has a 2xx status code
+func (o *GetUniverseStargatesStargateIDNotFound) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe stargates stargate Id not found response has a 3xx status code
+func (o *GetUniverseStargatesStargateIDNotFound) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe stargates stargate Id not found response has a 4xx status code
+func (o *GetUniverseStargatesStargateIDNotFound) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe stargates stargate Id not found response has a 5xx status code
+func (o *GetUniverseStargatesStargateIDNotFound) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe stargates stargate Id not found response a status code equal to that given
+func (o *GetUniverseStargatesStargateIDNotFound) IsCode(code int) bool {
+	return code == 404
+}
+
 func (o *GetUniverseStargatesStargateIDNotFound) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/stargates/{stargate_id}/][%d] getUniverseStargatesStargateIdNotFound  %+v", 404, o.Payload)
 }
+
+func (o *GetUniverseStargatesStargateIDNotFound) String() string {
+	return fmt.Sprintf("[GET /v1/universe/stargates/{stargate_id}/][%d] getUniverseStargatesStargateIdNotFound  %+v", 404, o.Payload)
+}
+
 func (o *GetUniverseStargatesStargateIDNotFound) GetPayload() *GetUniverseStargatesStargateIDNotFoundBody {
 	return o.Payload
 }
@@ -291,7 +414,8 @@ func NewGetUniverseStargatesStargateIDEnhanceYourCalm() *GetUniverseStargatesSta
 	return &GetUniverseStargatesStargateIDEnhanceYourCalm{}
 }
 
-/* GetUniverseStargatesStargateIDEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetUniverseStargatesStargateIDEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -299,9 +423,39 @@ type GetUniverseStargatesStargateIDEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get universe stargates stargate Id enhance your calm response has a 2xx status code
+func (o *GetUniverseStargatesStargateIDEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe stargates stargate Id enhance your calm response has a 3xx status code
+func (o *GetUniverseStargatesStargateIDEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe stargates stargate Id enhance your calm response has a 4xx status code
+func (o *GetUniverseStargatesStargateIDEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe stargates stargate Id enhance your calm response has a 5xx status code
+func (o *GetUniverseStargatesStargateIDEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe stargates stargate Id enhance your calm response a status code equal to that given
+func (o *GetUniverseStargatesStargateIDEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetUniverseStargatesStargateIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/stargates/{stargate_id}/][%d] getUniverseStargatesStargateIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetUniverseStargatesStargateIDEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/universe/stargates/{stargate_id}/][%d] getUniverseStargatesStargateIdEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetUniverseStargatesStargateIDEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -323,7 +477,8 @@ func NewGetUniverseStargatesStargateIDInternalServerError() *GetUniverseStargate
 	return &GetUniverseStargatesStargateIDInternalServerError{}
 }
 
-/* GetUniverseStargatesStargateIDInternalServerError describes a response with status code 500, with default header values.
+/*
+GetUniverseStargatesStargateIDInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -331,9 +486,39 @@ type GetUniverseStargatesStargateIDInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get universe stargates stargate Id internal server error response has a 2xx status code
+func (o *GetUniverseStargatesStargateIDInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe stargates stargate Id internal server error response has a 3xx status code
+func (o *GetUniverseStargatesStargateIDInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe stargates stargate Id internal server error response has a 4xx status code
+func (o *GetUniverseStargatesStargateIDInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe stargates stargate Id internal server error response has a 5xx status code
+func (o *GetUniverseStargatesStargateIDInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe stargates stargate Id internal server error response a status code equal to that given
+func (o *GetUniverseStargatesStargateIDInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetUniverseStargatesStargateIDInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/stargates/{stargate_id}/][%d] getUniverseStargatesStargateIdInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetUniverseStargatesStargateIDInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/universe/stargates/{stargate_id}/][%d] getUniverseStargatesStargateIdInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetUniverseStargatesStargateIDInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -355,7 +540,8 @@ func NewGetUniverseStargatesStargateIDServiceUnavailable() *GetUniverseStargates
 	return &GetUniverseStargatesStargateIDServiceUnavailable{}
 }
 
-/* GetUniverseStargatesStargateIDServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetUniverseStargatesStargateIDServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -363,9 +549,39 @@ type GetUniverseStargatesStargateIDServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get universe stargates stargate Id service unavailable response has a 2xx status code
+func (o *GetUniverseStargatesStargateIDServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe stargates stargate Id service unavailable response has a 3xx status code
+func (o *GetUniverseStargatesStargateIDServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe stargates stargate Id service unavailable response has a 4xx status code
+func (o *GetUniverseStargatesStargateIDServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe stargates stargate Id service unavailable response has a 5xx status code
+func (o *GetUniverseStargatesStargateIDServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe stargates stargate Id service unavailable response a status code equal to that given
+func (o *GetUniverseStargatesStargateIDServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetUniverseStargatesStargateIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/stargates/{stargate_id}/][%d] getUniverseStargatesStargateIdServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetUniverseStargatesStargateIDServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/universe/stargates/{stargate_id}/][%d] getUniverseStargatesStargateIdServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetUniverseStargatesStargateIDServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -387,7 +603,8 @@ func NewGetUniverseStargatesStargateIDGatewayTimeout() *GetUniverseStargatesStar
 	return &GetUniverseStargatesStargateIDGatewayTimeout{}
 }
 
-/* GetUniverseStargatesStargateIDGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetUniverseStargatesStargateIDGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -395,9 +612,39 @@ type GetUniverseStargatesStargateIDGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get universe stargates stargate Id gateway timeout response has a 2xx status code
+func (o *GetUniverseStargatesStargateIDGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe stargates stargate Id gateway timeout response has a 3xx status code
+func (o *GetUniverseStargatesStargateIDGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe stargates stargate Id gateway timeout response has a 4xx status code
+func (o *GetUniverseStargatesStargateIDGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe stargates stargate Id gateway timeout response has a 5xx status code
+func (o *GetUniverseStargatesStargateIDGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe stargates stargate Id gateway timeout response a status code equal to that given
+func (o *GetUniverseStargatesStargateIDGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetUniverseStargatesStargateIDGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/stargates/{stargate_id}/][%d] getUniverseStargatesStargateIdGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetUniverseStargatesStargateIDGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/universe/stargates/{stargate_id}/][%d] getUniverseStargatesStargateIdGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetUniverseStargatesStargateIDGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -414,7 +661,8 @@ func (o *GetUniverseStargatesStargateIDGatewayTimeout) readResponse(response run
 	return nil
 }
 
-/*GetUniverseStargatesStargateIDNotFoundBody get_universe_stargates_stargate_id_not_found
+/*
+GetUniverseStargatesStargateIDNotFoundBody get_universe_stargates_stargate_id_not_found
 //
 // Not found
 swagger:model GetUniverseStargatesStargateIDNotFoundBody
@@ -455,7 +703,8 @@ func (o *GetUniverseStargatesStargateIDNotFoundBody) UnmarshalBinary(b []byte) e
 	return nil
 }
 
-/*GetUniverseStargatesStargateIDOKBody get_universe_stargates_stargate_id_ok
+/*
+GetUniverseStargatesStargateIDOKBody get_universe_stargates_stargate_id_ok
 //
 // 200 ok object
 swagger:model GetUniverseStargatesStargateIDOKBody
@@ -673,7 +922,8 @@ func (o *GetUniverseStargatesStargateIDOKBody) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*GetUniverseStargatesStargateIDOKBodyDestination get_universe_stargates_stargate_id_destination
+/*
+GetUniverseStargatesStargateIDOKBodyDestination get_universe_stargates_stargate_id_destination
 //
 // destination object
 swagger:model GetUniverseStargatesStargateIDOKBodyDestination
@@ -752,7 +1002,8 @@ func (o *GetUniverseStargatesStargateIDOKBodyDestination) UnmarshalBinary(b []by
 	return nil
 }
 
-/*GetUniverseStargatesStargateIDOKBodyPosition get_universe_stargates_stargate_id_position
+/*
+GetUniverseStargatesStargateIDOKBodyPosition get_universe_stargates_stargate_id_position
 //
 // position object
 swagger:model GetUniverseStargatesStargateIDOKBodyPosition

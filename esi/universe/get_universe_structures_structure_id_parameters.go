@@ -53,10 +53,12 @@ func NewGetUniverseStructuresStructureIDParamsWithHTTPClient(client *http.Client
 	}
 }
 
-/* GetUniverseStructuresStructureIDParams contains all the parameters to send to the API endpoint
-   for the get universe structures structure id operation.
+/*
+GetUniverseStructuresStructureIDParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get universe structures structure id operation.
+
+	Typically these are written to a http.Request.
 */
 type GetUniverseStructuresStructureIDParams struct {
 

@@ -53,10 +53,12 @@ func NewGetCorporationsCorporationIDAssetsParamsWithHTTPClient(client *http.Clie
 	}
 }
 
-/* GetCorporationsCorporationIDAssetsParams contains all the parameters to send to the API endpoint
-   for the get corporations corporation id assets operation.
+/*
+GetCorporationsCorporationIDAssetsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get corporations corporation id assets operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCorporationsCorporationIDAssetsParams struct {
 

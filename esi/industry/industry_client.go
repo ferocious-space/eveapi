@@ -50,9 +50,9 @@ type ClientService interface {
 }
 
 /*
-  GetCharactersCharacterIDIndustryJobs lists character industry jobs
+	GetCharactersCharacterIDIndustryJobs lists character industry jobs
 
-  List industry jobs placed by a character
+	List industry jobs placed by a character
 
 ---
 
@@ -95,9 +95,9 @@ func (a *Client) GetCharactersCharacterIDIndustryJobs(params *GetCharactersChara
 }
 
 /*
-  GetCharactersCharacterIDMining characters mining ledger
+	GetCharactersCharacterIDMining characters mining ledger
 
-  Paginated record of all mining done by a character for the past 30 days
+	Paginated record of all mining done by a character for the past 30 days
 
 ---
 
@@ -140,13 +140,13 @@ func (a *Client) GetCharactersCharacterIDMining(params *GetCharactersCharacterID
 }
 
 /*
-  GetCorporationCorporationIDMiningExtractions moons extraction timers
+	GetCorporationCorporationIDMiningExtractions moons extraction timers
 
-  Extraction timers for all moon chunks being extracted by refineries belonging to a corporation.
+	Extraction timers for all moon chunks being extracted by refineries belonging to a corporation.
 
 ---
 
-This route is cached for up to 1800 seconds
+# This route is cached for up to 1800 seconds
 
 ---
 Requires one of the following EVE corporation role(s): Station_Manager
@@ -188,13 +188,13 @@ func (a *Client) GetCorporationCorporationIDMiningExtractions(params *GetCorpora
 }
 
 /*
-  GetCorporationCorporationIDMiningObservers corporations mining observers
+	GetCorporationCorporationIDMiningObservers corporations mining observers
 
-  Paginated list of all entities capable of observing and recording mining for a corporation
+	Paginated list of all entities capable of observing and recording mining for a corporation
 
 ---
 
-This route is cached for up to 3600 seconds
+# This route is cached for up to 3600 seconds
 
 ---
 Requires one of the following EVE corporation role(s): Accountant
@@ -236,13 +236,13 @@ func (a *Client) GetCorporationCorporationIDMiningObservers(params *GetCorporati
 }
 
 /*
-  GetCorporationCorporationIDMiningObserversObserverID observeds corporation mining
+	GetCorporationCorporationIDMiningObserversObserverID observeds corporation mining
 
-  Paginated record of all mining seen by an observer
+	Paginated record of all mining seen by an observer
 
 ---
 
-This route is cached for up to 3600 seconds
+# This route is cached for up to 3600 seconds
 
 ---
 Requires one of the following EVE corporation role(s): Accountant
@@ -284,13 +284,13 @@ func (a *Client) GetCorporationCorporationIDMiningObserversObserverID(params *Ge
 }
 
 /*
-  GetCorporationsCorporationIDIndustryJobs lists corporation industry jobs
+	GetCorporationsCorporationIDIndustryJobs lists corporation industry jobs
 
-  List industry jobs run by a corporation
+	List industry jobs run by a corporation
 
 ---
 
-This route is cached for up to 300 seconds
+# This route is cached for up to 300 seconds
 
 ---
 Requires one of the following EVE corporation role(s): Factory_Manager
@@ -332,9 +332,9 @@ func (a *Client) GetCorporationsCorporationIDIndustryJobs(params *GetCorporation
 }
 
 /*
-  GetIndustryFacilities lists industry facilities
+	GetIndustryFacilities lists industry facilities
 
-  Return a list of industry facilities
+	Return a list of industry facilities
 
 ---
 
@@ -376,9 +376,9 @@ func (a *Client) GetIndustryFacilities(params *GetIndustryFacilitiesParams, opts
 }
 
 /*
-  GetIndustrySystems lists solar system cost indices
+	GetIndustrySystems lists solar system cost indices
 
-  Return cost indices for solar systems
+	Return cost indices for solar systems
 
 ---
 

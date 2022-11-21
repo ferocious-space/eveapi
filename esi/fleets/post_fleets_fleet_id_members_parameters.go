@@ -53,10 +53,12 @@ func NewPostFleetsFleetIDMembersParamsWithHTTPClient(client *http.Client) *PostF
 	}
 }
 
-/* PostFleetsFleetIDMembersParams contains all the parameters to send to the API endpoint
-   for the post fleets fleet id members operation.
+/*
+PostFleetsFleetIDMembersParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the post fleets fleet id members operation.
+
+	Typically these are written to a http.Request.
 */
 type PostFleetsFleetIDMembersParams struct {
 

@@ -74,7 +74,8 @@ func NewPostUniverseIdsOK() *PostUniverseIdsOK {
 	return &PostUniverseIdsOK{}
 }
 
-/* PostUniverseIdsOK describes a response with status code 200, with default header values.
+/*
+PostUniverseIdsOK describes a response with status code 200, with default header values.
 
 List of id/name associations for a set of names divided by category. Any name passed in that did not have a match will be ommitted
 */
@@ -87,9 +88,39 @@ type PostUniverseIdsOK struct {
 	Payload *PostUniverseIdsOKBody
 }
 
+// IsSuccess returns true when this post universe ids o k response has a 2xx status code
+func (o *PostUniverseIdsOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this post universe ids o k response has a 3xx status code
+func (o *PostUniverseIdsOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post universe ids o k response has a 4xx status code
+func (o *PostUniverseIdsOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post universe ids o k response has a 5xx status code
+func (o *PostUniverseIdsOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post universe ids o k response a status code equal to that given
+func (o *PostUniverseIdsOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *PostUniverseIdsOK) Error() string {
 	return fmt.Sprintf("[POST /v1/universe/ids/][%d] postUniverseIdsOK  %+v", 200, o.Payload)
 }
+
+func (o *PostUniverseIdsOK) String() string {
+	return fmt.Sprintf("[POST /v1/universe/ids/][%d] postUniverseIdsOK  %+v", 200, o.Payload)
+}
+
 func (o *PostUniverseIdsOK) GetPayload() *PostUniverseIdsOKBody {
 	return o.Payload
 }
@@ -118,7 +149,8 @@ func NewPostUniverseIdsBadRequest() *PostUniverseIdsBadRequest {
 	return &PostUniverseIdsBadRequest{}
 }
 
-/* PostUniverseIdsBadRequest describes a response with status code 400, with default header values.
+/*
+PostUniverseIdsBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -126,9 +158,39 @@ type PostUniverseIdsBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this post universe ids bad request response has a 2xx status code
+func (o *PostUniverseIdsBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post universe ids bad request response has a 3xx status code
+func (o *PostUniverseIdsBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post universe ids bad request response has a 4xx status code
+func (o *PostUniverseIdsBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post universe ids bad request response has a 5xx status code
+func (o *PostUniverseIdsBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post universe ids bad request response a status code equal to that given
+func (o *PostUniverseIdsBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *PostUniverseIdsBadRequest) Error() string {
 	return fmt.Sprintf("[POST /v1/universe/ids/][%d] postUniverseIdsBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *PostUniverseIdsBadRequest) String() string {
+	return fmt.Sprintf("[POST /v1/universe/ids/][%d] postUniverseIdsBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *PostUniverseIdsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -150,7 +212,8 @@ func NewPostUniverseIdsEnhanceYourCalm() *PostUniverseIdsEnhanceYourCalm {
 	return &PostUniverseIdsEnhanceYourCalm{}
 }
 
-/* PostUniverseIdsEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+PostUniverseIdsEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -158,9 +221,39 @@ type PostUniverseIdsEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this post universe ids enhance your calm response has a 2xx status code
+func (o *PostUniverseIdsEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post universe ids enhance your calm response has a 3xx status code
+func (o *PostUniverseIdsEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post universe ids enhance your calm response has a 4xx status code
+func (o *PostUniverseIdsEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post universe ids enhance your calm response has a 5xx status code
+func (o *PostUniverseIdsEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post universe ids enhance your calm response a status code equal to that given
+func (o *PostUniverseIdsEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *PostUniverseIdsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[POST /v1/universe/ids/][%d] postUniverseIdsEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *PostUniverseIdsEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[POST /v1/universe/ids/][%d] postUniverseIdsEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *PostUniverseIdsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -182,7 +275,8 @@ func NewPostUniverseIdsInternalServerError() *PostUniverseIdsInternalServerError
 	return &PostUniverseIdsInternalServerError{}
 }
 
-/* PostUniverseIdsInternalServerError describes a response with status code 500, with default header values.
+/*
+PostUniverseIdsInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -190,9 +284,39 @@ type PostUniverseIdsInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this post universe ids internal server error response has a 2xx status code
+func (o *PostUniverseIdsInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post universe ids internal server error response has a 3xx status code
+func (o *PostUniverseIdsInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post universe ids internal server error response has a 4xx status code
+func (o *PostUniverseIdsInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post universe ids internal server error response has a 5xx status code
+func (o *PostUniverseIdsInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post universe ids internal server error response a status code equal to that given
+func (o *PostUniverseIdsInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *PostUniverseIdsInternalServerError) Error() string {
 	return fmt.Sprintf("[POST /v1/universe/ids/][%d] postUniverseIdsInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *PostUniverseIdsInternalServerError) String() string {
+	return fmt.Sprintf("[POST /v1/universe/ids/][%d] postUniverseIdsInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *PostUniverseIdsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -214,7 +338,8 @@ func NewPostUniverseIdsServiceUnavailable() *PostUniverseIdsServiceUnavailable {
 	return &PostUniverseIdsServiceUnavailable{}
 }
 
-/* PostUniverseIdsServiceUnavailable describes a response with status code 503, with default header values.
+/*
+PostUniverseIdsServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -222,9 +347,39 @@ type PostUniverseIdsServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this post universe ids service unavailable response has a 2xx status code
+func (o *PostUniverseIdsServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post universe ids service unavailable response has a 3xx status code
+func (o *PostUniverseIdsServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post universe ids service unavailable response has a 4xx status code
+func (o *PostUniverseIdsServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post universe ids service unavailable response has a 5xx status code
+func (o *PostUniverseIdsServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post universe ids service unavailable response a status code equal to that given
+func (o *PostUniverseIdsServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *PostUniverseIdsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[POST /v1/universe/ids/][%d] postUniverseIdsServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *PostUniverseIdsServiceUnavailable) String() string {
+	return fmt.Sprintf("[POST /v1/universe/ids/][%d] postUniverseIdsServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *PostUniverseIdsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -246,7 +401,8 @@ func NewPostUniverseIdsGatewayTimeout() *PostUniverseIdsGatewayTimeout {
 	return &PostUniverseIdsGatewayTimeout{}
 }
 
-/* PostUniverseIdsGatewayTimeout describes a response with status code 504, with default header values.
+/*
+PostUniverseIdsGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -254,9 +410,39 @@ type PostUniverseIdsGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this post universe ids gateway timeout response has a 2xx status code
+func (o *PostUniverseIdsGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post universe ids gateway timeout response has a 3xx status code
+func (o *PostUniverseIdsGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post universe ids gateway timeout response has a 4xx status code
+func (o *PostUniverseIdsGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post universe ids gateway timeout response has a 5xx status code
+func (o *PostUniverseIdsGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post universe ids gateway timeout response a status code equal to that given
+func (o *PostUniverseIdsGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *PostUniverseIdsGatewayTimeout) Error() string {
 	return fmt.Sprintf("[POST /v1/universe/ids/][%d] postUniverseIdsGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *PostUniverseIdsGatewayTimeout) String() string {
+	return fmt.Sprintf("[POST /v1/universe/ids/][%d] postUniverseIdsGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *PostUniverseIdsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -273,7 +459,8 @@ func (o *PostUniverseIdsGatewayTimeout) readResponse(response runtime.ClientResp
 	return nil
 }
 
-/*PostUniverseIdsOKBody post_universe_ids_ok
+/*
+PostUniverseIdsOKBody post_universe_ids_ok
 //
 // 200 ok object
 swagger:model PostUniverseIdsOKBody
@@ -979,7 +1166,8 @@ func (o *PostUniverseIdsOKBody) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*PostUniverseIdsOKBodyAgentsItems0 post_universe_ids_agent
+/*
+PostUniverseIdsOKBodyAgentsItems0 post_universe_ids_agent
 //
 // agent object
 swagger:model PostUniverseIdsOKBodyAgentsItems0
@@ -1025,7 +1213,8 @@ func (o *PostUniverseIdsOKBodyAgentsItems0) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*PostUniverseIdsOKBodyAlliancesItems0 post_universe_ids_alliance
+/*
+PostUniverseIdsOKBodyAlliancesItems0 post_universe_ids_alliance
 //
 // alliance object
 swagger:model PostUniverseIdsOKBodyAlliancesItems0
@@ -1071,7 +1260,8 @@ func (o *PostUniverseIdsOKBodyAlliancesItems0) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*PostUniverseIdsOKBodyCharactersItems0 post_universe_ids_character
+/*
+PostUniverseIdsOKBodyCharactersItems0 post_universe_ids_character
 //
 // character object
 swagger:model PostUniverseIdsOKBodyCharactersItems0
@@ -1117,7 +1307,8 @@ func (o *PostUniverseIdsOKBodyCharactersItems0) UnmarshalBinary(b []byte) error 
 	return nil
 }
 
-/*PostUniverseIdsOKBodyConstellationsItems0 post_universe_ids_constellation
+/*
+PostUniverseIdsOKBodyConstellationsItems0 post_universe_ids_constellation
 //
 // constellation object
 swagger:model PostUniverseIdsOKBodyConstellationsItems0
@@ -1163,7 +1354,8 @@ func (o *PostUniverseIdsOKBodyConstellationsItems0) UnmarshalBinary(b []byte) er
 	return nil
 }
 
-/*PostUniverseIdsOKBodyCorporationsItems0 post_universe_ids_corporation
+/*
+PostUniverseIdsOKBodyCorporationsItems0 post_universe_ids_corporation
 //
 // corporation object
 swagger:model PostUniverseIdsOKBodyCorporationsItems0
@@ -1209,7 +1401,8 @@ func (o *PostUniverseIdsOKBodyCorporationsItems0) UnmarshalBinary(b []byte) erro
 	return nil
 }
 
-/*PostUniverseIdsOKBodyFactionsItems0 post_universe_ids_faction
+/*
+PostUniverseIdsOKBodyFactionsItems0 post_universe_ids_faction
 //
 // faction object
 swagger:model PostUniverseIdsOKBodyFactionsItems0
@@ -1255,7 +1448,8 @@ func (o *PostUniverseIdsOKBodyFactionsItems0) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*PostUniverseIdsOKBodyInventoryTypesItems0 post_universe_ids_inventory_type
+/*
+PostUniverseIdsOKBodyInventoryTypesItems0 post_universe_ids_inventory_type
 //
 // inventory_type object
 swagger:model PostUniverseIdsOKBodyInventoryTypesItems0
@@ -1301,7 +1495,8 @@ func (o *PostUniverseIdsOKBodyInventoryTypesItems0) UnmarshalBinary(b []byte) er
 	return nil
 }
 
-/*PostUniverseIdsOKBodyRegionsItems0 post_universe_ids_region
+/*
+PostUniverseIdsOKBodyRegionsItems0 post_universe_ids_region
 //
 // region object
 swagger:model PostUniverseIdsOKBodyRegionsItems0
@@ -1347,7 +1542,8 @@ func (o *PostUniverseIdsOKBodyRegionsItems0) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*PostUniverseIdsOKBodyStationsItems0 post_universe_ids_station
+/*
+PostUniverseIdsOKBodyStationsItems0 post_universe_ids_station
 //
 // station object
 swagger:model PostUniverseIdsOKBodyStationsItems0
@@ -1393,7 +1589,8 @@ func (o *PostUniverseIdsOKBodyStationsItems0) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*PostUniverseIdsOKBodySystemsItems0 post_universe_ids_system
+/*
+PostUniverseIdsOKBodySystemsItems0 post_universe_ids_system
 //
 // system object
 swagger:model PostUniverseIdsOKBodySystemsItems0

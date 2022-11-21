@@ -53,10 +53,12 @@ func NewGetCorporationsCorporationIDMembertrackingParamsWithHTTPClient(client *h
 	}
 }
 
-/* GetCorporationsCorporationIDMembertrackingParams contains all the parameters to send to the API endpoint
-   for the get corporations corporation id membertracking operation.
+/*
+GetCorporationsCorporationIDMembertrackingParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get corporations corporation id membertracking operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCorporationsCorporationIDMembertrackingParams struct {
 

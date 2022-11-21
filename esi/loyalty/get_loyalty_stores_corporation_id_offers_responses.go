@@ -86,7 +86,8 @@ func NewGetLoyaltyStoresCorporationIDOffersOK() *GetLoyaltyStoresCorporationIDOf
 	return &GetLoyaltyStoresCorporationIDOffersOK{}
 }
 
-/* GetLoyaltyStoresCorporationIDOffersOK describes a response with status code 200, with default header values.
+/*
+GetLoyaltyStoresCorporationIDOffersOK describes a response with status code 200, with default header values.
 
 A list of offers
 */
@@ -111,9 +112,39 @@ type GetLoyaltyStoresCorporationIDOffersOK struct {
 	Payload []*GetLoyaltyStoresCorporationIDOffersOKBodyItems0
 }
 
+// IsSuccess returns true when this get loyalty stores corporation Id offers o k response has a 2xx status code
+func (o *GetLoyaltyStoresCorporationIDOffersOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get loyalty stores corporation Id offers o k response has a 3xx status code
+func (o *GetLoyaltyStoresCorporationIDOffersOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get loyalty stores corporation Id offers o k response has a 4xx status code
+func (o *GetLoyaltyStoresCorporationIDOffersOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get loyalty stores corporation Id offers o k response has a 5xx status code
+func (o *GetLoyaltyStoresCorporationIDOffersOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get loyalty stores corporation Id offers o k response a status code equal to that given
+func (o *GetLoyaltyStoresCorporationIDOffersOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetLoyaltyStoresCorporationIDOffersOK) Error() string {
 	return fmt.Sprintf("[GET /v1/loyalty/stores/{corporation_id}/offers/][%d] getLoyaltyStoresCorporationIdOffersOK  %+v", 200, o.Payload)
 }
+
+func (o *GetLoyaltyStoresCorporationIDOffersOK) String() string {
+	return fmt.Sprintf("[GET /v1/loyalty/stores/{corporation_id}/offers/][%d] getLoyaltyStoresCorporationIdOffersOK  %+v", 200, o.Payload)
+}
+
 func (o *GetLoyaltyStoresCorporationIDOffersOK) GetPayload() []*GetLoyaltyStoresCorporationIDOffersOKBodyItems0 {
 	return o.Payload
 }
@@ -161,7 +192,8 @@ func NewGetLoyaltyStoresCorporationIDOffersNotModified() *GetLoyaltyStoresCorpor
 	return &GetLoyaltyStoresCorporationIDOffersNotModified{}
 }
 
-/* GetLoyaltyStoresCorporationIDOffersNotModified describes a response with status code 304, with default header values.
+/*
+GetLoyaltyStoresCorporationIDOffersNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -184,7 +216,36 @@ type GetLoyaltyStoresCorporationIDOffersNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get loyalty stores corporation Id offers not modified response has a 2xx status code
+func (o *GetLoyaltyStoresCorporationIDOffersNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get loyalty stores corporation Id offers not modified response has a 3xx status code
+func (o *GetLoyaltyStoresCorporationIDOffersNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get loyalty stores corporation Id offers not modified response has a 4xx status code
+func (o *GetLoyaltyStoresCorporationIDOffersNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get loyalty stores corporation Id offers not modified response has a 5xx status code
+func (o *GetLoyaltyStoresCorporationIDOffersNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get loyalty stores corporation Id offers not modified response a status code equal to that given
+func (o *GetLoyaltyStoresCorporationIDOffersNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetLoyaltyStoresCorporationIDOffersNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/loyalty/stores/{corporation_id}/offers/][%d] getLoyaltyStoresCorporationIdOffersNotModified ", 304)
+}
+
+func (o *GetLoyaltyStoresCorporationIDOffersNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/loyalty/stores/{corporation_id}/offers/][%d] getLoyaltyStoresCorporationIdOffersNotModified ", 304)
 }
 
@@ -226,7 +287,8 @@ func NewGetLoyaltyStoresCorporationIDOffersBadRequest() *GetLoyaltyStoresCorpora
 	return &GetLoyaltyStoresCorporationIDOffersBadRequest{}
 }
 
-/* GetLoyaltyStoresCorporationIDOffersBadRequest describes a response with status code 400, with default header values.
+/*
+GetLoyaltyStoresCorporationIDOffersBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -234,9 +296,39 @@ type GetLoyaltyStoresCorporationIDOffersBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get loyalty stores corporation Id offers bad request response has a 2xx status code
+func (o *GetLoyaltyStoresCorporationIDOffersBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get loyalty stores corporation Id offers bad request response has a 3xx status code
+func (o *GetLoyaltyStoresCorporationIDOffersBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get loyalty stores corporation Id offers bad request response has a 4xx status code
+func (o *GetLoyaltyStoresCorporationIDOffersBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get loyalty stores corporation Id offers bad request response has a 5xx status code
+func (o *GetLoyaltyStoresCorporationIDOffersBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get loyalty stores corporation Id offers bad request response a status code equal to that given
+func (o *GetLoyaltyStoresCorporationIDOffersBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetLoyaltyStoresCorporationIDOffersBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/loyalty/stores/{corporation_id}/offers/][%d] getLoyaltyStoresCorporationIdOffersBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetLoyaltyStoresCorporationIDOffersBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/loyalty/stores/{corporation_id}/offers/][%d] getLoyaltyStoresCorporationIdOffersBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetLoyaltyStoresCorporationIDOffersBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -258,7 +350,8 @@ func NewGetLoyaltyStoresCorporationIDOffersNotFound() *GetLoyaltyStoresCorporati
 	return &GetLoyaltyStoresCorporationIDOffersNotFound{}
 }
 
-/* GetLoyaltyStoresCorporationIDOffersNotFound describes a response with status code 404, with default header values.
+/*
+GetLoyaltyStoresCorporationIDOffersNotFound describes a response with status code 404, with default header values.
 
 No loyalty point store found for the provided corporation
 */
@@ -266,9 +359,39 @@ type GetLoyaltyStoresCorporationIDOffersNotFound struct {
 	Payload *GetLoyaltyStoresCorporationIDOffersNotFoundBody
 }
 
+// IsSuccess returns true when this get loyalty stores corporation Id offers not found response has a 2xx status code
+func (o *GetLoyaltyStoresCorporationIDOffersNotFound) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get loyalty stores corporation Id offers not found response has a 3xx status code
+func (o *GetLoyaltyStoresCorporationIDOffersNotFound) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get loyalty stores corporation Id offers not found response has a 4xx status code
+func (o *GetLoyaltyStoresCorporationIDOffersNotFound) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get loyalty stores corporation Id offers not found response has a 5xx status code
+func (o *GetLoyaltyStoresCorporationIDOffersNotFound) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get loyalty stores corporation Id offers not found response a status code equal to that given
+func (o *GetLoyaltyStoresCorporationIDOffersNotFound) IsCode(code int) bool {
+	return code == 404
+}
+
 func (o *GetLoyaltyStoresCorporationIDOffersNotFound) Error() string {
 	return fmt.Sprintf("[GET /v1/loyalty/stores/{corporation_id}/offers/][%d] getLoyaltyStoresCorporationIdOffersNotFound  %+v", 404, o.Payload)
 }
+
+func (o *GetLoyaltyStoresCorporationIDOffersNotFound) String() string {
+	return fmt.Sprintf("[GET /v1/loyalty/stores/{corporation_id}/offers/][%d] getLoyaltyStoresCorporationIdOffersNotFound  %+v", 404, o.Payload)
+}
+
 func (o *GetLoyaltyStoresCorporationIDOffersNotFound) GetPayload() *GetLoyaltyStoresCorporationIDOffersNotFoundBody {
 	return o.Payload
 }
@@ -290,7 +413,8 @@ func NewGetLoyaltyStoresCorporationIDOffersEnhanceYourCalm() *GetLoyaltyStoresCo
 	return &GetLoyaltyStoresCorporationIDOffersEnhanceYourCalm{}
 }
 
-/* GetLoyaltyStoresCorporationIDOffersEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetLoyaltyStoresCorporationIDOffersEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -298,9 +422,39 @@ type GetLoyaltyStoresCorporationIDOffersEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get loyalty stores corporation Id offers enhance your calm response has a 2xx status code
+func (o *GetLoyaltyStoresCorporationIDOffersEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get loyalty stores corporation Id offers enhance your calm response has a 3xx status code
+func (o *GetLoyaltyStoresCorporationIDOffersEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get loyalty stores corporation Id offers enhance your calm response has a 4xx status code
+func (o *GetLoyaltyStoresCorporationIDOffersEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get loyalty stores corporation Id offers enhance your calm response has a 5xx status code
+func (o *GetLoyaltyStoresCorporationIDOffersEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get loyalty stores corporation Id offers enhance your calm response a status code equal to that given
+func (o *GetLoyaltyStoresCorporationIDOffersEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetLoyaltyStoresCorporationIDOffersEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/loyalty/stores/{corporation_id}/offers/][%d] getLoyaltyStoresCorporationIdOffersEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetLoyaltyStoresCorporationIDOffersEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/loyalty/stores/{corporation_id}/offers/][%d] getLoyaltyStoresCorporationIdOffersEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetLoyaltyStoresCorporationIDOffersEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -322,7 +476,8 @@ func NewGetLoyaltyStoresCorporationIDOffersInternalServerError() *GetLoyaltyStor
 	return &GetLoyaltyStoresCorporationIDOffersInternalServerError{}
 }
 
-/* GetLoyaltyStoresCorporationIDOffersInternalServerError describes a response with status code 500, with default header values.
+/*
+GetLoyaltyStoresCorporationIDOffersInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -330,9 +485,39 @@ type GetLoyaltyStoresCorporationIDOffersInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get loyalty stores corporation Id offers internal server error response has a 2xx status code
+func (o *GetLoyaltyStoresCorporationIDOffersInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get loyalty stores corporation Id offers internal server error response has a 3xx status code
+func (o *GetLoyaltyStoresCorporationIDOffersInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get loyalty stores corporation Id offers internal server error response has a 4xx status code
+func (o *GetLoyaltyStoresCorporationIDOffersInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get loyalty stores corporation Id offers internal server error response has a 5xx status code
+func (o *GetLoyaltyStoresCorporationIDOffersInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get loyalty stores corporation Id offers internal server error response a status code equal to that given
+func (o *GetLoyaltyStoresCorporationIDOffersInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetLoyaltyStoresCorporationIDOffersInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/loyalty/stores/{corporation_id}/offers/][%d] getLoyaltyStoresCorporationIdOffersInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetLoyaltyStoresCorporationIDOffersInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/loyalty/stores/{corporation_id}/offers/][%d] getLoyaltyStoresCorporationIdOffersInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetLoyaltyStoresCorporationIDOffersInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -354,7 +539,8 @@ func NewGetLoyaltyStoresCorporationIDOffersServiceUnavailable() *GetLoyaltyStore
 	return &GetLoyaltyStoresCorporationIDOffersServiceUnavailable{}
 }
 
-/* GetLoyaltyStoresCorporationIDOffersServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetLoyaltyStoresCorporationIDOffersServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -362,9 +548,39 @@ type GetLoyaltyStoresCorporationIDOffersServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get loyalty stores corporation Id offers service unavailable response has a 2xx status code
+func (o *GetLoyaltyStoresCorporationIDOffersServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get loyalty stores corporation Id offers service unavailable response has a 3xx status code
+func (o *GetLoyaltyStoresCorporationIDOffersServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get loyalty stores corporation Id offers service unavailable response has a 4xx status code
+func (o *GetLoyaltyStoresCorporationIDOffersServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get loyalty stores corporation Id offers service unavailable response has a 5xx status code
+func (o *GetLoyaltyStoresCorporationIDOffersServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get loyalty stores corporation Id offers service unavailable response a status code equal to that given
+func (o *GetLoyaltyStoresCorporationIDOffersServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetLoyaltyStoresCorporationIDOffersServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/loyalty/stores/{corporation_id}/offers/][%d] getLoyaltyStoresCorporationIdOffersServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetLoyaltyStoresCorporationIDOffersServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/loyalty/stores/{corporation_id}/offers/][%d] getLoyaltyStoresCorporationIdOffersServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetLoyaltyStoresCorporationIDOffersServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -386,7 +602,8 @@ func NewGetLoyaltyStoresCorporationIDOffersGatewayTimeout() *GetLoyaltyStoresCor
 	return &GetLoyaltyStoresCorporationIDOffersGatewayTimeout{}
 }
 
-/* GetLoyaltyStoresCorporationIDOffersGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetLoyaltyStoresCorporationIDOffersGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -394,9 +611,39 @@ type GetLoyaltyStoresCorporationIDOffersGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get loyalty stores corporation Id offers gateway timeout response has a 2xx status code
+func (o *GetLoyaltyStoresCorporationIDOffersGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get loyalty stores corporation Id offers gateway timeout response has a 3xx status code
+func (o *GetLoyaltyStoresCorporationIDOffersGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get loyalty stores corporation Id offers gateway timeout response has a 4xx status code
+func (o *GetLoyaltyStoresCorporationIDOffersGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get loyalty stores corporation Id offers gateway timeout response has a 5xx status code
+func (o *GetLoyaltyStoresCorporationIDOffersGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get loyalty stores corporation Id offers gateway timeout response a status code equal to that given
+func (o *GetLoyaltyStoresCorporationIDOffersGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetLoyaltyStoresCorporationIDOffersGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/loyalty/stores/{corporation_id}/offers/][%d] getLoyaltyStoresCorporationIdOffersGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetLoyaltyStoresCorporationIDOffersGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/loyalty/stores/{corporation_id}/offers/][%d] getLoyaltyStoresCorporationIdOffersGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetLoyaltyStoresCorporationIDOffersGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -413,7 +660,8 @@ func (o *GetLoyaltyStoresCorporationIDOffersGatewayTimeout) readResponse(respons
 	return nil
 }
 
-/*GetLoyaltyStoresCorporationIDOffersNotFoundBody get_loyalty_stores_corporation_id_offers_not_found
+/*
+GetLoyaltyStoresCorporationIDOffersNotFoundBody get_loyalty_stores_corporation_id_offers_not_found
 //
 // Not found
 swagger:model GetLoyaltyStoresCorporationIDOffersNotFoundBody
@@ -454,7 +702,8 @@ func (o *GetLoyaltyStoresCorporationIDOffersNotFoundBody) UnmarshalBinary(b []by
 	return nil
 }
 
-/*GetLoyaltyStoresCorporationIDOffersOKBodyItems0 get_loyalty_stores_corporation_id_offers_200_ok
+/*
+GetLoyaltyStoresCorporationIDOffersOKBodyItems0 get_loyalty_stores_corporation_id_offers_200_ok
 //
 // 200 ok object
 swagger:model GetLoyaltyStoresCorporationIDOffersOKBodyItems0
@@ -668,7 +917,8 @@ func (o *GetLoyaltyStoresCorporationIDOffersOKBodyItems0) UnmarshalBinary(b []by
 	return nil
 }
 
-/*GetLoyaltyStoresCorporationIDOffersOKBodyItems0RequiredItemsItems0 get_loyalty_stores_corporation_id_offers_required_item
+/*
+GetLoyaltyStoresCorporationIDOffersOKBodyItems0RequiredItemsItems0 get_loyalty_stores_corporation_id_offers_required_item
 //
 // required_item object
 swagger:model GetLoyaltyStoresCorporationIDOffersOKBodyItems0RequiredItemsItems0

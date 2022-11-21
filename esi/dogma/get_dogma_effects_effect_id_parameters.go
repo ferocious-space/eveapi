@@ -53,10 +53,12 @@ func NewGetDogmaEffectsEffectIDParamsWithHTTPClient(client *http.Client) *GetDog
 	}
 }
 
-/* GetDogmaEffectsEffectIDParams contains all the parameters to send to the API endpoint
-   for the get dogma effects effect id operation.
+/*
+GetDogmaEffectsEffectIDParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get dogma effects effect id operation.
+
+	Typically these are written to a http.Request.
 */
 type GetDogmaEffectsEffectIDParams struct {
 

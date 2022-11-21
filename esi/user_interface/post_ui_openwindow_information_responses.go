@@ -81,14 +81,44 @@ func NewPostUIOpenwindowInformationNoContent() *PostUIOpenwindowInformationNoCon
 	return &PostUIOpenwindowInformationNoContent{}
 }
 
-/* PostUIOpenwindowInformationNoContent describes a response with status code 204, with default header values.
+/*
+PostUIOpenwindowInformationNoContent describes a response with status code 204, with default header values.
 
 Open window request received
 */
 type PostUIOpenwindowInformationNoContent struct {
 }
 
+// IsSuccess returns true when this post Ui openwindow information no content response has a 2xx status code
+func (o *PostUIOpenwindowInformationNoContent) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this post Ui openwindow information no content response has a 3xx status code
+func (o *PostUIOpenwindowInformationNoContent) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post Ui openwindow information no content response has a 4xx status code
+func (o *PostUIOpenwindowInformationNoContent) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post Ui openwindow information no content response has a 5xx status code
+func (o *PostUIOpenwindowInformationNoContent) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post Ui openwindow information no content response a status code equal to that given
+func (o *PostUIOpenwindowInformationNoContent) IsCode(code int) bool {
+	return code == 204
+}
+
 func (o *PostUIOpenwindowInformationNoContent) Error() string {
+	return fmt.Sprintf("[POST /v1/ui/openwindow/information/][%d] postUiOpenwindowInformationNoContent ", 204)
+}
+
+func (o *PostUIOpenwindowInformationNoContent) String() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/information/][%d] postUiOpenwindowInformationNoContent ", 204)
 }
 
@@ -102,7 +132,8 @@ func NewPostUIOpenwindowInformationBadRequest() *PostUIOpenwindowInformationBadR
 	return &PostUIOpenwindowInformationBadRequest{}
 }
 
-/* PostUIOpenwindowInformationBadRequest describes a response with status code 400, with default header values.
+/*
+PostUIOpenwindowInformationBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -110,9 +141,39 @@ type PostUIOpenwindowInformationBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this post Ui openwindow information bad request response has a 2xx status code
+func (o *PostUIOpenwindowInformationBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post Ui openwindow information bad request response has a 3xx status code
+func (o *PostUIOpenwindowInformationBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post Ui openwindow information bad request response has a 4xx status code
+func (o *PostUIOpenwindowInformationBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post Ui openwindow information bad request response has a 5xx status code
+func (o *PostUIOpenwindowInformationBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post Ui openwindow information bad request response a status code equal to that given
+func (o *PostUIOpenwindowInformationBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *PostUIOpenwindowInformationBadRequest) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/information/][%d] postUiOpenwindowInformationBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *PostUIOpenwindowInformationBadRequest) String() string {
+	return fmt.Sprintf("[POST /v1/ui/openwindow/information/][%d] postUiOpenwindowInformationBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *PostUIOpenwindowInformationBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -134,7 +195,8 @@ func NewPostUIOpenwindowInformationUnauthorized() *PostUIOpenwindowInformationUn
 	return &PostUIOpenwindowInformationUnauthorized{}
 }
 
-/* PostUIOpenwindowInformationUnauthorized describes a response with status code 401, with default header values.
+/*
+PostUIOpenwindowInformationUnauthorized describes a response with status code 401, with default header values.
 
 Unauthorized
 */
@@ -142,9 +204,39 @@ type PostUIOpenwindowInformationUnauthorized struct {
 	Payload *models.Unauthorized
 }
 
+// IsSuccess returns true when this post Ui openwindow information unauthorized response has a 2xx status code
+func (o *PostUIOpenwindowInformationUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post Ui openwindow information unauthorized response has a 3xx status code
+func (o *PostUIOpenwindowInformationUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post Ui openwindow information unauthorized response has a 4xx status code
+func (o *PostUIOpenwindowInformationUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post Ui openwindow information unauthorized response has a 5xx status code
+func (o *PostUIOpenwindowInformationUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post Ui openwindow information unauthorized response a status code equal to that given
+func (o *PostUIOpenwindowInformationUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *PostUIOpenwindowInformationUnauthorized) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/information/][%d] postUiOpenwindowInformationUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *PostUIOpenwindowInformationUnauthorized) String() string {
+	return fmt.Sprintf("[POST /v1/ui/openwindow/information/][%d] postUiOpenwindowInformationUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *PostUIOpenwindowInformationUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
 }
@@ -166,7 +258,8 @@ func NewPostUIOpenwindowInformationForbidden() *PostUIOpenwindowInformationForbi
 	return &PostUIOpenwindowInformationForbidden{}
 }
 
-/* PostUIOpenwindowInformationForbidden describes a response with status code 403, with default header values.
+/*
+PostUIOpenwindowInformationForbidden describes a response with status code 403, with default header values.
 
 Forbidden
 */
@@ -174,9 +267,39 @@ type PostUIOpenwindowInformationForbidden struct {
 	Payload *models.Forbidden
 }
 
+// IsSuccess returns true when this post Ui openwindow information forbidden response has a 2xx status code
+func (o *PostUIOpenwindowInformationForbidden) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post Ui openwindow information forbidden response has a 3xx status code
+func (o *PostUIOpenwindowInformationForbidden) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post Ui openwindow information forbidden response has a 4xx status code
+func (o *PostUIOpenwindowInformationForbidden) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post Ui openwindow information forbidden response has a 5xx status code
+func (o *PostUIOpenwindowInformationForbidden) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post Ui openwindow information forbidden response a status code equal to that given
+func (o *PostUIOpenwindowInformationForbidden) IsCode(code int) bool {
+	return code == 403
+}
+
 func (o *PostUIOpenwindowInformationForbidden) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/information/][%d] postUiOpenwindowInformationForbidden  %+v", 403, o.Payload)
 }
+
+func (o *PostUIOpenwindowInformationForbidden) String() string {
+	return fmt.Sprintf("[POST /v1/ui/openwindow/information/][%d] postUiOpenwindowInformationForbidden  %+v", 403, o.Payload)
+}
+
 func (o *PostUIOpenwindowInformationForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
 }
@@ -198,7 +321,8 @@ func NewPostUIOpenwindowInformationEnhanceYourCalm() *PostUIOpenwindowInformatio
 	return &PostUIOpenwindowInformationEnhanceYourCalm{}
 }
 
-/* PostUIOpenwindowInformationEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+PostUIOpenwindowInformationEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -206,9 +330,39 @@ type PostUIOpenwindowInformationEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this post Ui openwindow information enhance your calm response has a 2xx status code
+func (o *PostUIOpenwindowInformationEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post Ui openwindow information enhance your calm response has a 3xx status code
+func (o *PostUIOpenwindowInformationEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post Ui openwindow information enhance your calm response has a 4xx status code
+func (o *PostUIOpenwindowInformationEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post Ui openwindow information enhance your calm response has a 5xx status code
+func (o *PostUIOpenwindowInformationEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post Ui openwindow information enhance your calm response a status code equal to that given
+func (o *PostUIOpenwindowInformationEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *PostUIOpenwindowInformationEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/information/][%d] postUiOpenwindowInformationEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *PostUIOpenwindowInformationEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[POST /v1/ui/openwindow/information/][%d] postUiOpenwindowInformationEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *PostUIOpenwindowInformationEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -230,7 +384,8 @@ func NewPostUIOpenwindowInformationInternalServerError() *PostUIOpenwindowInform
 	return &PostUIOpenwindowInformationInternalServerError{}
 }
 
-/* PostUIOpenwindowInformationInternalServerError describes a response with status code 500, with default header values.
+/*
+PostUIOpenwindowInformationInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -238,9 +393,39 @@ type PostUIOpenwindowInformationInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this post Ui openwindow information internal server error response has a 2xx status code
+func (o *PostUIOpenwindowInformationInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post Ui openwindow information internal server error response has a 3xx status code
+func (o *PostUIOpenwindowInformationInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post Ui openwindow information internal server error response has a 4xx status code
+func (o *PostUIOpenwindowInformationInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post Ui openwindow information internal server error response has a 5xx status code
+func (o *PostUIOpenwindowInformationInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post Ui openwindow information internal server error response a status code equal to that given
+func (o *PostUIOpenwindowInformationInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *PostUIOpenwindowInformationInternalServerError) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/information/][%d] postUiOpenwindowInformationInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *PostUIOpenwindowInformationInternalServerError) String() string {
+	return fmt.Sprintf("[POST /v1/ui/openwindow/information/][%d] postUiOpenwindowInformationInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *PostUIOpenwindowInformationInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -262,7 +447,8 @@ func NewPostUIOpenwindowInformationServiceUnavailable() *PostUIOpenwindowInforma
 	return &PostUIOpenwindowInformationServiceUnavailable{}
 }
 
-/* PostUIOpenwindowInformationServiceUnavailable describes a response with status code 503, with default header values.
+/*
+PostUIOpenwindowInformationServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -270,9 +456,39 @@ type PostUIOpenwindowInformationServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this post Ui openwindow information service unavailable response has a 2xx status code
+func (o *PostUIOpenwindowInformationServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post Ui openwindow information service unavailable response has a 3xx status code
+func (o *PostUIOpenwindowInformationServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post Ui openwindow information service unavailable response has a 4xx status code
+func (o *PostUIOpenwindowInformationServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post Ui openwindow information service unavailable response has a 5xx status code
+func (o *PostUIOpenwindowInformationServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post Ui openwindow information service unavailable response a status code equal to that given
+func (o *PostUIOpenwindowInformationServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *PostUIOpenwindowInformationServiceUnavailable) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/information/][%d] postUiOpenwindowInformationServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *PostUIOpenwindowInformationServiceUnavailable) String() string {
+	return fmt.Sprintf("[POST /v1/ui/openwindow/information/][%d] postUiOpenwindowInformationServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *PostUIOpenwindowInformationServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -294,7 +510,8 @@ func NewPostUIOpenwindowInformationGatewayTimeout() *PostUIOpenwindowInformation
 	return &PostUIOpenwindowInformationGatewayTimeout{}
 }
 
-/* PostUIOpenwindowInformationGatewayTimeout describes a response with status code 504, with default header values.
+/*
+PostUIOpenwindowInformationGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -302,9 +519,39 @@ type PostUIOpenwindowInformationGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this post Ui openwindow information gateway timeout response has a 2xx status code
+func (o *PostUIOpenwindowInformationGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post Ui openwindow information gateway timeout response has a 3xx status code
+func (o *PostUIOpenwindowInformationGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post Ui openwindow information gateway timeout response has a 4xx status code
+func (o *PostUIOpenwindowInformationGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post Ui openwindow information gateway timeout response has a 5xx status code
+func (o *PostUIOpenwindowInformationGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post Ui openwindow information gateway timeout response a status code equal to that given
+func (o *PostUIOpenwindowInformationGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *PostUIOpenwindowInformationGatewayTimeout) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/information/][%d] postUiOpenwindowInformationGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *PostUIOpenwindowInformationGatewayTimeout) String() string {
+	return fmt.Sprintf("[POST /v1/ui/openwindow/information/][%d] postUiOpenwindowInformationGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *PostUIOpenwindowInformationGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }

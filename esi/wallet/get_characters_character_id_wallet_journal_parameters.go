@@ -53,10 +53,12 @@ func NewGetCharactersCharacterIDWalletJournalParamsWithHTTPClient(client *http.C
 	}
 }
 
-/* GetCharactersCharacterIDWalletJournalParams contains all the parameters to send to the API endpoint
-   for the get characters character id wallet journal operation.
+/*
+GetCharactersCharacterIDWalletJournalParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get characters character id wallet journal operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCharactersCharacterIDWalletJournalParams struct {
 

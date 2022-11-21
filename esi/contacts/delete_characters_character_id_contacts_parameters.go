@@ -53,10 +53,12 @@ func NewDeleteCharactersCharacterIDContactsParamsWithHTTPClient(client *http.Cli
 	}
 }
 
-/* DeleteCharactersCharacterIDContactsParams contains all the parameters to send to the API endpoint
-   for the delete characters character id contacts operation.
+/*
+DeleteCharactersCharacterIDContactsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the delete characters character id contacts operation.
+
+	Typically these are written to a http.Request.
 */
 type DeleteCharactersCharacterIDContactsParams struct {
 

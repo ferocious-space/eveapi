@@ -91,7 +91,8 @@ func NewPostFleetsFleetIDWingsCreated() *PostFleetsFleetIDWingsCreated {
 	return &PostFleetsFleetIDWingsCreated{}
 }
 
-/* PostFleetsFleetIDWingsCreated describes a response with status code 201, with default header values.
+/*
+PostFleetsFleetIDWingsCreated describes a response with status code 201, with default header values.
 
 Wing created
 */
@@ -99,9 +100,39 @@ type PostFleetsFleetIDWingsCreated struct {
 	Payload *PostFleetsFleetIDWingsCreatedBody
 }
 
+// IsSuccess returns true when this post fleets fleet Id wings created response has a 2xx status code
+func (o *PostFleetsFleetIDWingsCreated) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this post fleets fleet Id wings created response has a 3xx status code
+func (o *PostFleetsFleetIDWingsCreated) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post fleets fleet Id wings created response has a 4xx status code
+func (o *PostFleetsFleetIDWingsCreated) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post fleets fleet Id wings created response has a 5xx status code
+func (o *PostFleetsFleetIDWingsCreated) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post fleets fleet Id wings created response a status code equal to that given
+func (o *PostFleetsFleetIDWingsCreated) IsCode(code int) bool {
+	return code == 201
+}
+
 func (o *PostFleetsFleetIDWingsCreated) Error() string {
 	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/wings/][%d] postFleetsFleetIdWingsCreated  %+v", 201, o.Payload)
 }
+
+func (o *PostFleetsFleetIDWingsCreated) String() string {
+	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/wings/][%d] postFleetsFleetIdWingsCreated  %+v", 201, o.Payload)
+}
+
 func (o *PostFleetsFleetIDWingsCreated) GetPayload() *PostFleetsFleetIDWingsCreatedBody {
 	return o.Payload
 }
@@ -123,7 +154,8 @@ func NewPostFleetsFleetIDWingsBadRequest() *PostFleetsFleetIDWingsBadRequest {
 	return &PostFleetsFleetIDWingsBadRequest{}
 }
 
-/* PostFleetsFleetIDWingsBadRequest describes a response with status code 400, with default header values.
+/*
+PostFleetsFleetIDWingsBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -131,9 +163,39 @@ type PostFleetsFleetIDWingsBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this post fleets fleet Id wings bad request response has a 2xx status code
+func (o *PostFleetsFleetIDWingsBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post fleets fleet Id wings bad request response has a 3xx status code
+func (o *PostFleetsFleetIDWingsBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post fleets fleet Id wings bad request response has a 4xx status code
+func (o *PostFleetsFleetIDWingsBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post fleets fleet Id wings bad request response has a 5xx status code
+func (o *PostFleetsFleetIDWingsBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post fleets fleet Id wings bad request response a status code equal to that given
+func (o *PostFleetsFleetIDWingsBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *PostFleetsFleetIDWingsBadRequest) Error() string {
 	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/wings/][%d] postFleetsFleetIdWingsBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *PostFleetsFleetIDWingsBadRequest) String() string {
+	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/wings/][%d] postFleetsFleetIdWingsBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *PostFleetsFleetIDWingsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -155,7 +217,8 @@ func NewPostFleetsFleetIDWingsUnauthorized() *PostFleetsFleetIDWingsUnauthorized
 	return &PostFleetsFleetIDWingsUnauthorized{}
 }
 
-/* PostFleetsFleetIDWingsUnauthorized describes a response with status code 401, with default header values.
+/*
+PostFleetsFleetIDWingsUnauthorized describes a response with status code 401, with default header values.
 
 Unauthorized
 */
@@ -163,9 +226,39 @@ type PostFleetsFleetIDWingsUnauthorized struct {
 	Payload *models.Unauthorized
 }
 
+// IsSuccess returns true when this post fleets fleet Id wings unauthorized response has a 2xx status code
+func (o *PostFleetsFleetIDWingsUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post fleets fleet Id wings unauthorized response has a 3xx status code
+func (o *PostFleetsFleetIDWingsUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post fleets fleet Id wings unauthorized response has a 4xx status code
+func (o *PostFleetsFleetIDWingsUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post fleets fleet Id wings unauthorized response has a 5xx status code
+func (o *PostFleetsFleetIDWingsUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post fleets fleet Id wings unauthorized response a status code equal to that given
+func (o *PostFleetsFleetIDWingsUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *PostFleetsFleetIDWingsUnauthorized) Error() string {
 	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/wings/][%d] postFleetsFleetIdWingsUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *PostFleetsFleetIDWingsUnauthorized) String() string {
+	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/wings/][%d] postFleetsFleetIdWingsUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *PostFleetsFleetIDWingsUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
 }
@@ -187,7 +280,8 @@ func NewPostFleetsFleetIDWingsForbidden() *PostFleetsFleetIDWingsForbidden {
 	return &PostFleetsFleetIDWingsForbidden{}
 }
 
-/* PostFleetsFleetIDWingsForbidden describes a response with status code 403, with default header values.
+/*
+PostFleetsFleetIDWingsForbidden describes a response with status code 403, with default header values.
 
 Forbidden
 */
@@ -195,9 +289,39 @@ type PostFleetsFleetIDWingsForbidden struct {
 	Payload *models.Forbidden
 }
 
+// IsSuccess returns true when this post fleets fleet Id wings forbidden response has a 2xx status code
+func (o *PostFleetsFleetIDWingsForbidden) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post fleets fleet Id wings forbidden response has a 3xx status code
+func (o *PostFleetsFleetIDWingsForbidden) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post fleets fleet Id wings forbidden response has a 4xx status code
+func (o *PostFleetsFleetIDWingsForbidden) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post fleets fleet Id wings forbidden response has a 5xx status code
+func (o *PostFleetsFleetIDWingsForbidden) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post fleets fleet Id wings forbidden response a status code equal to that given
+func (o *PostFleetsFleetIDWingsForbidden) IsCode(code int) bool {
+	return code == 403
+}
+
 func (o *PostFleetsFleetIDWingsForbidden) Error() string {
 	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/wings/][%d] postFleetsFleetIdWingsForbidden  %+v", 403, o.Payload)
 }
+
+func (o *PostFleetsFleetIDWingsForbidden) String() string {
+	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/wings/][%d] postFleetsFleetIdWingsForbidden  %+v", 403, o.Payload)
+}
+
 func (o *PostFleetsFleetIDWingsForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
 }
@@ -219,7 +343,8 @@ func NewPostFleetsFleetIDWingsNotFound() *PostFleetsFleetIDWingsNotFound {
 	return &PostFleetsFleetIDWingsNotFound{}
 }
 
-/* PostFleetsFleetIDWingsNotFound describes a response with status code 404, with default header values.
+/*
+PostFleetsFleetIDWingsNotFound describes a response with status code 404, with default header values.
 
 The fleet does not exist or you don't have access to it
 */
@@ -227,9 +352,39 @@ type PostFleetsFleetIDWingsNotFound struct {
 	Payload *PostFleetsFleetIDWingsNotFoundBody
 }
 
+// IsSuccess returns true when this post fleets fleet Id wings not found response has a 2xx status code
+func (o *PostFleetsFleetIDWingsNotFound) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post fleets fleet Id wings not found response has a 3xx status code
+func (o *PostFleetsFleetIDWingsNotFound) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post fleets fleet Id wings not found response has a 4xx status code
+func (o *PostFleetsFleetIDWingsNotFound) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post fleets fleet Id wings not found response has a 5xx status code
+func (o *PostFleetsFleetIDWingsNotFound) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post fleets fleet Id wings not found response a status code equal to that given
+func (o *PostFleetsFleetIDWingsNotFound) IsCode(code int) bool {
+	return code == 404
+}
+
 func (o *PostFleetsFleetIDWingsNotFound) Error() string {
 	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/wings/][%d] postFleetsFleetIdWingsNotFound  %+v", 404, o.Payload)
 }
+
+func (o *PostFleetsFleetIDWingsNotFound) String() string {
+	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/wings/][%d] postFleetsFleetIdWingsNotFound  %+v", 404, o.Payload)
+}
+
 func (o *PostFleetsFleetIDWingsNotFound) GetPayload() *PostFleetsFleetIDWingsNotFoundBody {
 	return o.Payload
 }
@@ -251,7 +406,8 @@ func NewPostFleetsFleetIDWingsEnhanceYourCalm() *PostFleetsFleetIDWingsEnhanceYo
 	return &PostFleetsFleetIDWingsEnhanceYourCalm{}
 }
 
-/* PostFleetsFleetIDWingsEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+PostFleetsFleetIDWingsEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -259,9 +415,39 @@ type PostFleetsFleetIDWingsEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this post fleets fleet Id wings enhance your calm response has a 2xx status code
+func (o *PostFleetsFleetIDWingsEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post fleets fleet Id wings enhance your calm response has a 3xx status code
+func (o *PostFleetsFleetIDWingsEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post fleets fleet Id wings enhance your calm response has a 4xx status code
+func (o *PostFleetsFleetIDWingsEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post fleets fleet Id wings enhance your calm response has a 5xx status code
+func (o *PostFleetsFleetIDWingsEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post fleets fleet Id wings enhance your calm response a status code equal to that given
+func (o *PostFleetsFleetIDWingsEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *PostFleetsFleetIDWingsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/wings/][%d] postFleetsFleetIdWingsEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *PostFleetsFleetIDWingsEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/wings/][%d] postFleetsFleetIdWingsEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *PostFleetsFleetIDWingsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -283,7 +469,8 @@ func NewPostFleetsFleetIDWingsInternalServerError() *PostFleetsFleetIDWingsInter
 	return &PostFleetsFleetIDWingsInternalServerError{}
 }
 
-/* PostFleetsFleetIDWingsInternalServerError describes a response with status code 500, with default header values.
+/*
+PostFleetsFleetIDWingsInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -291,9 +478,39 @@ type PostFleetsFleetIDWingsInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this post fleets fleet Id wings internal server error response has a 2xx status code
+func (o *PostFleetsFleetIDWingsInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post fleets fleet Id wings internal server error response has a 3xx status code
+func (o *PostFleetsFleetIDWingsInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post fleets fleet Id wings internal server error response has a 4xx status code
+func (o *PostFleetsFleetIDWingsInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post fleets fleet Id wings internal server error response has a 5xx status code
+func (o *PostFleetsFleetIDWingsInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post fleets fleet Id wings internal server error response a status code equal to that given
+func (o *PostFleetsFleetIDWingsInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *PostFleetsFleetIDWingsInternalServerError) Error() string {
 	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/wings/][%d] postFleetsFleetIdWingsInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *PostFleetsFleetIDWingsInternalServerError) String() string {
+	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/wings/][%d] postFleetsFleetIdWingsInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *PostFleetsFleetIDWingsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -315,7 +532,8 @@ func NewPostFleetsFleetIDWingsServiceUnavailable() *PostFleetsFleetIDWingsServic
 	return &PostFleetsFleetIDWingsServiceUnavailable{}
 }
 
-/* PostFleetsFleetIDWingsServiceUnavailable describes a response with status code 503, with default header values.
+/*
+PostFleetsFleetIDWingsServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -323,9 +541,39 @@ type PostFleetsFleetIDWingsServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this post fleets fleet Id wings service unavailable response has a 2xx status code
+func (o *PostFleetsFleetIDWingsServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post fleets fleet Id wings service unavailable response has a 3xx status code
+func (o *PostFleetsFleetIDWingsServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post fleets fleet Id wings service unavailable response has a 4xx status code
+func (o *PostFleetsFleetIDWingsServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post fleets fleet Id wings service unavailable response has a 5xx status code
+func (o *PostFleetsFleetIDWingsServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post fleets fleet Id wings service unavailable response a status code equal to that given
+func (o *PostFleetsFleetIDWingsServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *PostFleetsFleetIDWingsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/wings/][%d] postFleetsFleetIdWingsServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *PostFleetsFleetIDWingsServiceUnavailable) String() string {
+	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/wings/][%d] postFleetsFleetIdWingsServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *PostFleetsFleetIDWingsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -347,7 +595,8 @@ func NewPostFleetsFleetIDWingsGatewayTimeout() *PostFleetsFleetIDWingsGatewayTim
 	return &PostFleetsFleetIDWingsGatewayTimeout{}
 }
 
-/* PostFleetsFleetIDWingsGatewayTimeout describes a response with status code 504, with default header values.
+/*
+PostFleetsFleetIDWingsGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -355,9 +604,39 @@ type PostFleetsFleetIDWingsGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this post fleets fleet Id wings gateway timeout response has a 2xx status code
+func (o *PostFleetsFleetIDWingsGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post fleets fleet Id wings gateway timeout response has a 3xx status code
+func (o *PostFleetsFleetIDWingsGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post fleets fleet Id wings gateway timeout response has a 4xx status code
+func (o *PostFleetsFleetIDWingsGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post fleets fleet Id wings gateway timeout response has a 5xx status code
+func (o *PostFleetsFleetIDWingsGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post fleets fleet Id wings gateway timeout response a status code equal to that given
+func (o *PostFleetsFleetIDWingsGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *PostFleetsFleetIDWingsGatewayTimeout) Error() string {
 	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/wings/][%d] postFleetsFleetIdWingsGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *PostFleetsFleetIDWingsGatewayTimeout) String() string {
+	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/wings/][%d] postFleetsFleetIdWingsGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *PostFleetsFleetIDWingsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -374,7 +653,8 @@ func (o *PostFleetsFleetIDWingsGatewayTimeout) readResponse(response runtime.Cli
 	return nil
 }
 
-/*PostFleetsFleetIDWingsCreatedBody post_fleets_fleet_id_wings_created
+/*
+PostFleetsFleetIDWingsCreatedBody post_fleets_fleet_id_wings_created
 //
 // 201 created object
 swagger:model PostFleetsFleetIDWingsCreatedBody
@@ -434,7 +714,8 @@ func (o *PostFleetsFleetIDWingsCreatedBody) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*PostFleetsFleetIDWingsNotFoundBody post_fleets_fleet_id_wings_not_found
+/*
+PostFleetsFleetIDWingsNotFoundBody post_fleets_fleet_id_wings_not_found
 //
 // Not found
 swagger:model PostFleetsFleetIDWingsNotFoundBody

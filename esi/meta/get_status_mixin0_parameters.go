@@ -52,10 +52,12 @@ func NewGetStatusMixin0ParamsWithHTTPClient(client *http.Client) *GetStatusMixin
 	}
 }
 
-/* GetStatusMixin0Params contains all the parameters to send to the API endpoint
-   for the get status mixin0 operation.
+/*
+GetStatusMixin0Params contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get status mixin0 operation.
+
+	Typically these are written to a http.Request.
 */
 type GetStatusMixin0Params struct {
 

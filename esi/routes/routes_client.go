@@ -36,9 +36,9 @@ type ClientService interface {
 }
 
 /*
-  GetRouteOriginDestination gets route
+	GetRouteOriginDestination gets route
 
-  Get the systems between origin and destination
+	Get the systems between origin and destination
 
 ---
 

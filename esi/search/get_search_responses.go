@@ -79,7 +79,8 @@ func NewGetSearchOK() *GetSearchOK {
 	return &GetSearchOK{}
 }
 
-/* GetSearchOK describes a response with status code 200, with default header values.
+/*
+	GetSearchOK describes a response with status code 200, with default header values.
 
 A list of search results
 */
@@ -167,7 +168,8 @@ func NewGetSearchNotModified() *GetSearchNotModified {
 	return &GetSearchNotModified{}
 }
 
-/* GetSearchNotModified describes a response with status code 304, with default header values.
+/*
+	GetSearchNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -232,7 +234,8 @@ func NewGetSearchBadRequest() *GetSearchBadRequest {
 	return &GetSearchBadRequest{}
 }
 
-/* GetSearchBadRequest describes a response with status code 400, with default header values.
+/*
+	GetSearchBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -264,7 +267,8 @@ func NewGetSearchEnhanceYourCalm() *GetSearchEnhanceYourCalm {
 	return &GetSearchEnhanceYourCalm{}
 }
 
-/* GetSearchEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+	GetSearchEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -296,7 +300,8 @@ func NewGetSearchInternalServerError() *GetSearchInternalServerError {
 	return &GetSearchInternalServerError{}
 }
 
-/* GetSearchInternalServerError describes a response with status code 500, with default header values.
+/*
+	GetSearchInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -328,7 +333,8 @@ func NewGetSearchServiceUnavailable() *GetSearchServiceUnavailable {
 	return &GetSearchServiceUnavailable{}
 }
 
-/* GetSearchServiceUnavailable describes a response with status code 503, with default header values.
+/*
+	GetSearchServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -360,7 +366,8 @@ func NewGetSearchGatewayTimeout() *GetSearchGatewayTimeout {
 	return &GetSearchGatewayTimeout{}
 }
 
-/* GetSearchGatewayTimeout describes a response with status code 504, with default header values.
+/*
+	GetSearchGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -387,7 +394,8 @@ func (o *GetSearchGatewayTimeout) readResponse(response runtime.ClientResponse, 
 	return nil
 }
 
-/*GetSearchOKBody get_search_ok
+/*
+GetSearchOKBody get_search_ok
 //
 // 200 ok object
 swagger:model GetSearchOKBody

@@ -85,7 +85,8 @@ func NewGetUniverseConstellationsConstellationIDOK() *GetUniverseConstellationsC
 	return &GetUniverseConstellationsConstellationIDOK{}
 }
 
-/* GetUniverseConstellationsConstellationIDOK describes a response with status code 200, with default header values.
+/*
+GetUniverseConstellationsConstellationIDOK describes a response with status code 200, with default header values.
 
 Information about a constellation
 */
@@ -114,9 +115,39 @@ type GetUniverseConstellationsConstellationIDOK struct {
 	Payload *GetUniverseConstellationsConstellationIDOKBody
 }
 
+// IsSuccess returns true when this get universe constellations constellation Id o k response has a 2xx status code
+func (o *GetUniverseConstellationsConstellationIDOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get universe constellations constellation Id o k response has a 3xx status code
+func (o *GetUniverseConstellationsConstellationIDOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe constellations constellation Id o k response has a 4xx status code
+func (o *GetUniverseConstellationsConstellationIDOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe constellations constellation Id o k response has a 5xx status code
+func (o *GetUniverseConstellationsConstellationIDOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe constellations constellation Id o k response a status code equal to that given
+func (o *GetUniverseConstellationsConstellationIDOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetUniverseConstellationsConstellationIDOK) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/constellations/{constellation_id}/][%d] getUniverseConstellationsConstellationIdOK  %+v", 200, o.Payload)
 }
+
+func (o *GetUniverseConstellationsConstellationIDOK) String() string {
+	return fmt.Sprintf("[GET /v1/universe/constellations/{constellation_id}/][%d] getUniverseConstellationsConstellationIdOK  %+v", 200, o.Payload)
+}
+
 func (o *GetUniverseConstellationsConstellationIDOK) GetPayload() *GetUniverseConstellationsConstellationIDOKBody {
 	return o.Payload
 }
@@ -173,7 +204,8 @@ func NewGetUniverseConstellationsConstellationIDNotModified() *GetUniverseConste
 	return &GetUniverseConstellationsConstellationIDNotModified{}
 }
 
-/* GetUniverseConstellationsConstellationIDNotModified describes a response with status code 304, with default header values.
+/*
+GetUniverseConstellationsConstellationIDNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -196,7 +228,36 @@ type GetUniverseConstellationsConstellationIDNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get universe constellations constellation Id not modified response has a 2xx status code
+func (o *GetUniverseConstellationsConstellationIDNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe constellations constellation Id not modified response has a 3xx status code
+func (o *GetUniverseConstellationsConstellationIDNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get universe constellations constellation Id not modified response has a 4xx status code
+func (o *GetUniverseConstellationsConstellationIDNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe constellations constellation Id not modified response has a 5xx status code
+func (o *GetUniverseConstellationsConstellationIDNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe constellations constellation Id not modified response a status code equal to that given
+func (o *GetUniverseConstellationsConstellationIDNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetUniverseConstellationsConstellationIDNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/universe/constellations/{constellation_id}/][%d] getUniverseConstellationsConstellationIdNotModified ", 304)
+}
+
+func (o *GetUniverseConstellationsConstellationIDNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/universe/constellations/{constellation_id}/][%d] getUniverseConstellationsConstellationIdNotModified ", 304)
 }
 
@@ -238,7 +299,8 @@ func NewGetUniverseConstellationsConstellationIDBadRequest() *GetUniverseConstel
 	return &GetUniverseConstellationsConstellationIDBadRequest{}
 }
 
-/* GetUniverseConstellationsConstellationIDBadRequest describes a response with status code 400, with default header values.
+/*
+GetUniverseConstellationsConstellationIDBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -246,9 +308,39 @@ type GetUniverseConstellationsConstellationIDBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get universe constellations constellation Id bad request response has a 2xx status code
+func (o *GetUniverseConstellationsConstellationIDBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe constellations constellation Id bad request response has a 3xx status code
+func (o *GetUniverseConstellationsConstellationIDBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe constellations constellation Id bad request response has a 4xx status code
+func (o *GetUniverseConstellationsConstellationIDBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe constellations constellation Id bad request response has a 5xx status code
+func (o *GetUniverseConstellationsConstellationIDBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe constellations constellation Id bad request response a status code equal to that given
+func (o *GetUniverseConstellationsConstellationIDBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetUniverseConstellationsConstellationIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/constellations/{constellation_id}/][%d] getUniverseConstellationsConstellationIdBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetUniverseConstellationsConstellationIDBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/universe/constellations/{constellation_id}/][%d] getUniverseConstellationsConstellationIdBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetUniverseConstellationsConstellationIDBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -270,7 +362,8 @@ func NewGetUniverseConstellationsConstellationIDNotFound() *GetUniverseConstella
 	return &GetUniverseConstellationsConstellationIDNotFound{}
 }
 
-/* GetUniverseConstellationsConstellationIDNotFound describes a response with status code 404, with default header values.
+/*
+GetUniverseConstellationsConstellationIDNotFound describes a response with status code 404, with default header values.
 
 Constellation not found
 */
@@ -278,9 +371,39 @@ type GetUniverseConstellationsConstellationIDNotFound struct {
 	Payload *GetUniverseConstellationsConstellationIDNotFoundBody
 }
 
+// IsSuccess returns true when this get universe constellations constellation Id not found response has a 2xx status code
+func (o *GetUniverseConstellationsConstellationIDNotFound) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe constellations constellation Id not found response has a 3xx status code
+func (o *GetUniverseConstellationsConstellationIDNotFound) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe constellations constellation Id not found response has a 4xx status code
+func (o *GetUniverseConstellationsConstellationIDNotFound) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe constellations constellation Id not found response has a 5xx status code
+func (o *GetUniverseConstellationsConstellationIDNotFound) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe constellations constellation Id not found response a status code equal to that given
+func (o *GetUniverseConstellationsConstellationIDNotFound) IsCode(code int) bool {
+	return code == 404
+}
+
 func (o *GetUniverseConstellationsConstellationIDNotFound) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/constellations/{constellation_id}/][%d] getUniverseConstellationsConstellationIdNotFound  %+v", 404, o.Payload)
 }
+
+func (o *GetUniverseConstellationsConstellationIDNotFound) String() string {
+	return fmt.Sprintf("[GET /v1/universe/constellations/{constellation_id}/][%d] getUniverseConstellationsConstellationIdNotFound  %+v", 404, o.Payload)
+}
+
 func (o *GetUniverseConstellationsConstellationIDNotFound) GetPayload() *GetUniverseConstellationsConstellationIDNotFoundBody {
 	return o.Payload
 }
@@ -302,7 +425,8 @@ func NewGetUniverseConstellationsConstellationIDEnhanceYourCalm() *GetUniverseCo
 	return &GetUniverseConstellationsConstellationIDEnhanceYourCalm{}
 }
 
-/* GetUniverseConstellationsConstellationIDEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetUniverseConstellationsConstellationIDEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -310,9 +434,39 @@ type GetUniverseConstellationsConstellationIDEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get universe constellations constellation Id enhance your calm response has a 2xx status code
+func (o *GetUniverseConstellationsConstellationIDEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe constellations constellation Id enhance your calm response has a 3xx status code
+func (o *GetUniverseConstellationsConstellationIDEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe constellations constellation Id enhance your calm response has a 4xx status code
+func (o *GetUniverseConstellationsConstellationIDEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe constellations constellation Id enhance your calm response has a 5xx status code
+func (o *GetUniverseConstellationsConstellationIDEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe constellations constellation Id enhance your calm response a status code equal to that given
+func (o *GetUniverseConstellationsConstellationIDEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetUniverseConstellationsConstellationIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/constellations/{constellation_id}/][%d] getUniverseConstellationsConstellationIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetUniverseConstellationsConstellationIDEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/universe/constellations/{constellation_id}/][%d] getUniverseConstellationsConstellationIdEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetUniverseConstellationsConstellationIDEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -334,7 +488,8 @@ func NewGetUniverseConstellationsConstellationIDInternalServerError() *GetUniver
 	return &GetUniverseConstellationsConstellationIDInternalServerError{}
 }
 
-/* GetUniverseConstellationsConstellationIDInternalServerError describes a response with status code 500, with default header values.
+/*
+GetUniverseConstellationsConstellationIDInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -342,9 +497,39 @@ type GetUniverseConstellationsConstellationIDInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get universe constellations constellation Id internal server error response has a 2xx status code
+func (o *GetUniverseConstellationsConstellationIDInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe constellations constellation Id internal server error response has a 3xx status code
+func (o *GetUniverseConstellationsConstellationIDInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe constellations constellation Id internal server error response has a 4xx status code
+func (o *GetUniverseConstellationsConstellationIDInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe constellations constellation Id internal server error response has a 5xx status code
+func (o *GetUniverseConstellationsConstellationIDInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe constellations constellation Id internal server error response a status code equal to that given
+func (o *GetUniverseConstellationsConstellationIDInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetUniverseConstellationsConstellationIDInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/constellations/{constellation_id}/][%d] getUniverseConstellationsConstellationIdInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetUniverseConstellationsConstellationIDInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/universe/constellations/{constellation_id}/][%d] getUniverseConstellationsConstellationIdInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetUniverseConstellationsConstellationIDInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -366,7 +551,8 @@ func NewGetUniverseConstellationsConstellationIDServiceUnavailable() *GetUnivers
 	return &GetUniverseConstellationsConstellationIDServiceUnavailable{}
 }
 
-/* GetUniverseConstellationsConstellationIDServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetUniverseConstellationsConstellationIDServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -374,9 +560,39 @@ type GetUniverseConstellationsConstellationIDServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get universe constellations constellation Id service unavailable response has a 2xx status code
+func (o *GetUniverseConstellationsConstellationIDServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe constellations constellation Id service unavailable response has a 3xx status code
+func (o *GetUniverseConstellationsConstellationIDServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe constellations constellation Id service unavailable response has a 4xx status code
+func (o *GetUniverseConstellationsConstellationIDServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe constellations constellation Id service unavailable response has a 5xx status code
+func (o *GetUniverseConstellationsConstellationIDServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe constellations constellation Id service unavailable response a status code equal to that given
+func (o *GetUniverseConstellationsConstellationIDServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetUniverseConstellationsConstellationIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/constellations/{constellation_id}/][%d] getUniverseConstellationsConstellationIdServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetUniverseConstellationsConstellationIDServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/universe/constellations/{constellation_id}/][%d] getUniverseConstellationsConstellationIdServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetUniverseConstellationsConstellationIDServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -398,7 +614,8 @@ func NewGetUniverseConstellationsConstellationIDGatewayTimeout() *GetUniverseCon
 	return &GetUniverseConstellationsConstellationIDGatewayTimeout{}
 }
 
-/* GetUniverseConstellationsConstellationIDGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetUniverseConstellationsConstellationIDGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -406,9 +623,39 @@ type GetUniverseConstellationsConstellationIDGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get universe constellations constellation Id gateway timeout response has a 2xx status code
+func (o *GetUniverseConstellationsConstellationIDGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe constellations constellation Id gateway timeout response has a 3xx status code
+func (o *GetUniverseConstellationsConstellationIDGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe constellations constellation Id gateway timeout response has a 4xx status code
+func (o *GetUniverseConstellationsConstellationIDGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe constellations constellation Id gateway timeout response has a 5xx status code
+func (o *GetUniverseConstellationsConstellationIDGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe constellations constellation Id gateway timeout response a status code equal to that given
+func (o *GetUniverseConstellationsConstellationIDGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetUniverseConstellationsConstellationIDGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/constellations/{constellation_id}/][%d] getUniverseConstellationsConstellationIdGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetUniverseConstellationsConstellationIDGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/universe/constellations/{constellation_id}/][%d] getUniverseConstellationsConstellationIdGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetUniverseConstellationsConstellationIDGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -425,7 +672,8 @@ func (o *GetUniverseConstellationsConstellationIDGatewayTimeout) readResponse(re
 	return nil
 }
 
-/*GetUniverseConstellationsConstellationIDNotFoundBody get_universe_constellations_constellation_id_not_found
+/*
+GetUniverseConstellationsConstellationIDNotFoundBody get_universe_constellations_constellation_id_not_found
 //
 // Not found
 swagger:model GetUniverseConstellationsConstellationIDNotFoundBody
@@ -466,7 +714,8 @@ func (o *GetUniverseConstellationsConstellationIDNotFoundBody) UnmarshalBinary(b
 	return nil
 }
 
-/*GetUniverseConstellationsConstellationIDOKBody get_universe_constellations_constellation_id_ok
+/*
+GetUniverseConstellationsConstellationIDOKBody get_universe_constellations_constellation_id_ok
 //
 // 200 ok object
 swagger:model GetUniverseConstellationsConstellationIDOKBody
@@ -643,7 +892,8 @@ func (o *GetUniverseConstellationsConstellationIDOKBody) UnmarshalBinary(b []byt
 	return nil
 }
 
-/*GetUniverseConstellationsConstellationIDOKBodyPosition get_universe_constellations_constellation_id_position
+/*
+GetUniverseConstellationsConstellationIDOKBodyPosition get_universe_constellations_constellation_id_position
 //
 // position object
 swagger:model GetUniverseConstellationsConstellationIDOKBodyPosition

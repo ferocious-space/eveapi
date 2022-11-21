@@ -62,12 +62,11 @@ type ClientService interface {
 }
 
 /*
-  DeleteFleetsFleetIDMembersMemberID kicks fleet member
+	DeleteFleetsFleetIDMembersMemberID kicks fleet member
 
-  Kick a fleet member
+	Kick a fleet member
 
 ---
-
 */
 func (a *Client) DeleteFleetsFleetIDMembersMemberID(params *DeleteFleetsFleetIDMembersMemberIDParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*DeleteFleetsFleetIDMembersMemberIDNoContent, error) {
 	// TODO: Validate the params before sending
@@ -106,12 +105,11 @@ func (a *Client) DeleteFleetsFleetIDMembersMemberID(params *DeleteFleetsFleetIDM
 }
 
 /*
-  DeleteFleetsFleetIDSquadsSquadID deletes fleet squad
+	DeleteFleetsFleetIDSquadsSquadID deletes fleet squad
 
-  Delete a fleet squad, only empty squads can be deleted
+	Delete a fleet squad, only empty squads can be deleted
 
 ---
-
 */
 func (a *Client) DeleteFleetsFleetIDSquadsSquadID(params *DeleteFleetsFleetIDSquadsSquadIDParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*DeleteFleetsFleetIDSquadsSquadIDNoContent, error) {
 	// TODO: Validate the params before sending
@@ -150,12 +148,11 @@ func (a *Client) DeleteFleetsFleetIDSquadsSquadID(params *DeleteFleetsFleetIDSqu
 }
 
 /*
-  DeleteFleetsFleetIDWingsWingID deletes fleet wing
+	DeleteFleetsFleetIDWingsWingID deletes fleet wing
 
-  Delete a fleet wing, only empty wings can be deleted. The wing may contain squads, but the squads must be empty
+	Delete a fleet wing, only empty wings can be deleted. The wing may contain squads, but the squads must be empty
 
 ---
-
 */
 func (a *Client) DeleteFleetsFleetIDWingsWingID(params *DeleteFleetsFleetIDWingsWingIDParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*DeleteFleetsFleetIDWingsWingIDNoContent, error) {
 	// TODO: Validate the params before sending
@@ -194,13 +191,13 @@ func (a *Client) DeleteFleetsFleetIDWingsWingID(params *DeleteFleetsFleetIDWings
 }
 
 /*
-  GetCharactersCharacterIDFleet gets character fleet info
+	GetCharactersCharacterIDFleet gets character fleet info
 
-  Return the fleet ID the character is in, if any.
+	Return the fleet ID the character is in, if any.
 
 ---
 
-This route is cached for up to 60 seconds
+# This route is cached for up to 60 seconds
 
 ---
 Warning: This route has an upgrade available
@@ -245,9 +242,9 @@ func (a *Client) GetCharactersCharacterIDFleet(params *GetCharactersCharacterIDF
 }
 
 /*
-  GetFleetsFleetID gets fleet information
+	GetFleetsFleetID gets fleet information
 
-  Return details about a fleet
+	Return details about a fleet
 
 ---
 
@@ -290,9 +287,9 @@ func (a *Client) GetFleetsFleetID(params *GetFleetsFleetIDParams, authInfo runti
 }
 
 /*
-  GetFleetsFleetIDMembers gets fleet members
+	GetFleetsFleetIDMembers gets fleet members
 
-  Return information about fleet members
+	Return information about fleet members
 
 ---
 
@@ -335,9 +332,9 @@ func (a *Client) GetFleetsFleetIDMembers(params *GetFleetsFleetIDMembersParams, 
 }
 
 /*
-  GetFleetsFleetIDWings gets fleet wings
+	GetFleetsFleetIDWings gets fleet wings
 
-  Return information about wings in a fleet
+	Return information about wings in a fleet
 
 ---
 
@@ -380,12 +377,11 @@ func (a *Client) GetFleetsFleetIDWings(params *GetFleetsFleetIDWingsParams, auth
 }
 
 /*
-  PostFleetsFleetIDMembers creates fleet invitation
+	PostFleetsFleetIDMembers creates fleet invitation
 
-  Invite a character into the fleet. If a character has a CSPA charge set it is not possible to invite them to the fleet using ESI
+	Invite a character into the fleet. If a character has a CSPA charge set it is not possible to invite them to the fleet using ESI
 
 ---
-
 */
 func (a *Client) PostFleetsFleetIDMembers(params *PostFleetsFleetIDMembersParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*PostFleetsFleetIDMembersNoContent, error) {
 	// TODO: Validate the params before sending
@@ -424,12 +420,11 @@ func (a *Client) PostFleetsFleetIDMembers(params *PostFleetsFleetIDMembersParams
 }
 
 /*
-  PostFleetsFleetIDWings creates fleet wing
+	PostFleetsFleetIDWings creates fleet wing
 
-  Create a new wing in a fleet
+	Create a new wing in a fleet
 
 ---
-
 */
 func (a *Client) PostFleetsFleetIDWings(params *PostFleetsFleetIDWingsParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*PostFleetsFleetIDWingsCreated, error) {
 	// TODO: Validate the params before sending
@@ -468,12 +463,11 @@ func (a *Client) PostFleetsFleetIDWings(params *PostFleetsFleetIDWingsParams, au
 }
 
 /*
-  PostFleetsFleetIDWingsWingIDSquads creates fleet squad
+	PostFleetsFleetIDWingsWingIDSquads creates fleet squad
 
-  Create a new squad in a fleet
+	Create a new squad in a fleet
 
 ---
-
 */
 func (a *Client) PostFleetsFleetIDWingsWingIDSquads(params *PostFleetsFleetIDWingsWingIDSquadsParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*PostFleetsFleetIDWingsWingIDSquadsCreated, error) {
 	// TODO: Validate the params before sending
@@ -512,12 +506,11 @@ func (a *Client) PostFleetsFleetIDWingsWingIDSquads(params *PostFleetsFleetIDWin
 }
 
 /*
-  PutFleetsFleetID updates fleet
+	PutFleetsFleetID updates fleet
 
-  Update settings about a fleet
+	Update settings about a fleet
 
 ---
-
 */
 func (a *Client) PutFleetsFleetID(params *PutFleetsFleetIDParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*PutFleetsFleetIDNoContent, error) {
 	// TODO: Validate the params before sending
@@ -556,12 +549,11 @@ func (a *Client) PutFleetsFleetID(params *PutFleetsFleetIDParams, authInfo runti
 }
 
 /*
-  PutFleetsFleetIDMembersMemberID moves fleet member
+	PutFleetsFleetIDMembersMemberID moves fleet member
 
-  Move a fleet member around
+	Move a fleet member around
 
 ---
-
 */
 func (a *Client) PutFleetsFleetIDMembersMemberID(params *PutFleetsFleetIDMembersMemberIDParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*PutFleetsFleetIDMembersMemberIDNoContent, error) {
 	// TODO: Validate the params before sending
@@ -600,12 +592,11 @@ func (a *Client) PutFleetsFleetIDMembersMemberID(params *PutFleetsFleetIDMembers
 }
 
 /*
-  PutFleetsFleetIDSquadsSquadID renames fleet squad
+	PutFleetsFleetIDSquadsSquadID renames fleet squad
 
-  Rename a fleet squad
+	Rename a fleet squad
 
 ---
-
 */
 func (a *Client) PutFleetsFleetIDSquadsSquadID(params *PutFleetsFleetIDSquadsSquadIDParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*PutFleetsFleetIDSquadsSquadIDNoContent, error) {
 	// TODO: Validate the params before sending
@@ -644,12 +635,11 @@ func (a *Client) PutFleetsFleetIDSquadsSquadID(params *PutFleetsFleetIDSquadsSqu
 }
 
 /*
-  PutFleetsFleetIDWingsWingID renames fleet wing
+	PutFleetsFleetIDWingsWingID renames fleet wing
 
-  Rename a fleet wing
+	Rename a fleet wing
 
 ---
-
 */
 func (a *Client) PutFleetsFleetIDWingsWingID(params *PutFleetsFleetIDWingsWingIDParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*PutFleetsFleetIDWingsWingIDNoContent, error) {
 	// TODO: Validate the params before sending

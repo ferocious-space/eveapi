@@ -53,10 +53,12 @@ func NewGetCharactersCharacterIDMailLabelsParamsWithHTTPClient(client *http.Clie
 	}
 }
 
-/* GetCharactersCharacterIDMailLabelsParams contains all the parameters to send to the API endpoint
-   for the get characters character id mail labels operation.
+/*
+GetCharactersCharacterIDMailLabelsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get characters character id mail labels operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCharactersCharacterIDMailLabelsParams struct {
 

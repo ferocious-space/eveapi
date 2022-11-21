@@ -44,9 +44,9 @@ type ClientService interface {
 }
 
 /*
-  GetDogmaAttributes gets attributes
+	GetDogmaAttributes gets attributes
 
-  Get a list of dogma attribute ids
+	Get a list of dogma attribute ids
 
 ---
 
@@ -88,9 +88,9 @@ func (a *Client) GetDogmaAttributes(params *GetDogmaAttributesParams, opts ...Cl
 }
 
 /*
-  GetDogmaAttributesAttributeID gets attribute information
+	GetDogmaAttributesAttributeID gets attribute information
 
-  Get information on a dogma attribute
+	Get information on a dogma attribute
 
 ---
 
@@ -132,9 +132,9 @@ func (a *Client) GetDogmaAttributesAttributeID(params *GetDogmaAttributesAttribu
 }
 
 /*
-  GetDogmaDynamicItemsTypeIDItemID gets dynamic item information
+	GetDogmaDynamicItemsTypeIDItemID gets dynamic item information
 
-  Returns info about a dynamic item resulting from mutation with a mutaplasmid.
+	Returns info about a dynamic item resulting from mutation with a mutaplasmid.
 
 ---
 
@@ -176,9 +176,9 @@ func (a *Client) GetDogmaDynamicItemsTypeIDItemID(params *GetDogmaDynamicItemsTy
 }
 
 /*
-  GetDogmaEffects gets effects
+	GetDogmaEffects gets effects
 
-  Get a list of dogma effect ids
+	Get a list of dogma effect ids
 
 ---
 
@@ -220,9 +220,9 @@ func (a *Client) GetDogmaEffects(params *GetDogmaEffectsParams, opts ...ClientOp
 }
 
 /*
-  GetDogmaEffectsEffectID gets effect information
+	GetDogmaEffectsEffectID gets effect information
 
-  Get information on a dogma effect
+	Get information on a dogma effect
 
 ---
 

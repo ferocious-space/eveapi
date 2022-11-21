@@ -53,10 +53,12 @@ func NewDeleteFleetsFleetIDWingsWingIDParamsWithHTTPClient(client *http.Client) 
 	}
 }
 
-/* DeleteFleetsFleetIDWingsWingIDParams contains all the parameters to send to the API endpoint
-   for the delete fleets fleet id wings wing id operation.
+/*
+DeleteFleetsFleetIDWingsWingIDParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the delete fleets fleet id wings wing id operation.
+
+	Typically these are written to a http.Request.
 */
 type DeleteFleetsFleetIDWingsWingIDParams struct {
 

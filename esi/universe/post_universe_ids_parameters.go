@@ -52,10 +52,12 @@ func NewPostUniverseIdsParamsWithHTTPClient(client *http.Client) *PostUniverseId
 	}
 }
 
-/* PostUniverseIdsParams contains all the parameters to send to the API endpoint
-   for the post universe ids operation.
+/*
+PostUniverseIdsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the post universe ids operation.
+
+	Typically these are written to a http.Request.
 */
 type PostUniverseIdsParams struct {
 

@@ -16,7 +16,7 @@ import (
 
 // ServiceUnavailable Service unavailable
 //
-// Service unavailable model
+// # Service unavailable model
 //
 // swagger:model service_unavailable
 type ServiceUnavailable struct {

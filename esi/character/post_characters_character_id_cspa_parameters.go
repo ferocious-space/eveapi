@@ -53,10 +53,12 @@ func NewPostCharactersCharacterIDCspaParamsWithHTTPClient(client *http.Client) *
 	}
 }
 
-/* PostCharactersCharacterIDCspaParams contains all the parameters to send to the API endpoint
-   for the post characters character id cspa operation.
+/*
+PostCharactersCharacterIDCspaParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the post characters character id cspa operation.
+
+	Typically these are written to a http.Request.
 */
 type PostCharactersCharacterIDCspaParams struct {
 

@@ -75,7 +75,8 @@ func NewGetDogmaAttributesOK() *GetDogmaAttributesOK {
 	return &GetDogmaAttributesOK{}
 }
 
-/* GetDogmaAttributesOK describes a response with status code 200, with default header values.
+/*
+GetDogmaAttributesOK describes a response with status code 200, with default header values.
 
 A list of dogma attribute ids
 */
@@ -100,9 +101,39 @@ type GetDogmaAttributesOK struct {
 	Payload []int32
 }
 
+// IsSuccess returns true when this get dogma attributes o k response has a 2xx status code
+func (o *GetDogmaAttributesOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get dogma attributes o k response has a 3xx status code
+func (o *GetDogmaAttributesOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get dogma attributes o k response has a 4xx status code
+func (o *GetDogmaAttributesOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get dogma attributes o k response has a 5xx status code
+func (o *GetDogmaAttributesOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get dogma attributes o k response a status code equal to that given
+func (o *GetDogmaAttributesOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetDogmaAttributesOK) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/attributes/][%d] getDogmaAttributesOK  %+v", 200, o.Payload)
 }
+
+func (o *GetDogmaAttributesOK) String() string {
+	return fmt.Sprintf("[GET /v1/dogma/attributes/][%d] getDogmaAttributesOK  %+v", 200, o.Payload)
+}
+
 func (o *GetDogmaAttributesOK) GetPayload() []int32 {
 	return o.Payload
 }
@@ -150,7 +181,8 @@ func NewGetDogmaAttributesNotModified() *GetDogmaAttributesNotModified {
 	return &GetDogmaAttributesNotModified{}
 }
 
-/* GetDogmaAttributesNotModified describes a response with status code 304, with default header values.
+/*
+GetDogmaAttributesNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -173,7 +205,36 @@ type GetDogmaAttributesNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get dogma attributes not modified response has a 2xx status code
+func (o *GetDogmaAttributesNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get dogma attributes not modified response has a 3xx status code
+func (o *GetDogmaAttributesNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get dogma attributes not modified response has a 4xx status code
+func (o *GetDogmaAttributesNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get dogma attributes not modified response has a 5xx status code
+func (o *GetDogmaAttributesNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get dogma attributes not modified response a status code equal to that given
+func (o *GetDogmaAttributesNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetDogmaAttributesNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/dogma/attributes/][%d] getDogmaAttributesNotModified ", 304)
+}
+
+func (o *GetDogmaAttributesNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/dogma/attributes/][%d] getDogmaAttributesNotModified ", 304)
 }
 
@@ -215,7 +276,8 @@ func NewGetDogmaAttributesBadRequest() *GetDogmaAttributesBadRequest {
 	return &GetDogmaAttributesBadRequest{}
 }
 
-/* GetDogmaAttributesBadRequest describes a response with status code 400, with default header values.
+/*
+GetDogmaAttributesBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -223,9 +285,39 @@ type GetDogmaAttributesBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get dogma attributes bad request response has a 2xx status code
+func (o *GetDogmaAttributesBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get dogma attributes bad request response has a 3xx status code
+func (o *GetDogmaAttributesBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get dogma attributes bad request response has a 4xx status code
+func (o *GetDogmaAttributesBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get dogma attributes bad request response has a 5xx status code
+func (o *GetDogmaAttributesBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get dogma attributes bad request response a status code equal to that given
+func (o *GetDogmaAttributesBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetDogmaAttributesBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/attributes/][%d] getDogmaAttributesBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetDogmaAttributesBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/dogma/attributes/][%d] getDogmaAttributesBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetDogmaAttributesBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -247,7 +339,8 @@ func NewGetDogmaAttributesEnhanceYourCalm() *GetDogmaAttributesEnhanceYourCalm {
 	return &GetDogmaAttributesEnhanceYourCalm{}
 }
 
-/* GetDogmaAttributesEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetDogmaAttributesEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -255,9 +348,39 @@ type GetDogmaAttributesEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get dogma attributes enhance your calm response has a 2xx status code
+func (o *GetDogmaAttributesEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get dogma attributes enhance your calm response has a 3xx status code
+func (o *GetDogmaAttributesEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get dogma attributes enhance your calm response has a 4xx status code
+func (o *GetDogmaAttributesEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get dogma attributes enhance your calm response has a 5xx status code
+func (o *GetDogmaAttributesEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get dogma attributes enhance your calm response a status code equal to that given
+func (o *GetDogmaAttributesEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetDogmaAttributesEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/attributes/][%d] getDogmaAttributesEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetDogmaAttributesEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/dogma/attributes/][%d] getDogmaAttributesEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetDogmaAttributesEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -279,7 +402,8 @@ func NewGetDogmaAttributesInternalServerError() *GetDogmaAttributesInternalServe
 	return &GetDogmaAttributesInternalServerError{}
 }
 
-/* GetDogmaAttributesInternalServerError describes a response with status code 500, with default header values.
+/*
+GetDogmaAttributesInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -287,9 +411,39 @@ type GetDogmaAttributesInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get dogma attributes internal server error response has a 2xx status code
+func (o *GetDogmaAttributesInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get dogma attributes internal server error response has a 3xx status code
+func (o *GetDogmaAttributesInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get dogma attributes internal server error response has a 4xx status code
+func (o *GetDogmaAttributesInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get dogma attributes internal server error response has a 5xx status code
+func (o *GetDogmaAttributesInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get dogma attributes internal server error response a status code equal to that given
+func (o *GetDogmaAttributesInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetDogmaAttributesInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/attributes/][%d] getDogmaAttributesInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetDogmaAttributesInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/dogma/attributes/][%d] getDogmaAttributesInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetDogmaAttributesInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -311,7 +465,8 @@ func NewGetDogmaAttributesServiceUnavailable() *GetDogmaAttributesServiceUnavail
 	return &GetDogmaAttributesServiceUnavailable{}
 }
 
-/* GetDogmaAttributesServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetDogmaAttributesServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -319,9 +474,39 @@ type GetDogmaAttributesServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get dogma attributes service unavailable response has a 2xx status code
+func (o *GetDogmaAttributesServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get dogma attributes service unavailable response has a 3xx status code
+func (o *GetDogmaAttributesServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get dogma attributes service unavailable response has a 4xx status code
+func (o *GetDogmaAttributesServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get dogma attributes service unavailable response has a 5xx status code
+func (o *GetDogmaAttributesServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get dogma attributes service unavailable response a status code equal to that given
+func (o *GetDogmaAttributesServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetDogmaAttributesServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/attributes/][%d] getDogmaAttributesServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetDogmaAttributesServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/dogma/attributes/][%d] getDogmaAttributesServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetDogmaAttributesServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -343,7 +528,8 @@ func NewGetDogmaAttributesGatewayTimeout() *GetDogmaAttributesGatewayTimeout {
 	return &GetDogmaAttributesGatewayTimeout{}
 }
 
-/* GetDogmaAttributesGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetDogmaAttributesGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -351,9 +537,39 @@ type GetDogmaAttributesGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get dogma attributes gateway timeout response has a 2xx status code
+func (o *GetDogmaAttributesGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get dogma attributes gateway timeout response has a 3xx status code
+func (o *GetDogmaAttributesGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get dogma attributes gateway timeout response has a 4xx status code
+func (o *GetDogmaAttributesGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get dogma attributes gateway timeout response has a 5xx status code
+func (o *GetDogmaAttributesGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get dogma attributes gateway timeout response a status code equal to that given
+func (o *GetDogmaAttributesGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetDogmaAttributesGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/attributes/][%d] getDogmaAttributesGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetDogmaAttributesGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/dogma/attributes/][%d] getDogmaAttributesGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetDogmaAttributesGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }

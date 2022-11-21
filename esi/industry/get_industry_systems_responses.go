@@ -81,7 +81,8 @@ func NewGetIndustrySystemsOK() *GetIndustrySystemsOK {
 	return &GetIndustrySystemsOK{}
 }
 
-/* GetIndustrySystemsOK describes a response with status code 200, with default header values.
+/*
+GetIndustrySystemsOK describes a response with status code 200, with default header values.
 
 A list of cost indicies
 */
@@ -106,9 +107,39 @@ type GetIndustrySystemsOK struct {
 	Payload []*GetIndustrySystemsOKBodyItems0
 }
 
+// IsSuccess returns true when this get industry systems o k response has a 2xx status code
+func (o *GetIndustrySystemsOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get industry systems o k response has a 3xx status code
+func (o *GetIndustrySystemsOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get industry systems o k response has a 4xx status code
+func (o *GetIndustrySystemsOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get industry systems o k response has a 5xx status code
+func (o *GetIndustrySystemsOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get industry systems o k response a status code equal to that given
+func (o *GetIndustrySystemsOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetIndustrySystemsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/industry/systems/][%d] getIndustrySystemsOK  %+v", 200, o.Payload)
 }
+
+func (o *GetIndustrySystemsOK) String() string {
+	return fmt.Sprintf("[GET /v1/industry/systems/][%d] getIndustrySystemsOK  %+v", 200, o.Payload)
+}
+
 func (o *GetIndustrySystemsOK) GetPayload() []*GetIndustrySystemsOKBodyItems0 {
 	return o.Payload
 }
@@ -156,7 +187,8 @@ func NewGetIndustrySystemsNotModified() *GetIndustrySystemsNotModified {
 	return &GetIndustrySystemsNotModified{}
 }
 
-/* GetIndustrySystemsNotModified describes a response with status code 304, with default header values.
+/*
+GetIndustrySystemsNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -179,7 +211,36 @@ type GetIndustrySystemsNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get industry systems not modified response has a 2xx status code
+func (o *GetIndustrySystemsNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get industry systems not modified response has a 3xx status code
+func (o *GetIndustrySystemsNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get industry systems not modified response has a 4xx status code
+func (o *GetIndustrySystemsNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get industry systems not modified response has a 5xx status code
+func (o *GetIndustrySystemsNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get industry systems not modified response a status code equal to that given
+func (o *GetIndustrySystemsNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetIndustrySystemsNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/industry/systems/][%d] getIndustrySystemsNotModified ", 304)
+}
+
+func (o *GetIndustrySystemsNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/industry/systems/][%d] getIndustrySystemsNotModified ", 304)
 }
 
@@ -221,7 +282,8 @@ func NewGetIndustrySystemsBadRequest() *GetIndustrySystemsBadRequest {
 	return &GetIndustrySystemsBadRequest{}
 }
 
-/* GetIndustrySystemsBadRequest describes a response with status code 400, with default header values.
+/*
+GetIndustrySystemsBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -229,9 +291,39 @@ type GetIndustrySystemsBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get industry systems bad request response has a 2xx status code
+func (o *GetIndustrySystemsBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get industry systems bad request response has a 3xx status code
+func (o *GetIndustrySystemsBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get industry systems bad request response has a 4xx status code
+func (o *GetIndustrySystemsBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get industry systems bad request response has a 5xx status code
+func (o *GetIndustrySystemsBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get industry systems bad request response a status code equal to that given
+func (o *GetIndustrySystemsBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetIndustrySystemsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/industry/systems/][%d] getIndustrySystemsBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetIndustrySystemsBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/industry/systems/][%d] getIndustrySystemsBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetIndustrySystemsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -253,7 +345,8 @@ func NewGetIndustrySystemsEnhanceYourCalm() *GetIndustrySystemsEnhanceYourCalm {
 	return &GetIndustrySystemsEnhanceYourCalm{}
 }
 
-/* GetIndustrySystemsEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetIndustrySystemsEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -261,9 +354,39 @@ type GetIndustrySystemsEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get industry systems enhance your calm response has a 2xx status code
+func (o *GetIndustrySystemsEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get industry systems enhance your calm response has a 3xx status code
+func (o *GetIndustrySystemsEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get industry systems enhance your calm response has a 4xx status code
+func (o *GetIndustrySystemsEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get industry systems enhance your calm response has a 5xx status code
+func (o *GetIndustrySystemsEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get industry systems enhance your calm response a status code equal to that given
+func (o *GetIndustrySystemsEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetIndustrySystemsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/industry/systems/][%d] getIndustrySystemsEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetIndustrySystemsEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/industry/systems/][%d] getIndustrySystemsEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetIndustrySystemsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -285,7 +408,8 @@ func NewGetIndustrySystemsInternalServerError() *GetIndustrySystemsInternalServe
 	return &GetIndustrySystemsInternalServerError{}
 }
 
-/* GetIndustrySystemsInternalServerError describes a response with status code 500, with default header values.
+/*
+GetIndustrySystemsInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -293,9 +417,39 @@ type GetIndustrySystemsInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get industry systems internal server error response has a 2xx status code
+func (o *GetIndustrySystemsInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get industry systems internal server error response has a 3xx status code
+func (o *GetIndustrySystemsInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get industry systems internal server error response has a 4xx status code
+func (o *GetIndustrySystemsInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get industry systems internal server error response has a 5xx status code
+func (o *GetIndustrySystemsInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get industry systems internal server error response a status code equal to that given
+func (o *GetIndustrySystemsInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetIndustrySystemsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/industry/systems/][%d] getIndustrySystemsInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetIndustrySystemsInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/industry/systems/][%d] getIndustrySystemsInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetIndustrySystemsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -317,7 +471,8 @@ func NewGetIndustrySystemsServiceUnavailable() *GetIndustrySystemsServiceUnavail
 	return &GetIndustrySystemsServiceUnavailable{}
 }
 
-/* GetIndustrySystemsServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetIndustrySystemsServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -325,9 +480,39 @@ type GetIndustrySystemsServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get industry systems service unavailable response has a 2xx status code
+func (o *GetIndustrySystemsServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get industry systems service unavailable response has a 3xx status code
+func (o *GetIndustrySystemsServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get industry systems service unavailable response has a 4xx status code
+func (o *GetIndustrySystemsServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get industry systems service unavailable response has a 5xx status code
+func (o *GetIndustrySystemsServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get industry systems service unavailable response a status code equal to that given
+func (o *GetIndustrySystemsServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetIndustrySystemsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/industry/systems/][%d] getIndustrySystemsServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetIndustrySystemsServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/industry/systems/][%d] getIndustrySystemsServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetIndustrySystemsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -349,7 +534,8 @@ func NewGetIndustrySystemsGatewayTimeout() *GetIndustrySystemsGatewayTimeout {
 	return &GetIndustrySystemsGatewayTimeout{}
 }
 
-/* GetIndustrySystemsGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetIndustrySystemsGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -357,9 +543,39 @@ type GetIndustrySystemsGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get industry systems gateway timeout response has a 2xx status code
+func (o *GetIndustrySystemsGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get industry systems gateway timeout response has a 3xx status code
+func (o *GetIndustrySystemsGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get industry systems gateway timeout response has a 4xx status code
+func (o *GetIndustrySystemsGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get industry systems gateway timeout response has a 5xx status code
+func (o *GetIndustrySystemsGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get industry systems gateway timeout response a status code equal to that given
+func (o *GetIndustrySystemsGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetIndustrySystemsGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/industry/systems/][%d] getIndustrySystemsGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetIndustrySystemsGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/industry/systems/][%d] getIndustrySystemsGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetIndustrySystemsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -376,7 +592,8 @@ func (o *GetIndustrySystemsGatewayTimeout) readResponse(response runtime.ClientR
 	return nil
 }
 
-/*GetIndustrySystemsOKBodyItems0 get_industry_systems_200_ok
+/*
+GetIndustrySystemsOKBodyItems0 get_industry_systems_200_ok
 //
 // 200 ok object
 swagger:model GetIndustrySystemsOKBodyItems0
@@ -509,7 +726,8 @@ func (o *GetIndustrySystemsOKBodyItems0) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*GetIndustrySystemsOKBodyItems0CostIndicesItems0 get_industry_systems_cost_indice
+/*
+GetIndustrySystemsOKBodyItems0CostIndicesItems0 get_industry_systems_cost_indice
 //
 // cost_indice object
 swagger:model GetIndustrySystemsOKBodyItems0CostIndicesItems0

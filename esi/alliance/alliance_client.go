@@ -42,9 +42,9 @@ type ClientService interface {
 }
 
 /*
-  GetAlliances lists all alliances
+	GetAlliances lists all alliances
 
-  List all active player alliances
+	List all active player alliances
 
 ---
 
@@ -86,9 +86,9 @@ func (a *Client) GetAlliances(params *GetAlliancesParams, opts ...ClientOption) 
 }
 
 /*
-  GetAlliancesAllianceID gets alliance information
+	GetAlliancesAllianceID gets alliance information
 
-  Public information about an alliance
+	Public information about an alliance
 
 ---
 
@@ -130,9 +130,9 @@ func (a *Client) GetAlliancesAllianceID(params *GetAlliancesAllianceIDParams, op
 }
 
 /*
-  GetAlliancesAllianceIDCorporations lists alliance s corporations
+	GetAlliancesAllianceIDCorporations lists alliance s corporations
 
-  List all current member corporations of an alliance
+	List all current member corporations of an alliance
 
 ---
 
@@ -174,9 +174,9 @@ func (a *Client) GetAlliancesAllianceIDCorporations(params *GetAlliancesAlliance
 }
 
 /*
-  GetAlliancesAllianceIDIcons gets alliance icon
+	GetAlliancesAllianceIDIcons gets alliance icon
 
-  Get the icon urls for a alliance
+	Get the icon urls for a alliance
 
 ---
 

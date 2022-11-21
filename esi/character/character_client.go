@@ -62,9 +62,9 @@ type ClientService interface {
 }
 
 /*
-  GetCharactersCharacterID gets character s public information
+	GetCharactersCharacterID gets character s public information
 
-  Public information about a character
+	Public information about a character
 
 ---
 
@@ -106,9 +106,9 @@ func (a *Client) GetCharactersCharacterID(params *GetCharactersCharacterIDParams
 }
 
 /*
-  GetCharactersCharacterIDAgentsResearch gets agents research
+	GetCharactersCharacterIDAgentsResearch gets agents research
 
-  Return a list of agents research information for a character. The formula for finding the current research points with an agent is: currentPoints = remainderPoints + pointsPerDay * days(currentTime - researchStartDate)
+	Return a list of agents research information for a character. The formula for finding the current research points with an agent is: currentPoints = remainderPoints + pointsPerDay * days(currentTime - researchStartDate)
 
 ---
 
@@ -151,9 +151,9 @@ func (a *Client) GetCharactersCharacterIDAgentsResearch(params *GetCharactersCha
 }
 
 /*
-  GetCharactersCharacterIDBlueprints gets blueprints
+	GetCharactersCharacterIDBlueprints gets blueprints
 
-  Return a list of blueprints the character owns
+	Return a list of blueprints the character owns
 
 ---
 
@@ -196,9 +196,9 @@ func (a *Client) GetCharactersCharacterIDBlueprints(params *GetCharactersCharact
 }
 
 /*
-  GetCharactersCharacterIDCorporationhistory gets corporation history
+	GetCharactersCharacterIDCorporationhistory gets corporation history
 
-  Get a list of all the corporations a character has been a member of
+	Get a list of all the corporations a character has been a member of
 
 ---
 
@@ -240,9 +240,9 @@ func (a *Client) GetCharactersCharacterIDCorporationhistory(params *GetCharacter
 }
 
 /*
-  GetCharactersCharacterIDFatigue gets jump fatigue
+	GetCharactersCharacterIDFatigue gets jump fatigue
 
-  Return a character's jump activation and fatigue information
+	Return a character's jump activation and fatigue information
 
 ---
 
@@ -285,9 +285,9 @@ func (a *Client) GetCharactersCharacterIDFatigue(params *GetCharactersCharacterI
 }
 
 /*
-  GetCharactersCharacterIDMedals gets medals
+	GetCharactersCharacterIDMedals gets medals
 
-  Return a list of medals the character has
+	Return a list of medals the character has
 
 ---
 
@@ -330,9 +330,9 @@ func (a *Client) GetCharactersCharacterIDMedals(params *GetCharactersCharacterID
 }
 
 /*
-  GetCharactersCharacterIDNotifications gets character notifications
+	GetCharactersCharacterIDNotifications gets character notifications
 
-  Return character notifications
+	Return character notifications
 
 ---
 
@@ -375,9 +375,9 @@ func (a *Client) GetCharactersCharacterIDNotifications(params *GetCharactersChar
 }
 
 /*
-  GetCharactersCharacterIDNotificationsContacts gets new contact notifications
+	GetCharactersCharacterIDNotificationsContacts gets new contact notifications
 
-  Return notifications about having been added to someone's contact list
+	Return notifications about having been added to someone's contact list
 
 ---
 
@@ -420,9 +420,9 @@ func (a *Client) GetCharactersCharacterIDNotificationsContacts(params *GetCharac
 }
 
 /*
-  GetCharactersCharacterIDPortrait gets character portraits
+	GetCharactersCharacterIDPortrait gets character portraits
 
-  Get portrait urls for a character
+	Get portrait urls for a character
 
 ---
 
@@ -464,9 +464,9 @@ func (a *Client) GetCharactersCharacterIDPortrait(params *GetCharactersCharacter
 }
 
 /*
-  GetCharactersCharacterIDRoles gets character corporation roles
+	GetCharactersCharacterIDRoles gets character corporation roles
 
-  Returns a character's corporation roles
+	Returns a character's corporation roles
 
 ---
 
@@ -509,9 +509,9 @@ func (a *Client) GetCharactersCharacterIDRoles(params *GetCharactersCharacterIDR
 }
 
 /*
-  GetCharactersCharacterIDStandings gets standings
+	GetCharactersCharacterIDStandings gets standings
 
-  Return character standings from agents, NPC corporations, and factions
+	Return character standings from agents, NPC corporations, and factions
 
 ---
 
@@ -554,9 +554,9 @@ func (a *Client) GetCharactersCharacterIDStandings(params *GetCharactersCharacte
 }
 
 /*
-  GetCharactersCharacterIDTitles gets character corporation titles
+	GetCharactersCharacterIDTitles gets character corporation titles
 
-  Returns a character's titles
+	Returns a character's titles
 
 ---
 
@@ -599,9 +599,9 @@ func (a *Client) GetCharactersCharacterIDTitles(params *GetCharactersCharacterID
 }
 
 /*
-  PostCharactersAffiliation characters affiliation
+	PostCharactersAffiliation characters affiliation
 
-  Bulk lookup of character IDs to corporation, alliance and faction
+	Bulk lookup of character IDs to corporation, alliance and faction
 
 ---
 
@@ -643,12 +643,11 @@ func (a *Client) PostCharactersAffiliation(params *PostCharactersAffiliationPara
 }
 
 /*
-  PostCharactersCharacterIDCspa calculates a c s p a charge cost
+	PostCharactersCharacterIDCspa calculates a c s p a charge cost
 
-  Takes a source character ID in the url and a set of target character ID's in the body, returns a CSPA charge cost
+	Takes a source character ID in the url and a set of target character ID's in the body, returns a CSPA charge cost
 
 ---
-
 */
 func (a *Client) PostCharactersCharacterIDCspa(params *PostCharactersCharacterIDCspaParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*PostCharactersCharacterIDCspaCreated, error) {
 	// TODO: Validate the params before sending

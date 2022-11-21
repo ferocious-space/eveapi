@@ -79,7 +79,8 @@ func NewGetOpportunitiesGroupsGroupIDOK() *GetOpportunitiesGroupsGroupIDOK {
 	return &GetOpportunitiesGroupsGroupIDOK{}
 }
 
-/* GetOpportunitiesGroupsGroupIDOK describes a response with status code 200, with default header values.
+/*
+GetOpportunitiesGroupsGroupIDOK describes a response with status code 200, with default header values.
 
 Details of an opportunities group
 */
@@ -108,9 +109,39 @@ type GetOpportunitiesGroupsGroupIDOK struct {
 	Payload *GetOpportunitiesGroupsGroupIDOKBody
 }
 
+// IsSuccess returns true when this get opportunities groups group Id o k response has a 2xx status code
+func (o *GetOpportunitiesGroupsGroupIDOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get opportunities groups group Id o k response has a 3xx status code
+func (o *GetOpportunitiesGroupsGroupIDOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get opportunities groups group Id o k response has a 4xx status code
+func (o *GetOpportunitiesGroupsGroupIDOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get opportunities groups group Id o k response has a 5xx status code
+func (o *GetOpportunitiesGroupsGroupIDOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get opportunities groups group Id o k response a status code equal to that given
+func (o *GetOpportunitiesGroupsGroupIDOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetOpportunitiesGroupsGroupIDOK) Error() string {
 	return fmt.Sprintf("[GET /v1/opportunities/groups/{group_id}/][%d] getOpportunitiesGroupsGroupIdOK  %+v", 200, o.Payload)
 }
+
+func (o *GetOpportunitiesGroupsGroupIDOK) String() string {
+	return fmt.Sprintf("[GET /v1/opportunities/groups/{group_id}/][%d] getOpportunitiesGroupsGroupIdOK  %+v", 200, o.Payload)
+}
+
 func (o *GetOpportunitiesGroupsGroupIDOK) GetPayload() *GetOpportunitiesGroupsGroupIDOKBody {
 	return o.Payload
 }
@@ -167,7 +198,8 @@ func NewGetOpportunitiesGroupsGroupIDNotModified() *GetOpportunitiesGroupsGroupI
 	return &GetOpportunitiesGroupsGroupIDNotModified{}
 }
 
-/* GetOpportunitiesGroupsGroupIDNotModified describes a response with status code 304, with default header values.
+/*
+GetOpportunitiesGroupsGroupIDNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -190,7 +222,36 @@ type GetOpportunitiesGroupsGroupIDNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get opportunities groups group Id not modified response has a 2xx status code
+func (o *GetOpportunitiesGroupsGroupIDNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get opportunities groups group Id not modified response has a 3xx status code
+func (o *GetOpportunitiesGroupsGroupIDNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get opportunities groups group Id not modified response has a 4xx status code
+func (o *GetOpportunitiesGroupsGroupIDNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get opportunities groups group Id not modified response has a 5xx status code
+func (o *GetOpportunitiesGroupsGroupIDNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get opportunities groups group Id not modified response a status code equal to that given
+func (o *GetOpportunitiesGroupsGroupIDNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetOpportunitiesGroupsGroupIDNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/opportunities/groups/{group_id}/][%d] getOpportunitiesGroupsGroupIdNotModified ", 304)
+}
+
+func (o *GetOpportunitiesGroupsGroupIDNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/opportunities/groups/{group_id}/][%d] getOpportunitiesGroupsGroupIdNotModified ", 304)
 }
 
@@ -232,7 +293,8 @@ func NewGetOpportunitiesGroupsGroupIDBadRequest() *GetOpportunitiesGroupsGroupID
 	return &GetOpportunitiesGroupsGroupIDBadRequest{}
 }
 
-/* GetOpportunitiesGroupsGroupIDBadRequest describes a response with status code 400, with default header values.
+/*
+GetOpportunitiesGroupsGroupIDBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -240,9 +302,39 @@ type GetOpportunitiesGroupsGroupIDBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get opportunities groups group Id bad request response has a 2xx status code
+func (o *GetOpportunitiesGroupsGroupIDBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get opportunities groups group Id bad request response has a 3xx status code
+func (o *GetOpportunitiesGroupsGroupIDBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get opportunities groups group Id bad request response has a 4xx status code
+func (o *GetOpportunitiesGroupsGroupIDBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get opportunities groups group Id bad request response has a 5xx status code
+func (o *GetOpportunitiesGroupsGroupIDBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get opportunities groups group Id bad request response a status code equal to that given
+func (o *GetOpportunitiesGroupsGroupIDBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetOpportunitiesGroupsGroupIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/opportunities/groups/{group_id}/][%d] getOpportunitiesGroupsGroupIdBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetOpportunitiesGroupsGroupIDBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/opportunities/groups/{group_id}/][%d] getOpportunitiesGroupsGroupIdBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetOpportunitiesGroupsGroupIDBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -264,7 +356,8 @@ func NewGetOpportunitiesGroupsGroupIDEnhanceYourCalm() *GetOpportunitiesGroupsGr
 	return &GetOpportunitiesGroupsGroupIDEnhanceYourCalm{}
 }
 
-/* GetOpportunitiesGroupsGroupIDEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetOpportunitiesGroupsGroupIDEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -272,9 +365,39 @@ type GetOpportunitiesGroupsGroupIDEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get opportunities groups group Id enhance your calm response has a 2xx status code
+func (o *GetOpportunitiesGroupsGroupIDEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get opportunities groups group Id enhance your calm response has a 3xx status code
+func (o *GetOpportunitiesGroupsGroupIDEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get opportunities groups group Id enhance your calm response has a 4xx status code
+func (o *GetOpportunitiesGroupsGroupIDEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get opportunities groups group Id enhance your calm response has a 5xx status code
+func (o *GetOpportunitiesGroupsGroupIDEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get opportunities groups group Id enhance your calm response a status code equal to that given
+func (o *GetOpportunitiesGroupsGroupIDEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetOpportunitiesGroupsGroupIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/opportunities/groups/{group_id}/][%d] getOpportunitiesGroupsGroupIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetOpportunitiesGroupsGroupIDEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/opportunities/groups/{group_id}/][%d] getOpportunitiesGroupsGroupIdEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetOpportunitiesGroupsGroupIDEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -296,7 +419,8 @@ func NewGetOpportunitiesGroupsGroupIDInternalServerError() *GetOpportunitiesGrou
 	return &GetOpportunitiesGroupsGroupIDInternalServerError{}
 }
 
-/* GetOpportunitiesGroupsGroupIDInternalServerError describes a response with status code 500, with default header values.
+/*
+GetOpportunitiesGroupsGroupIDInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -304,9 +428,39 @@ type GetOpportunitiesGroupsGroupIDInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get opportunities groups group Id internal server error response has a 2xx status code
+func (o *GetOpportunitiesGroupsGroupIDInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get opportunities groups group Id internal server error response has a 3xx status code
+func (o *GetOpportunitiesGroupsGroupIDInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get opportunities groups group Id internal server error response has a 4xx status code
+func (o *GetOpportunitiesGroupsGroupIDInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get opportunities groups group Id internal server error response has a 5xx status code
+func (o *GetOpportunitiesGroupsGroupIDInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get opportunities groups group Id internal server error response a status code equal to that given
+func (o *GetOpportunitiesGroupsGroupIDInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetOpportunitiesGroupsGroupIDInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/opportunities/groups/{group_id}/][%d] getOpportunitiesGroupsGroupIdInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetOpportunitiesGroupsGroupIDInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/opportunities/groups/{group_id}/][%d] getOpportunitiesGroupsGroupIdInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetOpportunitiesGroupsGroupIDInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -328,7 +482,8 @@ func NewGetOpportunitiesGroupsGroupIDServiceUnavailable() *GetOpportunitiesGroup
 	return &GetOpportunitiesGroupsGroupIDServiceUnavailable{}
 }
 
-/* GetOpportunitiesGroupsGroupIDServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetOpportunitiesGroupsGroupIDServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -336,9 +491,39 @@ type GetOpportunitiesGroupsGroupIDServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get opportunities groups group Id service unavailable response has a 2xx status code
+func (o *GetOpportunitiesGroupsGroupIDServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get opportunities groups group Id service unavailable response has a 3xx status code
+func (o *GetOpportunitiesGroupsGroupIDServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get opportunities groups group Id service unavailable response has a 4xx status code
+func (o *GetOpportunitiesGroupsGroupIDServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get opportunities groups group Id service unavailable response has a 5xx status code
+func (o *GetOpportunitiesGroupsGroupIDServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get opportunities groups group Id service unavailable response a status code equal to that given
+func (o *GetOpportunitiesGroupsGroupIDServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetOpportunitiesGroupsGroupIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/opportunities/groups/{group_id}/][%d] getOpportunitiesGroupsGroupIdServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetOpportunitiesGroupsGroupIDServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/opportunities/groups/{group_id}/][%d] getOpportunitiesGroupsGroupIdServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetOpportunitiesGroupsGroupIDServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -360,7 +545,8 @@ func NewGetOpportunitiesGroupsGroupIDGatewayTimeout() *GetOpportunitiesGroupsGro
 	return &GetOpportunitiesGroupsGroupIDGatewayTimeout{}
 }
 
-/* GetOpportunitiesGroupsGroupIDGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetOpportunitiesGroupsGroupIDGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -368,9 +554,39 @@ type GetOpportunitiesGroupsGroupIDGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get opportunities groups group Id gateway timeout response has a 2xx status code
+func (o *GetOpportunitiesGroupsGroupIDGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get opportunities groups group Id gateway timeout response has a 3xx status code
+func (o *GetOpportunitiesGroupsGroupIDGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get opportunities groups group Id gateway timeout response has a 4xx status code
+func (o *GetOpportunitiesGroupsGroupIDGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get opportunities groups group Id gateway timeout response has a 5xx status code
+func (o *GetOpportunitiesGroupsGroupIDGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get opportunities groups group Id gateway timeout response a status code equal to that given
+func (o *GetOpportunitiesGroupsGroupIDGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetOpportunitiesGroupsGroupIDGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/opportunities/groups/{group_id}/][%d] getOpportunitiesGroupsGroupIdGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetOpportunitiesGroupsGroupIDGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/opportunities/groups/{group_id}/][%d] getOpportunitiesGroupsGroupIdGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetOpportunitiesGroupsGroupIDGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -387,7 +603,8 @@ func (o *GetOpportunitiesGroupsGroupIDGatewayTimeout) readResponse(response runt
 	return nil
 }
 
-/*GetOpportunitiesGroupsGroupIDOKBody get_opportunities_groups_group_id_ok
+/*
+GetOpportunitiesGroupsGroupIDOKBody get_opportunities_groups_group_id_ok
 //
 // 200 ok object
 swagger:model GetOpportunitiesGroupsGroupIDOKBody

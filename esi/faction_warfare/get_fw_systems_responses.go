@@ -80,7 +80,8 @@ func NewGetFwSystemsOK() *GetFwSystemsOK {
 	return &GetFwSystemsOK{}
 }
 
-/* GetFwSystemsOK describes a response with status code 200, with default header values.
+/*
+GetFwSystemsOK describes a response with status code 200, with default header values.
 
 All faction warfare solar systems
 */
@@ -105,9 +106,39 @@ type GetFwSystemsOK struct {
 	Payload []*GetFwSystemsOKBodyItems0
 }
 
+// IsSuccess returns true when this get fw systems o k response has a 2xx status code
+func (o *GetFwSystemsOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get fw systems o k response has a 3xx status code
+func (o *GetFwSystemsOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fw systems o k response has a 4xx status code
+func (o *GetFwSystemsOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get fw systems o k response has a 5xx status code
+func (o *GetFwSystemsOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get fw systems o k response a status code equal to that given
+func (o *GetFwSystemsOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetFwSystemsOK) Error() string {
 	return fmt.Sprintf("[GET /v2/fw/systems/][%d] getFwSystemsOK  %+v", 200, o.Payload)
 }
+
+func (o *GetFwSystemsOK) String() string {
+	return fmt.Sprintf("[GET /v2/fw/systems/][%d] getFwSystemsOK  %+v", 200, o.Payload)
+}
+
 func (o *GetFwSystemsOK) GetPayload() []*GetFwSystemsOKBodyItems0 {
 	return o.Payload
 }
@@ -155,7 +186,8 @@ func NewGetFwSystemsNotModified() *GetFwSystemsNotModified {
 	return &GetFwSystemsNotModified{}
 }
 
-/* GetFwSystemsNotModified describes a response with status code 304, with default header values.
+/*
+GetFwSystemsNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -178,7 +210,36 @@ type GetFwSystemsNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get fw systems not modified response has a 2xx status code
+func (o *GetFwSystemsNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fw systems not modified response has a 3xx status code
+func (o *GetFwSystemsNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get fw systems not modified response has a 4xx status code
+func (o *GetFwSystemsNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get fw systems not modified response has a 5xx status code
+func (o *GetFwSystemsNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get fw systems not modified response a status code equal to that given
+func (o *GetFwSystemsNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetFwSystemsNotModified) Error() string {
+	return fmt.Sprintf("[GET /v2/fw/systems/][%d] getFwSystemsNotModified ", 304)
+}
+
+func (o *GetFwSystemsNotModified) String() string {
 	return fmt.Sprintf("[GET /v2/fw/systems/][%d] getFwSystemsNotModified ", 304)
 }
 
@@ -220,7 +281,8 @@ func NewGetFwSystemsBadRequest() *GetFwSystemsBadRequest {
 	return &GetFwSystemsBadRequest{}
 }
 
-/* GetFwSystemsBadRequest describes a response with status code 400, with default header values.
+/*
+GetFwSystemsBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -228,9 +290,39 @@ type GetFwSystemsBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get fw systems bad request response has a 2xx status code
+func (o *GetFwSystemsBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fw systems bad request response has a 3xx status code
+func (o *GetFwSystemsBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fw systems bad request response has a 4xx status code
+func (o *GetFwSystemsBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get fw systems bad request response has a 5xx status code
+func (o *GetFwSystemsBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get fw systems bad request response a status code equal to that given
+func (o *GetFwSystemsBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetFwSystemsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v2/fw/systems/][%d] getFwSystemsBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetFwSystemsBadRequest) String() string {
+	return fmt.Sprintf("[GET /v2/fw/systems/][%d] getFwSystemsBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetFwSystemsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -252,7 +344,8 @@ func NewGetFwSystemsEnhanceYourCalm() *GetFwSystemsEnhanceYourCalm {
 	return &GetFwSystemsEnhanceYourCalm{}
 }
 
-/* GetFwSystemsEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetFwSystemsEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -260,9 +353,39 @@ type GetFwSystemsEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get fw systems enhance your calm response has a 2xx status code
+func (o *GetFwSystemsEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fw systems enhance your calm response has a 3xx status code
+func (o *GetFwSystemsEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fw systems enhance your calm response has a 4xx status code
+func (o *GetFwSystemsEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get fw systems enhance your calm response has a 5xx status code
+func (o *GetFwSystemsEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get fw systems enhance your calm response a status code equal to that given
+func (o *GetFwSystemsEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetFwSystemsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v2/fw/systems/][%d] getFwSystemsEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetFwSystemsEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v2/fw/systems/][%d] getFwSystemsEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetFwSystemsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -284,7 +407,8 @@ func NewGetFwSystemsInternalServerError() *GetFwSystemsInternalServerError {
 	return &GetFwSystemsInternalServerError{}
 }
 
-/* GetFwSystemsInternalServerError describes a response with status code 500, with default header values.
+/*
+GetFwSystemsInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -292,9 +416,39 @@ type GetFwSystemsInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get fw systems internal server error response has a 2xx status code
+func (o *GetFwSystemsInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fw systems internal server error response has a 3xx status code
+func (o *GetFwSystemsInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fw systems internal server error response has a 4xx status code
+func (o *GetFwSystemsInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get fw systems internal server error response has a 5xx status code
+func (o *GetFwSystemsInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get fw systems internal server error response a status code equal to that given
+func (o *GetFwSystemsInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetFwSystemsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v2/fw/systems/][%d] getFwSystemsInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetFwSystemsInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v2/fw/systems/][%d] getFwSystemsInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetFwSystemsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -316,7 +470,8 @@ func NewGetFwSystemsServiceUnavailable() *GetFwSystemsServiceUnavailable {
 	return &GetFwSystemsServiceUnavailable{}
 }
 
-/* GetFwSystemsServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetFwSystemsServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -324,9 +479,39 @@ type GetFwSystemsServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get fw systems service unavailable response has a 2xx status code
+func (o *GetFwSystemsServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fw systems service unavailable response has a 3xx status code
+func (o *GetFwSystemsServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fw systems service unavailable response has a 4xx status code
+func (o *GetFwSystemsServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get fw systems service unavailable response has a 5xx status code
+func (o *GetFwSystemsServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get fw systems service unavailable response a status code equal to that given
+func (o *GetFwSystemsServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetFwSystemsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v2/fw/systems/][%d] getFwSystemsServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetFwSystemsServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v2/fw/systems/][%d] getFwSystemsServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetFwSystemsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -348,7 +533,8 @@ func NewGetFwSystemsGatewayTimeout() *GetFwSystemsGatewayTimeout {
 	return &GetFwSystemsGatewayTimeout{}
 }
 
-/* GetFwSystemsGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetFwSystemsGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -356,9 +542,39 @@ type GetFwSystemsGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get fw systems gateway timeout response has a 2xx status code
+func (o *GetFwSystemsGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get fw systems gateway timeout response has a 3xx status code
+func (o *GetFwSystemsGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get fw systems gateway timeout response has a 4xx status code
+func (o *GetFwSystemsGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get fw systems gateway timeout response has a 5xx status code
+func (o *GetFwSystemsGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get fw systems gateway timeout response a status code equal to that given
+func (o *GetFwSystemsGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetFwSystemsGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v2/fw/systems/][%d] getFwSystemsGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetFwSystemsGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v2/fw/systems/][%d] getFwSystemsGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetFwSystemsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -375,7 +591,8 @@ func (o *GetFwSystemsGatewayTimeout) readResponse(response runtime.ClientRespons
 	return nil
 }
 
-/*GetFwSystemsOKBodyItems0 get_fw_systems_200_ok
+/*
+GetFwSystemsOKBodyItems0 get_fw_systems_200_ok
 //
 // 200 ok object
 swagger:model GetFwSystemsOKBodyItems0

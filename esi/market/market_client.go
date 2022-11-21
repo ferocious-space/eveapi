@@ -56,9 +56,9 @@ type ClientService interface {
 }
 
 /*
-  GetCharactersCharacterIDOrders lists open orders from a character
+	GetCharactersCharacterIDOrders lists open orders from a character
 
-  List open market orders placed by a character
+	List open market orders placed by a character
 
 ---
 
@@ -101,9 +101,9 @@ func (a *Client) GetCharactersCharacterIDOrders(params *GetCharactersCharacterID
 }
 
 /*
-  GetCharactersCharacterIDOrdersHistory lists historical orders by a character
+	GetCharactersCharacterIDOrdersHistory lists historical orders by a character
 
-  List cancelled and expired market orders placed by a character up to 90 days in the past.
+	List cancelled and expired market orders placed by a character up to 90 days in the past.
 
 ---
 
@@ -146,13 +146,13 @@ func (a *Client) GetCharactersCharacterIDOrdersHistory(params *GetCharactersChar
 }
 
 /*
-  GetCorporationsCorporationIDOrders lists open orders from a corporation
+	GetCorporationsCorporationIDOrders lists open orders from a corporation
 
-  List open market orders placed on behalf of a corporation
+	List open market orders placed on behalf of a corporation
 
 ---
 
-This route is cached for up to 1200 seconds
+# This route is cached for up to 1200 seconds
 
 ---
 Requires one of the following EVE corporation role(s): Accountant, Trader
@@ -194,13 +194,13 @@ func (a *Client) GetCorporationsCorporationIDOrders(params *GetCorporationsCorpo
 }
 
 /*
-  GetCorporationsCorporationIDOrdersHistory lists historical orders from a corporation
+	GetCorporationsCorporationIDOrdersHistory lists historical orders from a corporation
 
-  List cancelled and expired market orders placed on behalf of a corporation up to 90 days in the past.
+	List cancelled and expired market orders placed on behalf of a corporation up to 90 days in the past.
 
 ---
 
-This route is cached for up to 3600 seconds
+# This route is cached for up to 3600 seconds
 
 ---
 Requires one of the following EVE corporation role(s): Accountant, Trader
@@ -242,9 +242,9 @@ func (a *Client) GetCorporationsCorporationIDOrdersHistory(params *GetCorporatio
 }
 
 /*
-  GetMarketsGroups gets item groups
+	GetMarketsGroups gets item groups
 
-  Get a list of item groups
+	Get a list of item groups
 
 ---
 
@@ -286,9 +286,9 @@ func (a *Client) GetMarketsGroups(params *GetMarketsGroupsParams, opts ...Client
 }
 
 /*
-  GetMarketsGroupsMarketGroupID gets item group information
+	GetMarketsGroupsMarketGroupID gets item group information
 
-  Get information on an item group
+	Get information on an item group
 
 ---
 
@@ -330,9 +330,9 @@ func (a *Client) GetMarketsGroupsMarketGroupID(params *GetMarketsGroupsMarketGro
 }
 
 /*
-  GetMarketsPrices lists market prices
+	GetMarketsPrices lists market prices
 
-  Return a list of prices
+	Return a list of prices
 
 ---
 
@@ -374,9 +374,9 @@ func (a *Client) GetMarketsPrices(params *GetMarketsPricesParams, opts ...Client
 }
 
 /*
-  GetMarketsRegionIDHistory lists historical market statistics in a region
+	GetMarketsRegionIDHistory lists historical market statistics in a region
 
-  Return a list of historical market statistics for the specified type in a region
+	Return a list of historical market statistics for the specified type in a region
 
 ---
 
@@ -418,9 +418,9 @@ func (a *Client) GetMarketsRegionIDHistory(params *GetMarketsRegionIDHistoryPara
 }
 
 /*
-  GetMarketsRegionIDOrders lists orders in a region
+	GetMarketsRegionIDOrders lists orders in a region
 
-  Return a list of orders in a region
+	Return a list of orders in a region
 
 ---
 
@@ -462,9 +462,9 @@ func (a *Client) GetMarketsRegionIDOrders(params *GetMarketsRegionIDOrdersParams
 }
 
 /*
-  GetMarketsRegionIDTypes lists type i ds relevant to a market
+	GetMarketsRegionIDTypes lists type i ds relevant to a market
 
-  Return a list of type IDs that have active orders in the region, for efficient market indexing.
+	Return a list of type IDs that have active orders in the region, for efficient market indexing.
 
 ---
 
@@ -506,9 +506,9 @@ func (a *Client) GetMarketsRegionIDTypes(params *GetMarketsRegionIDTypesParams, 
 }
 
 /*
-  GetMarketsStructuresStructureID lists orders in a structure
+	GetMarketsStructuresStructureID lists orders in a structure
 
-  Return all orders in a structure
+	Return all orders in a structure
 
 ---
 

@@ -53,10 +53,12 @@ func NewGetAlliancesAllianceIDIconsParamsWithHTTPClient(client *http.Client) *Ge
 	}
 }
 
-/* GetAlliancesAllianceIDIconsParams contains all the parameters to send to the API endpoint
-   for the get alliances alliance id icons operation.
+/*
+GetAlliancesAllianceIDIconsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get alliances alliance id icons operation.
+
+	Typically these are written to a http.Request.
 */
 type GetAlliancesAllianceIDIconsParams struct {
 

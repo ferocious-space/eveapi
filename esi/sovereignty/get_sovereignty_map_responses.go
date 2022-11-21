@@ -79,7 +79,8 @@ func NewGetSovereigntyMapOK() *GetSovereigntyMapOK {
 	return &GetSovereigntyMapOK{}
 }
 
-/* GetSovereigntyMapOK describes a response with status code 200, with default header values.
+/*
+GetSovereigntyMapOK describes a response with status code 200, with default header values.
 
 A list of sovereignty information for solar systems in New Eden
 */
@@ -104,9 +105,39 @@ type GetSovereigntyMapOK struct {
 	Payload []*GetSovereigntyMapOKBodyItems0
 }
 
+// IsSuccess returns true when this get sovereignty map o k response has a 2xx status code
+func (o *GetSovereigntyMapOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get sovereignty map o k response has a 3xx status code
+func (o *GetSovereigntyMapOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get sovereignty map o k response has a 4xx status code
+func (o *GetSovereigntyMapOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get sovereignty map o k response has a 5xx status code
+func (o *GetSovereigntyMapOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get sovereignty map o k response a status code equal to that given
+func (o *GetSovereigntyMapOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetSovereigntyMapOK) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/map/][%d] getSovereigntyMapOK  %+v", 200, o.Payload)
 }
+
+func (o *GetSovereigntyMapOK) String() string {
+	return fmt.Sprintf("[GET /v1/sovereignty/map/][%d] getSovereigntyMapOK  %+v", 200, o.Payload)
+}
+
 func (o *GetSovereigntyMapOK) GetPayload() []*GetSovereigntyMapOKBodyItems0 {
 	return o.Payload
 }
@@ -154,7 +185,8 @@ func NewGetSovereigntyMapNotModified() *GetSovereigntyMapNotModified {
 	return &GetSovereigntyMapNotModified{}
 }
 
-/* GetSovereigntyMapNotModified describes a response with status code 304, with default header values.
+/*
+GetSovereigntyMapNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -177,7 +209,36 @@ type GetSovereigntyMapNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get sovereignty map not modified response has a 2xx status code
+func (o *GetSovereigntyMapNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get sovereignty map not modified response has a 3xx status code
+func (o *GetSovereigntyMapNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get sovereignty map not modified response has a 4xx status code
+func (o *GetSovereigntyMapNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get sovereignty map not modified response has a 5xx status code
+func (o *GetSovereigntyMapNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get sovereignty map not modified response a status code equal to that given
+func (o *GetSovereigntyMapNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetSovereigntyMapNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/sovereignty/map/][%d] getSovereigntyMapNotModified ", 304)
+}
+
+func (o *GetSovereigntyMapNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/map/][%d] getSovereigntyMapNotModified ", 304)
 }
 
@@ -219,7 +280,8 @@ func NewGetSovereigntyMapBadRequest() *GetSovereigntyMapBadRequest {
 	return &GetSovereigntyMapBadRequest{}
 }
 
-/* GetSovereigntyMapBadRequest describes a response with status code 400, with default header values.
+/*
+GetSovereigntyMapBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -227,9 +289,39 @@ type GetSovereigntyMapBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get sovereignty map bad request response has a 2xx status code
+func (o *GetSovereigntyMapBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get sovereignty map bad request response has a 3xx status code
+func (o *GetSovereigntyMapBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get sovereignty map bad request response has a 4xx status code
+func (o *GetSovereigntyMapBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get sovereignty map bad request response has a 5xx status code
+func (o *GetSovereigntyMapBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get sovereignty map bad request response a status code equal to that given
+func (o *GetSovereigntyMapBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetSovereigntyMapBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/map/][%d] getSovereigntyMapBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetSovereigntyMapBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/sovereignty/map/][%d] getSovereigntyMapBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetSovereigntyMapBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -251,7 +343,8 @@ func NewGetSovereigntyMapEnhanceYourCalm() *GetSovereigntyMapEnhanceYourCalm {
 	return &GetSovereigntyMapEnhanceYourCalm{}
 }
 
-/* GetSovereigntyMapEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetSovereigntyMapEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -259,9 +352,39 @@ type GetSovereigntyMapEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get sovereignty map enhance your calm response has a 2xx status code
+func (o *GetSovereigntyMapEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get sovereignty map enhance your calm response has a 3xx status code
+func (o *GetSovereigntyMapEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get sovereignty map enhance your calm response has a 4xx status code
+func (o *GetSovereigntyMapEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get sovereignty map enhance your calm response has a 5xx status code
+func (o *GetSovereigntyMapEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get sovereignty map enhance your calm response a status code equal to that given
+func (o *GetSovereigntyMapEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetSovereigntyMapEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/map/][%d] getSovereigntyMapEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetSovereigntyMapEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/sovereignty/map/][%d] getSovereigntyMapEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetSovereigntyMapEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -283,7 +406,8 @@ func NewGetSovereigntyMapInternalServerError() *GetSovereigntyMapInternalServerE
 	return &GetSovereigntyMapInternalServerError{}
 }
 
-/* GetSovereigntyMapInternalServerError describes a response with status code 500, with default header values.
+/*
+GetSovereigntyMapInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -291,9 +415,39 @@ type GetSovereigntyMapInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get sovereignty map internal server error response has a 2xx status code
+func (o *GetSovereigntyMapInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get sovereignty map internal server error response has a 3xx status code
+func (o *GetSovereigntyMapInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get sovereignty map internal server error response has a 4xx status code
+func (o *GetSovereigntyMapInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get sovereignty map internal server error response has a 5xx status code
+func (o *GetSovereigntyMapInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get sovereignty map internal server error response a status code equal to that given
+func (o *GetSovereigntyMapInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetSovereigntyMapInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/map/][%d] getSovereigntyMapInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetSovereigntyMapInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/sovereignty/map/][%d] getSovereigntyMapInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetSovereigntyMapInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -315,7 +469,8 @@ func NewGetSovereigntyMapServiceUnavailable() *GetSovereigntyMapServiceUnavailab
 	return &GetSovereigntyMapServiceUnavailable{}
 }
 
-/* GetSovereigntyMapServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetSovereigntyMapServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -323,9 +478,39 @@ type GetSovereigntyMapServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get sovereignty map service unavailable response has a 2xx status code
+func (o *GetSovereigntyMapServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get sovereignty map service unavailable response has a 3xx status code
+func (o *GetSovereigntyMapServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get sovereignty map service unavailable response has a 4xx status code
+func (o *GetSovereigntyMapServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get sovereignty map service unavailable response has a 5xx status code
+func (o *GetSovereigntyMapServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get sovereignty map service unavailable response a status code equal to that given
+func (o *GetSovereigntyMapServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetSovereigntyMapServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/map/][%d] getSovereigntyMapServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetSovereigntyMapServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/sovereignty/map/][%d] getSovereigntyMapServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetSovereigntyMapServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -347,7 +532,8 @@ func NewGetSovereigntyMapGatewayTimeout() *GetSovereigntyMapGatewayTimeout {
 	return &GetSovereigntyMapGatewayTimeout{}
 }
 
-/* GetSovereigntyMapGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetSovereigntyMapGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -355,9 +541,39 @@ type GetSovereigntyMapGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get sovereignty map gateway timeout response has a 2xx status code
+func (o *GetSovereigntyMapGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get sovereignty map gateway timeout response has a 3xx status code
+func (o *GetSovereigntyMapGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get sovereignty map gateway timeout response has a 4xx status code
+func (o *GetSovereigntyMapGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get sovereignty map gateway timeout response has a 5xx status code
+func (o *GetSovereigntyMapGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get sovereignty map gateway timeout response a status code equal to that given
+func (o *GetSovereigntyMapGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetSovereigntyMapGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/map/][%d] getSovereigntyMapGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetSovereigntyMapGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/sovereignty/map/][%d] getSovereigntyMapGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetSovereigntyMapGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -374,7 +590,8 @@ func (o *GetSovereigntyMapGatewayTimeout) readResponse(response runtime.ClientRe
 	return nil
 }
 
-/*GetSovereigntyMapOKBodyItems0 get_sovereignty_map_200_ok
+/*
+GetSovereigntyMapOKBodyItems0 get_sovereignty_map_200_ok
 //
 // 200 ok object
 swagger:model GetSovereigntyMapOKBodyItems0

@@ -52,10 +52,12 @@ func NewGetHeadersParamsWithHTTPClient(client *http.Client) *GetHeadersParams {
 	}
 }
 
-/* GetHeadersParams contains all the parameters to send to the API endpoint
-   for the get headers operation.
+/*
+GetHeadersParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get headers operation.
+
+	Typically these are written to a http.Request.
 */
 type GetHeadersParams struct {
 	timeout    time.Duration

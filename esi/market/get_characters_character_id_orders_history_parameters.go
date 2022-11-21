@@ -53,10 +53,12 @@ func NewGetCharactersCharacterIDOrdersHistoryParamsWithHTTPClient(client *http.C
 	}
 }
 
-/* GetCharactersCharacterIDOrdersHistoryParams contains all the parameters to send to the API endpoint
-   for the get characters character id orders history operation.
+/*
+GetCharactersCharacterIDOrdersHistoryParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get characters character id orders history operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCharactersCharacterIDOrdersHistoryParams struct {
 

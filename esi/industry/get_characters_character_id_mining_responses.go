@@ -99,7 +99,8 @@ func NewGetCharactersCharacterIDMiningOK() *GetCharactersCharacterIDMiningOK {
 	}
 }
 
-/* GetCharactersCharacterIDMiningOK describes a response with status code 200, with default header values.
+/*
+GetCharactersCharacterIDMiningOK describes a response with status code 200, with default header values.
 
 Mining ledger of a character
 */
@@ -131,9 +132,39 @@ type GetCharactersCharacterIDMiningOK struct {
 	Payload []*GetCharactersCharacterIDMiningOKBodyItems0
 }
 
+// IsSuccess returns true when this get characters character Id mining o k response has a 2xx status code
+func (o *GetCharactersCharacterIDMiningOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get characters character Id mining o k response has a 3xx status code
+func (o *GetCharactersCharacterIDMiningOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id mining o k response has a 4xx status code
+func (o *GetCharactersCharacterIDMiningOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id mining o k response has a 5xx status code
+func (o *GetCharactersCharacterIDMiningOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id mining o k response a status code equal to that given
+func (o *GetCharactersCharacterIDMiningOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetCharactersCharacterIDMiningOK) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/mining/][%d] getCharactersCharacterIdMiningOK  %+v", 200, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDMiningOK) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/mining/][%d] getCharactersCharacterIdMiningOK  %+v", 200, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDMiningOK) GetPayload() []*GetCharactersCharacterIDMiningOKBodyItems0 {
 	return o.Payload
 }
@@ -192,7 +223,8 @@ func NewGetCharactersCharacterIDMiningNotModified() *GetCharactersCharacterIDMin
 	return &GetCharactersCharacterIDMiningNotModified{}
 }
 
-/* GetCharactersCharacterIDMiningNotModified describes a response with status code 304, with default header values.
+/*
+GetCharactersCharacterIDMiningNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -215,7 +247,36 @@ type GetCharactersCharacterIDMiningNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get characters character Id mining not modified response has a 2xx status code
+func (o *GetCharactersCharacterIDMiningNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id mining not modified response has a 3xx status code
+func (o *GetCharactersCharacterIDMiningNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get characters character Id mining not modified response has a 4xx status code
+func (o *GetCharactersCharacterIDMiningNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id mining not modified response has a 5xx status code
+func (o *GetCharactersCharacterIDMiningNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id mining not modified response a status code equal to that given
+func (o *GetCharactersCharacterIDMiningNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetCharactersCharacterIDMiningNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/mining/][%d] getCharactersCharacterIdMiningNotModified ", 304)
+}
+
+func (o *GetCharactersCharacterIDMiningNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/mining/][%d] getCharactersCharacterIdMiningNotModified ", 304)
 }
 
@@ -257,7 +318,8 @@ func NewGetCharactersCharacterIDMiningBadRequest() *GetCharactersCharacterIDMini
 	return &GetCharactersCharacterIDMiningBadRequest{}
 }
 
-/* GetCharactersCharacterIDMiningBadRequest describes a response with status code 400, with default header values.
+/*
+GetCharactersCharacterIDMiningBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -265,9 +327,39 @@ type GetCharactersCharacterIDMiningBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get characters character Id mining bad request response has a 2xx status code
+func (o *GetCharactersCharacterIDMiningBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id mining bad request response has a 3xx status code
+func (o *GetCharactersCharacterIDMiningBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id mining bad request response has a 4xx status code
+func (o *GetCharactersCharacterIDMiningBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id mining bad request response has a 5xx status code
+func (o *GetCharactersCharacterIDMiningBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id mining bad request response a status code equal to that given
+func (o *GetCharactersCharacterIDMiningBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetCharactersCharacterIDMiningBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/mining/][%d] getCharactersCharacterIdMiningBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDMiningBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/mining/][%d] getCharactersCharacterIdMiningBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDMiningBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -289,7 +381,8 @@ func NewGetCharactersCharacterIDMiningUnauthorized() *GetCharactersCharacterIDMi
 	return &GetCharactersCharacterIDMiningUnauthorized{}
 }
 
-/* GetCharactersCharacterIDMiningUnauthorized describes a response with status code 401, with default header values.
+/*
+GetCharactersCharacterIDMiningUnauthorized describes a response with status code 401, with default header values.
 
 Unauthorized
 */
@@ -297,9 +390,39 @@ type GetCharactersCharacterIDMiningUnauthorized struct {
 	Payload *models.Unauthorized
 }
 
+// IsSuccess returns true when this get characters character Id mining unauthorized response has a 2xx status code
+func (o *GetCharactersCharacterIDMiningUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id mining unauthorized response has a 3xx status code
+func (o *GetCharactersCharacterIDMiningUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id mining unauthorized response has a 4xx status code
+func (o *GetCharactersCharacterIDMiningUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id mining unauthorized response has a 5xx status code
+func (o *GetCharactersCharacterIDMiningUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id mining unauthorized response a status code equal to that given
+func (o *GetCharactersCharacterIDMiningUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *GetCharactersCharacterIDMiningUnauthorized) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/mining/][%d] getCharactersCharacterIdMiningUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDMiningUnauthorized) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/mining/][%d] getCharactersCharacterIdMiningUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDMiningUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
 }
@@ -321,7 +444,8 @@ func NewGetCharactersCharacterIDMiningForbidden() *GetCharactersCharacterIDMinin
 	return &GetCharactersCharacterIDMiningForbidden{}
 }
 
-/* GetCharactersCharacterIDMiningForbidden describes a response with status code 403, with default header values.
+/*
+GetCharactersCharacterIDMiningForbidden describes a response with status code 403, with default header values.
 
 Forbidden
 */
@@ -329,9 +453,39 @@ type GetCharactersCharacterIDMiningForbidden struct {
 	Payload *models.Forbidden
 }
 
+// IsSuccess returns true when this get characters character Id mining forbidden response has a 2xx status code
+func (o *GetCharactersCharacterIDMiningForbidden) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id mining forbidden response has a 3xx status code
+func (o *GetCharactersCharacterIDMiningForbidden) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id mining forbidden response has a 4xx status code
+func (o *GetCharactersCharacterIDMiningForbidden) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id mining forbidden response has a 5xx status code
+func (o *GetCharactersCharacterIDMiningForbidden) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id mining forbidden response a status code equal to that given
+func (o *GetCharactersCharacterIDMiningForbidden) IsCode(code int) bool {
+	return code == 403
+}
+
 func (o *GetCharactersCharacterIDMiningForbidden) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/mining/][%d] getCharactersCharacterIdMiningForbidden  %+v", 403, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDMiningForbidden) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/mining/][%d] getCharactersCharacterIdMiningForbidden  %+v", 403, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDMiningForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
 }
@@ -353,7 +507,8 @@ func NewGetCharactersCharacterIDMiningEnhanceYourCalm() *GetCharactersCharacterI
 	return &GetCharactersCharacterIDMiningEnhanceYourCalm{}
 }
 
-/* GetCharactersCharacterIDMiningEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetCharactersCharacterIDMiningEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -361,9 +516,39 @@ type GetCharactersCharacterIDMiningEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get characters character Id mining enhance your calm response has a 2xx status code
+func (o *GetCharactersCharacterIDMiningEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id mining enhance your calm response has a 3xx status code
+func (o *GetCharactersCharacterIDMiningEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id mining enhance your calm response has a 4xx status code
+func (o *GetCharactersCharacterIDMiningEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id mining enhance your calm response has a 5xx status code
+func (o *GetCharactersCharacterIDMiningEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id mining enhance your calm response a status code equal to that given
+func (o *GetCharactersCharacterIDMiningEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetCharactersCharacterIDMiningEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/mining/][%d] getCharactersCharacterIdMiningEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDMiningEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/mining/][%d] getCharactersCharacterIdMiningEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDMiningEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -385,7 +570,8 @@ func NewGetCharactersCharacterIDMiningInternalServerError() *GetCharactersCharac
 	return &GetCharactersCharacterIDMiningInternalServerError{}
 }
 
-/* GetCharactersCharacterIDMiningInternalServerError describes a response with status code 500, with default header values.
+/*
+GetCharactersCharacterIDMiningInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -393,9 +579,39 @@ type GetCharactersCharacterIDMiningInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get characters character Id mining internal server error response has a 2xx status code
+func (o *GetCharactersCharacterIDMiningInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id mining internal server error response has a 3xx status code
+func (o *GetCharactersCharacterIDMiningInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id mining internal server error response has a 4xx status code
+func (o *GetCharactersCharacterIDMiningInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id mining internal server error response has a 5xx status code
+func (o *GetCharactersCharacterIDMiningInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id mining internal server error response a status code equal to that given
+func (o *GetCharactersCharacterIDMiningInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetCharactersCharacterIDMiningInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/mining/][%d] getCharactersCharacterIdMiningInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDMiningInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/mining/][%d] getCharactersCharacterIdMiningInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDMiningInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -417,7 +633,8 @@ func NewGetCharactersCharacterIDMiningServiceUnavailable() *GetCharactersCharact
 	return &GetCharactersCharacterIDMiningServiceUnavailable{}
 }
 
-/* GetCharactersCharacterIDMiningServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetCharactersCharacterIDMiningServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -425,9 +642,39 @@ type GetCharactersCharacterIDMiningServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get characters character Id mining service unavailable response has a 2xx status code
+func (o *GetCharactersCharacterIDMiningServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id mining service unavailable response has a 3xx status code
+func (o *GetCharactersCharacterIDMiningServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id mining service unavailable response has a 4xx status code
+func (o *GetCharactersCharacterIDMiningServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id mining service unavailable response has a 5xx status code
+func (o *GetCharactersCharacterIDMiningServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id mining service unavailable response a status code equal to that given
+func (o *GetCharactersCharacterIDMiningServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetCharactersCharacterIDMiningServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/mining/][%d] getCharactersCharacterIdMiningServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDMiningServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/mining/][%d] getCharactersCharacterIdMiningServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDMiningServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -449,7 +696,8 @@ func NewGetCharactersCharacterIDMiningGatewayTimeout() *GetCharactersCharacterID
 	return &GetCharactersCharacterIDMiningGatewayTimeout{}
 }
 
-/* GetCharactersCharacterIDMiningGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetCharactersCharacterIDMiningGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -457,9 +705,39 @@ type GetCharactersCharacterIDMiningGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get characters character Id mining gateway timeout response has a 2xx status code
+func (o *GetCharactersCharacterIDMiningGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id mining gateway timeout response has a 3xx status code
+func (o *GetCharactersCharacterIDMiningGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id mining gateway timeout response has a 4xx status code
+func (o *GetCharactersCharacterIDMiningGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id mining gateway timeout response has a 5xx status code
+func (o *GetCharactersCharacterIDMiningGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id mining gateway timeout response a status code equal to that given
+func (o *GetCharactersCharacterIDMiningGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetCharactersCharacterIDMiningGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/mining/][%d] getCharactersCharacterIdMiningGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDMiningGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/mining/][%d] getCharactersCharacterIdMiningGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDMiningGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -476,7 +754,8 @@ func (o *GetCharactersCharacterIDMiningGatewayTimeout) readResponse(response run
 	return nil
 }
 
-/*GetCharactersCharacterIDMiningOKBodyItems0 get_characters_character_id_mining_200_ok
+/*
+GetCharactersCharacterIDMiningOKBodyItems0 get_characters_character_id_mining_200_ok
 //
 // 200 ok object
 swagger:model GetCharactersCharacterIDMiningOKBodyItems0

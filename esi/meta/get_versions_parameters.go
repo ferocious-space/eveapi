@@ -52,10 +52,12 @@ func NewGetVersionsParamsWithHTTPClient(client *http.Client) *GetVersionsParams 
 	}
 }
 
-/* GetVersionsParams contains all the parameters to send to the API endpoint
-   for the get versions operation.
+/*
+GetVersionsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get versions operation.
+
+	Typically these are written to a http.Request.
 */
 type GetVersionsParams struct {
 

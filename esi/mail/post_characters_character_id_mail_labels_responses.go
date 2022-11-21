@@ -86,7 +86,8 @@ func NewPostCharactersCharacterIDMailLabelsCreated() *PostCharactersCharacterIDM
 	return &PostCharactersCharacterIDMailLabelsCreated{}
 }
 
-/* PostCharactersCharacterIDMailLabelsCreated describes a response with status code 201, with default header values.
+/*
+PostCharactersCharacterIDMailLabelsCreated describes a response with status code 201, with default header values.
 
 Label created
 */
@@ -94,9 +95,39 @@ type PostCharactersCharacterIDMailLabelsCreated struct {
 	Payload int32
 }
 
+// IsSuccess returns true when this post characters character Id mail labels created response has a 2xx status code
+func (o *PostCharactersCharacterIDMailLabelsCreated) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this post characters character Id mail labels created response has a 3xx status code
+func (o *PostCharactersCharacterIDMailLabelsCreated) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id mail labels created response has a 4xx status code
+func (o *PostCharactersCharacterIDMailLabelsCreated) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post characters character Id mail labels created response has a 5xx status code
+func (o *PostCharactersCharacterIDMailLabelsCreated) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post characters character Id mail labels created response a status code equal to that given
+func (o *PostCharactersCharacterIDMailLabelsCreated) IsCode(code int) bool {
+	return code == 201
+}
+
 func (o *PostCharactersCharacterIDMailLabelsCreated) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/mail/labels/][%d] postCharactersCharacterIdMailLabelsCreated  %+v", 201, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDMailLabelsCreated) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/mail/labels/][%d] postCharactersCharacterIdMailLabelsCreated  %+v", 201, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDMailLabelsCreated) GetPayload() int32 {
 	return o.Payload
 }
@@ -116,7 +147,8 @@ func NewPostCharactersCharacterIDMailLabelsBadRequest() *PostCharactersCharacter
 	return &PostCharactersCharacterIDMailLabelsBadRequest{}
 }
 
-/* PostCharactersCharacterIDMailLabelsBadRequest describes a response with status code 400, with default header values.
+/*
+PostCharactersCharacterIDMailLabelsBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -124,9 +156,39 @@ type PostCharactersCharacterIDMailLabelsBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this post characters character Id mail labels bad request response has a 2xx status code
+func (o *PostCharactersCharacterIDMailLabelsBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id mail labels bad request response has a 3xx status code
+func (o *PostCharactersCharacterIDMailLabelsBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id mail labels bad request response has a 4xx status code
+func (o *PostCharactersCharacterIDMailLabelsBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post characters character Id mail labels bad request response has a 5xx status code
+func (o *PostCharactersCharacterIDMailLabelsBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post characters character Id mail labels bad request response a status code equal to that given
+func (o *PostCharactersCharacterIDMailLabelsBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *PostCharactersCharacterIDMailLabelsBadRequest) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/mail/labels/][%d] postCharactersCharacterIdMailLabelsBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDMailLabelsBadRequest) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/mail/labels/][%d] postCharactersCharacterIdMailLabelsBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDMailLabelsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -148,7 +210,8 @@ func NewPostCharactersCharacterIDMailLabelsUnauthorized() *PostCharactersCharact
 	return &PostCharactersCharacterIDMailLabelsUnauthorized{}
 }
 
-/* PostCharactersCharacterIDMailLabelsUnauthorized describes a response with status code 401, with default header values.
+/*
+PostCharactersCharacterIDMailLabelsUnauthorized describes a response with status code 401, with default header values.
 
 Unauthorized
 */
@@ -156,9 +219,39 @@ type PostCharactersCharacterIDMailLabelsUnauthorized struct {
 	Payload *models.Unauthorized
 }
 
+// IsSuccess returns true when this post characters character Id mail labels unauthorized response has a 2xx status code
+func (o *PostCharactersCharacterIDMailLabelsUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id mail labels unauthorized response has a 3xx status code
+func (o *PostCharactersCharacterIDMailLabelsUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id mail labels unauthorized response has a 4xx status code
+func (o *PostCharactersCharacterIDMailLabelsUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post characters character Id mail labels unauthorized response has a 5xx status code
+func (o *PostCharactersCharacterIDMailLabelsUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post characters character Id mail labels unauthorized response a status code equal to that given
+func (o *PostCharactersCharacterIDMailLabelsUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *PostCharactersCharacterIDMailLabelsUnauthorized) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/mail/labels/][%d] postCharactersCharacterIdMailLabelsUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDMailLabelsUnauthorized) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/mail/labels/][%d] postCharactersCharacterIdMailLabelsUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDMailLabelsUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
 }
@@ -180,7 +273,8 @@ func NewPostCharactersCharacterIDMailLabelsForbidden() *PostCharactersCharacterI
 	return &PostCharactersCharacterIDMailLabelsForbidden{}
 }
 
-/* PostCharactersCharacterIDMailLabelsForbidden describes a response with status code 403, with default header values.
+/*
+PostCharactersCharacterIDMailLabelsForbidden describes a response with status code 403, with default header values.
 
 Forbidden
 */
@@ -188,9 +282,39 @@ type PostCharactersCharacterIDMailLabelsForbidden struct {
 	Payload *models.Forbidden
 }
 
+// IsSuccess returns true when this post characters character Id mail labels forbidden response has a 2xx status code
+func (o *PostCharactersCharacterIDMailLabelsForbidden) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id mail labels forbidden response has a 3xx status code
+func (o *PostCharactersCharacterIDMailLabelsForbidden) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id mail labels forbidden response has a 4xx status code
+func (o *PostCharactersCharacterIDMailLabelsForbidden) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post characters character Id mail labels forbidden response has a 5xx status code
+func (o *PostCharactersCharacterIDMailLabelsForbidden) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post characters character Id mail labels forbidden response a status code equal to that given
+func (o *PostCharactersCharacterIDMailLabelsForbidden) IsCode(code int) bool {
+	return code == 403
+}
+
 func (o *PostCharactersCharacterIDMailLabelsForbidden) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/mail/labels/][%d] postCharactersCharacterIdMailLabelsForbidden  %+v", 403, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDMailLabelsForbidden) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/mail/labels/][%d] postCharactersCharacterIdMailLabelsForbidden  %+v", 403, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDMailLabelsForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
 }
@@ -212,7 +336,8 @@ func NewPostCharactersCharacterIDMailLabelsEnhanceYourCalm() *PostCharactersChar
 	return &PostCharactersCharacterIDMailLabelsEnhanceYourCalm{}
 }
 
-/* PostCharactersCharacterIDMailLabelsEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+PostCharactersCharacterIDMailLabelsEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -220,9 +345,39 @@ type PostCharactersCharacterIDMailLabelsEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this post characters character Id mail labels enhance your calm response has a 2xx status code
+func (o *PostCharactersCharacterIDMailLabelsEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id mail labels enhance your calm response has a 3xx status code
+func (o *PostCharactersCharacterIDMailLabelsEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id mail labels enhance your calm response has a 4xx status code
+func (o *PostCharactersCharacterIDMailLabelsEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post characters character Id mail labels enhance your calm response has a 5xx status code
+func (o *PostCharactersCharacterIDMailLabelsEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post characters character Id mail labels enhance your calm response a status code equal to that given
+func (o *PostCharactersCharacterIDMailLabelsEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *PostCharactersCharacterIDMailLabelsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/mail/labels/][%d] postCharactersCharacterIdMailLabelsEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDMailLabelsEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/mail/labels/][%d] postCharactersCharacterIdMailLabelsEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDMailLabelsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -244,7 +399,8 @@ func NewPostCharactersCharacterIDMailLabelsInternalServerError() *PostCharacters
 	return &PostCharactersCharacterIDMailLabelsInternalServerError{}
 }
 
-/* PostCharactersCharacterIDMailLabelsInternalServerError describes a response with status code 500, with default header values.
+/*
+PostCharactersCharacterIDMailLabelsInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -252,9 +408,39 @@ type PostCharactersCharacterIDMailLabelsInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this post characters character Id mail labels internal server error response has a 2xx status code
+func (o *PostCharactersCharacterIDMailLabelsInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id mail labels internal server error response has a 3xx status code
+func (o *PostCharactersCharacterIDMailLabelsInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id mail labels internal server error response has a 4xx status code
+func (o *PostCharactersCharacterIDMailLabelsInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post characters character Id mail labels internal server error response has a 5xx status code
+func (o *PostCharactersCharacterIDMailLabelsInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post characters character Id mail labels internal server error response a status code equal to that given
+func (o *PostCharactersCharacterIDMailLabelsInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *PostCharactersCharacterIDMailLabelsInternalServerError) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/mail/labels/][%d] postCharactersCharacterIdMailLabelsInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDMailLabelsInternalServerError) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/mail/labels/][%d] postCharactersCharacterIdMailLabelsInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDMailLabelsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -276,7 +462,8 @@ func NewPostCharactersCharacterIDMailLabelsServiceUnavailable() *PostCharactersC
 	return &PostCharactersCharacterIDMailLabelsServiceUnavailable{}
 }
 
-/* PostCharactersCharacterIDMailLabelsServiceUnavailable describes a response with status code 503, with default header values.
+/*
+PostCharactersCharacterIDMailLabelsServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -284,9 +471,39 @@ type PostCharactersCharacterIDMailLabelsServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this post characters character Id mail labels service unavailable response has a 2xx status code
+func (o *PostCharactersCharacterIDMailLabelsServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id mail labels service unavailable response has a 3xx status code
+func (o *PostCharactersCharacterIDMailLabelsServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id mail labels service unavailable response has a 4xx status code
+func (o *PostCharactersCharacterIDMailLabelsServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post characters character Id mail labels service unavailable response has a 5xx status code
+func (o *PostCharactersCharacterIDMailLabelsServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post characters character Id mail labels service unavailable response a status code equal to that given
+func (o *PostCharactersCharacterIDMailLabelsServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *PostCharactersCharacterIDMailLabelsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/mail/labels/][%d] postCharactersCharacterIdMailLabelsServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDMailLabelsServiceUnavailable) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/mail/labels/][%d] postCharactersCharacterIdMailLabelsServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDMailLabelsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -308,7 +525,8 @@ func NewPostCharactersCharacterIDMailLabelsGatewayTimeout() *PostCharactersChara
 	return &PostCharactersCharacterIDMailLabelsGatewayTimeout{}
 }
 
-/* PostCharactersCharacterIDMailLabelsGatewayTimeout describes a response with status code 504, with default header values.
+/*
+PostCharactersCharacterIDMailLabelsGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -316,9 +534,39 @@ type PostCharactersCharacterIDMailLabelsGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this post characters character Id mail labels gateway timeout response has a 2xx status code
+func (o *PostCharactersCharacterIDMailLabelsGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post characters character Id mail labels gateway timeout response has a 3xx status code
+func (o *PostCharactersCharacterIDMailLabelsGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post characters character Id mail labels gateway timeout response has a 4xx status code
+func (o *PostCharactersCharacterIDMailLabelsGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post characters character Id mail labels gateway timeout response has a 5xx status code
+func (o *PostCharactersCharacterIDMailLabelsGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post characters character Id mail labels gateway timeout response a status code equal to that given
+func (o *PostCharactersCharacterIDMailLabelsGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *PostCharactersCharacterIDMailLabelsGatewayTimeout) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/mail/labels/][%d] postCharactersCharacterIdMailLabelsGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *PostCharactersCharacterIDMailLabelsGatewayTimeout) String() string {
+	return fmt.Sprintf("[POST /v2/characters/{character_id}/mail/labels/][%d] postCharactersCharacterIdMailLabelsGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *PostCharactersCharacterIDMailLabelsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -335,7 +583,8 @@ func (o *PostCharactersCharacterIDMailLabelsGatewayTimeout) readResponse(respons
 	return nil
 }
 
-/*PostCharactersCharacterIDMailLabelsBody post_characters_character_id_mail_labels_label
+/*
+PostCharactersCharacterIDMailLabelsBody post_characters_character_id_mail_labels_label
 //
 // label object
 swagger:model PostCharactersCharacterIDMailLabelsBody

@@ -79,7 +79,8 @@ func NewGetUniverseSystemJumpsOK() *GetUniverseSystemJumpsOK {
 	return &GetUniverseSystemJumpsOK{}
 }
 
-/* GetUniverseSystemJumpsOK describes a response with status code 200, with default header values.
+/*
+GetUniverseSystemJumpsOK describes a response with status code 200, with default header values.
 
 A list of systems and number of jumps
 */
@@ -104,9 +105,39 @@ type GetUniverseSystemJumpsOK struct {
 	Payload []*GetUniverseSystemJumpsOKBodyItems0
 }
 
+// IsSuccess returns true when this get universe system jumps o k response has a 2xx status code
+func (o *GetUniverseSystemJumpsOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get universe system jumps o k response has a 3xx status code
+func (o *GetUniverseSystemJumpsOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe system jumps o k response has a 4xx status code
+func (o *GetUniverseSystemJumpsOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe system jumps o k response has a 5xx status code
+func (o *GetUniverseSystemJumpsOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe system jumps o k response a status code equal to that given
+func (o *GetUniverseSystemJumpsOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetUniverseSystemJumpsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/system_jumps/][%d] getUniverseSystemJumpsOK  %+v", 200, o.Payload)
 }
+
+func (o *GetUniverseSystemJumpsOK) String() string {
+	return fmt.Sprintf("[GET /v1/universe/system_jumps/][%d] getUniverseSystemJumpsOK  %+v", 200, o.Payload)
+}
+
 func (o *GetUniverseSystemJumpsOK) GetPayload() []*GetUniverseSystemJumpsOKBodyItems0 {
 	return o.Payload
 }
@@ -154,7 +185,8 @@ func NewGetUniverseSystemJumpsNotModified() *GetUniverseSystemJumpsNotModified {
 	return &GetUniverseSystemJumpsNotModified{}
 }
 
-/* GetUniverseSystemJumpsNotModified describes a response with status code 304, with default header values.
+/*
+GetUniverseSystemJumpsNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -177,7 +209,36 @@ type GetUniverseSystemJumpsNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get universe system jumps not modified response has a 2xx status code
+func (o *GetUniverseSystemJumpsNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe system jumps not modified response has a 3xx status code
+func (o *GetUniverseSystemJumpsNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get universe system jumps not modified response has a 4xx status code
+func (o *GetUniverseSystemJumpsNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe system jumps not modified response has a 5xx status code
+func (o *GetUniverseSystemJumpsNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe system jumps not modified response a status code equal to that given
+func (o *GetUniverseSystemJumpsNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetUniverseSystemJumpsNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/universe/system_jumps/][%d] getUniverseSystemJumpsNotModified ", 304)
+}
+
+func (o *GetUniverseSystemJumpsNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/universe/system_jumps/][%d] getUniverseSystemJumpsNotModified ", 304)
 }
 
@@ -219,7 +280,8 @@ func NewGetUniverseSystemJumpsBadRequest() *GetUniverseSystemJumpsBadRequest {
 	return &GetUniverseSystemJumpsBadRequest{}
 }
 
-/* GetUniverseSystemJumpsBadRequest describes a response with status code 400, with default header values.
+/*
+GetUniverseSystemJumpsBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -227,9 +289,39 @@ type GetUniverseSystemJumpsBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get universe system jumps bad request response has a 2xx status code
+func (o *GetUniverseSystemJumpsBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe system jumps bad request response has a 3xx status code
+func (o *GetUniverseSystemJumpsBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe system jumps bad request response has a 4xx status code
+func (o *GetUniverseSystemJumpsBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe system jumps bad request response has a 5xx status code
+func (o *GetUniverseSystemJumpsBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe system jumps bad request response a status code equal to that given
+func (o *GetUniverseSystemJumpsBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetUniverseSystemJumpsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/system_jumps/][%d] getUniverseSystemJumpsBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetUniverseSystemJumpsBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/universe/system_jumps/][%d] getUniverseSystemJumpsBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetUniverseSystemJumpsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -251,7 +343,8 @@ func NewGetUniverseSystemJumpsEnhanceYourCalm() *GetUniverseSystemJumpsEnhanceYo
 	return &GetUniverseSystemJumpsEnhanceYourCalm{}
 }
 
-/* GetUniverseSystemJumpsEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetUniverseSystemJumpsEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -259,9 +352,39 @@ type GetUniverseSystemJumpsEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get universe system jumps enhance your calm response has a 2xx status code
+func (o *GetUniverseSystemJumpsEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe system jumps enhance your calm response has a 3xx status code
+func (o *GetUniverseSystemJumpsEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe system jumps enhance your calm response has a 4xx status code
+func (o *GetUniverseSystemJumpsEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe system jumps enhance your calm response has a 5xx status code
+func (o *GetUniverseSystemJumpsEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe system jumps enhance your calm response a status code equal to that given
+func (o *GetUniverseSystemJumpsEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetUniverseSystemJumpsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/system_jumps/][%d] getUniverseSystemJumpsEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetUniverseSystemJumpsEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/universe/system_jumps/][%d] getUniverseSystemJumpsEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetUniverseSystemJumpsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -283,7 +406,8 @@ func NewGetUniverseSystemJumpsInternalServerError() *GetUniverseSystemJumpsInter
 	return &GetUniverseSystemJumpsInternalServerError{}
 }
 
-/* GetUniverseSystemJumpsInternalServerError describes a response with status code 500, with default header values.
+/*
+GetUniverseSystemJumpsInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -291,9 +415,39 @@ type GetUniverseSystemJumpsInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get universe system jumps internal server error response has a 2xx status code
+func (o *GetUniverseSystemJumpsInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe system jumps internal server error response has a 3xx status code
+func (o *GetUniverseSystemJumpsInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe system jumps internal server error response has a 4xx status code
+func (o *GetUniverseSystemJumpsInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe system jumps internal server error response has a 5xx status code
+func (o *GetUniverseSystemJumpsInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe system jumps internal server error response a status code equal to that given
+func (o *GetUniverseSystemJumpsInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetUniverseSystemJumpsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/system_jumps/][%d] getUniverseSystemJumpsInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetUniverseSystemJumpsInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/universe/system_jumps/][%d] getUniverseSystemJumpsInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetUniverseSystemJumpsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -315,7 +469,8 @@ func NewGetUniverseSystemJumpsServiceUnavailable() *GetUniverseSystemJumpsServic
 	return &GetUniverseSystemJumpsServiceUnavailable{}
 }
 
-/* GetUniverseSystemJumpsServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetUniverseSystemJumpsServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -323,9 +478,39 @@ type GetUniverseSystemJumpsServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get universe system jumps service unavailable response has a 2xx status code
+func (o *GetUniverseSystemJumpsServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe system jumps service unavailable response has a 3xx status code
+func (o *GetUniverseSystemJumpsServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe system jumps service unavailable response has a 4xx status code
+func (o *GetUniverseSystemJumpsServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe system jumps service unavailable response has a 5xx status code
+func (o *GetUniverseSystemJumpsServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe system jumps service unavailable response a status code equal to that given
+func (o *GetUniverseSystemJumpsServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetUniverseSystemJumpsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/system_jumps/][%d] getUniverseSystemJumpsServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetUniverseSystemJumpsServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/universe/system_jumps/][%d] getUniverseSystemJumpsServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetUniverseSystemJumpsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -347,7 +532,8 @@ func NewGetUniverseSystemJumpsGatewayTimeout() *GetUniverseSystemJumpsGatewayTim
 	return &GetUniverseSystemJumpsGatewayTimeout{}
 }
 
-/* GetUniverseSystemJumpsGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetUniverseSystemJumpsGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -355,9 +541,39 @@ type GetUniverseSystemJumpsGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get universe system jumps gateway timeout response has a 2xx status code
+func (o *GetUniverseSystemJumpsGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe system jumps gateway timeout response has a 3xx status code
+func (o *GetUniverseSystemJumpsGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe system jumps gateway timeout response has a 4xx status code
+func (o *GetUniverseSystemJumpsGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe system jumps gateway timeout response has a 5xx status code
+func (o *GetUniverseSystemJumpsGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe system jumps gateway timeout response a status code equal to that given
+func (o *GetUniverseSystemJumpsGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetUniverseSystemJumpsGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/system_jumps/][%d] getUniverseSystemJumpsGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetUniverseSystemJumpsGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/universe/system_jumps/][%d] getUniverseSystemJumpsGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetUniverseSystemJumpsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -374,7 +590,8 @@ func (o *GetUniverseSystemJumpsGatewayTimeout) readResponse(response runtime.Cli
 	return nil
 }
 
-/*GetUniverseSystemJumpsOKBodyItems0 get_universe_system_jumps_200_ok
+/*
+GetUniverseSystemJumpsOKBodyItems0 get_universe_system_jumps_200_ok
 //
 // 200 ok object
 swagger:model GetUniverseSystemJumpsOKBodyItems0

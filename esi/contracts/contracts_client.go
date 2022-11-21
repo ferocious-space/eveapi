@@ -52,9 +52,9 @@ type ClientService interface {
 }
 
 /*
-  GetCharactersCharacterIDContracts gets contracts
+	GetCharactersCharacterIDContracts gets contracts
 
-  Returns contracts available to a character, only if the character is issuer, acceptor or assignee. Only returns contracts no older than 30 days, or if the status is "in_progress".
+	Returns contracts available to a character, only if the character is issuer, acceptor or assignee. Only returns contracts no older than 30 days, or if the status is "in_progress".
 
 ---
 
@@ -97,9 +97,9 @@ func (a *Client) GetCharactersCharacterIDContracts(params *GetCharactersCharacte
 }
 
 /*
-  GetCharactersCharacterIDContractsContractIDBids gets contract bids
+	GetCharactersCharacterIDContractsContractIDBids gets contract bids
 
-  Lists bids on a particular auction contract
+	Lists bids on a particular auction contract
 
 ---
 
@@ -142,9 +142,9 @@ func (a *Client) GetCharactersCharacterIDContractsContractIDBids(params *GetChar
 }
 
 /*
-  GetCharactersCharacterIDContractsContractIDItems gets contract items
+	GetCharactersCharacterIDContractsContractIDItems gets contract items
 
-  Lists items of a particular contract
+	Lists items of a particular contract
 
 ---
 
@@ -187,9 +187,9 @@ func (a *Client) GetCharactersCharacterIDContractsContractIDItems(params *GetCha
 }
 
 /*
-  GetContractsPublicBidsContractID gets public contract bids
+	GetContractsPublicBidsContractID gets public contract bids
 
-  Lists bids on a public auction contract
+	Lists bids on a public auction contract
 
 ---
 
@@ -232,9 +232,9 @@ func (a *Client) GetContractsPublicBidsContractID(params *GetContractsPublicBids
 }
 
 /*
-  GetContractsPublicItemsContractID gets public contract items
+	GetContractsPublicItemsContractID gets public contract items
 
-  Lists items of a public contract
+	Lists items of a public contract
 
 ---
 
@@ -277,9 +277,9 @@ func (a *Client) GetContractsPublicItemsContractID(params *GetContractsPublicIte
 }
 
 /*
-  GetContractsPublicRegionID gets public contracts
+	GetContractsPublicRegionID gets public contracts
 
-  Returns a paginated list of all public contracts in the given region
+	Returns a paginated list of all public contracts in the given region
 
 ---
 
@@ -321,9 +321,9 @@ func (a *Client) GetContractsPublicRegionID(params *GetContractsPublicRegionIDPa
 }
 
 /*
-  GetCorporationsCorporationIDContracts gets corporation contracts
+	GetCorporationsCorporationIDContracts gets corporation contracts
 
-  Returns contracts available to a corporation, only if the corporation is issuer, acceptor or assignee. Only returns contracts no older than 30 days, or if the status is "in_progress".
+	Returns contracts available to a corporation, only if the corporation is issuer, acceptor or assignee. Only returns contracts no older than 30 days, or if the status is "in_progress".
 
 ---
 
@@ -366,9 +366,9 @@ func (a *Client) GetCorporationsCorporationIDContracts(params *GetCorporationsCo
 }
 
 /*
-  GetCorporationsCorporationIDContractsContractIDBids gets corporation contract bids
+	GetCorporationsCorporationIDContractsContractIDBids gets corporation contract bids
 
-  Lists bids on a particular auction contract
+	Lists bids on a particular auction contract
 
 ---
 
@@ -411,9 +411,9 @@ func (a *Client) GetCorporationsCorporationIDContractsContractIDBids(params *Get
 }
 
 /*
-  GetCorporationsCorporationIDContractsContractIDItems gets corporation contract items
+	GetCorporationsCorporationIDContractsContractIDItems gets corporation contract items
 
-  Lists items of a particular contract
+	Lists items of a particular contract
 
 ---
 

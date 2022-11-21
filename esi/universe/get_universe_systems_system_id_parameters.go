@@ -53,10 +53,12 @@ func NewGetUniverseSystemsSystemIDParamsWithHTTPClient(client *http.Client) *Get
 	}
 }
 
-/* GetUniverseSystemsSystemIDParams contains all the parameters to send to the API endpoint
-   for the get universe systems system id operation.
+/*
+GetUniverseSystemsSystemIDParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get universe systems system id operation.
+
+	Typically these are written to a http.Request.
 */
 type GetUniverseSystemsSystemIDParams struct {
 

@@ -42,9 +42,9 @@ type ClientService interface {
 }
 
 /*
-  GetCharactersCharacterIDPlanets gets colonies
+	GetCharactersCharacterIDPlanets gets colonies
 
-  Returns a list of all planetary colonies owned by a character.
+	Returns a list of all planetary colonies owned by a character.
 
 ---
 
@@ -87,12 +87,11 @@ func (a *Client) GetCharactersCharacterIDPlanets(params *GetCharactersCharacterI
 }
 
 /*
-  GetCharactersCharacterIDPlanetsPlanetID gets colony layout
+	GetCharactersCharacterIDPlanetsPlanetID gets colony layout
 
-  Returns full details on the layout of a single planetary colony, including links, pins and routes. Note: Planetary information is only recalculated when the colony is viewed through the client. Information will not update until this criteria is met.
+	Returns full details on the layout of a single planetary colony, including links, pins and routes. Note: Planetary information is only recalculated when the colony is viewed through the client. Information will not update until this criteria is met.
 
 ---
-
 */
 func (a *Client) GetCharactersCharacterIDPlanetsPlanetID(params *GetCharactersCharacterIDPlanetsPlanetIDParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*GetCharactersCharacterIDPlanetsPlanetIDOK, error) {
 	// TODO: Validate the params before sending
@@ -131,13 +130,13 @@ func (a *Client) GetCharactersCharacterIDPlanetsPlanetID(params *GetCharactersCh
 }
 
 /*
-  GetCorporationsCorporationIDCustomsOffices lists corporation customs offices
+	GetCorporationsCorporationIDCustomsOffices lists corporation customs offices
 
-  List customs offices owned by a corporation
+	List customs offices owned by a corporation
 
 ---
 
-This route is cached for up to 3600 seconds
+# This route is cached for up to 3600 seconds
 
 ---
 Requires one of the following EVE corporation role(s): Director
@@ -179,9 +178,9 @@ func (a *Client) GetCorporationsCorporationIDCustomsOffices(params *GetCorporati
 }
 
 /*
-  GetUniverseSchematicsSchematicID gets schematic information
+	GetUniverseSchematicsSchematicID gets schematic information
 
-  Get information on a planetary factory schematic
+	Get information on a planetary factory schematic
 
 ---
 

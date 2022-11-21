@@ -53,10 +53,12 @@ func NewGetCharactersCharacterIDPortraitParamsWithHTTPClient(client *http.Client
 	}
 }
 
-/* GetCharactersCharacterIDPortraitParams contains all the parameters to send to the API endpoint
-   for the get characters character id portrait operation.
+/*
+GetCharactersCharacterIDPortraitParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get characters character id portrait operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCharactersCharacterIDPortraitParams struct {
 

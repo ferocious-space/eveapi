@@ -53,10 +53,12 @@ func NewPostUIOpenwindowMarketdetailsParamsWithHTTPClient(client *http.Client) *
 	}
 }
 
-/* PostUIOpenwindowMarketdetailsParams contains all the parameters to send to the API endpoint
-   for the post ui openwindow marketdetails operation.
+/*
+PostUIOpenwindowMarketdetailsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the post ui openwindow marketdetails operation.
+
+	Typically these are written to a http.Request.
 */
 type PostUIOpenwindowMarketdetailsParams struct {
 

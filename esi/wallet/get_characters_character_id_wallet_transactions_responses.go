@@ -91,7 +91,8 @@ func NewGetCharactersCharacterIDWalletTransactionsOK() *GetCharactersCharacterID
 	return &GetCharactersCharacterIDWalletTransactionsOK{}
 }
 
-/* GetCharactersCharacterIDWalletTransactionsOK describes a response with status code 200, with default header values.
+/*
+GetCharactersCharacterIDWalletTransactionsOK describes a response with status code 200, with default header values.
 
 Wallet transactions
 */
@@ -116,9 +117,39 @@ type GetCharactersCharacterIDWalletTransactionsOK struct {
 	Payload []*GetCharactersCharacterIDWalletTransactionsOKBodyItems0
 }
 
+// IsSuccess returns true when this get characters character Id wallet transactions o k response has a 2xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get characters character Id wallet transactions o k response has a 3xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id wallet transactions o k response has a 4xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id wallet transactions o k response has a 5xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id wallet transactions o k response a status code equal to that given
+func (o *GetCharactersCharacterIDWalletTransactionsOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetCharactersCharacterIDWalletTransactionsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/wallet/transactions/][%d] getCharactersCharacterIdWalletTransactionsOK  %+v", 200, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDWalletTransactionsOK) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/wallet/transactions/][%d] getCharactersCharacterIdWalletTransactionsOK  %+v", 200, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDWalletTransactionsOK) GetPayload() []*GetCharactersCharacterIDWalletTransactionsOKBodyItems0 {
 	return o.Payload
 }
@@ -166,7 +197,8 @@ func NewGetCharactersCharacterIDWalletTransactionsNotModified() *GetCharactersCh
 	return &GetCharactersCharacterIDWalletTransactionsNotModified{}
 }
 
-/* GetCharactersCharacterIDWalletTransactionsNotModified describes a response with status code 304, with default header values.
+/*
+GetCharactersCharacterIDWalletTransactionsNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -189,7 +221,36 @@ type GetCharactersCharacterIDWalletTransactionsNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get characters character Id wallet transactions not modified response has a 2xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id wallet transactions not modified response has a 3xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get characters character Id wallet transactions not modified response has a 4xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id wallet transactions not modified response has a 5xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id wallet transactions not modified response a status code equal to that given
+func (o *GetCharactersCharacterIDWalletTransactionsNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetCharactersCharacterIDWalletTransactionsNotModified) Error() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/wallet/transactions/][%d] getCharactersCharacterIdWalletTransactionsNotModified ", 304)
+}
+
+func (o *GetCharactersCharacterIDWalletTransactionsNotModified) String() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/wallet/transactions/][%d] getCharactersCharacterIdWalletTransactionsNotModified ", 304)
 }
 
@@ -231,7 +292,8 @@ func NewGetCharactersCharacterIDWalletTransactionsBadRequest() *GetCharactersCha
 	return &GetCharactersCharacterIDWalletTransactionsBadRequest{}
 }
 
-/* GetCharactersCharacterIDWalletTransactionsBadRequest describes a response with status code 400, with default header values.
+/*
+GetCharactersCharacterIDWalletTransactionsBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -239,9 +301,39 @@ type GetCharactersCharacterIDWalletTransactionsBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get characters character Id wallet transactions bad request response has a 2xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id wallet transactions bad request response has a 3xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id wallet transactions bad request response has a 4xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id wallet transactions bad request response has a 5xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id wallet transactions bad request response a status code equal to that given
+func (o *GetCharactersCharacterIDWalletTransactionsBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetCharactersCharacterIDWalletTransactionsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/wallet/transactions/][%d] getCharactersCharacterIdWalletTransactionsBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDWalletTransactionsBadRequest) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/wallet/transactions/][%d] getCharactersCharacterIdWalletTransactionsBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDWalletTransactionsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -263,7 +355,8 @@ func NewGetCharactersCharacterIDWalletTransactionsUnauthorized() *GetCharactersC
 	return &GetCharactersCharacterIDWalletTransactionsUnauthorized{}
 }
 
-/* GetCharactersCharacterIDWalletTransactionsUnauthorized describes a response with status code 401, with default header values.
+/*
+GetCharactersCharacterIDWalletTransactionsUnauthorized describes a response with status code 401, with default header values.
 
 Unauthorized
 */
@@ -271,9 +364,39 @@ type GetCharactersCharacterIDWalletTransactionsUnauthorized struct {
 	Payload *models.Unauthorized
 }
 
+// IsSuccess returns true when this get characters character Id wallet transactions unauthorized response has a 2xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id wallet transactions unauthorized response has a 3xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id wallet transactions unauthorized response has a 4xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id wallet transactions unauthorized response has a 5xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id wallet transactions unauthorized response a status code equal to that given
+func (o *GetCharactersCharacterIDWalletTransactionsUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *GetCharactersCharacterIDWalletTransactionsUnauthorized) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/wallet/transactions/][%d] getCharactersCharacterIdWalletTransactionsUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDWalletTransactionsUnauthorized) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/wallet/transactions/][%d] getCharactersCharacterIdWalletTransactionsUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDWalletTransactionsUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
 }
@@ -295,7 +418,8 @@ func NewGetCharactersCharacterIDWalletTransactionsForbidden() *GetCharactersChar
 	return &GetCharactersCharacterIDWalletTransactionsForbidden{}
 }
 
-/* GetCharactersCharacterIDWalletTransactionsForbidden describes a response with status code 403, with default header values.
+/*
+GetCharactersCharacterIDWalletTransactionsForbidden describes a response with status code 403, with default header values.
 
 Forbidden
 */
@@ -303,9 +427,39 @@ type GetCharactersCharacterIDWalletTransactionsForbidden struct {
 	Payload *models.Forbidden
 }
 
+// IsSuccess returns true when this get characters character Id wallet transactions forbidden response has a 2xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsForbidden) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id wallet transactions forbidden response has a 3xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsForbidden) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id wallet transactions forbidden response has a 4xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsForbidden) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id wallet transactions forbidden response has a 5xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsForbidden) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id wallet transactions forbidden response a status code equal to that given
+func (o *GetCharactersCharacterIDWalletTransactionsForbidden) IsCode(code int) bool {
+	return code == 403
+}
+
 func (o *GetCharactersCharacterIDWalletTransactionsForbidden) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/wallet/transactions/][%d] getCharactersCharacterIdWalletTransactionsForbidden  %+v", 403, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDWalletTransactionsForbidden) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/wallet/transactions/][%d] getCharactersCharacterIdWalletTransactionsForbidden  %+v", 403, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDWalletTransactionsForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
 }
@@ -327,7 +481,8 @@ func NewGetCharactersCharacterIDWalletTransactionsEnhanceYourCalm() *GetCharacte
 	return &GetCharactersCharacterIDWalletTransactionsEnhanceYourCalm{}
 }
 
-/* GetCharactersCharacterIDWalletTransactionsEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetCharactersCharacterIDWalletTransactionsEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -335,9 +490,39 @@ type GetCharactersCharacterIDWalletTransactionsEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get characters character Id wallet transactions enhance your calm response has a 2xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id wallet transactions enhance your calm response has a 3xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id wallet transactions enhance your calm response has a 4xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get characters character Id wallet transactions enhance your calm response has a 5xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get characters character Id wallet transactions enhance your calm response a status code equal to that given
+func (o *GetCharactersCharacterIDWalletTransactionsEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetCharactersCharacterIDWalletTransactionsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/wallet/transactions/][%d] getCharactersCharacterIdWalletTransactionsEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDWalletTransactionsEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/wallet/transactions/][%d] getCharactersCharacterIdWalletTransactionsEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDWalletTransactionsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -359,7 +544,8 @@ func NewGetCharactersCharacterIDWalletTransactionsInternalServerError() *GetChar
 	return &GetCharactersCharacterIDWalletTransactionsInternalServerError{}
 }
 
-/* GetCharactersCharacterIDWalletTransactionsInternalServerError describes a response with status code 500, with default header values.
+/*
+GetCharactersCharacterIDWalletTransactionsInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -367,9 +553,39 @@ type GetCharactersCharacterIDWalletTransactionsInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get characters character Id wallet transactions internal server error response has a 2xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id wallet transactions internal server error response has a 3xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id wallet transactions internal server error response has a 4xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id wallet transactions internal server error response has a 5xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id wallet transactions internal server error response a status code equal to that given
+func (o *GetCharactersCharacterIDWalletTransactionsInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetCharactersCharacterIDWalletTransactionsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/wallet/transactions/][%d] getCharactersCharacterIdWalletTransactionsInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDWalletTransactionsInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/wallet/transactions/][%d] getCharactersCharacterIdWalletTransactionsInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDWalletTransactionsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -391,7 +607,8 @@ func NewGetCharactersCharacterIDWalletTransactionsServiceUnavailable() *GetChara
 	return &GetCharactersCharacterIDWalletTransactionsServiceUnavailable{}
 }
 
-/* GetCharactersCharacterIDWalletTransactionsServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetCharactersCharacterIDWalletTransactionsServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -399,9 +616,39 @@ type GetCharactersCharacterIDWalletTransactionsServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get characters character Id wallet transactions service unavailable response has a 2xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id wallet transactions service unavailable response has a 3xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id wallet transactions service unavailable response has a 4xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id wallet transactions service unavailable response has a 5xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id wallet transactions service unavailable response a status code equal to that given
+func (o *GetCharactersCharacterIDWalletTransactionsServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetCharactersCharacterIDWalletTransactionsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/wallet/transactions/][%d] getCharactersCharacterIdWalletTransactionsServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDWalletTransactionsServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/wallet/transactions/][%d] getCharactersCharacterIdWalletTransactionsServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDWalletTransactionsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -423,7 +670,8 @@ func NewGetCharactersCharacterIDWalletTransactionsGatewayTimeout() *GetCharacter
 	return &GetCharactersCharacterIDWalletTransactionsGatewayTimeout{}
 }
 
-/* GetCharactersCharacterIDWalletTransactionsGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetCharactersCharacterIDWalletTransactionsGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -431,9 +679,39 @@ type GetCharactersCharacterIDWalletTransactionsGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get characters character Id wallet transactions gateway timeout response has a 2xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get characters character Id wallet transactions gateway timeout response has a 3xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get characters character Id wallet transactions gateway timeout response has a 4xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get characters character Id wallet transactions gateway timeout response has a 5xx status code
+func (o *GetCharactersCharacterIDWalletTransactionsGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get characters character Id wallet transactions gateway timeout response a status code equal to that given
+func (o *GetCharactersCharacterIDWalletTransactionsGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetCharactersCharacterIDWalletTransactionsGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/wallet/transactions/][%d] getCharactersCharacterIdWalletTransactionsGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetCharactersCharacterIDWalletTransactionsGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v1/characters/{character_id}/wallet/transactions/][%d] getCharactersCharacterIdWalletTransactionsGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetCharactersCharacterIDWalletTransactionsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -450,7 +728,8 @@ func (o *GetCharactersCharacterIDWalletTransactionsGatewayTimeout) readResponse(
 	return nil
 }
 
-/*GetCharactersCharacterIDWalletTransactionsOKBodyItems0 get_characters_character_id_wallet_transactions_200_ok
+/*
+GetCharactersCharacterIDWalletTransactionsOKBodyItems0 get_characters_character_id_wallet_transactions_200_ok
 //
 // wallet transaction
 swagger:model GetCharactersCharacterIDWalletTransactionsOKBodyItems0

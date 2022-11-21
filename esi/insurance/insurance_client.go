@@ -36,9 +36,9 @@ type ClientService interface {
 }
 
 /*
-  GetInsurancePrices lists insurance levels
+	GetInsurancePrices lists insurance levels
 
-  Return available insurance levels for all ship types
+	Return available insurance levels for all ship types
 
 ---
 

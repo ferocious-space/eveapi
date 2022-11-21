@@ -53,10 +53,12 @@ func NewGetCharactersCharacterIDLoyaltyPointsParamsWithHTTPClient(client *http.C
 	}
 }
 
-/* GetCharactersCharacterIDLoyaltyPointsParams contains all the parameters to send to the API endpoint
-   for the get characters character id loyalty points operation.
+/*
+GetCharactersCharacterIDLoyaltyPointsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get characters character id loyalty points operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCharactersCharacterIDLoyaltyPointsParams struct {
 

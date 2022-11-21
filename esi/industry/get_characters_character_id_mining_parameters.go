@@ -53,10 +53,12 @@ func NewGetCharactersCharacterIDMiningParamsWithHTTPClient(client *http.Client) 
 	}
 }
 
-/* GetCharactersCharacterIDMiningParams contains all the parameters to send to the API endpoint
-   for the get characters character id mining operation.
+/*
+GetCharactersCharacterIDMiningParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get characters character id mining operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCharactersCharacterIDMiningParams struct {
 

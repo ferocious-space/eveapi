@@ -53,10 +53,12 @@ func NewGetCorporationsCorporationIDWalletsParamsWithHTTPClient(client *http.Cli
 	}
 }
 
-/* GetCorporationsCorporationIDWalletsParams contains all the parameters to send to the API endpoint
-   for the get corporations corporation id wallets operation.
+/*
+GetCorporationsCorporationIDWalletsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get corporations corporation id wallets operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCorporationsCorporationIDWalletsParams struct {
 

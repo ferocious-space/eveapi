@@ -53,10 +53,12 @@ func NewGetCharactersCharacterIDNotificationsParamsWithHTTPClient(client *http.C
 	}
 }
 
-/* GetCharactersCharacterIDNotificationsParams contains all the parameters to send to the API endpoint
-   for the get characters character id notifications operation.
+/*
+GetCharactersCharacterIDNotificationsParams contains all the parameters to send to the API endpoint
 
-   Typically these are written to a http.Request.
+	for the get characters character id notifications operation.
+
+	Typically these are written to a http.Request.
 */
 type GetCharactersCharacterIDNotificationsParams struct {
 

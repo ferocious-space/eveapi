@@ -91,7 +91,8 @@ func NewPostCorporationsCorporationIDAssetsLocationsOK() *PostCorporationsCorpor
 	return &PostCorporationsCorporationIDAssetsLocationsOK{}
 }
 
-/* PostCorporationsCorporationIDAssetsLocationsOK describes a response with status code 200, with default header values.
+/*
+PostCorporationsCorporationIDAssetsLocationsOK describes a response with status code 200, with default header values.
 
 List of asset locations
 */
@@ -99,9 +100,39 @@ type PostCorporationsCorporationIDAssetsLocationsOK struct {
 	Payload []*PostCorporationsCorporationIDAssetsLocationsOKBodyItems0
 }
 
+// IsSuccess returns true when this post corporations corporation Id assets locations o k response has a 2xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this post corporations corporation Id assets locations o k response has a 3xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post corporations corporation Id assets locations o k response has a 4xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post corporations corporation Id assets locations o k response has a 5xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post corporations corporation Id assets locations o k response a status code equal to that given
+func (o *PostCorporationsCorporationIDAssetsLocationsOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *PostCorporationsCorporationIDAssetsLocationsOK) Error() string {
 	return fmt.Sprintf("[POST /v2/corporations/{corporation_id}/assets/locations/][%d] postCorporationsCorporationIdAssetsLocationsOK  %+v", 200, o.Payload)
 }
+
+func (o *PostCorporationsCorporationIDAssetsLocationsOK) String() string {
+	return fmt.Sprintf("[POST /v2/corporations/{corporation_id}/assets/locations/][%d] postCorporationsCorporationIdAssetsLocationsOK  %+v", 200, o.Payload)
+}
+
 func (o *PostCorporationsCorporationIDAssetsLocationsOK) GetPayload() []*PostCorporationsCorporationIDAssetsLocationsOKBodyItems0 {
 	return o.Payload
 }
@@ -121,7 +152,8 @@ func NewPostCorporationsCorporationIDAssetsLocationsBadRequest() *PostCorporatio
 	return &PostCorporationsCorporationIDAssetsLocationsBadRequest{}
 }
 
-/* PostCorporationsCorporationIDAssetsLocationsBadRequest describes a response with status code 400, with default header values.
+/*
+PostCorporationsCorporationIDAssetsLocationsBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -129,9 +161,39 @@ type PostCorporationsCorporationIDAssetsLocationsBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this post corporations corporation Id assets locations bad request response has a 2xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post corporations corporation Id assets locations bad request response has a 3xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post corporations corporation Id assets locations bad request response has a 4xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post corporations corporation Id assets locations bad request response has a 5xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post corporations corporation Id assets locations bad request response a status code equal to that given
+func (o *PostCorporationsCorporationIDAssetsLocationsBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *PostCorporationsCorporationIDAssetsLocationsBadRequest) Error() string {
 	return fmt.Sprintf("[POST /v2/corporations/{corporation_id}/assets/locations/][%d] postCorporationsCorporationIdAssetsLocationsBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *PostCorporationsCorporationIDAssetsLocationsBadRequest) String() string {
+	return fmt.Sprintf("[POST /v2/corporations/{corporation_id}/assets/locations/][%d] postCorporationsCorporationIdAssetsLocationsBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *PostCorporationsCorporationIDAssetsLocationsBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -153,7 +215,8 @@ func NewPostCorporationsCorporationIDAssetsLocationsUnauthorized() *PostCorporat
 	return &PostCorporationsCorporationIDAssetsLocationsUnauthorized{}
 }
 
-/* PostCorporationsCorporationIDAssetsLocationsUnauthorized describes a response with status code 401, with default header values.
+/*
+PostCorporationsCorporationIDAssetsLocationsUnauthorized describes a response with status code 401, with default header values.
 
 Unauthorized
 */
@@ -161,9 +224,39 @@ type PostCorporationsCorporationIDAssetsLocationsUnauthorized struct {
 	Payload *models.Unauthorized
 }
 
+// IsSuccess returns true when this post corporations corporation Id assets locations unauthorized response has a 2xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsUnauthorized) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post corporations corporation Id assets locations unauthorized response has a 3xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsUnauthorized) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post corporations corporation Id assets locations unauthorized response has a 4xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsUnauthorized) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post corporations corporation Id assets locations unauthorized response has a 5xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsUnauthorized) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post corporations corporation Id assets locations unauthorized response a status code equal to that given
+func (o *PostCorporationsCorporationIDAssetsLocationsUnauthorized) IsCode(code int) bool {
+	return code == 401
+}
+
 func (o *PostCorporationsCorporationIDAssetsLocationsUnauthorized) Error() string {
 	return fmt.Sprintf("[POST /v2/corporations/{corporation_id}/assets/locations/][%d] postCorporationsCorporationIdAssetsLocationsUnauthorized  %+v", 401, o.Payload)
 }
+
+func (o *PostCorporationsCorporationIDAssetsLocationsUnauthorized) String() string {
+	return fmt.Sprintf("[POST /v2/corporations/{corporation_id}/assets/locations/][%d] postCorporationsCorporationIdAssetsLocationsUnauthorized  %+v", 401, o.Payload)
+}
+
 func (o *PostCorporationsCorporationIDAssetsLocationsUnauthorized) GetPayload() *models.Unauthorized {
 	return o.Payload
 }
@@ -185,7 +278,8 @@ func NewPostCorporationsCorporationIDAssetsLocationsForbidden() *PostCorporation
 	return &PostCorporationsCorporationIDAssetsLocationsForbidden{}
 }
 
-/* PostCorporationsCorporationIDAssetsLocationsForbidden describes a response with status code 403, with default header values.
+/*
+PostCorporationsCorporationIDAssetsLocationsForbidden describes a response with status code 403, with default header values.
 
 Forbidden
 */
@@ -193,9 +287,39 @@ type PostCorporationsCorporationIDAssetsLocationsForbidden struct {
 	Payload *models.Forbidden
 }
 
+// IsSuccess returns true when this post corporations corporation Id assets locations forbidden response has a 2xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsForbidden) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post corporations corporation Id assets locations forbidden response has a 3xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsForbidden) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post corporations corporation Id assets locations forbidden response has a 4xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsForbidden) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post corporations corporation Id assets locations forbidden response has a 5xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsForbidden) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post corporations corporation Id assets locations forbidden response a status code equal to that given
+func (o *PostCorporationsCorporationIDAssetsLocationsForbidden) IsCode(code int) bool {
+	return code == 403
+}
+
 func (o *PostCorporationsCorporationIDAssetsLocationsForbidden) Error() string {
 	return fmt.Sprintf("[POST /v2/corporations/{corporation_id}/assets/locations/][%d] postCorporationsCorporationIdAssetsLocationsForbidden  %+v", 403, o.Payload)
 }
+
+func (o *PostCorporationsCorporationIDAssetsLocationsForbidden) String() string {
+	return fmt.Sprintf("[POST /v2/corporations/{corporation_id}/assets/locations/][%d] postCorporationsCorporationIdAssetsLocationsForbidden  %+v", 403, o.Payload)
+}
+
 func (o *PostCorporationsCorporationIDAssetsLocationsForbidden) GetPayload() *models.Forbidden {
 	return o.Payload
 }
@@ -217,7 +341,8 @@ func NewPostCorporationsCorporationIDAssetsLocationsNotFound() *PostCorporations
 	return &PostCorporationsCorporationIDAssetsLocationsNotFound{}
 }
 
-/* PostCorporationsCorporationIDAssetsLocationsNotFound describes a response with status code 404, with default header values.
+/*
+PostCorporationsCorporationIDAssetsLocationsNotFound describes a response with status code 404, with default header values.
 
 Invalid IDs
 */
@@ -225,9 +350,39 @@ type PostCorporationsCorporationIDAssetsLocationsNotFound struct {
 	Payload *PostCorporationsCorporationIDAssetsLocationsNotFoundBody
 }
 
+// IsSuccess returns true when this post corporations corporation Id assets locations not found response has a 2xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsNotFound) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post corporations corporation Id assets locations not found response has a 3xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsNotFound) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post corporations corporation Id assets locations not found response has a 4xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsNotFound) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post corporations corporation Id assets locations not found response has a 5xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsNotFound) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post corporations corporation Id assets locations not found response a status code equal to that given
+func (o *PostCorporationsCorporationIDAssetsLocationsNotFound) IsCode(code int) bool {
+	return code == 404
+}
+
 func (o *PostCorporationsCorporationIDAssetsLocationsNotFound) Error() string {
 	return fmt.Sprintf("[POST /v2/corporations/{corporation_id}/assets/locations/][%d] postCorporationsCorporationIdAssetsLocationsNotFound  %+v", 404, o.Payload)
 }
+
+func (o *PostCorporationsCorporationIDAssetsLocationsNotFound) String() string {
+	return fmt.Sprintf("[POST /v2/corporations/{corporation_id}/assets/locations/][%d] postCorporationsCorporationIdAssetsLocationsNotFound  %+v", 404, o.Payload)
+}
+
 func (o *PostCorporationsCorporationIDAssetsLocationsNotFound) GetPayload() *PostCorporationsCorporationIDAssetsLocationsNotFoundBody {
 	return o.Payload
 }
@@ -249,7 +404,8 @@ func NewPostCorporationsCorporationIDAssetsLocationsEnhanceYourCalm() *PostCorpo
 	return &PostCorporationsCorporationIDAssetsLocationsEnhanceYourCalm{}
 }
 
-/* PostCorporationsCorporationIDAssetsLocationsEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+PostCorporationsCorporationIDAssetsLocationsEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -257,9 +413,39 @@ type PostCorporationsCorporationIDAssetsLocationsEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this post corporations corporation Id assets locations enhance your calm response has a 2xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post corporations corporation Id assets locations enhance your calm response has a 3xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post corporations corporation Id assets locations enhance your calm response has a 4xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this post corporations corporation Id assets locations enhance your calm response has a 5xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this post corporations corporation Id assets locations enhance your calm response a status code equal to that given
+func (o *PostCorporationsCorporationIDAssetsLocationsEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *PostCorporationsCorporationIDAssetsLocationsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[POST /v2/corporations/{corporation_id}/assets/locations/][%d] postCorporationsCorporationIdAssetsLocationsEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *PostCorporationsCorporationIDAssetsLocationsEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[POST /v2/corporations/{corporation_id}/assets/locations/][%d] postCorporationsCorporationIdAssetsLocationsEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *PostCorporationsCorporationIDAssetsLocationsEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -281,7 +467,8 @@ func NewPostCorporationsCorporationIDAssetsLocationsInternalServerError() *PostC
 	return &PostCorporationsCorporationIDAssetsLocationsInternalServerError{}
 }
 
-/* PostCorporationsCorporationIDAssetsLocationsInternalServerError describes a response with status code 500, with default header values.
+/*
+PostCorporationsCorporationIDAssetsLocationsInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -289,9 +476,39 @@ type PostCorporationsCorporationIDAssetsLocationsInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this post corporations corporation Id assets locations internal server error response has a 2xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post corporations corporation Id assets locations internal server error response has a 3xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post corporations corporation Id assets locations internal server error response has a 4xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post corporations corporation Id assets locations internal server error response has a 5xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post corporations corporation Id assets locations internal server error response a status code equal to that given
+func (o *PostCorporationsCorporationIDAssetsLocationsInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *PostCorporationsCorporationIDAssetsLocationsInternalServerError) Error() string {
 	return fmt.Sprintf("[POST /v2/corporations/{corporation_id}/assets/locations/][%d] postCorporationsCorporationIdAssetsLocationsInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *PostCorporationsCorporationIDAssetsLocationsInternalServerError) String() string {
+	return fmt.Sprintf("[POST /v2/corporations/{corporation_id}/assets/locations/][%d] postCorporationsCorporationIdAssetsLocationsInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *PostCorporationsCorporationIDAssetsLocationsInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -313,7 +530,8 @@ func NewPostCorporationsCorporationIDAssetsLocationsServiceUnavailable() *PostCo
 	return &PostCorporationsCorporationIDAssetsLocationsServiceUnavailable{}
 }
 
-/* PostCorporationsCorporationIDAssetsLocationsServiceUnavailable describes a response with status code 503, with default header values.
+/*
+PostCorporationsCorporationIDAssetsLocationsServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -321,9 +539,39 @@ type PostCorporationsCorporationIDAssetsLocationsServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this post corporations corporation Id assets locations service unavailable response has a 2xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post corporations corporation Id assets locations service unavailable response has a 3xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post corporations corporation Id assets locations service unavailable response has a 4xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post corporations corporation Id assets locations service unavailable response has a 5xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post corporations corporation Id assets locations service unavailable response a status code equal to that given
+func (o *PostCorporationsCorporationIDAssetsLocationsServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *PostCorporationsCorporationIDAssetsLocationsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[POST /v2/corporations/{corporation_id}/assets/locations/][%d] postCorporationsCorporationIdAssetsLocationsServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *PostCorporationsCorporationIDAssetsLocationsServiceUnavailable) String() string {
+	return fmt.Sprintf("[POST /v2/corporations/{corporation_id}/assets/locations/][%d] postCorporationsCorporationIdAssetsLocationsServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *PostCorporationsCorporationIDAssetsLocationsServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -345,7 +593,8 @@ func NewPostCorporationsCorporationIDAssetsLocationsGatewayTimeout() *PostCorpor
 	return &PostCorporationsCorporationIDAssetsLocationsGatewayTimeout{}
 }
 
-/* PostCorporationsCorporationIDAssetsLocationsGatewayTimeout describes a response with status code 504, with default header values.
+/*
+PostCorporationsCorporationIDAssetsLocationsGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -353,9 +602,39 @@ type PostCorporationsCorporationIDAssetsLocationsGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this post corporations corporation Id assets locations gateway timeout response has a 2xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this post corporations corporation Id assets locations gateway timeout response has a 3xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this post corporations corporation Id assets locations gateway timeout response has a 4xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this post corporations corporation Id assets locations gateway timeout response has a 5xx status code
+func (o *PostCorporationsCorporationIDAssetsLocationsGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this post corporations corporation Id assets locations gateway timeout response a status code equal to that given
+func (o *PostCorporationsCorporationIDAssetsLocationsGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *PostCorporationsCorporationIDAssetsLocationsGatewayTimeout) Error() string {
 	return fmt.Sprintf("[POST /v2/corporations/{corporation_id}/assets/locations/][%d] postCorporationsCorporationIdAssetsLocationsGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *PostCorporationsCorporationIDAssetsLocationsGatewayTimeout) String() string {
+	return fmt.Sprintf("[POST /v2/corporations/{corporation_id}/assets/locations/][%d] postCorporationsCorporationIdAssetsLocationsGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *PostCorporationsCorporationIDAssetsLocationsGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -372,7 +651,8 @@ func (o *PostCorporationsCorporationIDAssetsLocationsGatewayTimeout) readRespons
 	return nil
 }
 
-/*PostCorporationsCorporationIDAssetsLocationsNotFoundBody post_corporations_corporation_id_assets_locations_not_found
+/*
+PostCorporationsCorporationIDAssetsLocationsNotFoundBody post_corporations_corporation_id_assets_locations_not_found
 //
 // Not found
 swagger:model PostCorporationsCorporationIDAssetsLocationsNotFoundBody
@@ -413,7 +693,8 @@ func (o *PostCorporationsCorporationIDAssetsLocationsNotFoundBody) UnmarshalBina
 	return nil
 }
 
-/*PostCorporationsCorporationIDAssetsLocationsOKBodyItems0 post_corporations_corporation_id_assets_locations_200_ok
+/*
+PostCorporationsCorporationIDAssetsLocationsOKBodyItems0 post_corporations_corporation_id_assets_locations_200_ok
 //
 // 200 ok object
 swagger:model PostCorporationsCorporationIDAssetsLocationsOKBodyItems0
@@ -526,7 +807,8 @@ func (o *PostCorporationsCorporationIDAssetsLocationsOKBodyItems0) UnmarshalBina
 	return nil
 }
 
-/*PostCorporationsCorporationIDAssetsLocationsOKBodyItems0Position post_corporations_corporation_id_assets_locations_position
+/*
+PostCorporationsCorporationIDAssetsLocationsOKBodyItems0Position post_corporations_corporation_id_assets_locations_position
 //
 // position object
 swagger:model PostCorporationsCorporationIDAssetsLocationsOKBodyItems0Position

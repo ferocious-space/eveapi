@@ -86,7 +86,8 @@ func NewGetUniverseTypesTypeIDOK() *GetUniverseTypesTypeIDOK {
 	return &GetUniverseTypesTypeIDOK{}
 }
 
-/* GetUniverseTypesTypeIDOK describes a response with status code 200, with default header values.
+/*
+GetUniverseTypesTypeIDOK describes a response with status code 200, with default header values.
 
 Information about a type
 */
@@ -115,9 +116,39 @@ type GetUniverseTypesTypeIDOK struct {
 	Payload *GetUniverseTypesTypeIDOKBody
 }
 
+// IsSuccess returns true when this get universe types type Id o k response has a 2xx status code
+func (o *GetUniverseTypesTypeIDOK) IsSuccess() bool {
+	return true
+}
+
+// IsRedirect returns true when this get universe types type Id o k response has a 3xx status code
+func (o *GetUniverseTypesTypeIDOK) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe types type Id o k response has a 4xx status code
+func (o *GetUniverseTypesTypeIDOK) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe types type Id o k response has a 5xx status code
+func (o *GetUniverseTypesTypeIDOK) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe types type Id o k response a status code equal to that given
+func (o *GetUniverseTypesTypeIDOK) IsCode(code int) bool {
+	return code == 200
+}
+
 func (o *GetUniverseTypesTypeIDOK) Error() string {
 	return fmt.Sprintf("[GET /v3/universe/types/{type_id}/][%d] getUniverseTypesTypeIdOK  %+v", 200, o.Payload)
 }
+
+func (o *GetUniverseTypesTypeIDOK) String() string {
+	return fmt.Sprintf("[GET /v3/universe/types/{type_id}/][%d] getUniverseTypesTypeIdOK  %+v", 200, o.Payload)
+}
+
 func (o *GetUniverseTypesTypeIDOK) GetPayload() *GetUniverseTypesTypeIDOKBody {
 	return o.Payload
 }
@@ -174,7 +205,8 @@ func NewGetUniverseTypesTypeIDNotModified() *GetUniverseTypesTypeIDNotModified {
 	return &GetUniverseTypesTypeIDNotModified{}
 }
 
-/* GetUniverseTypesTypeIDNotModified describes a response with status code 304, with default header values.
+/*
+GetUniverseTypesTypeIDNotModified describes a response with status code 304, with default header values.
 
 Not modified
 */
@@ -197,7 +229,36 @@ type GetUniverseTypesTypeIDNotModified struct {
 	LastModified string
 }
 
+// IsSuccess returns true when this get universe types type Id not modified response has a 2xx status code
+func (o *GetUniverseTypesTypeIDNotModified) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe types type Id not modified response has a 3xx status code
+func (o *GetUniverseTypesTypeIDNotModified) IsRedirect() bool {
+	return true
+}
+
+// IsClientError returns true when this get universe types type Id not modified response has a 4xx status code
+func (o *GetUniverseTypesTypeIDNotModified) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe types type Id not modified response has a 5xx status code
+func (o *GetUniverseTypesTypeIDNotModified) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe types type Id not modified response a status code equal to that given
+func (o *GetUniverseTypesTypeIDNotModified) IsCode(code int) bool {
+	return code == 304
+}
+
 func (o *GetUniverseTypesTypeIDNotModified) Error() string {
+	return fmt.Sprintf("[GET /v3/universe/types/{type_id}/][%d] getUniverseTypesTypeIdNotModified ", 304)
+}
+
+func (o *GetUniverseTypesTypeIDNotModified) String() string {
 	return fmt.Sprintf("[GET /v3/universe/types/{type_id}/][%d] getUniverseTypesTypeIdNotModified ", 304)
 }
 
@@ -239,7 +300,8 @@ func NewGetUniverseTypesTypeIDBadRequest() *GetUniverseTypesTypeIDBadRequest {
 	return &GetUniverseTypesTypeIDBadRequest{}
 }
 
-/* GetUniverseTypesTypeIDBadRequest describes a response with status code 400, with default header values.
+/*
+GetUniverseTypesTypeIDBadRequest describes a response with status code 400, with default header values.
 
 Bad request
 */
@@ -247,9 +309,39 @@ type GetUniverseTypesTypeIDBadRequest struct {
 	Payload *models.BadRequest
 }
 
+// IsSuccess returns true when this get universe types type Id bad request response has a 2xx status code
+func (o *GetUniverseTypesTypeIDBadRequest) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe types type Id bad request response has a 3xx status code
+func (o *GetUniverseTypesTypeIDBadRequest) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe types type Id bad request response has a 4xx status code
+func (o *GetUniverseTypesTypeIDBadRequest) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe types type Id bad request response has a 5xx status code
+func (o *GetUniverseTypesTypeIDBadRequest) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe types type Id bad request response a status code equal to that given
+func (o *GetUniverseTypesTypeIDBadRequest) IsCode(code int) bool {
+	return code == 400
+}
+
 func (o *GetUniverseTypesTypeIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v3/universe/types/{type_id}/][%d] getUniverseTypesTypeIdBadRequest  %+v", 400, o.Payload)
 }
+
+func (o *GetUniverseTypesTypeIDBadRequest) String() string {
+	return fmt.Sprintf("[GET /v3/universe/types/{type_id}/][%d] getUniverseTypesTypeIdBadRequest  %+v", 400, o.Payload)
+}
+
 func (o *GetUniverseTypesTypeIDBadRequest) GetPayload() *models.BadRequest {
 	return o.Payload
 }
@@ -271,7 +363,8 @@ func NewGetUniverseTypesTypeIDNotFound() *GetUniverseTypesTypeIDNotFound {
 	return &GetUniverseTypesTypeIDNotFound{}
 }
 
-/* GetUniverseTypesTypeIDNotFound describes a response with status code 404, with default header values.
+/*
+GetUniverseTypesTypeIDNotFound describes a response with status code 404, with default header values.
 
 Type not found
 */
@@ -279,9 +372,39 @@ type GetUniverseTypesTypeIDNotFound struct {
 	Payload *GetUniverseTypesTypeIDNotFoundBody
 }
 
+// IsSuccess returns true when this get universe types type Id not found response has a 2xx status code
+func (o *GetUniverseTypesTypeIDNotFound) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe types type Id not found response has a 3xx status code
+func (o *GetUniverseTypesTypeIDNotFound) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe types type Id not found response has a 4xx status code
+func (o *GetUniverseTypesTypeIDNotFound) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe types type Id not found response has a 5xx status code
+func (o *GetUniverseTypesTypeIDNotFound) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe types type Id not found response a status code equal to that given
+func (o *GetUniverseTypesTypeIDNotFound) IsCode(code int) bool {
+	return code == 404
+}
+
 func (o *GetUniverseTypesTypeIDNotFound) Error() string {
 	return fmt.Sprintf("[GET /v3/universe/types/{type_id}/][%d] getUniverseTypesTypeIdNotFound  %+v", 404, o.Payload)
 }
+
+func (o *GetUniverseTypesTypeIDNotFound) String() string {
+	return fmt.Sprintf("[GET /v3/universe/types/{type_id}/][%d] getUniverseTypesTypeIdNotFound  %+v", 404, o.Payload)
+}
+
 func (o *GetUniverseTypesTypeIDNotFound) GetPayload() *GetUniverseTypesTypeIDNotFoundBody {
 	return o.Payload
 }
@@ -303,7 +426,8 @@ func NewGetUniverseTypesTypeIDEnhanceYourCalm() *GetUniverseTypesTypeIDEnhanceYo
 	return &GetUniverseTypesTypeIDEnhanceYourCalm{}
 }
 
-/* GetUniverseTypesTypeIDEnhanceYourCalm describes a response with status code 420, with default header values.
+/*
+GetUniverseTypesTypeIDEnhanceYourCalm describes a response with status code 420, with default header values.
 
 Error limited
 */
@@ -311,9 +435,39 @@ type GetUniverseTypesTypeIDEnhanceYourCalm struct {
 	Payload *models.ErrorLimited
 }
 
+// IsSuccess returns true when this get universe types type Id enhance your calm response has a 2xx status code
+func (o *GetUniverseTypesTypeIDEnhanceYourCalm) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe types type Id enhance your calm response has a 3xx status code
+func (o *GetUniverseTypesTypeIDEnhanceYourCalm) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe types type Id enhance your calm response has a 4xx status code
+func (o *GetUniverseTypesTypeIDEnhanceYourCalm) IsClientError() bool {
+	return true
+}
+
+// IsServerError returns true when this get universe types type Id enhance your calm response has a 5xx status code
+func (o *GetUniverseTypesTypeIDEnhanceYourCalm) IsServerError() bool {
+	return false
+}
+
+// IsCode returns true when this get universe types type Id enhance your calm response a status code equal to that given
+func (o *GetUniverseTypesTypeIDEnhanceYourCalm) IsCode(code int) bool {
+	return code == 420
+}
+
 func (o *GetUniverseTypesTypeIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v3/universe/types/{type_id}/][%d] getUniverseTypesTypeIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
+
+func (o *GetUniverseTypesTypeIDEnhanceYourCalm) String() string {
+	return fmt.Sprintf("[GET /v3/universe/types/{type_id}/][%d] getUniverseTypesTypeIdEnhanceYourCalm  %+v", 420, o.Payload)
+}
+
 func (o *GetUniverseTypesTypeIDEnhanceYourCalm) GetPayload() *models.ErrorLimited {
 	return o.Payload
 }
@@ -335,7 +489,8 @@ func NewGetUniverseTypesTypeIDInternalServerError() *GetUniverseTypesTypeIDInter
 	return &GetUniverseTypesTypeIDInternalServerError{}
 }
 
-/* GetUniverseTypesTypeIDInternalServerError describes a response with status code 500, with default header values.
+/*
+GetUniverseTypesTypeIDInternalServerError describes a response with status code 500, with default header values.
 
 Internal server error
 */
@@ -343,9 +498,39 @@ type GetUniverseTypesTypeIDInternalServerError struct {
 	Payload *models.InternalServerError
 }
 
+// IsSuccess returns true when this get universe types type Id internal server error response has a 2xx status code
+func (o *GetUniverseTypesTypeIDInternalServerError) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe types type Id internal server error response has a 3xx status code
+func (o *GetUniverseTypesTypeIDInternalServerError) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe types type Id internal server error response has a 4xx status code
+func (o *GetUniverseTypesTypeIDInternalServerError) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe types type Id internal server error response has a 5xx status code
+func (o *GetUniverseTypesTypeIDInternalServerError) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe types type Id internal server error response a status code equal to that given
+func (o *GetUniverseTypesTypeIDInternalServerError) IsCode(code int) bool {
+	return code == 500
+}
+
 func (o *GetUniverseTypesTypeIDInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v3/universe/types/{type_id}/][%d] getUniverseTypesTypeIdInternalServerError  %+v", 500, o.Payload)
 }
+
+func (o *GetUniverseTypesTypeIDInternalServerError) String() string {
+	return fmt.Sprintf("[GET /v3/universe/types/{type_id}/][%d] getUniverseTypesTypeIdInternalServerError  %+v", 500, o.Payload)
+}
+
 func (o *GetUniverseTypesTypeIDInternalServerError) GetPayload() *models.InternalServerError {
 	return o.Payload
 }
@@ -367,7 +552,8 @@ func NewGetUniverseTypesTypeIDServiceUnavailable() *GetUniverseTypesTypeIDServic
 	return &GetUniverseTypesTypeIDServiceUnavailable{}
 }
 
-/* GetUniverseTypesTypeIDServiceUnavailable describes a response with status code 503, with default header values.
+/*
+GetUniverseTypesTypeIDServiceUnavailable describes a response with status code 503, with default header values.
 
 Service unavailable
 */
@@ -375,9 +561,39 @@ type GetUniverseTypesTypeIDServiceUnavailable struct {
 	Payload *models.ServiceUnavailable
 }
 
+// IsSuccess returns true when this get universe types type Id service unavailable response has a 2xx status code
+func (o *GetUniverseTypesTypeIDServiceUnavailable) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe types type Id service unavailable response has a 3xx status code
+func (o *GetUniverseTypesTypeIDServiceUnavailable) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe types type Id service unavailable response has a 4xx status code
+func (o *GetUniverseTypesTypeIDServiceUnavailable) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe types type Id service unavailable response has a 5xx status code
+func (o *GetUniverseTypesTypeIDServiceUnavailable) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe types type Id service unavailable response a status code equal to that given
+func (o *GetUniverseTypesTypeIDServiceUnavailable) IsCode(code int) bool {
+	return code == 503
+}
+
 func (o *GetUniverseTypesTypeIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v3/universe/types/{type_id}/][%d] getUniverseTypesTypeIdServiceUnavailable  %+v", 503, o.Payload)
 }
+
+func (o *GetUniverseTypesTypeIDServiceUnavailable) String() string {
+	return fmt.Sprintf("[GET /v3/universe/types/{type_id}/][%d] getUniverseTypesTypeIdServiceUnavailable  %+v", 503, o.Payload)
+}
+
 func (o *GetUniverseTypesTypeIDServiceUnavailable) GetPayload() *models.ServiceUnavailable {
 	return o.Payload
 }
@@ -399,7 +615,8 @@ func NewGetUniverseTypesTypeIDGatewayTimeout() *GetUniverseTypesTypeIDGatewayTim
 	return &GetUniverseTypesTypeIDGatewayTimeout{}
 }
 
-/* GetUniverseTypesTypeIDGatewayTimeout describes a response with status code 504, with default header values.
+/*
+GetUniverseTypesTypeIDGatewayTimeout describes a response with status code 504, with default header values.
 
 Gateway timeout
 */
@@ -407,9 +624,39 @@ type GetUniverseTypesTypeIDGatewayTimeout struct {
 	Payload *models.GatewayTimeout
 }
 
+// IsSuccess returns true when this get universe types type Id gateway timeout response has a 2xx status code
+func (o *GetUniverseTypesTypeIDGatewayTimeout) IsSuccess() bool {
+	return false
+}
+
+// IsRedirect returns true when this get universe types type Id gateway timeout response has a 3xx status code
+func (o *GetUniverseTypesTypeIDGatewayTimeout) IsRedirect() bool {
+	return false
+}
+
+// IsClientError returns true when this get universe types type Id gateway timeout response has a 4xx status code
+func (o *GetUniverseTypesTypeIDGatewayTimeout) IsClientError() bool {
+	return false
+}
+
+// IsServerError returns true when this get universe types type Id gateway timeout response has a 5xx status code
+func (o *GetUniverseTypesTypeIDGatewayTimeout) IsServerError() bool {
+	return true
+}
+
+// IsCode returns true when this get universe types type Id gateway timeout response a status code equal to that given
+func (o *GetUniverseTypesTypeIDGatewayTimeout) IsCode(code int) bool {
+	return code == 504
+}
+
 func (o *GetUniverseTypesTypeIDGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v3/universe/types/{type_id}/][%d] getUniverseTypesTypeIdGatewayTimeout  %+v", 504, o.Payload)
 }
+
+func (o *GetUniverseTypesTypeIDGatewayTimeout) String() string {
+	return fmt.Sprintf("[GET /v3/universe/types/{type_id}/][%d] getUniverseTypesTypeIdGatewayTimeout  %+v", 504, o.Payload)
+}
+
 func (o *GetUniverseTypesTypeIDGatewayTimeout) GetPayload() *models.GatewayTimeout {
 	return o.Payload
 }
@@ -426,7 +673,8 @@ func (o *GetUniverseTypesTypeIDGatewayTimeout) readResponse(response runtime.Cli
 	return nil
 }
 
-/*GetUniverseTypesTypeIDNotFoundBody get_universe_types_type_id_not_found
+/*
+GetUniverseTypesTypeIDNotFoundBody get_universe_types_type_id_not_found
 //
 // Not found
 swagger:model GetUniverseTypesTypeIDNotFoundBody
@@ -467,7 +715,8 @@ func (o *GetUniverseTypesTypeIDNotFoundBody) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*GetUniverseTypesTypeIDOKBody get_universe_types_type_id_ok
+/*
+GetUniverseTypesTypeIDOKBody get_universe_types_type_id_ok
 //
 // 200 ok object
 swagger:model GetUniverseTypesTypeIDOKBody
@@ -785,7 +1034,8 @@ func (o *GetUniverseTypesTypeIDOKBody) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*GetUniverseTypesTypeIDOKBodyDogmaAttributesItems0 get_universe_types_type_id_dogma_attribute
+/*
+GetUniverseTypesTypeIDOKBodyDogmaAttributesItems0 get_universe_types_type_id_dogma_attribute
 //
 // dogma_attribute object
 swagger:model GetUniverseTypesTypeIDOKBodyDogmaAttributesItems0
@@ -864,7 +1114,8 @@ func (o *GetUniverseTypesTypeIDOKBodyDogmaAttributesItems0) UnmarshalBinary(b []
 	return nil
 }
 
-/*GetUniverseTypesTypeIDOKBodyDogmaEffectsItems0 get_universe_types_type_id_dogma_effect
+/*
+GetUniverseTypesTypeIDOKBodyDogmaEffectsItems0 get_universe_types_type_id_dogma_effect
 //
 // dogma_effect object
 swagger:model GetUniverseTypesTypeIDOKBodyDogmaEffectsItems0

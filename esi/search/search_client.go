@@ -32,15 +32,13 @@ type ClientOption func(*runtime.ClientOperation)
 type ClientService interface {
 	GetCharactersCharacterIDSearch(params *GetCharactersCharacterIDSearchParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*GetCharactersCharacterIDSearchOK, error)
 
-	GetSearch(params *GetSearchParams, opts ...ClientOption) (*GetSearchOK, error)
-
 	SetTransport(transport runtime.ClientTransport)
 }
 
 /*
-  GetCharactersCharacterIDSearch searches on a string
+	GetCharactersCharacterIDSearch searches on a string
 
-  Search for entities that match a given sub-string.
+	Search for entities that match a given sub-string.
 
 ---
 
@@ -79,50 +77,6 @@ func (a *Client) GetCharactersCharacterIDSearch(params *GetCharactersCharacterID
 	// unexpected success response
 	// safeguard: normally, absent a default response, unknown success responses return an error above: so this is a codegen issue
 	msg := fmt.Sprintf("unexpected success response for get_characters_character_id_search: API contract not enforced by server. Client expected to get an error, but got: %T", result)
-	panic(msg)
-}
-
-/*
-  GetSearch searches on a string
-
-  Search for entities that match a given sub-string.
-
----
-
-This route is cached for up to 3600 seconds
-*/
-func (a *Client) GetSearch(params *GetSearchParams, opts ...ClientOption) (*GetSearchOK, error) {
-	// TODO: Validate the params before sending
-	if params == nil {
-		params = NewGetSearchParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "get_search",
-		Method:             "GET",
-		PathPattern:        "/v2/search/",
-		ProducesMediaTypes: []string{"application/json", "text/html; charset=utf-8", "text/plain; charset=utf-8"},
-		ConsumesMediaTypes: []string{"application/json"},
-		Schemes:            []string{"https"},
-		Params:             params,
-		Reader:             &GetSearchReader{formats: a.formats},
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-	success, ok := result.(*GetSearchOK)
-	if ok {
-		return success, nil
-	}
-	// unexpected success response
-	// safeguard: normally, absent a default response, unknown success responses return an error above: so this is a codegen issue
-	msg := fmt.Sprintf("unexpected success response for get_search: API contract not enforced by server. Client expected to get an error, but got: %T", result)
 	panic(msg)
 }
 
