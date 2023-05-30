@@ -114,6 +114,11 @@ func (o *PostUIOpenwindowContractNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the post Ui openwindow contract no content response
+func (o *PostUIOpenwindowContractNoContent) Code() int {
+	return 204
+}
+
 func (o *PostUIOpenwindowContractNoContent) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/contract/][%d] postUiOpenwindowContractNoContent ", 204)
 }
@@ -164,6 +169,11 @@ func (o *PostUIOpenwindowContractBadRequest) IsServerError() bool {
 // IsCode returns true when this post Ui openwindow contract bad request response a status code equal to that given
 func (o *PostUIOpenwindowContractBadRequest) IsCode(code int) bool {
 	return code == 400
+}
+
+// Code gets the status code for the post Ui openwindow contract bad request response
+func (o *PostUIOpenwindowContractBadRequest) Code() int {
+	return 400
 }
 
 func (o *PostUIOpenwindowContractBadRequest) Error() string {
@@ -229,6 +239,11 @@ func (o *PostUIOpenwindowContractUnauthorized) IsCode(code int) bool {
 	return code == 401
 }
 
+// Code gets the status code for the post Ui openwindow contract unauthorized response
+func (o *PostUIOpenwindowContractUnauthorized) Code() int {
+	return 401
+}
+
 func (o *PostUIOpenwindowContractUnauthorized) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/contract/][%d] postUiOpenwindowContractUnauthorized  %+v", 401, o.Payload)
 }
@@ -290,6 +305,11 @@ func (o *PostUIOpenwindowContractForbidden) IsServerError() bool {
 // IsCode returns true when this post Ui openwindow contract forbidden response a status code equal to that given
 func (o *PostUIOpenwindowContractForbidden) IsCode(code int) bool {
 	return code == 403
+}
+
+// Code gets the status code for the post Ui openwindow contract forbidden response
+func (o *PostUIOpenwindowContractForbidden) Code() int {
+	return 403
 }
 
 func (o *PostUIOpenwindowContractForbidden) Error() string {
@@ -355,6 +375,11 @@ func (o *PostUIOpenwindowContractEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
 }
 
+// Code gets the status code for the post Ui openwindow contract enhance your calm response
+func (o *PostUIOpenwindowContractEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *PostUIOpenwindowContractEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/contract/][%d] postUiOpenwindowContractEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -416,6 +441,11 @@ func (o *PostUIOpenwindowContractInternalServerError) IsServerError() bool {
 // IsCode returns true when this post Ui openwindow contract internal server error response a status code equal to that given
 func (o *PostUIOpenwindowContractInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the post Ui openwindow contract internal server error response
+func (o *PostUIOpenwindowContractInternalServerError) Code() int {
+	return 500
 }
 
 func (o *PostUIOpenwindowContractInternalServerError) Error() string {
@@ -481,6 +511,11 @@ func (o *PostUIOpenwindowContractServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the post Ui openwindow contract service unavailable response
+func (o *PostUIOpenwindowContractServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *PostUIOpenwindowContractServiceUnavailable) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/contract/][%d] postUiOpenwindowContractServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -542,6 +577,11 @@ func (o *PostUIOpenwindowContractGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this post Ui openwindow contract gateway timeout response a status code equal to that given
 func (o *PostUIOpenwindowContractGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the post Ui openwindow contract gateway timeout response
+func (o *PostUIOpenwindowContractGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *PostUIOpenwindowContractGatewayTimeout) Error() string {

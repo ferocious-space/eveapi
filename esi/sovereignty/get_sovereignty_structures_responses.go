@@ -130,6 +130,11 @@ func (o *GetSovereigntyStructuresOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get sovereignty structures o k response
+func (o *GetSovereigntyStructuresOK) Code() int {
+	return 200
+}
+
 func (o *GetSovereigntyStructuresOK) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/structures/][%d] getSovereigntyStructuresOK  %+v", 200, o.Payload)
 }
@@ -234,6 +239,11 @@ func (o *GetSovereigntyStructuresNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get sovereignty structures not modified response
+func (o *GetSovereigntyStructuresNotModified) Code() int {
+	return 304
+}
+
 func (o *GetSovereigntyStructuresNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/structures/][%d] getSovereigntyStructuresNotModified ", 304)
 }
@@ -314,6 +324,11 @@ func (o *GetSovereigntyStructuresBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get sovereignty structures bad request response
+func (o *GetSovereigntyStructuresBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetSovereigntyStructuresBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/structures/][%d] getSovereigntyStructuresBadRequest  %+v", 400, o.Payload)
 }
@@ -375,6 +390,11 @@ func (o *GetSovereigntyStructuresEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get sovereignty structures enhance your calm response a status code equal to that given
 func (o *GetSovereigntyStructuresEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get sovereignty structures enhance your calm response
+func (o *GetSovereigntyStructuresEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetSovereigntyStructuresEnhanceYourCalm) Error() string {
@@ -440,6 +460,11 @@ func (o *GetSovereigntyStructuresInternalServerError) IsCode(code int) bool {
 	return code == 500
 }
 
+// Code gets the status code for the get sovereignty structures internal server error response
+func (o *GetSovereigntyStructuresInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetSovereigntyStructuresInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/structures/][%d] getSovereigntyStructuresInternalServerError  %+v", 500, o.Payload)
 }
@@ -503,6 +528,11 @@ func (o *GetSovereigntyStructuresServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get sovereignty structures service unavailable response
+func (o *GetSovereigntyStructuresServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetSovereigntyStructuresServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/structures/][%d] getSovereigntyStructuresServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -564,6 +594,11 @@ func (o *GetSovereigntyStructuresGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get sovereignty structures gateway timeout response a status code equal to that given
 func (o *GetSovereigntyStructuresGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get sovereignty structures gateway timeout response
+func (o *GetSovereigntyStructuresGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetSovereigntyStructuresGatewayTimeout) Error() string {

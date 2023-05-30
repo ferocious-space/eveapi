@@ -130,6 +130,11 @@ func (o *GetUniverseSystemKillsOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get universe system kills o k response
+func (o *GetUniverseSystemKillsOK) Code() int {
+	return 200
+}
+
 func (o *GetUniverseSystemKillsOK) Error() string {
 	return fmt.Sprintf("[GET /v2/universe/system_kills/][%d] getUniverseSystemKillsOK  %+v", 200, o.Payload)
 }
@@ -234,6 +239,11 @@ func (o *GetUniverseSystemKillsNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get universe system kills not modified response
+func (o *GetUniverseSystemKillsNotModified) Code() int {
+	return 304
+}
+
 func (o *GetUniverseSystemKillsNotModified) Error() string {
 	return fmt.Sprintf("[GET /v2/universe/system_kills/][%d] getUniverseSystemKillsNotModified ", 304)
 }
@@ -314,6 +324,11 @@ func (o *GetUniverseSystemKillsBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get universe system kills bad request response
+func (o *GetUniverseSystemKillsBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetUniverseSystemKillsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v2/universe/system_kills/][%d] getUniverseSystemKillsBadRequest  %+v", 400, o.Payload)
 }
@@ -375,6 +390,11 @@ func (o *GetUniverseSystemKillsEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get universe system kills enhance your calm response a status code equal to that given
 func (o *GetUniverseSystemKillsEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get universe system kills enhance your calm response
+func (o *GetUniverseSystemKillsEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetUniverseSystemKillsEnhanceYourCalm) Error() string {
@@ -440,6 +460,11 @@ func (o *GetUniverseSystemKillsInternalServerError) IsCode(code int) bool {
 	return code == 500
 }
 
+// Code gets the status code for the get universe system kills internal server error response
+func (o *GetUniverseSystemKillsInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetUniverseSystemKillsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v2/universe/system_kills/][%d] getUniverseSystemKillsInternalServerError  %+v", 500, o.Payload)
 }
@@ -503,6 +528,11 @@ func (o *GetUniverseSystemKillsServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get universe system kills service unavailable response
+func (o *GetUniverseSystemKillsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetUniverseSystemKillsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v2/universe/system_kills/][%d] getUniverseSystemKillsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -564,6 +594,11 @@ func (o *GetUniverseSystemKillsGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get universe system kills gateway timeout response a status code equal to that given
 func (o *GetUniverseSystemKillsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get universe system kills gateway timeout response
+func (o *GetUniverseSystemKillsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetUniverseSystemKillsGatewayTimeout) Error() string {

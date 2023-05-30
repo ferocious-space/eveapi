@@ -126,6 +126,11 @@ func (o *GetMarketsGroupsOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get markets groups o k response
+func (o *GetMarketsGroupsOK) Code() int {
+	return 200
+}
+
 func (o *GetMarketsGroupsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/groups/][%d] getMarketsGroupsOK  %+v", 200, o.Payload)
 }
@@ -230,6 +235,11 @@ func (o *GetMarketsGroupsNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get markets groups not modified response
+func (o *GetMarketsGroupsNotModified) Code() int {
+	return 304
+}
+
 func (o *GetMarketsGroupsNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/groups/][%d] getMarketsGroupsNotModified ", 304)
 }
@@ -310,6 +320,11 @@ func (o *GetMarketsGroupsBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get markets groups bad request response
+func (o *GetMarketsGroupsBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetMarketsGroupsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/groups/][%d] getMarketsGroupsBadRequest  %+v", 400, o.Payload)
 }
@@ -371,6 +386,11 @@ func (o *GetMarketsGroupsEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get markets groups enhance your calm response a status code equal to that given
 func (o *GetMarketsGroupsEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get markets groups enhance your calm response
+func (o *GetMarketsGroupsEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetMarketsGroupsEnhanceYourCalm) Error() string {
@@ -436,6 +456,11 @@ func (o *GetMarketsGroupsInternalServerError) IsCode(code int) bool {
 	return code == 500
 }
 
+// Code gets the status code for the get markets groups internal server error response
+func (o *GetMarketsGroupsInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetMarketsGroupsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/groups/][%d] getMarketsGroupsInternalServerError  %+v", 500, o.Payload)
 }
@@ -499,6 +524,11 @@ func (o *GetMarketsGroupsServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get markets groups service unavailable response
+func (o *GetMarketsGroupsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetMarketsGroupsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/groups/][%d] getMarketsGroupsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -560,6 +590,11 @@ func (o *GetMarketsGroupsGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get markets groups gateway timeout response a status code equal to that given
 func (o *GetMarketsGroupsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get markets groups gateway timeout response
+func (o *GetMarketsGroupsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetMarketsGroupsGatewayTimeout) Error() string {

@@ -38,6 +38,25 @@ func JSONtoYAML(filePath string) (*yaml.Node, error) {
 	return &node, nil
 }
 
+func JSONtoYAMLString(jsonString string) (*yaml.Node, error) {
+	var obj interface{}
+	var node yaml.Node
+	var err error
+	err = json.Unmarshal([]byte(jsonString), &obj)
+	if err != nil {
+		return &yaml.Node{}, err
+	}
+	marshal, err := yaml.Marshal(obj)
+	if err != nil {
+		return &yaml.Node{}, err
+	}
+	err = yaml.Unmarshal(re.ReplaceAll(marshal, []byte("$1:")), &node)
+	if err != nil {
+		return &yaml.Node{}, err
+	}
+	return &node, nil
+}
+
 func GenerateType(p reflect.Type, typeName string, packagePath string, packageName string) ([]byte, error) {
 	singularName, _ := NameForType(typeName)
 	buffer := new(bytes.Buffer)

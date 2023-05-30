@@ -142,6 +142,11 @@ func (o *GetCharactersCharacterIDLoyaltyPointsOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get characters character Id loyalty points o k response
+func (o *GetCharactersCharacterIDLoyaltyPointsOK) Code() int {
+	return 200
+}
+
 func (o *GetCharactersCharacterIDLoyaltyPointsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/loyalty/points/][%d] getCharactersCharacterIdLoyaltyPointsOK  %+v", 200, o.Payload)
 }
@@ -246,6 +251,11 @@ func (o *GetCharactersCharacterIDLoyaltyPointsNotModified) IsCode(code int) bool
 	return code == 304
 }
 
+// Code gets the status code for the get characters character Id loyalty points not modified response
+func (o *GetCharactersCharacterIDLoyaltyPointsNotModified) Code() int {
+	return 304
+}
+
 func (o *GetCharactersCharacterIDLoyaltyPointsNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/loyalty/points/][%d] getCharactersCharacterIdLoyaltyPointsNotModified ", 304)
 }
@@ -326,6 +336,11 @@ func (o *GetCharactersCharacterIDLoyaltyPointsBadRequest) IsCode(code int) bool 
 	return code == 400
 }
 
+// Code gets the status code for the get characters character Id loyalty points bad request response
+func (o *GetCharactersCharacterIDLoyaltyPointsBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetCharactersCharacterIDLoyaltyPointsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/loyalty/points/][%d] getCharactersCharacterIdLoyaltyPointsBadRequest  %+v", 400, o.Payload)
 }
@@ -387,6 +402,11 @@ func (o *GetCharactersCharacterIDLoyaltyPointsUnauthorized) IsServerError() bool
 // IsCode returns true when this get characters character Id loyalty points unauthorized response a status code equal to that given
 func (o *GetCharactersCharacterIDLoyaltyPointsUnauthorized) IsCode(code int) bool {
 	return code == 401
+}
+
+// Code gets the status code for the get characters character Id loyalty points unauthorized response
+func (o *GetCharactersCharacterIDLoyaltyPointsUnauthorized) Code() int {
+	return 401
 }
 
 func (o *GetCharactersCharacterIDLoyaltyPointsUnauthorized) Error() string {
@@ -452,6 +472,11 @@ func (o *GetCharactersCharacterIDLoyaltyPointsForbidden) IsCode(code int) bool {
 	return code == 403
 }
 
+// Code gets the status code for the get characters character Id loyalty points forbidden response
+func (o *GetCharactersCharacterIDLoyaltyPointsForbidden) Code() int {
+	return 403
+}
+
 func (o *GetCharactersCharacterIDLoyaltyPointsForbidden) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/loyalty/points/][%d] getCharactersCharacterIdLoyaltyPointsForbidden  %+v", 403, o.Payload)
 }
@@ -513,6 +538,11 @@ func (o *GetCharactersCharacterIDLoyaltyPointsEnhanceYourCalm) IsServerError() b
 // IsCode returns true when this get characters character Id loyalty points enhance your calm response a status code equal to that given
 func (o *GetCharactersCharacterIDLoyaltyPointsEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get characters character Id loyalty points enhance your calm response
+func (o *GetCharactersCharacterIDLoyaltyPointsEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetCharactersCharacterIDLoyaltyPointsEnhanceYourCalm) Error() string {
@@ -578,6 +608,11 @@ func (o *GetCharactersCharacterIDLoyaltyPointsInternalServerError) IsCode(code i
 	return code == 500
 }
 
+// Code gets the status code for the get characters character Id loyalty points internal server error response
+func (o *GetCharactersCharacterIDLoyaltyPointsInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetCharactersCharacterIDLoyaltyPointsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/loyalty/points/][%d] getCharactersCharacterIdLoyaltyPointsInternalServerError  %+v", 500, o.Payload)
 }
@@ -641,6 +676,11 @@ func (o *GetCharactersCharacterIDLoyaltyPointsServiceUnavailable) IsCode(code in
 	return code == 503
 }
 
+// Code gets the status code for the get characters character Id loyalty points service unavailable response
+func (o *GetCharactersCharacterIDLoyaltyPointsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCharactersCharacterIDLoyaltyPointsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/loyalty/points/][%d] getCharactersCharacterIdLoyaltyPointsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -702,6 +742,11 @@ func (o *GetCharactersCharacterIDLoyaltyPointsGatewayTimeout) IsServerError() bo
 // IsCode returns true when this get characters character Id loyalty points gateway timeout response a status code equal to that given
 func (o *GetCharactersCharacterIDLoyaltyPointsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get characters character Id loyalty points gateway timeout response
+func (o *GetCharactersCharacterIDLoyaltyPointsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCharactersCharacterIDLoyaltyPointsGatewayTimeout) Error() string {

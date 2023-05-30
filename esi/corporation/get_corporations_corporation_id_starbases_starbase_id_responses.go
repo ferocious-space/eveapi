@@ -144,6 +144,11 @@ func (o *GetCorporationsCorporationIDStarbasesStarbaseIDOK) IsCode(code int) boo
 	return code == 200
 }
 
+// Code gets the status code for the get corporations corporation Id starbases starbase Id o k response
+func (o *GetCorporationsCorporationIDStarbasesStarbaseIDOK) Code() int {
+	return 200
+}
+
 func (o *GetCorporationsCorporationIDStarbasesStarbaseIDOK) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/starbases/{starbase_id}/][%d] getCorporationsCorporationIdStarbasesStarbaseIdOK  %+v", 200, o.Payload)
 }
@@ -250,6 +255,11 @@ func (o *GetCorporationsCorporationIDStarbasesStarbaseIDNotModified) IsCode(code
 	return code == 304
 }
 
+// Code gets the status code for the get corporations corporation Id starbases starbase Id not modified response
+func (o *GetCorporationsCorporationIDStarbasesStarbaseIDNotModified) Code() int {
+	return 304
+}
+
 func (o *GetCorporationsCorporationIDStarbasesStarbaseIDNotModified) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/starbases/{starbase_id}/][%d] getCorporationsCorporationIdStarbasesStarbaseIdNotModified ", 304)
 }
@@ -330,6 +340,11 @@ func (o *GetCorporationsCorporationIDStarbasesStarbaseIDBadRequest) IsCode(code 
 	return code == 400
 }
 
+// Code gets the status code for the get corporations corporation Id starbases starbase Id bad request response
+func (o *GetCorporationsCorporationIDStarbasesStarbaseIDBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetCorporationsCorporationIDStarbasesStarbaseIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/starbases/{starbase_id}/][%d] getCorporationsCorporationIdStarbasesStarbaseIdBadRequest  %+v", 400, o.Payload)
 }
@@ -391,6 +406,11 @@ func (o *GetCorporationsCorporationIDStarbasesStarbaseIDUnauthorized) IsServerEr
 // IsCode returns true when this get corporations corporation Id starbases starbase Id unauthorized response a status code equal to that given
 func (o *GetCorporationsCorporationIDStarbasesStarbaseIDUnauthorized) IsCode(code int) bool {
 	return code == 401
+}
+
+// Code gets the status code for the get corporations corporation Id starbases starbase Id unauthorized response
+func (o *GetCorporationsCorporationIDStarbasesStarbaseIDUnauthorized) Code() int {
+	return 401
 }
 
 func (o *GetCorporationsCorporationIDStarbasesStarbaseIDUnauthorized) Error() string {
@@ -456,6 +476,11 @@ func (o *GetCorporationsCorporationIDStarbasesStarbaseIDForbidden) IsCode(code i
 	return code == 403
 }
 
+// Code gets the status code for the get corporations corporation Id starbases starbase Id forbidden response
+func (o *GetCorporationsCorporationIDStarbasesStarbaseIDForbidden) Code() int {
+	return 403
+}
+
 func (o *GetCorporationsCorporationIDStarbasesStarbaseIDForbidden) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/starbases/{starbase_id}/][%d] getCorporationsCorporationIdStarbasesStarbaseIdForbidden  %+v", 403, o.Payload)
 }
@@ -517,6 +542,11 @@ func (o *GetCorporationsCorporationIDStarbasesStarbaseIDEnhanceYourCalm) IsServe
 // IsCode returns true when this get corporations corporation Id starbases starbase Id enhance your calm response a status code equal to that given
 func (o *GetCorporationsCorporationIDStarbasesStarbaseIDEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get corporations corporation Id starbases starbase Id enhance your calm response
+func (o *GetCorporationsCorporationIDStarbasesStarbaseIDEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetCorporationsCorporationIDStarbasesStarbaseIDEnhanceYourCalm) Error() string {
@@ -582,6 +612,11 @@ func (o *GetCorporationsCorporationIDStarbasesStarbaseIDInternalServerError) IsC
 	return code == 500
 }
 
+// Code gets the status code for the get corporations corporation Id starbases starbase Id internal server error response
+func (o *GetCorporationsCorporationIDStarbasesStarbaseIDInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetCorporationsCorporationIDStarbasesStarbaseIDInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/starbases/{starbase_id}/][%d] getCorporationsCorporationIdStarbasesStarbaseIdInternalServerError  %+v", 500, o.Payload)
 }
@@ -645,6 +680,11 @@ func (o *GetCorporationsCorporationIDStarbasesStarbaseIDServiceUnavailable) IsCo
 	return code == 503
 }
 
+// Code gets the status code for the get corporations corporation Id starbases starbase Id service unavailable response
+func (o *GetCorporationsCorporationIDStarbasesStarbaseIDServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCorporationsCorporationIDStarbasesStarbaseIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/starbases/{starbase_id}/][%d] getCorporationsCorporationIdStarbasesStarbaseIdServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -706,6 +746,11 @@ func (o *GetCorporationsCorporationIDStarbasesStarbaseIDGatewayTimeout) IsServer
 // IsCode returns true when this get corporations corporation Id starbases starbase Id gateway timeout response a status code equal to that given
 func (o *GetCorporationsCorporationIDStarbasesStarbaseIDGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get corporations corporation Id starbases starbase Id gateway timeout response
+func (o *GetCorporationsCorporationIDStarbasesStarbaseIDGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCorporationsCorporationIDStarbasesStarbaseIDGatewayTimeout) Error() string {

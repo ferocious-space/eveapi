@@ -146,6 +146,11 @@ func (o *GetCharactersCharacterIDSearchOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get characters character Id search o k response
+func (o *GetCharactersCharacterIDSearchOK) Code() int {
+	return 200
+}
+
 func (o *GetCharactersCharacterIDSearchOK) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/search/][%d] getCharactersCharacterIdSearchOK  %+v", 200, o.Payload)
 }
@@ -259,6 +264,11 @@ func (o *GetCharactersCharacterIDSearchNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get characters character Id search not modified response
+func (o *GetCharactersCharacterIDSearchNotModified) Code() int {
+	return 304
+}
+
 func (o *GetCharactersCharacterIDSearchNotModified) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/search/][%d] getCharactersCharacterIdSearchNotModified ", 304)
 }
@@ -339,6 +349,11 @@ func (o *GetCharactersCharacterIDSearchBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get characters character Id search bad request response
+func (o *GetCharactersCharacterIDSearchBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetCharactersCharacterIDSearchBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/search/][%d] getCharactersCharacterIdSearchBadRequest  %+v", 400, o.Payload)
 }
@@ -400,6 +415,11 @@ func (o *GetCharactersCharacterIDSearchUnauthorized) IsServerError() bool {
 // IsCode returns true when this get characters character Id search unauthorized response a status code equal to that given
 func (o *GetCharactersCharacterIDSearchUnauthorized) IsCode(code int) bool {
 	return code == 401
+}
+
+// Code gets the status code for the get characters character Id search unauthorized response
+func (o *GetCharactersCharacterIDSearchUnauthorized) Code() int {
+	return 401
 }
 
 func (o *GetCharactersCharacterIDSearchUnauthorized) Error() string {
@@ -465,6 +485,11 @@ func (o *GetCharactersCharacterIDSearchForbidden) IsCode(code int) bool {
 	return code == 403
 }
 
+// Code gets the status code for the get characters character Id search forbidden response
+func (o *GetCharactersCharacterIDSearchForbidden) Code() int {
+	return 403
+}
+
 func (o *GetCharactersCharacterIDSearchForbidden) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/search/][%d] getCharactersCharacterIdSearchForbidden  %+v", 403, o.Payload)
 }
@@ -526,6 +551,11 @@ func (o *GetCharactersCharacterIDSearchEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get characters character Id search enhance your calm response a status code equal to that given
 func (o *GetCharactersCharacterIDSearchEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get characters character Id search enhance your calm response
+func (o *GetCharactersCharacterIDSearchEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetCharactersCharacterIDSearchEnhanceYourCalm) Error() string {
@@ -591,6 +621,11 @@ func (o *GetCharactersCharacterIDSearchInternalServerError) IsCode(code int) boo
 	return code == 500
 }
 
+// Code gets the status code for the get characters character Id search internal server error response
+func (o *GetCharactersCharacterIDSearchInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetCharactersCharacterIDSearchInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/search/][%d] getCharactersCharacterIdSearchInternalServerError  %+v", 500, o.Payload)
 }
@@ -654,6 +689,11 @@ func (o *GetCharactersCharacterIDSearchServiceUnavailable) IsCode(code int) bool
 	return code == 503
 }
 
+// Code gets the status code for the get characters character Id search service unavailable response
+func (o *GetCharactersCharacterIDSearchServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCharactersCharacterIDSearchServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/search/][%d] getCharactersCharacterIdSearchServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -715,6 +755,11 @@ func (o *GetCharactersCharacterIDSearchGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get characters character Id search gateway timeout response a status code equal to that given
 func (o *GetCharactersCharacterIDSearchGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get characters character Id search gateway timeout response
+func (o *GetCharactersCharacterIDSearchGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCharactersCharacterIDSearchGatewayTimeout) Error() string {

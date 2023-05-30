@@ -151,6 +151,11 @@ func (o *GetWarsWarIDKillmailsOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get wars war Id killmails o k response
+func (o *GetWarsWarIDKillmailsOK) Code() int {
+	return 200
+}
+
 func (o *GetWarsWarIDKillmailsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/wars/{war_id}/killmails/][%d] getWarsWarIdKillmailsOK  %+v", 200, o.Payload)
 }
@@ -266,6 +271,11 @@ func (o *GetWarsWarIDKillmailsNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get wars war Id killmails not modified response
+func (o *GetWarsWarIDKillmailsNotModified) Code() int {
+	return 304
+}
+
 func (o *GetWarsWarIDKillmailsNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/wars/{war_id}/killmails/][%d] getWarsWarIdKillmailsNotModified ", 304)
 }
@@ -346,6 +356,11 @@ func (o *GetWarsWarIDKillmailsBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get wars war Id killmails bad request response
+func (o *GetWarsWarIDKillmailsBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetWarsWarIDKillmailsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/wars/{war_id}/killmails/][%d] getWarsWarIdKillmailsBadRequest  %+v", 400, o.Payload)
 }
@@ -407,6 +422,11 @@ func (o *GetWarsWarIDKillmailsEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get wars war Id killmails enhance your calm response a status code equal to that given
 func (o *GetWarsWarIDKillmailsEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get wars war Id killmails enhance your calm response
+func (o *GetWarsWarIDKillmailsEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetWarsWarIDKillmailsEnhanceYourCalm) Error() string {
@@ -472,6 +492,11 @@ func (o *GetWarsWarIDKillmailsUnprocessableEntity) IsCode(code int) bool {
 	return code == 422
 }
 
+// Code gets the status code for the get wars war Id killmails unprocessable entity response
+func (o *GetWarsWarIDKillmailsUnprocessableEntity) Code() int {
+	return 422
+}
+
 func (o *GetWarsWarIDKillmailsUnprocessableEntity) Error() string {
 	return fmt.Sprintf("[GET /v1/wars/{war_id}/killmails/][%d] getWarsWarIdKillmailsUnprocessableEntity  %+v", 422, o.Payload)
 }
@@ -533,6 +558,11 @@ func (o *GetWarsWarIDKillmailsInternalServerError) IsServerError() bool {
 // IsCode returns true when this get wars war Id killmails internal server error response a status code equal to that given
 func (o *GetWarsWarIDKillmailsInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the get wars war Id killmails internal server error response
+func (o *GetWarsWarIDKillmailsInternalServerError) Code() int {
+	return 500
 }
 
 func (o *GetWarsWarIDKillmailsInternalServerError) Error() string {
@@ -598,6 +628,11 @@ func (o *GetWarsWarIDKillmailsServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get wars war Id killmails service unavailable response
+func (o *GetWarsWarIDKillmailsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetWarsWarIDKillmailsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/wars/{war_id}/killmails/][%d] getWarsWarIdKillmailsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -659,6 +694,11 @@ func (o *GetWarsWarIDKillmailsGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get wars war Id killmails gateway timeout response a status code equal to that given
 func (o *GetWarsWarIDKillmailsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get wars war Id killmails gateway timeout response
+func (o *GetWarsWarIDKillmailsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetWarsWarIDKillmailsGatewayTimeout) Error() string {

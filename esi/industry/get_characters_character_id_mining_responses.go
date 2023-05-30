@@ -157,6 +157,11 @@ func (o *GetCharactersCharacterIDMiningOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get characters character Id mining o k response
+func (o *GetCharactersCharacterIDMiningOK) Code() int {
+	return 200
+}
+
 func (o *GetCharactersCharacterIDMiningOK) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/mining/][%d] getCharactersCharacterIdMiningOK  %+v", 200, o.Payload)
 }
@@ -272,6 +277,11 @@ func (o *GetCharactersCharacterIDMiningNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get characters character Id mining not modified response
+func (o *GetCharactersCharacterIDMiningNotModified) Code() int {
+	return 304
+}
+
 func (o *GetCharactersCharacterIDMiningNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/mining/][%d] getCharactersCharacterIdMiningNotModified ", 304)
 }
@@ -352,6 +362,11 @@ func (o *GetCharactersCharacterIDMiningBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get characters character Id mining bad request response
+func (o *GetCharactersCharacterIDMiningBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetCharactersCharacterIDMiningBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/mining/][%d] getCharactersCharacterIdMiningBadRequest  %+v", 400, o.Payload)
 }
@@ -413,6 +428,11 @@ func (o *GetCharactersCharacterIDMiningUnauthorized) IsServerError() bool {
 // IsCode returns true when this get characters character Id mining unauthorized response a status code equal to that given
 func (o *GetCharactersCharacterIDMiningUnauthorized) IsCode(code int) bool {
 	return code == 401
+}
+
+// Code gets the status code for the get characters character Id mining unauthorized response
+func (o *GetCharactersCharacterIDMiningUnauthorized) Code() int {
+	return 401
 }
 
 func (o *GetCharactersCharacterIDMiningUnauthorized) Error() string {
@@ -478,6 +498,11 @@ func (o *GetCharactersCharacterIDMiningForbidden) IsCode(code int) bool {
 	return code == 403
 }
 
+// Code gets the status code for the get characters character Id mining forbidden response
+func (o *GetCharactersCharacterIDMiningForbidden) Code() int {
+	return 403
+}
+
 func (o *GetCharactersCharacterIDMiningForbidden) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/mining/][%d] getCharactersCharacterIdMiningForbidden  %+v", 403, o.Payload)
 }
@@ -539,6 +564,11 @@ func (o *GetCharactersCharacterIDMiningEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get characters character Id mining enhance your calm response a status code equal to that given
 func (o *GetCharactersCharacterIDMiningEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get characters character Id mining enhance your calm response
+func (o *GetCharactersCharacterIDMiningEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetCharactersCharacterIDMiningEnhanceYourCalm) Error() string {
@@ -604,6 +634,11 @@ func (o *GetCharactersCharacterIDMiningInternalServerError) IsCode(code int) boo
 	return code == 500
 }
 
+// Code gets the status code for the get characters character Id mining internal server error response
+func (o *GetCharactersCharacterIDMiningInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetCharactersCharacterIDMiningInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/mining/][%d] getCharactersCharacterIdMiningInternalServerError  %+v", 500, o.Payload)
 }
@@ -667,6 +702,11 @@ func (o *GetCharactersCharacterIDMiningServiceUnavailable) IsCode(code int) bool
 	return code == 503
 }
 
+// Code gets the status code for the get characters character Id mining service unavailable response
+func (o *GetCharactersCharacterIDMiningServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCharactersCharacterIDMiningServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/mining/][%d] getCharactersCharacterIdMiningServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -728,6 +768,11 @@ func (o *GetCharactersCharacterIDMiningGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get characters character Id mining gateway timeout response a status code equal to that given
 func (o *GetCharactersCharacterIDMiningGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get characters character Id mining gateway timeout response
+func (o *GetCharactersCharacterIDMiningGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCharactersCharacterIDMiningGatewayTimeout) Error() string {

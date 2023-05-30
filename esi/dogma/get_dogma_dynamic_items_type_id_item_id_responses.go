@@ -137,6 +137,11 @@ func (o *GetDogmaDynamicItemsTypeIDItemIDOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get dogma dynamic items type Id item Id o k response
+func (o *GetDogmaDynamicItemsTypeIDItemIDOK) Code() int {
+	return 200
+}
+
 func (o *GetDogmaDynamicItemsTypeIDItemIDOK) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/dynamic/items/{type_id}/{item_id}/][%d] getDogmaDynamicItemsTypeIdItemIdOK  %+v", 200, o.Payload)
 }
@@ -243,6 +248,11 @@ func (o *GetDogmaDynamicItemsTypeIDItemIDNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get dogma dynamic items type Id item Id not modified response
+func (o *GetDogmaDynamicItemsTypeIDItemIDNotModified) Code() int {
+	return 304
+}
+
 func (o *GetDogmaDynamicItemsTypeIDItemIDNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/dynamic/items/{type_id}/{item_id}/][%d] getDogmaDynamicItemsTypeIdItemIdNotModified ", 304)
 }
@@ -323,6 +333,11 @@ func (o *GetDogmaDynamicItemsTypeIDItemIDBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get dogma dynamic items type Id item Id bad request response
+func (o *GetDogmaDynamicItemsTypeIDItemIDBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetDogmaDynamicItemsTypeIDItemIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/dynamic/items/{type_id}/{item_id}/][%d] getDogmaDynamicItemsTypeIdItemIdBadRequest  %+v", 400, o.Payload)
 }
@@ -384,6 +399,11 @@ func (o *GetDogmaDynamicItemsTypeIDItemIDNotFound) IsServerError() bool {
 // IsCode returns true when this get dogma dynamic items type Id item Id not found response a status code equal to that given
 func (o *GetDogmaDynamicItemsTypeIDItemIDNotFound) IsCode(code int) bool {
 	return code == 404
+}
+
+// Code gets the status code for the get dogma dynamic items type Id item Id not found response
+func (o *GetDogmaDynamicItemsTypeIDItemIDNotFound) Code() int {
+	return 404
 }
 
 func (o *GetDogmaDynamicItemsTypeIDItemIDNotFound) Error() string {
@@ -449,6 +469,11 @@ func (o *GetDogmaDynamicItemsTypeIDItemIDEnhanceYourCalm) IsCode(code int) bool 
 	return code == 420
 }
 
+// Code gets the status code for the get dogma dynamic items type Id item Id enhance your calm response
+func (o *GetDogmaDynamicItemsTypeIDItemIDEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *GetDogmaDynamicItemsTypeIDItemIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/dynamic/items/{type_id}/{item_id}/][%d] getDogmaDynamicItemsTypeIdItemIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -510,6 +535,11 @@ func (o *GetDogmaDynamicItemsTypeIDItemIDInternalServerError) IsServerError() bo
 // IsCode returns true when this get dogma dynamic items type Id item Id internal server error response a status code equal to that given
 func (o *GetDogmaDynamicItemsTypeIDItemIDInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the get dogma dynamic items type Id item Id internal server error response
+func (o *GetDogmaDynamicItemsTypeIDItemIDInternalServerError) Code() int {
+	return 500
 }
 
 func (o *GetDogmaDynamicItemsTypeIDItemIDInternalServerError) Error() string {
@@ -575,6 +605,11 @@ func (o *GetDogmaDynamicItemsTypeIDItemIDServiceUnavailable) IsCode(code int) bo
 	return code == 503
 }
 
+// Code gets the status code for the get dogma dynamic items type Id item Id service unavailable response
+func (o *GetDogmaDynamicItemsTypeIDItemIDServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetDogmaDynamicItemsTypeIDItemIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/dynamic/items/{type_id}/{item_id}/][%d] getDogmaDynamicItemsTypeIdItemIdServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -636,6 +671,11 @@ func (o *GetDogmaDynamicItemsTypeIDItemIDGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get dogma dynamic items type Id item Id gateway timeout response a status code equal to that given
 func (o *GetDogmaDynamicItemsTypeIDItemIDGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get dogma dynamic items type Id item Id gateway timeout response
+func (o *GetDogmaDynamicItemsTypeIDItemIDGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetDogmaDynamicItemsTypeIDItemIDGatewayTimeout) Error() string {

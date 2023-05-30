@@ -120,6 +120,11 @@ func (o *PostCharactersCharacterIDMailLabelsCreated) IsCode(code int) bool {
 	return code == 201
 }
 
+// Code gets the status code for the post characters character Id mail labels created response
+func (o *PostCharactersCharacterIDMailLabelsCreated) Code() int {
+	return 201
+}
+
 func (o *PostCharactersCharacterIDMailLabelsCreated) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/mail/labels/][%d] postCharactersCharacterIdMailLabelsCreated  %+v", 201, o.Payload)
 }
@@ -179,6 +184,11 @@ func (o *PostCharactersCharacterIDMailLabelsBadRequest) IsServerError() bool {
 // IsCode returns true when this post characters character Id mail labels bad request response a status code equal to that given
 func (o *PostCharactersCharacterIDMailLabelsBadRequest) IsCode(code int) bool {
 	return code == 400
+}
+
+// Code gets the status code for the post characters character Id mail labels bad request response
+func (o *PostCharactersCharacterIDMailLabelsBadRequest) Code() int {
+	return 400
 }
 
 func (o *PostCharactersCharacterIDMailLabelsBadRequest) Error() string {
@@ -244,6 +254,11 @@ func (o *PostCharactersCharacterIDMailLabelsUnauthorized) IsCode(code int) bool 
 	return code == 401
 }
 
+// Code gets the status code for the post characters character Id mail labels unauthorized response
+func (o *PostCharactersCharacterIDMailLabelsUnauthorized) Code() int {
+	return 401
+}
+
 func (o *PostCharactersCharacterIDMailLabelsUnauthorized) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/mail/labels/][%d] postCharactersCharacterIdMailLabelsUnauthorized  %+v", 401, o.Payload)
 }
@@ -305,6 +320,11 @@ func (o *PostCharactersCharacterIDMailLabelsForbidden) IsServerError() bool {
 // IsCode returns true when this post characters character Id mail labels forbidden response a status code equal to that given
 func (o *PostCharactersCharacterIDMailLabelsForbidden) IsCode(code int) bool {
 	return code == 403
+}
+
+// Code gets the status code for the post characters character Id mail labels forbidden response
+func (o *PostCharactersCharacterIDMailLabelsForbidden) Code() int {
+	return 403
 }
 
 func (o *PostCharactersCharacterIDMailLabelsForbidden) Error() string {
@@ -370,6 +390,11 @@ func (o *PostCharactersCharacterIDMailLabelsEnhanceYourCalm) IsCode(code int) bo
 	return code == 420
 }
 
+// Code gets the status code for the post characters character Id mail labels enhance your calm response
+func (o *PostCharactersCharacterIDMailLabelsEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *PostCharactersCharacterIDMailLabelsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/mail/labels/][%d] postCharactersCharacterIdMailLabelsEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -431,6 +456,11 @@ func (o *PostCharactersCharacterIDMailLabelsInternalServerError) IsServerError()
 // IsCode returns true when this post characters character Id mail labels internal server error response a status code equal to that given
 func (o *PostCharactersCharacterIDMailLabelsInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the post characters character Id mail labels internal server error response
+func (o *PostCharactersCharacterIDMailLabelsInternalServerError) Code() int {
+	return 500
 }
 
 func (o *PostCharactersCharacterIDMailLabelsInternalServerError) Error() string {
@@ -496,6 +526,11 @@ func (o *PostCharactersCharacterIDMailLabelsServiceUnavailable) IsCode(code int)
 	return code == 503
 }
 
+// Code gets the status code for the post characters character Id mail labels service unavailable response
+func (o *PostCharactersCharacterIDMailLabelsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *PostCharactersCharacterIDMailLabelsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/mail/labels/][%d] postCharactersCharacterIdMailLabelsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -557,6 +592,11 @@ func (o *PostCharactersCharacterIDMailLabelsGatewayTimeout) IsServerError() bool
 // IsCode returns true when this post characters character Id mail labels gateway timeout response a status code equal to that given
 func (o *PostCharactersCharacterIDMailLabelsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the post characters character Id mail labels gateway timeout response
+func (o *PostCharactersCharacterIDMailLabelsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *PostCharactersCharacterIDMailLabelsGatewayTimeout) Error() string {

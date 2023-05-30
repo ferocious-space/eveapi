@@ -136,6 +136,11 @@ func (o *GetCorporationsCorporationIDOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get corporations corporation Id o k response
+func (o *GetCorporationsCorporationIDOK) Code() int {
+	return 200
+}
+
 func (o *GetCorporationsCorporationIDOK) Error() string {
 	return fmt.Sprintf("[GET /v5/corporations/{corporation_id}/][%d] getCorporationsCorporationIdOK  %+v", 200, o.Payload)
 }
@@ -242,6 +247,11 @@ func (o *GetCorporationsCorporationIDNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get corporations corporation Id not modified response
+func (o *GetCorporationsCorporationIDNotModified) Code() int {
+	return 304
+}
+
 func (o *GetCorporationsCorporationIDNotModified) Error() string {
 	return fmt.Sprintf("[GET /v5/corporations/{corporation_id}/][%d] getCorporationsCorporationIdNotModified ", 304)
 }
@@ -322,6 +332,11 @@ func (o *GetCorporationsCorporationIDBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get corporations corporation Id bad request response
+func (o *GetCorporationsCorporationIDBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetCorporationsCorporationIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v5/corporations/{corporation_id}/][%d] getCorporationsCorporationIdBadRequest  %+v", 400, o.Payload)
 }
@@ -383,6 +398,11 @@ func (o *GetCorporationsCorporationIDNotFound) IsServerError() bool {
 // IsCode returns true when this get corporations corporation Id not found response a status code equal to that given
 func (o *GetCorporationsCorporationIDNotFound) IsCode(code int) bool {
 	return code == 404
+}
+
+// Code gets the status code for the get corporations corporation Id not found response
+func (o *GetCorporationsCorporationIDNotFound) Code() int {
+	return 404
 }
 
 func (o *GetCorporationsCorporationIDNotFound) Error() string {
@@ -448,6 +468,11 @@ func (o *GetCorporationsCorporationIDEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
 }
 
+// Code gets the status code for the get corporations corporation Id enhance your calm response
+func (o *GetCorporationsCorporationIDEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *GetCorporationsCorporationIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v5/corporations/{corporation_id}/][%d] getCorporationsCorporationIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -509,6 +534,11 @@ func (o *GetCorporationsCorporationIDInternalServerError) IsServerError() bool {
 // IsCode returns true when this get corporations corporation Id internal server error response a status code equal to that given
 func (o *GetCorporationsCorporationIDInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the get corporations corporation Id internal server error response
+func (o *GetCorporationsCorporationIDInternalServerError) Code() int {
+	return 500
 }
 
 func (o *GetCorporationsCorporationIDInternalServerError) Error() string {
@@ -574,6 +604,11 @@ func (o *GetCorporationsCorporationIDServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get corporations corporation Id service unavailable response
+func (o *GetCorporationsCorporationIDServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCorporationsCorporationIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v5/corporations/{corporation_id}/][%d] getCorporationsCorporationIdServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -635,6 +670,11 @@ func (o *GetCorporationsCorporationIDGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get corporations corporation Id gateway timeout response a status code equal to that given
 func (o *GetCorporationsCorporationIDGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get corporations corporation Id gateway timeout response
+func (o *GetCorporationsCorporationIDGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCorporationsCorporationIDGatewayTimeout) Error() string {

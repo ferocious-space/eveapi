@@ -134,6 +134,11 @@ func (o *GetUniverseAncestriesOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get universe ancestries o k response
+func (o *GetUniverseAncestriesOK) Code() int {
+	return 200
+}
+
 func (o *GetUniverseAncestriesOK) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/ancestries/][%d] getUniverseAncestriesOK  %+v", 200, o.Payload)
 }
@@ -245,6 +250,11 @@ func (o *GetUniverseAncestriesNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get universe ancestries not modified response
+func (o *GetUniverseAncestriesNotModified) Code() int {
+	return 304
+}
+
 func (o *GetUniverseAncestriesNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/ancestries/][%d] getUniverseAncestriesNotModified ", 304)
 }
@@ -325,6 +335,11 @@ func (o *GetUniverseAncestriesBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get universe ancestries bad request response
+func (o *GetUniverseAncestriesBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetUniverseAncestriesBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/ancestries/][%d] getUniverseAncestriesBadRequest  %+v", 400, o.Payload)
 }
@@ -386,6 +401,11 @@ func (o *GetUniverseAncestriesEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get universe ancestries enhance your calm response a status code equal to that given
 func (o *GetUniverseAncestriesEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get universe ancestries enhance your calm response
+func (o *GetUniverseAncestriesEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetUniverseAncestriesEnhanceYourCalm) Error() string {
@@ -451,6 +471,11 @@ func (o *GetUniverseAncestriesInternalServerError) IsCode(code int) bool {
 	return code == 500
 }
 
+// Code gets the status code for the get universe ancestries internal server error response
+func (o *GetUniverseAncestriesInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetUniverseAncestriesInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/ancestries/][%d] getUniverseAncestriesInternalServerError  %+v", 500, o.Payload)
 }
@@ -514,6 +539,11 @@ func (o *GetUniverseAncestriesServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get universe ancestries service unavailable response
+func (o *GetUniverseAncestriesServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetUniverseAncestriesServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/ancestries/][%d] getUniverseAncestriesServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -575,6 +605,11 @@ func (o *GetUniverseAncestriesGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get universe ancestries gateway timeout response a status code equal to that given
 func (o *GetUniverseAncestriesGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get universe ancestries gateway timeout response
+func (o *GetUniverseAncestriesGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetUniverseAncestriesGatewayTimeout) Error() string {

@@ -142,6 +142,11 @@ func (o *GetCharactersCharacterIDFwStatsOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get characters character Id fw stats o k response
+func (o *GetCharactersCharacterIDFwStatsOK) Code() int {
+	return 200
+}
+
 func (o *GetCharactersCharacterIDFwStatsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/fw/stats/][%d] getCharactersCharacterIdFwStatsOK  %+v", 200, o.Payload)
 }
@@ -248,6 +253,11 @@ func (o *GetCharactersCharacterIDFwStatsNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get characters character Id fw stats not modified response
+func (o *GetCharactersCharacterIDFwStatsNotModified) Code() int {
+	return 304
+}
+
 func (o *GetCharactersCharacterIDFwStatsNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/fw/stats/][%d] getCharactersCharacterIdFwStatsNotModified ", 304)
 }
@@ -328,6 +338,11 @@ func (o *GetCharactersCharacterIDFwStatsBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get characters character Id fw stats bad request response
+func (o *GetCharactersCharacterIDFwStatsBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetCharactersCharacterIDFwStatsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/fw/stats/][%d] getCharactersCharacterIdFwStatsBadRequest  %+v", 400, o.Payload)
 }
@@ -389,6 +404,11 @@ func (o *GetCharactersCharacterIDFwStatsUnauthorized) IsServerError() bool {
 // IsCode returns true when this get characters character Id fw stats unauthorized response a status code equal to that given
 func (o *GetCharactersCharacterIDFwStatsUnauthorized) IsCode(code int) bool {
 	return code == 401
+}
+
+// Code gets the status code for the get characters character Id fw stats unauthorized response
+func (o *GetCharactersCharacterIDFwStatsUnauthorized) Code() int {
+	return 401
 }
 
 func (o *GetCharactersCharacterIDFwStatsUnauthorized) Error() string {
@@ -454,6 +474,11 @@ func (o *GetCharactersCharacterIDFwStatsForbidden) IsCode(code int) bool {
 	return code == 403
 }
 
+// Code gets the status code for the get characters character Id fw stats forbidden response
+func (o *GetCharactersCharacterIDFwStatsForbidden) Code() int {
+	return 403
+}
+
 func (o *GetCharactersCharacterIDFwStatsForbidden) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/fw/stats/][%d] getCharactersCharacterIdFwStatsForbidden  %+v", 403, o.Payload)
 }
@@ -515,6 +540,11 @@ func (o *GetCharactersCharacterIDFwStatsEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get characters character Id fw stats enhance your calm response a status code equal to that given
 func (o *GetCharactersCharacterIDFwStatsEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get characters character Id fw stats enhance your calm response
+func (o *GetCharactersCharacterIDFwStatsEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetCharactersCharacterIDFwStatsEnhanceYourCalm) Error() string {
@@ -580,6 +610,11 @@ func (o *GetCharactersCharacterIDFwStatsInternalServerError) IsCode(code int) bo
 	return code == 500
 }
 
+// Code gets the status code for the get characters character Id fw stats internal server error response
+func (o *GetCharactersCharacterIDFwStatsInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetCharactersCharacterIDFwStatsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/fw/stats/][%d] getCharactersCharacterIdFwStatsInternalServerError  %+v", 500, o.Payload)
 }
@@ -643,6 +678,11 @@ func (o *GetCharactersCharacterIDFwStatsServiceUnavailable) IsCode(code int) boo
 	return code == 503
 }
 
+// Code gets the status code for the get characters character Id fw stats service unavailable response
+func (o *GetCharactersCharacterIDFwStatsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCharactersCharacterIDFwStatsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/fw/stats/][%d] getCharactersCharacterIdFwStatsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -704,6 +744,11 @@ func (o *GetCharactersCharacterIDFwStatsGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get characters character Id fw stats gateway timeout response a status code equal to that given
 func (o *GetCharactersCharacterIDFwStatsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get characters character Id fw stats gateway timeout response
+func (o *GetCharactersCharacterIDFwStatsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCharactersCharacterIDFwStatsGatewayTimeout) Error() string {

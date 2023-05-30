@@ -126,6 +126,11 @@ func (o *GetWarsOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get wars o k response
+func (o *GetWarsOK) Code() int {
+	return 200
+}
+
 func (o *GetWarsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/wars/][%d] getWarsOK  %+v", 200, o.Payload)
 }
@@ -230,6 +235,11 @@ func (o *GetWarsNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get wars not modified response
+func (o *GetWarsNotModified) Code() int {
+	return 304
+}
+
 func (o *GetWarsNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/wars/][%d] getWarsNotModified ", 304)
 }
@@ -310,6 +320,11 @@ func (o *GetWarsBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get wars bad request response
+func (o *GetWarsBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetWarsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/wars/][%d] getWarsBadRequest  %+v", 400, o.Payload)
 }
@@ -371,6 +386,11 @@ func (o *GetWarsEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get wars enhance your calm response a status code equal to that given
 func (o *GetWarsEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get wars enhance your calm response
+func (o *GetWarsEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetWarsEnhanceYourCalm) Error() string {
@@ -436,6 +456,11 @@ func (o *GetWarsInternalServerError) IsCode(code int) bool {
 	return code == 500
 }
 
+// Code gets the status code for the get wars internal server error response
+func (o *GetWarsInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetWarsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/wars/][%d] getWarsInternalServerError  %+v", 500, o.Payload)
 }
@@ -499,6 +524,11 @@ func (o *GetWarsServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get wars service unavailable response
+func (o *GetWarsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetWarsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/wars/][%d] getWarsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -560,6 +590,11 @@ func (o *GetWarsGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get wars gateway timeout response a status code equal to that given
 func (o *GetWarsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get wars gateway timeout response
+func (o *GetWarsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetWarsGatewayTimeout) Error() string {

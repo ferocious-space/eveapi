@@ -130,6 +130,11 @@ func (o *GetSovereigntyMapOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get sovereignty map o k response
+func (o *GetSovereigntyMapOK) Code() int {
+	return 200
+}
+
 func (o *GetSovereigntyMapOK) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/map/][%d] getSovereigntyMapOK  %+v", 200, o.Payload)
 }
@@ -234,6 +239,11 @@ func (o *GetSovereigntyMapNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get sovereignty map not modified response
+func (o *GetSovereigntyMapNotModified) Code() int {
+	return 304
+}
+
 func (o *GetSovereigntyMapNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/map/][%d] getSovereigntyMapNotModified ", 304)
 }
@@ -314,6 +324,11 @@ func (o *GetSovereigntyMapBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get sovereignty map bad request response
+func (o *GetSovereigntyMapBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetSovereigntyMapBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/map/][%d] getSovereigntyMapBadRequest  %+v", 400, o.Payload)
 }
@@ -375,6 +390,11 @@ func (o *GetSovereigntyMapEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get sovereignty map enhance your calm response a status code equal to that given
 func (o *GetSovereigntyMapEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get sovereignty map enhance your calm response
+func (o *GetSovereigntyMapEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetSovereigntyMapEnhanceYourCalm) Error() string {
@@ -440,6 +460,11 @@ func (o *GetSovereigntyMapInternalServerError) IsCode(code int) bool {
 	return code == 500
 }
 
+// Code gets the status code for the get sovereignty map internal server error response
+func (o *GetSovereigntyMapInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetSovereigntyMapInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/map/][%d] getSovereigntyMapInternalServerError  %+v", 500, o.Payload)
 }
@@ -503,6 +528,11 @@ func (o *GetSovereigntyMapServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get sovereignty map service unavailable response
+func (o *GetSovereigntyMapServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetSovereigntyMapServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/map/][%d] getSovereigntyMapServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -564,6 +594,11 @@ func (o *GetSovereigntyMapGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get sovereignty map gateway timeout response a status code equal to that given
 func (o *GetSovereigntyMapGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get sovereignty map gateway timeout response
+func (o *GetSovereigntyMapGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetSovereigntyMapGatewayTimeout) Error() string {

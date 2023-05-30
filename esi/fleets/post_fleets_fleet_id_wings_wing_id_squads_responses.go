@@ -125,6 +125,11 @@ func (o *PostFleetsFleetIDWingsWingIDSquadsCreated) IsCode(code int) bool {
 	return code == 201
 }
 
+// Code gets the status code for the post fleets fleet Id wings wing Id squads created response
+func (o *PostFleetsFleetIDWingsWingIDSquadsCreated) Code() int {
+	return 201
+}
+
 func (o *PostFleetsFleetIDWingsWingIDSquadsCreated) Error() string {
 	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/wings/{wing_id}/squads/][%d] postFleetsFleetIdWingsWingIdSquadsCreated  %+v", 201, o.Payload)
 }
@@ -186,6 +191,11 @@ func (o *PostFleetsFleetIDWingsWingIDSquadsBadRequest) IsServerError() bool {
 // IsCode returns true when this post fleets fleet Id wings wing Id squads bad request response a status code equal to that given
 func (o *PostFleetsFleetIDWingsWingIDSquadsBadRequest) IsCode(code int) bool {
 	return code == 400
+}
+
+// Code gets the status code for the post fleets fleet Id wings wing Id squads bad request response
+func (o *PostFleetsFleetIDWingsWingIDSquadsBadRequest) Code() int {
+	return 400
 }
 
 func (o *PostFleetsFleetIDWingsWingIDSquadsBadRequest) Error() string {
@@ -251,6 +261,11 @@ func (o *PostFleetsFleetIDWingsWingIDSquadsUnauthorized) IsCode(code int) bool {
 	return code == 401
 }
 
+// Code gets the status code for the post fleets fleet Id wings wing Id squads unauthorized response
+func (o *PostFleetsFleetIDWingsWingIDSquadsUnauthorized) Code() int {
+	return 401
+}
+
 func (o *PostFleetsFleetIDWingsWingIDSquadsUnauthorized) Error() string {
 	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/wings/{wing_id}/squads/][%d] postFleetsFleetIdWingsWingIdSquadsUnauthorized  %+v", 401, o.Payload)
 }
@@ -312,6 +327,11 @@ func (o *PostFleetsFleetIDWingsWingIDSquadsForbidden) IsServerError() bool {
 // IsCode returns true when this post fleets fleet Id wings wing Id squads forbidden response a status code equal to that given
 func (o *PostFleetsFleetIDWingsWingIDSquadsForbidden) IsCode(code int) bool {
 	return code == 403
+}
+
+// Code gets the status code for the post fleets fleet Id wings wing Id squads forbidden response
+func (o *PostFleetsFleetIDWingsWingIDSquadsForbidden) Code() int {
+	return 403
 }
 
 func (o *PostFleetsFleetIDWingsWingIDSquadsForbidden) Error() string {
@@ -377,6 +397,11 @@ func (o *PostFleetsFleetIDWingsWingIDSquadsNotFound) IsCode(code int) bool {
 	return code == 404
 }
 
+// Code gets the status code for the post fleets fleet Id wings wing Id squads not found response
+func (o *PostFleetsFleetIDWingsWingIDSquadsNotFound) Code() int {
+	return 404
+}
+
 func (o *PostFleetsFleetIDWingsWingIDSquadsNotFound) Error() string {
 	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/wings/{wing_id}/squads/][%d] postFleetsFleetIdWingsWingIdSquadsNotFound  %+v", 404, o.Payload)
 }
@@ -438,6 +463,11 @@ func (o *PostFleetsFleetIDWingsWingIDSquadsEnhanceYourCalm) IsServerError() bool
 // IsCode returns true when this post fleets fleet Id wings wing Id squads enhance your calm response a status code equal to that given
 func (o *PostFleetsFleetIDWingsWingIDSquadsEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the post fleets fleet Id wings wing Id squads enhance your calm response
+func (o *PostFleetsFleetIDWingsWingIDSquadsEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *PostFleetsFleetIDWingsWingIDSquadsEnhanceYourCalm) Error() string {
@@ -503,6 +533,11 @@ func (o *PostFleetsFleetIDWingsWingIDSquadsInternalServerError) IsCode(code int)
 	return code == 500
 }
 
+// Code gets the status code for the post fleets fleet Id wings wing Id squads internal server error response
+func (o *PostFleetsFleetIDWingsWingIDSquadsInternalServerError) Code() int {
+	return 500
+}
+
 func (o *PostFleetsFleetIDWingsWingIDSquadsInternalServerError) Error() string {
 	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/wings/{wing_id}/squads/][%d] postFleetsFleetIdWingsWingIdSquadsInternalServerError  %+v", 500, o.Payload)
 }
@@ -566,6 +601,11 @@ func (o *PostFleetsFleetIDWingsWingIDSquadsServiceUnavailable) IsCode(code int) 
 	return code == 503
 }
 
+// Code gets the status code for the post fleets fleet Id wings wing Id squads service unavailable response
+func (o *PostFleetsFleetIDWingsWingIDSquadsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *PostFleetsFleetIDWingsWingIDSquadsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[POST /v1/fleets/{fleet_id}/wings/{wing_id}/squads/][%d] postFleetsFleetIdWingsWingIdSquadsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -627,6 +667,11 @@ func (o *PostFleetsFleetIDWingsWingIDSquadsGatewayTimeout) IsServerError() bool 
 // IsCode returns true when this post fleets fleet Id wings wing Id squads gateway timeout response a status code equal to that given
 func (o *PostFleetsFleetIDWingsWingIDSquadsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the post fleets fleet Id wings wing Id squads gateway timeout response
+func (o *PostFleetsFleetIDWingsWingIDSquadsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *PostFleetsFleetIDWingsWingIDSquadsGatewayTimeout) Error() string {

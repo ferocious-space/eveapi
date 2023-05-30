@@ -126,6 +126,11 @@ func (o *GetAlliancesAllianceIDCorporationsOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get alliances alliance Id corporations o k response
+func (o *GetAlliancesAllianceIDCorporationsOK) Code() int {
+	return 200
+}
+
 func (o *GetAlliancesAllianceIDCorporationsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/alliances/{alliance_id}/corporations/][%d] getAlliancesAllianceIdCorporationsOK  %+v", 200, o.Payload)
 }
@@ -230,6 +235,11 @@ func (o *GetAlliancesAllianceIDCorporationsNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get alliances alliance Id corporations not modified response
+func (o *GetAlliancesAllianceIDCorporationsNotModified) Code() int {
+	return 304
+}
+
 func (o *GetAlliancesAllianceIDCorporationsNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/alliances/{alliance_id}/corporations/][%d] getAlliancesAllianceIdCorporationsNotModified ", 304)
 }
@@ -310,6 +320,11 @@ func (o *GetAlliancesAllianceIDCorporationsBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get alliances alliance Id corporations bad request response
+func (o *GetAlliancesAllianceIDCorporationsBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetAlliancesAllianceIDCorporationsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/alliances/{alliance_id}/corporations/][%d] getAlliancesAllianceIdCorporationsBadRequest  %+v", 400, o.Payload)
 }
@@ -371,6 +386,11 @@ func (o *GetAlliancesAllianceIDCorporationsEnhanceYourCalm) IsServerError() bool
 // IsCode returns true when this get alliances alliance Id corporations enhance your calm response a status code equal to that given
 func (o *GetAlliancesAllianceIDCorporationsEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get alliances alliance Id corporations enhance your calm response
+func (o *GetAlliancesAllianceIDCorporationsEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetAlliancesAllianceIDCorporationsEnhanceYourCalm) Error() string {
@@ -436,6 +456,11 @@ func (o *GetAlliancesAllianceIDCorporationsInternalServerError) IsCode(code int)
 	return code == 500
 }
 
+// Code gets the status code for the get alliances alliance Id corporations internal server error response
+func (o *GetAlliancesAllianceIDCorporationsInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetAlliancesAllianceIDCorporationsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/alliances/{alliance_id}/corporations/][%d] getAlliancesAllianceIdCorporationsInternalServerError  %+v", 500, o.Payload)
 }
@@ -499,6 +524,11 @@ func (o *GetAlliancesAllianceIDCorporationsServiceUnavailable) IsCode(code int) 
 	return code == 503
 }
 
+// Code gets the status code for the get alliances alliance Id corporations service unavailable response
+func (o *GetAlliancesAllianceIDCorporationsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetAlliancesAllianceIDCorporationsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/alliances/{alliance_id}/corporations/][%d] getAlliancesAllianceIdCorporationsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -560,6 +590,11 @@ func (o *GetAlliancesAllianceIDCorporationsGatewayTimeout) IsServerError() bool 
 // IsCode returns true when this get alliances alliance Id corporations gateway timeout response a status code equal to that given
 func (o *GetAlliancesAllianceIDCorporationsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get alliances alliance Id corporations gateway timeout response
+func (o *GetAlliancesAllianceIDCorporationsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetAlliancesAllianceIDCorporationsGatewayTimeout) Error() string {

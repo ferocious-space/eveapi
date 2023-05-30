@@ -142,6 +142,11 @@ func (o *GetCorporationsCorporationIDFacilitiesOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get corporations corporation Id facilities o k response
+func (o *GetCorporationsCorporationIDFacilitiesOK) Code() int {
+	return 200
+}
+
 func (o *GetCorporationsCorporationIDFacilitiesOK) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/facilities/][%d] getCorporationsCorporationIdFacilitiesOK  %+v", 200, o.Payload)
 }
@@ -246,6 +251,11 @@ func (o *GetCorporationsCorporationIDFacilitiesNotModified) IsCode(code int) boo
 	return code == 304
 }
 
+// Code gets the status code for the get corporations corporation Id facilities not modified response
+func (o *GetCorporationsCorporationIDFacilitiesNotModified) Code() int {
+	return 304
+}
+
 func (o *GetCorporationsCorporationIDFacilitiesNotModified) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/facilities/][%d] getCorporationsCorporationIdFacilitiesNotModified ", 304)
 }
@@ -326,6 +336,11 @@ func (o *GetCorporationsCorporationIDFacilitiesBadRequest) IsCode(code int) bool
 	return code == 400
 }
 
+// Code gets the status code for the get corporations corporation Id facilities bad request response
+func (o *GetCorporationsCorporationIDFacilitiesBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetCorporationsCorporationIDFacilitiesBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/facilities/][%d] getCorporationsCorporationIdFacilitiesBadRequest  %+v", 400, o.Payload)
 }
@@ -387,6 +402,11 @@ func (o *GetCorporationsCorporationIDFacilitiesUnauthorized) IsServerError() boo
 // IsCode returns true when this get corporations corporation Id facilities unauthorized response a status code equal to that given
 func (o *GetCorporationsCorporationIDFacilitiesUnauthorized) IsCode(code int) bool {
 	return code == 401
+}
+
+// Code gets the status code for the get corporations corporation Id facilities unauthorized response
+func (o *GetCorporationsCorporationIDFacilitiesUnauthorized) Code() int {
+	return 401
 }
 
 func (o *GetCorporationsCorporationIDFacilitiesUnauthorized) Error() string {
@@ -452,6 +472,11 @@ func (o *GetCorporationsCorporationIDFacilitiesForbidden) IsCode(code int) bool 
 	return code == 403
 }
 
+// Code gets the status code for the get corporations corporation Id facilities forbidden response
+func (o *GetCorporationsCorporationIDFacilitiesForbidden) Code() int {
+	return 403
+}
+
 func (o *GetCorporationsCorporationIDFacilitiesForbidden) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/facilities/][%d] getCorporationsCorporationIdFacilitiesForbidden  %+v", 403, o.Payload)
 }
@@ -513,6 +538,11 @@ func (o *GetCorporationsCorporationIDFacilitiesEnhanceYourCalm) IsServerError() 
 // IsCode returns true when this get corporations corporation Id facilities enhance your calm response a status code equal to that given
 func (o *GetCorporationsCorporationIDFacilitiesEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get corporations corporation Id facilities enhance your calm response
+func (o *GetCorporationsCorporationIDFacilitiesEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetCorporationsCorporationIDFacilitiesEnhanceYourCalm) Error() string {
@@ -578,6 +608,11 @@ func (o *GetCorporationsCorporationIDFacilitiesInternalServerError) IsCode(code 
 	return code == 500
 }
 
+// Code gets the status code for the get corporations corporation Id facilities internal server error response
+func (o *GetCorporationsCorporationIDFacilitiesInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetCorporationsCorporationIDFacilitiesInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/facilities/][%d] getCorporationsCorporationIdFacilitiesInternalServerError  %+v", 500, o.Payload)
 }
@@ -641,6 +676,11 @@ func (o *GetCorporationsCorporationIDFacilitiesServiceUnavailable) IsCode(code i
 	return code == 503
 }
 
+// Code gets the status code for the get corporations corporation Id facilities service unavailable response
+func (o *GetCorporationsCorporationIDFacilitiesServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCorporationsCorporationIDFacilitiesServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/facilities/][%d] getCorporationsCorporationIdFacilitiesServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -702,6 +742,11 @@ func (o *GetCorporationsCorporationIDFacilitiesGatewayTimeout) IsServerError() b
 // IsCode returns true when this get corporations corporation Id facilities gateway timeout response a status code equal to that given
 func (o *GetCorporationsCorporationIDFacilitiesGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get corporations corporation Id facilities gateway timeout response
+func (o *GetCorporationsCorporationIDFacilitiesGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCorporationsCorporationIDFacilitiesGatewayTimeout) Error() string {

@@ -153,6 +153,11 @@ func (o *GetFleetsFleetIDMembersOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get fleets fleet Id members o k response
+func (o *GetFleetsFleetIDMembersOK) Code() int {
+	return 200
+}
+
 func (o *GetFleetsFleetIDMembersOK) Error() string {
 	return fmt.Sprintf("[GET /v1/fleets/{fleet_id}/members/][%d] getFleetsFleetIdMembersOK  %+v", 200, o.Payload)
 }
@@ -264,6 +269,11 @@ func (o *GetFleetsFleetIDMembersNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get fleets fleet Id members not modified response
+func (o *GetFleetsFleetIDMembersNotModified) Code() int {
+	return 304
+}
+
 func (o *GetFleetsFleetIDMembersNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/fleets/{fleet_id}/members/][%d] getFleetsFleetIdMembersNotModified ", 304)
 }
@@ -344,6 +354,11 @@ func (o *GetFleetsFleetIDMembersBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get fleets fleet Id members bad request response
+func (o *GetFleetsFleetIDMembersBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetFleetsFleetIDMembersBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/fleets/{fleet_id}/members/][%d] getFleetsFleetIdMembersBadRequest  %+v", 400, o.Payload)
 }
@@ -405,6 +420,11 @@ func (o *GetFleetsFleetIDMembersUnauthorized) IsServerError() bool {
 // IsCode returns true when this get fleets fleet Id members unauthorized response a status code equal to that given
 func (o *GetFleetsFleetIDMembersUnauthorized) IsCode(code int) bool {
 	return code == 401
+}
+
+// Code gets the status code for the get fleets fleet Id members unauthorized response
+func (o *GetFleetsFleetIDMembersUnauthorized) Code() int {
+	return 401
 }
 
 func (o *GetFleetsFleetIDMembersUnauthorized) Error() string {
@@ -470,6 +490,11 @@ func (o *GetFleetsFleetIDMembersForbidden) IsCode(code int) bool {
 	return code == 403
 }
 
+// Code gets the status code for the get fleets fleet Id members forbidden response
+func (o *GetFleetsFleetIDMembersForbidden) Code() int {
+	return 403
+}
+
 func (o *GetFleetsFleetIDMembersForbidden) Error() string {
 	return fmt.Sprintf("[GET /v1/fleets/{fleet_id}/members/][%d] getFleetsFleetIdMembersForbidden  %+v", 403, o.Payload)
 }
@@ -531,6 +556,11 @@ func (o *GetFleetsFleetIDMembersNotFound) IsServerError() bool {
 // IsCode returns true when this get fleets fleet Id members not found response a status code equal to that given
 func (o *GetFleetsFleetIDMembersNotFound) IsCode(code int) bool {
 	return code == 404
+}
+
+// Code gets the status code for the get fleets fleet Id members not found response
+func (o *GetFleetsFleetIDMembersNotFound) Code() int {
+	return 404
 }
 
 func (o *GetFleetsFleetIDMembersNotFound) Error() string {
@@ -596,6 +626,11 @@ func (o *GetFleetsFleetIDMembersEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
 }
 
+// Code gets the status code for the get fleets fleet Id members enhance your calm response
+func (o *GetFleetsFleetIDMembersEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *GetFleetsFleetIDMembersEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/fleets/{fleet_id}/members/][%d] getFleetsFleetIdMembersEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -657,6 +692,11 @@ func (o *GetFleetsFleetIDMembersInternalServerError) IsServerError() bool {
 // IsCode returns true when this get fleets fleet Id members internal server error response a status code equal to that given
 func (o *GetFleetsFleetIDMembersInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the get fleets fleet Id members internal server error response
+func (o *GetFleetsFleetIDMembersInternalServerError) Code() int {
+	return 500
 }
 
 func (o *GetFleetsFleetIDMembersInternalServerError) Error() string {
@@ -722,6 +762,11 @@ func (o *GetFleetsFleetIDMembersServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get fleets fleet Id members service unavailable response
+func (o *GetFleetsFleetIDMembersServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetFleetsFleetIDMembersServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/fleets/{fleet_id}/members/][%d] getFleetsFleetIdMembersServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -783,6 +828,11 @@ func (o *GetFleetsFleetIDMembersGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get fleets fleet Id members gateway timeout response a status code equal to that given
 func (o *GetFleetsFleetIDMembersGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get fleets fleet Id members gateway timeout response
+func (o *GetFleetsFleetIDMembersGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetFleetsFleetIDMembersGatewayTimeout) Error() string {

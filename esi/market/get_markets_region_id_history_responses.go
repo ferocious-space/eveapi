@@ -148,6 +148,11 @@ func (o *GetMarketsRegionIDHistoryOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get markets region Id history o k response
+func (o *GetMarketsRegionIDHistoryOK) Code() int {
+	return 200
+}
+
 func (o *GetMarketsRegionIDHistoryOK) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/{region_id}/history/][%d] getMarketsRegionIdHistoryOK  %+v", 200, o.Payload)
 }
@@ -252,6 +257,11 @@ func (o *GetMarketsRegionIDHistoryNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get markets region Id history not modified response
+func (o *GetMarketsRegionIDHistoryNotModified) Code() int {
+	return 304
+}
+
 func (o *GetMarketsRegionIDHistoryNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/{region_id}/history/][%d] getMarketsRegionIdHistoryNotModified ", 304)
 }
@@ -332,6 +342,11 @@ func (o *GetMarketsRegionIDHistoryBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get markets region Id history bad request response
+func (o *GetMarketsRegionIDHistoryBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetMarketsRegionIDHistoryBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/{region_id}/history/][%d] getMarketsRegionIdHistoryBadRequest  %+v", 400, o.Payload)
 }
@@ -393,6 +408,11 @@ func (o *GetMarketsRegionIDHistoryNotFound) IsServerError() bool {
 // IsCode returns true when this get markets region Id history not found response a status code equal to that given
 func (o *GetMarketsRegionIDHistoryNotFound) IsCode(code int) bool {
 	return code == 404
+}
+
+// Code gets the status code for the get markets region Id history not found response
+func (o *GetMarketsRegionIDHistoryNotFound) Code() int {
+	return 404
 }
 
 func (o *GetMarketsRegionIDHistoryNotFound) Error() string {
@@ -458,6 +478,11 @@ func (o *GetMarketsRegionIDHistoryEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
 }
 
+// Code gets the status code for the get markets region Id history enhance your calm response
+func (o *GetMarketsRegionIDHistoryEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *GetMarketsRegionIDHistoryEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/{region_id}/history/][%d] getMarketsRegionIdHistoryEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -519,6 +544,11 @@ func (o *GetMarketsRegionIDHistoryUnprocessableEntity) IsServerError() bool {
 // IsCode returns true when this get markets region Id history unprocessable entity response a status code equal to that given
 func (o *GetMarketsRegionIDHistoryUnprocessableEntity) IsCode(code int) bool {
 	return code == 422
+}
+
+// Code gets the status code for the get markets region Id history unprocessable entity response
+func (o *GetMarketsRegionIDHistoryUnprocessableEntity) Code() int {
+	return 422
 }
 
 func (o *GetMarketsRegionIDHistoryUnprocessableEntity) Error() string {
@@ -584,6 +614,11 @@ func (o *GetMarketsRegionIDHistoryInternalServerError) IsCode(code int) bool {
 	return code == 500
 }
 
+// Code gets the status code for the get markets region Id history internal server error response
+func (o *GetMarketsRegionIDHistoryInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetMarketsRegionIDHistoryInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/{region_id}/history/][%d] getMarketsRegionIdHistoryInternalServerError  %+v", 500, o.Payload)
 }
@@ -645,6 +680,11 @@ func (o *GetMarketsRegionIDHistoryServiceUnavailable) IsServerError() bool {
 // IsCode returns true when this get markets region Id history service unavailable response a status code equal to that given
 func (o *GetMarketsRegionIDHistoryServiceUnavailable) IsCode(code int) bool {
 	return code == 503
+}
+
+// Code gets the status code for the get markets region Id history service unavailable response
+func (o *GetMarketsRegionIDHistoryServiceUnavailable) Code() int {
+	return 503
 }
 
 func (o *GetMarketsRegionIDHistoryServiceUnavailable) Error() string {
@@ -710,6 +750,11 @@ func (o *GetMarketsRegionIDHistoryGatewayTimeout) IsCode(code int) bool {
 	return code == 504
 }
 
+// Code gets the status code for the get markets region Id history gateway timeout response
+func (o *GetMarketsRegionIDHistoryGatewayTimeout) Code() int {
+	return 504
+}
+
 func (o *GetMarketsRegionIDHistoryGatewayTimeout) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/{region_id}/history/][%d] getMarketsRegionIdHistoryGatewayTimeout  %+v", 504, o.Payload)
 }
@@ -771,6 +816,11 @@ func (o *GetMarketsRegionIDHistoryStatus520) IsServerError() bool {
 // IsCode returns true when this get markets region Id history status520 response a status code equal to that given
 func (o *GetMarketsRegionIDHistoryStatus520) IsCode(code int) bool {
 	return code == 520
+}
+
+// Code gets the status code for the get markets region Id history status520 response
+func (o *GetMarketsRegionIDHistoryStatus520) Code() int {
+	return 520
 }
 
 func (o *GetMarketsRegionIDHistoryStatus520) Error() string {

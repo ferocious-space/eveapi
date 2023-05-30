@@ -140,6 +140,11 @@ func (o *GetUniverseRegionsRegionIDOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get universe regions region Id o k response
+func (o *GetUniverseRegionsRegionIDOK) Code() int {
+	return 200
+}
+
 func (o *GetUniverseRegionsRegionIDOK) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/regions/{region_id}/][%d] getUniverseRegionsRegionIdOK  %+v", 200, o.Payload)
 }
@@ -253,6 +258,11 @@ func (o *GetUniverseRegionsRegionIDNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get universe regions region Id not modified response
+func (o *GetUniverseRegionsRegionIDNotModified) Code() int {
+	return 304
+}
+
 func (o *GetUniverseRegionsRegionIDNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/regions/{region_id}/][%d] getUniverseRegionsRegionIdNotModified ", 304)
 }
@@ -333,6 +343,11 @@ func (o *GetUniverseRegionsRegionIDBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get universe regions region Id bad request response
+func (o *GetUniverseRegionsRegionIDBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetUniverseRegionsRegionIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/regions/{region_id}/][%d] getUniverseRegionsRegionIdBadRequest  %+v", 400, o.Payload)
 }
@@ -394,6 +409,11 @@ func (o *GetUniverseRegionsRegionIDNotFound) IsServerError() bool {
 // IsCode returns true when this get universe regions region Id not found response a status code equal to that given
 func (o *GetUniverseRegionsRegionIDNotFound) IsCode(code int) bool {
 	return code == 404
+}
+
+// Code gets the status code for the get universe regions region Id not found response
+func (o *GetUniverseRegionsRegionIDNotFound) Code() int {
+	return 404
 }
 
 func (o *GetUniverseRegionsRegionIDNotFound) Error() string {
@@ -459,6 +479,11 @@ func (o *GetUniverseRegionsRegionIDEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
 }
 
+// Code gets the status code for the get universe regions region Id enhance your calm response
+func (o *GetUniverseRegionsRegionIDEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *GetUniverseRegionsRegionIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/regions/{region_id}/][%d] getUniverseRegionsRegionIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -520,6 +545,11 @@ func (o *GetUniverseRegionsRegionIDInternalServerError) IsServerError() bool {
 // IsCode returns true when this get universe regions region Id internal server error response a status code equal to that given
 func (o *GetUniverseRegionsRegionIDInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the get universe regions region Id internal server error response
+func (o *GetUniverseRegionsRegionIDInternalServerError) Code() int {
+	return 500
 }
 
 func (o *GetUniverseRegionsRegionIDInternalServerError) Error() string {
@@ -585,6 +615,11 @@ func (o *GetUniverseRegionsRegionIDServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get universe regions region Id service unavailable response
+func (o *GetUniverseRegionsRegionIDServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetUniverseRegionsRegionIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/regions/{region_id}/][%d] getUniverseRegionsRegionIdServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -646,6 +681,11 @@ func (o *GetUniverseRegionsRegionIDGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get universe regions region Id gateway timeout response a status code equal to that given
 func (o *GetUniverseRegionsRegionIDGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get universe regions region Id gateway timeout response
+func (o *GetUniverseRegionsRegionIDGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetUniverseRegionsRegionIDGatewayTimeout) Error() string {

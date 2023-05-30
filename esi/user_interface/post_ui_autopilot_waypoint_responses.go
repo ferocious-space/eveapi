@@ -114,6 +114,11 @@ func (o *PostUIAutopilotWaypointNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the post Ui autopilot waypoint no content response
+func (o *PostUIAutopilotWaypointNoContent) Code() int {
+	return 204
+}
+
 func (o *PostUIAutopilotWaypointNoContent) Error() string {
 	return fmt.Sprintf("[POST /v2/ui/autopilot/waypoint/][%d] postUiAutopilotWaypointNoContent ", 204)
 }
@@ -164,6 +169,11 @@ func (o *PostUIAutopilotWaypointBadRequest) IsServerError() bool {
 // IsCode returns true when this post Ui autopilot waypoint bad request response a status code equal to that given
 func (o *PostUIAutopilotWaypointBadRequest) IsCode(code int) bool {
 	return code == 400
+}
+
+// Code gets the status code for the post Ui autopilot waypoint bad request response
+func (o *PostUIAutopilotWaypointBadRequest) Code() int {
+	return 400
 }
 
 func (o *PostUIAutopilotWaypointBadRequest) Error() string {
@@ -229,6 +239,11 @@ func (o *PostUIAutopilotWaypointUnauthorized) IsCode(code int) bool {
 	return code == 401
 }
 
+// Code gets the status code for the post Ui autopilot waypoint unauthorized response
+func (o *PostUIAutopilotWaypointUnauthorized) Code() int {
+	return 401
+}
+
 func (o *PostUIAutopilotWaypointUnauthorized) Error() string {
 	return fmt.Sprintf("[POST /v2/ui/autopilot/waypoint/][%d] postUiAutopilotWaypointUnauthorized  %+v", 401, o.Payload)
 }
@@ -290,6 +305,11 @@ func (o *PostUIAutopilotWaypointForbidden) IsServerError() bool {
 // IsCode returns true when this post Ui autopilot waypoint forbidden response a status code equal to that given
 func (o *PostUIAutopilotWaypointForbidden) IsCode(code int) bool {
 	return code == 403
+}
+
+// Code gets the status code for the post Ui autopilot waypoint forbidden response
+func (o *PostUIAutopilotWaypointForbidden) Code() int {
+	return 403
 }
 
 func (o *PostUIAutopilotWaypointForbidden) Error() string {
@@ -355,6 +375,11 @@ func (o *PostUIAutopilotWaypointEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
 }
 
+// Code gets the status code for the post Ui autopilot waypoint enhance your calm response
+func (o *PostUIAutopilotWaypointEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *PostUIAutopilotWaypointEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[POST /v2/ui/autopilot/waypoint/][%d] postUiAutopilotWaypointEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -416,6 +441,11 @@ func (o *PostUIAutopilotWaypointInternalServerError) IsServerError() bool {
 // IsCode returns true when this post Ui autopilot waypoint internal server error response a status code equal to that given
 func (o *PostUIAutopilotWaypointInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the post Ui autopilot waypoint internal server error response
+func (o *PostUIAutopilotWaypointInternalServerError) Code() int {
+	return 500
 }
 
 func (o *PostUIAutopilotWaypointInternalServerError) Error() string {
@@ -481,6 +511,11 @@ func (o *PostUIAutopilotWaypointServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the post Ui autopilot waypoint service unavailable response
+func (o *PostUIAutopilotWaypointServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *PostUIAutopilotWaypointServiceUnavailable) Error() string {
 	return fmt.Sprintf("[POST /v2/ui/autopilot/waypoint/][%d] postUiAutopilotWaypointServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -542,6 +577,11 @@ func (o *PostUIAutopilotWaypointGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this post Ui autopilot waypoint gateway timeout response a status code equal to that given
 func (o *PostUIAutopilotWaypointGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the post Ui autopilot waypoint gateway timeout response
+func (o *PostUIAutopilotWaypointGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *PostUIAutopilotWaypointGatewayTimeout) Error() string {

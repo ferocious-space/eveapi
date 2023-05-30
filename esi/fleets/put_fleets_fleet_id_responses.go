@@ -122,6 +122,11 @@ func (o *PutFleetsFleetIDNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the put fleets fleet Id no content response
+func (o *PutFleetsFleetIDNoContent) Code() int {
+	return 204
+}
+
 func (o *PutFleetsFleetIDNoContent) Error() string {
 	return fmt.Sprintf("[PUT /v1/fleets/{fleet_id}/][%d] putFleetsFleetIdNoContent ", 204)
 }
@@ -172,6 +177,11 @@ func (o *PutFleetsFleetIDBadRequest) IsServerError() bool {
 // IsCode returns true when this put fleets fleet Id bad request response a status code equal to that given
 func (o *PutFleetsFleetIDBadRequest) IsCode(code int) bool {
 	return code == 400
+}
+
+// Code gets the status code for the put fleets fleet Id bad request response
+func (o *PutFleetsFleetIDBadRequest) Code() int {
+	return 400
 }
 
 func (o *PutFleetsFleetIDBadRequest) Error() string {
@@ -237,6 +247,11 @@ func (o *PutFleetsFleetIDUnauthorized) IsCode(code int) bool {
 	return code == 401
 }
 
+// Code gets the status code for the put fleets fleet Id unauthorized response
+func (o *PutFleetsFleetIDUnauthorized) Code() int {
+	return 401
+}
+
 func (o *PutFleetsFleetIDUnauthorized) Error() string {
 	return fmt.Sprintf("[PUT /v1/fleets/{fleet_id}/][%d] putFleetsFleetIdUnauthorized  %+v", 401, o.Payload)
 }
@@ -298,6 +313,11 @@ func (o *PutFleetsFleetIDForbidden) IsServerError() bool {
 // IsCode returns true when this put fleets fleet Id forbidden response a status code equal to that given
 func (o *PutFleetsFleetIDForbidden) IsCode(code int) bool {
 	return code == 403
+}
+
+// Code gets the status code for the put fleets fleet Id forbidden response
+func (o *PutFleetsFleetIDForbidden) Code() int {
+	return 403
 }
 
 func (o *PutFleetsFleetIDForbidden) Error() string {
@@ -363,6 +383,11 @@ func (o *PutFleetsFleetIDNotFound) IsCode(code int) bool {
 	return code == 404
 }
 
+// Code gets the status code for the put fleets fleet Id not found response
+func (o *PutFleetsFleetIDNotFound) Code() int {
+	return 404
+}
+
 func (o *PutFleetsFleetIDNotFound) Error() string {
 	return fmt.Sprintf("[PUT /v1/fleets/{fleet_id}/][%d] putFleetsFleetIdNotFound  %+v", 404, o.Payload)
 }
@@ -424,6 +449,11 @@ func (o *PutFleetsFleetIDEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this put fleets fleet Id enhance your calm response a status code equal to that given
 func (o *PutFleetsFleetIDEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the put fleets fleet Id enhance your calm response
+func (o *PutFleetsFleetIDEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *PutFleetsFleetIDEnhanceYourCalm) Error() string {
@@ -489,6 +519,11 @@ func (o *PutFleetsFleetIDInternalServerError) IsCode(code int) bool {
 	return code == 500
 }
 
+// Code gets the status code for the put fleets fleet Id internal server error response
+func (o *PutFleetsFleetIDInternalServerError) Code() int {
+	return 500
+}
+
 func (o *PutFleetsFleetIDInternalServerError) Error() string {
 	return fmt.Sprintf("[PUT /v1/fleets/{fleet_id}/][%d] putFleetsFleetIdInternalServerError  %+v", 500, o.Payload)
 }
@@ -552,6 +587,11 @@ func (o *PutFleetsFleetIDServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the put fleets fleet Id service unavailable response
+func (o *PutFleetsFleetIDServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *PutFleetsFleetIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[PUT /v1/fleets/{fleet_id}/][%d] putFleetsFleetIdServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -613,6 +653,11 @@ func (o *PutFleetsFleetIDGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this put fleets fleet Id gateway timeout response a status code equal to that given
 func (o *PutFleetsFleetIDGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the put fleets fleet Id gateway timeout response
+func (o *PutFleetsFleetIDGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *PutFleetsFleetIDGatewayTimeout) Error() string {

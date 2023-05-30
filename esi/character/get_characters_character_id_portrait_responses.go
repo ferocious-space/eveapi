@@ -134,6 +134,11 @@ func (o *GetCharactersCharacterIDPortraitOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get characters character Id portrait o k response
+func (o *GetCharactersCharacterIDPortraitOK) Code() int {
+	return 200
+}
+
 func (o *GetCharactersCharacterIDPortraitOK) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/portrait/][%d] getCharactersCharacterIdPortraitOK  %+v", 200, o.Payload)
 }
@@ -240,6 +245,11 @@ func (o *GetCharactersCharacterIDPortraitNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get characters character Id portrait not modified response
+func (o *GetCharactersCharacterIDPortraitNotModified) Code() int {
+	return 304
+}
+
 func (o *GetCharactersCharacterIDPortraitNotModified) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/portrait/][%d] getCharactersCharacterIdPortraitNotModified ", 304)
 }
@@ -320,6 +330,11 @@ func (o *GetCharactersCharacterIDPortraitBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get characters character Id portrait bad request response
+func (o *GetCharactersCharacterIDPortraitBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetCharactersCharacterIDPortraitBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/portrait/][%d] getCharactersCharacterIdPortraitBadRequest  %+v", 400, o.Payload)
 }
@@ -381,6 +396,11 @@ func (o *GetCharactersCharacterIDPortraitNotFound) IsServerError() bool {
 // IsCode returns true when this get characters character Id portrait not found response a status code equal to that given
 func (o *GetCharactersCharacterIDPortraitNotFound) IsCode(code int) bool {
 	return code == 404
+}
+
+// Code gets the status code for the get characters character Id portrait not found response
+func (o *GetCharactersCharacterIDPortraitNotFound) Code() int {
+	return 404
 }
 
 func (o *GetCharactersCharacterIDPortraitNotFound) Error() string {
@@ -446,6 +466,11 @@ func (o *GetCharactersCharacterIDPortraitEnhanceYourCalm) IsCode(code int) bool 
 	return code == 420
 }
 
+// Code gets the status code for the get characters character Id portrait enhance your calm response
+func (o *GetCharactersCharacterIDPortraitEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *GetCharactersCharacterIDPortraitEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/portrait/][%d] getCharactersCharacterIdPortraitEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -507,6 +532,11 @@ func (o *GetCharactersCharacterIDPortraitInternalServerError) IsServerError() bo
 // IsCode returns true when this get characters character Id portrait internal server error response a status code equal to that given
 func (o *GetCharactersCharacterIDPortraitInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the get characters character Id portrait internal server error response
+func (o *GetCharactersCharacterIDPortraitInternalServerError) Code() int {
+	return 500
 }
 
 func (o *GetCharactersCharacterIDPortraitInternalServerError) Error() string {
@@ -572,6 +602,11 @@ func (o *GetCharactersCharacterIDPortraitServiceUnavailable) IsCode(code int) bo
 	return code == 503
 }
 
+// Code gets the status code for the get characters character Id portrait service unavailable response
+func (o *GetCharactersCharacterIDPortraitServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCharactersCharacterIDPortraitServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/portrait/][%d] getCharactersCharacterIdPortraitServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -633,6 +668,11 @@ func (o *GetCharactersCharacterIDPortraitGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get characters character Id portrait gateway timeout response a status code equal to that given
 func (o *GetCharactersCharacterIDPortraitGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get characters character Id portrait gateway timeout response
+func (o *GetCharactersCharacterIDPortraitGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCharactersCharacterIDPortraitGatewayTimeout) Error() string {

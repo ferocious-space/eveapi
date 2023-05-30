@@ -138,6 +138,11 @@ func (o *GetCharactersCharacterIDWalletOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get characters character Id wallet o k response
+func (o *GetCharactersCharacterIDWalletOK) Code() int {
+	return 200
+}
+
 func (o *GetCharactersCharacterIDWalletOK) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/wallet/][%d] getCharactersCharacterIdWalletOK  %+v", 200, o.Payload)
 }
@@ -242,6 +247,11 @@ func (o *GetCharactersCharacterIDWalletNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get characters character Id wallet not modified response
+func (o *GetCharactersCharacterIDWalletNotModified) Code() int {
+	return 304
+}
+
 func (o *GetCharactersCharacterIDWalletNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/wallet/][%d] getCharactersCharacterIdWalletNotModified ", 304)
 }
@@ -322,6 +332,11 @@ func (o *GetCharactersCharacterIDWalletBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get characters character Id wallet bad request response
+func (o *GetCharactersCharacterIDWalletBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetCharactersCharacterIDWalletBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/wallet/][%d] getCharactersCharacterIdWalletBadRequest  %+v", 400, o.Payload)
 }
@@ -383,6 +398,11 @@ func (o *GetCharactersCharacterIDWalletUnauthorized) IsServerError() bool {
 // IsCode returns true when this get characters character Id wallet unauthorized response a status code equal to that given
 func (o *GetCharactersCharacterIDWalletUnauthorized) IsCode(code int) bool {
 	return code == 401
+}
+
+// Code gets the status code for the get characters character Id wallet unauthorized response
+func (o *GetCharactersCharacterIDWalletUnauthorized) Code() int {
+	return 401
 }
 
 func (o *GetCharactersCharacterIDWalletUnauthorized) Error() string {
@@ -448,6 +468,11 @@ func (o *GetCharactersCharacterIDWalletForbidden) IsCode(code int) bool {
 	return code == 403
 }
 
+// Code gets the status code for the get characters character Id wallet forbidden response
+func (o *GetCharactersCharacterIDWalletForbidden) Code() int {
+	return 403
+}
+
 func (o *GetCharactersCharacterIDWalletForbidden) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/wallet/][%d] getCharactersCharacterIdWalletForbidden  %+v", 403, o.Payload)
 }
@@ -509,6 +534,11 @@ func (o *GetCharactersCharacterIDWalletEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get characters character Id wallet enhance your calm response a status code equal to that given
 func (o *GetCharactersCharacterIDWalletEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get characters character Id wallet enhance your calm response
+func (o *GetCharactersCharacterIDWalletEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetCharactersCharacterIDWalletEnhanceYourCalm) Error() string {
@@ -574,6 +604,11 @@ func (o *GetCharactersCharacterIDWalletInternalServerError) IsCode(code int) boo
 	return code == 500
 }
 
+// Code gets the status code for the get characters character Id wallet internal server error response
+func (o *GetCharactersCharacterIDWalletInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetCharactersCharacterIDWalletInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/wallet/][%d] getCharactersCharacterIdWalletInternalServerError  %+v", 500, o.Payload)
 }
@@ -637,6 +672,11 @@ func (o *GetCharactersCharacterIDWalletServiceUnavailable) IsCode(code int) bool
 	return code == 503
 }
 
+// Code gets the status code for the get characters character Id wallet service unavailable response
+func (o *GetCharactersCharacterIDWalletServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCharactersCharacterIDWalletServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/wallet/][%d] getCharactersCharacterIdWalletServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -698,6 +738,11 @@ func (o *GetCharactersCharacterIDWalletGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get characters character Id wallet gateway timeout response a status code equal to that given
 func (o *GetCharactersCharacterIDWalletGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get characters character Id wallet gateway timeout response
+func (o *GetCharactersCharacterIDWalletGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCharactersCharacterIDWalletGatewayTimeout) Error() string {

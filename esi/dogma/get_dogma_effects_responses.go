@@ -126,6 +126,11 @@ func (o *GetDogmaEffectsOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get dogma effects o k response
+func (o *GetDogmaEffectsOK) Code() int {
+	return 200
+}
+
 func (o *GetDogmaEffectsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/effects/][%d] getDogmaEffectsOK  %+v", 200, o.Payload)
 }
@@ -230,6 +235,11 @@ func (o *GetDogmaEffectsNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get dogma effects not modified response
+func (o *GetDogmaEffectsNotModified) Code() int {
+	return 304
+}
+
 func (o *GetDogmaEffectsNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/effects/][%d] getDogmaEffectsNotModified ", 304)
 }
@@ -310,6 +320,11 @@ func (o *GetDogmaEffectsBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get dogma effects bad request response
+func (o *GetDogmaEffectsBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetDogmaEffectsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/effects/][%d] getDogmaEffectsBadRequest  %+v", 400, o.Payload)
 }
@@ -371,6 +386,11 @@ func (o *GetDogmaEffectsEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get dogma effects enhance your calm response a status code equal to that given
 func (o *GetDogmaEffectsEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get dogma effects enhance your calm response
+func (o *GetDogmaEffectsEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetDogmaEffectsEnhanceYourCalm) Error() string {
@@ -436,6 +456,11 @@ func (o *GetDogmaEffectsInternalServerError) IsCode(code int) bool {
 	return code == 500
 }
 
+// Code gets the status code for the get dogma effects internal server error response
+func (o *GetDogmaEffectsInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetDogmaEffectsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/effects/][%d] getDogmaEffectsInternalServerError  %+v", 500, o.Payload)
 }
@@ -499,6 +524,11 @@ func (o *GetDogmaEffectsServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get dogma effects service unavailable response
+func (o *GetDogmaEffectsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetDogmaEffectsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/effects/][%d] getDogmaEffectsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -560,6 +590,11 @@ func (o *GetDogmaEffectsGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get dogma effects gateway timeout response a status code equal to that given
 func (o *GetDogmaEffectsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get dogma effects gateway timeout response
+func (o *GetDogmaEffectsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetDogmaEffectsGatewayTimeout) Error() string {

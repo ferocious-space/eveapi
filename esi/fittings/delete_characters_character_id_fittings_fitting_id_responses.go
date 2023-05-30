@@ -114,6 +114,11 @@ func (o *DeleteCharactersCharacterIDFittingsFittingIDNoContent) IsCode(code int)
 	return code == 204
 }
 
+// Code gets the status code for the delete characters character Id fittings fitting Id no content response
+func (o *DeleteCharactersCharacterIDFittingsFittingIDNoContent) Code() int {
+	return 204
+}
+
 func (o *DeleteCharactersCharacterIDFittingsFittingIDNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/fittings/{fitting_id}/][%d] deleteCharactersCharacterIdFittingsFittingIdNoContent ", 204)
 }
@@ -164,6 +169,11 @@ func (o *DeleteCharactersCharacterIDFittingsFittingIDBadRequest) IsServerError()
 // IsCode returns true when this delete characters character Id fittings fitting Id bad request response a status code equal to that given
 func (o *DeleteCharactersCharacterIDFittingsFittingIDBadRequest) IsCode(code int) bool {
 	return code == 400
+}
+
+// Code gets the status code for the delete characters character Id fittings fitting Id bad request response
+func (o *DeleteCharactersCharacterIDFittingsFittingIDBadRequest) Code() int {
+	return 400
 }
 
 func (o *DeleteCharactersCharacterIDFittingsFittingIDBadRequest) Error() string {
@@ -229,6 +239,11 @@ func (o *DeleteCharactersCharacterIDFittingsFittingIDUnauthorized) IsCode(code i
 	return code == 401
 }
 
+// Code gets the status code for the delete characters character Id fittings fitting Id unauthorized response
+func (o *DeleteCharactersCharacterIDFittingsFittingIDUnauthorized) Code() int {
+	return 401
+}
+
 func (o *DeleteCharactersCharacterIDFittingsFittingIDUnauthorized) Error() string {
 	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/fittings/{fitting_id}/][%d] deleteCharactersCharacterIdFittingsFittingIdUnauthorized  %+v", 401, o.Payload)
 }
@@ -290,6 +305,11 @@ func (o *DeleteCharactersCharacterIDFittingsFittingIDForbidden) IsServerError() 
 // IsCode returns true when this delete characters character Id fittings fitting Id forbidden response a status code equal to that given
 func (o *DeleteCharactersCharacterIDFittingsFittingIDForbidden) IsCode(code int) bool {
 	return code == 403
+}
+
+// Code gets the status code for the delete characters character Id fittings fitting Id forbidden response
+func (o *DeleteCharactersCharacterIDFittingsFittingIDForbidden) Code() int {
+	return 403
 }
 
 func (o *DeleteCharactersCharacterIDFittingsFittingIDForbidden) Error() string {
@@ -355,6 +375,11 @@ func (o *DeleteCharactersCharacterIDFittingsFittingIDEnhanceYourCalm) IsCode(cod
 	return code == 420
 }
 
+// Code gets the status code for the delete characters character Id fittings fitting Id enhance your calm response
+func (o *DeleteCharactersCharacterIDFittingsFittingIDEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *DeleteCharactersCharacterIDFittingsFittingIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/fittings/{fitting_id}/][%d] deleteCharactersCharacterIdFittingsFittingIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -416,6 +441,11 @@ func (o *DeleteCharactersCharacterIDFittingsFittingIDInternalServerError) IsServ
 // IsCode returns true when this delete characters character Id fittings fitting Id internal server error response a status code equal to that given
 func (o *DeleteCharactersCharacterIDFittingsFittingIDInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the delete characters character Id fittings fitting Id internal server error response
+func (o *DeleteCharactersCharacterIDFittingsFittingIDInternalServerError) Code() int {
+	return 500
 }
 
 func (o *DeleteCharactersCharacterIDFittingsFittingIDInternalServerError) Error() string {
@@ -481,6 +511,11 @@ func (o *DeleteCharactersCharacterIDFittingsFittingIDServiceUnavailable) IsCode(
 	return code == 503
 }
 
+// Code gets the status code for the delete characters character Id fittings fitting Id service unavailable response
+func (o *DeleteCharactersCharacterIDFittingsFittingIDServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *DeleteCharactersCharacterIDFittingsFittingIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/fittings/{fitting_id}/][%d] deleteCharactersCharacterIdFittingsFittingIdServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -542,6 +577,11 @@ func (o *DeleteCharactersCharacterIDFittingsFittingIDGatewayTimeout) IsServerErr
 // IsCode returns true when this delete characters character Id fittings fitting Id gateway timeout response a status code equal to that given
 func (o *DeleteCharactersCharacterIDFittingsFittingIDGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the delete characters character Id fittings fitting Id gateway timeout response
+func (o *DeleteCharactersCharacterIDFittingsFittingIDGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *DeleteCharactersCharacterIDFittingsFittingIDGatewayTimeout) Error() string {

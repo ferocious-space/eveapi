@@ -131,6 +131,11 @@ func (o *GetIncursionsOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get incursions o k response
+func (o *GetIncursionsOK) Code() int {
+	return 200
+}
+
 func (o *GetIncursionsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/incursions/][%d] getIncursionsOK  %+v", 200, o.Payload)
 }
@@ -235,6 +240,11 @@ func (o *GetIncursionsNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get incursions not modified response
+func (o *GetIncursionsNotModified) Code() int {
+	return 304
+}
+
 func (o *GetIncursionsNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/incursions/][%d] getIncursionsNotModified ", 304)
 }
@@ -315,6 +325,11 @@ func (o *GetIncursionsBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get incursions bad request response
+func (o *GetIncursionsBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetIncursionsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/incursions/][%d] getIncursionsBadRequest  %+v", 400, o.Payload)
 }
@@ -376,6 +391,11 @@ func (o *GetIncursionsEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get incursions enhance your calm response a status code equal to that given
 func (o *GetIncursionsEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get incursions enhance your calm response
+func (o *GetIncursionsEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetIncursionsEnhanceYourCalm) Error() string {
@@ -441,6 +461,11 @@ func (o *GetIncursionsInternalServerError) IsCode(code int) bool {
 	return code == 500
 }
 
+// Code gets the status code for the get incursions internal server error response
+func (o *GetIncursionsInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetIncursionsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/incursions/][%d] getIncursionsInternalServerError  %+v", 500, o.Payload)
 }
@@ -504,6 +529,11 @@ func (o *GetIncursionsServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get incursions service unavailable response
+func (o *GetIncursionsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetIncursionsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/incursions/][%d] getIncursionsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -565,6 +595,11 @@ func (o *GetIncursionsGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get incursions gateway timeout response a status code equal to that given
 func (o *GetIncursionsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get incursions gateway timeout response
+func (o *GetIncursionsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetIncursionsGatewayTimeout) Error() string {

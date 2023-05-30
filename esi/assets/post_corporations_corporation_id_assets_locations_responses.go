@@ -125,6 +125,11 @@ func (o *PostCorporationsCorporationIDAssetsLocationsOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the post corporations corporation Id assets locations o k response
+func (o *PostCorporationsCorporationIDAssetsLocationsOK) Code() int {
+	return 200
+}
+
 func (o *PostCorporationsCorporationIDAssetsLocationsOK) Error() string {
 	return fmt.Sprintf("[POST /v2/corporations/{corporation_id}/assets/locations/][%d] postCorporationsCorporationIdAssetsLocationsOK  %+v", 200, o.Payload)
 }
@@ -184,6 +189,11 @@ func (o *PostCorporationsCorporationIDAssetsLocationsBadRequest) IsServerError()
 // IsCode returns true when this post corporations corporation Id assets locations bad request response a status code equal to that given
 func (o *PostCorporationsCorporationIDAssetsLocationsBadRequest) IsCode(code int) bool {
 	return code == 400
+}
+
+// Code gets the status code for the post corporations corporation Id assets locations bad request response
+func (o *PostCorporationsCorporationIDAssetsLocationsBadRequest) Code() int {
+	return 400
 }
 
 func (o *PostCorporationsCorporationIDAssetsLocationsBadRequest) Error() string {
@@ -249,6 +259,11 @@ func (o *PostCorporationsCorporationIDAssetsLocationsUnauthorized) IsCode(code i
 	return code == 401
 }
 
+// Code gets the status code for the post corporations corporation Id assets locations unauthorized response
+func (o *PostCorporationsCorporationIDAssetsLocationsUnauthorized) Code() int {
+	return 401
+}
+
 func (o *PostCorporationsCorporationIDAssetsLocationsUnauthorized) Error() string {
 	return fmt.Sprintf("[POST /v2/corporations/{corporation_id}/assets/locations/][%d] postCorporationsCorporationIdAssetsLocationsUnauthorized  %+v", 401, o.Payload)
 }
@@ -310,6 +325,11 @@ func (o *PostCorporationsCorporationIDAssetsLocationsForbidden) IsServerError() 
 // IsCode returns true when this post corporations corporation Id assets locations forbidden response a status code equal to that given
 func (o *PostCorporationsCorporationIDAssetsLocationsForbidden) IsCode(code int) bool {
 	return code == 403
+}
+
+// Code gets the status code for the post corporations corporation Id assets locations forbidden response
+func (o *PostCorporationsCorporationIDAssetsLocationsForbidden) Code() int {
+	return 403
 }
 
 func (o *PostCorporationsCorporationIDAssetsLocationsForbidden) Error() string {
@@ -375,6 +395,11 @@ func (o *PostCorporationsCorporationIDAssetsLocationsNotFound) IsCode(code int) 
 	return code == 404
 }
 
+// Code gets the status code for the post corporations corporation Id assets locations not found response
+func (o *PostCorporationsCorporationIDAssetsLocationsNotFound) Code() int {
+	return 404
+}
+
 func (o *PostCorporationsCorporationIDAssetsLocationsNotFound) Error() string {
 	return fmt.Sprintf("[POST /v2/corporations/{corporation_id}/assets/locations/][%d] postCorporationsCorporationIdAssetsLocationsNotFound  %+v", 404, o.Payload)
 }
@@ -436,6 +461,11 @@ func (o *PostCorporationsCorporationIDAssetsLocationsEnhanceYourCalm) IsServerEr
 // IsCode returns true when this post corporations corporation Id assets locations enhance your calm response a status code equal to that given
 func (o *PostCorporationsCorporationIDAssetsLocationsEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the post corporations corporation Id assets locations enhance your calm response
+func (o *PostCorporationsCorporationIDAssetsLocationsEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *PostCorporationsCorporationIDAssetsLocationsEnhanceYourCalm) Error() string {
@@ -501,6 +531,11 @@ func (o *PostCorporationsCorporationIDAssetsLocationsInternalServerError) IsCode
 	return code == 500
 }
 
+// Code gets the status code for the post corporations corporation Id assets locations internal server error response
+func (o *PostCorporationsCorporationIDAssetsLocationsInternalServerError) Code() int {
+	return 500
+}
+
 func (o *PostCorporationsCorporationIDAssetsLocationsInternalServerError) Error() string {
 	return fmt.Sprintf("[POST /v2/corporations/{corporation_id}/assets/locations/][%d] postCorporationsCorporationIdAssetsLocationsInternalServerError  %+v", 500, o.Payload)
 }
@@ -564,6 +599,11 @@ func (o *PostCorporationsCorporationIDAssetsLocationsServiceUnavailable) IsCode(
 	return code == 503
 }
 
+// Code gets the status code for the post corporations corporation Id assets locations service unavailable response
+func (o *PostCorporationsCorporationIDAssetsLocationsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *PostCorporationsCorporationIDAssetsLocationsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[POST /v2/corporations/{corporation_id}/assets/locations/][%d] postCorporationsCorporationIdAssetsLocationsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -625,6 +665,11 @@ func (o *PostCorporationsCorporationIDAssetsLocationsGatewayTimeout) IsServerErr
 // IsCode returns true when this post corporations corporation Id assets locations gateway timeout response a status code equal to that given
 func (o *PostCorporationsCorporationIDAssetsLocationsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the post corporations corporation Id assets locations gateway timeout response
+func (o *PostCorporationsCorporationIDAssetsLocationsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *PostCorporationsCorporationIDAssetsLocationsGatewayTimeout) Error() string {

@@ -142,6 +142,11 @@ func (o *GetCharactersCharacterIDShipOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get characters character Id ship o k response
+func (o *GetCharactersCharacterIDShipOK) Code() int {
+	return 200
+}
+
 func (o *GetCharactersCharacterIDShipOK) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/ship/][%d] getCharactersCharacterIdShipOK  %+v", 200, o.Payload)
 }
@@ -248,6 +253,11 @@ func (o *GetCharactersCharacterIDShipNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get characters character Id ship not modified response
+func (o *GetCharactersCharacterIDShipNotModified) Code() int {
+	return 304
+}
+
 func (o *GetCharactersCharacterIDShipNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/ship/][%d] getCharactersCharacterIdShipNotModified ", 304)
 }
@@ -328,6 +338,11 @@ func (o *GetCharactersCharacterIDShipBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get characters character Id ship bad request response
+func (o *GetCharactersCharacterIDShipBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetCharactersCharacterIDShipBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/ship/][%d] getCharactersCharacterIdShipBadRequest  %+v", 400, o.Payload)
 }
@@ -389,6 +404,11 @@ func (o *GetCharactersCharacterIDShipUnauthorized) IsServerError() bool {
 // IsCode returns true when this get characters character Id ship unauthorized response a status code equal to that given
 func (o *GetCharactersCharacterIDShipUnauthorized) IsCode(code int) bool {
 	return code == 401
+}
+
+// Code gets the status code for the get characters character Id ship unauthorized response
+func (o *GetCharactersCharacterIDShipUnauthorized) Code() int {
+	return 401
 }
 
 func (o *GetCharactersCharacterIDShipUnauthorized) Error() string {
@@ -454,6 +474,11 @@ func (o *GetCharactersCharacterIDShipForbidden) IsCode(code int) bool {
 	return code == 403
 }
 
+// Code gets the status code for the get characters character Id ship forbidden response
+func (o *GetCharactersCharacterIDShipForbidden) Code() int {
+	return 403
+}
+
 func (o *GetCharactersCharacterIDShipForbidden) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/ship/][%d] getCharactersCharacterIdShipForbidden  %+v", 403, o.Payload)
 }
@@ -515,6 +540,11 @@ func (o *GetCharactersCharacterIDShipEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get characters character Id ship enhance your calm response a status code equal to that given
 func (o *GetCharactersCharacterIDShipEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get characters character Id ship enhance your calm response
+func (o *GetCharactersCharacterIDShipEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetCharactersCharacterIDShipEnhanceYourCalm) Error() string {
@@ -580,6 +610,11 @@ func (o *GetCharactersCharacterIDShipInternalServerError) IsCode(code int) bool 
 	return code == 500
 }
 
+// Code gets the status code for the get characters character Id ship internal server error response
+func (o *GetCharactersCharacterIDShipInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetCharactersCharacterIDShipInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/ship/][%d] getCharactersCharacterIdShipInternalServerError  %+v", 500, o.Payload)
 }
@@ -643,6 +678,11 @@ func (o *GetCharactersCharacterIDShipServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get characters character Id ship service unavailable response
+func (o *GetCharactersCharacterIDShipServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCharactersCharacterIDShipServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/ship/][%d] getCharactersCharacterIdShipServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -704,6 +744,11 @@ func (o *GetCharactersCharacterIDShipGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get characters character Id ship gateway timeout response a status code equal to that given
 func (o *GetCharactersCharacterIDShipGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get characters character Id ship gateway timeout response
+func (o *GetCharactersCharacterIDShipGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCharactersCharacterIDShipGatewayTimeout) Error() string {

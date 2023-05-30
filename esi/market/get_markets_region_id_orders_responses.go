@@ -158,6 +158,11 @@ func (o *GetMarketsRegionIDOrdersOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get markets region Id orders o k response
+func (o *GetMarketsRegionIDOrdersOK) Code() int {
+	return 200
+}
+
 func (o *GetMarketsRegionIDOrdersOK) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/{region_id}/orders/][%d] getMarketsRegionIdOrdersOK  %+v", 200, o.Payload)
 }
@@ -273,6 +278,11 @@ func (o *GetMarketsRegionIDOrdersNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get markets region Id orders not modified response
+func (o *GetMarketsRegionIDOrdersNotModified) Code() int {
+	return 304
+}
+
 func (o *GetMarketsRegionIDOrdersNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/{region_id}/orders/][%d] getMarketsRegionIdOrdersNotModified ", 304)
 }
@@ -353,6 +363,11 @@ func (o *GetMarketsRegionIDOrdersBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get markets region Id orders bad request response
+func (o *GetMarketsRegionIDOrdersBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetMarketsRegionIDOrdersBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/{region_id}/orders/][%d] getMarketsRegionIdOrdersBadRequest  %+v", 400, o.Payload)
 }
@@ -414,6 +429,11 @@ func (o *GetMarketsRegionIDOrdersNotFound) IsServerError() bool {
 // IsCode returns true when this get markets region Id orders not found response a status code equal to that given
 func (o *GetMarketsRegionIDOrdersNotFound) IsCode(code int) bool {
 	return code == 404
+}
+
+// Code gets the status code for the get markets region Id orders not found response
+func (o *GetMarketsRegionIDOrdersNotFound) Code() int {
+	return 404
 }
 
 func (o *GetMarketsRegionIDOrdersNotFound) Error() string {
@@ -479,6 +499,11 @@ func (o *GetMarketsRegionIDOrdersEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
 }
 
+// Code gets the status code for the get markets region Id orders enhance your calm response
+func (o *GetMarketsRegionIDOrdersEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *GetMarketsRegionIDOrdersEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/{region_id}/orders/][%d] getMarketsRegionIdOrdersEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -540,6 +565,11 @@ func (o *GetMarketsRegionIDOrdersUnprocessableEntity) IsServerError() bool {
 // IsCode returns true when this get markets region Id orders unprocessable entity response a status code equal to that given
 func (o *GetMarketsRegionIDOrdersUnprocessableEntity) IsCode(code int) bool {
 	return code == 422
+}
+
+// Code gets the status code for the get markets region Id orders unprocessable entity response
+func (o *GetMarketsRegionIDOrdersUnprocessableEntity) Code() int {
+	return 422
 }
 
 func (o *GetMarketsRegionIDOrdersUnprocessableEntity) Error() string {
@@ -605,6 +635,11 @@ func (o *GetMarketsRegionIDOrdersInternalServerError) IsCode(code int) bool {
 	return code == 500
 }
 
+// Code gets the status code for the get markets region Id orders internal server error response
+func (o *GetMarketsRegionIDOrdersInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetMarketsRegionIDOrdersInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/{region_id}/orders/][%d] getMarketsRegionIdOrdersInternalServerError  %+v", 500, o.Payload)
 }
@@ -668,6 +703,11 @@ func (o *GetMarketsRegionIDOrdersServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get markets region Id orders service unavailable response
+func (o *GetMarketsRegionIDOrdersServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetMarketsRegionIDOrdersServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/{region_id}/orders/][%d] getMarketsRegionIdOrdersServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -729,6 +769,11 @@ func (o *GetMarketsRegionIDOrdersGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get markets region Id orders gateway timeout response a status code equal to that given
 func (o *GetMarketsRegionIDOrdersGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get markets region Id orders gateway timeout response
+func (o *GetMarketsRegionIDOrdersGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetMarketsRegionIDOrdersGatewayTimeout) Error() string {

@@ -164,6 +164,11 @@ func (o *GetCharactersCharacterIDAssetsOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get characters character Id assets o k response
+func (o *GetCharactersCharacterIDAssetsOK) Code() int {
+	return 200
+}
+
 func (o *GetCharactersCharacterIDAssetsOK) Error() string {
 	return fmt.Sprintf("[GET /v5/characters/{character_id}/assets/][%d] getCharactersCharacterIdAssetsOK  %+v", 200, o.Payload)
 }
@@ -279,6 +284,11 @@ func (o *GetCharactersCharacterIDAssetsNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get characters character Id assets not modified response
+func (o *GetCharactersCharacterIDAssetsNotModified) Code() int {
+	return 304
+}
+
 func (o *GetCharactersCharacterIDAssetsNotModified) Error() string {
 	return fmt.Sprintf("[GET /v5/characters/{character_id}/assets/][%d] getCharactersCharacterIdAssetsNotModified ", 304)
 }
@@ -359,6 +369,11 @@ func (o *GetCharactersCharacterIDAssetsBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get characters character Id assets bad request response
+func (o *GetCharactersCharacterIDAssetsBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetCharactersCharacterIDAssetsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v5/characters/{character_id}/assets/][%d] getCharactersCharacterIdAssetsBadRequest  %+v", 400, o.Payload)
 }
@@ -420,6 +435,11 @@ func (o *GetCharactersCharacterIDAssetsUnauthorized) IsServerError() bool {
 // IsCode returns true when this get characters character Id assets unauthorized response a status code equal to that given
 func (o *GetCharactersCharacterIDAssetsUnauthorized) IsCode(code int) bool {
 	return code == 401
+}
+
+// Code gets the status code for the get characters character Id assets unauthorized response
+func (o *GetCharactersCharacterIDAssetsUnauthorized) Code() int {
+	return 401
 }
 
 func (o *GetCharactersCharacterIDAssetsUnauthorized) Error() string {
@@ -485,6 +505,11 @@ func (o *GetCharactersCharacterIDAssetsForbidden) IsCode(code int) bool {
 	return code == 403
 }
 
+// Code gets the status code for the get characters character Id assets forbidden response
+func (o *GetCharactersCharacterIDAssetsForbidden) Code() int {
+	return 403
+}
+
 func (o *GetCharactersCharacterIDAssetsForbidden) Error() string {
 	return fmt.Sprintf("[GET /v5/characters/{character_id}/assets/][%d] getCharactersCharacterIdAssetsForbidden  %+v", 403, o.Payload)
 }
@@ -546,6 +571,11 @@ func (o *GetCharactersCharacterIDAssetsNotFound) IsServerError() bool {
 // IsCode returns true when this get characters character Id assets not found response a status code equal to that given
 func (o *GetCharactersCharacterIDAssetsNotFound) IsCode(code int) bool {
 	return code == 404
+}
+
+// Code gets the status code for the get characters character Id assets not found response
+func (o *GetCharactersCharacterIDAssetsNotFound) Code() int {
+	return 404
 }
 
 func (o *GetCharactersCharacterIDAssetsNotFound) Error() string {
@@ -611,6 +641,11 @@ func (o *GetCharactersCharacterIDAssetsEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
 }
 
+// Code gets the status code for the get characters character Id assets enhance your calm response
+func (o *GetCharactersCharacterIDAssetsEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *GetCharactersCharacterIDAssetsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v5/characters/{character_id}/assets/][%d] getCharactersCharacterIdAssetsEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -672,6 +707,11 @@ func (o *GetCharactersCharacterIDAssetsInternalServerError) IsServerError() bool
 // IsCode returns true when this get characters character Id assets internal server error response a status code equal to that given
 func (o *GetCharactersCharacterIDAssetsInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the get characters character Id assets internal server error response
+func (o *GetCharactersCharacterIDAssetsInternalServerError) Code() int {
+	return 500
 }
 
 func (o *GetCharactersCharacterIDAssetsInternalServerError) Error() string {
@@ -737,6 +777,11 @@ func (o *GetCharactersCharacterIDAssetsServiceUnavailable) IsCode(code int) bool
 	return code == 503
 }
 
+// Code gets the status code for the get characters character Id assets service unavailable response
+func (o *GetCharactersCharacterIDAssetsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCharactersCharacterIDAssetsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v5/characters/{character_id}/assets/][%d] getCharactersCharacterIdAssetsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -798,6 +843,11 @@ func (o *GetCharactersCharacterIDAssetsGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get characters character Id assets gateway timeout response a status code equal to that given
 func (o *GetCharactersCharacterIDAssetsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get characters character Id assets gateway timeout response
+func (o *GetCharactersCharacterIDAssetsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCharactersCharacterIDAssetsGatewayTimeout) Error() string {

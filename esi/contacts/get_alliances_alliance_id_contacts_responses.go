@@ -158,6 +158,11 @@ func (o *GetAlliancesAllianceIDContactsOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get alliances alliance Id contacts o k response
+func (o *GetAlliancesAllianceIDContactsOK) Code() int {
+	return 200
+}
+
 func (o *GetAlliancesAllianceIDContactsOK) Error() string {
 	return fmt.Sprintf("[GET /v2/alliances/{alliance_id}/contacts/][%d] getAlliancesAllianceIdContactsOK  %+v", 200, o.Payload)
 }
@@ -273,6 +278,11 @@ func (o *GetAlliancesAllianceIDContactsNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get alliances alliance Id contacts not modified response
+func (o *GetAlliancesAllianceIDContactsNotModified) Code() int {
+	return 304
+}
+
 func (o *GetAlliancesAllianceIDContactsNotModified) Error() string {
 	return fmt.Sprintf("[GET /v2/alliances/{alliance_id}/contacts/][%d] getAlliancesAllianceIdContactsNotModified ", 304)
 }
@@ -353,6 +363,11 @@ func (o *GetAlliancesAllianceIDContactsBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get alliances alliance Id contacts bad request response
+func (o *GetAlliancesAllianceIDContactsBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetAlliancesAllianceIDContactsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v2/alliances/{alliance_id}/contacts/][%d] getAlliancesAllianceIdContactsBadRequest  %+v", 400, o.Payload)
 }
@@ -414,6 +429,11 @@ func (o *GetAlliancesAllianceIDContactsUnauthorized) IsServerError() bool {
 // IsCode returns true when this get alliances alliance Id contacts unauthorized response a status code equal to that given
 func (o *GetAlliancesAllianceIDContactsUnauthorized) IsCode(code int) bool {
 	return code == 401
+}
+
+// Code gets the status code for the get alliances alliance Id contacts unauthorized response
+func (o *GetAlliancesAllianceIDContactsUnauthorized) Code() int {
+	return 401
 }
 
 func (o *GetAlliancesAllianceIDContactsUnauthorized) Error() string {
@@ -479,6 +499,11 @@ func (o *GetAlliancesAllianceIDContactsForbidden) IsCode(code int) bool {
 	return code == 403
 }
 
+// Code gets the status code for the get alliances alliance Id contacts forbidden response
+func (o *GetAlliancesAllianceIDContactsForbidden) Code() int {
+	return 403
+}
+
 func (o *GetAlliancesAllianceIDContactsForbidden) Error() string {
 	return fmt.Sprintf("[GET /v2/alliances/{alliance_id}/contacts/][%d] getAlliancesAllianceIdContactsForbidden  %+v", 403, o.Payload)
 }
@@ -540,6 +565,11 @@ func (o *GetAlliancesAllianceIDContactsEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get alliances alliance Id contacts enhance your calm response a status code equal to that given
 func (o *GetAlliancesAllianceIDContactsEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get alliances alliance Id contacts enhance your calm response
+func (o *GetAlliancesAllianceIDContactsEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetAlliancesAllianceIDContactsEnhanceYourCalm) Error() string {
@@ -605,6 +635,11 @@ func (o *GetAlliancesAllianceIDContactsInternalServerError) IsCode(code int) boo
 	return code == 500
 }
 
+// Code gets the status code for the get alliances alliance Id contacts internal server error response
+func (o *GetAlliancesAllianceIDContactsInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetAlliancesAllianceIDContactsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v2/alliances/{alliance_id}/contacts/][%d] getAlliancesAllianceIdContactsInternalServerError  %+v", 500, o.Payload)
 }
@@ -668,6 +703,11 @@ func (o *GetAlliancesAllianceIDContactsServiceUnavailable) IsCode(code int) bool
 	return code == 503
 }
 
+// Code gets the status code for the get alliances alliance Id contacts service unavailable response
+func (o *GetAlliancesAllianceIDContactsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetAlliancesAllianceIDContactsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v2/alliances/{alliance_id}/contacts/][%d] getAlliancesAllianceIdContactsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -729,6 +769,11 @@ func (o *GetAlliancesAllianceIDContactsGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get alliances alliance Id contacts gateway timeout response a status code equal to that given
 func (o *GetAlliancesAllianceIDContactsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get alliances alliance Id contacts gateway timeout response
+func (o *GetAlliancesAllianceIDContactsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetAlliancesAllianceIDContactsGatewayTimeout) Error() string {

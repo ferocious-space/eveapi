@@ -136,6 +136,11 @@ func (o *GetUniverseAsteroidBeltsAsteroidBeltIDOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get universe asteroid belts asteroid belt Id o k response
+func (o *GetUniverseAsteroidBeltsAsteroidBeltIDOK) Code() int {
+	return 200
+}
+
 func (o *GetUniverseAsteroidBeltsAsteroidBeltIDOK) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/asteroid_belts/{asteroid_belt_id}/][%d] getUniverseAsteroidBeltsAsteroidBeltIdOK  %+v", 200, o.Payload)
 }
@@ -242,6 +247,11 @@ func (o *GetUniverseAsteroidBeltsAsteroidBeltIDNotModified) IsCode(code int) boo
 	return code == 304
 }
 
+// Code gets the status code for the get universe asteroid belts asteroid belt Id not modified response
+func (o *GetUniverseAsteroidBeltsAsteroidBeltIDNotModified) Code() int {
+	return 304
+}
+
 func (o *GetUniverseAsteroidBeltsAsteroidBeltIDNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/asteroid_belts/{asteroid_belt_id}/][%d] getUniverseAsteroidBeltsAsteroidBeltIdNotModified ", 304)
 }
@@ -322,6 +332,11 @@ func (o *GetUniverseAsteroidBeltsAsteroidBeltIDBadRequest) IsCode(code int) bool
 	return code == 400
 }
 
+// Code gets the status code for the get universe asteroid belts asteroid belt Id bad request response
+func (o *GetUniverseAsteroidBeltsAsteroidBeltIDBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetUniverseAsteroidBeltsAsteroidBeltIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/asteroid_belts/{asteroid_belt_id}/][%d] getUniverseAsteroidBeltsAsteroidBeltIdBadRequest  %+v", 400, o.Payload)
 }
@@ -383,6 +398,11 @@ func (o *GetUniverseAsteroidBeltsAsteroidBeltIDNotFound) IsServerError() bool {
 // IsCode returns true when this get universe asteroid belts asteroid belt Id not found response a status code equal to that given
 func (o *GetUniverseAsteroidBeltsAsteroidBeltIDNotFound) IsCode(code int) bool {
 	return code == 404
+}
+
+// Code gets the status code for the get universe asteroid belts asteroid belt Id not found response
+func (o *GetUniverseAsteroidBeltsAsteroidBeltIDNotFound) Code() int {
+	return 404
 }
 
 func (o *GetUniverseAsteroidBeltsAsteroidBeltIDNotFound) Error() string {
@@ -448,6 +468,11 @@ func (o *GetUniverseAsteroidBeltsAsteroidBeltIDEnhanceYourCalm) IsCode(code int)
 	return code == 420
 }
 
+// Code gets the status code for the get universe asteroid belts asteroid belt Id enhance your calm response
+func (o *GetUniverseAsteroidBeltsAsteroidBeltIDEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *GetUniverseAsteroidBeltsAsteroidBeltIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/asteroid_belts/{asteroid_belt_id}/][%d] getUniverseAsteroidBeltsAsteroidBeltIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -509,6 +534,11 @@ func (o *GetUniverseAsteroidBeltsAsteroidBeltIDInternalServerError) IsServerErro
 // IsCode returns true when this get universe asteroid belts asteroid belt Id internal server error response a status code equal to that given
 func (o *GetUniverseAsteroidBeltsAsteroidBeltIDInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the get universe asteroid belts asteroid belt Id internal server error response
+func (o *GetUniverseAsteroidBeltsAsteroidBeltIDInternalServerError) Code() int {
+	return 500
 }
 
 func (o *GetUniverseAsteroidBeltsAsteroidBeltIDInternalServerError) Error() string {
@@ -574,6 +604,11 @@ func (o *GetUniverseAsteroidBeltsAsteroidBeltIDServiceUnavailable) IsCode(code i
 	return code == 503
 }
 
+// Code gets the status code for the get universe asteroid belts asteroid belt Id service unavailable response
+func (o *GetUniverseAsteroidBeltsAsteroidBeltIDServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetUniverseAsteroidBeltsAsteroidBeltIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/asteroid_belts/{asteroid_belt_id}/][%d] getUniverseAsteroidBeltsAsteroidBeltIdServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -635,6 +670,11 @@ func (o *GetUniverseAsteroidBeltsAsteroidBeltIDGatewayTimeout) IsServerError() b
 // IsCode returns true when this get universe asteroid belts asteroid belt Id gateway timeout response a status code equal to that given
 func (o *GetUniverseAsteroidBeltsAsteroidBeltIDGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get universe asteroid belts asteroid belt Id gateway timeout response
+func (o *GetUniverseAsteroidBeltsAsteroidBeltIDGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetUniverseAsteroidBeltsAsteroidBeltIDGatewayTimeout) Error() string {

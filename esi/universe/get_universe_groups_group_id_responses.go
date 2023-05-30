@@ -140,6 +140,11 @@ func (o *GetUniverseGroupsGroupIDOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get universe groups group Id o k response
+func (o *GetUniverseGroupsGroupIDOK) Code() int {
+	return 200
+}
+
 func (o *GetUniverseGroupsGroupIDOK) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/groups/{group_id}/][%d] getUniverseGroupsGroupIdOK  %+v", 200, o.Payload)
 }
@@ -253,6 +258,11 @@ func (o *GetUniverseGroupsGroupIDNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get universe groups group Id not modified response
+func (o *GetUniverseGroupsGroupIDNotModified) Code() int {
+	return 304
+}
+
 func (o *GetUniverseGroupsGroupIDNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/groups/{group_id}/][%d] getUniverseGroupsGroupIdNotModified ", 304)
 }
@@ -333,6 +343,11 @@ func (o *GetUniverseGroupsGroupIDBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get universe groups group Id bad request response
+func (o *GetUniverseGroupsGroupIDBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetUniverseGroupsGroupIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/groups/{group_id}/][%d] getUniverseGroupsGroupIdBadRequest  %+v", 400, o.Payload)
 }
@@ -394,6 +409,11 @@ func (o *GetUniverseGroupsGroupIDNotFound) IsServerError() bool {
 // IsCode returns true when this get universe groups group Id not found response a status code equal to that given
 func (o *GetUniverseGroupsGroupIDNotFound) IsCode(code int) bool {
 	return code == 404
+}
+
+// Code gets the status code for the get universe groups group Id not found response
+func (o *GetUniverseGroupsGroupIDNotFound) Code() int {
+	return 404
 }
 
 func (o *GetUniverseGroupsGroupIDNotFound) Error() string {
@@ -459,6 +479,11 @@ func (o *GetUniverseGroupsGroupIDEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
 }
 
+// Code gets the status code for the get universe groups group Id enhance your calm response
+func (o *GetUniverseGroupsGroupIDEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *GetUniverseGroupsGroupIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/groups/{group_id}/][%d] getUniverseGroupsGroupIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -520,6 +545,11 @@ func (o *GetUniverseGroupsGroupIDInternalServerError) IsServerError() bool {
 // IsCode returns true when this get universe groups group Id internal server error response a status code equal to that given
 func (o *GetUniverseGroupsGroupIDInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the get universe groups group Id internal server error response
+func (o *GetUniverseGroupsGroupIDInternalServerError) Code() int {
+	return 500
 }
 
 func (o *GetUniverseGroupsGroupIDInternalServerError) Error() string {
@@ -585,6 +615,11 @@ func (o *GetUniverseGroupsGroupIDServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get universe groups group Id service unavailable response
+func (o *GetUniverseGroupsGroupIDServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetUniverseGroupsGroupIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/groups/{group_id}/][%d] getUniverseGroupsGroupIdServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -646,6 +681,11 @@ func (o *GetUniverseGroupsGroupIDGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get universe groups group Id gateway timeout response a status code equal to that given
 func (o *GetUniverseGroupsGroupIDGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get universe groups group Id gateway timeout response
+func (o *GetUniverseGroupsGroupIDGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetUniverseGroupsGroupIDGatewayTimeout) Error() string {

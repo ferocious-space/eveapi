@@ -126,6 +126,11 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get characters character Id planets planet Id o k response
+func (o *GetCharactersCharacterIDPlanetsPlanetIDOK) Code() int {
+	return 200
+}
+
 func (o *GetCharactersCharacterIDPlanetsPlanetIDOK) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/planets/{planet_id}/][%d] getCharactersCharacterIdPlanetsPlanetIdOK  %+v", 200, o.Payload)
 }
@@ -187,6 +192,11 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDBadRequest) IsServerError() bool
 // IsCode returns true when this get characters character Id planets planet Id bad request response a status code equal to that given
 func (o *GetCharactersCharacterIDPlanetsPlanetIDBadRequest) IsCode(code int) bool {
 	return code == 400
+}
+
+// Code gets the status code for the get characters character Id planets planet Id bad request response
+func (o *GetCharactersCharacterIDPlanetsPlanetIDBadRequest) Code() int {
+	return 400
 }
 
 func (o *GetCharactersCharacterIDPlanetsPlanetIDBadRequest) Error() string {
@@ -252,6 +262,11 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDUnauthorized) IsCode(code int) b
 	return code == 401
 }
 
+// Code gets the status code for the get characters character Id planets planet Id unauthorized response
+func (o *GetCharactersCharacterIDPlanetsPlanetIDUnauthorized) Code() int {
+	return 401
+}
+
 func (o *GetCharactersCharacterIDPlanetsPlanetIDUnauthorized) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/planets/{planet_id}/][%d] getCharactersCharacterIdPlanetsPlanetIdUnauthorized  %+v", 401, o.Payload)
 }
@@ -313,6 +328,11 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDForbidden) IsServerError() bool 
 // IsCode returns true when this get characters character Id planets planet Id forbidden response a status code equal to that given
 func (o *GetCharactersCharacterIDPlanetsPlanetIDForbidden) IsCode(code int) bool {
 	return code == 403
+}
+
+// Code gets the status code for the get characters character Id planets planet Id forbidden response
+func (o *GetCharactersCharacterIDPlanetsPlanetIDForbidden) Code() int {
+	return 403
 }
 
 func (o *GetCharactersCharacterIDPlanetsPlanetIDForbidden) Error() string {
@@ -378,6 +398,11 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDNotFound) IsCode(code int) bool 
 	return code == 404
 }
 
+// Code gets the status code for the get characters character Id planets planet Id not found response
+func (o *GetCharactersCharacterIDPlanetsPlanetIDNotFound) Code() int {
+	return 404
+}
+
 func (o *GetCharactersCharacterIDPlanetsPlanetIDNotFound) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/planets/{planet_id}/][%d] getCharactersCharacterIdPlanetsPlanetIdNotFound  %+v", 404, o.Payload)
 }
@@ -439,6 +464,11 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDEnhanceYourCalm) IsServerError()
 // IsCode returns true when this get characters character Id planets planet Id enhance your calm response a status code equal to that given
 func (o *GetCharactersCharacterIDPlanetsPlanetIDEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get characters character Id planets planet Id enhance your calm response
+func (o *GetCharactersCharacterIDPlanetsPlanetIDEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetCharactersCharacterIDPlanetsPlanetIDEnhanceYourCalm) Error() string {
@@ -504,6 +534,11 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDInternalServerError) IsCode(code
 	return code == 500
 }
 
+// Code gets the status code for the get characters character Id planets planet Id internal server error response
+func (o *GetCharactersCharacterIDPlanetsPlanetIDInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetCharactersCharacterIDPlanetsPlanetIDInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/planets/{planet_id}/][%d] getCharactersCharacterIdPlanetsPlanetIdInternalServerError  %+v", 500, o.Payload)
 }
@@ -567,6 +602,11 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDServiceUnavailable) IsCode(code 
 	return code == 503
 }
 
+// Code gets the status code for the get characters character Id planets planet Id service unavailable response
+func (o *GetCharactersCharacterIDPlanetsPlanetIDServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCharactersCharacterIDPlanetsPlanetIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v3/characters/{character_id}/planets/{planet_id}/][%d] getCharactersCharacterIdPlanetsPlanetIdServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -628,6 +668,11 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDGatewayTimeout) IsServerError() 
 // IsCode returns true when this get characters character Id planets planet Id gateway timeout response a status code equal to that given
 func (o *GetCharactersCharacterIDPlanetsPlanetIDGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get characters character Id planets planet Id gateway timeout response
+func (o *GetCharactersCharacterIDPlanetsPlanetIDGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCharactersCharacterIDPlanetsPlanetIDGatewayTimeout) Error() string {

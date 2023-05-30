@@ -126,6 +126,11 @@ func (o *GetUniverseRegionsOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get universe regions o k response
+func (o *GetUniverseRegionsOK) Code() int {
+	return 200
+}
+
 func (o *GetUniverseRegionsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/regions/][%d] getUniverseRegionsOK  %+v", 200, o.Payload)
 }
@@ -230,6 +235,11 @@ func (o *GetUniverseRegionsNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get universe regions not modified response
+func (o *GetUniverseRegionsNotModified) Code() int {
+	return 304
+}
+
 func (o *GetUniverseRegionsNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/regions/][%d] getUniverseRegionsNotModified ", 304)
 }
@@ -310,6 +320,11 @@ func (o *GetUniverseRegionsBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get universe regions bad request response
+func (o *GetUniverseRegionsBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetUniverseRegionsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/regions/][%d] getUniverseRegionsBadRequest  %+v", 400, o.Payload)
 }
@@ -371,6 +386,11 @@ func (o *GetUniverseRegionsEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get universe regions enhance your calm response a status code equal to that given
 func (o *GetUniverseRegionsEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get universe regions enhance your calm response
+func (o *GetUniverseRegionsEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetUniverseRegionsEnhanceYourCalm) Error() string {
@@ -436,6 +456,11 @@ func (o *GetUniverseRegionsInternalServerError) IsCode(code int) bool {
 	return code == 500
 }
 
+// Code gets the status code for the get universe regions internal server error response
+func (o *GetUniverseRegionsInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetUniverseRegionsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/regions/][%d] getUniverseRegionsInternalServerError  %+v", 500, o.Payload)
 }
@@ -499,6 +524,11 @@ func (o *GetUniverseRegionsServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get universe regions service unavailable response
+func (o *GetUniverseRegionsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetUniverseRegionsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/regions/][%d] getUniverseRegionsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -560,6 +590,11 @@ func (o *GetUniverseRegionsGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get universe regions gateway timeout response a status code equal to that given
 func (o *GetUniverseRegionsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get universe regions gateway timeout response
+func (o *GetUniverseRegionsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetUniverseRegionsGatewayTimeout) Error() string {

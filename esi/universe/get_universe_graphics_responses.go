@@ -126,6 +126,11 @@ func (o *GetUniverseGraphicsOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get universe graphics o k response
+func (o *GetUniverseGraphicsOK) Code() int {
+	return 200
+}
+
 func (o *GetUniverseGraphicsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/graphics/][%d] getUniverseGraphicsOK  %+v", 200, o.Payload)
 }
@@ -230,6 +235,11 @@ func (o *GetUniverseGraphicsNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get universe graphics not modified response
+func (o *GetUniverseGraphicsNotModified) Code() int {
+	return 304
+}
+
 func (o *GetUniverseGraphicsNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/graphics/][%d] getUniverseGraphicsNotModified ", 304)
 }
@@ -310,6 +320,11 @@ func (o *GetUniverseGraphicsBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get universe graphics bad request response
+func (o *GetUniverseGraphicsBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetUniverseGraphicsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/graphics/][%d] getUniverseGraphicsBadRequest  %+v", 400, o.Payload)
 }
@@ -371,6 +386,11 @@ func (o *GetUniverseGraphicsEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get universe graphics enhance your calm response a status code equal to that given
 func (o *GetUniverseGraphicsEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get universe graphics enhance your calm response
+func (o *GetUniverseGraphicsEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetUniverseGraphicsEnhanceYourCalm) Error() string {
@@ -436,6 +456,11 @@ func (o *GetUniverseGraphicsInternalServerError) IsCode(code int) bool {
 	return code == 500
 }
 
+// Code gets the status code for the get universe graphics internal server error response
+func (o *GetUniverseGraphicsInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetUniverseGraphicsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/graphics/][%d] getUniverseGraphicsInternalServerError  %+v", 500, o.Payload)
 }
@@ -499,6 +524,11 @@ func (o *GetUniverseGraphicsServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get universe graphics service unavailable response
+func (o *GetUniverseGraphicsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetUniverseGraphicsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/graphics/][%d] getUniverseGraphicsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -560,6 +590,11 @@ func (o *GetUniverseGraphicsGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get universe graphics gateway timeout response a status code equal to that given
 func (o *GetUniverseGraphicsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get universe graphics gateway timeout response
+func (o *GetUniverseGraphicsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetUniverseGraphicsGatewayTimeout) Error() string {

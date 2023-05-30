@@ -119,6 +119,11 @@ func (o *PutCharactersCharacterIDMailMailIDNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the put characters character Id mail mail Id no content response
+func (o *PutCharactersCharacterIDMailMailIDNoContent) Code() int {
+	return 204
+}
+
 func (o *PutCharactersCharacterIDMailMailIDNoContent) Error() string {
 	return fmt.Sprintf("[PUT /v1/characters/{character_id}/mail/{mail_id}/][%d] putCharactersCharacterIdMailMailIdNoContent ", 204)
 }
@@ -169,6 +174,11 @@ func (o *PutCharactersCharacterIDMailMailIDBadRequest) IsServerError() bool {
 // IsCode returns true when this put characters character Id mail mail Id bad request response a status code equal to that given
 func (o *PutCharactersCharacterIDMailMailIDBadRequest) IsCode(code int) bool {
 	return code == 400
+}
+
+// Code gets the status code for the put characters character Id mail mail Id bad request response
+func (o *PutCharactersCharacterIDMailMailIDBadRequest) Code() int {
+	return 400
 }
 
 func (o *PutCharactersCharacterIDMailMailIDBadRequest) Error() string {
@@ -234,6 +244,11 @@ func (o *PutCharactersCharacterIDMailMailIDUnauthorized) IsCode(code int) bool {
 	return code == 401
 }
 
+// Code gets the status code for the put characters character Id mail mail Id unauthorized response
+func (o *PutCharactersCharacterIDMailMailIDUnauthorized) Code() int {
+	return 401
+}
+
 func (o *PutCharactersCharacterIDMailMailIDUnauthorized) Error() string {
 	return fmt.Sprintf("[PUT /v1/characters/{character_id}/mail/{mail_id}/][%d] putCharactersCharacterIdMailMailIdUnauthorized  %+v", 401, o.Payload)
 }
@@ -295,6 +310,11 @@ func (o *PutCharactersCharacterIDMailMailIDForbidden) IsServerError() bool {
 // IsCode returns true when this put characters character Id mail mail Id forbidden response a status code equal to that given
 func (o *PutCharactersCharacterIDMailMailIDForbidden) IsCode(code int) bool {
 	return code == 403
+}
+
+// Code gets the status code for the put characters character Id mail mail Id forbidden response
+func (o *PutCharactersCharacterIDMailMailIDForbidden) Code() int {
+	return 403
 }
 
 func (o *PutCharactersCharacterIDMailMailIDForbidden) Error() string {
@@ -360,6 +380,11 @@ func (o *PutCharactersCharacterIDMailMailIDEnhanceYourCalm) IsCode(code int) boo
 	return code == 420
 }
 
+// Code gets the status code for the put characters character Id mail mail Id enhance your calm response
+func (o *PutCharactersCharacterIDMailMailIDEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *PutCharactersCharacterIDMailMailIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[PUT /v1/characters/{character_id}/mail/{mail_id}/][%d] putCharactersCharacterIdMailMailIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -421,6 +446,11 @@ func (o *PutCharactersCharacterIDMailMailIDInternalServerError) IsServerError() 
 // IsCode returns true when this put characters character Id mail mail Id internal server error response a status code equal to that given
 func (o *PutCharactersCharacterIDMailMailIDInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the put characters character Id mail mail Id internal server error response
+func (o *PutCharactersCharacterIDMailMailIDInternalServerError) Code() int {
+	return 500
 }
 
 func (o *PutCharactersCharacterIDMailMailIDInternalServerError) Error() string {
@@ -486,6 +516,11 @@ func (o *PutCharactersCharacterIDMailMailIDServiceUnavailable) IsCode(code int) 
 	return code == 503
 }
 
+// Code gets the status code for the put characters character Id mail mail Id service unavailable response
+func (o *PutCharactersCharacterIDMailMailIDServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *PutCharactersCharacterIDMailMailIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[PUT /v1/characters/{character_id}/mail/{mail_id}/][%d] putCharactersCharacterIdMailMailIdServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -547,6 +582,11 @@ func (o *PutCharactersCharacterIDMailMailIDGatewayTimeout) IsServerError() bool 
 // IsCode returns true when this put characters character Id mail mail Id gateway timeout response a status code equal to that given
 func (o *PutCharactersCharacterIDMailMailIDGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the put characters character Id mail mail Id gateway timeout response
+func (o *PutCharactersCharacterIDMailMailIDGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *PutCharactersCharacterIDMailMailIDGatewayTimeout) Error() string {

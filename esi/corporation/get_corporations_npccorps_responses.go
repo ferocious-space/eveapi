@@ -126,6 +126,11 @@ func (o *GetCorporationsNpccorpsOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get corporations npccorps o k response
+func (o *GetCorporationsNpccorpsOK) Code() int {
+	return 200
+}
+
 func (o *GetCorporationsNpccorpsOK) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/npccorps/][%d] getCorporationsNpccorpsOK  %+v", 200, o.Payload)
 }
@@ -230,6 +235,11 @@ func (o *GetCorporationsNpccorpsNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get corporations npccorps not modified response
+func (o *GetCorporationsNpccorpsNotModified) Code() int {
+	return 304
+}
+
 func (o *GetCorporationsNpccorpsNotModified) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/npccorps/][%d] getCorporationsNpccorpsNotModified ", 304)
 }
@@ -310,6 +320,11 @@ func (o *GetCorporationsNpccorpsBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get corporations npccorps bad request response
+func (o *GetCorporationsNpccorpsBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetCorporationsNpccorpsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/npccorps/][%d] getCorporationsNpccorpsBadRequest  %+v", 400, o.Payload)
 }
@@ -371,6 +386,11 @@ func (o *GetCorporationsNpccorpsEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get corporations npccorps enhance your calm response a status code equal to that given
 func (o *GetCorporationsNpccorpsEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get corporations npccorps enhance your calm response
+func (o *GetCorporationsNpccorpsEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetCorporationsNpccorpsEnhanceYourCalm) Error() string {
@@ -436,6 +456,11 @@ func (o *GetCorporationsNpccorpsInternalServerError) IsCode(code int) bool {
 	return code == 500
 }
 
+// Code gets the status code for the get corporations npccorps internal server error response
+func (o *GetCorporationsNpccorpsInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetCorporationsNpccorpsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/npccorps/][%d] getCorporationsNpccorpsInternalServerError  %+v", 500, o.Payload)
 }
@@ -499,6 +524,11 @@ func (o *GetCorporationsNpccorpsServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get corporations npccorps service unavailable response
+func (o *GetCorporationsNpccorpsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCorporationsNpccorpsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/npccorps/][%d] getCorporationsNpccorpsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -560,6 +590,11 @@ func (o *GetCorporationsNpccorpsGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get corporations npccorps gateway timeout response a status code equal to that given
 func (o *GetCorporationsNpccorpsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get corporations npccorps gateway timeout response
+func (o *GetCorporationsNpccorpsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCorporationsNpccorpsGatewayTimeout) Error() string {

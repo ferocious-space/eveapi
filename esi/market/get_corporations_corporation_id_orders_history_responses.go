@@ -158,6 +158,11 @@ func (o *GetCorporationsCorporationIDOrdersHistoryOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get corporations corporation Id orders history o k response
+func (o *GetCorporationsCorporationIDOrdersHistoryOK) Code() int {
+	return 200
+}
+
 func (o *GetCorporationsCorporationIDOrdersHistoryOK) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/orders/history/][%d] getCorporationsCorporationIdOrdersHistoryOK  %+v", 200, o.Payload)
 }
@@ -273,6 +278,11 @@ func (o *GetCorporationsCorporationIDOrdersHistoryNotModified) IsCode(code int) 
 	return code == 304
 }
 
+// Code gets the status code for the get corporations corporation Id orders history not modified response
+func (o *GetCorporationsCorporationIDOrdersHistoryNotModified) Code() int {
+	return 304
+}
+
 func (o *GetCorporationsCorporationIDOrdersHistoryNotModified) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/orders/history/][%d] getCorporationsCorporationIdOrdersHistoryNotModified ", 304)
 }
@@ -353,6 +363,11 @@ func (o *GetCorporationsCorporationIDOrdersHistoryBadRequest) IsCode(code int) b
 	return code == 400
 }
 
+// Code gets the status code for the get corporations corporation Id orders history bad request response
+func (o *GetCorporationsCorporationIDOrdersHistoryBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetCorporationsCorporationIDOrdersHistoryBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/orders/history/][%d] getCorporationsCorporationIdOrdersHistoryBadRequest  %+v", 400, o.Payload)
 }
@@ -414,6 +429,11 @@ func (o *GetCorporationsCorporationIDOrdersHistoryUnauthorized) IsServerError() 
 // IsCode returns true when this get corporations corporation Id orders history unauthorized response a status code equal to that given
 func (o *GetCorporationsCorporationIDOrdersHistoryUnauthorized) IsCode(code int) bool {
 	return code == 401
+}
+
+// Code gets the status code for the get corporations corporation Id orders history unauthorized response
+func (o *GetCorporationsCorporationIDOrdersHistoryUnauthorized) Code() int {
+	return 401
 }
 
 func (o *GetCorporationsCorporationIDOrdersHistoryUnauthorized) Error() string {
@@ -479,6 +499,11 @@ func (o *GetCorporationsCorporationIDOrdersHistoryForbidden) IsCode(code int) bo
 	return code == 403
 }
 
+// Code gets the status code for the get corporations corporation Id orders history forbidden response
+func (o *GetCorporationsCorporationIDOrdersHistoryForbidden) Code() int {
+	return 403
+}
+
 func (o *GetCorporationsCorporationIDOrdersHistoryForbidden) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/orders/history/][%d] getCorporationsCorporationIdOrdersHistoryForbidden  %+v", 403, o.Payload)
 }
@@ -540,6 +565,11 @@ func (o *GetCorporationsCorporationIDOrdersHistoryEnhanceYourCalm) IsServerError
 // IsCode returns true when this get corporations corporation Id orders history enhance your calm response a status code equal to that given
 func (o *GetCorporationsCorporationIDOrdersHistoryEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get corporations corporation Id orders history enhance your calm response
+func (o *GetCorporationsCorporationIDOrdersHistoryEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetCorporationsCorporationIDOrdersHistoryEnhanceYourCalm) Error() string {
@@ -605,6 +635,11 @@ func (o *GetCorporationsCorporationIDOrdersHistoryInternalServerError) IsCode(co
 	return code == 500
 }
 
+// Code gets the status code for the get corporations corporation Id orders history internal server error response
+func (o *GetCorporationsCorporationIDOrdersHistoryInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetCorporationsCorporationIDOrdersHistoryInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/orders/history/][%d] getCorporationsCorporationIdOrdersHistoryInternalServerError  %+v", 500, o.Payload)
 }
@@ -668,6 +703,11 @@ func (o *GetCorporationsCorporationIDOrdersHistoryServiceUnavailable) IsCode(cod
 	return code == 503
 }
 
+// Code gets the status code for the get corporations corporation Id orders history service unavailable response
+func (o *GetCorporationsCorporationIDOrdersHistoryServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCorporationsCorporationIDOrdersHistoryServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/orders/history/][%d] getCorporationsCorporationIdOrdersHistoryServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -729,6 +769,11 @@ func (o *GetCorporationsCorporationIDOrdersHistoryGatewayTimeout) IsServerError(
 // IsCode returns true when this get corporations corporation Id orders history gateway timeout response a status code equal to that given
 func (o *GetCorporationsCorporationIDOrdersHistoryGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get corporations corporation Id orders history gateway timeout response
+func (o *GetCorporationsCorporationIDOrdersHistoryGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCorporationsCorporationIDOrdersHistoryGatewayTimeout) Error() string {

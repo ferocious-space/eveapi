@@ -143,6 +143,11 @@ func (o *GetCharactersCharacterIDNotificationsOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get characters character Id notifications o k response
+func (o *GetCharactersCharacterIDNotificationsOK) Code() int {
+	return 200
+}
+
 func (o *GetCharactersCharacterIDNotificationsOK) Error() string {
 	return fmt.Sprintf("[GET /v5/characters/{character_id}/notifications/][%d] getCharactersCharacterIdNotificationsOK  %+v", 200, o.Payload)
 }
@@ -247,6 +252,11 @@ func (o *GetCharactersCharacterIDNotificationsNotModified) IsCode(code int) bool
 	return code == 304
 }
 
+// Code gets the status code for the get characters character Id notifications not modified response
+func (o *GetCharactersCharacterIDNotificationsNotModified) Code() int {
+	return 304
+}
+
 func (o *GetCharactersCharacterIDNotificationsNotModified) Error() string {
 	return fmt.Sprintf("[GET /v5/characters/{character_id}/notifications/][%d] getCharactersCharacterIdNotificationsNotModified ", 304)
 }
@@ -327,6 +337,11 @@ func (o *GetCharactersCharacterIDNotificationsBadRequest) IsCode(code int) bool 
 	return code == 400
 }
 
+// Code gets the status code for the get characters character Id notifications bad request response
+func (o *GetCharactersCharacterIDNotificationsBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetCharactersCharacterIDNotificationsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v5/characters/{character_id}/notifications/][%d] getCharactersCharacterIdNotificationsBadRequest  %+v", 400, o.Payload)
 }
@@ -388,6 +403,11 @@ func (o *GetCharactersCharacterIDNotificationsUnauthorized) IsServerError() bool
 // IsCode returns true when this get characters character Id notifications unauthorized response a status code equal to that given
 func (o *GetCharactersCharacterIDNotificationsUnauthorized) IsCode(code int) bool {
 	return code == 401
+}
+
+// Code gets the status code for the get characters character Id notifications unauthorized response
+func (o *GetCharactersCharacterIDNotificationsUnauthorized) Code() int {
+	return 401
 }
 
 func (o *GetCharactersCharacterIDNotificationsUnauthorized) Error() string {
@@ -453,6 +473,11 @@ func (o *GetCharactersCharacterIDNotificationsForbidden) IsCode(code int) bool {
 	return code == 403
 }
 
+// Code gets the status code for the get characters character Id notifications forbidden response
+func (o *GetCharactersCharacterIDNotificationsForbidden) Code() int {
+	return 403
+}
+
 func (o *GetCharactersCharacterIDNotificationsForbidden) Error() string {
 	return fmt.Sprintf("[GET /v5/characters/{character_id}/notifications/][%d] getCharactersCharacterIdNotificationsForbidden  %+v", 403, o.Payload)
 }
@@ -514,6 +539,11 @@ func (o *GetCharactersCharacterIDNotificationsEnhanceYourCalm) IsServerError() b
 // IsCode returns true when this get characters character Id notifications enhance your calm response a status code equal to that given
 func (o *GetCharactersCharacterIDNotificationsEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get characters character Id notifications enhance your calm response
+func (o *GetCharactersCharacterIDNotificationsEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetCharactersCharacterIDNotificationsEnhanceYourCalm) Error() string {
@@ -579,6 +609,11 @@ func (o *GetCharactersCharacterIDNotificationsInternalServerError) IsCode(code i
 	return code == 500
 }
 
+// Code gets the status code for the get characters character Id notifications internal server error response
+func (o *GetCharactersCharacterIDNotificationsInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetCharactersCharacterIDNotificationsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v5/characters/{character_id}/notifications/][%d] getCharactersCharacterIdNotificationsInternalServerError  %+v", 500, o.Payload)
 }
@@ -642,6 +677,11 @@ func (o *GetCharactersCharacterIDNotificationsServiceUnavailable) IsCode(code in
 	return code == 503
 }
 
+// Code gets the status code for the get characters character Id notifications service unavailable response
+func (o *GetCharactersCharacterIDNotificationsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCharactersCharacterIDNotificationsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v5/characters/{character_id}/notifications/][%d] getCharactersCharacterIdNotificationsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -703,6 +743,11 @@ func (o *GetCharactersCharacterIDNotificationsGatewayTimeout) IsServerError() bo
 // IsCode returns true when this get characters character Id notifications gateway timeout response a status code equal to that given
 func (o *GetCharactersCharacterIDNotificationsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get characters character Id notifications gateway timeout response
+func (o *GetCharactersCharacterIDNotificationsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCharactersCharacterIDNotificationsGatewayTimeout) Error() string {

@@ -132,6 +132,11 @@ func (o *GetSovereigntyCampaignsOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get sovereignty campaigns o k response
+func (o *GetSovereigntyCampaignsOK) Code() int {
+	return 200
+}
+
 func (o *GetSovereigntyCampaignsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/campaigns/][%d] getSovereigntyCampaignsOK  %+v", 200, o.Payload)
 }
@@ -236,6 +241,11 @@ func (o *GetSovereigntyCampaignsNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get sovereignty campaigns not modified response
+func (o *GetSovereigntyCampaignsNotModified) Code() int {
+	return 304
+}
+
 func (o *GetSovereigntyCampaignsNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/campaigns/][%d] getSovereigntyCampaignsNotModified ", 304)
 }
@@ -316,6 +326,11 @@ func (o *GetSovereigntyCampaignsBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get sovereignty campaigns bad request response
+func (o *GetSovereigntyCampaignsBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetSovereigntyCampaignsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/campaigns/][%d] getSovereigntyCampaignsBadRequest  %+v", 400, o.Payload)
 }
@@ -377,6 +392,11 @@ func (o *GetSovereigntyCampaignsEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get sovereignty campaigns enhance your calm response a status code equal to that given
 func (o *GetSovereigntyCampaignsEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get sovereignty campaigns enhance your calm response
+func (o *GetSovereigntyCampaignsEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetSovereigntyCampaignsEnhanceYourCalm) Error() string {
@@ -442,6 +462,11 @@ func (o *GetSovereigntyCampaignsInternalServerError) IsCode(code int) bool {
 	return code == 500
 }
 
+// Code gets the status code for the get sovereignty campaigns internal server error response
+func (o *GetSovereigntyCampaignsInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetSovereigntyCampaignsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/campaigns/][%d] getSovereigntyCampaignsInternalServerError  %+v", 500, o.Payload)
 }
@@ -505,6 +530,11 @@ func (o *GetSovereigntyCampaignsServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get sovereignty campaigns service unavailable response
+func (o *GetSovereigntyCampaignsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetSovereigntyCampaignsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/sovereignty/campaigns/][%d] getSovereigntyCampaignsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -566,6 +596,11 @@ func (o *GetSovereigntyCampaignsGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get sovereignty campaigns gateway timeout response a status code equal to that given
 func (o *GetSovereigntyCampaignsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get sovereignty campaigns gateway timeout response
+func (o *GetSovereigntyCampaignsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetSovereigntyCampaignsGatewayTimeout) Error() string {

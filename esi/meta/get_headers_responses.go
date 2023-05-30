@@ -71,6 +71,11 @@ func (o *GetHeadersOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get headers o k response
+func (o *GetHeadersOK) Code() int {
+	return 200
+}
+
 func (o *GetHeadersOK) Error() string {
 	return fmt.Sprintf("[GET /headers/][%d] getHeadersOK  %+v", 200, o.Payload)
 }

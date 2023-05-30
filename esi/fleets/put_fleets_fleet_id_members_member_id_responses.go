@@ -131,6 +131,11 @@ func (o *PutFleetsFleetIDMembersMemberIDNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the put fleets fleet Id members member Id no content response
+func (o *PutFleetsFleetIDMembersMemberIDNoContent) Code() int {
+	return 204
+}
+
 func (o *PutFleetsFleetIDMembersMemberIDNoContent) Error() string {
 	return fmt.Sprintf("[PUT /v1/fleets/{fleet_id}/members/{member_id}/][%d] putFleetsFleetIdMembersMemberIdNoContent ", 204)
 }
@@ -181,6 +186,11 @@ func (o *PutFleetsFleetIDMembersMemberIDBadRequest) IsServerError() bool {
 // IsCode returns true when this put fleets fleet Id members member Id bad request response a status code equal to that given
 func (o *PutFleetsFleetIDMembersMemberIDBadRequest) IsCode(code int) bool {
 	return code == 400
+}
+
+// Code gets the status code for the put fleets fleet Id members member Id bad request response
+func (o *PutFleetsFleetIDMembersMemberIDBadRequest) Code() int {
+	return 400
 }
 
 func (o *PutFleetsFleetIDMembersMemberIDBadRequest) Error() string {
@@ -246,6 +256,11 @@ func (o *PutFleetsFleetIDMembersMemberIDUnauthorized) IsCode(code int) bool {
 	return code == 401
 }
 
+// Code gets the status code for the put fleets fleet Id members member Id unauthorized response
+func (o *PutFleetsFleetIDMembersMemberIDUnauthorized) Code() int {
+	return 401
+}
+
 func (o *PutFleetsFleetIDMembersMemberIDUnauthorized) Error() string {
 	return fmt.Sprintf("[PUT /v1/fleets/{fleet_id}/members/{member_id}/][%d] putFleetsFleetIdMembersMemberIdUnauthorized  %+v", 401, o.Payload)
 }
@@ -307,6 +322,11 @@ func (o *PutFleetsFleetIDMembersMemberIDForbidden) IsServerError() bool {
 // IsCode returns true when this put fleets fleet Id members member Id forbidden response a status code equal to that given
 func (o *PutFleetsFleetIDMembersMemberIDForbidden) IsCode(code int) bool {
 	return code == 403
+}
+
+// Code gets the status code for the put fleets fleet Id members member Id forbidden response
+func (o *PutFleetsFleetIDMembersMemberIDForbidden) Code() int {
+	return 403
 }
 
 func (o *PutFleetsFleetIDMembersMemberIDForbidden) Error() string {
@@ -372,6 +392,11 @@ func (o *PutFleetsFleetIDMembersMemberIDNotFound) IsCode(code int) bool {
 	return code == 404
 }
 
+// Code gets the status code for the put fleets fleet Id members member Id not found response
+func (o *PutFleetsFleetIDMembersMemberIDNotFound) Code() int {
+	return 404
+}
+
 func (o *PutFleetsFleetIDMembersMemberIDNotFound) Error() string {
 	return fmt.Sprintf("[PUT /v1/fleets/{fleet_id}/members/{member_id}/][%d] putFleetsFleetIdMembersMemberIdNotFound  %+v", 404, o.Payload)
 }
@@ -433,6 +458,11 @@ func (o *PutFleetsFleetIDMembersMemberIDEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this put fleets fleet Id members member Id enhance your calm response a status code equal to that given
 func (o *PutFleetsFleetIDMembersMemberIDEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the put fleets fleet Id members member Id enhance your calm response
+func (o *PutFleetsFleetIDMembersMemberIDEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *PutFleetsFleetIDMembersMemberIDEnhanceYourCalm) Error() string {
@@ -498,6 +528,11 @@ func (o *PutFleetsFleetIDMembersMemberIDUnprocessableEntity) IsCode(code int) bo
 	return code == 422
 }
 
+// Code gets the status code for the put fleets fleet Id members member Id unprocessable entity response
+func (o *PutFleetsFleetIDMembersMemberIDUnprocessableEntity) Code() int {
+	return 422
+}
+
 func (o *PutFleetsFleetIDMembersMemberIDUnprocessableEntity) Error() string {
 	return fmt.Sprintf("[PUT /v1/fleets/{fleet_id}/members/{member_id}/][%d] putFleetsFleetIdMembersMemberIdUnprocessableEntity  %+v", 422, o.Payload)
 }
@@ -559,6 +594,11 @@ func (o *PutFleetsFleetIDMembersMemberIDInternalServerError) IsServerError() boo
 // IsCode returns true when this put fleets fleet Id members member Id internal server error response a status code equal to that given
 func (o *PutFleetsFleetIDMembersMemberIDInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the put fleets fleet Id members member Id internal server error response
+func (o *PutFleetsFleetIDMembersMemberIDInternalServerError) Code() int {
+	return 500
 }
 
 func (o *PutFleetsFleetIDMembersMemberIDInternalServerError) Error() string {
@@ -624,6 +664,11 @@ func (o *PutFleetsFleetIDMembersMemberIDServiceUnavailable) IsCode(code int) boo
 	return code == 503
 }
 
+// Code gets the status code for the put fleets fleet Id members member Id service unavailable response
+func (o *PutFleetsFleetIDMembersMemberIDServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *PutFleetsFleetIDMembersMemberIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[PUT /v1/fleets/{fleet_id}/members/{member_id}/][%d] putFleetsFleetIdMembersMemberIdServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -685,6 +730,11 @@ func (o *PutFleetsFleetIDMembersMemberIDGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this put fleets fleet Id members member Id gateway timeout response a status code equal to that given
 func (o *PutFleetsFleetIDMembersMemberIDGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the put fleets fleet Id members member Id gateway timeout response
+func (o *PutFleetsFleetIDMembersMemberIDGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *PutFleetsFleetIDMembersMemberIDGatewayTimeout) Error() string {

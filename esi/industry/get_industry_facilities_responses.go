@@ -130,6 +130,11 @@ func (o *GetIndustryFacilitiesOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get industry facilities o k response
+func (o *GetIndustryFacilitiesOK) Code() int {
+	return 200
+}
+
 func (o *GetIndustryFacilitiesOK) Error() string {
 	return fmt.Sprintf("[GET /v1/industry/facilities/][%d] getIndustryFacilitiesOK  %+v", 200, o.Payload)
 }
@@ -234,6 +239,11 @@ func (o *GetIndustryFacilitiesNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get industry facilities not modified response
+func (o *GetIndustryFacilitiesNotModified) Code() int {
+	return 304
+}
+
 func (o *GetIndustryFacilitiesNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/industry/facilities/][%d] getIndustryFacilitiesNotModified ", 304)
 }
@@ -314,6 +324,11 @@ func (o *GetIndustryFacilitiesBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get industry facilities bad request response
+func (o *GetIndustryFacilitiesBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetIndustryFacilitiesBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/industry/facilities/][%d] getIndustryFacilitiesBadRequest  %+v", 400, o.Payload)
 }
@@ -375,6 +390,11 @@ func (o *GetIndustryFacilitiesEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get industry facilities enhance your calm response a status code equal to that given
 func (o *GetIndustryFacilitiesEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get industry facilities enhance your calm response
+func (o *GetIndustryFacilitiesEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetIndustryFacilitiesEnhanceYourCalm) Error() string {
@@ -440,6 +460,11 @@ func (o *GetIndustryFacilitiesInternalServerError) IsCode(code int) bool {
 	return code == 500
 }
 
+// Code gets the status code for the get industry facilities internal server error response
+func (o *GetIndustryFacilitiesInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetIndustryFacilitiesInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/industry/facilities/][%d] getIndustryFacilitiesInternalServerError  %+v", 500, o.Payload)
 }
@@ -503,6 +528,11 @@ func (o *GetIndustryFacilitiesServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get industry facilities service unavailable response
+func (o *GetIndustryFacilitiesServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetIndustryFacilitiesServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/industry/facilities/][%d] getIndustryFacilitiesServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -564,6 +594,11 @@ func (o *GetIndustryFacilitiesGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get industry facilities gateway timeout response a status code equal to that given
 func (o *GetIndustryFacilitiesGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get industry facilities gateway timeout response
+func (o *GetIndustryFacilitiesGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetIndustryFacilitiesGatewayTimeout) Error() string {

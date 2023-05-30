@@ -138,6 +138,11 @@ func (o *GetUniverseStationsStationIDOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get universe stations station Id o k response
+func (o *GetUniverseStationsStationIDOK) Code() int {
+	return 200
+}
+
 func (o *GetUniverseStationsStationIDOK) Error() string {
 	return fmt.Sprintf("[GET /v2/universe/stations/{station_id}/][%d] getUniverseStationsStationIdOK  %+v", 200, o.Payload)
 }
@@ -244,6 +249,11 @@ func (o *GetUniverseStationsStationIDNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get universe stations station Id not modified response
+func (o *GetUniverseStationsStationIDNotModified) Code() int {
+	return 304
+}
+
 func (o *GetUniverseStationsStationIDNotModified) Error() string {
 	return fmt.Sprintf("[GET /v2/universe/stations/{station_id}/][%d] getUniverseStationsStationIdNotModified ", 304)
 }
@@ -324,6 +334,11 @@ func (o *GetUniverseStationsStationIDBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get universe stations station Id bad request response
+func (o *GetUniverseStationsStationIDBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetUniverseStationsStationIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v2/universe/stations/{station_id}/][%d] getUniverseStationsStationIdBadRequest  %+v", 400, o.Payload)
 }
@@ -385,6 +400,11 @@ func (o *GetUniverseStationsStationIDNotFound) IsServerError() bool {
 // IsCode returns true when this get universe stations station Id not found response a status code equal to that given
 func (o *GetUniverseStationsStationIDNotFound) IsCode(code int) bool {
 	return code == 404
+}
+
+// Code gets the status code for the get universe stations station Id not found response
+func (o *GetUniverseStationsStationIDNotFound) Code() int {
+	return 404
 }
 
 func (o *GetUniverseStationsStationIDNotFound) Error() string {
@@ -450,6 +470,11 @@ func (o *GetUniverseStationsStationIDEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
 }
 
+// Code gets the status code for the get universe stations station Id enhance your calm response
+func (o *GetUniverseStationsStationIDEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *GetUniverseStationsStationIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v2/universe/stations/{station_id}/][%d] getUniverseStationsStationIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -511,6 +536,11 @@ func (o *GetUniverseStationsStationIDInternalServerError) IsServerError() bool {
 // IsCode returns true when this get universe stations station Id internal server error response a status code equal to that given
 func (o *GetUniverseStationsStationIDInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the get universe stations station Id internal server error response
+func (o *GetUniverseStationsStationIDInternalServerError) Code() int {
+	return 500
 }
 
 func (o *GetUniverseStationsStationIDInternalServerError) Error() string {
@@ -576,6 +606,11 @@ func (o *GetUniverseStationsStationIDServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get universe stations station Id service unavailable response
+func (o *GetUniverseStationsStationIDServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetUniverseStationsStationIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v2/universe/stations/{station_id}/][%d] getUniverseStationsStationIdServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -637,6 +672,11 @@ func (o *GetUniverseStationsStationIDGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get universe stations station Id gateway timeout response a status code equal to that given
 func (o *GetUniverseStationsStationIDGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get universe stations station Id gateway timeout response
+func (o *GetUniverseStationsStationIDGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetUniverseStationsStationIDGatewayTimeout) Error() string {

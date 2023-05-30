@@ -134,6 +134,11 @@ func (o *GetOpportunitiesGroupsGroupIDOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get opportunities groups group Id o k response
+func (o *GetOpportunitiesGroupsGroupIDOK) Code() int {
+	return 200
+}
+
 func (o *GetOpportunitiesGroupsGroupIDOK) Error() string {
 	return fmt.Sprintf("[GET /v1/opportunities/groups/{group_id}/][%d] getOpportunitiesGroupsGroupIdOK  %+v", 200, o.Payload)
 }
@@ -247,6 +252,11 @@ func (o *GetOpportunitiesGroupsGroupIDNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get opportunities groups group Id not modified response
+func (o *GetOpportunitiesGroupsGroupIDNotModified) Code() int {
+	return 304
+}
+
 func (o *GetOpportunitiesGroupsGroupIDNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/opportunities/groups/{group_id}/][%d] getOpportunitiesGroupsGroupIdNotModified ", 304)
 }
@@ -327,6 +337,11 @@ func (o *GetOpportunitiesGroupsGroupIDBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get opportunities groups group Id bad request response
+func (o *GetOpportunitiesGroupsGroupIDBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetOpportunitiesGroupsGroupIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/opportunities/groups/{group_id}/][%d] getOpportunitiesGroupsGroupIdBadRequest  %+v", 400, o.Payload)
 }
@@ -388,6 +403,11 @@ func (o *GetOpportunitiesGroupsGroupIDEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get opportunities groups group Id enhance your calm response a status code equal to that given
 func (o *GetOpportunitiesGroupsGroupIDEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get opportunities groups group Id enhance your calm response
+func (o *GetOpportunitiesGroupsGroupIDEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetOpportunitiesGroupsGroupIDEnhanceYourCalm) Error() string {
@@ -453,6 +473,11 @@ func (o *GetOpportunitiesGroupsGroupIDInternalServerError) IsCode(code int) bool
 	return code == 500
 }
 
+// Code gets the status code for the get opportunities groups group Id internal server error response
+func (o *GetOpportunitiesGroupsGroupIDInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetOpportunitiesGroupsGroupIDInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/opportunities/groups/{group_id}/][%d] getOpportunitiesGroupsGroupIdInternalServerError  %+v", 500, o.Payload)
 }
@@ -516,6 +541,11 @@ func (o *GetOpportunitiesGroupsGroupIDServiceUnavailable) IsCode(code int) bool 
 	return code == 503
 }
 
+// Code gets the status code for the get opportunities groups group Id service unavailable response
+func (o *GetOpportunitiesGroupsGroupIDServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetOpportunitiesGroupsGroupIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/opportunities/groups/{group_id}/][%d] getOpportunitiesGroupsGroupIdServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -577,6 +607,11 @@ func (o *GetOpportunitiesGroupsGroupIDGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get opportunities groups group Id gateway timeout response a status code equal to that given
 func (o *GetOpportunitiesGroupsGroupIDGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get opportunities groups group Id gateway timeout response
+func (o *GetOpportunitiesGroupsGroupIDGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetOpportunitiesGroupsGroupIDGatewayTimeout) Error() string {

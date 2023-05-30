@@ -143,6 +143,11 @@ func (o *GetCharactersCharacterIDIndustryJobsOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get characters character Id industry jobs o k response
+func (o *GetCharactersCharacterIDIndustryJobsOK) Code() int {
+	return 200
+}
+
 func (o *GetCharactersCharacterIDIndustryJobsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/industry/jobs/][%d] getCharactersCharacterIdIndustryJobsOK  %+v", 200, o.Payload)
 }
@@ -247,6 +252,11 @@ func (o *GetCharactersCharacterIDIndustryJobsNotModified) IsCode(code int) bool 
 	return code == 304
 }
 
+// Code gets the status code for the get characters character Id industry jobs not modified response
+func (o *GetCharactersCharacterIDIndustryJobsNotModified) Code() int {
+	return 304
+}
+
 func (o *GetCharactersCharacterIDIndustryJobsNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/industry/jobs/][%d] getCharactersCharacterIdIndustryJobsNotModified ", 304)
 }
@@ -327,6 +337,11 @@ func (o *GetCharactersCharacterIDIndustryJobsBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get characters character Id industry jobs bad request response
+func (o *GetCharactersCharacterIDIndustryJobsBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetCharactersCharacterIDIndustryJobsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/industry/jobs/][%d] getCharactersCharacterIdIndustryJobsBadRequest  %+v", 400, o.Payload)
 }
@@ -388,6 +403,11 @@ func (o *GetCharactersCharacterIDIndustryJobsUnauthorized) IsServerError() bool 
 // IsCode returns true when this get characters character Id industry jobs unauthorized response a status code equal to that given
 func (o *GetCharactersCharacterIDIndustryJobsUnauthorized) IsCode(code int) bool {
 	return code == 401
+}
+
+// Code gets the status code for the get characters character Id industry jobs unauthorized response
+func (o *GetCharactersCharacterIDIndustryJobsUnauthorized) Code() int {
+	return 401
 }
 
 func (o *GetCharactersCharacterIDIndustryJobsUnauthorized) Error() string {
@@ -453,6 +473,11 @@ func (o *GetCharactersCharacterIDIndustryJobsForbidden) IsCode(code int) bool {
 	return code == 403
 }
 
+// Code gets the status code for the get characters character Id industry jobs forbidden response
+func (o *GetCharactersCharacterIDIndustryJobsForbidden) Code() int {
+	return 403
+}
+
 func (o *GetCharactersCharacterIDIndustryJobsForbidden) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/industry/jobs/][%d] getCharactersCharacterIdIndustryJobsForbidden  %+v", 403, o.Payload)
 }
@@ -514,6 +539,11 @@ func (o *GetCharactersCharacterIDIndustryJobsEnhanceYourCalm) IsServerError() bo
 // IsCode returns true when this get characters character Id industry jobs enhance your calm response a status code equal to that given
 func (o *GetCharactersCharacterIDIndustryJobsEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get characters character Id industry jobs enhance your calm response
+func (o *GetCharactersCharacterIDIndustryJobsEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetCharactersCharacterIDIndustryJobsEnhanceYourCalm) Error() string {
@@ -579,6 +609,11 @@ func (o *GetCharactersCharacterIDIndustryJobsInternalServerError) IsCode(code in
 	return code == 500
 }
 
+// Code gets the status code for the get characters character Id industry jobs internal server error response
+func (o *GetCharactersCharacterIDIndustryJobsInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetCharactersCharacterIDIndustryJobsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/industry/jobs/][%d] getCharactersCharacterIdIndustryJobsInternalServerError  %+v", 500, o.Payload)
 }
@@ -642,6 +677,11 @@ func (o *GetCharactersCharacterIDIndustryJobsServiceUnavailable) IsCode(code int
 	return code == 503
 }
 
+// Code gets the status code for the get characters character Id industry jobs service unavailable response
+func (o *GetCharactersCharacterIDIndustryJobsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCharactersCharacterIDIndustryJobsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/industry/jobs/][%d] getCharactersCharacterIdIndustryJobsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -703,6 +743,11 @@ func (o *GetCharactersCharacterIDIndustryJobsGatewayTimeout) IsServerError() boo
 // IsCode returns true when this get characters character Id industry jobs gateway timeout response a status code equal to that given
 func (o *GetCharactersCharacterIDIndustryJobsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get characters character Id industry jobs gateway timeout response
+func (o *GetCharactersCharacterIDIndustryJobsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCharactersCharacterIDIndustryJobsGatewayTimeout) Error() string {

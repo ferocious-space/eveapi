@@ -130,6 +130,11 @@ func (o *GetOpportunitiesTasksTaskIDOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get opportunities tasks task Id o k response
+func (o *GetOpportunitiesTasksTaskIDOK) Code() int {
+	return 200
+}
+
 func (o *GetOpportunitiesTasksTaskIDOK) Error() string {
 	return fmt.Sprintf("[GET /v1/opportunities/tasks/{task_id}/][%d] getOpportunitiesTasksTaskIdOK  %+v", 200, o.Payload)
 }
@@ -236,6 +241,11 @@ func (o *GetOpportunitiesTasksTaskIDNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get opportunities tasks task Id not modified response
+func (o *GetOpportunitiesTasksTaskIDNotModified) Code() int {
+	return 304
+}
+
 func (o *GetOpportunitiesTasksTaskIDNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/opportunities/tasks/{task_id}/][%d] getOpportunitiesTasksTaskIdNotModified ", 304)
 }
@@ -316,6 +326,11 @@ func (o *GetOpportunitiesTasksTaskIDBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get opportunities tasks task Id bad request response
+func (o *GetOpportunitiesTasksTaskIDBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetOpportunitiesTasksTaskIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/opportunities/tasks/{task_id}/][%d] getOpportunitiesTasksTaskIdBadRequest  %+v", 400, o.Payload)
 }
@@ -377,6 +392,11 @@ func (o *GetOpportunitiesTasksTaskIDEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get opportunities tasks task Id enhance your calm response a status code equal to that given
 func (o *GetOpportunitiesTasksTaskIDEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get opportunities tasks task Id enhance your calm response
+func (o *GetOpportunitiesTasksTaskIDEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetOpportunitiesTasksTaskIDEnhanceYourCalm) Error() string {
@@ -442,6 +462,11 @@ func (o *GetOpportunitiesTasksTaskIDInternalServerError) IsCode(code int) bool {
 	return code == 500
 }
 
+// Code gets the status code for the get opportunities tasks task Id internal server error response
+func (o *GetOpportunitiesTasksTaskIDInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetOpportunitiesTasksTaskIDInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/opportunities/tasks/{task_id}/][%d] getOpportunitiesTasksTaskIdInternalServerError  %+v", 500, o.Payload)
 }
@@ -505,6 +530,11 @@ func (o *GetOpportunitiesTasksTaskIDServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get opportunities tasks task Id service unavailable response
+func (o *GetOpportunitiesTasksTaskIDServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetOpportunitiesTasksTaskIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/opportunities/tasks/{task_id}/][%d] getOpportunitiesTasksTaskIdServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -566,6 +596,11 @@ func (o *GetOpportunitiesTasksTaskIDGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get opportunities tasks task Id gateway timeout response a status code equal to that given
 func (o *GetOpportunitiesTasksTaskIDGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get opportunities tasks task Id gateway timeout response
+func (o *GetOpportunitiesTasksTaskIDGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetOpportunitiesTasksTaskIDGatewayTimeout) Error() string {

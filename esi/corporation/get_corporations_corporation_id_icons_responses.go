@@ -134,6 +134,11 @@ func (o *GetCorporationsCorporationIDIconsOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get corporations corporation Id icons o k response
+func (o *GetCorporationsCorporationIDIconsOK) Code() int {
+	return 200
+}
+
 func (o *GetCorporationsCorporationIDIconsOK) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsOK  %+v", 200, o.Payload)
 }
@@ -240,6 +245,11 @@ func (o *GetCorporationsCorporationIDIconsNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get corporations corporation Id icons not modified response
+func (o *GetCorporationsCorporationIDIconsNotModified) Code() int {
+	return 304
+}
+
 func (o *GetCorporationsCorporationIDIconsNotModified) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsNotModified ", 304)
 }
@@ -320,6 +330,11 @@ func (o *GetCorporationsCorporationIDIconsBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get corporations corporation Id icons bad request response
+func (o *GetCorporationsCorporationIDIconsBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetCorporationsCorporationIDIconsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsBadRequest  %+v", 400, o.Payload)
 }
@@ -381,6 +396,11 @@ func (o *GetCorporationsCorporationIDIconsNotFound) IsServerError() bool {
 // IsCode returns true when this get corporations corporation Id icons not found response a status code equal to that given
 func (o *GetCorporationsCorporationIDIconsNotFound) IsCode(code int) bool {
 	return code == 404
+}
+
+// Code gets the status code for the get corporations corporation Id icons not found response
+func (o *GetCorporationsCorporationIDIconsNotFound) Code() int {
+	return 404
 }
 
 func (o *GetCorporationsCorporationIDIconsNotFound) Error() string {
@@ -446,6 +466,11 @@ func (o *GetCorporationsCorporationIDIconsEnhanceYourCalm) IsCode(code int) bool
 	return code == 420
 }
 
+// Code gets the status code for the get corporations corporation Id icons enhance your calm response
+func (o *GetCorporationsCorporationIDIconsEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *GetCorporationsCorporationIDIconsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -507,6 +532,11 @@ func (o *GetCorporationsCorporationIDIconsInternalServerError) IsServerError() b
 // IsCode returns true when this get corporations corporation Id icons internal server error response a status code equal to that given
 func (o *GetCorporationsCorporationIDIconsInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the get corporations corporation Id icons internal server error response
+func (o *GetCorporationsCorporationIDIconsInternalServerError) Code() int {
+	return 500
 }
 
 func (o *GetCorporationsCorporationIDIconsInternalServerError) Error() string {
@@ -572,6 +602,11 @@ func (o *GetCorporationsCorporationIDIconsServiceUnavailable) IsCode(code int) b
 	return code == 503
 }
 
+// Code gets the status code for the get corporations corporation Id icons service unavailable response
+func (o *GetCorporationsCorporationIDIconsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCorporationsCorporationIDIconsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/icons/][%d] getCorporationsCorporationIdIconsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -633,6 +668,11 @@ func (o *GetCorporationsCorporationIDIconsGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get corporations corporation Id icons gateway timeout response a status code equal to that given
 func (o *GetCorporationsCorporationIDIconsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get corporations corporation Id icons gateway timeout response
+func (o *GetCorporationsCorporationIDIconsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCorporationsCorporationIDIconsGatewayTimeout) Error() string {

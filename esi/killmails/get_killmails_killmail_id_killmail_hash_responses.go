@@ -137,6 +137,11 @@ func (o *GetKillmailsKillmailIDKillmailHashOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get killmails killmail Id killmail hash o k response
+func (o *GetKillmailsKillmailIDKillmailHashOK) Code() int {
+	return 200
+}
+
 func (o *GetKillmailsKillmailIDKillmailHashOK) Error() string {
 	return fmt.Sprintf("[GET /v1/killmails/{killmail_id}/{killmail_hash}/][%d] getKillmailsKillmailIdKillmailHashOK  %+v", 200, o.Payload)
 }
@@ -243,6 +248,11 @@ func (o *GetKillmailsKillmailIDKillmailHashNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get killmails killmail Id killmail hash not modified response
+func (o *GetKillmailsKillmailIDKillmailHashNotModified) Code() int {
+	return 304
+}
+
 func (o *GetKillmailsKillmailIDKillmailHashNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/killmails/{killmail_id}/{killmail_hash}/][%d] getKillmailsKillmailIdKillmailHashNotModified ", 304)
 }
@@ -323,6 +333,11 @@ func (o *GetKillmailsKillmailIDKillmailHashBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get killmails killmail Id killmail hash bad request response
+func (o *GetKillmailsKillmailIDKillmailHashBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetKillmailsKillmailIDKillmailHashBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/killmails/{killmail_id}/{killmail_hash}/][%d] getKillmailsKillmailIdKillmailHashBadRequest  %+v", 400, o.Payload)
 }
@@ -384,6 +399,11 @@ func (o *GetKillmailsKillmailIDKillmailHashEnhanceYourCalm) IsServerError() bool
 // IsCode returns true when this get killmails killmail Id killmail hash enhance your calm response a status code equal to that given
 func (o *GetKillmailsKillmailIDKillmailHashEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get killmails killmail Id killmail hash enhance your calm response
+func (o *GetKillmailsKillmailIDKillmailHashEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetKillmailsKillmailIDKillmailHashEnhanceYourCalm) Error() string {
@@ -449,6 +469,11 @@ func (o *GetKillmailsKillmailIDKillmailHashUnprocessableEntity) IsCode(code int)
 	return code == 422
 }
 
+// Code gets the status code for the get killmails killmail Id killmail hash unprocessable entity response
+func (o *GetKillmailsKillmailIDKillmailHashUnprocessableEntity) Code() int {
+	return 422
+}
+
 func (o *GetKillmailsKillmailIDKillmailHashUnprocessableEntity) Error() string {
 	return fmt.Sprintf("[GET /v1/killmails/{killmail_id}/{killmail_hash}/][%d] getKillmailsKillmailIdKillmailHashUnprocessableEntity  %+v", 422, o.Payload)
 }
@@ -510,6 +535,11 @@ func (o *GetKillmailsKillmailIDKillmailHashInternalServerError) IsServerError() 
 // IsCode returns true when this get killmails killmail Id killmail hash internal server error response a status code equal to that given
 func (o *GetKillmailsKillmailIDKillmailHashInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the get killmails killmail Id killmail hash internal server error response
+func (o *GetKillmailsKillmailIDKillmailHashInternalServerError) Code() int {
+	return 500
 }
 
 func (o *GetKillmailsKillmailIDKillmailHashInternalServerError) Error() string {
@@ -575,6 +605,11 @@ func (o *GetKillmailsKillmailIDKillmailHashServiceUnavailable) IsCode(code int) 
 	return code == 503
 }
 
+// Code gets the status code for the get killmails killmail Id killmail hash service unavailable response
+func (o *GetKillmailsKillmailIDKillmailHashServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetKillmailsKillmailIDKillmailHashServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/killmails/{killmail_id}/{killmail_hash}/][%d] getKillmailsKillmailIdKillmailHashServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -636,6 +671,11 @@ func (o *GetKillmailsKillmailIDKillmailHashGatewayTimeout) IsServerError() bool 
 // IsCode returns true when this get killmails killmail Id killmail hash gateway timeout response a status code equal to that given
 func (o *GetKillmailsKillmailIDKillmailHashGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get killmails killmail Id killmail hash gateway timeout response
+func (o *GetKillmailsKillmailIDKillmailHashGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetKillmailsKillmailIDKillmailHashGatewayTimeout) Error() string {

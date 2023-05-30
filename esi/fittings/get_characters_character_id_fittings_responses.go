@@ -144,6 +144,11 @@ func (o *GetCharactersCharacterIDFittingsOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get characters character Id fittings o k response
+func (o *GetCharactersCharacterIDFittingsOK) Code() int {
+	return 200
+}
+
 func (o *GetCharactersCharacterIDFittingsOK) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/fittings/][%d] getCharactersCharacterIdFittingsOK  %+v", 200, o.Payload)
 }
@@ -248,6 +253,11 @@ func (o *GetCharactersCharacterIDFittingsNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get characters character Id fittings not modified response
+func (o *GetCharactersCharacterIDFittingsNotModified) Code() int {
+	return 304
+}
+
 func (o *GetCharactersCharacterIDFittingsNotModified) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/fittings/][%d] getCharactersCharacterIdFittingsNotModified ", 304)
 }
@@ -328,6 +338,11 @@ func (o *GetCharactersCharacterIDFittingsBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get characters character Id fittings bad request response
+func (o *GetCharactersCharacterIDFittingsBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetCharactersCharacterIDFittingsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/fittings/][%d] getCharactersCharacterIdFittingsBadRequest  %+v", 400, o.Payload)
 }
@@ -389,6 +404,11 @@ func (o *GetCharactersCharacterIDFittingsUnauthorized) IsServerError() bool {
 // IsCode returns true when this get characters character Id fittings unauthorized response a status code equal to that given
 func (o *GetCharactersCharacterIDFittingsUnauthorized) IsCode(code int) bool {
 	return code == 401
+}
+
+// Code gets the status code for the get characters character Id fittings unauthorized response
+func (o *GetCharactersCharacterIDFittingsUnauthorized) Code() int {
+	return 401
 }
 
 func (o *GetCharactersCharacterIDFittingsUnauthorized) Error() string {
@@ -454,6 +474,11 @@ func (o *GetCharactersCharacterIDFittingsForbidden) IsCode(code int) bool {
 	return code == 403
 }
 
+// Code gets the status code for the get characters character Id fittings forbidden response
+func (o *GetCharactersCharacterIDFittingsForbidden) Code() int {
+	return 403
+}
+
 func (o *GetCharactersCharacterIDFittingsForbidden) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/fittings/][%d] getCharactersCharacterIdFittingsForbidden  %+v", 403, o.Payload)
 }
@@ -515,6 +540,11 @@ func (o *GetCharactersCharacterIDFittingsEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get characters character Id fittings enhance your calm response a status code equal to that given
 func (o *GetCharactersCharacterIDFittingsEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get characters character Id fittings enhance your calm response
+func (o *GetCharactersCharacterIDFittingsEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetCharactersCharacterIDFittingsEnhanceYourCalm) Error() string {
@@ -580,6 +610,11 @@ func (o *GetCharactersCharacterIDFittingsInternalServerError) IsCode(code int) b
 	return code == 500
 }
 
+// Code gets the status code for the get characters character Id fittings internal server error response
+func (o *GetCharactersCharacterIDFittingsInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetCharactersCharacterIDFittingsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/fittings/][%d] getCharactersCharacterIdFittingsInternalServerError  %+v", 500, o.Payload)
 }
@@ -643,6 +678,11 @@ func (o *GetCharactersCharacterIDFittingsServiceUnavailable) IsCode(code int) bo
 	return code == 503
 }
 
+// Code gets the status code for the get characters character Id fittings service unavailable response
+func (o *GetCharactersCharacterIDFittingsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCharactersCharacterIDFittingsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/fittings/][%d] getCharactersCharacterIdFittingsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -704,6 +744,11 @@ func (o *GetCharactersCharacterIDFittingsGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get characters character Id fittings gateway timeout response a status code equal to that given
 func (o *GetCharactersCharacterIDFittingsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get characters character Id fittings gateway timeout response
+func (o *GetCharactersCharacterIDFittingsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCharactersCharacterIDFittingsGatewayTimeout) Error() string {

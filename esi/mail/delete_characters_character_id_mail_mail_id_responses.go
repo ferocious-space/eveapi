@@ -114,6 +114,11 @@ func (o *DeleteCharactersCharacterIDMailMailIDNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the delete characters character Id mail mail Id no content response
+func (o *DeleteCharactersCharacterIDMailMailIDNoContent) Code() int {
+	return 204
+}
+
 func (o *DeleteCharactersCharacterIDMailMailIDNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/mail/{mail_id}/][%d] deleteCharactersCharacterIdMailMailIdNoContent ", 204)
 }
@@ -164,6 +169,11 @@ func (o *DeleteCharactersCharacterIDMailMailIDBadRequest) IsServerError() bool {
 // IsCode returns true when this delete characters character Id mail mail Id bad request response a status code equal to that given
 func (o *DeleteCharactersCharacterIDMailMailIDBadRequest) IsCode(code int) bool {
 	return code == 400
+}
+
+// Code gets the status code for the delete characters character Id mail mail Id bad request response
+func (o *DeleteCharactersCharacterIDMailMailIDBadRequest) Code() int {
+	return 400
 }
 
 func (o *DeleteCharactersCharacterIDMailMailIDBadRequest) Error() string {
@@ -229,6 +239,11 @@ func (o *DeleteCharactersCharacterIDMailMailIDUnauthorized) IsCode(code int) boo
 	return code == 401
 }
 
+// Code gets the status code for the delete characters character Id mail mail Id unauthorized response
+func (o *DeleteCharactersCharacterIDMailMailIDUnauthorized) Code() int {
+	return 401
+}
+
 func (o *DeleteCharactersCharacterIDMailMailIDUnauthorized) Error() string {
 	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/mail/{mail_id}/][%d] deleteCharactersCharacterIdMailMailIdUnauthorized  %+v", 401, o.Payload)
 }
@@ -290,6 +305,11 @@ func (o *DeleteCharactersCharacterIDMailMailIDForbidden) IsServerError() bool {
 // IsCode returns true when this delete characters character Id mail mail Id forbidden response a status code equal to that given
 func (o *DeleteCharactersCharacterIDMailMailIDForbidden) IsCode(code int) bool {
 	return code == 403
+}
+
+// Code gets the status code for the delete characters character Id mail mail Id forbidden response
+func (o *DeleteCharactersCharacterIDMailMailIDForbidden) Code() int {
+	return 403
 }
 
 func (o *DeleteCharactersCharacterIDMailMailIDForbidden) Error() string {
@@ -355,6 +375,11 @@ func (o *DeleteCharactersCharacterIDMailMailIDEnhanceYourCalm) IsCode(code int) 
 	return code == 420
 }
 
+// Code gets the status code for the delete characters character Id mail mail Id enhance your calm response
+func (o *DeleteCharactersCharacterIDMailMailIDEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *DeleteCharactersCharacterIDMailMailIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/mail/{mail_id}/][%d] deleteCharactersCharacterIdMailMailIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -416,6 +441,11 @@ func (o *DeleteCharactersCharacterIDMailMailIDInternalServerError) IsServerError
 // IsCode returns true when this delete characters character Id mail mail Id internal server error response a status code equal to that given
 func (o *DeleteCharactersCharacterIDMailMailIDInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the delete characters character Id mail mail Id internal server error response
+func (o *DeleteCharactersCharacterIDMailMailIDInternalServerError) Code() int {
+	return 500
 }
 
 func (o *DeleteCharactersCharacterIDMailMailIDInternalServerError) Error() string {
@@ -481,6 +511,11 @@ func (o *DeleteCharactersCharacterIDMailMailIDServiceUnavailable) IsCode(code in
 	return code == 503
 }
 
+// Code gets the status code for the delete characters character Id mail mail Id service unavailable response
+func (o *DeleteCharactersCharacterIDMailMailIDServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *DeleteCharactersCharacterIDMailMailIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/mail/{mail_id}/][%d] deleteCharactersCharacterIdMailMailIdServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -542,6 +577,11 @@ func (o *DeleteCharactersCharacterIDMailMailIDGatewayTimeout) IsServerError() bo
 // IsCode returns true when this delete characters character Id mail mail Id gateway timeout response a status code equal to that given
 func (o *DeleteCharactersCharacterIDMailMailIDGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the delete characters character Id mail mail Id gateway timeout response
+func (o *DeleteCharactersCharacterIDMailMailIDGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *DeleteCharactersCharacterIDMailMailIDGatewayTimeout) Error() string {

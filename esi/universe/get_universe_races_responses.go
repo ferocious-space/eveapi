@@ -134,6 +134,11 @@ func (o *GetUniverseRacesOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get universe races o k response
+func (o *GetUniverseRacesOK) Code() int {
+	return 200
+}
+
 func (o *GetUniverseRacesOK) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/races/][%d] getUniverseRacesOK  %+v", 200, o.Payload)
 }
@@ -245,6 +250,11 @@ func (o *GetUniverseRacesNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get universe races not modified response
+func (o *GetUniverseRacesNotModified) Code() int {
+	return 304
+}
+
 func (o *GetUniverseRacesNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/races/][%d] getUniverseRacesNotModified ", 304)
 }
@@ -325,6 +335,11 @@ func (o *GetUniverseRacesBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get universe races bad request response
+func (o *GetUniverseRacesBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetUniverseRacesBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/races/][%d] getUniverseRacesBadRequest  %+v", 400, o.Payload)
 }
@@ -386,6 +401,11 @@ func (o *GetUniverseRacesEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get universe races enhance your calm response a status code equal to that given
 func (o *GetUniverseRacesEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get universe races enhance your calm response
+func (o *GetUniverseRacesEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetUniverseRacesEnhanceYourCalm) Error() string {
@@ -451,6 +471,11 @@ func (o *GetUniverseRacesInternalServerError) IsCode(code int) bool {
 	return code == 500
 }
 
+// Code gets the status code for the get universe races internal server error response
+func (o *GetUniverseRacesInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetUniverseRacesInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/races/][%d] getUniverseRacesInternalServerError  %+v", 500, o.Payload)
 }
@@ -514,6 +539,11 @@ func (o *GetUniverseRacesServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get universe races service unavailable response
+func (o *GetUniverseRacesServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetUniverseRacesServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/races/][%d] getUniverseRacesServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -575,6 +605,11 @@ func (o *GetUniverseRacesGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get universe races gateway timeout response a status code equal to that given
 func (o *GetUniverseRacesGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get universe races gateway timeout response
+func (o *GetUniverseRacesGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetUniverseRacesGatewayTimeout) Error() string {

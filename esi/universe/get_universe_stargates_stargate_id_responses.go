@@ -136,6 +136,11 @@ func (o *GetUniverseStargatesStargateIDOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get universe stargates stargate Id o k response
+func (o *GetUniverseStargatesStargateIDOK) Code() int {
+	return 200
+}
+
 func (o *GetUniverseStargatesStargateIDOK) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/stargates/{stargate_id}/][%d] getUniverseStargatesStargateIdOK  %+v", 200, o.Payload)
 }
@@ -242,6 +247,11 @@ func (o *GetUniverseStargatesStargateIDNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get universe stargates stargate Id not modified response
+func (o *GetUniverseStargatesStargateIDNotModified) Code() int {
+	return 304
+}
+
 func (o *GetUniverseStargatesStargateIDNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/stargates/{stargate_id}/][%d] getUniverseStargatesStargateIdNotModified ", 304)
 }
@@ -322,6 +332,11 @@ func (o *GetUniverseStargatesStargateIDBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get universe stargates stargate Id bad request response
+func (o *GetUniverseStargatesStargateIDBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetUniverseStargatesStargateIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/stargates/{stargate_id}/][%d] getUniverseStargatesStargateIdBadRequest  %+v", 400, o.Payload)
 }
@@ -383,6 +398,11 @@ func (o *GetUniverseStargatesStargateIDNotFound) IsServerError() bool {
 // IsCode returns true when this get universe stargates stargate Id not found response a status code equal to that given
 func (o *GetUniverseStargatesStargateIDNotFound) IsCode(code int) bool {
 	return code == 404
+}
+
+// Code gets the status code for the get universe stargates stargate Id not found response
+func (o *GetUniverseStargatesStargateIDNotFound) Code() int {
+	return 404
 }
 
 func (o *GetUniverseStargatesStargateIDNotFound) Error() string {
@@ -448,6 +468,11 @@ func (o *GetUniverseStargatesStargateIDEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
 }
 
+// Code gets the status code for the get universe stargates stargate Id enhance your calm response
+func (o *GetUniverseStargatesStargateIDEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *GetUniverseStargatesStargateIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/stargates/{stargate_id}/][%d] getUniverseStargatesStargateIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -509,6 +534,11 @@ func (o *GetUniverseStargatesStargateIDInternalServerError) IsServerError() bool
 // IsCode returns true when this get universe stargates stargate Id internal server error response a status code equal to that given
 func (o *GetUniverseStargatesStargateIDInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the get universe stargates stargate Id internal server error response
+func (o *GetUniverseStargatesStargateIDInternalServerError) Code() int {
+	return 500
 }
 
 func (o *GetUniverseStargatesStargateIDInternalServerError) Error() string {
@@ -574,6 +604,11 @@ func (o *GetUniverseStargatesStargateIDServiceUnavailable) IsCode(code int) bool
 	return code == 503
 }
 
+// Code gets the status code for the get universe stargates stargate Id service unavailable response
+func (o *GetUniverseStargatesStargateIDServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetUniverseStargatesStargateIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/stargates/{stargate_id}/][%d] getUniverseStargatesStargateIdServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -635,6 +670,11 @@ func (o *GetUniverseStargatesStargateIDGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get universe stargates stargate Id gateway timeout response a status code equal to that given
 func (o *GetUniverseStargatesStargateIDGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get universe stargates stargate Id gateway timeout response
+func (o *GetUniverseStargatesStargateIDGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetUniverseStargatesStargateIDGatewayTimeout) Error() string {

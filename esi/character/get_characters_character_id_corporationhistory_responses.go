@@ -130,6 +130,11 @@ func (o *GetCharactersCharacterIDCorporationhistoryOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get characters character Id corporationhistory o k response
+func (o *GetCharactersCharacterIDCorporationhistoryOK) Code() int {
+	return 200
+}
+
 func (o *GetCharactersCharacterIDCorporationhistoryOK) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/corporationhistory/][%d] getCharactersCharacterIdCorporationhistoryOK  %+v", 200, o.Payload)
 }
@@ -234,6 +239,11 @@ func (o *GetCharactersCharacterIDCorporationhistoryNotModified) IsCode(code int)
 	return code == 304
 }
 
+// Code gets the status code for the get characters character Id corporationhistory not modified response
+func (o *GetCharactersCharacterIDCorporationhistoryNotModified) Code() int {
+	return 304
+}
+
 func (o *GetCharactersCharacterIDCorporationhistoryNotModified) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/corporationhistory/][%d] getCharactersCharacterIdCorporationhistoryNotModified ", 304)
 }
@@ -314,6 +324,11 @@ func (o *GetCharactersCharacterIDCorporationhistoryBadRequest) IsCode(code int) 
 	return code == 400
 }
 
+// Code gets the status code for the get characters character Id corporationhistory bad request response
+func (o *GetCharactersCharacterIDCorporationhistoryBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetCharactersCharacterIDCorporationhistoryBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/corporationhistory/][%d] getCharactersCharacterIdCorporationhistoryBadRequest  %+v", 400, o.Payload)
 }
@@ -375,6 +390,11 @@ func (o *GetCharactersCharacterIDCorporationhistoryEnhanceYourCalm) IsServerErro
 // IsCode returns true when this get characters character Id corporationhistory enhance your calm response a status code equal to that given
 func (o *GetCharactersCharacterIDCorporationhistoryEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get characters character Id corporationhistory enhance your calm response
+func (o *GetCharactersCharacterIDCorporationhistoryEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetCharactersCharacterIDCorporationhistoryEnhanceYourCalm) Error() string {
@@ -440,6 +460,11 @@ func (o *GetCharactersCharacterIDCorporationhistoryInternalServerError) IsCode(c
 	return code == 500
 }
 
+// Code gets the status code for the get characters character Id corporationhistory internal server error response
+func (o *GetCharactersCharacterIDCorporationhistoryInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetCharactersCharacterIDCorporationhistoryInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/corporationhistory/][%d] getCharactersCharacterIdCorporationhistoryInternalServerError  %+v", 500, o.Payload)
 }
@@ -503,6 +528,11 @@ func (o *GetCharactersCharacterIDCorporationhistoryServiceUnavailable) IsCode(co
 	return code == 503
 }
 
+// Code gets the status code for the get characters character Id corporationhistory service unavailable response
+func (o *GetCharactersCharacterIDCorporationhistoryServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCharactersCharacterIDCorporationhistoryServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/corporationhistory/][%d] getCharactersCharacterIdCorporationhistoryServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -564,6 +594,11 @@ func (o *GetCharactersCharacterIDCorporationhistoryGatewayTimeout) IsServerError
 // IsCode returns true when this get characters character Id corporationhistory gateway timeout response a status code equal to that given
 func (o *GetCharactersCharacterIDCorporationhistoryGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get characters character Id corporationhistory gateway timeout response
+func (o *GetCharactersCharacterIDCorporationhistoryGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCharactersCharacterIDCorporationhistoryGatewayTimeout) Error() string {

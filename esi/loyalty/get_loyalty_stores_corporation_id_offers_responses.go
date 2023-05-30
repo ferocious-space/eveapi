@@ -137,6 +137,11 @@ func (o *GetLoyaltyStoresCorporationIDOffersOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get loyalty stores corporation Id offers o k response
+func (o *GetLoyaltyStoresCorporationIDOffersOK) Code() int {
+	return 200
+}
+
 func (o *GetLoyaltyStoresCorporationIDOffersOK) Error() string {
 	return fmt.Sprintf("[GET /v1/loyalty/stores/{corporation_id}/offers/][%d] getLoyaltyStoresCorporationIdOffersOK  %+v", 200, o.Payload)
 }
@@ -241,6 +246,11 @@ func (o *GetLoyaltyStoresCorporationIDOffersNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get loyalty stores corporation Id offers not modified response
+func (o *GetLoyaltyStoresCorporationIDOffersNotModified) Code() int {
+	return 304
+}
+
 func (o *GetLoyaltyStoresCorporationIDOffersNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/loyalty/stores/{corporation_id}/offers/][%d] getLoyaltyStoresCorporationIdOffersNotModified ", 304)
 }
@@ -321,6 +331,11 @@ func (o *GetLoyaltyStoresCorporationIDOffersBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get loyalty stores corporation Id offers bad request response
+func (o *GetLoyaltyStoresCorporationIDOffersBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetLoyaltyStoresCorporationIDOffersBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/loyalty/stores/{corporation_id}/offers/][%d] getLoyaltyStoresCorporationIdOffersBadRequest  %+v", 400, o.Payload)
 }
@@ -382,6 +397,11 @@ func (o *GetLoyaltyStoresCorporationIDOffersNotFound) IsServerError() bool {
 // IsCode returns true when this get loyalty stores corporation Id offers not found response a status code equal to that given
 func (o *GetLoyaltyStoresCorporationIDOffersNotFound) IsCode(code int) bool {
 	return code == 404
+}
+
+// Code gets the status code for the get loyalty stores corporation Id offers not found response
+func (o *GetLoyaltyStoresCorporationIDOffersNotFound) Code() int {
+	return 404
 }
 
 func (o *GetLoyaltyStoresCorporationIDOffersNotFound) Error() string {
@@ -447,6 +467,11 @@ func (o *GetLoyaltyStoresCorporationIDOffersEnhanceYourCalm) IsCode(code int) bo
 	return code == 420
 }
 
+// Code gets the status code for the get loyalty stores corporation Id offers enhance your calm response
+func (o *GetLoyaltyStoresCorporationIDOffersEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *GetLoyaltyStoresCorporationIDOffersEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/loyalty/stores/{corporation_id}/offers/][%d] getLoyaltyStoresCorporationIdOffersEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -508,6 +533,11 @@ func (o *GetLoyaltyStoresCorporationIDOffersInternalServerError) IsServerError()
 // IsCode returns true when this get loyalty stores corporation Id offers internal server error response a status code equal to that given
 func (o *GetLoyaltyStoresCorporationIDOffersInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the get loyalty stores corporation Id offers internal server error response
+func (o *GetLoyaltyStoresCorporationIDOffersInternalServerError) Code() int {
+	return 500
 }
 
 func (o *GetLoyaltyStoresCorporationIDOffersInternalServerError) Error() string {
@@ -573,6 +603,11 @@ func (o *GetLoyaltyStoresCorporationIDOffersServiceUnavailable) IsCode(code int)
 	return code == 503
 }
 
+// Code gets the status code for the get loyalty stores corporation Id offers service unavailable response
+func (o *GetLoyaltyStoresCorporationIDOffersServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetLoyaltyStoresCorporationIDOffersServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/loyalty/stores/{corporation_id}/offers/][%d] getLoyaltyStoresCorporationIdOffersServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -634,6 +669,11 @@ func (o *GetLoyaltyStoresCorporationIDOffersGatewayTimeout) IsServerError() bool
 // IsCode returns true when this get loyalty stores corporation Id offers gateway timeout response a status code equal to that given
 func (o *GetLoyaltyStoresCorporationIDOffersGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get loyalty stores corporation Id offers gateway timeout response
+func (o *GetLoyaltyStoresCorporationIDOffersGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetLoyaltyStoresCorporationIDOffersGatewayTimeout) Error() string {

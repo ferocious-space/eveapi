@@ -152,6 +152,11 @@ func (o *GetContractsPublicRegionIDOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get contracts public region Id o k response
+func (o *GetContractsPublicRegionIDOK) Code() int {
+	return 200
+}
+
 func (o *GetContractsPublicRegionIDOK) Error() string {
 	return fmt.Sprintf("[GET /v1/contracts/public/{region_id}/][%d] getContractsPublicRegionIdOK  %+v", 200, o.Payload)
 }
@@ -267,6 +272,11 @@ func (o *GetContractsPublicRegionIDNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get contracts public region Id not modified response
+func (o *GetContractsPublicRegionIDNotModified) Code() int {
+	return 304
+}
+
 func (o *GetContractsPublicRegionIDNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/contracts/public/{region_id}/][%d] getContractsPublicRegionIdNotModified ", 304)
 }
@@ -347,6 +357,11 @@ func (o *GetContractsPublicRegionIDBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get contracts public region Id bad request response
+func (o *GetContractsPublicRegionIDBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetContractsPublicRegionIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/contracts/public/{region_id}/][%d] getContractsPublicRegionIdBadRequest  %+v", 400, o.Payload)
 }
@@ -408,6 +423,11 @@ func (o *GetContractsPublicRegionIDNotFound) IsServerError() bool {
 // IsCode returns true when this get contracts public region Id not found response a status code equal to that given
 func (o *GetContractsPublicRegionIDNotFound) IsCode(code int) bool {
 	return code == 404
+}
+
+// Code gets the status code for the get contracts public region Id not found response
+func (o *GetContractsPublicRegionIDNotFound) Code() int {
+	return 404
 }
 
 func (o *GetContractsPublicRegionIDNotFound) Error() string {
@@ -473,6 +493,11 @@ func (o *GetContractsPublicRegionIDEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
 }
 
+// Code gets the status code for the get contracts public region Id enhance your calm response
+func (o *GetContractsPublicRegionIDEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *GetContractsPublicRegionIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/contracts/public/{region_id}/][%d] getContractsPublicRegionIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -534,6 +559,11 @@ func (o *GetContractsPublicRegionIDInternalServerError) IsServerError() bool {
 // IsCode returns true when this get contracts public region Id internal server error response a status code equal to that given
 func (o *GetContractsPublicRegionIDInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the get contracts public region Id internal server error response
+func (o *GetContractsPublicRegionIDInternalServerError) Code() int {
+	return 500
 }
 
 func (o *GetContractsPublicRegionIDInternalServerError) Error() string {
@@ -599,6 +629,11 @@ func (o *GetContractsPublicRegionIDServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get contracts public region Id service unavailable response
+func (o *GetContractsPublicRegionIDServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetContractsPublicRegionIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/contracts/public/{region_id}/][%d] getContractsPublicRegionIdServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -660,6 +695,11 @@ func (o *GetContractsPublicRegionIDGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get contracts public region Id gateway timeout response a status code equal to that given
 func (o *GetContractsPublicRegionIDGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get contracts public region Id gateway timeout response
+func (o *GetContractsPublicRegionIDGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetContractsPublicRegionIDGatewayTimeout) Error() string {

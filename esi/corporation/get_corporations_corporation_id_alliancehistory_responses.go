@@ -130,6 +130,11 @@ func (o *GetCorporationsCorporationIDAlliancehistoryOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get corporations corporation Id alliancehistory o k response
+func (o *GetCorporationsCorporationIDAlliancehistoryOK) Code() int {
+	return 200
+}
+
 func (o *GetCorporationsCorporationIDAlliancehistoryOK) Error() string {
 	return fmt.Sprintf("[GET /v3/corporations/{corporation_id}/alliancehistory/][%d] getCorporationsCorporationIdAlliancehistoryOK  %+v", 200, o.Payload)
 }
@@ -234,6 +239,11 @@ func (o *GetCorporationsCorporationIDAlliancehistoryNotModified) IsCode(code int
 	return code == 304
 }
 
+// Code gets the status code for the get corporations corporation Id alliancehistory not modified response
+func (o *GetCorporationsCorporationIDAlliancehistoryNotModified) Code() int {
+	return 304
+}
+
 func (o *GetCorporationsCorporationIDAlliancehistoryNotModified) Error() string {
 	return fmt.Sprintf("[GET /v3/corporations/{corporation_id}/alliancehistory/][%d] getCorporationsCorporationIdAlliancehistoryNotModified ", 304)
 }
@@ -314,6 +324,11 @@ func (o *GetCorporationsCorporationIDAlliancehistoryBadRequest) IsCode(code int)
 	return code == 400
 }
 
+// Code gets the status code for the get corporations corporation Id alliancehistory bad request response
+func (o *GetCorporationsCorporationIDAlliancehistoryBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetCorporationsCorporationIDAlliancehistoryBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v3/corporations/{corporation_id}/alliancehistory/][%d] getCorporationsCorporationIdAlliancehistoryBadRequest  %+v", 400, o.Payload)
 }
@@ -375,6 +390,11 @@ func (o *GetCorporationsCorporationIDAlliancehistoryEnhanceYourCalm) IsServerErr
 // IsCode returns true when this get corporations corporation Id alliancehistory enhance your calm response a status code equal to that given
 func (o *GetCorporationsCorporationIDAlliancehistoryEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get corporations corporation Id alliancehistory enhance your calm response
+func (o *GetCorporationsCorporationIDAlliancehistoryEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetCorporationsCorporationIDAlliancehistoryEnhanceYourCalm) Error() string {
@@ -440,6 +460,11 @@ func (o *GetCorporationsCorporationIDAlliancehistoryInternalServerError) IsCode(
 	return code == 500
 }
 
+// Code gets the status code for the get corporations corporation Id alliancehistory internal server error response
+func (o *GetCorporationsCorporationIDAlliancehistoryInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetCorporationsCorporationIDAlliancehistoryInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v3/corporations/{corporation_id}/alliancehistory/][%d] getCorporationsCorporationIdAlliancehistoryInternalServerError  %+v", 500, o.Payload)
 }
@@ -503,6 +528,11 @@ func (o *GetCorporationsCorporationIDAlliancehistoryServiceUnavailable) IsCode(c
 	return code == 503
 }
 
+// Code gets the status code for the get corporations corporation Id alliancehistory service unavailable response
+func (o *GetCorporationsCorporationIDAlliancehistoryServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCorporationsCorporationIDAlliancehistoryServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v3/corporations/{corporation_id}/alliancehistory/][%d] getCorporationsCorporationIdAlliancehistoryServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -564,6 +594,11 @@ func (o *GetCorporationsCorporationIDAlliancehistoryGatewayTimeout) IsServerErro
 // IsCode returns true when this get corporations corporation Id alliancehistory gateway timeout response a status code equal to that given
 func (o *GetCorporationsCorporationIDAlliancehistoryGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get corporations corporation Id alliancehistory gateway timeout response
+func (o *GetCorporationsCorporationIDAlliancehistoryGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCorporationsCorporationIDAlliancehistoryGatewayTimeout) Error() string {

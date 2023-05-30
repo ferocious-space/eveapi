@@ -114,6 +114,11 @@ func (o *PostUIOpenwindowMarketdetailsNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the post Ui openwindow marketdetails no content response
+func (o *PostUIOpenwindowMarketdetailsNoContent) Code() int {
+	return 204
+}
+
 func (o *PostUIOpenwindowMarketdetailsNoContent) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/marketdetails/][%d] postUiOpenwindowMarketdetailsNoContent ", 204)
 }
@@ -164,6 +169,11 @@ func (o *PostUIOpenwindowMarketdetailsBadRequest) IsServerError() bool {
 // IsCode returns true when this post Ui openwindow marketdetails bad request response a status code equal to that given
 func (o *PostUIOpenwindowMarketdetailsBadRequest) IsCode(code int) bool {
 	return code == 400
+}
+
+// Code gets the status code for the post Ui openwindow marketdetails bad request response
+func (o *PostUIOpenwindowMarketdetailsBadRequest) Code() int {
+	return 400
 }
 
 func (o *PostUIOpenwindowMarketdetailsBadRequest) Error() string {
@@ -229,6 +239,11 @@ func (o *PostUIOpenwindowMarketdetailsUnauthorized) IsCode(code int) bool {
 	return code == 401
 }
 
+// Code gets the status code for the post Ui openwindow marketdetails unauthorized response
+func (o *PostUIOpenwindowMarketdetailsUnauthorized) Code() int {
+	return 401
+}
+
 func (o *PostUIOpenwindowMarketdetailsUnauthorized) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/marketdetails/][%d] postUiOpenwindowMarketdetailsUnauthorized  %+v", 401, o.Payload)
 }
@@ -290,6 +305,11 @@ func (o *PostUIOpenwindowMarketdetailsForbidden) IsServerError() bool {
 // IsCode returns true when this post Ui openwindow marketdetails forbidden response a status code equal to that given
 func (o *PostUIOpenwindowMarketdetailsForbidden) IsCode(code int) bool {
 	return code == 403
+}
+
+// Code gets the status code for the post Ui openwindow marketdetails forbidden response
+func (o *PostUIOpenwindowMarketdetailsForbidden) Code() int {
+	return 403
 }
 
 func (o *PostUIOpenwindowMarketdetailsForbidden) Error() string {
@@ -355,6 +375,11 @@ func (o *PostUIOpenwindowMarketdetailsEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
 }
 
+// Code gets the status code for the post Ui openwindow marketdetails enhance your calm response
+func (o *PostUIOpenwindowMarketdetailsEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *PostUIOpenwindowMarketdetailsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/marketdetails/][%d] postUiOpenwindowMarketdetailsEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -416,6 +441,11 @@ func (o *PostUIOpenwindowMarketdetailsInternalServerError) IsServerError() bool 
 // IsCode returns true when this post Ui openwindow marketdetails internal server error response a status code equal to that given
 func (o *PostUIOpenwindowMarketdetailsInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the post Ui openwindow marketdetails internal server error response
+func (o *PostUIOpenwindowMarketdetailsInternalServerError) Code() int {
+	return 500
 }
 
 func (o *PostUIOpenwindowMarketdetailsInternalServerError) Error() string {
@@ -481,6 +511,11 @@ func (o *PostUIOpenwindowMarketdetailsServiceUnavailable) IsCode(code int) bool 
 	return code == 503
 }
 
+// Code gets the status code for the post Ui openwindow marketdetails service unavailable response
+func (o *PostUIOpenwindowMarketdetailsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *PostUIOpenwindowMarketdetailsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/marketdetails/][%d] postUiOpenwindowMarketdetailsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -542,6 +577,11 @@ func (o *PostUIOpenwindowMarketdetailsGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this post Ui openwindow marketdetails gateway timeout response a status code equal to that given
 func (o *PostUIOpenwindowMarketdetailsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the post Ui openwindow marketdetails gateway timeout response
+func (o *PostUIOpenwindowMarketdetailsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *PostUIOpenwindowMarketdetailsGatewayTimeout) Error() string {

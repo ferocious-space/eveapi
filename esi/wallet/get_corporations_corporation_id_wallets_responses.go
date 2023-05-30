@@ -142,6 +142,11 @@ func (o *GetCorporationsCorporationIDWalletsOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get corporations corporation Id wallets o k response
+func (o *GetCorporationsCorporationIDWalletsOK) Code() int {
+	return 200
+}
+
 func (o *GetCorporationsCorporationIDWalletsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/wallets/][%d] getCorporationsCorporationIdWalletsOK  %+v", 200, o.Payload)
 }
@@ -246,6 +251,11 @@ func (o *GetCorporationsCorporationIDWalletsNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get corporations corporation Id wallets not modified response
+func (o *GetCorporationsCorporationIDWalletsNotModified) Code() int {
+	return 304
+}
+
 func (o *GetCorporationsCorporationIDWalletsNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/wallets/][%d] getCorporationsCorporationIdWalletsNotModified ", 304)
 }
@@ -326,6 +336,11 @@ func (o *GetCorporationsCorporationIDWalletsBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get corporations corporation Id wallets bad request response
+func (o *GetCorporationsCorporationIDWalletsBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetCorporationsCorporationIDWalletsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/wallets/][%d] getCorporationsCorporationIdWalletsBadRequest  %+v", 400, o.Payload)
 }
@@ -387,6 +402,11 @@ func (o *GetCorporationsCorporationIDWalletsUnauthorized) IsServerError() bool {
 // IsCode returns true when this get corporations corporation Id wallets unauthorized response a status code equal to that given
 func (o *GetCorporationsCorporationIDWalletsUnauthorized) IsCode(code int) bool {
 	return code == 401
+}
+
+// Code gets the status code for the get corporations corporation Id wallets unauthorized response
+func (o *GetCorporationsCorporationIDWalletsUnauthorized) Code() int {
+	return 401
 }
 
 func (o *GetCorporationsCorporationIDWalletsUnauthorized) Error() string {
@@ -452,6 +472,11 @@ func (o *GetCorporationsCorporationIDWalletsForbidden) IsCode(code int) bool {
 	return code == 403
 }
 
+// Code gets the status code for the get corporations corporation Id wallets forbidden response
+func (o *GetCorporationsCorporationIDWalletsForbidden) Code() int {
+	return 403
+}
+
 func (o *GetCorporationsCorporationIDWalletsForbidden) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/wallets/][%d] getCorporationsCorporationIdWalletsForbidden  %+v", 403, o.Payload)
 }
@@ -513,6 +538,11 @@ func (o *GetCorporationsCorporationIDWalletsEnhanceYourCalm) IsServerError() boo
 // IsCode returns true when this get corporations corporation Id wallets enhance your calm response a status code equal to that given
 func (o *GetCorporationsCorporationIDWalletsEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get corporations corporation Id wallets enhance your calm response
+func (o *GetCorporationsCorporationIDWalletsEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetCorporationsCorporationIDWalletsEnhanceYourCalm) Error() string {
@@ -578,6 +608,11 @@ func (o *GetCorporationsCorporationIDWalletsInternalServerError) IsCode(code int
 	return code == 500
 }
 
+// Code gets the status code for the get corporations corporation Id wallets internal server error response
+func (o *GetCorporationsCorporationIDWalletsInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetCorporationsCorporationIDWalletsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/wallets/][%d] getCorporationsCorporationIdWalletsInternalServerError  %+v", 500, o.Payload)
 }
@@ -641,6 +676,11 @@ func (o *GetCorporationsCorporationIDWalletsServiceUnavailable) IsCode(code int)
 	return code == 503
 }
 
+// Code gets the status code for the get corporations corporation Id wallets service unavailable response
+func (o *GetCorporationsCorporationIDWalletsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCorporationsCorporationIDWalletsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/wallets/][%d] getCorporationsCorporationIdWalletsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -702,6 +742,11 @@ func (o *GetCorporationsCorporationIDWalletsGatewayTimeout) IsServerError() bool
 // IsCode returns true when this get corporations corporation Id wallets gateway timeout response a status code equal to that given
 func (o *GetCorporationsCorporationIDWalletsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get corporations corporation Id wallets gateway timeout response
+func (o *GetCorporationsCorporationIDWalletsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCorporationsCorporationIDWalletsGatewayTimeout) Error() string {

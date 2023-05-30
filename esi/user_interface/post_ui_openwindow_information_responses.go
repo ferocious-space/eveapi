@@ -114,6 +114,11 @@ func (o *PostUIOpenwindowInformationNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the post Ui openwindow information no content response
+func (o *PostUIOpenwindowInformationNoContent) Code() int {
+	return 204
+}
+
 func (o *PostUIOpenwindowInformationNoContent) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/information/][%d] postUiOpenwindowInformationNoContent ", 204)
 }
@@ -164,6 +169,11 @@ func (o *PostUIOpenwindowInformationBadRequest) IsServerError() bool {
 // IsCode returns true when this post Ui openwindow information bad request response a status code equal to that given
 func (o *PostUIOpenwindowInformationBadRequest) IsCode(code int) bool {
 	return code == 400
+}
+
+// Code gets the status code for the post Ui openwindow information bad request response
+func (o *PostUIOpenwindowInformationBadRequest) Code() int {
+	return 400
 }
 
 func (o *PostUIOpenwindowInformationBadRequest) Error() string {
@@ -229,6 +239,11 @@ func (o *PostUIOpenwindowInformationUnauthorized) IsCode(code int) bool {
 	return code == 401
 }
 
+// Code gets the status code for the post Ui openwindow information unauthorized response
+func (o *PostUIOpenwindowInformationUnauthorized) Code() int {
+	return 401
+}
+
 func (o *PostUIOpenwindowInformationUnauthorized) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/information/][%d] postUiOpenwindowInformationUnauthorized  %+v", 401, o.Payload)
 }
@@ -290,6 +305,11 @@ func (o *PostUIOpenwindowInformationForbidden) IsServerError() bool {
 // IsCode returns true when this post Ui openwindow information forbidden response a status code equal to that given
 func (o *PostUIOpenwindowInformationForbidden) IsCode(code int) bool {
 	return code == 403
+}
+
+// Code gets the status code for the post Ui openwindow information forbidden response
+func (o *PostUIOpenwindowInformationForbidden) Code() int {
+	return 403
 }
 
 func (o *PostUIOpenwindowInformationForbidden) Error() string {
@@ -355,6 +375,11 @@ func (o *PostUIOpenwindowInformationEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
 }
 
+// Code gets the status code for the post Ui openwindow information enhance your calm response
+func (o *PostUIOpenwindowInformationEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *PostUIOpenwindowInformationEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/information/][%d] postUiOpenwindowInformationEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -416,6 +441,11 @@ func (o *PostUIOpenwindowInformationInternalServerError) IsServerError() bool {
 // IsCode returns true when this post Ui openwindow information internal server error response a status code equal to that given
 func (o *PostUIOpenwindowInformationInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the post Ui openwindow information internal server error response
+func (o *PostUIOpenwindowInformationInternalServerError) Code() int {
+	return 500
 }
 
 func (o *PostUIOpenwindowInformationInternalServerError) Error() string {
@@ -481,6 +511,11 @@ func (o *PostUIOpenwindowInformationServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the post Ui openwindow information service unavailable response
+func (o *PostUIOpenwindowInformationServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *PostUIOpenwindowInformationServiceUnavailable) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/information/][%d] postUiOpenwindowInformationServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -542,6 +577,11 @@ func (o *PostUIOpenwindowInformationGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this post Ui openwindow information gateway timeout response a status code equal to that given
 func (o *PostUIOpenwindowInformationGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the post Ui openwindow information gateway timeout response
+func (o *PostUIOpenwindowInformationGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *PostUIOpenwindowInformationGatewayTimeout) Error() string {

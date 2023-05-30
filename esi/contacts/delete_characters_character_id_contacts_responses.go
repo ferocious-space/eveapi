@@ -114,6 +114,11 @@ func (o *DeleteCharactersCharacterIDContactsNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the delete characters character Id contacts no content response
+func (o *DeleteCharactersCharacterIDContactsNoContent) Code() int {
+	return 204
+}
+
 func (o *DeleteCharactersCharacterIDContactsNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /v2/characters/{character_id}/contacts/][%d] deleteCharactersCharacterIdContactsNoContent ", 204)
 }
@@ -164,6 +169,11 @@ func (o *DeleteCharactersCharacterIDContactsBadRequest) IsServerError() bool {
 // IsCode returns true when this delete characters character Id contacts bad request response a status code equal to that given
 func (o *DeleteCharactersCharacterIDContactsBadRequest) IsCode(code int) bool {
 	return code == 400
+}
+
+// Code gets the status code for the delete characters character Id contacts bad request response
+func (o *DeleteCharactersCharacterIDContactsBadRequest) Code() int {
+	return 400
 }
 
 func (o *DeleteCharactersCharacterIDContactsBadRequest) Error() string {
@@ -229,6 +239,11 @@ func (o *DeleteCharactersCharacterIDContactsUnauthorized) IsCode(code int) bool 
 	return code == 401
 }
 
+// Code gets the status code for the delete characters character Id contacts unauthorized response
+func (o *DeleteCharactersCharacterIDContactsUnauthorized) Code() int {
+	return 401
+}
+
 func (o *DeleteCharactersCharacterIDContactsUnauthorized) Error() string {
 	return fmt.Sprintf("[DELETE /v2/characters/{character_id}/contacts/][%d] deleteCharactersCharacterIdContactsUnauthorized  %+v", 401, o.Payload)
 }
@@ -290,6 +305,11 @@ func (o *DeleteCharactersCharacterIDContactsForbidden) IsServerError() bool {
 // IsCode returns true when this delete characters character Id contacts forbidden response a status code equal to that given
 func (o *DeleteCharactersCharacterIDContactsForbidden) IsCode(code int) bool {
 	return code == 403
+}
+
+// Code gets the status code for the delete characters character Id contacts forbidden response
+func (o *DeleteCharactersCharacterIDContactsForbidden) Code() int {
+	return 403
 }
 
 func (o *DeleteCharactersCharacterIDContactsForbidden) Error() string {
@@ -355,6 +375,11 @@ func (o *DeleteCharactersCharacterIDContactsEnhanceYourCalm) IsCode(code int) bo
 	return code == 420
 }
 
+// Code gets the status code for the delete characters character Id contacts enhance your calm response
+func (o *DeleteCharactersCharacterIDContactsEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *DeleteCharactersCharacterIDContactsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[DELETE /v2/characters/{character_id}/contacts/][%d] deleteCharactersCharacterIdContactsEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -416,6 +441,11 @@ func (o *DeleteCharactersCharacterIDContactsInternalServerError) IsServerError()
 // IsCode returns true when this delete characters character Id contacts internal server error response a status code equal to that given
 func (o *DeleteCharactersCharacterIDContactsInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the delete characters character Id contacts internal server error response
+func (o *DeleteCharactersCharacterIDContactsInternalServerError) Code() int {
+	return 500
 }
 
 func (o *DeleteCharactersCharacterIDContactsInternalServerError) Error() string {
@@ -481,6 +511,11 @@ func (o *DeleteCharactersCharacterIDContactsServiceUnavailable) IsCode(code int)
 	return code == 503
 }
 
+// Code gets the status code for the delete characters character Id contacts service unavailable response
+func (o *DeleteCharactersCharacterIDContactsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *DeleteCharactersCharacterIDContactsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[DELETE /v2/characters/{character_id}/contacts/][%d] deleteCharactersCharacterIdContactsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -542,6 +577,11 @@ func (o *DeleteCharactersCharacterIDContactsGatewayTimeout) IsServerError() bool
 // IsCode returns true when this delete characters character Id contacts gateway timeout response a status code equal to that given
 func (o *DeleteCharactersCharacterIDContactsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the delete characters character Id contacts gateway timeout response
+func (o *DeleteCharactersCharacterIDContactsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *DeleteCharactersCharacterIDContactsGatewayTimeout) Error() string {

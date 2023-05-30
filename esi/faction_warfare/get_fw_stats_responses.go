@@ -130,6 +130,11 @@ func (o *GetFwStatsOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get fw stats o k response
+func (o *GetFwStatsOK) Code() int {
+	return 200
+}
+
 func (o *GetFwStatsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/fw/stats/][%d] getFwStatsOK  %+v", 200, o.Payload)
 }
@@ -234,6 +239,11 @@ func (o *GetFwStatsNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get fw stats not modified response
+func (o *GetFwStatsNotModified) Code() int {
+	return 304
+}
+
 func (o *GetFwStatsNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/fw/stats/][%d] getFwStatsNotModified ", 304)
 }
@@ -314,6 +324,11 @@ func (o *GetFwStatsBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get fw stats bad request response
+func (o *GetFwStatsBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetFwStatsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/fw/stats/][%d] getFwStatsBadRequest  %+v", 400, o.Payload)
 }
@@ -375,6 +390,11 @@ func (o *GetFwStatsEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get fw stats enhance your calm response a status code equal to that given
 func (o *GetFwStatsEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get fw stats enhance your calm response
+func (o *GetFwStatsEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetFwStatsEnhanceYourCalm) Error() string {
@@ -440,6 +460,11 @@ func (o *GetFwStatsInternalServerError) IsCode(code int) bool {
 	return code == 500
 }
 
+// Code gets the status code for the get fw stats internal server error response
+func (o *GetFwStatsInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetFwStatsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/fw/stats/][%d] getFwStatsInternalServerError  %+v", 500, o.Payload)
 }
@@ -503,6 +528,11 @@ func (o *GetFwStatsServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get fw stats service unavailable response
+func (o *GetFwStatsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetFwStatsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/fw/stats/][%d] getFwStatsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -564,6 +594,11 @@ func (o *GetFwStatsGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get fw stats gateway timeout response a status code equal to that given
 func (o *GetFwStatsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get fw stats gateway timeout response
+func (o *GetFwStatsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetFwStatsGatewayTimeout) Error() string {

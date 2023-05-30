@@ -106,6 +106,11 @@ func (o *GetVerifyOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get verify o k response
+func (o *GetVerifyOK) Code() int {
+	return 200
+}
+
 func (o *GetVerifyOK) Error() string {
 	return fmt.Sprintf("[GET /verify/][%d] getVerifyOK  %+v", 200, o.Payload)
 }
@@ -203,6 +208,11 @@ func (o *GetVerifyBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get verify bad request response
+func (o *GetVerifyBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetVerifyBadRequest) Error() string {
 	return fmt.Sprintf("[GET /verify/][%d] getVerifyBadRequest  %+v", 400, o.Payload)
 }
@@ -287,6 +297,11 @@ func (o *GetVerifyUnauthorized) IsCode(code int) bool {
 	return code == 401
 }
 
+// Code gets the status code for the get verify unauthorized response
+func (o *GetVerifyUnauthorized) Code() int {
+	return 401
+}
+
 func (o *GetVerifyUnauthorized) Error() string {
 	return fmt.Sprintf("[GET /verify/][%d] getVerifyUnauthorized  %+v", 401, o.Payload)
 }
@@ -348,6 +363,11 @@ func (o *GetVerifyNotFound) IsServerError() bool {
 // IsCode returns true when this get verify not found response a status code equal to that given
 func (o *GetVerifyNotFound) IsCode(code int) bool {
 	return code == 404
+}
+
+// Code gets the status code for the get verify not found response
+func (o *GetVerifyNotFound) Code() int {
+	return 404
 }
 
 func (o *GetVerifyNotFound) Error() string {

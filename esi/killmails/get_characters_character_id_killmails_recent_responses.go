@@ -157,6 +157,11 @@ func (o *GetCharactersCharacterIDKillmailsRecentOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get characters character Id killmails recent o k response
+func (o *GetCharactersCharacterIDKillmailsRecentOK) Code() int {
+	return 200
+}
+
 func (o *GetCharactersCharacterIDKillmailsRecentOK) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/killmails/recent/][%d] getCharactersCharacterIdKillmailsRecentOK  %+v", 200, o.Payload)
 }
@@ -272,6 +277,11 @@ func (o *GetCharactersCharacterIDKillmailsRecentNotModified) IsCode(code int) bo
 	return code == 304
 }
 
+// Code gets the status code for the get characters character Id killmails recent not modified response
+func (o *GetCharactersCharacterIDKillmailsRecentNotModified) Code() int {
+	return 304
+}
+
 func (o *GetCharactersCharacterIDKillmailsRecentNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/killmails/recent/][%d] getCharactersCharacterIdKillmailsRecentNotModified ", 304)
 }
@@ -352,6 +362,11 @@ func (o *GetCharactersCharacterIDKillmailsRecentBadRequest) IsCode(code int) boo
 	return code == 400
 }
 
+// Code gets the status code for the get characters character Id killmails recent bad request response
+func (o *GetCharactersCharacterIDKillmailsRecentBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetCharactersCharacterIDKillmailsRecentBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/killmails/recent/][%d] getCharactersCharacterIdKillmailsRecentBadRequest  %+v", 400, o.Payload)
 }
@@ -413,6 +428,11 @@ func (o *GetCharactersCharacterIDKillmailsRecentUnauthorized) IsServerError() bo
 // IsCode returns true when this get characters character Id killmails recent unauthorized response a status code equal to that given
 func (o *GetCharactersCharacterIDKillmailsRecentUnauthorized) IsCode(code int) bool {
 	return code == 401
+}
+
+// Code gets the status code for the get characters character Id killmails recent unauthorized response
+func (o *GetCharactersCharacterIDKillmailsRecentUnauthorized) Code() int {
+	return 401
 }
 
 func (o *GetCharactersCharacterIDKillmailsRecentUnauthorized) Error() string {
@@ -478,6 +498,11 @@ func (o *GetCharactersCharacterIDKillmailsRecentForbidden) IsCode(code int) bool
 	return code == 403
 }
 
+// Code gets the status code for the get characters character Id killmails recent forbidden response
+func (o *GetCharactersCharacterIDKillmailsRecentForbidden) Code() int {
+	return 403
+}
+
 func (o *GetCharactersCharacterIDKillmailsRecentForbidden) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/killmails/recent/][%d] getCharactersCharacterIdKillmailsRecentForbidden  %+v", 403, o.Payload)
 }
@@ -539,6 +564,11 @@ func (o *GetCharactersCharacterIDKillmailsRecentEnhanceYourCalm) IsServerError()
 // IsCode returns true when this get characters character Id killmails recent enhance your calm response a status code equal to that given
 func (o *GetCharactersCharacterIDKillmailsRecentEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get characters character Id killmails recent enhance your calm response
+func (o *GetCharactersCharacterIDKillmailsRecentEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetCharactersCharacterIDKillmailsRecentEnhanceYourCalm) Error() string {
@@ -604,6 +634,11 @@ func (o *GetCharactersCharacterIDKillmailsRecentInternalServerError) IsCode(code
 	return code == 500
 }
 
+// Code gets the status code for the get characters character Id killmails recent internal server error response
+func (o *GetCharactersCharacterIDKillmailsRecentInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetCharactersCharacterIDKillmailsRecentInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/killmails/recent/][%d] getCharactersCharacterIdKillmailsRecentInternalServerError  %+v", 500, o.Payload)
 }
@@ -667,6 +702,11 @@ func (o *GetCharactersCharacterIDKillmailsRecentServiceUnavailable) IsCode(code 
 	return code == 503
 }
 
+// Code gets the status code for the get characters character Id killmails recent service unavailable response
+func (o *GetCharactersCharacterIDKillmailsRecentServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCharactersCharacterIDKillmailsRecentServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/killmails/recent/][%d] getCharactersCharacterIdKillmailsRecentServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -728,6 +768,11 @@ func (o *GetCharactersCharacterIDKillmailsRecentGatewayTimeout) IsServerError() 
 // IsCode returns true when this get characters character Id killmails recent gateway timeout response a status code equal to that given
 func (o *GetCharactersCharacterIDKillmailsRecentGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get characters character Id killmails recent gateway timeout response
+func (o *GetCharactersCharacterIDKillmailsRecentGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCharactersCharacterIDKillmailsRecentGatewayTimeout) Error() string {

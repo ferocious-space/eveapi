@@ -131,6 +131,11 @@ func (o *GetUniverseStarsStarIDOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get universe stars star Id o k response
+func (o *GetUniverseStarsStarIDOK) Code() int {
+	return 200
+}
+
 func (o *GetUniverseStarsStarIDOK) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/stars/{star_id}/][%d] getUniverseStarsStarIdOK  %+v", 200, o.Payload)
 }
@@ -237,6 +242,11 @@ func (o *GetUniverseStarsStarIDNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get universe stars star Id not modified response
+func (o *GetUniverseStarsStarIDNotModified) Code() int {
+	return 304
+}
+
 func (o *GetUniverseStarsStarIDNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/stars/{star_id}/][%d] getUniverseStarsStarIdNotModified ", 304)
 }
@@ -317,6 +327,11 @@ func (o *GetUniverseStarsStarIDBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get universe stars star Id bad request response
+func (o *GetUniverseStarsStarIDBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetUniverseStarsStarIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/stars/{star_id}/][%d] getUniverseStarsStarIdBadRequest  %+v", 400, o.Payload)
 }
@@ -378,6 +393,11 @@ func (o *GetUniverseStarsStarIDEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get universe stars star Id enhance your calm response a status code equal to that given
 func (o *GetUniverseStarsStarIDEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get universe stars star Id enhance your calm response
+func (o *GetUniverseStarsStarIDEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetUniverseStarsStarIDEnhanceYourCalm) Error() string {
@@ -443,6 +463,11 @@ func (o *GetUniverseStarsStarIDInternalServerError) IsCode(code int) bool {
 	return code == 500
 }
 
+// Code gets the status code for the get universe stars star Id internal server error response
+func (o *GetUniverseStarsStarIDInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetUniverseStarsStarIDInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/stars/{star_id}/][%d] getUniverseStarsStarIdInternalServerError  %+v", 500, o.Payload)
 }
@@ -506,6 +531,11 @@ func (o *GetUniverseStarsStarIDServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get universe stars star Id service unavailable response
+func (o *GetUniverseStarsStarIDServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetUniverseStarsStarIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/stars/{star_id}/][%d] getUniverseStarsStarIdServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -567,6 +597,11 @@ func (o *GetUniverseStarsStarIDGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get universe stars star Id gateway timeout response a status code equal to that given
 func (o *GetUniverseStarsStarIDGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get universe stars star Id gateway timeout response
+func (o *GetUniverseStarsStarIDGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetUniverseStarsStarIDGatewayTimeout) Error() string {

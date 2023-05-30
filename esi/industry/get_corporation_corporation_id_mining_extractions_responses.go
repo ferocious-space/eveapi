@@ -157,6 +157,11 @@ func (o *GetCorporationCorporationIDMiningExtractionsOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get corporation corporation Id mining extractions o k response
+func (o *GetCorporationCorporationIDMiningExtractionsOK) Code() int {
+	return 200
+}
+
 func (o *GetCorporationCorporationIDMiningExtractionsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/corporation/{corporation_id}/mining/extractions/][%d] getCorporationCorporationIdMiningExtractionsOK  %+v", 200, o.Payload)
 }
@@ -272,6 +277,11 @@ func (o *GetCorporationCorporationIDMiningExtractionsNotModified) IsCode(code in
 	return code == 304
 }
 
+// Code gets the status code for the get corporation corporation Id mining extractions not modified response
+func (o *GetCorporationCorporationIDMiningExtractionsNotModified) Code() int {
+	return 304
+}
+
 func (o *GetCorporationCorporationIDMiningExtractionsNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/corporation/{corporation_id}/mining/extractions/][%d] getCorporationCorporationIdMiningExtractionsNotModified ", 304)
 }
@@ -352,6 +362,11 @@ func (o *GetCorporationCorporationIDMiningExtractionsBadRequest) IsCode(code int
 	return code == 400
 }
 
+// Code gets the status code for the get corporation corporation Id mining extractions bad request response
+func (o *GetCorporationCorporationIDMiningExtractionsBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetCorporationCorporationIDMiningExtractionsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/corporation/{corporation_id}/mining/extractions/][%d] getCorporationCorporationIdMiningExtractionsBadRequest  %+v", 400, o.Payload)
 }
@@ -413,6 +428,11 @@ func (o *GetCorporationCorporationIDMiningExtractionsUnauthorized) IsServerError
 // IsCode returns true when this get corporation corporation Id mining extractions unauthorized response a status code equal to that given
 func (o *GetCorporationCorporationIDMiningExtractionsUnauthorized) IsCode(code int) bool {
 	return code == 401
+}
+
+// Code gets the status code for the get corporation corporation Id mining extractions unauthorized response
+func (o *GetCorporationCorporationIDMiningExtractionsUnauthorized) Code() int {
+	return 401
 }
 
 func (o *GetCorporationCorporationIDMiningExtractionsUnauthorized) Error() string {
@@ -478,6 +498,11 @@ func (o *GetCorporationCorporationIDMiningExtractionsForbidden) IsCode(code int)
 	return code == 403
 }
 
+// Code gets the status code for the get corporation corporation Id mining extractions forbidden response
+func (o *GetCorporationCorporationIDMiningExtractionsForbidden) Code() int {
+	return 403
+}
+
 func (o *GetCorporationCorporationIDMiningExtractionsForbidden) Error() string {
 	return fmt.Sprintf("[GET /v1/corporation/{corporation_id}/mining/extractions/][%d] getCorporationCorporationIdMiningExtractionsForbidden  %+v", 403, o.Payload)
 }
@@ -539,6 +564,11 @@ func (o *GetCorporationCorporationIDMiningExtractionsEnhanceYourCalm) IsServerEr
 // IsCode returns true when this get corporation corporation Id mining extractions enhance your calm response a status code equal to that given
 func (o *GetCorporationCorporationIDMiningExtractionsEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get corporation corporation Id mining extractions enhance your calm response
+func (o *GetCorporationCorporationIDMiningExtractionsEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetCorporationCorporationIDMiningExtractionsEnhanceYourCalm) Error() string {
@@ -604,6 +634,11 @@ func (o *GetCorporationCorporationIDMiningExtractionsInternalServerError) IsCode
 	return code == 500
 }
 
+// Code gets the status code for the get corporation corporation Id mining extractions internal server error response
+func (o *GetCorporationCorporationIDMiningExtractionsInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetCorporationCorporationIDMiningExtractionsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/corporation/{corporation_id}/mining/extractions/][%d] getCorporationCorporationIdMiningExtractionsInternalServerError  %+v", 500, o.Payload)
 }
@@ -667,6 +702,11 @@ func (o *GetCorporationCorporationIDMiningExtractionsServiceUnavailable) IsCode(
 	return code == 503
 }
 
+// Code gets the status code for the get corporation corporation Id mining extractions service unavailable response
+func (o *GetCorporationCorporationIDMiningExtractionsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCorporationCorporationIDMiningExtractionsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/corporation/{corporation_id}/mining/extractions/][%d] getCorporationCorporationIdMiningExtractionsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -728,6 +768,11 @@ func (o *GetCorporationCorporationIDMiningExtractionsGatewayTimeout) IsServerErr
 // IsCode returns true when this get corporation corporation Id mining extractions gateway timeout response a status code equal to that given
 func (o *GetCorporationCorporationIDMiningExtractionsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get corporation corporation Id mining extractions gateway timeout response
+func (o *GetCorporationCorporationIDMiningExtractionsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCorporationCorporationIDMiningExtractionsGatewayTimeout) Error() string {

@@ -122,6 +122,11 @@ func (o *DeleteFleetsFleetIDMembersMemberIDNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the delete fleets fleet Id members member Id no content response
+func (o *DeleteFleetsFleetIDMembersMemberIDNoContent) Code() int {
+	return 204
+}
+
 func (o *DeleteFleetsFleetIDMembersMemberIDNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /v1/fleets/{fleet_id}/members/{member_id}/][%d] deleteFleetsFleetIdMembersMemberIdNoContent ", 204)
 }
@@ -172,6 +177,11 @@ func (o *DeleteFleetsFleetIDMembersMemberIDBadRequest) IsServerError() bool {
 // IsCode returns true when this delete fleets fleet Id members member Id bad request response a status code equal to that given
 func (o *DeleteFleetsFleetIDMembersMemberIDBadRequest) IsCode(code int) bool {
 	return code == 400
+}
+
+// Code gets the status code for the delete fleets fleet Id members member Id bad request response
+func (o *DeleteFleetsFleetIDMembersMemberIDBadRequest) Code() int {
+	return 400
 }
 
 func (o *DeleteFleetsFleetIDMembersMemberIDBadRequest) Error() string {
@@ -237,6 +247,11 @@ func (o *DeleteFleetsFleetIDMembersMemberIDUnauthorized) IsCode(code int) bool {
 	return code == 401
 }
 
+// Code gets the status code for the delete fleets fleet Id members member Id unauthorized response
+func (o *DeleteFleetsFleetIDMembersMemberIDUnauthorized) Code() int {
+	return 401
+}
+
 func (o *DeleteFleetsFleetIDMembersMemberIDUnauthorized) Error() string {
 	return fmt.Sprintf("[DELETE /v1/fleets/{fleet_id}/members/{member_id}/][%d] deleteFleetsFleetIdMembersMemberIdUnauthorized  %+v", 401, o.Payload)
 }
@@ -298,6 +313,11 @@ func (o *DeleteFleetsFleetIDMembersMemberIDForbidden) IsServerError() bool {
 // IsCode returns true when this delete fleets fleet Id members member Id forbidden response a status code equal to that given
 func (o *DeleteFleetsFleetIDMembersMemberIDForbidden) IsCode(code int) bool {
 	return code == 403
+}
+
+// Code gets the status code for the delete fleets fleet Id members member Id forbidden response
+func (o *DeleteFleetsFleetIDMembersMemberIDForbidden) Code() int {
+	return 403
 }
 
 func (o *DeleteFleetsFleetIDMembersMemberIDForbidden) Error() string {
@@ -363,6 +383,11 @@ func (o *DeleteFleetsFleetIDMembersMemberIDNotFound) IsCode(code int) bool {
 	return code == 404
 }
 
+// Code gets the status code for the delete fleets fleet Id members member Id not found response
+func (o *DeleteFleetsFleetIDMembersMemberIDNotFound) Code() int {
+	return 404
+}
+
 func (o *DeleteFleetsFleetIDMembersMemberIDNotFound) Error() string {
 	return fmt.Sprintf("[DELETE /v1/fleets/{fleet_id}/members/{member_id}/][%d] deleteFleetsFleetIdMembersMemberIdNotFound  %+v", 404, o.Payload)
 }
@@ -424,6 +449,11 @@ func (o *DeleteFleetsFleetIDMembersMemberIDEnhanceYourCalm) IsServerError() bool
 // IsCode returns true when this delete fleets fleet Id members member Id enhance your calm response a status code equal to that given
 func (o *DeleteFleetsFleetIDMembersMemberIDEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the delete fleets fleet Id members member Id enhance your calm response
+func (o *DeleteFleetsFleetIDMembersMemberIDEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *DeleteFleetsFleetIDMembersMemberIDEnhanceYourCalm) Error() string {
@@ -489,6 +519,11 @@ func (o *DeleteFleetsFleetIDMembersMemberIDInternalServerError) IsCode(code int)
 	return code == 500
 }
 
+// Code gets the status code for the delete fleets fleet Id members member Id internal server error response
+func (o *DeleteFleetsFleetIDMembersMemberIDInternalServerError) Code() int {
+	return 500
+}
+
 func (o *DeleteFleetsFleetIDMembersMemberIDInternalServerError) Error() string {
 	return fmt.Sprintf("[DELETE /v1/fleets/{fleet_id}/members/{member_id}/][%d] deleteFleetsFleetIdMembersMemberIdInternalServerError  %+v", 500, o.Payload)
 }
@@ -552,6 +587,11 @@ func (o *DeleteFleetsFleetIDMembersMemberIDServiceUnavailable) IsCode(code int) 
 	return code == 503
 }
 
+// Code gets the status code for the delete fleets fleet Id members member Id service unavailable response
+func (o *DeleteFleetsFleetIDMembersMemberIDServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *DeleteFleetsFleetIDMembersMemberIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[DELETE /v1/fleets/{fleet_id}/members/{member_id}/][%d] deleteFleetsFleetIdMembersMemberIdServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -613,6 +653,11 @@ func (o *DeleteFleetsFleetIDMembersMemberIDGatewayTimeout) IsServerError() bool 
 // IsCode returns true when this delete fleets fleet Id members member Id gateway timeout response a status code equal to that given
 func (o *DeleteFleetsFleetIDMembersMemberIDGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the delete fleets fleet Id members member Id gateway timeout response
+func (o *DeleteFleetsFleetIDMembersMemberIDGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *DeleteFleetsFleetIDMembersMemberIDGatewayTimeout) Error() string {

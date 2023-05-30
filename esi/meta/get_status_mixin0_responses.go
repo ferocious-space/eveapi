@@ -95,6 +95,11 @@ func (o *GetStatusMixin0OK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get status mixin0 o k response
+func (o *GetStatusMixin0OK) Code() int {
+	return 200
+}
+
 func (o *GetStatusMixin0OK) Error() string {
 	return fmt.Sprintf("[GET /status.json][%d] getStatusMixin0OK  %+v", 200, o.Payload)
 }
@@ -175,6 +180,11 @@ func (o *GetStatusMixin0NotFound) IsServerError() bool {
 // IsCode returns true when this get status mixin0 not found response a status code equal to that given
 func (o *GetStatusMixin0NotFound) IsCode(code int) bool {
 	return code == 404
+}
+
+// Code gets the status code for the get status mixin0 not found response
+func (o *GetStatusMixin0NotFound) Code() int {
+	return 404
 }
 
 func (o *GetStatusMixin0NotFound) Error() string {

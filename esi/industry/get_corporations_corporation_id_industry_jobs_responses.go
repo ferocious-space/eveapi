@@ -158,6 +158,11 @@ func (o *GetCorporationsCorporationIDIndustryJobsOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get corporations corporation Id industry jobs o k response
+func (o *GetCorporationsCorporationIDIndustryJobsOK) Code() int {
+	return 200
+}
+
 func (o *GetCorporationsCorporationIDIndustryJobsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/industry/jobs/][%d] getCorporationsCorporationIdIndustryJobsOK  %+v", 200, o.Payload)
 }
@@ -273,6 +278,11 @@ func (o *GetCorporationsCorporationIDIndustryJobsNotModified) IsCode(code int) b
 	return code == 304
 }
 
+// Code gets the status code for the get corporations corporation Id industry jobs not modified response
+func (o *GetCorporationsCorporationIDIndustryJobsNotModified) Code() int {
+	return 304
+}
+
 func (o *GetCorporationsCorporationIDIndustryJobsNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/industry/jobs/][%d] getCorporationsCorporationIdIndustryJobsNotModified ", 304)
 }
@@ -353,6 +363,11 @@ func (o *GetCorporationsCorporationIDIndustryJobsBadRequest) IsCode(code int) bo
 	return code == 400
 }
 
+// Code gets the status code for the get corporations corporation Id industry jobs bad request response
+func (o *GetCorporationsCorporationIDIndustryJobsBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetCorporationsCorporationIDIndustryJobsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/industry/jobs/][%d] getCorporationsCorporationIdIndustryJobsBadRequest  %+v", 400, o.Payload)
 }
@@ -414,6 +429,11 @@ func (o *GetCorporationsCorporationIDIndustryJobsUnauthorized) IsServerError() b
 // IsCode returns true when this get corporations corporation Id industry jobs unauthorized response a status code equal to that given
 func (o *GetCorporationsCorporationIDIndustryJobsUnauthorized) IsCode(code int) bool {
 	return code == 401
+}
+
+// Code gets the status code for the get corporations corporation Id industry jobs unauthorized response
+func (o *GetCorporationsCorporationIDIndustryJobsUnauthorized) Code() int {
+	return 401
 }
 
 func (o *GetCorporationsCorporationIDIndustryJobsUnauthorized) Error() string {
@@ -479,6 +499,11 @@ func (o *GetCorporationsCorporationIDIndustryJobsForbidden) IsCode(code int) boo
 	return code == 403
 }
 
+// Code gets the status code for the get corporations corporation Id industry jobs forbidden response
+func (o *GetCorporationsCorporationIDIndustryJobsForbidden) Code() int {
+	return 403
+}
+
 func (o *GetCorporationsCorporationIDIndustryJobsForbidden) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/industry/jobs/][%d] getCorporationsCorporationIdIndustryJobsForbidden  %+v", 403, o.Payload)
 }
@@ -540,6 +565,11 @@ func (o *GetCorporationsCorporationIDIndustryJobsEnhanceYourCalm) IsServerError(
 // IsCode returns true when this get corporations corporation Id industry jobs enhance your calm response a status code equal to that given
 func (o *GetCorporationsCorporationIDIndustryJobsEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get corporations corporation Id industry jobs enhance your calm response
+func (o *GetCorporationsCorporationIDIndustryJobsEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetCorporationsCorporationIDIndustryJobsEnhanceYourCalm) Error() string {
@@ -605,6 +635,11 @@ func (o *GetCorporationsCorporationIDIndustryJobsInternalServerError) IsCode(cod
 	return code == 500
 }
 
+// Code gets the status code for the get corporations corporation Id industry jobs internal server error response
+func (o *GetCorporationsCorporationIDIndustryJobsInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetCorporationsCorporationIDIndustryJobsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/industry/jobs/][%d] getCorporationsCorporationIdIndustryJobsInternalServerError  %+v", 500, o.Payload)
 }
@@ -668,6 +703,11 @@ func (o *GetCorporationsCorporationIDIndustryJobsServiceUnavailable) IsCode(code
 	return code == 503
 }
 
+// Code gets the status code for the get corporations corporation Id industry jobs service unavailable response
+func (o *GetCorporationsCorporationIDIndustryJobsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCorporationsCorporationIDIndustryJobsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/industry/jobs/][%d] getCorporationsCorporationIdIndustryJobsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -729,6 +769,11 @@ func (o *GetCorporationsCorporationIDIndustryJobsGatewayTimeout) IsServerError()
 // IsCode returns true when this get corporations corporation Id industry jobs gateway timeout response a status code equal to that given
 func (o *GetCorporationsCorporationIDIndustryJobsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get corporations corporation Id industry jobs gateway timeout response
+func (o *GetCorporationsCorporationIDIndustryJobsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCorporationsCorporationIDIndustryJobsGatewayTimeout) Error() string {

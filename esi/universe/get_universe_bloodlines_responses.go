@@ -134,6 +134,11 @@ func (o *GetUniverseBloodlinesOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get universe bloodlines o k response
+func (o *GetUniverseBloodlinesOK) Code() int {
+	return 200
+}
+
 func (o *GetUniverseBloodlinesOK) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/bloodlines/][%d] getUniverseBloodlinesOK  %+v", 200, o.Payload)
 }
@@ -245,6 +250,11 @@ func (o *GetUniverseBloodlinesNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get universe bloodlines not modified response
+func (o *GetUniverseBloodlinesNotModified) Code() int {
+	return 304
+}
+
 func (o *GetUniverseBloodlinesNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/bloodlines/][%d] getUniverseBloodlinesNotModified ", 304)
 }
@@ -325,6 +335,11 @@ func (o *GetUniverseBloodlinesBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get universe bloodlines bad request response
+func (o *GetUniverseBloodlinesBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetUniverseBloodlinesBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/bloodlines/][%d] getUniverseBloodlinesBadRequest  %+v", 400, o.Payload)
 }
@@ -386,6 +401,11 @@ func (o *GetUniverseBloodlinesEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get universe bloodlines enhance your calm response a status code equal to that given
 func (o *GetUniverseBloodlinesEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get universe bloodlines enhance your calm response
+func (o *GetUniverseBloodlinesEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetUniverseBloodlinesEnhanceYourCalm) Error() string {
@@ -451,6 +471,11 @@ func (o *GetUniverseBloodlinesInternalServerError) IsCode(code int) bool {
 	return code == 500
 }
 
+// Code gets the status code for the get universe bloodlines internal server error response
+func (o *GetUniverseBloodlinesInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetUniverseBloodlinesInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/bloodlines/][%d] getUniverseBloodlinesInternalServerError  %+v", 500, o.Payload)
 }
@@ -514,6 +539,11 @@ func (o *GetUniverseBloodlinesServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get universe bloodlines service unavailable response
+func (o *GetUniverseBloodlinesServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetUniverseBloodlinesServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/bloodlines/][%d] getUniverseBloodlinesServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -575,6 +605,11 @@ func (o *GetUniverseBloodlinesGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get universe bloodlines gateway timeout response a status code equal to that given
 func (o *GetUniverseBloodlinesGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get universe bloodlines gateway timeout response
+func (o *GetUniverseBloodlinesGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetUniverseBloodlinesGatewayTimeout) Error() string {

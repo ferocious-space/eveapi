@@ -136,6 +136,11 @@ func (o *GetUniverseMoonsMoonIDOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get universe moons moon Id o k response
+func (o *GetUniverseMoonsMoonIDOK) Code() int {
+	return 200
+}
+
 func (o *GetUniverseMoonsMoonIDOK) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/moons/{moon_id}/][%d] getUniverseMoonsMoonIdOK  %+v", 200, o.Payload)
 }
@@ -242,6 +247,11 @@ func (o *GetUniverseMoonsMoonIDNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get universe moons moon Id not modified response
+func (o *GetUniverseMoonsMoonIDNotModified) Code() int {
+	return 304
+}
+
 func (o *GetUniverseMoonsMoonIDNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/moons/{moon_id}/][%d] getUniverseMoonsMoonIdNotModified ", 304)
 }
@@ -322,6 +332,11 @@ func (o *GetUniverseMoonsMoonIDBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get universe moons moon Id bad request response
+func (o *GetUniverseMoonsMoonIDBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetUniverseMoonsMoonIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/moons/{moon_id}/][%d] getUniverseMoonsMoonIdBadRequest  %+v", 400, o.Payload)
 }
@@ -383,6 +398,11 @@ func (o *GetUniverseMoonsMoonIDNotFound) IsServerError() bool {
 // IsCode returns true when this get universe moons moon Id not found response a status code equal to that given
 func (o *GetUniverseMoonsMoonIDNotFound) IsCode(code int) bool {
 	return code == 404
+}
+
+// Code gets the status code for the get universe moons moon Id not found response
+func (o *GetUniverseMoonsMoonIDNotFound) Code() int {
+	return 404
 }
 
 func (o *GetUniverseMoonsMoonIDNotFound) Error() string {
@@ -448,6 +468,11 @@ func (o *GetUniverseMoonsMoonIDEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
 }
 
+// Code gets the status code for the get universe moons moon Id enhance your calm response
+func (o *GetUniverseMoonsMoonIDEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *GetUniverseMoonsMoonIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/moons/{moon_id}/][%d] getUniverseMoonsMoonIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -509,6 +534,11 @@ func (o *GetUniverseMoonsMoonIDInternalServerError) IsServerError() bool {
 // IsCode returns true when this get universe moons moon Id internal server error response a status code equal to that given
 func (o *GetUniverseMoonsMoonIDInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the get universe moons moon Id internal server error response
+func (o *GetUniverseMoonsMoonIDInternalServerError) Code() int {
+	return 500
 }
 
 func (o *GetUniverseMoonsMoonIDInternalServerError) Error() string {
@@ -574,6 +604,11 @@ func (o *GetUniverseMoonsMoonIDServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get universe moons moon Id service unavailable response
+func (o *GetUniverseMoonsMoonIDServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetUniverseMoonsMoonIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/moons/{moon_id}/][%d] getUniverseMoonsMoonIdServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -635,6 +670,11 @@ func (o *GetUniverseMoonsMoonIDGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get universe moons moon Id gateway timeout response a status code equal to that given
 func (o *GetUniverseMoonsMoonIDGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get universe moons moon Id gateway timeout response
+func (o *GetUniverseMoonsMoonIDGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetUniverseMoonsMoonIDGatewayTimeout) Error() string {

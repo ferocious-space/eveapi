@@ -130,6 +130,11 @@ func (o *GetMarketsPricesOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get markets prices o k response
+func (o *GetMarketsPricesOK) Code() int {
+	return 200
+}
+
 func (o *GetMarketsPricesOK) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/prices/][%d] getMarketsPricesOK  %+v", 200, o.Payload)
 }
@@ -234,6 +239,11 @@ func (o *GetMarketsPricesNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get markets prices not modified response
+func (o *GetMarketsPricesNotModified) Code() int {
+	return 304
+}
+
 func (o *GetMarketsPricesNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/prices/][%d] getMarketsPricesNotModified ", 304)
 }
@@ -314,6 +324,11 @@ func (o *GetMarketsPricesBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get markets prices bad request response
+func (o *GetMarketsPricesBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetMarketsPricesBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/prices/][%d] getMarketsPricesBadRequest  %+v", 400, o.Payload)
 }
@@ -375,6 +390,11 @@ func (o *GetMarketsPricesEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get markets prices enhance your calm response a status code equal to that given
 func (o *GetMarketsPricesEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get markets prices enhance your calm response
+func (o *GetMarketsPricesEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetMarketsPricesEnhanceYourCalm) Error() string {
@@ -440,6 +460,11 @@ func (o *GetMarketsPricesInternalServerError) IsCode(code int) bool {
 	return code == 500
 }
 
+// Code gets the status code for the get markets prices internal server error response
+func (o *GetMarketsPricesInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetMarketsPricesInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/prices/][%d] getMarketsPricesInternalServerError  %+v", 500, o.Payload)
 }
@@ -503,6 +528,11 @@ func (o *GetMarketsPricesServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get markets prices service unavailable response
+func (o *GetMarketsPricesServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetMarketsPricesServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/prices/][%d] getMarketsPricesServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -564,6 +594,11 @@ func (o *GetMarketsPricesGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get markets prices gateway timeout response a status code equal to that given
 func (o *GetMarketsPricesGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get markets prices gateway timeout response
+func (o *GetMarketsPricesGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetMarketsPricesGatewayTimeout) Error() string {

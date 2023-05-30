@@ -135,6 +135,11 @@ func (o *GetInsurancePricesOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get insurance prices o k response
+func (o *GetInsurancePricesOK) Code() int {
+	return 200
+}
+
 func (o *GetInsurancePricesOK) Error() string {
 	return fmt.Sprintf("[GET /v1/insurance/prices/][%d] getInsurancePricesOK  %+v", 200, o.Payload)
 }
@@ -246,6 +251,11 @@ func (o *GetInsurancePricesNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get insurance prices not modified response
+func (o *GetInsurancePricesNotModified) Code() int {
+	return 304
+}
+
 func (o *GetInsurancePricesNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/insurance/prices/][%d] getInsurancePricesNotModified ", 304)
 }
@@ -326,6 +336,11 @@ func (o *GetInsurancePricesBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get insurance prices bad request response
+func (o *GetInsurancePricesBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetInsurancePricesBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/insurance/prices/][%d] getInsurancePricesBadRequest  %+v", 400, o.Payload)
 }
@@ -387,6 +402,11 @@ func (o *GetInsurancePricesEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get insurance prices enhance your calm response a status code equal to that given
 func (o *GetInsurancePricesEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get insurance prices enhance your calm response
+func (o *GetInsurancePricesEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetInsurancePricesEnhanceYourCalm) Error() string {
@@ -452,6 +472,11 @@ func (o *GetInsurancePricesInternalServerError) IsCode(code int) bool {
 	return code == 500
 }
 
+// Code gets the status code for the get insurance prices internal server error response
+func (o *GetInsurancePricesInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetInsurancePricesInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/insurance/prices/][%d] getInsurancePricesInternalServerError  %+v", 500, o.Payload)
 }
@@ -515,6 +540,11 @@ func (o *GetInsurancePricesServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get insurance prices service unavailable response
+func (o *GetInsurancePricesServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetInsurancePricesServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/insurance/prices/][%d] getInsurancePricesServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -576,6 +606,11 @@ func (o *GetInsurancePricesGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get insurance prices gateway timeout response a status code equal to that given
 func (o *GetInsurancePricesGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get insurance prices gateway timeout response
+func (o *GetInsurancePricesGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetInsurancePricesGatewayTimeout) Error() string {

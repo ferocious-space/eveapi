@@ -134,6 +134,11 @@ func (o *GetAlliancesAllianceIDIconsOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get alliances alliance Id icons o k response
+func (o *GetAlliancesAllianceIDIconsOK) Code() int {
+	return 200
+}
+
 func (o *GetAlliancesAllianceIDIconsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/alliances/{alliance_id}/icons/][%d] getAlliancesAllianceIdIconsOK  %+v", 200, o.Payload)
 }
@@ -240,6 +245,11 @@ func (o *GetAlliancesAllianceIDIconsNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get alliances alliance Id icons not modified response
+func (o *GetAlliancesAllianceIDIconsNotModified) Code() int {
+	return 304
+}
+
 func (o *GetAlliancesAllianceIDIconsNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/alliances/{alliance_id}/icons/][%d] getAlliancesAllianceIdIconsNotModified ", 304)
 }
@@ -320,6 +330,11 @@ func (o *GetAlliancesAllianceIDIconsBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get alliances alliance Id icons bad request response
+func (o *GetAlliancesAllianceIDIconsBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetAlliancesAllianceIDIconsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/alliances/{alliance_id}/icons/][%d] getAlliancesAllianceIdIconsBadRequest  %+v", 400, o.Payload)
 }
@@ -381,6 +396,11 @@ func (o *GetAlliancesAllianceIDIconsNotFound) IsServerError() bool {
 // IsCode returns true when this get alliances alliance Id icons not found response a status code equal to that given
 func (o *GetAlliancesAllianceIDIconsNotFound) IsCode(code int) bool {
 	return code == 404
+}
+
+// Code gets the status code for the get alliances alliance Id icons not found response
+func (o *GetAlliancesAllianceIDIconsNotFound) Code() int {
+	return 404
 }
 
 func (o *GetAlliancesAllianceIDIconsNotFound) Error() string {
@@ -446,6 +466,11 @@ func (o *GetAlliancesAllianceIDIconsEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
 }
 
+// Code gets the status code for the get alliances alliance Id icons enhance your calm response
+func (o *GetAlliancesAllianceIDIconsEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *GetAlliancesAllianceIDIconsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/alliances/{alliance_id}/icons/][%d] getAlliancesAllianceIdIconsEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -507,6 +532,11 @@ func (o *GetAlliancesAllianceIDIconsInternalServerError) IsServerError() bool {
 // IsCode returns true when this get alliances alliance Id icons internal server error response a status code equal to that given
 func (o *GetAlliancesAllianceIDIconsInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the get alliances alliance Id icons internal server error response
+func (o *GetAlliancesAllianceIDIconsInternalServerError) Code() int {
+	return 500
 }
 
 func (o *GetAlliancesAllianceIDIconsInternalServerError) Error() string {
@@ -572,6 +602,11 @@ func (o *GetAlliancesAllianceIDIconsServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get alliances alliance Id icons service unavailable response
+func (o *GetAlliancesAllianceIDIconsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetAlliancesAllianceIDIconsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/alliances/{alliance_id}/icons/][%d] getAlliancesAllianceIdIconsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -633,6 +668,11 @@ func (o *GetAlliancesAllianceIDIconsGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get alliances alliance Id icons gateway timeout response a status code equal to that given
 func (o *GetAlliancesAllianceIDIconsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get alliances alliance Id icons gateway timeout response
+func (o *GetAlliancesAllianceIDIconsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetAlliancesAllianceIDIconsGatewayTimeout) Error() string {

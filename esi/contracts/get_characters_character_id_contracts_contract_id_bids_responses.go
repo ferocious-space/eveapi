@@ -148,6 +148,11 @@ func (o *GetCharactersCharacterIDContractsContractIDBidsOK) IsCode(code int) boo
 	return code == 200
 }
 
+// Code gets the status code for the get characters character Id contracts contract Id bids o k response
+func (o *GetCharactersCharacterIDContractsContractIDBidsOK) Code() int {
+	return 200
+}
+
 func (o *GetCharactersCharacterIDContractsContractIDBidsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/contracts/{contract_id}/bids/][%d] getCharactersCharacterIdContractsContractIdBidsOK  %+v", 200, o.Payload)
 }
@@ -252,6 +257,11 @@ func (o *GetCharactersCharacterIDContractsContractIDBidsNotModified) IsCode(code
 	return code == 304
 }
 
+// Code gets the status code for the get characters character Id contracts contract Id bids not modified response
+func (o *GetCharactersCharacterIDContractsContractIDBidsNotModified) Code() int {
+	return 304
+}
+
 func (o *GetCharactersCharacterIDContractsContractIDBidsNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/contracts/{contract_id}/bids/][%d] getCharactersCharacterIdContractsContractIdBidsNotModified ", 304)
 }
@@ -332,6 +342,11 @@ func (o *GetCharactersCharacterIDContractsContractIDBidsBadRequest) IsCode(code 
 	return code == 400
 }
 
+// Code gets the status code for the get characters character Id contracts contract Id bids bad request response
+func (o *GetCharactersCharacterIDContractsContractIDBidsBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetCharactersCharacterIDContractsContractIDBidsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/contracts/{contract_id}/bids/][%d] getCharactersCharacterIdContractsContractIdBidsBadRequest  %+v", 400, o.Payload)
 }
@@ -393,6 +408,11 @@ func (o *GetCharactersCharacterIDContractsContractIDBidsUnauthorized) IsServerEr
 // IsCode returns true when this get characters character Id contracts contract Id bids unauthorized response a status code equal to that given
 func (o *GetCharactersCharacterIDContractsContractIDBidsUnauthorized) IsCode(code int) bool {
 	return code == 401
+}
+
+// Code gets the status code for the get characters character Id contracts contract Id bids unauthorized response
+func (o *GetCharactersCharacterIDContractsContractIDBidsUnauthorized) Code() int {
+	return 401
 }
 
 func (o *GetCharactersCharacterIDContractsContractIDBidsUnauthorized) Error() string {
@@ -458,6 +478,11 @@ func (o *GetCharactersCharacterIDContractsContractIDBidsForbidden) IsCode(code i
 	return code == 403
 }
 
+// Code gets the status code for the get characters character Id contracts contract Id bids forbidden response
+func (o *GetCharactersCharacterIDContractsContractIDBidsForbidden) Code() int {
+	return 403
+}
+
 func (o *GetCharactersCharacterIDContractsContractIDBidsForbidden) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/contracts/{contract_id}/bids/][%d] getCharactersCharacterIdContractsContractIdBidsForbidden  %+v", 403, o.Payload)
 }
@@ -519,6 +544,11 @@ func (o *GetCharactersCharacterIDContractsContractIDBidsNotFound) IsServerError(
 // IsCode returns true when this get characters character Id contracts contract Id bids not found response a status code equal to that given
 func (o *GetCharactersCharacterIDContractsContractIDBidsNotFound) IsCode(code int) bool {
 	return code == 404
+}
+
+// Code gets the status code for the get characters character Id contracts contract Id bids not found response
+func (o *GetCharactersCharacterIDContractsContractIDBidsNotFound) Code() int {
+	return 404
 }
 
 func (o *GetCharactersCharacterIDContractsContractIDBidsNotFound) Error() string {
@@ -584,6 +614,11 @@ func (o *GetCharactersCharacterIDContractsContractIDBidsEnhanceYourCalm) IsCode(
 	return code == 420
 }
 
+// Code gets the status code for the get characters character Id contracts contract Id bids enhance your calm response
+func (o *GetCharactersCharacterIDContractsContractIDBidsEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *GetCharactersCharacterIDContractsContractIDBidsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/contracts/{contract_id}/bids/][%d] getCharactersCharacterIdContractsContractIdBidsEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -645,6 +680,11 @@ func (o *GetCharactersCharacterIDContractsContractIDBidsInternalServerError) IsS
 // IsCode returns true when this get characters character Id contracts contract Id bids internal server error response a status code equal to that given
 func (o *GetCharactersCharacterIDContractsContractIDBidsInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the get characters character Id contracts contract Id bids internal server error response
+func (o *GetCharactersCharacterIDContractsContractIDBidsInternalServerError) Code() int {
+	return 500
 }
 
 func (o *GetCharactersCharacterIDContractsContractIDBidsInternalServerError) Error() string {
@@ -710,6 +750,11 @@ func (o *GetCharactersCharacterIDContractsContractIDBidsServiceUnavailable) IsCo
 	return code == 503
 }
 
+// Code gets the status code for the get characters character Id contracts contract Id bids service unavailable response
+func (o *GetCharactersCharacterIDContractsContractIDBidsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCharactersCharacterIDContractsContractIDBidsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/contracts/{contract_id}/bids/][%d] getCharactersCharacterIdContractsContractIdBidsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -771,6 +816,11 @@ func (o *GetCharactersCharacterIDContractsContractIDBidsGatewayTimeout) IsServer
 // IsCode returns true when this get characters character Id contracts contract Id bids gateway timeout response a status code equal to that given
 func (o *GetCharactersCharacterIDContractsContractIDBidsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get characters character Id contracts contract Id bids gateway timeout response
+func (o *GetCharactersCharacterIDContractsContractIDBidsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCharactersCharacterIDContractsContractIDBidsGatewayTimeout) Error() string {

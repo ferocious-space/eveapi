@@ -144,6 +144,11 @@ func (o *GetCharactersCharacterIDMailOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get characters character Id mail o k response
+func (o *GetCharactersCharacterIDMailOK) Code() int {
+	return 200
+}
+
 func (o *GetCharactersCharacterIDMailOK) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/mail/][%d] getCharactersCharacterIdMailOK  %+v", 200, o.Payload)
 }
@@ -248,6 +253,11 @@ func (o *GetCharactersCharacterIDMailNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get characters character Id mail not modified response
+func (o *GetCharactersCharacterIDMailNotModified) Code() int {
+	return 304
+}
+
 func (o *GetCharactersCharacterIDMailNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/mail/][%d] getCharactersCharacterIdMailNotModified ", 304)
 }
@@ -328,6 +338,11 @@ func (o *GetCharactersCharacterIDMailBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get characters character Id mail bad request response
+func (o *GetCharactersCharacterIDMailBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetCharactersCharacterIDMailBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/mail/][%d] getCharactersCharacterIdMailBadRequest  %+v", 400, o.Payload)
 }
@@ -389,6 +404,11 @@ func (o *GetCharactersCharacterIDMailUnauthorized) IsServerError() bool {
 // IsCode returns true when this get characters character Id mail unauthorized response a status code equal to that given
 func (o *GetCharactersCharacterIDMailUnauthorized) IsCode(code int) bool {
 	return code == 401
+}
+
+// Code gets the status code for the get characters character Id mail unauthorized response
+func (o *GetCharactersCharacterIDMailUnauthorized) Code() int {
+	return 401
 }
 
 func (o *GetCharactersCharacterIDMailUnauthorized) Error() string {
@@ -454,6 +474,11 @@ func (o *GetCharactersCharacterIDMailForbidden) IsCode(code int) bool {
 	return code == 403
 }
 
+// Code gets the status code for the get characters character Id mail forbidden response
+func (o *GetCharactersCharacterIDMailForbidden) Code() int {
+	return 403
+}
+
 func (o *GetCharactersCharacterIDMailForbidden) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/mail/][%d] getCharactersCharacterIdMailForbidden  %+v", 403, o.Payload)
 }
@@ -515,6 +540,11 @@ func (o *GetCharactersCharacterIDMailEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get characters character Id mail enhance your calm response a status code equal to that given
 func (o *GetCharactersCharacterIDMailEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get characters character Id mail enhance your calm response
+func (o *GetCharactersCharacterIDMailEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetCharactersCharacterIDMailEnhanceYourCalm) Error() string {
@@ -580,6 +610,11 @@ func (o *GetCharactersCharacterIDMailInternalServerError) IsCode(code int) bool 
 	return code == 500
 }
 
+// Code gets the status code for the get characters character Id mail internal server error response
+func (o *GetCharactersCharacterIDMailInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetCharactersCharacterIDMailInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/mail/][%d] getCharactersCharacterIdMailInternalServerError  %+v", 500, o.Payload)
 }
@@ -643,6 +678,11 @@ func (o *GetCharactersCharacterIDMailServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get characters character Id mail service unavailable response
+func (o *GetCharactersCharacterIDMailServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCharactersCharacterIDMailServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/mail/][%d] getCharactersCharacterIdMailServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -704,6 +744,11 @@ func (o *GetCharactersCharacterIDMailGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get characters character Id mail gateway timeout response a status code equal to that given
 func (o *GetCharactersCharacterIDMailGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get characters character Id mail gateway timeout response
+func (o *GetCharactersCharacterIDMailGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCharactersCharacterIDMailGatewayTimeout) Error() string {

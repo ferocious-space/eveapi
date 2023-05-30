@@ -130,6 +130,11 @@ func (o *GetStatusOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get status o k response
+func (o *GetStatusOK) Code() int {
+	return 200
+}
+
 func (o *GetStatusOK) Error() string {
 	return fmt.Sprintf("[GET /v1/status/][%d] getStatusOK  %+v", 200, o.Payload)
 }
@@ -236,6 +241,11 @@ func (o *GetStatusNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get status not modified response
+func (o *GetStatusNotModified) Code() int {
+	return 304
+}
+
 func (o *GetStatusNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/status/][%d] getStatusNotModified ", 304)
 }
@@ -316,6 +326,11 @@ func (o *GetStatusBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get status bad request response
+func (o *GetStatusBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetStatusBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/status/][%d] getStatusBadRequest  %+v", 400, o.Payload)
 }
@@ -377,6 +392,11 @@ func (o *GetStatusEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get status enhance your calm response a status code equal to that given
 func (o *GetStatusEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get status enhance your calm response
+func (o *GetStatusEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetStatusEnhanceYourCalm) Error() string {
@@ -442,6 +462,11 @@ func (o *GetStatusInternalServerError) IsCode(code int) bool {
 	return code == 500
 }
 
+// Code gets the status code for the get status internal server error response
+func (o *GetStatusInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetStatusInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/status/][%d] getStatusInternalServerError  %+v", 500, o.Payload)
 }
@@ -505,6 +530,11 @@ func (o *GetStatusServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get status service unavailable response
+func (o *GetStatusServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetStatusServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/status/][%d] getStatusServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -566,6 +596,11 @@ func (o *GetStatusGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get status gateway timeout response a status code equal to that given
 func (o *GetStatusGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get status gateway timeout response
+func (o *GetStatusGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetStatusGatewayTimeout) Error() string {

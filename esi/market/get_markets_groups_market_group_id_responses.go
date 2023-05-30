@@ -140,6 +140,11 @@ func (o *GetMarketsGroupsMarketGroupIDOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get markets groups market group Id o k response
+func (o *GetMarketsGroupsMarketGroupIDOK) Code() int {
+	return 200
+}
+
 func (o *GetMarketsGroupsMarketGroupIDOK) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/groups/{market_group_id}/][%d] getMarketsGroupsMarketGroupIdOK  %+v", 200, o.Payload)
 }
@@ -253,6 +258,11 @@ func (o *GetMarketsGroupsMarketGroupIDNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get markets groups market group Id not modified response
+func (o *GetMarketsGroupsMarketGroupIDNotModified) Code() int {
+	return 304
+}
+
 func (o *GetMarketsGroupsMarketGroupIDNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/groups/{market_group_id}/][%d] getMarketsGroupsMarketGroupIdNotModified ", 304)
 }
@@ -333,6 +343,11 @@ func (o *GetMarketsGroupsMarketGroupIDBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get markets groups market group Id bad request response
+func (o *GetMarketsGroupsMarketGroupIDBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetMarketsGroupsMarketGroupIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/groups/{market_group_id}/][%d] getMarketsGroupsMarketGroupIdBadRequest  %+v", 400, o.Payload)
 }
@@ -394,6 +409,11 @@ func (o *GetMarketsGroupsMarketGroupIDNotFound) IsServerError() bool {
 // IsCode returns true when this get markets groups market group Id not found response a status code equal to that given
 func (o *GetMarketsGroupsMarketGroupIDNotFound) IsCode(code int) bool {
 	return code == 404
+}
+
+// Code gets the status code for the get markets groups market group Id not found response
+func (o *GetMarketsGroupsMarketGroupIDNotFound) Code() int {
+	return 404
 }
 
 func (o *GetMarketsGroupsMarketGroupIDNotFound) Error() string {
@@ -459,6 +479,11 @@ func (o *GetMarketsGroupsMarketGroupIDEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
 }
 
+// Code gets the status code for the get markets groups market group Id enhance your calm response
+func (o *GetMarketsGroupsMarketGroupIDEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *GetMarketsGroupsMarketGroupIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/groups/{market_group_id}/][%d] getMarketsGroupsMarketGroupIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -520,6 +545,11 @@ func (o *GetMarketsGroupsMarketGroupIDInternalServerError) IsServerError() bool 
 // IsCode returns true when this get markets groups market group Id internal server error response a status code equal to that given
 func (o *GetMarketsGroupsMarketGroupIDInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the get markets groups market group Id internal server error response
+func (o *GetMarketsGroupsMarketGroupIDInternalServerError) Code() int {
+	return 500
 }
 
 func (o *GetMarketsGroupsMarketGroupIDInternalServerError) Error() string {
@@ -585,6 +615,11 @@ func (o *GetMarketsGroupsMarketGroupIDServiceUnavailable) IsCode(code int) bool 
 	return code == 503
 }
 
+// Code gets the status code for the get markets groups market group Id service unavailable response
+func (o *GetMarketsGroupsMarketGroupIDServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetMarketsGroupsMarketGroupIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/groups/{market_group_id}/][%d] getMarketsGroupsMarketGroupIdServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -646,6 +681,11 @@ func (o *GetMarketsGroupsMarketGroupIDGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get markets groups market group Id gateway timeout response a status code equal to that given
 func (o *GetMarketsGroupsMarketGroupIDGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get markets groups market group Id gateway timeout response
+func (o *GetMarketsGroupsMarketGroupIDGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetMarketsGroupsMarketGroupIDGatewayTimeout) Error() string {

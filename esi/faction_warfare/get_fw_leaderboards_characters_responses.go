@@ -131,6 +131,11 @@ func (o *GetFwLeaderboardsCharactersOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get fw leaderboards characters o k response
+func (o *GetFwLeaderboardsCharactersOK) Code() int {
+	return 200
+}
+
 func (o *GetFwLeaderboardsCharactersOK) Error() string {
 	return fmt.Sprintf("[GET /v1/fw/leaderboards/characters/][%d] getFwLeaderboardsCharactersOK  %+v", 200, o.Payload)
 }
@@ -237,6 +242,11 @@ func (o *GetFwLeaderboardsCharactersNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get fw leaderboards characters not modified response
+func (o *GetFwLeaderboardsCharactersNotModified) Code() int {
+	return 304
+}
+
 func (o *GetFwLeaderboardsCharactersNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/fw/leaderboards/characters/][%d] getFwLeaderboardsCharactersNotModified ", 304)
 }
@@ -317,6 +327,11 @@ func (o *GetFwLeaderboardsCharactersBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get fw leaderboards characters bad request response
+func (o *GetFwLeaderboardsCharactersBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetFwLeaderboardsCharactersBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/fw/leaderboards/characters/][%d] getFwLeaderboardsCharactersBadRequest  %+v", 400, o.Payload)
 }
@@ -378,6 +393,11 @@ func (o *GetFwLeaderboardsCharactersEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get fw leaderboards characters enhance your calm response a status code equal to that given
 func (o *GetFwLeaderboardsCharactersEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get fw leaderboards characters enhance your calm response
+func (o *GetFwLeaderboardsCharactersEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetFwLeaderboardsCharactersEnhanceYourCalm) Error() string {
@@ -443,6 +463,11 @@ func (o *GetFwLeaderboardsCharactersInternalServerError) IsCode(code int) bool {
 	return code == 500
 }
 
+// Code gets the status code for the get fw leaderboards characters internal server error response
+func (o *GetFwLeaderboardsCharactersInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetFwLeaderboardsCharactersInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/fw/leaderboards/characters/][%d] getFwLeaderboardsCharactersInternalServerError  %+v", 500, o.Payload)
 }
@@ -506,6 +531,11 @@ func (o *GetFwLeaderboardsCharactersServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get fw leaderboards characters service unavailable response
+func (o *GetFwLeaderboardsCharactersServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetFwLeaderboardsCharactersServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/fw/leaderboards/characters/][%d] getFwLeaderboardsCharactersServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -567,6 +597,11 @@ func (o *GetFwLeaderboardsCharactersGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get fw leaderboards characters gateway timeout response a status code equal to that given
 func (o *GetFwLeaderboardsCharactersGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get fw leaderboards characters gateway timeout response
+func (o *GetFwLeaderboardsCharactersGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetFwLeaderboardsCharactersGatewayTimeout) Error() string {

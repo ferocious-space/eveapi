@@ -136,6 +136,11 @@ func (o *GetUniverseSchematicsSchematicIDOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get universe schematics schematic Id o k response
+func (o *GetUniverseSchematicsSchematicIDOK) Code() int {
+	return 200
+}
+
 func (o *GetUniverseSchematicsSchematicIDOK) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/schematics/{schematic_id}/][%d] getUniverseSchematicsSchematicIdOK  %+v", 200, o.Payload)
 }
@@ -242,6 +247,11 @@ func (o *GetUniverseSchematicsSchematicIDNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get universe schematics schematic Id not modified response
+func (o *GetUniverseSchematicsSchematicIDNotModified) Code() int {
+	return 304
+}
+
 func (o *GetUniverseSchematicsSchematicIDNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/schematics/{schematic_id}/][%d] getUniverseSchematicsSchematicIdNotModified ", 304)
 }
@@ -322,6 +332,11 @@ func (o *GetUniverseSchematicsSchematicIDBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get universe schematics schematic Id bad request response
+func (o *GetUniverseSchematicsSchematicIDBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetUniverseSchematicsSchematicIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/schematics/{schematic_id}/][%d] getUniverseSchematicsSchematicIdBadRequest  %+v", 400, o.Payload)
 }
@@ -383,6 +398,11 @@ func (o *GetUniverseSchematicsSchematicIDNotFound) IsServerError() bool {
 // IsCode returns true when this get universe schematics schematic Id not found response a status code equal to that given
 func (o *GetUniverseSchematicsSchematicIDNotFound) IsCode(code int) bool {
 	return code == 404
+}
+
+// Code gets the status code for the get universe schematics schematic Id not found response
+func (o *GetUniverseSchematicsSchematicIDNotFound) Code() int {
+	return 404
 }
 
 func (o *GetUniverseSchematicsSchematicIDNotFound) Error() string {
@@ -448,6 +468,11 @@ func (o *GetUniverseSchematicsSchematicIDEnhanceYourCalm) IsCode(code int) bool 
 	return code == 420
 }
 
+// Code gets the status code for the get universe schematics schematic Id enhance your calm response
+func (o *GetUniverseSchematicsSchematicIDEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *GetUniverseSchematicsSchematicIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/schematics/{schematic_id}/][%d] getUniverseSchematicsSchematicIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -509,6 +534,11 @@ func (o *GetUniverseSchematicsSchematicIDInternalServerError) IsServerError() bo
 // IsCode returns true when this get universe schematics schematic Id internal server error response a status code equal to that given
 func (o *GetUniverseSchematicsSchematicIDInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the get universe schematics schematic Id internal server error response
+func (o *GetUniverseSchematicsSchematicIDInternalServerError) Code() int {
+	return 500
 }
 
 func (o *GetUniverseSchematicsSchematicIDInternalServerError) Error() string {
@@ -574,6 +604,11 @@ func (o *GetUniverseSchematicsSchematicIDServiceUnavailable) IsCode(code int) bo
 	return code == 503
 }
 
+// Code gets the status code for the get universe schematics schematic Id service unavailable response
+func (o *GetUniverseSchematicsSchematicIDServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetUniverseSchematicsSchematicIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/schematics/{schematic_id}/][%d] getUniverseSchematicsSchematicIdServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -635,6 +670,11 @@ func (o *GetUniverseSchematicsSchematicIDGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get universe schematics schematic Id gateway timeout response a status code equal to that given
 func (o *GetUniverseSchematicsSchematicIDGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get universe schematics schematic Id gateway timeout response
+func (o *GetUniverseSchematicsSchematicIDGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetUniverseSchematicsSchematicIDGatewayTimeout) Error() string {

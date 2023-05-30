@@ -142,6 +142,11 @@ func (o *GetCorporationsCorporationIDMembertrackingOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get corporations corporation Id membertracking o k response
+func (o *GetCorporationsCorporationIDMembertrackingOK) Code() int {
+	return 200
+}
+
 func (o *GetCorporationsCorporationIDMembertrackingOK) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/membertracking/][%d] getCorporationsCorporationIdMembertrackingOK  %+v", 200, o.Payload)
 }
@@ -246,6 +251,11 @@ func (o *GetCorporationsCorporationIDMembertrackingNotModified) IsCode(code int)
 	return code == 304
 }
 
+// Code gets the status code for the get corporations corporation Id membertracking not modified response
+func (o *GetCorporationsCorporationIDMembertrackingNotModified) Code() int {
+	return 304
+}
+
 func (o *GetCorporationsCorporationIDMembertrackingNotModified) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/membertracking/][%d] getCorporationsCorporationIdMembertrackingNotModified ", 304)
 }
@@ -326,6 +336,11 @@ func (o *GetCorporationsCorporationIDMembertrackingBadRequest) IsCode(code int) 
 	return code == 400
 }
 
+// Code gets the status code for the get corporations corporation Id membertracking bad request response
+func (o *GetCorporationsCorporationIDMembertrackingBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetCorporationsCorporationIDMembertrackingBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/membertracking/][%d] getCorporationsCorporationIdMembertrackingBadRequest  %+v", 400, o.Payload)
 }
@@ -387,6 +402,11 @@ func (o *GetCorporationsCorporationIDMembertrackingUnauthorized) IsServerError()
 // IsCode returns true when this get corporations corporation Id membertracking unauthorized response a status code equal to that given
 func (o *GetCorporationsCorporationIDMembertrackingUnauthorized) IsCode(code int) bool {
 	return code == 401
+}
+
+// Code gets the status code for the get corporations corporation Id membertracking unauthorized response
+func (o *GetCorporationsCorporationIDMembertrackingUnauthorized) Code() int {
+	return 401
 }
 
 func (o *GetCorporationsCorporationIDMembertrackingUnauthorized) Error() string {
@@ -452,6 +472,11 @@ func (o *GetCorporationsCorporationIDMembertrackingForbidden) IsCode(code int) b
 	return code == 403
 }
 
+// Code gets the status code for the get corporations corporation Id membertracking forbidden response
+func (o *GetCorporationsCorporationIDMembertrackingForbidden) Code() int {
+	return 403
+}
+
 func (o *GetCorporationsCorporationIDMembertrackingForbidden) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/membertracking/][%d] getCorporationsCorporationIdMembertrackingForbidden  %+v", 403, o.Payload)
 }
@@ -513,6 +538,11 @@ func (o *GetCorporationsCorporationIDMembertrackingEnhanceYourCalm) IsServerErro
 // IsCode returns true when this get corporations corporation Id membertracking enhance your calm response a status code equal to that given
 func (o *GetCorporationsCorporationIDMembertrackingEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get corporations corporation Id membertracking enhance your calm response
+func (o *GetCorporationsCorporationIDMembertrackingEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetCorporationsCorporationIDMembertrackingEnhanceYourCalm) Error() string {
@@ -578,6 +608,11 @@ func (o *GetCorporationsCorporationIDMembertrackingInternalServerError) IsCode(c
 	return code == 500
 }
 
+// Code gets the status code for the get corporations corporation Id membertracking internal server error response
+func (o *GetCorporationsCorporationIDMembertrackingInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetCorporationsCorporationIDMembertrackingInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/membertracking/][%d] getCorporationsCorporationIdMembertrackingInternalServerError  %+v", 500, o.Payload)
 }
@@ -641,6 +676,11 @@ func (o *GetCorporationsCorporationIDMembertrackingServiceUnavailable) IsCode(co
 	return code == 503
 }
 
+// Code gets the status code for the get corporations corporation Id membertracking service unavailable response
+func (o *GetCorporationsCorporationIDMembertrackingServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCorporationsCorporationIDMembertrackingServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v2/corporations/{corporation_id}/membertracking/][%d] getCorporationsCorporationIdMembertrackingServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -702,6 +742,11 @@ func (o *GetCorporationsCorporationIDMembertrackingGatewayTimeout) IsServerError
 // IsCode returns true when this get corporations corporation Id membertracking gateway timeout response a status code equal to that given
 func (o *GetCorporationsCorporationIDMembertrackingGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get corporations corporation Id membertracking gateway timeout response
+func (o *GetCorporationsCorporationIDMembertrackingGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCorporationsCorporationIDMembertrackingGatewayTimeout) Error() string {

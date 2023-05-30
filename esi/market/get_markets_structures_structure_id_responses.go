@@ -158,6 +158,11 @@ func (o *GetMarketsStructuresStructureIDOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get markets structures structure Id o k response
+func (o *GetMarketsStructuresStructureIDOK) Code() int {
+	return 200
+}
+
 func (o *GetMarketsStructuresStructureIDOK) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/structures/{structure_id}/][%d] getMarketsStructuresStructureIdOK  %+v", 200, o.Payload)
 }
@@ -273,6 +278,11 @@ func (o *GetMarketsStructuresStructureIDNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get markets structures structure Id not modified response
+func (o *GetMarketsStructuresStructureIDNotModified) Code() int {
+	return 304
+}
+
 func (o *GetMarketsStructuresStructureIDNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/structures/{structure_id}/][%d] getMarketsStructuresStructureIdNotModified ", 304)
 }
@@ -353,6 +363,11 @@ func (o *GetMarketsStructuresStructureIDBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get markets structures structure Id bad request response
+func (o *GetMarketsStructuresStructureIDBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetMarketsStructuresStructureIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/structures/{structure_id}/][%d] getMarketsStructuresStructureIdBadRequest  %+v", 400, o.Payload)
 }
@@ -414,6 +429,11 @@ func (o *GetMarketsStructuresStructureIDUnauthorized) IsServerError() bool {
 // IsCode returns true when this get markets structures structure Id unauthorized response a status code equal to that given
 func (o *GetMarketsStructuresStructureIDUnauthorized) IsCode(code int) bool {
 	return code == 401
+}
+
+// Code gets the status code for the get markets structures structure Id unauthorized response
+func (o *GetMarketsStructuresStructureIDUnauthorized) Code() int {
+	return 401
 }
 
 func (o *GetMarketsStructuresStructureIDUnauthorized) Error() string {
@@ -479,6 +499,11 @@ func (o *GetMarketsStructuresStructureIDForbidden) IsCode(code int) bool {
 	return code == 403
 }
 
+// Code gets the status code for the get markets structures structure Id forbidden response
+func (o *GetMarketsStructuresStructureIDForbidden) Code() int {
+	return 403
+}
+
 func (o *GetMarketsStructuresStructureIDForbidden) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/structures/{structure_id}/][%d] getMarketsStructuresStructureIdForbidden  %+v", 403, o.Payload)
 }
@@ -540,6 +565,11 @@ func (o *GetMarketsStructuresStructureIDEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get markets structures structure Id enhance your calm response a status code equal to that given
 func (o *GetMarketsStructuresStructureIDEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get markets structures structure Id enhance your calm response
+func (o *GetMarketsStructuresStructureIDEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetMarketsStructuresStructureIDEnhanceYourCalm) Error() string {
@@ -605,6 +635,11 @@ func (o *GetMarketsStructuresStructureIDInternalServerError) IsCode(code int) bo
 	return code == 500
 }
 
+// Code gets the status code for the get markets structures structure Id internal server error response
+func (o *GetMarketsStructuresStructureIDInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetMarketsStructuresStructureIDInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/structures/{structure_id}/][%d] getMarketsStructuresStructureIdInternalServerError  %+v", 500, o.Payload)
 }
@@ -668,6 +703,11 @@ func (o *GetMarketsStructuresStructureIDServiceUnavailable) IsCode(code int) boo
 	return code == 503
 }
 
+// Code gets the status code for the get markets structures structure Id service unavailable response
+func (o *GetMarketsStructuresStructureIDServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetMarketsStructuresStructureIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/markets/structures/{structure_id}/][%d] getMarketsStructuresStructureIdServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -729,6 +769,11 @@ func (o *GetMarketsStructuresStructureIDGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get markets structures structure Id gateway timeout response a status code equal to that given
 func (o *GetMarketsStructuresStructureIDGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get markets structures structure Id gateway timeout response
+func (o *GetMarketsStructuresStructureIDGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetMarketsStructuresStructureIDGatewayTimeout) Error() string {

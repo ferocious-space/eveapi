@@ -136,6 +136,11 @@ func (o *GetUniversePlanetsPlanetIDOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get universe planets planet Id o k response
+func (o *GetUniversePlanetsPlanetIDOK) Code() int {
+	return 200
+}
+
 func (o *GetUniversePlanetsPlanetIDOK) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/planets/{planet_id}/][%d] getUniversePlanetsPlanetIdOK  %+v", 200, o.Payload)
 }
@@ -242,6 +247,11 @@ func (o *GetUniversePlanetsPlanetIDNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get universe planets planet Id not modified response
+func (o *GetUniversePlanetsPlanetIDNotModified) Code() int {
+	return 304
+}
+
 func (o *GetUniversePlanetsPlanetIDNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/planets/{planet_id}/][%d] getUniversePlanetsPlanetIdNotModified ", 304)
 }
@@ -322,6 +332,11 @@ func (o *GetUniversePlanetsPlanetIDBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get universe planets planet Id bad request response
+func (o *GetUniversePlanetsPlanetIDBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetUniversePlanetsPlanetIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/planets/{planet_id}/][%d] getUniversePlanetsPlanetIdBadRequest  %+v", 400, o.Payload)
 }
@@ -383,6 +398,11 @@ func (o *GetUniversePlanetsPlanetIDNotFound) IsServerError() bool {
 // IsCode returns true when this get universe planets planet Id not found response a status code equal to that given
 func (o *GetUniversePlanetsPlanetIDNotFound) IsCode(code int) bool {
 	return code == 404
+}
+
+// Code gets the status code for the get universe planets planet Id not found response
+func (o *GetUniversePlanetsPlanetIDNotFound) Code() int {
+	return 404
 }
 
 func (o *GetUniversePlanetsPlanetIDNotFound) Error() string {
@@ -448,6 +468,11 @@ func (o *GetUniversePlanetsPlanetIDEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
 }
 
+// Code gets the status code for the get universe planets planet Id enhance your calm response
+func (o *GetUniversePlanetsPlanetIDEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *GetUniversePlanetsPlanetIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/planets/{planet_id}/][%d] getUniversePlanetsPlanetIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -509,6 +534,11 @@ func (o *GetUniversePlanetsPlanetIDInternalServerError) IsServerError() bool {
 // IsCode returns true when this get universe planets planet Id internal server error response a status code equal to that given
 func (o *GetUniversePlanetsPlanetIDInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the get universe planets planet Id internal server error response
+func (o *GetUniversePlanetsPlanetIDInternalServerError) Code() int {
+	return 500
 }
 
 func (o *GetUniversePlanetsPlanetIDInternalServerError) Error() string {
@@ -574,6 +604,11 @@ func (o *GetUniversePlanetsPlanetIDServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get universe planets planet Id service unavailable response
+func (o *GetUniversePlanetsPlanetIDServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetUniversePlanetsPlanetIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/planets/{planet_id}/][%d] getUniversePlanetsPlanetIdServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -635,6 +670,11 @@ func (o *GetUniversePlanetsPlanetIDGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get universe planets planet Id gateway timeout response a status code equal to that given
 func (o *GetUniversePlanetsPlanetIDGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get universe planets planet Id gateway timeout response
+func (o *GetUniversePlanetsPlanetIDGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetUniversePlanetsPlanetIDGatewayTimeout) Error() string {

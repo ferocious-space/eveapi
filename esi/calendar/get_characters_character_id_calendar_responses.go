@@ -143,6 +143,11 @@ func (o *GetCharactersCharacterIDCalendarOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get characters character Id calendar o k response
+func (o *GetCharactersCharacterIDCalendarOK) Code() int {
+	return 200
+}
+
 func (o *GetCharactersCharacterIDCalendarOK) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/calendar/][%d] getCharactersCharacterIdCalendarOK  %+v", 200, o.Payload)
 }
@@ -247,6 +252,11 @@ func (o *GetCharactersCharacterIDCalendarNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get characters character Id calendar not modified response
+func (o *GetCharactersCharacterIDCalendarNotModified) Code() int {
+	return 304
+}
+
 func (o *GetCharactersCharacterIDCalendarNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/calendar/][%d] getCharactersCharacterIdCalendarNotModified ", 304)
 }
@@ -327,6 +337,11 @@ func (o *GetCharactersCharacterIDCalendarBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get characters character Id calendar bad request response
+func (o *GetCharactersCharacterIDCalendarBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetCharactersCharacterIDCalendarBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/calendar/][%d] getCharactersCharacterIdCalendarBadRequest  %+v", 400, o.Payload)
 }
@@ -388,6 +403,11 @@ func (o *GetCharactersCharacterIDCalendarUnauthorized) IsServerError() bool {
 // IsCode returns true when this get characters character Id calendar unauthorized response a status code equal to that given
 func (o *GetCharactersCharacterIDCalendarUnauthorized) IsCode(code int) bool {
 	return code == 401
+}
+
+// Code gets the status code for the get characters character Id calendar unauthorized response
+func (o *GetCharactersCharacterIDCalendarUnauthorized) Code() int {
+	return 401
 }
 
 func (o *GetCharactersCharacterIDCalendarUnauthorized) Error() string {
@@ -453,6 +473,11 @@ func (o *GetCharactersCharacterIDCalendarForbidden) IsCode(code int) bool {
 	return code == 403
 }
 
+// Code gets the status code for the get characters character Id calendar forbidden response
+func (o *GetCharactersCharacterIDCalendarForbidden) Code() int {
+	return 403
+}
+
 func (o *GetCharactersCharacterIDCalendarForbidden) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/calendar/][%d] getCharactersCharacterIdCalendarForbidden  %+v", 403, o.Payload)
 }
@@ -514,6 +539,11 @@ func (o *GetCharactersCharacterIDCalendarEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get characters character Id calendar enhance your calm response a status code equal to that given
 func (o *GetCharactersCharacterIDCalendarEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get characters character Id calendar enhance your calm response
+func (o *GetCharactersCharacterIDCalendarEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetCharactersCharacterIDCalendarEnhanceYourCalm) Error() string {
@@ -579,6 +609,11 @@ func (o *GetCharactersCharacterIDCalendarInternalServerError) IsCode(code int) b
 	return code == 500
 }
 
+// Code gets the status code for the get characters character Id calendar internal server error response
+func (o *GetCharactersCharacterIDCalendarInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetCharactersCharacterIDCalendarInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/calendar/][%d] getCharactersCharacterIdCalendarInternalServerError  %+v", 500, o.Payload)
 }
@@ -642,6 +677,11 @@ func (o *GetCharactersCharacterIDCalendarServiceUnavailable) IsCode(code int) bo
 	return code == 503
 }
 
+// Code gets the status code for the get characters character Id calendar service unavailable response
+func (o *GetCharactersCharacterIDCalendarServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCharactersCharacterIDCalendarServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/calendar/][%d] getCharactersCharacterIdCalendarServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -703,6 +743,11 @@ func (o *GetCharactersCharacterIDCalendarGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get characters character Id calendar gateway timeout response a status code equal to that given
 func (o *GetCharactersCharacterIDCalendarGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get characters character Id calendar gateway timeout response
+func (o *GetCharactersCharacterIDCalendarGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCharactersCharacterIDCalendarGatewayTimeout) Error() string {

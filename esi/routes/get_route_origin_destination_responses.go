@@ -134,6 +134,11 @@ func (o *GetRouteOriginDestinationOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get route origin destination o k response
+func (o *GetRouteOriginDestinationOK) Code() int {
+	return 200
+}
+
 func (o *GetRouteOriginDestinationOK) Error() string {
 	return fmt.Sprintf("[GET /v1/route/{origin}/{destination}/][%d] getRouteOriginDestinationOK  %+v", 200, o.Payload)
 }
@@ -238,6 +243,11 @@ func (o *GetRouteOriginDestinationNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get route origin destination not modified response
+func (o *GetRouteOriginDestinationNotModified) Code() int {
+	return 304
+}
+
 func (o *GetRouteOriginDestinationNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/route/{origin}/{destination}/][%d] getRouteOriginDestinationNotModified ", 304)
 }
@@ -318,6 +328,11 @@ func (o *GetRouteOriginDestinationBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get route origin destination bad request response
+func (o *GetRouteOriginDestinationBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetRouteOriginDestinationBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/route/{origin}/{destination}/][%d] getRouteOriginDestinationBadRequest  %+v", 400, o.Payload)
 }
@@ -379,6 +394,11 @@ func (o *GetRouteOriginDestinationNotFound) IsServerError() bool {
 // IsCode returns true when this get route origin destination not found response a status code equal to that given
 func (o *GetRouteOriginDestinationNotFound) IsCode(code int) bool {
 	return code == 404
+}
+
+// Code gets the status code for the get route origin destination not found response
+func (o *GetRouteOriginDestinationNotFound) Code() int {
+	return 404
 }
 
 func (o *GetRouteOriginDestinationNotFound) Error() string {
@@ -444,6 +464,11 @@ func (o *GetRouteOriginDestinationEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
 }
 
+// Code gets the status code for the get route origin destination enhance your calm response
+func (o *GetRouteOriginDestinationEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *GetRouteOriginDestinationEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/route/{origin}/{destination}/][%d] getRouteOriginDestinationEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -505,6 +530,11 @@ func (o *GetRouteOriginDestinationInternalServerError) IsServerError() bool {
 // IsCode returns true when this get route origin destination internal server error response a status code equal to that given
 func (o *GetRouteOriginDestinationInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the get route origin destination internal server error response
+func (o *GetRouteOriginDestinationInternalServerError) Code() int {
+	return 500
 }
 
 func (o *GetRouteOriginDestinationInternalServerError) Error() string {
@@ -570,6 +600,11 @@ func (o *GetRouteOriginDestinationServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get route origin destination service unavailable response
+func (o *GetRouteOriginDestinationServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetRouteOriginDestinationServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/route/{origin}/{destination}/][%d] getRouteOriginDestinationServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -631,6 +666,11 @@ func (o *GetRouteOriginDestinationGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get route origin destination gateway timeout response a status code equal to that given
 func (o *GetRouteOriginDestinationGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get route origin destination gateway timeout response
+func (o *GetRouteOriginDestinationGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetRouteOriginDestinationGatewayTimeout) Error() string {

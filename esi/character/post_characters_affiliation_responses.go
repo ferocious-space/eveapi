@@ -107,6 +107,11 @@ func (o *PostCharactersAffiliationOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the post characters affiliation o k response
+func (o *PostCharactersAffiliationOK) Code() int {
+	return 200
+}
+
 func (o *PostCharactersAffiliationOK) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/affiliation/][%d] postCharactersAffiliationOK  %+v", 200, o.Payload)
 }
@@ -166,6 +171,11 @@ func (o *PostCharactersAffiliationBadRequest) IsServerError() bool {
 // IsCode returns true when this post characters affiliation bad request response a status code equal to that given
 func (o *PostCharactersAffiliationBadRequest) IsCode(code int) bool {
 	return code == 400
+}
+
+// Code gets the status code for the post characters affiliation bad request response
+func (o *PostCharactersAffiliationBadRequest) Code() int {
+	return 400
 }
 
 func (o *PostCharactersAffiliationBadRequest) Error() string {
@@ -231,6 +241,11 @@ func (o *PostCharactersAffiliationEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
 }
 
+// Code gets the status code for the post characters affiliation enhance your calm response
+func (o *PostCharactersAffiliationEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *PostCharactersAffiliationEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/affiliation/][%d] postCharactersAffiliationEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -292,6 +307,11 @@ func (o *PostCharactersAffiliationInternalServerError) IsServerError() bool {
 // IsCode returns true when this post characters affiliation internal server error response a status code equal to that given
 func (o *PostCharactersAffiliationInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the post characters affiliation internal server error response
+func (o *PostCharactersAffiliationInternalServerError) Code() int {
+	return 500
 }
 
 func (o *PostCharactersAffiliationInternalServerError) Error() string {
@@ -357,6 +377,11 @@ func (o *PostCharactersAffiliationServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the post characters affiliation service unavailable response
+func (o *PostCharactersAffiliationServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *PostCharactersAffiliationServiceUnavailable) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/affiliation/][%d] postCharactersAffiliationServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -418,6 +443,11 @@ func (o *PostCharactersAffiliationGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this post characters affiliation gateway timeout response a status code equal to that given
 func (o *PostCharactersAffiliationGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the post characters affiliation gateway timeout response
+func (o *PostCharactersAffiliationGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *PostCharactersAffiliationGatewayTimeout) Error() string {

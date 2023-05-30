@@ -119,6 +119,11 @@ func (o *PostCharactersCharacterIDAssetsLocationsOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the post characters character Id assets locations o k response
+func (o *PostCharactersCharacterIDAssetsLocationsOK) Code() int {
+	return 200
+}
+
 func (o *PostCharactersCharacterIDAssetsLocationsOK) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/assets/locations/][%d] postCharactersCharacterIdAssetsLocationsOK  %+v", 200, o.Payload)
 }
@@ -178,6 +183,11 @@ func (o *PostCharactersCharacterIDAssetsLocationsBadRequest) IsServerError() boo
 // IsCode returns true when this post characters character Id assets locations bad request response a status code equal to that given
 func (o *PostCharactersCharacterIDAssetsLocationsBadRequest) IsCode(code int) bool {
 	return code == 400
+}
+
+// Code gets the status code for the post characters character Id assets locations bad request response
+func (o *PostCharactersCharacterIDAssetsLocationsBadRequest) Code() int {
+	return 400
 }
 
 func (o *PostCharactersCharacterIDAssetsLocationsBadRequest) Error() string {
@@ -243,6 +253,11 @@ func (o *PostCharactersCharacterIDAssetsLocationsUnauthorized) IsCode(code int) 
 	return code == 401
 }
 
+// Code gets the status code for the post characters character Id assets locations unauthorized response
+func (o *PostCharactersCharacterIDAssetsLocationsUnauthorized) Code() int {
+	return 401
+}
+
 func (o *PostCharactersCharacterIDAssetsLocationsUnauthorized) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/assets/locations/][%d] postCharactersCharacterIdAssetsLocationsUnauthorized  %+v", 401, o.Payload)
 }
@@ -304,6 +319,11 @@ func (o *PostCharactersCharacterIDAssetsLocationsForbidden) IsServerError() bool
 // IsCode returns true when this post characters character Id assets locations forbidden response a status code equal to that given
 func (o *PostCharactersCharacterIDAssetsLocationsForbidden) IsCode(code int) bool {
 	return code == 403
+}
+
+// Code gets the status code for the post characters character Id assets locations forbidden response
+func (o *PostCharactersCharacterIDAssetsLocationsForbidden) Code() int {
+	return 403
 }
 
 func (o *PostCharactersCharacterIDAssetsLocationsForbidden) Error() string {
@@ -369,6 +389,11 @@ func (o *PostCharactersCharacterIDAssetsLocationsEnhanceYourCalm) IsCode(code in
 	return code == 420
 }
 
+// Code gets the status code for the post characters character Id assets locations enhance your calm response
+func (o *PostCharactersCharacterIDAssetsLocationsEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *PostCharactersCharacterIDAssetsLocationsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/assets/locations/][%d] postCharactersCharacterIdAssetsLocationsEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -430,6 +455,11 @@ func (o *PostCharactersCharacterIDAssetsLocationsInternalServerError) IsServerEr
 // IsCode returns true when this post characters character Id assets locations internal server error response a status code equal to that given
 func (o *PostCharactersCharacterIDAssetsLocationsInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the post characters character Id assets locations internal server error response
+func (o *PostCharactersCharacterIDAssetsLocationsInternalServerError) Code() int {
+	return 500
 }
 
 func (o *PostCharactersCharacterIDAssetsLocationsInternalServerError) Error() string {
@@ -495,6 +525,11 @@ func (o *PostCharactersCharacterIDAssetsLocationsServiceUnavailable) IsCode(code
 	return code == 503
 }
 
+// Code gets the status code for the post characters character Id assets locations service unavailable response
+func (o *PostCharactersCharacterIDAssetsLocationsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *PostCharactersCharacterIDAssetsLocationsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/assets/locations/][%d] postCharactersCharacterIdAssetsLocationsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -556,6 +591,11 @@ func (o *PostCharactersCharacterIDAssetsLocationsGatewayTimeout) IsServerError()
 // IsCode returns true when this post characters character Id assets locations gateway timeout response a status code equal to that given
 func (o *PostCharactersCharacterIDAssetsLocationsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the post characters character Id assets locations gateway timeout response
+func (o *PostCharactersCharacterIDAssetsLocationsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *PostCharactersCharacterIDAssetsLocationsGatewayTimeout) Error() string {

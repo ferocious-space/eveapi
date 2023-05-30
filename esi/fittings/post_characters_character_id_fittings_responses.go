@@ -121,6 +121,11 @@ func (o *PostCharactersCharacterIDFittingsCreated) IsCode(code int) bool {
 	return code == 201
 }
 
+// Code gets the status code for the post characters character Id fittings created response
+func (o *PostCharactersCharacterIDFittingsCreated) Code() int {
+	return 201
+}
+
 func (o *PostCharactersCharacterIDFittingsCreated) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/fittings/][%d] postCharactersCharacterIdFittingsCreated  %+v", 201, o.Payload)
 }
@@ -182,6 +187,11 @@ func (o *PostCharactersCharacterIDFittingsBadRequest) IsServerError() bool {
 // IsCode returns true when this post characters character Id fittings bad request response a status code equal to that given
 func (o *PostCharactersCharacterIDFittingsBadRequest) IsCode(code int) bool {
 	return code == 400
+}
+
+// Code gets the status code for the post characters character Id fittings bad request response
+func (o *PostCharactersCharacterIDFittingsBadRequest) Code() int {
+	return 400
 }
 
 func (o *PostCharactersCharacterIDFittingsBadRequest) Error() string {
@@ -247,6 +257,11 @@ func (o *PostCharactersCharacterIDFittingsUnauthorized) IsCode(code int) bool {
 	return code == 401
 }
 
+// Code gets the status code for the post characters character Id fittings unauthorized response
+func (o *PostCharactersCharacterIDFittingsUnauthorized) Code() int {
+	return 401
+}
+
 func (o *PostCharactersCharacterIDFittingsUnauthorized) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/fittings/][%d] postCharactersCharacterIdFittingsUnauthorized  %+v", 401, o.Payload)
 }
@@ -308,6 +323,11 @@ func (o *PostCharactersCharacterIDFittingsForbidden) IsServerError() bool {
 // IsCode returns true when this post characters character Id fittings forbidden response a status code equal to that given
 func (o *PostCharactersCharacterIDFittingsForbidden) IsCode(code int) bool {
 	return code == 403
+}
+
+// Code gets the status code for the post characters character Id fittings forbidden response
+func (o *PostCharactersCharacterIDFittingsForbidden) Code() int {
+	return 403
 }
 
 func (o *PostCharactersCharacterIDFittingsForbidden) Error() string {
@@ -373,6 +393,11 @@ func (o *PostCharactersCharacterIDFittingsEnhanceYourCalm) IsCode(code int) bool
 	return code == 420
 }
 
+// Code gets the status code for the post characters character Id fittings enhance your calm response
+func (o *PostCharactersCharacterIDFittingsEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *PostCharactersCharacterIDFittingsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/fittings/][%d] postCharactersCharacterIdFittingsEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -434,6 +459,11 @@ func (o *PostCharactersCharacterIDFittingsInternalServerError) IsServerError() b
 // IsCode returns true when this post characters character Id fittings internal server error response a status code equal to that given
 func (o *PostCharactersCharacterIDFittingsInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the post characters character Id fittings internal server error response
+func (o *PostCharactersCharacterIDFittingsInternalServerError) Code() int {
+	return 500
 }
 
 func (o *PostCharactersCharacterIDFittingsInternalServerError) Error() string {
@@ -499,6 +529,11 @@ func (o *PostCharactersCharacterIDFittingsServiceUnavailable) IsCode(code int) b
 	return code == 503
 }
 
+// Code gets the status code for the post characters character Id fittings service unavailable response
+func (o *PostCharactersCharacterIDFittingsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *PostCharactersCharacterIDFittingsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/fittings/][%d] postCharactersCharacterIdFittingsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -560,6 +595,11 @@ func (o *PostCharactersCharacterIDFittingsGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this post characters character Id fittings gateway timeout response a status code equal to that given
 func (o *PostCharactersCharacterIDFittingsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the post characters character Id fittings gateway timeout response
+func (o *PostCharactersCharacterIDFittingsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *PostCharactersCharacterIDFittingsGatewayTimeout) Error() string {

@@ -157,6 +157,11 @@ func (o *GetCharactersCharacterIDBookmarksFoldersOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get characters character Id bookmarks folders o k response
+func (o *GetCharactersCharacterIDBookmarksFoldersOK) Code() int {
+	return 200
+}
+
 func (o *GetCharactersCharacterIDBookmarksFoldersOK) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/bookmarks/folders/][%d] getCharactersCharacterIdBookmarksFoldersOK  %+v", 200, o.Payload)
 }
@@ -272,6 +277,11 @@ func (o *GetCharactersCharacterIDBookmarksFoldersNotModified) IsCode(code int) b
 	return code == 304
 }
 
+// Code gets the status code for the get characters character Id bookmarks folders not modified response
+func (o *GetCharactersCharacterIDBookmarksFoldersNotModified) Code() int {
+	return 304
+}
+
 func (o *GetCharactersCharacterIDBookmarksFoldersNotModified) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/bookmarks/folders/][%d] getCharactersCharacterIdBookmarksFoldersNotModified ", 304)
 }
@@ -352,6 +362,11 @@ func (o *GetCharactersCharacterIDBookmarksFoldersBadRequest) IsCode(code int) bo
 	return code == 400
 }
 
+// Code gets the status code for the get characters character Id bookmarks folders bad request response
+func (o *GetCharactersCharacterIDBookmarksFoldersBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetCharactersCharacterIDBookmarksFoldersBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/bookmarks/folders/][%d] getCharactersCharacterIdBookmarksFoldersBadRequest  %+v", 400, o.Payload)
 }
@@ -413,6 +428,11 @@ func (o *GetCharactersCharacterIDBookmarksFoldersUnauthorized) IsServerError() b
 // IsCode returns true when this get characters character Id bookmarks folders unauthorized response a status code equal to that given
 func (o *GetCharactersCharacterIDBookmarksFoldersUnauthorized) IsCode(code int) bool {
 	return code == 401
+}
+
+// Code gets the status code for the get characters character Id bookmarks folders unauthorized response
+func (o *GetCharactersCharacterIDBookmarksFoldersUnauthorized) Code() int {
+	return 401
 }
 
 func (o *GetCharactersCharacterIDBookmarksFoldersUnauthorized) Error() string {
@@ -478,6 +498,11 @@ func (o *GetCharactersCharacterIDBookmarksFoldersForbidden) IsCode(code int) boo
 	return code == 403
 }
 
+// Code gets the status code for the get characters character Id bookmarks folders forbidden response
+func (o *GetCharactersCharacterIDBookmarksFoldersForbidden) Code() int {
+	return 403
+}
+
 func (o *GetCharactersCharacterIDBookmarksFoldersForbidden) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/bookmarks/folders/][%d] getCharactersCharacterIdBookmarksFoldersForbidden  %+v", 403, o.Payload)
 }
@@ -539,6 +564,11 @@ func (o *GetCharactersCharacterIDBookmarksFoldersEnhanceYourCalm) IsServerError(
 // IsCode returns true when this get characters character Id bookmarks folders enhance your calm response a status code equal to that given
 func (o *GetCharactersCharacterIDBookmarksFoldersEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get characters character Id bookmarks folders enhance your calm response
+func (o *GetCharactersCharacterIDBookmarksFoldersEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetCharactersCharacterIDBookmarksFoldersEnhanceYourCalm) Error() string {
@@ -604,6 +634,11 @@ func (o *GetCharactersCharacterIDBookmarksFoldersInternalServerError) IsCode(cod
 	return code == 500
 }
 
+// Code gets the status code for the get characters character Id bookmarks folders internal server error response
+func (o *GetCharactersCharacterIDBookmarksFoldersInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetCharactersCharacterIDBookmarksFoldersInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/bookmarks/folders/][%d] getCharactersCharacterIdBookmarksFoldersInternalServerError  %+v", 500, o.Payload)
 }
@@ -667,6 +702,11 @@ func (o *GetCharactersCharacterIDBookmarksFoldersServiceUnavailable) IsCode(code
 	return code == 503
 }
 
+// Code gets the status code for the get characters character Id bookmarks folders service unavailable response
+func (o *GetCharactersCharacterIDBookmarksFoldersServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCharactersCharacterIDBookmarksFoldersServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/bookmarks/folders/][%d] getCharactersCharacterIdBookmarksFoldersServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -728,6 +768,11 @@ func (o *GetCharactersCharacterIDBookmarksFoldersGatewayTimeout) IsServerError()
 // IsCode returns true when this get characters character Id bookmarks folders gateway timeout response a status code equal to that given
 func (o *GetCharactersCharacterIDBookmarksFoldersGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get characters character Id bookmarks folders gateway timeout response
+func (o *GetCharactersCharacterIDBookmarksFoldersGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCharactersCharacterIDBookmarksFoldersGatewayTimeout) Error() string {

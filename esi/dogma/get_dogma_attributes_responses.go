@@ -126,6 +126,11 @@ func (o *GetDogmaAttributesOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get dogma attributes o k response
+func (o *GetDogmaAttributesOK) Code() int {
+	return 200
+}
+
 func (o *GetDogmaAttributesOK) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/attributes/][%d] getDogmaAttributesOK  %+v", 200, o.Payload)
 }
@@ -230,6 +235,11 @@ func (o *GetDogmaAttributesNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get dogma attributes not modified response
+func (o *GetDogmaAttributesNotModified) Code() int {
+	return 304
+}
+
 func (o *GetDogmaAttributesNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/attributes/][%d] getDogmaAttributesNotModified ", 304)
 }
@@ -310,6 +320,11 @@ func (o *GetDogmaAttributesBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get dogma attributes bad request response
+func (o *GetDogmaAttributesBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetDogmaAttributesBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/attributes/][%d] getDogmaAttributesBadRequest  %+v", 400, o.Payload)
 }
@@ -371,6 +386,11 @@ func (o *GetDogmaAttributesEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get dogma attributes enhance your calm response a status code equal to that given
 func (o *GetDogmaAttributesEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get dogma attributes enhance your calm response
+func (o *GetDogmaAttributesEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetDogmaAttributesEnhanceYourCalm) Error() string {
@@ -436,6 +456,11 @@ func (o *GetDogmaAttributesInternalServerError) IsCode(code int) bool {
 	return code == 500
 }
 
+// Code gets the status code for the get dogma attributes internal server error response
+func (o *GetDogmaAttributesInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetDogmaAttributesInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/attributes/][%d] getDogmaAttributesInternalServerError  %+v", 500, o.Payload)
 }
@@ -499,6 +524,11 @@ func (o *GetDogmaAttributesServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get dogma attributes service unavailable response
+func (o *GetDogmaAttributesServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetDogmaAttributesServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/attributes/][%d] getDogmaAttributesServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -560,6 +590,11 @@ func (o *GetDogmaAttributesGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get dogma attributes gateway timeout response a status code equal to that given
 func (o *GetDogmaAttributesGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get dogma attributes gateway timeout response
+func (o *GetDogmaAttributesGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetDogmaAttributesGatewayTimeout) Error() string {

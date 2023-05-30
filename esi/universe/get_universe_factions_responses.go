@@ -134,6 +134,11 @@ func (o *GetUniverseFactionsOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get universe factions o k response
+func (o *GetUniverseFactionsOK) Code() int {
+	return 200
+}
+
 func (o *GetUniverseFactionsOK) Error() string {
 	return fmt.Sprintf("[GET /v2/universe/factions/][%d] getUniverseFactionsOK  %+v", 200, o.Payload)
 }
@@ -245,6 +250,11 @@ func (o *GetUniverseFactionsNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get universe factions not modified response
+func (o *GetUniverseFactionsNotModified) Code() int {
+	return 304
+}
+
 func (o *GetUniverseFactionsNotModified) Error() string {
 	return fmt.Sprintf("[GET /v2/universe/factions/][%d] getUniverseFactionsNotModified ", 304)
 }
@@ -325,6 +335,11 @@ func (o *GetUniverseFactionsBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get universe factions bad request response
+func (o *GetUniverseFactionsBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetUniverseFactionsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v2/universe/factions/][%d] getUniverseFactionsBadRequest  %+v", 400, o.Payload)
 }
@@ -386,6 +401,11 @@ func (o *GetUniverseFactionsEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get universe factions enhance your calm response a status code equal to that given
 func (o *GetUniverseFactionsEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get universe factions enhance your calm response
+func (o *GetUniverseFactionsEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetUniverseFactionsEnhanceYourCalm) Error() string {
@@ -451,6 +471,11 @@ func (o *GetUniverseFactionsInternalServerError) IsCode(code int) bool {
 	return code == 500
 }
 
+// Code gets the status code for the get universe factions internal server error response
+func (o *GetUniverseFactionsInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetUniverseFactionsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v2/universe/factions/][%d] getUniverseFactionsInternalServerError  %+v", 500, o.Payload)
 }
@@ -514,6 +539,11 @@ func (o *GetUniverseFactionsServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get universe factions service unavailable response
+func (o *GetUniverseFactionsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetUniverseFactionsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v2/universe/factions/][%d] getUniverseFactionsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -575,6 +605,11 @@ func (o *GetUniverseFactionsGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get universe factions gateway timeout response a status code equal to that given
 func (o *GetUniverseFactionsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get universe factions gateway timeout response
+func (o *GetUniverseFactionsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetUniverseFactionsGatewayTimeout) Error() string {

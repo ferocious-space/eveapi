@@ -124,6 +124,11 @@ func (o *PostUIOpenwindowNewmailNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the post Ui openwindow newmail no content response
+func (o *PostUIOpenwindowNewmailNoContent) Code() int {
+	return 204
+}
+
 func (o *PostUIOpenwindowNewmailNoContent) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/newmail/][%d] postUiOpenwindowNewmailNoContent ", 204)
 }
@@ -174,6 +179,11 @@ func (o *PostUIOpenwindowNewmailBadRequest) IsServerError() bool {
 // IsCode returns true when this post Ui openwindow newmail bad request response a status code equal to that given
 func (o *PostUIOpenwindowNewmailBadRequest) IsCode(code int) bool {
 	return code == 400
+}
+
+// Code gets the status code for the post Ui openwindow newmail bad request response
+func (o *PostUIOpenwindowNewmailBadRequest) Code() int {
+	return 400
 }
 
 func (o *PostUIOpenwindowNewmailBadRequest) Error() string {
@@ -239,6 +249,11 @@ func (o *PostUIOpenwindowNewmailUnauthorized) IsCode(code int) bool {
 	return code == 401
 }
 
+// Code gets the status code for the post Ui openwindow newmail unauthorized response
+func (o *PostUIOpenwindowNewmailUnauthorized) Code() int {
+	return 401
+}
+
 func (o *PostUIOpenwindowNewmailUnauthorized) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/newmail/][%d] postUiOpenwindowNewmailUnauthorized  %+v", 401, o.Payload)
 }
@@ -300,6 +315,11 @@ func (o *PostUIOpenwindowNewmailForbidden) IsServerError() bool {
 // IsCode returns true when this post Ui openwindow newmail forbidden response a status code equal to that given
 func (o *PostUIOpenwindowNewmailForbidden) IsCode(code int) bool {
 	return code == 403
+}
+
+// Code gets the status code for the post Ui openwindow newmail forbidden response
+func (o *PostUIOpenwindowNewmailForbidden) Code() int {
+	return 403
 }
 
 func (o *PostUIOpenwindowNewmailForbidden) Error() string {
@@ -365,6 +385,11 @@ func (o *PostUIOpenwindowNewmailEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
 }
 
+// Code gets the status code for the post Ui openwindow newmail enhance your calm response
+func (o *PostUIOpenwindowNewmailEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *PostUIOpenwindowNewmailEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/newmail/][%d] postUiOpenwindowNewmailEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -426,6 +451,11 @@ func (o *PostUIOpenwindowNewmailUnprocessableEntity) IsServerError() bool {
 // IsCode returns true when this post Ui openwindow newmail unprocessable entity response a status code equal to that given
 func (o *PostUIOpenwindowNewmailUnprocessableEntity) IsCode(code int) bool {
 	return code == 422
+}
+
+// Code gets the status code for the post Ui openwindow newmail unprocessable entity response
+func (o *PostUIOpenwindowNewmailUnprocessableEntity) Code() int {
+	return 422
 }
 
 func (o *PostUIOpenwindowNewmailUnprocessableEntity) Error() string {
@@ -491,6 +521,11 @@ func (o *PostUIOpenwindowNewmailInternalServerError) IsCode(code int) bool {
 	return code == 500
 }
 
+// Code gets the status code for the post Ui openwindow newmail internal server error response
+func (o *PostUIOpenwindowNewmailInternalServerError) Code() int {
+	return 500
+}
+
 func (o *PostUIOpenwindowNewmailInternalServerError) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/newmail/][%d] postUiOpenwindowNewmailInternalServerError  %+v", 500, o.Payload)
 }
@@ -554,6 +589,11 @@ func (o *PostUIOpenwindowNewmailServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the post Ui openwindow newmail service unavailable response
+func (o *PostUIOpenwindowNewmailServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *PostUIOpenwindowNewmailServiceUnavailable) Error() string {
 	return fmt.Sprintf("[POST /v1/ui/openwindow/newmail/][%d] postUiOpenwindowNewmailServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -615,6 +655,11 @@ func (o *PostUIOpenwindowNewmailGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this post Ui openwindow newmail gateway timeout response a status code equal to that given
 func (o *PostUIOpenwindowNewmailGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the post Ui openwindow newmail gateway timeout response
+func (o *PostUIOpenwindowNewmailGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *PostUIOpenwindowNewmailGatewayTimeout) Error() string {

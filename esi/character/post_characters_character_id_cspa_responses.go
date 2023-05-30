@@ -115,6 +115,11 @@ func (o *PostCharactersCharacterIDCspaCreated) IsCode(code int) bool {
 	return code == 201
 }
 
+// Code gets the status code for the post characters character Id cspa created response
+func (o *PostCharactersCharacterIDCspaCreated) Code() int {
+	return 201
+}
+
 func (o *PostCharactersCharacterIDCspaCreated) Error() string {
 	return fmt.Sprintf("[POST /v5/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaCreated  %+v", 201, o.Payload)
 }
@@ -174,6 +179,11 @@ func (o *PostCharactersCharacterIDCspaBadRequest) IsServerError() bool {
 // IsCode returns true when this post characters character Id cspa bad request response a status code equal to that given
 func (o *PostCharactersCharacterIDCspaBadRequest) IsCode(code int) bool {
 	return code == 400
+}
+
+// Code gets the status code for the post characters character Id cspa bad request response
+func (o *PostCharactersCharacterIDCspaBadRequest) Code() int {
+	return 400
 }
 
 func (o *PostCharactersCharacterIDCspaBadRequest) Error() string {
@@ -239,6 +249,11 @@ func (o *PostCharactersCharacterIDCspaUnauthorized) IsCode(code int) bool {
 	return code == 401
 }
 
+// Code gets the status code for the post characters character Id cspa unauthorized response
+func (o *PostCharactersCharacterIDCspaUnauthorized) Code() int {
+	return 401
+}
+
 func (o *PostCharactersCharacterIDCspaUnauthorized) Error() string {
 	return fmt.Sprintf("[POST /v5/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaUnauthorized  %+v", 401, o.Payload)
 }
@@ -300,6 +315,11 @@ func (o *PostCharactersCharacterIDCspaForbidden) IsServerError() bool {
 // IsCode returns true when this post characters character Id cspa forbidden response a status code equal to that given
 func (o *PostCharactersCharacterIDCspaForbidden) IsCode(code int) bool {
 	return code == 403
+}
+
+// Code gets the status code for the post characters character Id cspa forbidden response
+func (o *PostCharactersCharacterIDCspaForbidden) Code() int {
+	return 403
 }
 
 func (o *PostCharactersCharacterIDCspaForbidden) Error() string {
@@ -365,6 +385,11 @@ func (o *PostCharactersCharacterIDCspaEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
 }
 
+// Code gets the status code for the post characters character Id cspa enhance your calm response
+func (o *PostCharactersCharacterIDCspaEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *PostCharactersCharacterIDCspaEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[POST /v5/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -426,6 +451,11 @@ func (o *PostCharactersCharacterIDCspaInternalServerError) IsServerError() bool 
 // IsCode returns true when this post characters character Id cspa internal server error response a status code equal to that given
 func (o *PostCharactersCharacterIDCspaInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the post characters character Id cspa internal server error response
+func (o *PostCharactersCharacterIDCspaInternalServerError) Code() int {
+	return 500
 }
 
 func (o *PostCharactersCharacterIDCspaInternalServerError) Error() string {
@@ -491,6 +521,11 @@ func (o *PostCharactersCharacterIDCspaServiceUnavailable) IsCode(code int) bool 
 	return code == 503
 }
 
+// Code gets the status code for the post characters character Id cspa service unavailable response
+func (o *PostCharactersCharacterIDCspaServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *PostCharactersCharacterIDCspaServiceUnavailable) Error() string {
 	return fmt.Sprintf("[POST /v5/characters/{character_id}/cspa/][%d] postCharactersCharacterIdCspaServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -552,6 +587,11 @@ func (o *PostCharactersCharacterIDCspaGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this post characters character Id cspa gateway timeout response a status code equal to that given
 func (o *PostCharactersCharacterIDCspaGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the post characters character Id cspa gateway timeout response
+func (o *PostCharactersCharacterIDCspaGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *PostCharactersCharacterIDCspaGatewayTimeout) Error() string {

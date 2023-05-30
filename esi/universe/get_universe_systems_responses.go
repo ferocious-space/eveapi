@@ -126,6 +126,11 @@ func (o *GetUniverseSystemsOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get universe systems o k response
+func (o *GetUniverseSystemsOK) Code() int {
+	return 200
+}
+
 func (o *GetUniverseSystemsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/systems/][%d] getUniverseSystemsOK  %+v", 200, o.Payload)
 }
@@ -230,6 +235,11 @@ func (o *GetUniverseSystemsNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get universe systems not modified response
+func (o *GetUniverseSystemsNotModified) Code() int {
+	return 304
+}
+
 func (o *GetUniverseSystemsNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/systems/][%d] getUniverseSystemsNotModified ", 304)
 }
@@ -310,6 +320,11 @@ func (o *GetUniverseSystemsBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get universe systems bad request response
+func (o *GetUniverseSystemsBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetUniverseSystemsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/systems/][%d] getUniverseSystemsBadRequest  %+v", 400, o.Payload)
 }
@@ -371,6 +386,11 @@ func (o *GetUniverseSystemsEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get universe systems enhance your calm response a status code equal to that given
 func (o *GetUniverseSystemsEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get universe systems enhance your calm response
+func (o *GetUniverseSystemsEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetUniverseSystemsEnhanceYourCalm) Error() string {
@@ -436,6 +456,11 @@ func (o *GetUniverseSystemsInternalServerError) IsCode(code int) bool {
 	return code == 500
 }
 
+// Code gets the status code for the get universe systems internal server error response
+func (o *GetUniverseSystemsInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetUniverseSystemsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/systems/][%d] getUniverseSystemsInternalServerError  %+v", 500, o.Payload)
 }
@@ -499,6 +524,11 @@ func (o *GetUniverseSystemsServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the get universe systems service unavailable response
+func (o *GetUniverseSystemsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetUniverseSystemsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/systems/][%d] getUniverseSystemsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -560,6 +590,11 @@ func (o *GetUniverseSystemsGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get universe systems gateway timeout response a status code equal to that given
 func (o *GetUniverseSystemsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get universe systems gateway timeout response
+func (o *GetUniverseSystemsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetUniverseSystemsGatewayTimeout) Error() string {

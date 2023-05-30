@@ -142,6 +142,11 @@ func (o *GetCharactersCharacterIDSkillqueueOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get characters character Id skillqueue o k response
+func (o *GetCharactersCharacterIDSkillqueueOK) Code() int {
+	return 200
+}
+
 func (o *GetCharactersCharacterIDSkillqueueOK) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/skillqueue/][%d] getCharactersCharacterIdSkillqueueOK  %+v", 200, o.Payload)
 }
@@ -246,6 +251,11 @@ func (o *GetCharactersCharacterIDSkillqueueNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get characters character Id skillqueue not modified response
+func (o *GetCharactersCharacterIDSkillqueueNotModified) Code() int {
+	return 304
+}
+
 func (o *GetCharactersCharacterIDSkillqueueNotModified) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/skillqueue/][%d] getCharactersCharacterIdSkillqueueNotModified ", 304)
 }
@@ -326,6 +336,11 @@ func (o *GetCharactersCharacterIDSkillqueueBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get characters character Id skillqueue bad request response
+func (o *GetCharactersCharacterIDSkillqueueBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetCharactersCharacterIDSkillqueueBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/skillqueue/][%d] getCharactersCharacterIdSkillqueueBadRequest  %+v", 400, o.Payload)
 }
@@ -387,6 +402,11 @@ func (o *GetCharactersCharacterIDSkillqueueUnauthorized) IsServerError() bool {
 // IsCode returns true when this get characters character Id skillqueue unauthorized response a status code equal to that given
 func (o *GetCharactersCharacterIDSkillqueueUnauthorized) IsCode(code int) bool {
 	return code == 401
+}
+
+// Code gets the status code for the get characters character Id skillqueue unauthorized response
+func (o *GetCharactersCharacterIDSkillqueueUnauthorized) Code() int {
+	return 401
 }
 
 func (o *GetCharactersCharacterIDSkillqueueUnauthorized) Error() string {
@@ -452,6 +472,11 @@ func (o *GetCharactersCharacterIDSkillqueueForbidden) IsCode(code int) bool {
 	return code == 403
 }
 
+// Code gets the status code for the get characters character Id skillqueue forbidden response
+func (o *GetCharactersCharacterIDSkillqueueForbidden) Code() int {
+	return 403
+}
+
 func (o *GetCharactersCharacterIDSkillqueueForbidden) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/skillqueue/][%d] getCharactersCharacterIdSkillqueueForbidden  %+v", 403, o.Payload)
 }
@@ -513,6 +538,11 @@ func (o *GetCharactersCharacterIDSkillqueueEnhanceYourCalm) IsServerError() bool
 // IsCode returns true when this get characters character Id skillqueue enhance your calm response a status code equal to that given
 func (o *GetCharactersCharacterIDSkillqueueEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get characters character Id skillqueue enhance your calm response
+func (o *GetCharactersCharacterIDSkillqueueEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetCharactersCharacterIDSkillqueueEnhanceYourCalm) Error() string {
@@ -578,6 +608,11 @@ func (o *GetCharactersCharacterIDSkillqueueInternalServerError) IsCode(code int)
 	return code == 500
 }
 
+// Code gets the status code for the get characters character Id skillqueue internal server error response
+func (o *GetCharactersCharacterIDSkillqueueInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetCharactersCharacterIDSkillqueueInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/skillqueue/][%d] getCharactersCharacterIdSkillqueueInternalServerError  %+v", 500, o.Payload)
 }
@@ -641,6 +676,11 @@ func (o *GetCharactersCharacterIDSkillqueueServiceUnavailable) IsCode(code int) 
 	return code == 503
 }
 
+// Code gets the status code for the get characters character Id skillqueue service unavailable response
+func (o *GetCharactersCharacterIDSkillqueueServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCharactersCharacterIDSkillqueueServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v2/characters/{character_id}/skillqueue/][%d] getCharactersCharacterIdSkillqueueServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -702,6 +742,11 @@ func (o *GetCharactersCharacterIDSkillqueueGatewayTimeout) IsServerError() bool 
 // IsCode returns true when this get characters character Id skillqueue gateway timeout response a status code equal to that given
 func (o *GetCharactersCharacterIDSkillqueueGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get characters character Id skillqueue gateway timeout response
+func (o *GetCharactersCharacterIDSkillqueueGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCharactersCharacterIDSkillqueueGatewayTimeout) Error() string {

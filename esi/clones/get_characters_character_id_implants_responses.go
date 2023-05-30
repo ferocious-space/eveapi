@@ -138,6 +138,11 @@ func (o *GetCharactersCharacterIDImplantsOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get characters character Id implants o k response
+func (o *GetCharactersCharacterIDImplantsOK) Code() int {
+	return 200
+}
+
 func (o *GetCharactersCharacterIDImplantsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/implants/][%d] getCharactersCharacterIdImplantsOK  %+v", 200, o.Payload)
 }
@@ -242,6 +247,11 @@ func (o *GetCharactersCharacterIDImplantsNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get characters character Id implants not modified response
+func (o *GetCharactersCharacterIDImplantsNotModified) Code() int {
+	return 304
+}
+
 func (o *GetCharactersCharacterIDImplantsNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/implants/][%d] getCharactersCharacterIdImplantsNotModified ", 304)
 }
@@ -322,6 +332,11 @@ func (o *GetCharactersCharacterIDImplantsBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get characters character Id implants bad request response
+func (o *GetCharactersCharacterIDImplantsBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetCharactersCharacterIDImplantsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/implants/][%d] getCharactersCharacterIdImplantsBadRequest  %+v", 400, o.Payload)
 }
@@ -383,6 +398,11 @@ func (o *GetCharactersCharacterIDImplantsUnauthorized) IsServerError() bool {
 // IsCode returns true when this get characters character Id implants unauthorized response a status code equal to that given
 func (o *GetCharactersCharacterIDImplantsUnauthorized) IsCode(code int) bool {
 	return code == 401
+}
+
+// Code gets the status code for the get characters character Id implants unauthorized response
+func (o *GetCharactersCharacterIDImplantsUnauthorized) Code() int {
+	return 401
 }
 
 func (o *GetCharactersCharacterIDImplantsUnauthorized) Error() string {
@@ -448,6 +468,11 @@ func (o *GetCharactersCharacterIDImplantsForbidden) IsCode(code int) bool {
 	return code == 403
 }
 
+// Code gets the status code for the get characters character Id implants forbidden response
+func (o *GetCharactersCharacterIDImplantsForbidden) Code() int {
+	return 403
+}
+
 func (o *GetCharactersCharacterIDImplantsForbidden) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/implants/][%d] getCharactersCharacterIdImplantsForbidden  %+v", 403, o.Payload)
 }
@@ -509,6 +534,11 @@ func (o *GetCharactersCharacterIDImplantsEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this get characters character Id implants enhance your calm response a status code equal to that given
 func (o *GetCharactersCharacterIDImplantsEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get characters character Id implants enhance your calm response
+func (o *GetCharactersCharacterIDImplantsEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetCharactersCharacterIDImplantsEnhanceYourCalm) Error() string {
@@ -574,6 +604,11 @@ func (o *GetCharactersCharacterIDImplantsInternalServerError) IsCode(code int) b
 	return code == 500
 }
 
+// Code gets the status code for the get characters character Id implants internal server error response
+func (o *GetCharactersCharacterIDImplantsInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetCharactersCharacterIDImplantsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/implants/][%d] getCharactersCharacterIdImplantsInternalServerError  %+v", 500, o.Payload)
 }
@@ -637,6 +672,11 @@ func (o *GetCharactersCharacterIDImplantsServiceUnavailable) IsCode(code int) bo
 	return code == 503
 }
 
+// Code gets the status code for the get characters character Id implants service unavailable response
+func (o *GetCharactersCharacterIDImplantsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCharactersCharacterIDImplantsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/implants/][%d] getCharactersCharacterIdImplantsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -698,6 +738,11 @@ func (o *GetCharactersCharacterIDImplantsGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get characters character Id implants gateway timeout response a status code equal to that given
 func (o *GetCharactersCharacterIDImplantsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get characters character Id implants gateway timeout response
+func (o *GetCharactersCharacterIDImplantsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCharactersCharacterIDImplantsGatewayTimeout) Error() string {

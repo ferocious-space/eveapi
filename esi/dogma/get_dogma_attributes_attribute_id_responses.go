@@ -136,6 +136,11 @@ func (o *GetDogmaAttributesAttributeIDOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get dogma attributes attribute Id o k response
+func (o *GetDogmaAttributesAttributeIDOK) Code() int {
+	return 200
+}
+
 func (o *GetDogmaAttributesAttributeIDOK) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/attributes/{attribute_id}/][%d] getDogmaAttributesAttributeIdOK  %+v", 200, o.Payload)
 }
@@ -242,6 +247,11 @@ func (o *GetDogmaAttributesAttributeIDNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get dogma attributes attribute Id not modified response
+func (o *GetDogmaAttributesAttributeIDNotModified) Code() int {
+	return 304
+}
+
 func (o *GetDogmaAttributesAttributeIDNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/attributes/{attribute_id}/][%d] getDogmaAttributesAttributeIdNotModified ", 304)
 }
@@ -322,6 +332,11 @@ func (o *GetDogmaAttributesAttributeIDBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get dogma attributes attribute Id bad request response
+func (o *GetDogmaAttributesAttributeIDBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetDogmaAttributesAttributeIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/attributes/{attribute_id}/][%d] getDogmaAttributesAttributeIdBadRequest  %+v", 400, o.Payload)
 }
@@ -383,6 +398,11 @@ func (o *GetDogmaAttributesAttributeIDNotFound) IsServerError() bool {
 // IsCode returns true when this get dogma attributes attribute Id not found response a status code equal to that given
 func (o *GetDogmaAttributesAttributeIDNotFound) IsCode(code int) bool {
 	return code == 404
+}
+
+// Code gets the status code for the get dogma attributes attribute Id not found response
+func (o *GetDogmaAttributesAttributeIDNotFound) Code() int {
+	return 404
 }
 
 func (o *GetDogmaAttributesAttributeIDNotFound) Error() string {
@@ -448,6 +468,11 @@ func (o *GetDogmaAttributesAttributeIDEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
 }
 
+// Code gets the status code for the get dogma attributes attribute Id enhance your calm response
+func (o *GetDogmaAttributesAttributeIDEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *GetDogmaAttributesAttributeIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/attributes/{attribute_id}/][%d] getDogmaAttributesAttributeIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -509,6 +534,11 @@ func (o *GetDogmaAttributesAttributeIDInternalServerError) IsServerError() bool 
 // IsCode returns true when this get dogma attributes attribute Id internal server error response a status code equal to that given
 func (o *GetDogmaAttributesAttributeIDInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the get dogma attributes attribute Id internal server error response
+func (o *GetDogmaAttributesAttributeIDInternalServerError) Code() int {
+	return 500
 }
 
 func (o *GetDogmaAttributesAttributeIDInternalServerError) Error() string {
@@ -574,6 +604,11 @@ func (o *GetDogmaAttributesAttributeIDServiceUnavailable) IsCode(code int) bool 
 	return code == 503
 }
 
+// Code gets the status code for the get dogma attributes attribute Id service unavailable response
+func (o *GetDogmaAttributesAttributeIDServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetDogmaAttributesAttributeIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/dogma/attributes/{attribute_id}/][%d] getDogmaAttributesAttributeIdServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -635,6 +670,11 @@ func (o *GetDogmaAttributesAttributeIDGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get dogma attributes attribute Id gateway timeout response a status code equal to that given
 func (o *GetDogmaAttributesAttributeIDGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get dogma attributes attribute Id gateway timeout response
+func (o *GetDogmaAttributesAttributeIDGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetDogmaAttributesAttributeIDGatewayTimeout) Error() string {

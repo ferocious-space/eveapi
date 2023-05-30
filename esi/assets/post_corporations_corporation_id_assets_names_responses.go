@@ -125,6 +125,11 @@ func (o *PostCorporationsCorporationIDAssetsNamesOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the post corporations corporation Id assets names o k response
+func (o *PostCorporationsCorporationIDAssetsNamesOK) Code() int {
+	return 200
+}
+
 func (o *PostCorporationsCorporationIDAssetsNamesOK) Error() string {
 	return fmt.Sprintf("[POST /v1/corporations/{corporation_id}/assets/names/][%d] postCorporationsCorporationIdAssetsNamesOK  %+v", 200, o.Payload)
 }
@@ -184,6 +189,11 @@ func (o *PostCorporationsCorporationIDAssetsNamesBadRequest) IsServerError() boo
 // IsCode returns true when this post corporations corporation Id assets names bad request response a status code equal to that given
 func (o *PostCorporationsCorporationIDAssetsNamesBadRequest) IsCode(code int) bool {
 	return code == 400
+}
+
+// Code gets the status code for the post corporations corporation Id assets names bad request response
+func (o *PostCorporationsCorporationIDAssetsNamesBadRequest) Code() int {
+	return 400
 }
 
 func (o *PostCorporationsCorporationIDAssetsNamesBadRequest) Error() string {
@@ -249,6 +259,11 @@ func (o *PostCorporationsCorporationIDAssetsNamesUnauthorized) IsCode(code int) 
 	return code == 401
 }
 
+// Code gets the status code for the post corporations corporation Id assets names unauthorized response
+func (o *PostCorporationsCorporationIDAssetsNamesUnauthorized) Code() int {
+	return 401
+}
+
 func (o *PostCorporationsCorporationIDAssetsNamesUnauthorized) Error() string {
 	return fmt.Sprintf("[POST /v1/corporations/{corporation_id}/assets/names/][%d] postCorporationsCorporationIdAssetsNamesUnauthorized  %+v", 401, o.Payload)
 }
@@ -310,6 +325,11 @@ func (o *PostCorporationsCorporationIDAssetsNamesForbidden) IsServerError() bool
 // IsCode returns true when this post corporations corporation Id assets names forbidden response a status code equal to that given
 func (o *PostCorporationsCorporationIDAssetsNamesForbidden) IsCode(code int) bool {
 	return code == 403
+}
+
+// Code gets the status code for the post corporations corporation Id assets names forbidden response
+func (o *PostCorporationsCorporationIDAssetsNamesForbidden) Code() int {
+	return 403
 }
 
 func (o *PostCorporationsCorporationIDAssetsNamesForbidden) Error() string {
@@ -375,6 +395,11 @@ func (o *PostCorporationsCorporationIDAssetsNamesNotFound) IsCode(code int) bool
 	return code == 404
 }
 
+// Code gets the status code for the post corporations corporation Id assets names not found response
+func (o *PostCorporationsCorporationIDAssetsNamesNotFound) Code() int {
+	return 404
+}
+
 func (o *PostCorporationsCorporationIDAssetsNamesNotFound) Error() string {
 	return fmt.Sprintf("[POST /v1/corporations/{corporation_id}/assets/names/][%d] postCorporationsCorporationIdAssetsNamesNotFound  %+v", 404, o.Payload)
 }
@@ -436,6 +461,11 @@ func (o *PostCorporationsCorporationIDAssetsNamesEnhanceYourCalm) IsServerError(
 // IsCode returns true when this post corporations corporation Id assets names enhance your calm response a status code equal to that given
 func (o *PostCorporationsCorporationIDAssetsNamesEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the post corporations corporation Id assets names enhance your calm response
+func (o *PostCorporationsCorporationIDAssetsNamesEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *PostCorporationsCorporationIDAssetsNamesEnhanceYourCalm) Error() string {
@@ -501,6 +531,11 @@ func (o *PostCorporationsCorporationIDAssetsNamesInternalServerError) IsCode(cod
 	return code == 500
 }
 
+// Code gets the status code for the post corporations corporation Id assets names internal server error response
+func (o *PostCorporationsCorporationIDAssetsNamesInternalServerError) Code() int {
+	return 500
+}
+
 func (o *PostCorporationsCorporationIDAssetsNamesInternalServerError) Error() string {
 	return fmt.Sprintf("[POST /v1/corporations/{corporation_id}/assets/names/][%d] postCorporationsCorporationIdAssetsNamesInternalServerError  %+v", 500, o.Payload)
 }
@@ -564,6 +599,11 @@ func (o *PostCorporationsCorporationIDAssetsNamesServiceUnavailable) IsCode(code
 	return code == 503
 }
 
+// Code gets the status code for the post corporations corporation Id assets names service unavailable response
+func (o *PostCorporationsCorporationIDAssetsNamesServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *PostCorporationsCorporationIDAssetsNamesServiceUnavailable) Error() string {
 	return fmt.Sprintf("[POST /v1/corporations/{corporation_id}/assets/names/][%d] postCorporationsCorporationIdAssetsNamesServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -625,6 +665,11 @@ func (o *PostCorporationsCorporationIDAssetsNamesGatewayTimeout) IsServerError()
 // IsCode returns true when this post corporations corporation Id assets names gateway timeout response a status code equal to that given
 func (o *PostCorporationsCorporationIDAssetsNamesGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the post corporations corporation Id assets names gateway timeout response
+func (o *PostCorporationsCorporationIDAssetsNamesGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *PostCorporationsCorporationIDAssetsNamesGatewayTimeout) Error() string {

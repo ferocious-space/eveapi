@@ -140,6 +140,11 @@ func (o *GetUniverseConstellationsConstellationIDOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get universe constellations constellation Id o k response
+func (o *GetUniverseConstellationsConstellationIDOK) Code() int {
+	return 200
+}
+
 func (o *GetUniverseConstellationsConstellationIDOK) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/constellations/{constellation_id}/][%d] getUniverseConstellationsConstellationIdOK  %+v", 200, o.Payload)
 }
@@ -253,6 +258,11 @@ func (o *GetUniverseConstellationsConstellationIDNotModified) IsCode(code int) b
 	return code == 304
 }
 
+// Code gets the status code for the get universe constellations constellation Id not modified response
+func (o *GetUniverseConstellationsConstellationIDNotModified) Code() int {
+	return 304
+}
+
 func (o *GetUniverseConstellationsConstellationIDNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/constellations/{constellation_id}/][%d] getUniverseConstellationsConstellationIdNotModified ", 304)
 }
@@ -333,6 +343,11 @@ func (o *GetUniverseConstellationsConstellationIDBadRequest) IsCode(code int) bo
 	return code == 400
 }
 
+// Code gets the status code for the get universe constellations constellation Id bad request response
+func (o *GetUniverseConstellationsConstellationIDBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetUniverseConstellationsConstellationIDBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/constellations/{constellation_id}/][%d] getUniverseConstellationsConstellationIdBadRequest  %+v", 400, o.Payload)
 }
@@ -394,6 +409,11 @@ func (o *GetUniverseConstellationsConstellationIDNotFound) IsServerError() bool 
 // IsCode returns true when this get universe constellations constellation Id not found response a status code equal to that given
 func (o *GetUniverseConstellationsConstellationIDNotFound) IsCode(code int) bool {
 	return code == 404
+}
+
+// Code gets the status code for the get universe constellations constellation Id not found response
+func (o *GetUniverseConstellationsConstellationIDNotFound) Code() int {
+	return 404
 }
 
 func (o *GetUniverseConstellationsConstellationIDNotFound) Error() string {
@@ -459,6 +479,11 @@ func (o *GetUniverseConstellationsConstellationIDEnhanceYourCalm) IsCode(code in
 	return code == 420
 }
 
+// Code gets the status code for the get universe constellations constellation Id enhance your calm response
+func (o *GetUniverseConstellationsConstellationIDEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *GetUniverseConstellationsConstellationIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/constellations/{constellation_id}/][%d] getUniverseConstellationsConstellationIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -520,6 +545,11 @@ func (o *GetUniverseConstellationsConstellationIDInternalServerError) IsServerEr
 // IsCode returns true when this get universe constellations constellation Id internal server error response a status code equal to that given
 func (o *GetUniverseConstellationsConstellationIDInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the get universe constellations constellation Id internal server error response
+func (o *GetUniverseConstellationsConstellationIDInternalServerError) Code() int {
+	return 500
 }
 
 func (o *GetUniverseConstellationsConstellationIDInternalServerError) Error() string {
@@ -585,6 +615,11 @@ func (o *GetUniverseConstellationsConstellationIDServiceUnavailable) IsCode(code
 	return code == 503
 }
 
+// Code gets the status code for the get universe constellations constellation Id service unavailable response
+func (o *GetUniverseConstellationsConstellationIDServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetUniverseConstellationsConstellationIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/universe/constellations/{constellation_id}/][%d] getUniverseConstellationsConstellationIdServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -646,6 +681,11 @@ func (o *GetUniverseConstellationsConstellationIDGatewayTimeout) IsServerError()
 // IsCode returns true when this get universe constellations constellation Id gateway timeout response a status code equal to that given
 func (o *GetUniverseConstellationsConstellationIDGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get universe constellations constellation Id gateway timeout response
+func (o *GetUniverseConstellationsConstellationIDGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetUniverseConstellationsConstellationIDGatewayTimeout) Error() string {

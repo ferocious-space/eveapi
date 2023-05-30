@@ -157,6 +157,11 @@ func (o *GetCorporationsCorporationIDBookmarksOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get corporations corporation Id bookmarks o k response
+func (o *GetCorporationsCorporationIDBookmarksOK) Code() int {
+	return 200
+}
+
 func (o *GetCorporationsCorporationIDBookmarksOK) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/bookmarks/][%d] getCorporationsCorporationIdBookmarksOK  %+v", 200, o.Payload)
 }
@@ -272,6 +277,11 @@ func (o *GetCorporationsCorporationIDBookmarksNotModified) IsCode(code int) bool
 	return code == 304
 }
 
+// Code gets the status code for the get corporations corporation Id bookmarks not modified response
+func (o *GetCorporationsCorporationIDBookmarksNotModified) Code() int {
+	return 304
+}
+
 func (o *GetCorporationsCorporationIDBookmarksNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/bookmarks/][%d] getCorporationsCorporationIdBookmarksNotModified ", 304)
 }
@@ -352,6 +362,11 @@ func (o *GetCorporationsCorporationIDBookmarksBadRequest) IsCode(code int) bool 
 	return code == 400
 }
 
+// Code gets the status code for the get corporations corporation Id bookmarks bad request response
+func (o *GetCorporationsCorporationIDBookmarksBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetCorporationsCorporationIDBookmarksBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/bookmarks/][%d] getCorporationsCorporationIdBookmarksBadRequest  %+v", 400, o.Payload)
 }
@@ -413,6 +428,11 @@ func (o *GetCorporationsCorporationIDBookmarksUnauthorized) IsServerError() bool
 // IsCode returns true when this get corporations corporation Id bookmarks unauthorized response a status code equal to that given
 func (o *GetCorporationsCorporationIDBookmarksUnauthorized) IsCode(code int) bool {
 	return code == 401
+}
+
+// Code gets the status code for the get corporations corporation Id bookmarks unauthorized response
+func (o *GetCorporationsCorporationIDBookmarksUnauthorized) Code() int {
+	return 401
 }
 
 func (o *GetCorporationsCorporationIDBookmarksUnauthorized) Error() string {
@@ -478,6 +498,11 @@ func (o *GetCorporationsCorporationIDBookmarksForbidden) IsCode(code int) bool {
 	return code == 403
 }
 
+// Code gets the status code for the get corporations corporation Id bookmarks forbidden response
+func (o *GetCorporationsCorporationIDBookmarksForbidden) Code() int {
+	return 403
+}
+
 func (o *GetCorporationsCorporationIDBookmarksForbidden) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/bookmarks/][%d] getCorporationsCorporationIdBookmarksForbidden  %+v", 403, o.Payload)
 }
@@ -539,6 +564,11 @@ func (o *GetCorporationsCorporationIDBookmarksEnhanceYourCalm) IsServerError() b
 // IsCode returns true when this get corporations corporation Id bookmarks enhance your calm response a status code equal to that given
 func (o *GetCorporationsCorporationIDBookmarksEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get corporations corporation Id bookmarks enhance your calm response
+func (o *GetCorporationsCorporationIDBookmarksEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetCorporationsCorporationIDBookmarksEnhanceYourCalm) Error() string {
@@ -604,6 +634,11 @@ func (o *GetCorporationsCorporationIDBookmarksInternalServerError) IsCode(code i
 	return code == 500
 }
 
+// Code gets the status code for the get corporations corporation Id bookmarks internal server error response
+func (o *GetCorporationsCorporationIDBookmarksInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetCorporationsCorporationIDBookmarksInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/bookmarks/][%d] getCorporationsCorporationIdBookmarksInternalServerError  %+v", 500, o.Payload)
 }
@@ -667,6 +702,11 @@ func (o *GetCorporationsCorporationIDBookmarksServiceUnavailable) IsCode(code in
 	return code == 503
 }
 
+// Code gets the status code for the get corporations corporation Id bookmarks service unavailable response
+func (o *GetCorporationsCorporationIDBookmarksServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCorporationsCorporationIDBookmarksServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/corporations/{corporation_id}/bookmarks/][%d] getCorporationsCorporationIdBookmarksServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -728,6 +768,11 @@ func (o *GetCorporationsCorporationIDBookmarksGatewayTimeout) IsServerError() bo
 // IsCode returns true when this get corporations corporation Id bookmarks gateway timeout response a status code equal to that given
 func (o *GetCorporationsCorporationIDBookmarksGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get corporations corporation Id bookmarks gateway timeout response
+func (o *GetCorporationsCorporationIDBookmarksGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCorporationsCorporationIDBookmarksGatewayTimeout) Error() string {

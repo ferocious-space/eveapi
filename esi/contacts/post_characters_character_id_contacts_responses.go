@@ -123,6 +123,11 @@ func (o *PostCharactersCharacterIDContactsCreated) IsCode(code int) bool {
 	return code == 201
 }
 
+// Code gets the status code for the post characters character Id contacts created response
+func (o *PostCharactersCharacterIDContactsCreated) Code() int {
+	return 201
+}
+
 func (o *PostCharactersCharacterIDContactsCreated) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/contacts/][%d] postCharactersCharacterIdContactsCreated  %+v", 201, o.Payload)
 }
@@ -182,6 +187,11 @@ func (o *PostCharactersCharacterIDContactsBadRequest) IsServerError() bool {
 // IsCode returns true when this post characters character Id contacts bad request response a status code equal to that given
 func (o *PostCharactersCharacterIDContactsBadRequest) IsCode(code int) bool {
 	return code == 400
+}
+
+// Code gets the status code for the post characters character Id contacts bad request response
+func (o *PostCharactersCharacterIDContactsBadRequest) Code() int {
+	return 400
 }
 
 func (o *PostCharactersCharacterIDContactsBadRequest) Error() string {
@@ -247,6 +257,11 @@ func (o *PostCharactersCharacterIDContactsUnauthorized) IsCode(code int) bool {
 	return code == 401
 }
 
+// Code gets the status code for the post characters character Id contacts unauthorized response
+func (o *PostCharactersCharacterIDContactsUnauthorized) Code() int {
+	return 401
+}
+
 func (o *PostCharactersCharacterIDContactsUnauthorized) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/contacts/][%d] postCharactersCharacterIdContactsUnauthorized  %+v", 401, o.Payload)
 }
@@ -308,6 +323,11 @@ func (o *PostCharactersCharacterIDContactsForbidden) IsServerError() bool {
 // IsCode returns true when this post characters character Id contacts forbidden response a status code equal to that given
 func (o *PostCharactersCharacterIDContactsForbidden) IsCode(code int) bool {
 	return code == 403
+}
+
+// Code gets the status code for the post characters character Id contacts forbidden response
+func (o *PostCharactersCharacterIDContactsForbidden) Code() int {
+	return 403
 }
 
 func (o *PostCharactersCharacterIDContactsForbidden) Error() string {
@@ -373,6 +393,11 @@ func (o *PostCharactersCharacterIDContactsEnhanceYourCalm) IsCode(code int) bool
 	return code == 420
 }
 
+// Code gets the status code for the post characters character Id contacts enhance your calm response
+func (o *PostCharactersCharacterIDContactsEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *PostCharactersCharacterIDContactsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/contacts/][%d] postCharactersCharacterIdContactsEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -434,6 +459,11 @@ func (o *PostCharactersCharacterIDContactsInternalServerError) IsServerError() b
 // IsCode returns true when this post characters character Id contacts internal server error response a status code equal to that given
 func (o *PostCharactersCharacterIDContactsInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the post characters character Id contacts internal server error response
+func (o *PostCharactersCharacterIDContactsInternalServerError) Code() int {
+	return 500
 }
 
 func (o *PostCharactersCharacterIDContactsInternalServerError) Error() string {
@@ -499,6 +529,11 @@ func (o *PostCharactersCharacterIDContactsServiceUnavailable) IsCode(code int) b
 	return code == 503
 }
 
+// Code gets the status code for the post characters character Id contacts service unavailable response
+func (o *PostCharactersCharacterIDContactsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *PostCharactersCharacterIDContactsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/contacts/][%d] postCharactersCharacterIdContactsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -562,6 +597,11 @@ func (o *PostCharactersCharacterIDContactsGatewayTimeout) IsCode(code int) bool 
 	return code == 504
 }
 
+// Code gets the status code for the post characters character Id contacts gateway timeout response
+func (o *PostCharactersCharacterIDContactsGatewayTimeout) Code() int {
+	return 504
+}
+
 func (o *PostCharactersCharacterIDContactsGatewayTimeout) Error() string {
 	return fmt.Sprintf("[POST /v2/characters/{character_id}/contacts/][%d] postCharactersCharacterIdContactsGatewayTimeout  %+v", 504, o.Payload)
 }
@@ -623,6 +663,11 @@ func (o *PostCharactersCharacterIDContactsStatus520) IsServerError() bool {
 // IsCode returns true when this post characters character Id contacts status520 response a status code equal to that given
 func (o *PostCharactersCharacterIDContactsStatus520) IsCode(code int) bool {
 	return code == 520
+}
+
+// Code gets the status code for the post characters character Id contacts status520 response
+func (o *PostCharactersCharacterIDContactsStatus520) Code() int {
+	return 520
 }
 
 func (o *PostCharactersCharacterIDContactsStatus520) Error() string {

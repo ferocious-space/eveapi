@@ -122,6 +122,11 @@ func (o *DeleteCharactersCharacterIDMailLabelsLabelIDNoContent) IsCode(code int)
 	return code == 204
 }
 
+// Code gets the status code for the delete characters character Id mail labels label Id no content response
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDNoContent) Code() int {
+	return 204
+}
+
 func (o *DeleteCharactersCharacterIDMailLabelsLabelIDNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/mail/labels/{label_id}/][%d] deleteCharactersCharacterIdMailLabelsLabelIdNoContent ", 204)
 }
@@ -172,6 +177,11 @@ func (o *DeleteCharactersCharacterIDMailLabelsLabelIDBadRequest) IsServerError()
 // IsCode returns true when this delete characters character Id mail labels label Id bad request response a status code equal to that given
 func (o *DeleteCharactersCharacterIDMailLabelsLabelIDBadRequest) IsCode(code int) bool {
 	return code == 400
+}
+
+// Code gets the status code for the delete characters character Id mail labels label Id bad request response
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDBadRequest) Code() int {
+	return 400
 }
 
 func (o *DeleteCharactersCharacterIDMailLabelsLabelIDBadRequest) Error() string {
@@ -237,6 +247,11 @@ func (o *DeleteCharactersCharacterIDMailLabelsLabelIDUnauthorized) IsCode(code i
 	return code == 401
 }
 
+// Code gets the status code for the delete characters character Id mail labels label Id unauthorized response
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDUnauthorized) Code() int {
+	return 401
+}
+
 func (o *DeleteCharactersCharacterIDMailLabelsLabelIDUnauthorized) Error() string {
 	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/mail/labels/{label_id}/][%d] deleteCharactersCharacterIdMailLabelsLabelIdUnauthorized  %+v", 401, o.Payload)
 }
@@ -298,6 +313,11 @@ func (o *DeleteCharactersCharacterIDMailLabelsLabelIDForbidden) IsServerError() 
 // IsCode returns true when this delete characters character Id mail labels label Id forbidden response a status code equal to that given
 func (o *DeleteCharactersCharacterIDMailLabelsLabelIDForbidden) IsCode(code int) bool {
 	return code == 403
+}
+
+// Code gets the status code for the delete characters character Id mail labels label Id forbidden response
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDForbidden) Code() int {
+	return 403
 }
 
 func (o *DeleteCharactersCharacterIDMailLabelsLabelIDForbidden) Error() string {
@@ -363,6 +383,11 @@ func (o *DeleteCharactersCharacterIDMailLabelsLabelIDEnhanceYourCalm) IsCode(cod
 	return code == 420
 }
 
+// Code gets the status code for the delete characters character Id mail labels label Id enhance your calm response
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *DeleteCharactersCharacterIDMailLabelsLabelIDEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/mail/labels/{label_id}/][%d] deleteCharactersCharacterIdMailLabelsLabelIdEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -424,6 +449,11 @@ func (o *DeleteCharactersCharacterIDMailLabelsLabelIDUnprocessableEntity) IsServ
 // IsCode returns true when this delete characters character Id mail labels label Id unprocessable entity response a status code equal to that given
 func (o *DeleteCharactersCharacterIDMailLabelsLabelIDUnprocessableEntity) IsCode(code int) bool {
 	return code == 422
+}
+
+// Code gets the status code for the delete characters character Id mail labels label Id unprocessable entity response
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDUnprocessableEntity) Code() int {
+	return 422
 }
 
 func (o *DeleteCharactersCharacterIDMailLabelsLabelIDUnprocessableEntity) Error() string {
@@ -489,6 +519,11 @@ func (o *DeleteCharactersCharacterIDMailLabelsLabelIDInternalServerError) IsCode
 	return code == 500
 }
 
+// Code gets the status code for the delete characters character Id mail labels label Id internal server error response
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDInternalServerError) Code() int {
+	return 500
+}
+
 func (o *DeleteCharactersCharacterIDMailLabelsLabelIDInternalServerError) Error() string {
 	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/mail/labels/{label_id}/][%d] deleteCharactersCharacterIdMailLabelsLabelIdInternalServerError  %+v", 500, o.Payload)
 }
@@ -552,6 +587,11 @@ func (o *DeleteCharactersCharacterIDMailLabelsLabelIDServiceUnavailable) IsCode(
 	return code == 503
 }
 
+// Code gets the status code for the delete characters character Id mail labels label Id service unavailable response
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *DeleteCharactersCharacterIDMailLabelsLabelIDServiceUnavailable) Error() string {
 	return fmt.Sprintf("[DELETE /v1/characters/{character_id}/mail/labels/{label_id}/][%d] deleteCharactersCharacterIdMailLabelsLabelIdServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -613,6 +653,11 @@ func (o *DeleteCharactersCharacterIDMailLabelsLabelIDGatewayTimeout) IsServerErr
 // IsCode returns true when this delete characters character Id mail labels label Id gateway timeout response a status code equal to that given
 func (o *DeleteCharactersCharacterIDMailLabelsLabelIDGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the delete characters character Id mail labels label Id gateway timeout response
+func (o *DeleteCharactersCharacterIDMailLabelsLabelIDGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *DeleteCharactersCharacterIDMailLabelsLabelIDGatewayTimeout) Error() string {

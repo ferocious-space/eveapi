@@ -158,6 +158,11 @@ func (o *GetCharactersCharacterIDContractsOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the get characters character Id contracts o k response
+func (o *GetCharactersCharacterIDContractsOK) Code() int {
+	return 200
+}
+
 func (o *GetCharactersCharacterIDContractsOK) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/contracts/][%d] getCharactersCharacterIdContractsOK  %+v", 200, o.Payload)
 }
@@ -273,6 +278,11 @@ func (o *GetCharactersCharacterIDContractsNotModified) IsCode(code int) bool {
 	return code == 304
 }
 
+// Code gets the status code for the get characters character Id contracts not modified response
+func (o *GetCharactersCharacterIDContractsNotModified) Code() int {
+	return 304
+}
+
 func (o *GetCharactersCharacterIDContractsNotModified) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/contracts/][%d] getCharactersCharacterIdContractsNotModified ", 304)
 }
@@ -353,6 +363,11 @@ func (o *GetCharactersCharacterIDContractsBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the get characters character Id contracts bad request response
+func (o *GetCharactersCharacterIDContractsBadRequest) Code() int {
+	return 400
+}
+
 func (o *GetCharactersCharacterIDContractsBadRequest) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/contracts/][%d] getCharactersCharacterIdContractsBadRequest  %+v", 400, o.Payload)
 }
@@ -414,6 +429,11 @@ func (o *GetCharactersCharacterIDContractsUnauthorized) IsServerError() bool {
 // IsCode returns true when this get characters character Id contracts unauthorized response a status code equal to that given
 func (o *GetCharactersCharacterIDContractsUnauthorized) IsCode(code int) bool {
 	return code == 401
+}
+
+// Code gets the status code for the get characters character Id contracts unauthorized response
+func (o *GetCharactersCharacterIDContractsUnauthorized) Code() int {
+	return 401
 }
 
 func (o *GetCharactersCharacterIDContractsUnauthorized) Error() string {
@@ -479,6 +499,11 @@ func (o *GetCharactersCharacterIDContractsForbidden) IsCode(code int) bool {
 	return code == 403
 }
 
+// Code gets the status code for the get characters character Id contracts forbidden response
+func (o *GetCharactersCharacterIDContractsForbidden) Code() int {
+	return 403
+}
+
 func (o *GetCharactersCharacterIDContractsForbidden) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/contracts/][%d] getCharactersCharacterIdContractsForbidden  %+v", 403, o.Payload)
 }
@@ -540,6 +565,11 @@ func (o *GetCharactersCharacterIDContractsEnhanceYourCalm) IsServerError() bool 
 // IsCode returns true when this get characters character Id contracts enhance your calm response a status code equal to that given
 func (o *GetCharactersCharacterIDContractsEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the get characters character Id contracts enhance your calm response
+func (o *GetCharactersCharacterIDContractsEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *GetCharactersCharacterIDContractsEnhanceYourCalm) Error() string {
@@ -605,6 +635,11 @@ func (o *GetCharactersCharacterIDContractsInternalServerError) IsCode(code int) 
 	return code == 500
 }
 
+// Code gets the status code for the get characters character Id contracts internal server error response
+func (o *GetCharactersCharacterIDContractsInternalServerError) Code() int {
+	return 500
+}
+
 func (o *GetCharactersCharacterIDContractsInternalServerError) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/contracts/][%d] getCharactersCharacterIdContractsInternalServerError  %+v", 500, o.Payload)
 }
@@ -668,6 +703,11 @@ func (o *GetCharactersCharacterIDContractsServiceUnavailable) IsCode(code int) b
 	return code == 503
 }
 
+// Code gets the status code for the get characters character Id contracts service unavailable response
+func (o *GetCharactersCharacterIDContractsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *GetCharactersCharacterIDContractsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[GET /v1/characters/{character_id}/contracts/][%d] getCharactersCharacterIdContractsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -729,6 +769,11 @@ func (o *GetCharactersCharacterIDContractsGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this get characters character Id contracts gateway timeout response a status code equal to that given
 func (o *GetCharactersCharacterIDContractsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the get characters character Id contracts gateway timeout response
+func (o *GetCharactersCharacterIDContractsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *GetCharactersCharacterIDContractsGatewayTimeout) Error() string {

@@ -114,6 +114,11 @@ func (o *PutCharactersCharacterIDContactsNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the put characters character Id contacts no content response
+func (o *PutCharactersCharacterIDContactsNoContent) Code() int {
+	return 204
+}
+
 func (o *PutCharactersCharacterIDContactsNoContent) Error() string {
 	return fmt.Sprintf("[PUT /v2/characters/{character_id}/contacts/][%d] putCharactersCharacterIdContactsNoContent ", 204)
 }
@@ -164,6 +169,11 @@ func (o *PutCharactersCharacterIDContactsBadRequest) IsServerError() bool {
 // IsCode returns true when this put characters character Id contacts bad request response a status code equal to that given
 func (o *PutCharactersCharacterIDContactsBadRequest) IsCode(code int) bool {
 	return code == 400
+}
+
+// Code gets the status code for the put characters character Id contacts bad request response
+func (o *PutCharactersCharacterIDContactsBadRequest) Code() int {
+	return 400
 }
 
 func (o *PutCharactersCharacterIDContactsBadRequest) Error() string {
@@ -229,6 +239,11 @@ func (o *PutCharactersCharacterIDContactsUnauthorized) IsCode(code int) bool {
 	return code == 401
 }
 
+// Code gets the status code for the put characters character Id contacts unauthorized response
+func (o *PutCharactersCharacterIDContactsUnauthorized) Code() int {
+	return 401
+}
+
 func (o *PutCharactersCharacterIDContactsUnauthorized) Error() string {
 	return fmt.Sprintf("[PUT /v2/characters/{character_id}/contacts/][%d] putCharactersCharacterIdContactsUnauthorized  %+v", 401, o.Payload)
 }
@@ -290,6 +305,11 @@ func (o *PutCharactersCharacterIDContactsForbidden) IsServerError() bool {
 // IsCode returns true when this put characters character Id contacts forbidden response a status code equal to that given
 func (o *PutCharactersCharacterIDContactsForbidden) IsCode(code int) bool {
 	return code == 403
+}
+
+// Code gets the status code for the put characters character Id contacts forbidden response
+func (o *PutCharactersCharacterIDContactsForbidden) Code() int {
+	return 403
 }
 
 func (o *PutCharactersCharacterIDContactsForbidden) Error() string {
@@ -355,6 +375,11 @@ func (o *PutCharactersCharacterIDContactsEnhanceYourCalm) IsCode(code int) bool 
 	return code == 420
 }
 
+// Code gets the status code for the put characters character Id contacts enhance your calm response
+func (o *PutCharactersCharacterIDContactsEnhanceYourCalm) Code() int {
+	return 420
+}
+
 func (o *PutCharactersCharacterIDContactsEnhanceYourCalm) Error() string {
 	return fmt.Sprintf("[PUT /v2/characters/{character_id}/contacts/][%d] putCharactersCharacterIdContactsEnhanceYourCalm  %+v", 420, o.Payload)
 }
@@ -416,6 +441,11 @@ func (o *PutCharactersCharacterIDContactsInternalServerError) IsServerError() bo
 // IsCode returns true when this put characters character Id contacts internal server error response a status code equal to that given
 func (o *PutCharactersCharacterIDContactsInternalServerError) IsCode(code int) bool {
 	return code == 500
+}
+
+// Code gets the status code for the put characters character Id contacts internal server error response
+func (o *PutCharactersCharacterIDContactsInternalServerError) Code() int {
+	return 500
 }
 
 func (o *PutCharactersCharacterIDContactsInternalServerError) Error() string {
@@ -481,6 +511,11 @@ func (o *PutCharactersCharacterIDContactsServiceUnavailable) IsCode(code int) bo
 	return code == 503
 }
 
+// Code gets the status code for the put characters character Id contacts service unavailable response
+func (o *PutCharactersCharacterIDContactsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *PutCharactersCharacterIDContactsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[PUT /v2/characters/{character_id}/contacts/][%d] putCharactersCharacterIdContactsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -542,6 +577,11 @@ func (o *PutCharactersCharacterIDContactsGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this put characters character Id contacts gateway timeout response a status code equal to that given
 func (o *PutCharactersCharacterIDContactsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the put characters character Id contacts gateway timeout response
+func (o *PutCharactersCharacterIDContactsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *PutCharactersCharacterIDContactsGatewayTimeout) Error() string {

@@ -113,6 +113,11 @@ func (o *PostUniverseIdsOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the post universe ids o k response
+func (o *PostUniverseIdsOK) Code() int {
+	return 200
+}
+
 func (o *PostUniverseIdsOK) Error() string {
 	return fmt.Sprintf("[POST /v1/universe/ids/][%d] postUniverseIdsOK  %+v", 200, o.Payload)
 }
@@ -183,6 +188,11 @@ func (o *PostUniverseIdsBadRequest) IsCode(code int) bool {
 	return code == 400
 }
 
+// Code gets the status code for the post universe ids bad request response
+func (o *PostUniverseIdsBadRequest) Code() int {
+	return 400
+}
+
 func (o *PostUniverseIdsBadRequest) Error() string {
 	return fmt.Sprintf("[POST /v1/universe/ids/][%d] postUniverseIdsBadRequest  %+v", 400, o.Payload)
 }
@@ -244,6 +254,11 @@ func (o *PostUniverseIdsEnhanceYourCalm) IsServerError() bool {
 // IsCode returns true when this post universe ids enhance your calm response a status code equal to that given
 func (o *PostUniverseIdsEnhanceYourCalm) IsCode(code int) bool {
 	return code == 420
+}
+
+// Code gets the status code for the post universe ids enhance your calm response
+func (o *PostUniverseIdsEnhanceYourCalm) Code() int {
+	return 420
 }
 
 func (o *PostUniverseIdsEnhanceYourCalm) Error() string {
@@ -309,6 +324,11 @@ func (o *PostUniverseIdsInternalServerError) IsCode(code int) bool {
 	return code == 500
 }
 
+// Code gets the status code for the post universe ids internal server error response
+func (o *PostUniverseIdsInternalServerError) Code() int {
+	return 500
+}
+
 func (o *PostUniverseIdsInternalServerError) Error() string {
 	return fmt.Sprintf("[POST /v1/universe/ids/][%d] postUniverseIdsInternalServerError  %+v", 500, o.Payload)
 }
@@ -372,6 +392,11 @@ func (o *PostUniverseIdsServiceUnavailable) IsCode(code int) bool {
 	return code == 503
 }
 
+// Code gets the status code for the post universe ids service unavailable response
+func (o *PostUniverseIdsServiceUnavailable) Code() int {
+	return 503
+}
+
 func (o *PostUniverseIdsServiceUnavailable) Error() string {
 	return fmt.Sprintf("[POST /v1/universe/ids/][%d] postUniverseIdsServiceUnavailable  %+v", 503, o.Payload)
 }
@@ -433,6 +458,11 @@ func (o *PostUniverseIdsGatewayTimeout) IsServerError() bool {
 // IsCode returns true when this post universe ids gateway timeout response a status code equal to that given
 func (o *PostUniverseIdsGatewayTimeout) IsCode(code int) bool {
 	return code == 504
+}
+
+// Code gets the status code for the post universe ids gateway timeout response
+func (o *PostUniverseIdsGatewayTimeout) Code() int {
+	return 504
 }
 
 func (o *PostUniverseIdsGatewayTimeout) Error() string {
