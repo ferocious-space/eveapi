@@ -72,7 +72,7 @@ func (o *PostUIOpenwindowContractReader) ReadResponse(response runtime.ClientRes
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[POST /v1/ui/openwindow/contract/] post_ui_openwindow_contract", response, response.Code())
 	}
 }
 

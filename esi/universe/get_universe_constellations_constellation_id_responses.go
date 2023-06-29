@@ -76,7 +76,7 @@ func (o *GetUniverseConstellationsConstellationIDReader) ReadResponse(response r
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[GET /v1/universe/constellations/{constellation_id}/] get_universe_constellations_constellation_id", response, response.Code())
 	}
 }
 
@@ -901,6 +901,7 @@ func (o *GetUniverseConstellationsConstellationIDOKBody) ContextValidate(ctx con
 func (o *GetUniverseConstellationsConstellationIDOKBody) contextValidatePosition(ctx context.Context, formats strfmt.Registry) error {
 
 	if o.Position != nil {
+
 		if err := o.Position.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getUniverseConstellationsConstellationIdOK" + "." + "position")

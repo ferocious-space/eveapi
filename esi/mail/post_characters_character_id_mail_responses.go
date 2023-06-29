@@ -84,7 +84,7 @@ func (o *PostCharactersCharacterIDMailReader) ReadResponse(response runtime.Clie
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[POST /v1/characters/{character_id}/mail/] post_characters_character_id_mail", response, response.Code())
 	}
 }
 
@@ -838,6 +838,11 @@ func (o *PostCharactersCharacterIDMailBody) contextValidateRecipients(ctx contex
 	for i := 0; i < len(o.Recipients); i++ {
 
 		if o.Recipients[i] != nil {
+
+			if swag.IsZero(o.Recipients[i]) { // not required
+				return nil
+			}
+
 			if err := o.Recipients[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("mail" + "." + "recipients" + "." + strconv.Itoa(i))

@@ -71,7 +71,7 @@ func (o *GetFwLeaderboardsCorporationsReader) ReadResponse(response runtime.Clie
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[GET /v1/fw/leaderboards/corporations/] get_fw_leaderboards_corporations", response, response.Code())
 	}
 }
 
@@ -724,6 +724,7 @@ func (o *GetFwLeaderboardsCorporationsOKBody) ContextValidate(ctx context.Contex
 func (o *GetFwLeaderboardsCorporationsOKBody) contextValidateKills(ctx context.Context, formats strfmt.Registry) error {
 
 	if o.Kills != nil {
+
 		if err := o.Kills.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getFwLeaderboardsCorporationsOK" + "." + "kills")
@@ -740,6 +741,7 @@ func (o *GetFwLeaderboardsCorporationsOKBody) contextValidateKills(ctx context.C
 func (o *GetFwLeaderboardsCorporationsOKBody) contextValidateVictoryPoints(ctx context.Context, formats strfmt.Registry) error {
 
 	if o.VictoryPoints != nil {
+
 		if err := o.VictoryPoints.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getFwLeaderboardsCorporationsOK" + "." + "victory_points")
@@ -949,6 +951,11 @@ func (o *GetFwLeaderboardsCorporationsOKBodyKills) contextValidateActiveTotal(ct
 	for i := 0; i < len(o.ActiveTotal); i++ {
 
 		if o.ActiveTotal[i] != nil {
+
+			if swag.IsZero(o.ActiveTotal[i]) { // not required
+				return nil
+			}
+
 			if err := o.ActiveTotal[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getFwLeaderboardsCorporationsOK" + "." + "kills" + "." + "active_total" + "." + strconv.Itoa(i))
@@ -969,6 +976,11 @@ func (o *GetFwLeaderboardsCorporationsOKBodyKills) contextValidateLastWeek(ctx c
 	for i := 0; i < len(o.LastWeek); i++ {
 
 		if o.LastWeek[i] != nil {
+
+			if swag.IsZero(o.LastWeek[i]) { // not required
+				return nil
+			}
+
 			if err := o.LastWeek[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getFwLeaderboardsCorporationsOK" + "." + "kills" + "." + "last_week" + "." + strconv.Itoa(i))
@@ -989,6 +1001,11 @@ func (o *GetFwLeaderboardsCorporationsOKBodyKills) contextValidateYesterday(ctx 
 	for i := 0; i < len(o.Yesterday); i++ {
 
 		if o.Yesterday[i] != nil {
+
+			if swag.IsZero(o.Yesterday[i]) { // not required
+				return nil
+			}
+
 			if err := o.Yesterday[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getFwLeaderboardsCorporationsOK" + "." + "kills" + "." + "yesterday" + "." + strconv.Itoa(i))
@@ -1341,6 +1358,11 @@ func (o *GetFwLeaderboardsCorporationsOKBodyVictoryPoints) contextValidateActive
 	for i := 0; i < len(o.ActiveTotal); i++ {
 
 		if o.ActiveTotal[i] != nil {
+
+			if swag.IsZero(o.ActiveTotal[i]) { // not required
+				return nil
+			}
+
 			if err := o.ActiveTotal[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getFwLeaderboardsCorporationsOK" + "." + "victory_points" + "." + "active_total" + "." + strconv.Itoa(i))
@@ -1361,6 +1383,11 @@ func (o *GetFwLeaderboardsCorporationsOKBodyVictoryPoints) contextValidateLastWe
 	for i := 0; i < len(o.LastWeek); i++ {
 
 		if o.LastWeek[i] != nil {
+
+			if swag.IsZero(o.LastWeek[i]) { // not required
+				return nil
+			}
+
 			if err := o.LastWeek[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getFwLeaderboardsCorporationsOK" + "." + "victory_points" + "." + "last_week" + "." + strconv.Itoa(i))
@@ -1381,6 +1408,11 @@ func (o *GetFwLeaderboardsCorporationsOKBodyVictoryPoints) contextValidateYester
 	for i := 0; i < len(o.Yesterday); i++ {
 
 		if o.Yesterday[i] != nil {
+
+			if swag.IsZero(o.Yesterday[i]) { // not required
+				return nil
+			}
+
 			if err := o.Yesterday[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getFwLeaderboardsCorporationsOK" + "." + "victory_points" + "." + "yesterday" + "." + strconv.Itoa(i))

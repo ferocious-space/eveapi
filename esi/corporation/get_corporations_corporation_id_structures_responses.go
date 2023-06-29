@@ -84,7 +84,7 @@ func (o *GetCorporationsCorporationIDStructuresReader) ReadResponse(response run
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[GET /v4/corporations/{corporation_id}/structures/] get_corporations_corporation_id_structures", response, response.Code())
 	}
 }
 
@@ -1243,6 +1243,11 @@ func (o *GetCorporationsCorporationIDStructuresOKBodyItems0) contextValidateServ
 	for i := 0; i < len(o.Services); i++ {
 
 		if o.Services[i] != nil {
+
+			if swag.IsZero(o.Services[i]) { // not required
+				return nil
+			}
+
 			if err := o.Services[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("services" + "." + strconv.Itoa(i))

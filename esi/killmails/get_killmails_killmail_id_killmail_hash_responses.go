@@ -77,7 +77,7 @@ func (o *GetKillmailsKillmailIDKillmailHashReader) ReadResponse(response runtime
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[GET /v1/killmails/{killmail_id}/{killmail_hash}/] get_killmails_killmail_id_killmail_hash", response, response.Code())
 	}
 }
 
@@ -891,6 +891,11 @@ func (o *GetKillmailsKillmailIDKillmailHashOKBody) contextValidateAttackers(ctx 
 	for i := 0; i < len(o.Attackers); i++ {
 
 		if o.Attackers[i] != nil {
+
+			if swag.IsZero(o.Attackers[i]) { // not required
+				return nil
+			}
+
 			if err := o.Attackers[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getKillmailsKillmailIdKillmailHashOK" + "." + "attackers" + "." + strconv.Itoa(i))
@@ -909,6 +914,7 @@ func (o *GetKillmailsKillmailIDKillmailHashOKBody) contextValidateAttackers(ctx 
 func (o *GetKillmailsKillmailIDKillmailHashOKBody) contextValidateVictim(ctx context.Context, formats strfmt.Registry) error {
 
 	if o.Victim != nil {
+
 		if err := o.Victim.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getKillmailsKillmailIdKillmailHashOK" + "." + "victim")
@@ -1243,6 +1249,11 @@ func (o *GetKillmailsKillmailIDKillmailHashOKBodyVictim) contextValidateItems(ct
 	for i := 0; i < len(o.Items); i++ {
 
 		if o.Items[i] != nil {
+
+			if swag.IsZero(o.Items[i]) { // not required
+				return nil
+			}
+
 			if err := o.Items[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getKillmailsKillmailIdKillmailHashOK" + "." + "victim" + "." + "items" + "." + strconv.Itoa(i))
@@ -1261,6 +1272,11 @@ func (o *GetKillmailsKillmailIDKillmailHashOKBodyVictim) contextValidateItems(ct
 func (o *GetKillmailsKillmailIDKillmailHashOKBodyVictim) contextValidatePosition(ctx context.Context, formats strfmt.Registry) error {
 
 	if o.Position != nil {
+
+		if swag.IsZero(o.Position) { // not required
+			return nil
+		}
+
 		if err := o.Position.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getKillmailsKillmailIdKillmailHashOK" + "." + "victim" + "." + "position")
@@ -1442,6 +1458,11 @@ func (o *GetKillmailsKillmailIDKillmailHashOKBodyVictimItemsItems0) contextValid
 	for i := 0; i < len(o.Items); i++ {
 
 		if o.Items[i] != nil {
+
+			if swag.IsZero(o.Items[i]) { // not required
+				return nil
+			}
+
 			if err := o.Items[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("items" + "." + strconv.Itoa(i))

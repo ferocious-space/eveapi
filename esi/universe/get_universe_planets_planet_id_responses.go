@@ -76,7 +76,7 @@ func (o *GetUniversePlanetsPlanetIDReader) ReadResponse(response runtime.ClientR
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[GET /v1/universe/planets/{planet_id}/] get_universe_planets_planet_id", response, response.Code())
 	}
 }
 
@@ -883,6 +883,7 @@ func (o *GetUniversePlanetsPlanetIDOKBody) ContextValidate(ctx context.Context, 
 func (o *GetUniversePlanetsPlanetIDOKBody) contextValidatePosition(ctx context.Context, formats strfmt.Registry) error {
 
 	if o.Position != nil {
+
 		if err := o.Position.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getUniversePlanetsPlanetIdOK" + "." + "position")

@@ -72,7 +72,7 @@ func (o *GetIndustrySystemsReader) ReadResponse(response runtime.ClientResponse,
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[GET /v1/industry/systems/] get_industry_systems", response, response.Code())
 	}
 }
 
@@ -728,6 +728,11 @@ func (o *GetIndustrySystemsOKBodyItems0) contextValidateCostIndices(ctx context.
 	for i := 0; i < len(o.CostIndices); i++ {
 
 		if o.CostIndices[i] != nil {
+
+			if swag.IsZero(o.CostIndices[i]) { // not required
+				return nil
+			}
+
 			if err := o.CostIndices[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("cost_indices" + "." + strconv.Itoa(i))

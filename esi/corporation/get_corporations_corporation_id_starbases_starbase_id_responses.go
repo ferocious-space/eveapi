@@ -84,7 +84,7 @@ func (o *GetCorporationsCorporationIDStarbasesStarbaseIDReader) ReadResponse(res
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[GET /v2/corporations/{corporation_id}/starbases/{starbase_id}/] get_corporations_corporation_id_starbases_starbase_id", response, response.Code())
 	}
 }
 
@@ -1322,6 +1322,11 @@ func (o *GetCorporationsCorporationIDStarbasesStarbaseIDOKBody) contextValidateF
 	for i := 0; i < len(o.Fuels); i++ {
 
 		if o.Fuels[i] != nil {
+
+			if swag.IsZero(o.Fuels[i]) { // not required
+				return nil
+			}
+
 			if err := o.Fuels[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getCorporationsCorporationIdStarbasesStarbaseIdOK" + "." + "fuels" + "." + strconv.Itoa(i))

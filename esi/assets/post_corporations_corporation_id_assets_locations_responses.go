@@ -82,7 +82,7 @@ func (o *PostCorporationsCorporationIDAssetsLocationsReader) ReadResponse(respon
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[POST /v2/corporations/{corporation_id}/assets/locations/] post_corporations_corporation_id_assets_locations", response, response.Code())
 	}
 }
 
@@ -821,6 +821,7 @@ func (o *PostCorporationsCorporationIDAssetsLocationsOKBodyItems0) ContextValida
 func (o *PostCorporationsCorporationIDAssetsLocationsOKBodyItems0) contextValidatePosition(ctx context.Context, formats strfmt.Registry) error {
 
 	if o.Position != nil {
+
 		if err := o.Position.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("position")

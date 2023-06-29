@@ -84,7 +84,7 @@ func (o *GetCharactersCharacterIDFittingsReader) ReadResponse(response runtime.C
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[GET /v2/characters/{character_id}/fittings/] get_characters_character_id_fittings", response, response.Code())
 	}
 }
 
@@ -933,6 +933,11 @@ func (o *GetCharactersCharacterIDFittingsOKBodyItems0) contextValidateItems(ctx 
 	for i := 0; i < len(o.Items); i++ {
 
 		if o.Items[i] != nil {
+
+			if swag.IsZero(o.Items[i]) { // not required
+				return nil
+			}
+
 			if err := o.Items[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("items" + "." + strconv.Itoa(i))

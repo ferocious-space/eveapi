@@ -83,7 +83,7 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDReader) ReadResponse(response ru
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[GET /v3/characters/{character_id}/planets/{planet_id}/] get_characters_character_id_planets_planet_id", response, response.Code())
 	}
 }
 
@@ -919,6 +919,11 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDOKBody) contextValidateLinks(ctx
 	for i := 0; i < len(o.Links); i++ {
 
 		if o.Links[i] != nil {
+
+			if swag.IsZero(o.Links[i]) { // not required
+				return nil
+			}
+
 			if err := o.Links[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getCharactersCharacterIdPlanetsPlanetIdOK" + "." + "links" + "." + strconv.Itoa(i))
@@ -939,6 +944,11 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDOKBody) contextValidatePins(ctx 
 	for i := 0; i < len(o.Pins); i++ {
 
 		if o.Pins[i] != nil {
+
+			if swag.IsZero(o.Pins[i]) { // not required
+				return nil
+			}
+
 			if err := o.Pins[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getCharactersCharacterIdPlanetsPlanetIdOK" + "." + "pins" + "." + strconv.Itoa(i))
@@ -959,6 +969,11 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDOKBody) contextValidateRoutes(ct
 	for i := 0; i < len(o.Routes); i++ {
 
 		if o.Routes[i] != nil {
+
+			if swag.IsZero(o.Routes[i]) { // not required
+				return nil
+			}
+
 			if err := o.Routes[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getCharactersCharacterIdPlanetsPlanetIdOK" + "." + "routes" + "." + strconv.Itoa(i))
@@ -1388,6 +1403,11 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0) contextValidat
 	for i := 0; i < len(o.Contents); i++ {
 
 		if o.Contents[i] != nil {
+
+			if swag.IsZero(o.Contents[i]) { // not required
+				return nil
+			}
+
 			if err := o.Contents[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("contents" + "." + strconv.Itoa(i))
@@ -1406,6 +1426,11 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0) contextValidat
 func (o *GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0) contextValidateExtractorDetails(ctx context.Context, formats strfmt.Registry) error {
 
 	if o.ExtractorDetails != nil {
+
+		if swag.IsZero(o.ExtractorDetails) { // not required
+			return nil
+		}
+
 		if err := o.ExtractorDetails.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("extractor_details")
@@ -1422,6 +1447,11 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0) contextValidat
 func (o *GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0) contextValidateFactoryDetails(ctx context.Context, formats strfmt.Registry) error {
 
 	if o.FactoryDetails != nil {
+
+		if swag.IsZero(o.FactoryDetails) { // not required
+			return nil
+		}
+
 		if err := o.FactoryDetails.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("factory_details")
@@ -1635,6 +1665,11 @@ func (o *GetCharactersCharacterIDPlanetsPlanetIDOKBodyPinsItems0ExtractorDetails
 	for i := 0; i < len(o.Heads); i++ {
 
 		if o.Heads[i] != nil {
+
+			if swag.IsZero(o.Heads[i]) { // not required
+				return nil
+			}
+
 			if err := o.Heads[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("extractor_details" + "." + "heads" + "." + strconv.Itoa(i))

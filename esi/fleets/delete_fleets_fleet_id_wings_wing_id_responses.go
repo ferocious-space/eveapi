@@ -80,7 +80,7 @@ func (o *DeleteFleetsFleetIDWingsWingIDReader) ReadResponse(response runtime.Cli
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[DELETE /v1/fleets/{fleet_id}/wings/{wing_id}/] delete_fleets_fleet_id_wings_wing_id", response, response.Code())
 	}
 }
 

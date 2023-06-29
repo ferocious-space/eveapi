@@ -77,7 +77,7 @@ func (o *GetUniverseSystemsSystemIDReader) ReadResponse(response runtime.ClientR
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[GET /v4/universe/systems/{system_id}/] get_universe_systems_system_id", response, response.Code())
 	}
 }
 
@@ -1001,6 +1001,11 @@ func (o *GetUniverseSystemsSystemIDOKBody) contextValidatePlanets(ctx context.Co
 	for i := 0; i < len(o.Planets); i++ {
 
 		if o.Planets[i] != nil {
+
+			if swag.IsZero(o.Planets[i]) { // not required
+				return nil
+			}
+
 			if err := o.Planets[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getUniverseSystemsSystemIdOK" + "." + "planets" + "." + strconv.Itoa(i))
@@ -1019,6 +1024,7 @@ func (o *GetUniverseSystemsSystemIDOKBody) contextValidatePlanets(ctx context.Co
 func (o *GetUniverseSystemsSystemIDOKBody) contextValidatePosition(ctx context.Context, formats strfmt.Registry) error {
 
 	if o.Position != nil {
+
 		if err := o.Position.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getUniverseSystemsSystemIdOK" + "." + "position")

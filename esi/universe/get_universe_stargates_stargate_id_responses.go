@@ -76,7 +76,7 @@ func (o *GetUniverseStargatesStargateIDReader) ReadResponse(response runtime.Cli
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[GET /v1/universe/stargates/{stargate_id}/] get_universe_stargates_stargate_id", response, response.Code())
 	}
 }
 
@@ -915,6 +915,7 @@ func (o *GetUniverseStargatesStargateIDOKBody) ContextValidate(ctx context.Conte
 func (o *GetUniverseStargatesStargateIDOKBody) contextValidateDestination(ctx context.Context, formats strfmt.Registry) error {
 
 	if o.Destination != nil {
+
 		if err := o.Destination.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getUniverseStargatesStargateIdOK" + "." + "destination")
@@ -931,6 +932,7 @@ func (o *GetUniverseStargatesStargateIDOKBody) contextValidateDestination(ctx co
 func (o *GetUniverseStargatesStargateIDOKBody) contextValidatePosition(ctx context.Context, formats strfmt.Registry) error {
 
 	if o.Position != nil {
+
 		if err := o.Position.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getUniverseStargatesStargateIdOK" + "." + "position")

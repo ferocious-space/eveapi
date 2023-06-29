@@ -82,7 +82,7 @@ func (o *GetCorporationsCorporationIDFwStatsReader) ReadResponse(response runtim
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[GET /v1/corporations/{corporation_id}/fw/stats/] get_corporations_corporation_id_fw_stats", response, response.Code())
 	}
 }
 
@@ -903,6 +903,7 @@ func (o *GetCorporationsCorporationIDFwStatsOKBody) ContextValidate(ctx context.
 func (o *GetCorporationsCorporationIDFwStatsOKBody) contextValidateKills(ctx context.Context, formats strfmt.Registry) error {
 
 	if o.Kills != nil {
+
 		if err := o.Kills.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getCorporationsCorporationIdFwStatsOK" + "." + "kills")
@@ -919,6 +920,7 @@ func (o *GetCorporationsCorporationIDFwStatsOKBody) contextValidateKills(ctx con
 func (o *GetCorporationsCorporationIDFwStatsOKBody) contextValidateVictoryPoints(ctx context.Context, formats strfmt.Registry) error {
 
 	if o.VictoryPoints != nil {
+
 		if err := o.VictoryPoints.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getCorporationsCorporationIdFwStatsOK" + "." + "victory_points")

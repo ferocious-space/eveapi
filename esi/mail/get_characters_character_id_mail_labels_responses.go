@@ -84,7 +84,7 @@ func (o *GetCharactersCharacterIDMailLabelsReader) ReadResponse(response runtime
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[GET /v3/characters/{character_id}/mail/labels/] get_characters_character_id_mail_labels", response, response.Code())
 	}
 }
 
@@ -879,6 +879,11 @@ func (o *GetCharactersCharacterIDMailLabelsOKBody) contextValidateLabels(ctx con
 	for i := 0; i < len(o.Labels); i++ {
 
 		if o.Labels[i] != nil {
+
+			if swag.IsZero(o.Labels[i]) { // not required
+				return nil
+			}
+
 			if err := o.Labels[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getCharactersCharacterIdMailLabelsOK" + "." + "labels" + "." + strconv.Itoa(i))

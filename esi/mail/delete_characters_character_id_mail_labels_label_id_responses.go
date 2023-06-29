@@ -80,7 +80,7 @@ func (o *DeleteCharactersCharacterIDMailLabelsLabelIDReader) ReadResponse(respon
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[DELETE /v1/characters/{character_id}/mail/labels/{label_id}/] delete_characters_character_id_mail_labels_label_id", response, response.Code())
 	}
 }
 

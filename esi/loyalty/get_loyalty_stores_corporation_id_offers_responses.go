@@ -77,7 +77,7 @@ func (o *GetLoyaltyStoresCorporationIDOffersReader) ReadResponse(response runtim
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[GET /v1/loyalty/stores/{corporation_id}/offers/] get_loyalty_stores_corporation_id_offers", response, response.Code())
 	}
 }
 
@@ -924,6 +924,11 @@ func (o *GetLoyaltyStoresCorporationIDOffersOKBodyItems0) contextValidateRequire
 	for i := 0; i < len(o.RequiredItems); i++ {
 
 		if o.RequiredItems[i] != nil {
+
+			if swag.IsZero(o.RequiredItems[i]) { // not required
+				return nil
+			}
+
 			if err := o.RequiredItems[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("required_items" + "." + strconv.Itoa(i))

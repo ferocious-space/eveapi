@@ -82,7 +82,7 @@ func (o *GetCharactersCharacterIDOnlineReader) ReadResponse(response runtime.Cli
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[GET /v2/characters/{character_id}/online/] get_characters_character_id_online", response, response.Code())
 	}
 }
 

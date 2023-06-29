@@ -71,7 +71,7 @@ func (o *GetInsurancePricesReader) ReadResponse(response runtime.ClientResponse,
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[GET /v1/insurance/prices/] get_insurance_prices", response, response.Code())
 	}
 }
 
@@ -738,6 +738,11 @@ func (o *GetInsurancePricesOKBodyItems0) contextValidateLevels(ctx context.Conte
 	for i := 0; i < len(o.Levels); i++ {
 
 		if o.Levels[i] != nil {
+
+			if swag.IsZero(o.Levels[i]) { // not required
+				return nil
+			}
+
 			if err := o.Levels[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("levels" + "." + strconv.Itoa(i))

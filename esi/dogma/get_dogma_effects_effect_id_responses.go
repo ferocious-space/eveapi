@@ -77,7 +77,7 @@ func (o *GetDogmaEffectsEffectIDReader) ReadResponse(response runtime.ClientResp
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[GET /v2/dogma/effects/{effect_id}/] get_dogma_effects_effect_id", response, response.Code())
 	}
 }
 
@@ -938,6 +938,11 @@ func (o *GetDogmaEffectsEffectIDOKBody) contextValidateModifiers(ctx context.Con
 	for i := 0; i < len(o.Modifiers); i++ {
 
 		if o.Modifiers[i] != nil {
+
+			if swag.IsZero(o.Modifiers[i]) { // not required
+				return nil
+			}
+
 			if err := o.Modifiers[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getDogmaEffectsEffectIdOK" + "." + "modifiers" + "." + strconv.Itoa(i))

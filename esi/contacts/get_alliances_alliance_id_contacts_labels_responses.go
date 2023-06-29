@@ -82,7 +82,7 @@ func (o *GetAlliancesAllianceIDContactsLabelsReader) ReadResponse(response runti
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[GET /v1/alliances/{alliance_id}/contacts/labels/] get_alliances_alliance_id_contacts_labels", response, response.Code())
 	}
 }
 

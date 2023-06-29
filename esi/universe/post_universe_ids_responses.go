@@ -65,7 +65,7 @@ func (o *PostUniverseIdsReader) ReadResponse(response runtime.ClientResponse, co
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[POST /v1/universe/ids/] post_universe_ids", response, response.Code())
 	}
 }
 
@@ -983,6 +983,11 @@ func (o *PostUniverseIdsOKBody) contextValidateAgents(ctx context.Context, forma
 	for i := 0; i < len(o.Agents); i++ {
 
 		if o.Agents[i] != nil {
+
+			if swag.IsZero(o.Agents[i]) { // not required
+				return nil
+			}
+
 			if err := o.Agents[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("postUniverseIdsOK" + "." + "agents" + "." + strconv.Itoa(i))
@@ -1003,6 +1008,11 @@ func (o *PostUniverseIdsOKBody) contextValidateAlliances(ctx context.Context, fo
 	for i := 0; i < len(o.Alliances); i++ {
 
 		if o.Alliances[i] != nil {
+
+			if swag.IsZero(o.Alliances[i]) { // not required
+				return nil
+			}
+
 			if err := o.Alliances[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("postUniverseIdsOK" + "." + "alliances" + "." + strconv.Itoa(i))
@@ -1023,6 +1033,11 @@ func (o *PostUniverseIdsOKBody) contextValidateCharacters(ctx context.Context, f
 	for i := 0; i < len(o.Characters); i++ {
 
 		if o.Characters[i] != nil {
+
+			if swag.IsZero(o.Characters[i]) { // not required
+				return nil
+			}
+
 			if err := o.Characters[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("postUniverseIdsOK" + "." + "characters" + "." + strconv.Itoa(i))
@@ -1043,6 +1058,11 @@ func (o *PostUniverseIdsOKBody) contextValidateConstellations(ctx context.Contex
 	for i := 0; i < len(o.Constellations); i++ {
 
 		if o.Constellations[i] != nil {
+
+			if swag.IsZero(o.Constellations[i]) { // not required
+				return nil
+			}
+
 			if err := o.Constellations[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("postUniverseIdsOK" + "." + "constellations" + "." + strconv.Itoa(i))
@@ -1063,6 +1083,11 @@ func (o *PostUniverseIdsOKBody) contextValidateCorporations(ctx context.Context,
 	for i := 0; i < len(o.Corporations); i++ {
 
 		if o.Corporations[i] != nil {
+
+			if swag.IsZero(o.Corporations[i]) { // not required
+				return nil
+			}
+
 			if err := o.Corporations[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("postUniverseIdsOK" + "." + "corporations" + "." + strconv.Itoa(i))
@@ -1083,6 +1108,11 @@ func (o *PostUniverseIdsOKBody) contextValidateFactions(ctx context.Context, for
 	for i := 0; i < len(o.Factions); i++ {
 
 		if o.Factions[i] != nil {
+
+			if swag.IsZero(o.Factions[i]) { // not required
+				return nil
+			}
+
 			if err := o.Factions[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("postUniverseIdsOK" + "." + "factions" + "." + strconv.Itoa(i))
@@ -1103,6 +1133,11 @@ func (o *PostUniverseIdsOKBody) contextValidateInventoryTypes(ctx context.Contex
 	for i := 0; i < len(o.InventoryTypes); i++ {
 
 		if o.InventoryTypes[i] != nil {
+
+			if swag.IsZero(o.InventoryTypes[i]) { // not required
+				return nil
+			}
+
 			if err := o.InventoryTypes[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("postUniverseIdsOK" + "." + "inventory_types" + "." + strconv.Itoa(i))
@@ -1123,6 +1158,11 @@ func (o *PostUniverseIdsOKBody) contextValidateRegions(ctx context.Context, form
 	for i := 0; i < len(o.Regions); i++ {
 
 		if o.Regions[i] != nil {
+
+			if swag.IsZero(o.Regions[i]) { // not required
+				return nil
+			}
+
 			if err := o.Regions[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("postUniverseIdsOK" + "." + "regions" + "." + strconv.Itoa(i))
@@ -1143,6 +1183,11 @@ func (o *PostUniverseIdsOKBody) contextValidateStations(ctx context.Context, for
 	for i := 0; i < len(o.Stations); i++ {
 
 		if o.Stations[i] != nil {
+
+			if swag.IsZero(o.Stations[i]) { // not required
+				return nil
+			}
+
 			if err := o.Stations[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("postUniverseIdsOK" + "." + "stations" + "." + strconv.Itoa(i))
@@ -1163,6 +1208,11 @@ func (o *PostUniverseIdsOKBody) contextValidateSystems(ctx context.Context, form
 	for i := 0; i < len(o.Systems); i++ {
 
 		if o.Systems[i] != nil {
+
+			if swag.IsZero(o.Systems[i]) { // not required
+				return nil
+			}
+
 			if err := o.Systems[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("postUniverseIdsOK" + "." + "systems" + "." + strconv.Itoa(i))

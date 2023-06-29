@@ -72,7 +72,7 @@ func (o *GetSovereigntyCampaignsReader) ReadResponse(response runtime.ClientResp
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[GET /v1/sovereignty/campaigns/] get_sovereignty_campaigns", response, response.Code())
 	}
 }
 
@@ -891,6 +891,11 @@ func (o *GetSovereigntyCampaignsOKBodyItems0) contextValidateParticipants(ctx co
 	for i := 0; i < len(o.Participants); i++ {
 
 		if o.Participants[i] != nil {
+
+			if swag.IsZero(o.Participants[i]) { // not required
+				return nil
+			}
+
 			if err := o.Participants[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("participants" + "." + strconv.Itoa(i))

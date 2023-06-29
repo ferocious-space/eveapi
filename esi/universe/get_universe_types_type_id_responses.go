@@ -77,7 +77,7 @@ func (o *GetUniverseTypesTypeIDReader) ReadResponse(response runtime.ClientRespo
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[GET /v3/universe/types/{type_id}/] get_universe_types_type_id", response, response.Code())
 	}
 }
 
@@ -1021,6 +1021,11 @@ func (o *GetUniverseTypesTypeIDOKBody) contextValidateDogmaAttributes(ctx contex
 	for i := 0; i < len(o.DogmaAttributes); i++ {
 
 		if o.DogmaAttributes[i] != nil {
+
+			if swag.IsZero(o.DogmaAttributes[i]) { // not required
+				return nil
+			}
+
 			if err := o.DogmaAttributes[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getUniverseTypesTypeIdOK" + "." + "dogma_attributes" + "." + strconv.Itoa(i))
@@ -1041,6 +1046,11 @@ func (o *GetUniverseTypesTypeIDOKBody) contextValidateDogmaEffects(ctx context.C
 	for i := 0; i < len(o.DogmaEffects); i++ {
 
 		if o.DogmaEffects[i] != nil {
+
+			if swag.IsZero(o.DogmaEffects[i]) { // not required
+				return nil
+			}
+
 			if err := o.DogmaEffects[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getUniverseTypesTypeIdOK" + "." + "dogma_effects" + "." + strconv.Itoa(i))

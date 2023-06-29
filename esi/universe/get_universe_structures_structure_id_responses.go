@@ -88,7 +88,7 @@ func (o *GetUniverseStructuresStructureIDReader) ReadResponse(response runtime.C
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[GET /v2/universe/structures/{structure_id}/] get_universe_structures_structure_id", response, response.Code())
 	}
 }
 
@@ -1015,6 +1015,11 @@ func (o *GetUniverseStructuresStructureIDOKBody) ContextValidate(ctx context.Con
 func (o *GetUniverseStructuresStructureIDOKBody) contextValidatePosition(ctx context.Context, formats strfmt.Registry) error {
 
 	if o.Position != nil {
+
+		if swag.IsZero(o.Position) { // not required
+			return nil
+		}
+
 		if err := o.Position.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getUniverseStructuresStructureIdOK" + "." + "position")

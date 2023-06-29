@@ -78,7 +78,7 @@ func (o *GetUniverseStationsStationIDReader) ReadResponse(response runtime.Clien
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[GET /v2/universe/stations/{station_id}/] get_universe_stations_station_id", response, response.Code())
 	}
 }
 
@@ -1025,6 +1025,7 @@ func (o *GetUniverseStationsStationIDOKBody) ContextValidate(ctx context.Context
 func (o *GetUniverseStationsStationIDOKBody) contextValidatePosition(ctx context.Context, formats strfmt.Registry) error {
 
 	if o.Position != nil {
+
 		if err := o.Position.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getUniverseStationsStationIdOK" + "." + "position")

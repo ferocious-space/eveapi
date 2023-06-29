@@ -84,7 +84,7 @@ func (o *GetCharactersCharacterIDClonesReader) ReadResponse(response runtime.Cli
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[GET /v3/characters/{character_id}/clones/] get_characters_character_id_clones", response, response.Code())
 	}
 }
 
@@ -931,6 +931,11 @@ func (o *GetCharactersCharacterIDClonesOKBody) ContextValidate(ctx context.Conte
 func (o *GetCharactersCharacterIDClonesOKBody) contextValidateHomeLocation(ctx context.Context, formats strfmt.Registry) error {
 
 	if o.HomeLocation != nil {
+
+		if swag.IsZero(o.HomeLocation) { // not required
+			return nil
+		}
+
 		if err := o.HomeLocation.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getCharactersCharacterIdClonesOK" + "." + "home_location")
@@ -949,6 +954,11 @@ func (o *GetCharactersCharacterIDClonesOKBody) contextValidateJumpClones(ctx con
 	for i := 0; i < len(o.JumpClones); i++ {
 
 		if o.JumpClones[i] != nil {
+
+			if swag.IsZero(o.JumpClones[i]) { // not required
+				return nil
+			}
+
 			if err := o.JumpClones[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getCharactersCharacterIdClonesOK" + "." + "jump_clones" + "." + strconv.Itoa(i))

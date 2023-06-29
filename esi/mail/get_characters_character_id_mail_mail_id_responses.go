@@ -90,7 +90,7 @@ func (o *GetCharactersCharacterIDMailMailIDReader) ReadResponse(response runtime
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[GET /v1/characters/{character_id}/mail/{mail_id}/] get_characters_character_id_mail_mail_id", response, response.Code())
 	}
 }
 
@@ -1060,6 +1060,11 @@ func (o *GetCharactersCharacterIDMailMailIDOKBody) contextValidateRecipients(ctx
 	for i := 0; i < len(o.Recipients); i++ {
 
 		if o.Recipients[i] != nil {
+
+			if swag.IsZero(o.Recipients[i]) { // not required
+				return nil
+			}
+
 			if err := o.Recipients[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getCharactersCharacterIdMailMailIdOK" + "." + "recipients" + "." + strconv.Itoa(i))

@@ -77,7 +77,7 @@ func (o *GetWarsWarIDReader) ReadResponse(response runtime.ClientResponse, consu
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[GET /v1/wars/{war_id}/] get_wars_war_id", response, response.Code())
 	}
 }
 
@@ -991,6 +991,7 @@ func (o *GetWarsWarIDOKBody) ContextValidate(ctx context.Context, formats strfmt
 func (o *GetWarsWarIDOKBody) contextValidateAggressor(ctx context.Context, formats strfmt.Registry) error {
 
 	if o.Aggressor != nil {
+
 		if err := o.Aggressor.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getWarsWarIdOK" + "." + "aggressor")
@@ -1009,6 +1010,11 @@ func (o *GetWarsWarIDOKBody) contextValidateAllies(ctx context.Context, formats 
 	for i := 0; i < len(o.Allies); i++ {
 
 		if o.Allies[i] != nil {
+
+			if swag.IsZero(o.Allies[i]) { // not required
+				return nil
+			}
+
 			if err := o.Allies[i].ContextValidate(ctx, formats); err != nil {
 				if ve, ok := err.(*errors.Validation); ok {
 					return ve.ValidateName("getWarsWarIdOK" + "." + "allies" + "." + strconv.Itoa(i))
@@ -1027,6 +1033,7 @@ func (o *GetWarsWarIDOKBody) contextValidateAllies(ctx context.Context, formats 
 func (o *GetWarsWarIDOKBody) contextValidateDefender(ctx context.Context, formats strfmt.Registry) error {
 
 	if o.Defender != nil {
+
 		if err := o.Defender.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("getWarsWarIdOK" + "." + "defender")

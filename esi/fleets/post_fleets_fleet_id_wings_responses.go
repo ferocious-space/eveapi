@@ -82,7 +82,7 @@ func (o *PostFleetsFleetIDWingsReader) ReadResponse(response runtime.ClientRespo
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[POST /v1/fleets/{fleet_id}/wings/] post_fleets_fleet_id_wings", response, response.Code())
 	}
 }
 

@@ -70,7 +70,7 @@ func (o *GetFwStatsReader) ReadResponse(response runtime.ClientResponse, consume
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[GET /v1/fw/stats/] get_fw_stats", response, response.Code())
 	}
 }
 
@@ -778,6 +778,7 @@ func (o *GetFwStatsOKBodyItems0) ContextValidate(ctx context.Context, formats st
 func (o *GetFwStatsOKBodyItems0) contextValidateKills(ctx context.Context, formats strfmt.Registry) error {
 
 	if o.Kills != nil {
+
 		if err := o.Kills.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("kills")
@@ -794,6 +795,7 @@ func (o *GetFwStatsOKBodyItems0) contextValidateKills(ctx context.Context, forma
 func (o *GetFwStatsOKBodyItems0) contextValidateVictoryPoints(ctx context.Context, formats strfmt.Registry) error {
 
 	if o.VictoryPoints != nil {
+
 		if err := o.VictoryPoints.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("victory_points")

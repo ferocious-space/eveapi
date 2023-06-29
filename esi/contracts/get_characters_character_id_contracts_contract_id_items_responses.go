@@ -88,7 +88,7 @@ func (o *GetCharactersCharacterIDContractsContractIDItemsReader) ReadResponse(re
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[GET /v1/characters/{character_id}/contracts/{contract_id}/items/] get_characters_character_id_contracts_contract_id_items", response, response.Code())
 	}
 }
 

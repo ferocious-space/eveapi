@@ -82,7 +82,7 @@ func (o *GetCorporationsCorporationIDFacilitiesReader) ReadResponse(response run
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[GET /v2/corporations/{corporation_id}/facilities/] get_corporations_corporation_id_facilities", response, response.Code())
 	}
 }
 

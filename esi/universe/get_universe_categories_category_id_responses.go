@@ -76,7 +76,7 @@ func (o *GetUniverseCategoriesCategoryIDReader) ReadResponse(response runtime.Cl
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[GET /v1/universe/categories/{category_id}/] get_universe_categories_category_id", response, response.Code())
 	}
 }
 

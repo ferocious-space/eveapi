@@ -2,8 +2,8 @@ package sde
 
 import (
 	"bytes"
-	"encoding/gob"
 	"fmt"
+	"github.com/goccy/go-json"
 	"io/fs"
 	"os"
 	"path/filepath"
@@ -64,7 +64,7 @@ func ConvertDogmaAttributes(materialsPath string, db *bbolt.DB) error {
 						return err
 					}
 					buf := bufferPool.Get()
-					err = gob.NewEncoder(buf).Encode(inv)
+					err = json.NewEncoder(buf).Encode(inv)
 					if err != nil {
 						return err
 					}
@@ -121,7 +121,7 @@ func ConvertDogmaEffects(materialsPath string, db *bbolt.DB) error {
 						return err
 					}
 					buf := bufferPool.Get()
-					err = gob.NewEncoder(buf).Encode(inv)
+					err = json.NewEncoder(buf).Encode(inv)
 					if err != nil {
 						return err
 					}
@@ -165,7 +165,7 @@ func QueryBolt(db *bbolt.DB, key interface{}, value interface{}) error {
 
 			get := bucket.Get([]byte(fmt.Sprintf("%d", key)))
 			if get != nil {
-				err := gob.NewDecoder(bytes.NewBuffer(get)).Decode(value)
+				err := json.NewDecoder(bytes.NewBuffer(get)).Decode(value)
 				if err != nil {
 					return err
 				}
@@ -198,7 +198,7 @@ func ConvertTypeDogma(materialsPath string, db *bbolt.DB) error {
 						return err
 					}
 					buf := bufferPool.Get()
-					err = gob.NewEncoder(buf).Encode(inv)
+					err = json.NewEncoder(buf).Encode(inv)
 					if err != nil {
 						return err
 					}
@@ -255,7 +255,7 @@ func ConvertTypes(materialsPath string, db *bbolt.DB) error {
 						return err
 					}
 					buf := bufferPool.Get()
-					err = gob.NewEncoder(buf).Encode(inv)
+					err = json.NewEncoder(buf).Encode(inv)
 					if err != nil {
 						return err
 					}
@@ -312,7 +312,7 @@ func ConvertMaterials(materialsPath string, db *bbolt.DB) error {
 						return err
 					}
 					buf := bufferPool.Get()
-					err = gob.NewEncoder(buf).Encode(inv)
+					err = json.NewEncoder(buf).Encode(inv)
 					if err != nil {
 						return err
 					}
@@ -368,7 +368,7 @@ func ConvertNames(namesPath string, db *bbolt.DB) error {
 						return err
 					}
 					buf := bufferPool.Get()
-					err = gob.NewEncoder(buf).Encode(inv)
+					err = json.NewEncoder(buf).Encode(inv)
 					if err != nil {
 						return err
 					}
@@ -444,7 +444,7 @@ func ConvertUniverse(fromPath string, db *bbolt.DB) error {
 						return
 					}
 					buf := bufferPool.Get()
-					err = gob.NewEncoder(buf).Encode(data)
+					err = json.NewEncoder(buf).Encode(data)
 					if err != nil {
 						errorChannel <- err
 						return

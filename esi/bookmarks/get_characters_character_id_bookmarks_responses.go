@@ -82,7 +82,7 @@ func (o *GetCharactersCharacterIDBookmarksReader) ReadResponse(response runtime.
 		}
 		return nil, result
 	default:
-		return nil, runtime.NewAPIError("response status code does not match any response statuses defined for this endpoint in the swagger spec", response, response.Code())
+		return nil, runtime.NewAPIError("[GET /v2/characters/{character_id}/bookmarks/] get_characters_character_id_bookmarks", response, response.Code())
 	}
 }
 
@@ -1015,6 +1015,11 @@ func (o *GetCharactersCharacterIDBookmarksOKBodyItems0) ContextValidate(ctx cont
 func (o *GetCharactersCharacterIDBookmarksOKBodyItems0) contextValidateCoordinates(ctx context.Context, formats strfmt.Registry) error {
 
 	if o.Coordinates != nil {
+
+		if swag.IsZero(o.Coordinates) { // not required
+			return nil
+		}
+
 		if err := o.Coordinates.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("coordinates")
@@ -1031,6 +1036,11 @@ func (o *GetCharactersCharacterIDBookmarksOKBodyItems0) contextValidateCoordinat
 func (o *GetCharactersCharacterIDBookmarksOKBodyItems0) contextValidateItem(ctx context.Context, formats strfmt.Registry) error {
 
 	if o.Item != nil {
+
+		if swag.IsZero(o.Item) { // not required
+			return nil
+		}
+
 		if err := o.Item.ContextValidate(ctx, formats); err != nil {
 			if ve, ok := err.(*errors.Validation); ok {
 				return ve.ValidateName("item")
