@@ -68,7 +68,7 @@ type ClientService interface {
 
 ---
 
-This route is cached for up to 86400 seconds
+This route is cached for up to 604800 seconds
 */
 func (a *Client) GetCharactersCharacterID(params *GetCharactersCharacterIDParams, opts ...ClientOption) (*GetCharactersCharacterIDOK, error) {
 	// TODO: Validate the params before sending

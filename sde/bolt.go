@@ -244,16 +244,26 @@ func ConvertTypes(materialsPath string, db *bbolt.DB) error {
 	parallel := make(chan struct{}, 1000)
 	wait.Add(len(materials))
 	bktType := getType(materials[0])
+	err = db.Update(func(tx *bbolt.Tx) error {
+		_, err := tx.CreateBucketIfNotExists(bktType)
+		if err != nil {
+			return err
+		}
+		return nil
+	})
+	if err != nil {
+		return err
+	}
+
 	for k, v := range materials {
+		key := k
+		data := v
 		parallel <- struct{}{}
 		go func(k int32, inv TypeID) {
 			defer wait.Done()
 			err := db.Batch(
 				func(tx *bbolt.Tx) error {
-					btx, err := tx.CreateBucketIfNotExists(bktType)
-					if err != nil {
-						return err
-					}
+					btx := tx.Bucket(bktType)
 					buf := bufferPool.Get()
 					err = json.NewEncoder(buf).Encode(inv)
 					if err != nil {
@@ -272,7 +282,7 @@ func ConvertTypes(materialsPath string, db *bbolt.DB) error {
 				errorChannel <- err
 			}
 			<-parallel
-		}(k, v)
+		}(key, data)
 
 	}
 	go func() {

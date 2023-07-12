@@ -1716,6 +1716,54 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
+	case "CorporationGoalClosed":
+		bytes, _ := yaml.Marshal(n)
+		fmt.Println(string(bytes))
+		genType, err := NotificationGenerator(*n.Type, n.Text)
+		if err != nil {
+			return nil, err
+		}
+		fmt.Println(string(genType))
+		value := new(CorporationGoalClosed)
+		err = yaml.Unmarshal([]byte(n.Text), &value)
+		if err != nil {
+			spew.Dump(n)
+			return nil, err
+		}
+		return value, nil
+
+	case "CorporationGoalCompleted":
+		bytes, _ := yaml.Marshal(n)
+		fmt.Println(string(bytes))
+		genType, err := NotificationGenerator(*n.Type, n.Text)
+		if err != nil {
+			return nil, err
+		}
+		fmt.Println(string(genType))
+		value := new(CorporationGoalCompleted)
+		err = yaml.Unmarshal([]byte(n.Text), &value)
+		if err != nil {
+			spew.Dump(n)
+			return nil, err
+		}
+		return value, nil
+
+	case "CorporationGoalCreated":
+		bytes, _ := yaml.Marshal(n)
+		fmt.Println(string(bytes))
+		genType, err := NotificationGenerator(*n.Type, n.Text)
+		if err != nil {
+			return nil, err
+		}
+		fmt.Println(string(genType))
+		value := new(CorporationGoalCreated)
+		err = yaml.Unmarshal([]byte(n.Text), &value)
+		if err != nil {
+			spew.Dump(n)
+			return nil, err
+		}
+		return value, nil
+
 	case "DistrictAttacked":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -2244,6 +2292,22 @@ func ParseNotification(n *character.GetCharactersCharacterIDNotificationsOKBodyI
 		}
 		return value, nil
 
+	case "StructurePaintPurchased":
+		bytes, _ := yaml.Marshal(n)
+		fmt.Println(string(bytes))
+		genType, err := NotificationGenerator(*n.Type, n.Text)
+		if err != nil {
+			return nil, err
+		}
+		fmt.Println(string(genType))
+		value := new(StructurePaintPurchased)
+		err = yaml.Unmarshal([]byte(n.Text), &value)
+		if err != nil {
+			spew.Dump(n)
+			return nil, err
+		}
+		return value, nil
+
 	case "StructuresJobsCancelled":
 		bytes, _ := yaml.Marshal(n)
 		fmt.Println(string(bytes))
@@ -2406,6 +2470,12 @@ type CorpVoteCEORevokedMsg interface{}
 
 type CorpWarDeclaredV2 interface{}
 
+type CorporationGoalClosed interface{}
+
+type CorporationGoalCompleted interface{}
+
+type CorporationGoalCreated interface{}
+
 type DistrictAttacked interface{}
 
 type DustAppAcceptedMsg interface{}
@@ -2471,6 +2541,8 @@ type StationStateChangeMsg interface{}
 type StoryLineMissionAvailableMsg interface{}
 
 type StructureCourierContractChanged interface{}
+
+type StructurePaintPurchased interface{}
 
 type StructuresJobsCancelled interface{}
 
